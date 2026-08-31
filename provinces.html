@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Provinces and Territories of Pakistan</title>
+  <meta name="description" content="Read each Pakistani province and territory: capital, 2023 population, area, culture, education and local issues." />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600&family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+  <div class="page-hero"><div class="container">
+    <h1>Provinces &amp; territories</h1>
+    <p>Four provinces, one federal capital, two mountain territories. Figures follow the 2023 census baseline.</p>
+  </div></div>
+  <section>
+    <div class="container">
+      <div class="ad-slot">AdSense unit — leaderboard</div>
+      <div id="list"></div>
+    </div>
+  </section>
+  <div id="site-footer"></div>
+  <script src="js/app.js"></script>
+  <script>
+    loadData().then(data => {
+      document.getElementById("list").innerHTML = data.units.map(u => `
+        <article class="prose" style="margin-bottom:1.2rem" id="${u.id}">
+          <h2>${u.name} <span class="urdu">${u.urdu}</span></h2>
+          <p><span class="badge">${u.type}</span> Capital: <strong>${u.capital}</strong> · Area ${fmt(u.area_km2)} km² · Population ${fmt(u.population_2023)} · About ${u.districts_approx} districts</p>
+          <div class="grid-2" style="margin-top:1rem">
+            <div><h3>Culture</h3><p>${u.culture}</p></div>
+            <div><h3>Public issues</h3><p>${u.issues}</p></div>
+            <div><h3>Universities &amp; colleges</h3><p>${u.education_note}</p></div>
+            <div><h3>Hospitals</h3><p>${u.health_note}</p></div>
+          </div>
+          <p class="meta">Example places: ${u.sample_places.join(", ")}</p>
+        </article>`).join("");
+    });
+  </script>
+</body>
+</html>

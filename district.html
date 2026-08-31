@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>District — Pakistan Atlas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600&family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+  <div class="page-hero"><div class="container">
+    <p id="crumb" style="opacity:.9"></p>
+    <h1 id="title">District</h1>
+    <p id="pop"></p>
+  </div></div>
+  <section>
+    <div class="container">
+      <article class="prose" id="body"></article>
+      <p style="margin-top:1rem"><a class="btn" id="back" href="provinces.html">Back to province</a></p>
+    </div>
+  </section>
+  <div id="site-footer"></div>
+  <script src="js/app.js"></script>
+  <script>
+    const params = new URLSearchParams(location.search);
+    const pid = params.get("p") || "punjab";
+    const slug = params.get("d");
+    fetch("data/districts.json").then(r => r.json()).then(db => {
+      const p = db[pid];
+      const d = p && p.districts.find(x => x.slug === slug);
+      if (!d) { document.getElementById("title").textContent = "District not found"; return; }
+      document.title = d.name + " — " + p.name;
+      document.getElementById("title").textContent = d.name + " District";
+      document.getElementById("pop").textContent = "Headquarters: " + d.hq + " · " + d.pop;
+      document.getElementById("crumb").innerHTML = `<a href="index.html" style="color:#fff">Home</a> · <a href="province.html?id=${pid}" style="color:#fff">${p.name}</a>`;
+      document.getElementById("back").href = "province.html?id=" + pid;
+      document.getElementById("body").innerHTML = `
+        <p>${d.about}</p>
+        <h2>Education</h2><p>${d.education}</p>
+        <h2>Hospitals</h2><p>${d.health}</p>
+        <h2>Culture</h2><p>${d.culture}</p>
+        <h2>Public issues</h2><p>${d.issues}</p>
+        <h2>Villages &amp; local places</h2><p>${d.villages}</p>
+        <div class="upload-note">Add a village photo as <code>images/villages/${d.slug}.jpg</code>. Write the tehsil names you personally know — that is how this page stays authentic.</div>
+        <div class="ad-slot">AdSense unit</div>`;
+    });
+  </script>
+</body>
+</html>

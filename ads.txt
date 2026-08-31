@@ -1,0 +1,3 @@
+# After AdSense approval, replace this file with the exact line Google gives you:
+# google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+# Keep ads.txt at the website root: https://yourdomain.com/ads.txt

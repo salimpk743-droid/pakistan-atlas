@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pakistan Atlas — Provinces, Districts, Culture and Facts</title>
+  <meta name="description" content="A student-friendly atlas of Pakistan: provinces, districts, population, universities, hospitals, culture and current public updates. Built so young Pakistanis can learn every corner of the country." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600&family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css?v=3" />
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <div class="container home-shell">
+    <aside class="side-panel">
+      <h3>Explore</h3>
+      <a class="side-link news" href="latest-news.html">Latest news</a>
+      <a class="side-link" href="province.html?id=ict">Islamabad</a>
+      <a class="side-link" href="province.html?id=punjab">Punjab</a>
+      <a class="side-link" href="province.html?id=kpk">Khyber Pakhtunkhwa</a>
+      <a class="side-link" href="province.html?id=sindh">Sindh</a>
+      <a class="side-link" href="province.html?id=balochistan">Balochistan</a>
+      <a class="side-link" href="province.html?id=gb">Gilgit Baltistan</a>
+      <a class="side-link" href="province.html?id=ajk">Azad Kashmir</a>
+    </aside>
+
+    <div>
+  <section class="hero" style="padding:14px;">
+    <div style="display:flex;align-items:center;justify-content:center;gap:12px;">
+      <img src="images/allama-iqbal.jpg" alt="Allama Muhammad Iqbal" style="width:34%;height:160px;object-fit:cover;object-position:top center;border-radius:14px;border:1px solid rgba(255,255,255,.3);" />
+      <img src="images/flag-pakistan.svg" alt="Flag of Pakistan" style="width:72px;height:auto;flex-shrink:0;" />
+      <img src="images/quaid-e-azam.jpg" alt="Quaid-e-Azam Muhammad Ali Jinnah" style="width:34%;height:160px;object-fit:cover;object-position:top center;border-radius:14px;border:1px solid rgba(255,255,255,.3);" />
+    </div>
+    <div class="hero-center" style="padding-top:12px;">
+      <p class="urdu" style="font-size:1.2rem">خوش آمدید پاکستان</p>
+      <h1>Welcome to Pakistan</h1>
+      <p class="lead">Choose a province on the left to open every district. Use the right column for affairs, politics, sports and history.</p>
+    </div>
+  </section>
+
+    <div class="stats" style="margin-top:1rem">
+      <div class="stat"><b>241.5m</b><span>People in 2023 census*</span></div>
+      <div class="stat"><b>7 units</b><span>4 provinces + ICT + GB + AJK</span></div>
+      <div class="stat"><b>160+</b><span>Districts on this atlas</span></div>
+      <div class="stat"><b>796k</b><span>km² of land</span></div>
+    </div>
+
+    <div class="section-title" style="margin-top:2rem">
+      <h2>All seven units</h2>
+      <p>Islamabad, Balochistan, Gilgit-Baltistan and Azad Kashmir are included with Punjab, Sindh and KP. Click a card or use the left menu.</p>
+    </div>
+    <div class="grid-3" id="homeUnits"></div>
+    <p style="margin-top:1rem;font-size:.9rem;color:#5c5c5c">*About 241.5 million for the four provinces plus ICT. AJK and GB are counted separately.</p>
+    <div class="ad-slot">Advertisement space — paste AdSense here after approval</div>
+    </div>
+
+    <aside class="side-panel">
+      <h3>Read &amp; debate</h3>
+      <a class="side-link gold" href="current-affairs.html">Current affairs</a>
+      <a class="side-link gold" href="politics.html">Politics</a>
+      <a class="side-link gold" href="sports.html">Sports</a>
+      <a class="side-link gold" href="history.html">History</a>
+      <p style="font-size:.85rem;color:#5c5c5c;margin-top:.6rem">Current affairs = detailed public explainers. Politics and sports = news notes plus signed opinion.</p>
+    </aside>
+  </div>
+
+  <div id="site-footer"></div>
+  <script src="js/app.js"></script>
+  <script>
+    loadData().then(data => {
+      const box = document.getElementById("homeUnits");
+      box.innerHTML = data.units.map(u => `
+        <article class="card">
+          <a href="province.html?id=${u.id}"><img src="images/${u.id}.jpg" alt="${u.name}" /></a>
+          <div class="card-body">
+            <span class="badge">${u.type}</span>
+            <h3><a href="province.html?id=${u.id}">${u.name}</a> <small class="urdu">${u.urdu}</small></h3>
+            <p>Capital ${u.capital} · Population ${fmt(u.population_2023)}</p>
+            <p>${u.culture.slice(0, 140)}…</p>
+            <p class="meta"><a href="province.html?id=${u.id}">Open all districts →</a></p>
+          </div>
+        </article>`).join("");
+    });
+  </script>
+</body>
+</html>
