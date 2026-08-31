@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Province — Pakistan Atlas</title>
-  <meta name="description" content="Districts of a Pakistani province or territory." />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600&family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -39,7 +38,8 @@
     });
     function draw(list) {
       document.getElementById("cards").innerHTML = list.map(d => {
-        const href = (d.slug === "buner") ? "buner.html" : (d.slug === "swat") ? "swat.html" : ("district.html?p=" + id + "&d=" + d.slug);
+        const longPage = { buner: "buner.html", swat: "swat.html", mardan: "mardan.html" };
+        const href = longPage[d.slug] || ("district.html?p=" + id + "&d=" + d.slug);
         return `
         <article class="card">
           <img src="images/${id}.jpg" alt="${d.name}" />
