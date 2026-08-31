@@ -45,7 +45,7 @@
             <span class="badge">${d.hq}</span>
             <h3>${d.name}</h3>
             <p>${d.about.slice(0, 140)}…</p>
-            <p class="meta"><a href="district.html?p=${id}&d=${d.slug}">Read this district →</a></p>
+            <p class="meta"><a href="${d.slug === "buner" ? "buner.html" : "district.html?p=" + id + "&d=" + d.slug}">Read this district →</a></p>
           </div>
         </article>`).join("");
     }
