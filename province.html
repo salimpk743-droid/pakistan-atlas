@@ -38,16 +38,19 @@
       draw(all);
     });
     function draw(list) {
-      document.getElementById("cards").innerHTML = list.map(d => `
+      document.getElementById("cards").innerHTML = list.map(d => {
+        const href = (d.slug === "buner") ? "buner.html" : (d.slug === "swat") ? "swat.html" : ("district.html?p=" + id + "&d=" + d.slug);
+        return `
         <article class="card">
           <img src="images/${id}.jpg" alt="${d.name}" />
           <div class="card-body">
             <span class="badge">${d.hq}</span>
             <h3>${d.name}</h3>
             <p>${d.about.slice(0, 140)}…</p>
-            <p class="meta"><a href="${d.slug === "buner" ? "buner.html" : "district.html?p=" + id + "&d=" + d.slug}">Read this district →</a></p>
+            <p class="meta"><a href="${href}">Read this district →</a></p>
           </div>
-        </article>`).join("");
+        </article>`;
+      }).join("");
     }
     document.addEventListener("input", e => {
       if (e.target.id !== "q") return;
