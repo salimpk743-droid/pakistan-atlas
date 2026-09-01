@@ -58,6 +58,82 @@
         hangu: "hangu.html",
        haripur: "haripur.html",
        karak: "karak.html"
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Province — Pakistan Atlas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600&family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+  <div class="page-hero"><div class="container">
+    <p id="crumb" style="opacity:.85;margin-bottom:.4rem"></p>
+    <h1 id="title">Province</h1>
+    <p id="intro"></p>
+  </div></div>
+  <section>
+    <div class="container">
+      <div class="search"><input id="q" type="search" placeholder="Search a district in this province…" /></div>
+      <div class="grid-3" id="cards"></div>
+    </div>
+  </section>
+  <div id="site-footer"></div>
+  <script src="js/app.js"></script>
+  <script>
+    const params = new URLSearchParams(location.search);
+    const id = params.get("id") || "punjab";
+    let all = [];
+    fetch("data/districts.json").then(r => r.json()).then(db => {
+      const p = db[id];
+      if (!p) { document.getElementById("title").textContent = "Not found"; return; }
+      document.title = p.name + " districts — Pakistan Atlas";
+      document.getElementById("title").innerHTML = p.name + ' <span class="urdu">' + p.urdu + "</span>";
+      document.getElementById("intro").textContent = p.intro + " Capital: " + p.capital + ".";
+      document.getElementById("crumb").innerHTML = '<a href="index.html" style="color:#fff">Home</a> · ' + p.districts.length + " districts";
+      all = p.districts;
+      draw(all);
+    });
+    function hrefFor(slug) {
+      const pages = {
+        buner: "buner.html",
+        swat: "swat.html",
+        mardan: "mardan.html",
+        bajur: "bajaur.html",
+        bajaur: "bajaur.html",
+        abbottabad: "abbottabad.html",
+        bannu: "bannu.html",
+        battagram: "battagram.html",
+        charsadda: "charsadda.html",
+        "chitral-lower": "lower-chitral.html",
+        "lower-chitral": "lower-chitral.html",
+        chitral: "lower-chitral.html",
+        "chitral-upper": "upper-chitral.html",
+        "upper-chitral": "upper-chitral.html",
+        "dera-ismail-khan": "dera-ismail-khan.html",
+        dikhan: "dera-ismail-khan.html",
+        "di-khan": "dera-ismail-khan.html",
+        hangu: "hangu.html",
+        haripur: "haripur.html",
+        karak: "karak.html",
+        khyber: "khyber.html"
+      };
+      return pages[slug] || ("district.html?p=" + id + "&d=" + slug);
+    }
+    function draw(list) {
+      document.getElementById("cards").innerHTML = list.map(d =>
+        '<article class="card"><img src="images/' + id + '.jpg" alt="' + d.name + '" /><div class="card-body"><span class="badge">' + d.hq + '</span><h3>' + d.name + '</h3><p>' + d.about.slice(0, 140) + '…</p><p class="meta"><a href="' + hrefFor(d.slug) + '">Read this district →</a></p></div></article>'
+      ).join("");
+    }
+    document.addEventListener("input", e => {
+      if (e.target.id !== "q") return;
+      draw(all.filter(d => (d.name + d.hq + d.about).toLowerCase().includes(e.target.value.toLowerCase())));
+    });
+  </script>
+</body>
+</html>
       };
       return pages[slug] || ("district.html?p=" + id + "&d=" + slug);
     }
