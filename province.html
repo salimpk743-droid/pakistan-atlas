@@ -38,7 +38,7 @@
     });
     function draw(list) {
       document.getElementById("cards").innerHTML = list.map(d => {
-        const longPage = { buner: "buner.html", swat: "swat.html", mardan: "mardan.html" };
+        const longPage = { buner: "buner.html", swat: "swat.html", mardan: "mardan.html", bajur: "bajaur.html", bajaur: "bajaur.html" };
         const href = longPage[d.slug] || ("district.html?p=" + id + "&d=" + d.slug);
         return `
         <article class="card">
