@@ -45,26 +45,7 @@
           bajur: "bajaur.html",
           bajaur: "bajaur.html",
           abbottabad: "abbottabad.html",
-          bannu: "bannu.html"
+          bannu: "bannu.html",
+          battagram: "battagram.html"
         };
-        const href = longPage[d.slug] || ("district.html?p=" + id + "&d=" + d.slug);
-        return `
-        <article class="card">
-          <img src="images/${id}.jpg" alt="${d.name}" />
-          <div class="card-body">
-            <span class="badge">${d.hq}</span>
-            <h3>${d.name}</h3>
-            <p>${d.about.slice(0, 140)}…</p>
-            <p class="meta"><a href="${href}">Read this district →</a></p>
-          </div>
-        </article>`;
-      }).join("");
-    }
-    document.addEventListener("input", e => {
-      if (e.target.id !== "q") return;
-      const q = e.target.value.toLowerCase();
-      draw(all.filter(d => (d.name + d.hq + d.about).toLowerCase().includes(q)));
-    });
-  </script>
-</body>
-</html>
+        const href = longPage[d.slug] || ("district.html?p=" + id + "&d=" + 
