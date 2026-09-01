@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mansehra District — city tehsil, Balakot and Oghi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600&family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+  <div class="page-hero"><div class="container">
+    <p style="opacity:.9"><a href="index.html" style="color:#fff">Home</a> · <a href="province.html?id=kpk" style="color:#fff">Khyber Pakhtunkhwa</a></p>
+    <h1>Mansehra District</h1>
+    <p>Hazara Division · 1,797,177 people in 2023 · Kala Dhaka already gone as Torghar · Tanawal cut in 2022</p>
+  </div></div>
+  <section>
+    <div class="container prose">
+      <p>Mansehra is the Hazara district that holds both a packed city tehsil and the long Kaghan road. Ashoka’s rock near the town is the old name on the history syllabus. 8 October 2005 is the date Balakot families still use to mark time. Torghar (Kala Dhaka) left as its own district in 2011. Tanawal was notified as a tehsil in December 2022; its 2023 population line is still thin in the public extract.</p>
+      <p>Hindko is the city and Pakhal speech. Oghi’s 2023 tongue row is split: Hindko about 112,000, Pashto about 105,000, plus a Kohistani and “other” remainder. One language label will not cover this district.</p>
+
+      <h2>2023 sheet</h2>
+      <p>Households 294,052. Population <strong>1,797,177</strong>. Literacy 63.79 percent — 75.33 percent for men, 52.02 percent for women. Under-tens about 479,000 (27 percent). Sex ratio about 103 men per 100 women. Mansehra municipal council and Baffa town council (about 17,600) are the urban names people actually use. Balakot is a rebuilt town, not a second municipal giant in the same lists.</p>
+
+      <h2>Five tehsils with printed rows</h2>
+      <p><strong>Mansehra tehsil</strong> — 700 km², 723,325 people, about 1,033 per km², literacy about 68.7 percent. Headquarters, Hazara University, DHQ. Almost 40 percent of the district lives in this one tehsil.</p>
+      <p><strong>Baffa Pakhal</strong> — 640 km², 460,090 people, literacy about 60.9 percent. Baffa town sits here. Pakhal is the plain name, not a second city.</p>
+      <p><strong>Balakot tehsil</strong> — 2,376 km², 310,339 people, only about 131 per km², literacy about 67.5 percent. Largest land, thin settlement. Kaghan, Naran and the Kunhar road are in this tehsil. Density tells you most of those kilometres are mountain, not bazaar.</p>
+      <p><strong>Oghi</strong> — 307 km², 251,721 people, literacy about 52.9 percent. All rural in the compiled table. Mixed Hindko–Pashto tongue row. Lowest literacy of the printed five.</p>
+      <p><strong>Darband</strong> — 102 km², 51,702 people, literacy about 50.5 percent. Smallest tehsil. Do not treat it as a third city.</p>
+      <p>Tanawal is the sixth title. Wait for a PBS row before writing a population.</p>
+
+      <h2>University, hospital, the 2005 line</h2>
+      <p>Hazara University Mansehra is the campus name. Government colleges sit in the city, Baffa and Balakot. DHQ Mansehra is the teaching-side hospital. Balakot’s rebuilt health and school buildings are part of the district story, not a caption under a snow photo. Female literacy at 52 percent is closer to Haripur than to Lower Kohistan; Oghi and Darband are where that average sags.</p>
+      <p>Sources: PBS 2023; tehsil literacy rows; Oghi tongue table; 2011 Torghar and 2022 Tanawal notifications. September 2026.</p>
+    </div>
+  </section>
+  <div id="site-footer"></div>
+  <script src="js/app.js"></script>
+</body>
+</html>
