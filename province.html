@@ -38,6 +38,7 @@
     });
     function hrefFor(slug) {
       const pages = {
+        islamabad: "islamabad.html",
         buner: "buner.html",
         swat: "swat.html",
         mardan: "mardan.html",
@@ -71,32 +72,22 @@
         mansehra: "mansehra.html",
         mohmand: "mohmand.html",
         nowshera: "nowshera.html",
-        "north-waziristan": "north-waziristan.html",
         nwa: "north-waziristan.html",
+        "north-waziristan": "north-waziristan.html",
         orakzai: "orakzai.html",
         peshawar: "peshawar.html",
         shangla: "shangla.html",
         swabi: "swabi.html",
-                swa: "south-waziristan.html",
+        swa: "south-waziristan.html",
         "south-waziristan": "south-waziristan.html",
-        "waziristan-south": "south-waziristan.html",
-        "lower-south-waziristan": "south-waziristan.html",
-        "upper-south-waziristan": "south-waziristan.html",
-                "upper-south-waziristan": "south-waziristan.html",
         tank: "tank.html",
         torghar: "torghar.html",
-                torghar: "torghar.html",
         "upper-dir": "upper-dir.html",
-        "dir-upper": "upper-dir.html",
-                "upper-dir": "upper-dir.html",
         "dir-upper": "upper-dir.html",
         "upper-kohistan": "upper-kohistan.html",
         "kohistan-upper": "upper-kohistan.html",
-                "upper-kohistan": "upper-kohistan.html",
-        "kohistan-upper": "upper-kohistan.html",
         "kolai-palas": "kolai-palas.html",
-        "kolai-pallas": "kolai-palas.html",
-                islamabad: "islamabad.html"
+        "kolai-pallas": "kolai-palas.html"
       };
       return pages[slug] || ("district.html?p=" + id + "&d=" + slug);
     }
