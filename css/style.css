@@ -300,7 +300,16 @@ section { padding: 4rem 0; }
 }
 .lb{display:none;position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:90;align-items:center;justify-content:center;padding:1.25rem;flex-direction:column}
 .lb.on{display:flex}
-.lb img{width:min(1200px,96vw);height:auto;max-height:86vh;object-fit:contain;border-radius:8px;background:#111}
+.lb img, #lb-img{
+  width:min(1100px,94vw)!important;
+  max-width:min(1100px,94vw)!important;
+  height:auto!important;
+  max-height:86vh!important;
+  min-height:40vh!important;
+  object-fit:contain!important;
+  border-radius:8px;
+  background:#111;
+}
 .lb p{color:#fff;margin:.75rem 0 0;text-align:center;max-width:720px}
 .lb button{position:absolute;top:1rem;right:1rem;background:#fff;border:0;border-radius:999px;width:42px;height:42px;font-size:1.5rem;cursor:pointer}
 
