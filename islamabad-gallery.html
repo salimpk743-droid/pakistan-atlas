@@ -37,7 +37,8 @@
   </div>
   <div id="site-footer"></div>
   <script src="js/app.js"></script>
-  <script src="js/islamabad-photos.js"></script>
+  <script src="js/islamabad/a.js"></script>
+  <script src="js/islamabad/b.js"></script>
   <script>
     (function(){
       var grid=document.getElementById('grid');
@@ -56,6 +57,9 @@
         a.href='#photo';
         var img=document.createElement('img');
         img.src=p.src; img.alt=p.alt;
+        img.addEventListener('error', function(){
+          img.replaceWith(document.createTextNode(p.alt||'Photo'));
+        });
         a.appendChild(img);
         a.addEventListener('click', function(e){
           e.preventDefault();
