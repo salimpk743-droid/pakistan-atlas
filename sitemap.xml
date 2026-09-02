@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://YOUR-DOMAIN.com/</loc></url>
-  <url><loc>https://YOUR-DOMAIN.com/provinces.html</loc></url>
-  <url><loc>https://YOUR-DOMAIN.com/districts.html</loc></url>
-  <url><loc>https://YOUR-DOMAIN.com/culture.html</loc></url>
-  <url><loc>https://YOUR-DOMAIN.com/education.html</loc></url>
-  <url><loc>https://YOUR-DOMAIN.com/health.html</loc></url>
-  <url><loc>https://YOUR-DOMAIN.com/news.html</loc></url>
-  <url><loc>https://YOUR-DOMAIN.com/about.html</loc></url>
-  <url><loc>https://YOUR-DOMAIN.com/contact.html</loc></url>
-  <url><loc>https://YOUR-DOMAIN.com/privacy.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/index.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/about.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/contact.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/privacy.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/culture.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/education.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/health.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/history.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/latest-news.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/current-affairs.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/politics.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/sports.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/islamabad.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/peshawar.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/swat.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/province.html?id=ict</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/province.html?id=kpk</loc></url>
 </urlset>
