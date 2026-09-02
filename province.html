@@ -37,13 +37,7 @@
   <div id="site-footer"></div>
   <script src="js/app.js"></script>
   <script src="js/islamabad/init.js"></script>
-  <script src="js/islamabad/p1.js"></script>
-  <script src="js/islamabad/p2.js"></script>
-  <script src="js/islamabad/p3.js"></script>
-  <script src="js/islamabad/p4.js"></script>
-  <script src="js/islamabad/p5.js"></script>
-  <script src="js/islamabad/p6.js"></script>
-  <script src="js/islamabad/p7.js"></script>
+  <script src="js/islamabad/load.js"></script>
   <script>
     const params = new URLSearchParams(location.search);
     const id = params.get("id") || "punjab";
@@ -92,73 +86,25 @@
     });
     function hrefFor(slug) {
       const pages = {
-        islamabad: "islamabad.html",
-        buner: "buner.html",
-        swat: "swat.html",
-        mardan: "mardan.html",
-        bajur: "bajaur.html",
-        bajaur: "bajaur.html",
-        abbottabad: "abbottabad.html",
-        bannu: "bannu.html",
-        battagram: "battagram.html",
-        charsadda: "charsadda.html",
-        "chitral-lower": "lower-chitral.html",
-        "lower-chitral": "lower-chitral.html",
-        chitral: "lower-chitral.html",
-        "chitral-upper": "upper-chitral.html",
-        "upper-chitral": "upper-chitral.html",
-        "dera-ismail-khan": "dera-ismail-khan.html",
-        dikhan: "dera-ismail-khan.html",
-        "di-khan": "dera-ismail-khan.html",
-        hangu: "hangu.html",
-        haripur: "haripur.html",
-        karak: "karak.html",
-        khyber: "khyber.html",
-        kohat: "kohat.html",
-        kurram: "kurram.html",
-        "lakki-marwat": "lakki-marwat.html",
-        lakki: "lakki-marwat.html",
-        "dir-lower": "lower-dir.html",
-        "lower-dir": "lower-dir.html",
-        "kohistan-lower": "lower-kohistan.html",
-        "lower-kohistan": "lower-kohistan.html",
-        malakand: "malakand.html",
-        mansehra: "mansehra.html",
-        mohmand: "mohmand.html",
-        nowshera: "nowshera.html",
-        nwa: "north-waziristan.html",
-        "north-waziristan": "north-waziristan.html",
-        orakzai: "orakzai.html",
-        peshawar: "peshawar.html",
-        shangla: "shangla.html",
-        swabi: "swabi.html",
-        swa: "south-waziristan.html",
-        "south-waziristan": "south-waziristan.html",
-        tank: "tank.html",
-        torghar: "torghar.html",
-        "upper-dir": "upper-dir.html",
-        "dir-upper": "upper-dir.html",
-        "upper-kohistan": "upper-kohistan.html",
-        "kohistan-upper": "upper-kohistan.html",
-        "kolai-palas": "kolai-palas.html",
-        allai: "allai.html",
-        attock: "attock.html",
-        bahawalnagar: "bahawalnagar.html",
-        bahawalpur: "bahawalpur.html",
-        bhakkar: "bhakkar.html",
-        chakwal: "chakwal.html",
-        chiniot: "chiniot.html",
-        dgkhan: "dera-ghazi-khan.html",
-        "dera-ghazi-khan": "dera-ghazi-khan.html",
-        faisalabad: "faisalabad.html",
-        gujranwala: "gujranwala.html",
-        gujrat: "gujrat.html",
-        hafizabad: "hafizabad.html",
-        jhang: "jhang.html",
-        jhelum: "jhelum.html",
-        "kolai-pallas": "kolai-palas.html",
-        "bar-swat": "bar-swat.html",
-        "upper-swat": "bar-swat.html"
+        islamabad: "islamabad.html", buner: "buner.html", swat: "swat.html", mardan: "mardan.html",
+        bajur: "bajaur.html", bajaur: "bajaur.html", abbottabad: "abbottabad.html", bannu: "bannu.html",
+        battagram: "battagram.html", charsadda: "charsadda.html", "chitral-lower": "lower-chitral.html",
+        "lower-chitral": "lower-chitral.html", chitral: "lower-chitral.html", "chitral-upper": "upper-chitral.html",
+        "upper-chitral": "upper-chitral.html", "dera-ismail-khan": "dera-ismail-khan.html", dikhan: "dera-ismail-khan.html",
+        "di-khan": "dera-ismail-khan.html", hangu: "hangu.html", haripur: "haripur.html", karak: "karak.html",
+        khyber: "khyber.html", kohat: "kohat.html", kurram: "kurram.html", "lakki-marwat": "lakki-marwat.html",
+        lakki: "lakki-marwat.html", "dir-lower": "lower-dir.html", "lower-dir": "lower-dir.html",
+        "kohistan-lower": "lower-kohistan.html", "lower-kohistan": "lower-kohistan.html", malakand: "malakand.html",
+        mansehra: "mansehra.html", mohmand: "mohmand.html", nowshera: "nowshera.html", nwa: "north-waziristan.html",
+        "north-waziristan": "north-waziristan.html", orakzai: "orakzai.html", peshawar: "peshawar.html",
+        shangla: "shangla.html", swabi: "swabi.html", swa: "south-waziristan.html", "south-waziristan": "south-waziristan.html",
+        tank: "tank.html", torghar: "torghar.html", "upper-dir": "upper-dir.html", "dir-upper": "upper-dir.html",
+        "upper-kohistan": "upper-kohistan.html", "kohistan-upper": "upper-kohistan.html", "kolai-palas": "kolai-palas.html",
+        allai: "allai.html", attock: "attock.html", bahawalnagar: "bahawalnagar.html", bahawalpur: "bahawalpur.html",
+        bhakkar: "bhakkar.html", chakwal: "chakwal.html", chiniot: "chiniot.html", dgkhan: "dera-ghazi-khan.html",
+        "dera-ghazi-khan": "dera-ghazi-khan.html", faisalabad: "faisalabad.html", gujranwala: "gujranwala.html",
+        gujrat: "gujrat.html", hafizabad: "hafizabad.html", jhang: "jhang.html", jhelum: "jhelum.html",
+        "kolai-pallas": "kolai-palas.html", "bar-swat": "bar-swat.html", "upper-swat": "bar-swat.html"
       };
       return pages[slug] || ("district.html?p=" + id + "&d=" + slug);
     }
