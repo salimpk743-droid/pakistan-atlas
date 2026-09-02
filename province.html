@@ -103,7 +103,7 @@
         "bar-swat": "bar-swat.html",
         "upper-swat": "bar-swat.html"
       };
-      return pages[slug] || ("district.html?p=" + id + "&d" + slug);
+      return pages[slug] || ("district.html?p=" + id + "&d=" + slug);
     }
     function draw(list) {
       document.getElementById("cards").innerHTML = list.map(d =>
