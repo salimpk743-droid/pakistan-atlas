@@ -1,0 +1,1 @@
+window.ISB_PHOTOS=[];
