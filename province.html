@@ -97,11 +97,13 @@
         "bahawalpur": "bahawalpur.html",
         bhakkar: "bhakkar.html",
         "bhakkar": "bhakkar.html",
+        chakwal: "chakwal.html",
+        "chakwal": "chakwal.html",
         "kolai-pallas": "kolai-palas.html",
         "bar-swat": "bar-swat.html",
         "upper-swat": "bar-swat.html"
       };
-      return pages[slug] || ("district.html?p=" + id + "&d=" + slug);
+      return pages[slug] || ("district.html?p=" + id + "&d" + slug);
     }
     function draw(list) {
       document.getElementById("cards").innerHTML = list.map(d =>
