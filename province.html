@@ -16,8 +16,25 @@
   </div></div>
   <section>
     <div class="container">
-      <div class="search"><input id="q" type="search" placeholder="Search a district in this province…" /></div>
-      <div class="grid-3" id="cards"></div>
+      <div id="layout" class="province-split single">
+        <div>
+          <div class="search"><input id="q" type="search" placeholder="Search a district in this province…" /></div>
+          <div class="grid-3" id="cards"></div>
+        </div>
+        <aside id="ict-side" class="ict-gallery-panel" hidden>
+          <a class="ict-gallery-btn" href="islamabad-gallery.html">Islamabad photo gallery</a>
+          <p class="ict-credit">Photos credit: <strong>islamabadians</strong></p>
+          <div class="ict-thumbs">
+            <a class="wide" href="islamabad-gallery.html"><img src="images/islamabad/01-kashmir-highway.jpg" alt="Islamabad highway" /></a>
+            <a href="islamabad-gallery.html"><img src="images/islamabad/02-faisal-mosque.jpg" alt="Faisal Mosque" /></a>
+            <a href="islamabad-gallery.html"><img src="images/islamabad/05-blue-area-mosque.jpg" alt="Blue Area and mosque" /></a>
+            <a href="islamabad-gallery.html"><img src="images/islamabad/03-night-road.jpg" alt="Night road" /></a>
+            <a href="islamabad-gallery.html"><img src="images/islamabad/04-sector-street.jpg" alt="Sector street" /></a>
+            <a class="wide" href="islamabad-gallery.html"><img src="images/islamabad/06-margalla-view.jpg" alt="Margalla night view" /></a>
+            <a class="wide" href="islamabad-gallery.html"><img src="images/islamabad/07-autumn-street.jpg" alt="Autumn street" /></a>
+          </div>
+        </aside>
+      </div>
     </div>
   </section>
   <div id="site-footer"></div>
@@ -34,6 +51,11 @@
       document.getElementById("intro").textContent = p.intro + " Capital: " + p.capital + ".";
       document.getElementById("crumb").innerHTML = '<a href="index.html" style="color:#fff">Home</a> · ' + p.districts.length + " districts";
       all = p.districts;
+      if (id === "ict") {
+        document.getElementById("layout").classList.remove("single");
+        document.getElementById("ict-side").hidden = false;
+        document.getElementById("cards").className = "grid-2";
+      }
       draw(all);
     });
     function hrefFor(slug) {
@@ -109,8 +131,9 @@
       return pages[slug] || ("district.html?p=" + id + "&d=" + slug);
     }
     function draw(list) {
+      const img = (id === "ict") ? "images/islamabad/01-kashmir-highway.jpg" : ("images/" + id + ".jpg");
       document.getElementById("cards").innerHTML = list.map(d =>
-        '<article class="card"><img src="images/' + id + '.jpg" alt="' + d.name + '" /><div class="card-body"><span class="badge">' + d.hq + '</span><h3>' + d.name + '</h3><p>' + d.about.slice(0, 140) + '…</p><p class="meta"><a href="' + hrefFor(d.slug) + '">Read this district →</a></p></div></article>'
+        '<article class="card"><img src="' + img + '" alt="' + d.name + '" /><div class="card-body"><span class="badge">' + d.hq + '</span><h3>' + d.name + '</h3><p>' + d.about.slice(0, 140) + '…</p><p class="meta"><a href="' + hrefFor(d.slug) + '">Read this district →</a></p></div></article>'
       ).join("");
     }
     document.addEventListener("input", e => {
