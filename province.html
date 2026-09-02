@@ -23,26 +23,57 @@
         </div>
         <aside id="ict-side" class="ict-gallery-panel" hidden>
           <a class="ict-gallery-btn" href="islamabad-gallery.html">Islamabad photo gallery</a>
-          <p class="ict-credit">Photos credit: <strong>islamabadians</strong></p>
-          <div class="ict-thumbs">
-            <a class="wide" href="islamabad-gallery.html"><img src="images/islamabad/01-kashmir-highway.jpg" alt="Islamabad highway" /></a>
-            <a href="islamabad-gallery.html"><img src="images/islamabad/02-faisal-mosque.jpg" alt="Faisal Mosque" /></a>
-            <a href="islamabad-gallery.html"><img src="images/islamabad/05-blue-area-mosque.jpg" alt="Blue Area and mosque" /></a>
-            <a href="islamabad-gallery.html"><img src="images/islamabad/03-night-road.jpg" alt="Night road" /></a>
-            <a href="islamabad-gallery.html"><img src="images/islamabad/04-sector-street.jpg" alt="Sector street" /></a>
-            <a class="wide" href="islamabad-gallery.html"><img src="images/islamabad/06-margalla-view.jpg" alt="Margalla night view" /></a>
-            <a class="wide" href="islamabad-gallery.html"><img src="images/islamabad/07-autumn-street.jpg" alt="Autumn street" /></a>
-          </div>
+          <p class="ict-credit">Photos credit: <strong>islamabadians</strong>. Click a picture to open it large.</p>
+          <div class="ict-thumbs" id="ict-thumbs"></div>
         </aside>
       </div>
     </div>
   </section>
+  <div class="lb" id="lb" role="dialog">
+    <button type="button" id="lb-x" aria-label="Close">&times;</button>
+    <img id="lb-img" alt="" />
+    <p id="lb-cap"></p>
+  </div>
   <div id="site-footer"></div>
   <script src="js/app.js"></script>
+  <script src="js/islamabad/init.js"></script>
+  <script src="js/islamabad/p1.js"></script>
+  <script src="js/islamabad/p2.js"></script>
+  <script src="js/islamabad/p3.js"></script>
+  <script src="js/islamabad/p4.js"></script>
+  <script src="js/islamabad/p5.js"></script>
+  <script src="js/islamabad/p6.js"></script>
+  <script src="js/islamabad/p7.js"></script>
   <script>
     const params = new URLSearchParams(location.search);
     const id = params.get("id") || "punjab";
     let all = [];
+    function openPhoto(p){
+      var lb=document.getElementById('lb');
+      document.getElementById('lb-img').src=p.src;
+      document.getElementById('lb-img').alt=p.alt||'';
+      document.getElementById('lb-cap').textContent=(p.cap||p.alt||'')+' Photos credit: islamabadians';
+      lb.classList.add('on');
+    }
+    function closePhoto(){ document.getElementById('lb').classList.remove('on'); }
+    document.getElementById('lb-x').addEventListener('click', closePhoto);
+    document.getElementById('lb').addEventListener('click', function(e){ if(e.target.id==='lb') closePhoto(); });
+    document.addEventListener('keydown', function(e){ if(e.key==='Escape') closePhoto(); });
+    function fillIctThumbs(){
+      var box=document.getElementById('ict-thumbs');
+      var photos=window.ISB_PHOTOS||[];
+      box.innerHTML='';
+      photos.forEach(function(p,i){
+        var a=document.createElement('a');
+        a.href='#photo';
+        if(i===0 || i===photos.length-1) a.className='wide';
+        var img=document.createElement('img');
+        img.src=p.src; img.alt=p.alt||'';
+        a.appendChild(img);
+        a.addEventListener('click', function(e){ e.preventDefault(); openPhoto(p); });
+        box.appendChild(a);
+      });
+    }
     fetch("data/districts.json").then(r => r.json()).then(db => {
       const p = db[id];
       if (!p) { document.getElementById("title").textContent = "Not found"; return; }
@@ -55,6 +86,7 @@
         document.getElementById("layout").classList.remove("single");
         document.getElementById("ict-side").hidden = false;
         document.getElementById("cards").className = "grid-2";
+        fillIctThumbs();
       }
       draw(all);
     });
@@ -131,7 +163,8 @@
       return pages[slug] || ("district.html?p=" + id + "&d=" + slug);
     }
     function draw(list) {
-      const img = (id === "ict") ? "images/islamabad/01-kashmir-highway.jpg" : ("images/" + id + ".jpg");
+      const photos=window.ISB_PHOTOS||[];
+      const img = (id === "ict" && photos[0]) ? photos[0].src : ((id === "ict") ? "" : ("images/" + id + ".jpg"));
       document.getElementById("cards").innerHTML = list.map(d =>
         '<article class="card"><img src="' + img + '" alt="' + d.name + '" /><div class="card-body"><span class="badge">' + d.hq + '</span><h3>' + d.name + '</h3><p>' + d.about.slice(0, 140) + '…</p><p class="meta"><a href="' + hrefFor(d.slug) + '">Read this district →</a></p></div></article>'
       ).join("");
