@@ -1,1 +1,1 @@
-PLACEHOLDER
+window.ISB_PHOTOS=[];
