@@ -7,6 +7,15 @@
   <meta name="description" content="Islamabad photo gallery. Photographs of the capital’s roads, Faisal Mosque and Margalla views. Photo credit: islamabadians." />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600&family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .gallery-grid a{cursor:zoom-in}
+    .gallery-grid img{width:100%;height:240px;object-fit:cover;display:block;background:#e8efe8}
+    .lb{display:none;position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:90;align-items:center;justify-content:center;padding:1.5rem;flex-direction:column}
+    .lb.on{display:flex}
+    .lb img{max-width:min(1200px,96vw);max-height:86vh;object-fit:contain;border-radius:8px}
+    .lb p{color:#fff;margin:.75rem 0 0;text-align:center}
+    .lb button{position:absolute;top:1rem;right:1rem;background:#fff;border:0;border-radius:999px;width:42px;height:42px;font-size:1.5rem;cursor:pointer}
+  </style>
 </head>
 <body>
   <div id="site-header"></div>
@@ -17,40 +26,54 @@
   </div></div>
   <section>
     <div class="container">
-      <p class="upload-note">All photographs on this page are published with credit to <strong>islamabadians</strong>.</p>
-      <div class="gallery-grid">
-        <figure>
-          <a href="images/islamabad/01-kashmir-highway.jpg"><img src="images/islamabad/01-kashmir-highway.jpg" alt="Islamabad highway toward the Margalla Hills and Parliament" /></a>
-          <figcaption>Kashmir Highway / capital avenue, Parliament on the ridge. Photos credit: islamabadians</figcaption>
-        </figure>
-        <figure>
-          <a href="images/islamabad/02-faisal-mosque.jpg"><img src="images/islamabad/02-faisal-mosque.jpg" alt="Faisal Mosque from the avenue at dusk" /></a>
-          <figcaption>Faisal Mosque against the Margallas. Photos credit: islamabadians</figcaption>
-        </figure>
-        <figure>
-          <a href="images/islamabad/05-blue-area-mosque.jpg"><img src="images/islamabad/05-blue-area-mosque.jpg" alt="Islamabad avenue with Blue Area towers and Faisal Mosque" /></a>
-          <figcaption>Blue Area towers and the mosque on the same axis. Photos credit: islamabadians</figcaption>
-        </figure>
-        <figure>
-          <a href="images/islamabad/03-night-road.jpg"><img src="images/islamabad/03-night-road.jpg" alt="Quiet Islamabad dual carriageway at night" /></a>
-          <figcaption>Empty dual carriageway after dark. Photos credit: islamabadians</figcaption>
-        </figure>
-        <figure>
-          <a href="images/islamabad/04-sector-street.jpg"><img src="images/islamabad/04-sector-street.jpg" alt="Wet sector street under the Margalla Hills" /></a>
-          <figcaption>Sector road after rain, hills at the end of the street. Photos credit: islamabadians</figcaption>
-        </figure>
-        <figure>
-          <a href="images/islamabad/07-autumn-street.jpg"><img src="images/islamabad/07-autumn-street.jpg" alt="Autumn leaves on an Islamabad street" /></a>
-          <figcaption>Autumn verge in the sectors. Photos credit: islamabadians</figcaption>
-        </figure>
-        <figure>
-          <a href="images/islamabad/06-margalla-view.jpg"><img src="images/islamabad/06-margalla-view.jpg" alt="Night view of Islamabad from the Margalla Hills" /></a>
-          <figcaption>City lights from the ridge. Photos credit: islamabadians</figcaption>
-        </figure>
-      </div>
+      <p class="upload-note">All photographs on this page are published with credit to <strong>islamabadians</strong>. Click a picture to open it large on this page.</p>
+      <div class="gallery-grid" id="grid"></div>
     </div>
   </section>
+  <div class="lb" id="lb" role="dialog">
+    <button type="button" id="lb-x" aria-label="Close">&times;</button>
+    <img id="lb-img" alt="" />
+    <p id="lb-cap"></p>
+  </div>
   <div id="site-footer"></div>
   <script src="js/app.js"></script>
+  <script>window.ISB_PHOTOS=[];</script>
+  <script src="js/islamabad/photo1.js"></script>
+  <script src="js/islamabad/photo2.js"></script>
+  <script src="js/islamabad/photo3.js"></script>
+  <script src="js/islamabad/photo4.js"></script>
+  <script src="js/islamabad/photo5.js"></script>
+  <script src="js/islamabad/photo6.js"></script>
+  <script src="js/islamabad/photo7.js"></script>
+  <script>
+    (function(){
+      var grid=document.getElementById('grid');
+      var lb=document.getElementById('lb');
+      var limg=document.getElementById('lb-img');
+      var lcap=document.getElementById('lb-cap');
+      function close(){ lb.classList.remove('on'); }
+      (window.ISB_PHOTOS||[]).forEach(function(p){
+        var fig=document.createElement('figure');
+        var a=document.createElement('a');
+        a.href='#';
+        var img=document.createElement('img');
+        img.src=p.src; img.alt=p.alt;
+        a.appendChild(img);
+        a.addEventListener('click', function(e){
+          e.preventDefault();
+          limg.src=p.src; limg.alt=p.alt;
+          lcap.textContent=p.cap+' Photos credit: islamabadians';
+          lb.classList.add('on');
+        });
+        var cap=document.createElement('figcaption');
+        cap.textContent=p.cap+' Photos credit: islamabadians';
+        fig.appendChild(a); fig.appendChild(cap);
+        grid.appendChild(fig);
+      });
+      document.getElementById('lb-x').addEventListener('click', close);
+      lb.addEventListener('click', function(e){ if(e.target===lb) close(); });
+      document.addEventListener('keydown', function(e){ if(e.key==='Escape') close(); });
+    })();
+  </script>
 </body>
 </html>
