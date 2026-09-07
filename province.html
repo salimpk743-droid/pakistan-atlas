@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Province — Pakistan Atlas</title>
+  <meta name="description" content="Explore districts, capitals, population and local information for Pakistan's provinces and territories." />
+  <link rel="canonical" href="https://pakistan-atlas.vercel.app/province.html" />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600&family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -41,6 +43,8 @@
   <script>
     const params = new URLSearchParams(location.search);
     const id = params.get("id") || "punjab";
+    const canonical = document.querySelector('link[rel="canonical"]');
+    if (canonical) canonical.href = new URL("province.html?id=" + encodeURIComponent(id), location.href).href;
     let all = [];
     function openPhoto(p){
       var lb=document.getElementById('lb');

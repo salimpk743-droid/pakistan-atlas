@@ -1,62 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://pakistan-atlas.vercel.app/</loc></url>
-  <url><loc>https://pakistan-atlas.vercel.app/index.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/abbottabad.html</loc></url>
   <url><loc>https://pakistan-atlas.vercel.app/about.html</loc></url>
-  <url><loc>https://pakistan-atlas.vercel.app/contact.html</loc></url>
-  <url><loc>https://pakistan-atlas.vercel.app/privacy.html</loc></url>
-  <url><loc>https://pakistan-atlas.vercel.app/culture.html</loc></url>
-  <url><loc>https://pakistan-atlas.vercel.app/education.html</loc></url>
-  <url><loc>https://pakistan-atlas.vercel.app/health.html</loc></url>
-  <url><loc>https://pakistan-atlas.vercel.app/history.html</loc></url>
-  <url><loc>https://pakistan-atlas.vercel.app/latest-news.html</loc></url>
-  <url><loc>https://pakistan-atlas.vercel.app/current-affairs.html</loc></url>
-  <url><loc>https://pakistan-atlas.vercel.app/politics.html</loc></url>
-  <url><loc>https://pakistan-atlas.vercel.app/sports.html</loc></url>
-  <url><loc>https://pakistan-atlas.vercel.app/islamabad.html</loc></url>
-  <url><loc>https://pakistan-atlas.vercel.app/islamabad-gallery.html</loc></url>
-  <url><loc>https://pakistan-atlas.vercel.app/peshawar.html</loc></url>
-  <url><loc>https://pakistan-atlas.vercel.app/swat.html</loc></url>
-  <url><loc>https://pakistan-atlas.vercel.app/province.html?id=ict</loc></url>
-  <url><loc>https://pakistan-atlas.vercel.app/province.html?id=kpk</loc></url>
-  <url><loc>https://pakistan-atlas.vercel.app/province.html?id=punjab</loc></url>
   <url><loc>https://pakistan-atlas.vercel.app/allai.html</loc></url>
-  <url><loc>https://pakistan-atlas.vercel.app/battagram.html</loc></url>
   <url><loc>https://pakistan-atlas.vercel.app/attock.html</loc></url>
   <url><loc>https://pakistan-atlas.vercel.app/bahawalnagar.html</loc></url>
   <url><loc>https://pakistan-atlas.vercel.app/bahawalpur.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/bajaur.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/bannu.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/bar-swat.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/battagram.html</loc></url>
   <url><loc>https://pakistan-atlas.vercel.app/bhakkar.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/buner.html</loc></url>
   <url><loc>https://pakistan-atlas.vercel.app/chakwal.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/charsadda.html</loc></url>
   <url><loc>https://pakistan-atlas.vercel.app/chiniot.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/contact.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/culture.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/current-affairs.html</loc></url>
   <url><loc>https://pakistan-atlas.vercel.app/dera-ghazi-khan.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/dera-ismail-khan.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/disclaimer.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/districts.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/education.html</loc></url>
   <url><loc>https://pakistan-atlas.vercel.app/faisalabad.html</loc></url>
   <url><loc>https://pakistan-atlas.vercel.app/gujranwala.html</loc></url>
   <url><loc>https://pakistan-atlas.vercel.app/gujrat.html</loc></url>
   <url><loc>https://pakistan-atlas.vercel.app/hafizabad.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/hangu.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/haripur.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/health.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/history.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/islamabad.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/islamabad-gallery.html</loc></url>
   <url><loc>https://pakistan-atlas.vercel.app/jhang.html</loc></url>
   <url><loc>https://pakistan-atlas.vercel.app/jhelum.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/karak.html</loc></url>
   <url><loc>https://pakistan-atlas.vercel.app/kasur.html</loc></url>
   <url><loc>https://pakistan-atlas.vercel.app/khanewal.html</loc></url>
   <url><loc>https://pakistan-atlas.vercel.app/khushab.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/khyber.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/kohat.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/kolai-palas.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/kurram.html</loc></url>
   <url><loc>https://pakistan-atlas.vercel.app/lahore.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/lakki-marwat.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/latest-news.html</loc></url>
   <url><loc>https://pakistan-atlas.vercel.app/layyah.html</loc></url>
   <url><loc>https://pakistan-atlas.vercel.app/lodhran.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/lower-chitral.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/lower-dir.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/lower-kohistan.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/malakand.html</loc></url>
   <url><loc>https://pakistan-atlas.vercel.app/mandi-bahauddin.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/mansehra.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/mardan.html</loc></url>
   <url><loc>https://pakistan-atlas.vercel.app/mianwali.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/mohmand.html</loc></url>
   <url><loc>https://pakistan-atlas.vercel.app/multan.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/murree.html</loc></url>
   <url><loc>https://pakistan-atlas.vercel.app/muzaffargarh.html</loc></url>
   <url><loc>https://pakistan-atlas.vercel.app/nankana-sahib.html</loc></url>
   <url><loc>https://pakistan-atlas.vercel.app/narowal.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/news.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/north-waziristan.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/nowshera.html</loc></url>
   <url><loc>https://pakistan-atlas.vercel.app/okara.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/orakzai.html</loc></url>
   <url><loc>https://pakistan-atlas.vercel.app/pakpattan.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/peshawar.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/politics.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/privacy.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/provinces.html</loc></url>
   <url><loc>https://pakistan-atlas.vercel.app/rahim-yar-khan.html</loc></url>
   <url><loc>https://pakistan-atlas.vercel.app/rajanpur.html</loc></url>
   <url><loc>https://pakistan-atlas.vercel.app/rawalpindi.html</loc></url>
   <url><loc>https://pakistan-atlas.vercel.app/sahiwal.html</loc></url>
   <url><loc>https://pakistan-atlas.vercel.app/sargodha.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/shangla.html</loc></url>
   <url><loc>https://pakistan-atlas.vercel.app/sheikhupura.html</loc></url>
   <url><loc>https://pakistan-atlas.vercel.app/sialkot.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/south-waziristan.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/sports.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/swabi.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/swat.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/tank.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/terms.html</loc></url>
   <url><loc>https://pakistan-atlas.vercel.app/toba-tek-singh.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/torghar.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/upper-chitral.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/upper-dir.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/upper-kohistan.html</loc></url>
   <url><loc>https://pakistan-atlas.vercel.app/vehari.html</loc></url>
-  <url><loc>https://pakistan-atlas.vercel.app/murree.html</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/province.html?id=ict</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/province.html?id=punjab</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/province.html?id=kpk</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/province.html?id=sindh</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/province.html?id=balochistan</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/province.html?id=gb</loc></url>
+  <url><loc>https://pakistan-atlas.vercel.app/province.html?id=ajk</loc></url>
 </urlset>

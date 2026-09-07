@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>District — Pakistan Atlas</title>
+  <meta name="description" content="Read district information from Pakistan Atlas, including population, education, hospitals, culture and public issues." />
+  <link rel="canonical" href="https://pakistan-atlas.vercel.app/district.html" />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600&family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -26,6 +28,8 @@
     const params = new URLSearchParams(location.search);
     const pid = params.get("p") || "punjab";
     const slug = params.get("d");
+    const canonical = document.querySelector('link[rel="canonical"]');
+    if (canonical && slug) canonical.href = new URL("district.html?p=" + encodeURIComponent(pid) + "&d=" + encodeURIComponent(slug), location.href).href;
     fetch("data/districts.json").then(r => r.json()).then(db => {
       const p = db[pid];
       const d = p && p.districts.find(x => x.slug === slug);
