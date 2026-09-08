@@ -7,6 +7,32 @@
   <meta name="description" content="Attock District in Rawalpindi Division, Punjab: six tehsils, PBS 2023 population, languages, schools, hospitals, Kamra and rainfed farms." />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600&family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .district-photo {
+      margin: 0 0 2.25rem;
+      background: #07100e;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 16px 40px rgba(0,0,0,.18);
+    }
+    .district-photo img {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+    }
+    .district-photo figcaption {
+      padding: .7rem 1rem;
+      font-size: .9rem;
+      opacity: .78;
+      text-align: center;
+    }
+    @media (max-width: 640px) {
+      .district-photo { border-radius: 12px; margin-bottom: 1.5rem; }
+      .district-photo figcaption { font-size: .82rem; padding: .55rem .75rem; }
+    }
+  </style>
 </head>
 <body>
   <div id="site-header"></div>
@@ -17,6 +43,11 @@
   </div></div>
   <section>
     <div class="container prose">
+      <figure class="district-photo">
+        <img src="assets/attock/attock-night.webp" alt="Attock at night with the I Love Attock landmark and illuminated public square" width="960" height="720" fetchpriority="high" decoding="async" />
+        <figcaption>Attock at night · featured district photograph</figcaption>
+      </figure>
+
       <p>Attock is Punjab’s north-west corner, where the Grand Trunk Road and the railway cross the Indus. Attock Fort stands on the left bank. Campbellpur was the older colonial name for the headquarters town; Attock City is the name in use now. Behind the river the district is Potohar plateau, the Kala Chitta ridge, and rainfed wheat country.</p>
 
       <h2>Population and area (2023)</h2>
