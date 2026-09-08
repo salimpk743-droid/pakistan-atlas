@@ -1,0 +1,29 @@
+[1mdiff --cc province.html[m
+[1mindex acafbeb,5e0cfba..0000000[m
+[1m--- a/province.html[m
+[1m+++ b/province.html[m
+[36m@@@ -116,18 -115,11 +116,24 @@@[m
+        };[m
+        return pages[slug] || ("district.html?p=" + id + "&d=" + slug);[m
+      }[m
+[32m +    function imageForDistrict(d) {[m
+[32m +      if (d.slug === "attock") return ATTOCK_IMAGE;[m
+[32m +      return "images/" + id + ".jpg";[m
+[32m +    }[m
+      function draw(list) {[m
+        const photos=window.ISB_PHOTOS||[];[m
+[32m++<<<<<<< HEAD[m
+[32m +      const img = (id === "ict" && photos[0]) ? photos[0].src : "";[m
+[32m +      document.getElementById("cards").innerHTML = list.map(d => {[m
+[32m +        const src = id === "ict" ? img : imageForDistrict(d);[m
+[32m +        const fallback = d.slug === "attock" ? ATTOCK_IMAGE : "";[m
+[32m +        return '<article class="card"><img src="' + src + '" alt="' + d.name + '" loading="lazy" decoding="async"' + (fallback ? ' onerror="this.onerror=null;this.src=\'' + fallback + '\'"' : '') + ' /><div class="card-body"><span class="badge">' + d.hq + '</span><h3>' + d.name + '</h3><p>' + d.about.slice(0, 140) + '…</p><p class="meta"><a href="' + hrefFor(d.slug) + '">Read this district →</a></p></div></article>';[m
+[32m +      }).join("");[m
+[32m++=======[m
+[32m+       document.getElementById("cards").innerHTML = list.map(d =>[m
+[32m+         '<article class="card"><img src="' + (d.slug === "attock" ? "assets/attock/attock-night.jpg" : ((id === "ict" && photos[0]) ? photos[0].src : ((id === "ict") ? "" : ("images/" + id + ".jpg")))) + '" alt="' + d.name + ' district" /><div class="card-body"><span class="badge">' + d.hq + '</span><h3>' + d.name + '</h3><p>' + d.about.slice(0, 140) + '…</p><p class="meta"><a href="' + hrefFor(d.slug) + '">Read this district →</a></p></div></article>'[m
+[32m+       ).join("");[m
+[32m++>>>>>>> 1502b35 (Fix Attock district images)[m
+      }[m
+      document.addEventListener("input", e => {[m
+        if (e.target.id !== "q") return;[m
