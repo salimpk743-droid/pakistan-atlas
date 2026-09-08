@@ -115,12 +115,18 @@
       };
       return pages[slug] || ("district.html?p=" + id + "&d=" + slug);
     }
+    function imageForDistrict(d) {
+      if (d.slug === "attock") return "assets/attock/attock-night.webp";
+      return "images/" + d.slug + ".jpg";
+    }
     function draw(list) {
       const photos=window.ISB_PHOTOS||[];
-      const img = (id === "ict" && photos[0]) ? photos[0].src : ((id === "ict") ? "" : ("images/" + id + ".jpg"));
-      document.getElementById("cards").innerHTML = list.map(d =>
-        '<article class="card"><img src="' + img + '" alt="' + d.name + '" /><div class="card-body"><span class="badge">' + d.hq + '</span><h3>' + d.name + '</h3><p>' + d.about.slice(0, 140) + '…</p><p class="meta"><a href="' + hrefFor(d.slug) + '">Read this district →</a></p></div></article>'
-      ).join("");
+      const img = (id === "ict" && photos[0]) ? photos[0].src : "";
+      document.getElementById("cards").innerHTML = list.map(d => {
+        const src = id === "ict" ? img : imageForDistrict(d);
+        const fallback = d.slug === "attock" ? "https://raw.githubusercontent.com/salimpk743-droid/pakistan-atlas/main/assets/attock/attock-night.webp" : "";
+        return '<article class="card"><img src="' + src + '" alt="' + d.name + '"' + (fallback ? ' onerror="this.onerror=null;this.src=\'' + fallback + '\'"' : '') + ' /><div class="card-body"><span class="badge">' + d.hq + '</span><h3>' + d.name + '</h3><p>' + d.about.slice(0, 140) + '…</p><p class="meta"><a href="' + hrefFor(d.slug) + '">Read this district →</a></p></div></article>';
+      }).join("");
     }
     document.addEventListener("input", e => {
       if (e.target.id !== "q") return;
