@@ -46,7 +46,7 @@
     const canonical = document.querySelector('link[rel="canonical"]');
     if (canonical) canonical.href = new URL("province.html?id=" + encodeURIComponent(id), location.href).href;
     let all = [];
-    const ATTOCK_IMAGE = "https://raw.githubusercontent.com/salimpk743-droid/pakistan-atlas/main/assets/attock/attock-night.webp?v=2";
+    const ATTOCK_IMAGE = "assets/attock/attock-night.jpg";
     function openPhoto(p){
       var lb=document.getElementById('lb');
       document.getElementById('lb-img').src=p.src;
