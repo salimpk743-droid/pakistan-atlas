@@ -35,10 +35,14 @@
       const d = p && p.districts.find(x => x.slug === slug);
       if (!d) { document.getElementById("title").textContent = "District not found"; return; }
       document.title = d.name + " — " + p.name;
+      const provinceRoutes = { ict: "islamabad-capital-territory.html", punjab: "punjab.html", kpk: "khyber-pakhtunkhwa.html", sindh: "sindh.html", balochistan: "balochistan.html", gb: "gilgit-baltistan.html", ajk: "azad-kashmir.html" };
+      const provinceUrl = provinceRoutes[pid] || "provinces.html";
+      if (canonical) canonical.href = "https://pakistan-atlas.vercel.app/district.html?p=" + encodeURIComponent(pid) + "&d=" + encodeURIComponent(slug);
+      document.querySelector('meta[name="description"]').content = "Learn about " + d.name + " District in " + p.name + ", including population, headquarters, education, health, culture and local places.";
       document.getElementById("title").textContent = d.name + " District";
       document.getElementById("pop").textContent = "Headquarters: " + d.hq + " · " + d.pop;
-      document.getElementById("crumb").innerHTML = `<a href="index.html" style="color:#fff">Home</a> · <a href="province.html?id=${pid}" style="color:#fff">${p.name}</a>`;
-      document.getElementById("back").href = "province.html?id=" + pid;
+      document.getElementById("crumb").innerHTML = `<a href="index.html" style="color:#fff">Home</a> · <a href="${provinceUrl}" style="color:#fff">${p.name}</a>`;
+      document.getElementById("back").href = provinceUrl;
       document.getElementById("body").innerHTML = `
         <p>${d.about}</p>
         <h2>Education</h2><p>${d.education}</p>

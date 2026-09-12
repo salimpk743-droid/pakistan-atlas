@@ -1,5 +1,14 @@
 {
   "cleanUrls": false,
+  "redirects": [
+    { "source": "/province.html", "has": [{ "type": "query", "key": "id", "value": "punjab" }], "destination": "/punjab.html", "permanent": true },
+    { "source": "/province.html", "has": [{ "type": "query", "key": "id", "value": "sindh" }], "destination": "/sindh.html", "permanent": true },
+    { "source": "/province.html", "has": [{ "type": "query", "key": "id", "value": "kpk" }], "destination": "/khyber-pakhtunkhwa.html", "permanent": true },
+    { "source": "/province.html", "has": [{ "type": "query", "key": "id", "value": "balochistan" }], "destination": "/balochistan.html", "permanent": true },
+    { "source": "/province.html", "has": [{ "type": "query", "key": "gb" }], "destination": "/gilgit-baltistan.html", "permanent": true },
+    { "source": "/province.html", "has": [{ "type": "query", "key": "ajk" }], "destination": "/azad-kashmir.html", "permanent": true },
+    { "source": "/province.html", "has": [{ "type": "query", "key": "id", "value": "ict" }], "destination": "/islamabad-capital-territory.html", "permanent": true }
+  ],
   "headers": [
     {
       "source": "/(.*)",

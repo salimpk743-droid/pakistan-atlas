@@ -30,6 +30,7 @@ pakistan-atlas/
   ads.txt
   robots.txt
   sitemap.xml
+  scripts/generate-seo.js
   vercel.json
   css/style.css
   js/app.js
@@ -96,6 +97,16 @@ Edit `data/provinces.json` → `district_samples` array:
 ```
 
 Drop a photo at `images/villages/chakwal.jpg`.
+
+## Regenerate SEO files
+
+After adding or removing HTML district pages or changing the province data, run:
+
+```bash
+node scripts/generate-seo.js
+```
+
+The script regenerates the seven static province landing pages, adds consistent canonical and social metadata to HTML pages, updates legacy province links, and rebuilds `sitemap.xml` using `https://pakistan-atlas.vercel.app` as the canonical hostname. Islamabad remains a district page at `islamabad.html`; its territory landing page is `islamabad-capital-territory.html`.
 
 ## Colours
 

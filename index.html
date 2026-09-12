@@ -6,9 +6,28 @@
   <title>Pakistan Atlas — Provinces, Districts, Culture and Facts</title>
   <meta name="description" content="A student-friendly atlas of Pakistan: provinces, districts, population, universities, hospitals, culture and current public updates. Built so young Pakistanis can learn every corner of the country." />
   <link rel="canonical" href="https://pakistan-atlas.vercel.app/" />
+  <meta property="og:title" content="Pakistan Atlas — Provinces, Districts, Culture and Facts" />
+  <meta property="og:description" content="A student-friendly atlas of Pakistan: provinces, districts, population, universities, hospitals, culture and current public updates. Built so young Pakistanis can learn every corner of the country." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://pakistan-atlas.vercel.app/" />
+  <meta property="og:image" content="https://pakistan-atlas.vercel.app/images/flag-pakistan.svg" />
+  <meta property="og:site_name" content="Pakistan Atlas" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Pakistan Atlas — Provinces, Districts, Culture and Facts" />
+  <meta name="twitter:description" content="A student-friendly atlas of Pakistan: provinces, districts, population, universities, hospitals, culture and current public updates. Built so young Pakistanis can learn every corner of the country." />
+  <meta name="twitter:image" content="https://pakistan-atlas.vercel.app/images/flag-pakistan.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600&family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css?v=3" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Pakistan Atlas",
+    "url": "https://pakistan-atlas.vercel.app/",
+    "description": "A student-friendly atlas of Pakistan's provinces, districts, culture and public information."
+  }
+  </script>
 </head>
 <body>
   <div id="site-header"></div>
@@ -17,13 +36,13 @@
     <aside class="side-panel">
       <h3>Explore</h3>
       <a class="side-link news" href="latest-news.html">Latest news</a>
-      <a class="side-link" href="province.html?id=ict">Islamabad</a>
-      <a class="side-link" href="province.html?id=punjab">Punjab</a>
-      <a class="side-link" href="province.html?id=kpk">Khyber Pakhtunkhwa</a>
-      <a class="side-link" href="province.html?id=sindh">Sindh</a>
-      <a class="side-link" href="province.html?id=balochistan">Balochistan</a>
-      <a class="side-link" href="province.html?id=gb">Gilgit Baltistan</a>
-      <a class="side-link" href="province.html?id=ajk">Azad Kashmir</a>
+      <a class="side-link" href="islamabad.html">Islamabad</a>
+      <a class="side-link" href="punjab.html">Punjab</a>
+      <a class="side-link" href="khyber-pakhtunkhwa.html">Khyber Pakhtunkhwa</a>
+      <a class="side-link" href="sindh.html">Sindh</a>
+      <a class="side-link" href="balochistan.html">Balochistan</a>
+      <a class="side-link" href="gilgit-baltistan.html">Gilgit Baltistan</a>
+      <a class="side-link" href="azad-kashmir.html">Azad Kashmir</a>
     </aside>
 
     <div>
@@ -71,15 +90,16 @@
   <script>
     loadData().then(data => {
       const box = document.getElementById("homeUnits");
+      const provinceRoutes = { ict: "islamabad-capital-territory.html", punjab: "punjab.html", kpk: "khyber-pakhtunkhwa.html", sindh: "sindh.html", balochistan: "balochistan.html", gb: "gilgit-baltistan.html", ajk: "azad-kashmir.html" };
       box.innerHTML = data.units.map(u => `
         <article class="card">
-          <a href="province.html?id=${u.id}"><img src="images/${u.id}.jpg" alt="${u.name}" /></a>
+          <a href="${provinceRoutes[u.id]}"><img src="images/flag-pakistan.svg" alt="Flag of Pakistan" loading="lazy" width="240" height="150" /></a>
           <div class="card-body">
             <span class="badge">${u.type}</span>
-            <h3><a href="province.html?id=${u.id}">${u.name}</a> <small class="urdu">${u.urdu}</small></h3>
+            <h3><a href="${provinceRoutes[u.id]}">${u.name}</a> <small class="urdu">${u.urdu}</small></h3>
             <p>Capital ${u.capital} · Population ${fmt(u.population_2023)}</p>
             <p>${u.culture.slice(0, 140)}…</p>
-            <p class="meta"><a href="province.html?id=${u.id}">Open all districts →</a></p>
+            <p class="meta"><a href="${provinceRoutes[u.id]}">Open all districts →</a></p>
           </div>
         </article>`).join("");
     });
