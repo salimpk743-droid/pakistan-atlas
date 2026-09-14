@@ -1,40 +1,1528 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>History — Pakistan Atlas</title>
-  <meta name="description" content="Learn about History with facts, places, history and public information from Pakistan Atlas." />
-  <link rel="canonical" href="https://pakistan-atlas.vercel.app/history.html" />
-  <meta property="og:title" content="History — Pakistan Atlas" />
-  <meta property="og:description" content="Learn about History with facts, places, history and public information from Pakistan Atlas." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://pakistan-atlas.vercel.app/history.html" />
-  <meta property="og:image" content="https://pakistan-atlas.vercel.app/images/flag-pakistan.svg" />
-  <meta property="og:site_name" content="Pakistan Atlas" />
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="History — Pakistan Atlas" />
-  <meta name="twitter:description" content="Learn about History with facts, places, history and public information from Pakistan Atlas." />
-  <meta name="twitter:image" content="https://pakistan-atlas.vercel.app/images/flag-pakistan.svg" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pakistan Political History 1947–2026 | Pakistan Atlas</title>
+  <meta name="description" content="Comprehensive political history of Pakistan from 1947 to 2026, covering constitutions, elections, governments, prime ministers, presidents, political parties, military and civilian rule, parliament, major crises and democratic developments.">
+  <meta name="keywords" content="Pakistan political history, Pakistan history 1947 2026, Pakistan government history, Pakistan elections history, Pakistan prime ministers, Pakistan presidents, Pakistan constitution history, Pakistan political parties, Pakistan democracy, Pakistan parliament">
+  <link rel="canonical" href="https://pakistan-atlas.vercel.app/history.html">
+  <meta property="og:title" content="Pakistan Political History 1947–2026 | Pakistan Atlas">
+  <meta property="og:description" content="Pakistan’s political journey from independence to 2026: constitutions, elections, governments, prime ministers, presidents, parties, parliament and major crises.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://pakistan-atlas.vercel.app/history.html">
+  <meta property="og:image" content="https://pakistan-atlas.vercel.app/images/flag-pakistan.svg">
+  <meta property="og:site_name" content="Pakistan Atlas">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Pakistan Political History 1947–2026">
+  <meta name="twitter:description" content="A national political-history archive of Pakistan from 1947 through the verified record of 2026.">
+  <meta name="twitter:image" content="https://pakistan-atlas.vercel.app/images/flag-pakistan.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600&family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=3">
+  <style>
+    :root {
+      --archive-green: #073b2a;
+      --archive-deep: #052318;
+      --archive-gold: #c79b45;
+      --archive-cream: #f5f0e6;
+      --archive-paper: #fffdf8;
+      --archive-ink: #17231e;
+      --archive-muted: #5f6c66;
+      --archive-line: #d8ddd6;
+      --archive-red: #8d302b;
+    }
+    html { scroll-behavior: smooth; }
+    .skip-link {
+      position: absolute; left: -999px; top: 8px; background: #fff;
+      color: var(--archive-green); padding: 8px 14px; z-index: 200;
+      font-family: "Source Sans 3", Arial, sans-serif; font-weight: 700;
+    }
+    .skip-link:focus { left: 12px; }
+    .archive-hero {
+      background:
+        linear-gradient(160deg, rgba(5, 35, 24, .97), rgba(7, 59, 42, .92)),
+        radial-gradient(circle at 88% 0%, rgba(199, 155, 69, .22), transparent 42%);
+      color: #fff; padding: 2.2rem 0 2.4rem; border-bottom: 5px solid var(--archive-gold);
+    }
+    .archive-hero .wrap { width: min(1120px, 92%); margin: 0 auto; }
+    .archive-hero .eyebrow {
+      margin: 0; font-family: "Source Sans 3", Arial, sans-serif;
+      font-size: .72rem; letter-spacing: .2em; text-transform: uppercase;
+      color: #e8c978; font-weight: 700;
+    }
+    .archive-hero h1 {
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: clamp(2.5rem, 4.2vw, 3.75rem);
+      line-height: 1.15; font-weight: 700; letter-spacing: -.02em;
+      max-width: 16em; margin: .5rem 0 .35rem; color: #fff;
+    }
+    .archive-hero .subtitle {
+      margin: 0 0 1rem; font-family: "Source Sans 3", Arial, sans-serif;
+      font-size: clamp(.95rem, 1.5vw, 1.15rem); letter-spacing: .18em;
+      text-transform: uppercase; color: #f0cf78; font-weight: 700;
+    }
+    .archive-hero .deck {
+      max-width: 46em; margin: 0; font-family: "Source Serif 4", Georgia, serif;
+      font-size: 1.05rem; line-height: 1.7; color: #e4ece7;
+    }
+    .archive-hero .crumb {
+      margin: .9rem 0 0; font-family: "Source Sans 3", Arial, sans-serif;
+      font-size: .82rem; color: #c9d6cf;
+    }
+    .archive-hero .crumb a { color: #f0cf78; }
+    .archive-main {
+      width: min(1120px, 92%); margin: 0 auto; padding: 2rem 0 4.5rem;
+      color: var(--archive-ink); font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+      line-height: 1.75;
+    }
+    .archive-main section { padding: 0; }
+    .archive-main h2 {
+      font-family: "Playfair Display", Georgia, serif; color: var(--archive-green);
+      font-size: clamp(1.45rem, 2.4vw, 1.95rem); line-height: 1.2;
+      margin: 0 0 .9rem; letter-spacing: -.015em;
+    }
+    .archive-main h3 {
+      font-family: "Playfair Display", Georgia, serif; color: var(--archive-red);
+      font-size: 1.18rem; margin: 1.6rem 0 .55rem;
+    }
+    .archive-main h4 {
+      font-family: "Source Sans 3", Arial, sans-serif; color: var(--archive-green);
+      font-size: .92rem; letter-spacing: .08em; text-transform: uppercase;
+      margin: 1.2rem 0 .4rem;
+    }
+    .archive-main p { margin: 0 0 1rem; font-size: 1.02rem; }
+    .archive-main a { color: var(--archive-green); }
+    .archive-main a:hover { color: #0b5a3d; }
+    .kicker {
+      display: inline-block; font-family: "Source Sans 3", Arial, sans-serif;
+      font-size: .72rem; letter-spacing: .16em; text-transform: uppercase;
+      color: var(--archive-gold); font-weight: 700; margin-bottom: .35rem;
+    }
+    .lede {
+      background: var(--archive-paper); border-left: 5px solid var(--archive-gold);
+      padding: 1.5rem 1.6rem; box-shadow: 0 10px 28px rgba(7, 59, 42, .05); margin: 0 0 1.6rem;
+    }
+    .lede p { margin: 0; font-size: 1.05rem; }
+    .archive-nav {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin: 0 0 2rem;
+    }
+    .archive-card {
+      display: flex; flex-direction: column; background: var(--archive-paper);
+      border: 1px solid var(--archive-line); border-top: 4px solid var(--archive-green);
+      padding: 1.15rem 1.15rem 1.05rem; text-decoration: none; color: inherit;
+      min-height: 100%; box-shadow: 0 8px 22px rgba(7, 59, 42, .04);
+      transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+    }
+    .archive-card:hover, .archive-card:focus-visible {
+      transform: translateY(-3px); box-shadow: 0 14px 30px rgba(7, 59, 42, .12);
+      border-top-color: var(--archive-gold); color: inherit;
+    }
+    .archive-card:focus-visible { outline: 3px solid var(--archive-gold); outline-offset: 3px; }
+    .archive-card .card-num {
+      font-family: "Source Sans 3", Arial, sans-serif; font-size: .72rem;
+      letter-spacing: .16em; text-transform: uppercase; color: var(--archive-gold); font-weight: 700;
+    }
+    .archive-card .card-title {
+      display: block; font-family: "Playfair Display", Georgia, serif; font-size: 1.12rem;
+      color: var(--archive-green); margin: .35rem 0 .45rem; font-weight: 700; line-height: 1.25;
+    }
+    .archive-card p {
+      margin: 0 0 1rem; color: var(--archive-muted); font-size: .9rem; flex: 1;
+    }
+    .archive-card .card-action {
+      font-family: "Source Sans 3", Arial, sans-serif; font-size: .82rem;
+      font-weight: 700; color: var(--archive-green);
+    }
+    .fact-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 0 0 2rem;
+    }
+    .fact {
+      background: var(--archive-green); color: #fff; padding: 1.1rem 1.05rem 1.15rem; min-height: 118px;
+    }
+    .fact strong {
+      display: block; font-family: "Playfair Display", Georgia, serif; font-size: 1.55rem;
+      color: #f0cf78; line-height: 1.1; margin-bottom: .4rem;
+    }
+    .fact span { font-family: "Source Sans 3", Arial, sans-serif; font-size: .8rem; color: #d5e4dc; }
+    .section {
+      background: var(--archive-paper); margin: 0 0 1.35rem; padding: 1.7rem 1.7rem 1.5rem;
+      border-top: 4px solid var(--archive-green); box-shadow: 0 10px 26px rgba(7, 59, 42, .045);
+      scroll-margin-top: 88px;
+    }
+    .section.featured { border-top-color: var(--archive-gold); }
+    .section.dark { background: var(--archive-deep); color: #e6eee9; border-top-color: var(--archive-gold); }
+    .section.dark h2 { color: #f0cf78; }
+    .section.dark h3 { color: #e8c978; }
+    .section.dark a { color: #f0cf78; }
+    .section.dark .kicker { color: #e8c978; }
+    .section.dark p { color: #dce6e1; }
+    .jump {
+      display: flex; flex-wrap: wrap; gap: 8px; margin: .2rem 0 1.1rem;
+    }
+    .jump a {
+      font-family: "Source Sans 3", Arial, sans-serif; font-size: .78rem; font-weight: 600;
+      padding: .28rem .7rem; border: 1px solid var(--archive-line); border-radius: 999px;
+      background: #f3f6f2; color: var(--archive-green);
+    }
+    .jump a:hover, .jump a:focus-visible {
+      background: var(--archive-green); color: #fff; border-color: var(--archive-green);
+    }
+    .timeline { border-left: 3px solid var(--archive-gold); padding: 0 0 0 1.2rem; margin: 1.1rem 0 1.2rem; }
+    .timeline article { margin: 0 0 1rem; }
+    .timeline strong { color: var(--archive-green); }
+    .section.dark .timeline strong { color: #f0cf78; }
+    .names, .callout {
+      background: #eef1eb; padding: 1rem 1.1rem; margin: 1rem 0;
+    }
+    .names strong, .callout strong { color: var(--archive-green); }
+    .callout { border-left: 4px solid var(--archive-gold); background: #f7f1e2; }
+    .note {
+      font-family: "Source Sans 3", Arial, sans-serif; font-size: .9rem; color: var(--archive-muted);
+      background: #f3f6f2; padding: .85rem 1rem; margin: 1rem 0;
+    }
+    .record-table {
+      width: 100%; border-collapse: collapse; font-family: "Source Sans 3", Arial, sans-serif;
+      font-size: .88rem; margin: 0;
+    }
+    .record-table th, .record-table td {
+      text-align: left; padding: .5rem .55rem; border-bottom: 1px solid var(--archive-line); vertical-align: top;
+    }
+    .record-table th { background: var(--archive-green); color: #fff; font-weight: 600; }
+    .record-table tbody tr:nth-child(even) { background: #f3f6f2; }
+    .table-wrap { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; margin: .7rem 0 1.1rem; }
+    .back-archive {
+      display: inline-block; margin-top: .4rem; font-family: "Source Sans 3", Arial, sans-serif;
+      font-size: .82rem; font-weight: 700;
+    }
+    .source-list { list-style: none; padding: 0; margin: .4rem 0 0; font-family: "Source Sans 3", Arial, sans-serif; font-size: .92rem; }
+    .source-list li { margin: 0 0 .45rem; }
+    .urdu-note {
+      direction: rtl; text-align: right; font-family: "Noto Nastaliq Urdu", serif;
+      background: #f1eee5; border-right: 5px solid var(--archive-gold);
+      padding: 1.4rem 1.5rem; margin-top: 1.4rem;
+    }
+    .urdu-note h2 { text-align: right; }
+    .const-track { display: grid; gap: 10px; margin: 1rem 0 1.2rem; }
+    .const-item {
+      display: grid; grid-template-columns: 7.2rem 1fr; gap: 12px; background: #f7f1e2;
+      border-left: 4px solid var(--archive-gold); padding: .85rem 1rem;
+    }
+    .const-item b {
+      font-family: "Playfair Display", Georgia, serif; color: var(--archive-green); font-size: 1.15rem;
+    }
+    .const-item span { font-family: "Source Sans 3", Arial, sans-serif; font-size: .9rem; color: var(--archive-muted); }
+    .office-grid, .party-grid, .crisis-grid, .election-grid, .figure-grid, .now-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 1rem 0 1.2rem;
+    }
+    .office-card, .party-card, .crisis-card, .election-card, .figure-card, .now-card {
+      background: #fff; border: 1px solid var(--archive-line); padding: 1rem 1.05rem;
+    }
+    .office-card strong, .party-card strong, .crisis-card strong, .election-card strong, .figure-card strong, .now-card strong {
+      display: block; font-family: "Playfair Display", Georgia, serif; color: var(--archive-green);
+      font-size: 1.05rem; margin-bottom: .25rem;
+    }
+    .office-card em, .party-card em, .now-card em, .election-card em {
+      display: block; font-style: normal; font-family: "Source Sans 3", Arial, sans-serif;
+      font-size: .78rem; letter-spacing: .06em; text-transform: uppercase; color: var(--archive-gold);
+      font-weight: 700; margin-bottom: .35rem;
+    }
+    .office-card p, .party-card p, .crisis-card p, .election-card p, .figure-card p, .now-card p {
+      margin: 0; font-size: .92rem; color: var(--archive-muted);
+    }
+    .tag {
+      display: inline-block; font-family: "Source Sans 3", Arial, sans-serif; font-size: .7rem;
+      font-weight: 700; letter-spacing: .04em; text-transform: uppercase; padding: .12rem .45rem;
+      border-radius: 999px; margin: 0 .25rem .35rem 0;
+    }
+    .tag.civ { background: #e7f3ea; color: #0b5a3d; }
+    .tag.mil { background: #f4e4e2; color: #8d302b; }
+    .tag.care { background: #f7f1e2; color: #7a5a12; }
+    .tag.act { background: #e8eef5; color: #2a4666; }
+    .era-bar {
+      display: grid; grid-template-columns: repeat(6, 1fr); gap: 6px; margin: 1rem 0 1.3rem;
+      font-family: "Source Sans 3", Arial, sans-serif; font-size: .72rem; font-weight: 700;
+    }
+    .era-bar span { padding: .55rem .4rem; text-align: center; color: #fff; }
+    .era-bar .civ { background: #0b5a3d; }
+    .era-bar .mil { background: #6e2b27; }
+    .era-bar .mix { background: #7a5a12; }
+    .decade {
+      font-family: "Source Sans 3", Arial, sans-serif; font-size: .78rem; letter-spacing: .16em;
+      text-transform: uppercase; color: var(--archive-gold); font-weight: 700;
+      border-top: 1px solid var(--archive-line); padding-top: .8rem; margin: 1.4rem 0 .6rem;
+    }
+    @media (max-width: 980px) {
+      .archive-nav, .fact-grid, .office-grid, .party-grid, .crisis-grid, .election-grid, .figure-grid, .now-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .era-bar { grid-template-columns: repeat(3, 1fr); }
+      .const-item { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 620px) {
+      .archive-nav, .fact-grid, .office-grid, .party-grid, .crisis-grid, .election-grid, .figure-grid, .now-grid {
+        grid-template-columns: 1fr;
+      }
+      .archive-hero { padding: 1.6rem 0 1.8rem; }
+      .section, .lede { padding: 1.2rem; }
+      .record-table { font-size: .8rem; }
+      .era-bar { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Pakistan's Political History, 1947–2026",
+    "description": "A national political-history archive of Pakistan covering constitutions, elections, governments, prime ministers, presidents, political parties, military and civilian rule, parliament and major crises from 1947 through 2026.",
+    "url": "https://pakistan-atlas.vercel.app/history.html",
+    "dateModified": "2026-09-15",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Pakistan Atlas",
+      "url": "https://pakistan-atlas.vercel.app/"
+    }
+  }
+  </script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to political archive</a>
   <div id="site-header"></div>
-  <div class="page-hero"><div class="container">
-    <h1>History</h1>
-    <p>A short spine of the land that became Pakistan — written so a secondary student can follow it.</p>
-  </div></div>
-  <section><div class="container prose">
-    <h2>Deep time</h2>
-    <p>The Indus cities of Mohenjo-daro and Harappa, the Buddhist landscape of Taxila and Swat, and the medieval ports of the Makran and Thatta all sit on today’s district map. History on this site should always name the modern district so a reader can walk from the atlas into the ruin.</p>
-    <h2>The idea of Pakistan</h2>
-    <p>Allama Iqbal’s 1930 address and Quaid-e-Azam Muhammad Ali Jinnah’s legal-political work are the two portraits on the home banner for a reason. Students should read primary lines — the 11 August 1947 assembly speech on equal citizenship — not only slogans.</p>
-    <h2>After 1947</h2>
-    <p>Capital moved from Karachi to Islamabad. Provinces were merged and un-merged. East Pakistan became Bangladesh in 1971. The 18th Amendment in 2010 sent schools and hospitals to the provinces. FATA merged into Khyber Pakhtunkhwa in 2018. Each of those turns still shows up when you open a district page.</p>
-    <h2>How to add a history note</h2>
-    <p>Pick one place (Rohtas in Jhelum, Makli in Thatta, Baltit in Hunza, Ziarat Residency). Write 600 words with dates and a source list. That is better for readers and for AdSense than a copied general essay titled “History of Pakistan”.</p>
-  </div></section>
+
+  <header class="archive-hero">
+    <div class="wrap">
+      <p class="eyebrow">Pakistan Atlas · National Political Archive</p>
+      <h1>Pakistan's Political History</h1>
+      <p class="subtitle">1947 — 2026</p>
+      <p class="deck">
+        A documentary archive of how Pakistan’s political system developed from independence
+        through the verified record of 2026: constitutions, parliament, elections, governments,
+        parties, provinces, military-led and civilian periods, and the crises that reshaped the state.
+      </p>
+      <p class="crumb"><a href="index.html">Home</a> · Political history archive</p>
+    </div>
+  </header>
+
+  <main id="main" class="archive-main">
+
+    <section class="lede" aria-label="Introduction">
+      <p>
+        Pakistan was created on 14 August 1947 as a dominion in the Commonwealth, with a
+        Governor-General and a Prime Minister, and with the Government of India Act 1935 as
+        its interim constitutional framework. The political history that followed is not a
+        single story of democracy or of military rule. It is a record of constitution-making
+        and constitution-breaking; of parliamentary governments, presidential experiments,
+        martial law, caretaker administrations and judicial interventions; of a two-wing
+        federation that ended in 1971; and of a parliamentary republic that, after 2008,
+        completed successive elected transfers even as the civil–military balance and the
+        courts remained central to politics. This page is a collective archive, not a party
+        narrative. Disputed events are attributed. Dates of office follow the National
+        Assembly’s official lists unless a discrepancy is noted.
+      </p>
+    </section>
+
+    <nav class="archive-nav" id="archive-nav" aria-label="Political archive sections">
+      <a class="archive-card" href="#independence">
+        <span class="card-num">01</span>
+        <span class="card-title">Independence & Early State</span>
+        <p>14 August 1947, the Governor-General, the first Prime Minister, the Constituent Assembly and the Objectives Resolution.</p>
+        <span class="card-action">Explore archive →</span>
+      </a>
+      <a class="archive-card" href="#constitutions">
+        <span class="card-num">02</span>
+        <span class="card-title">Constitutions & Institutions</span>
+        <p>The 1935 Act, the Constitutions of 1956, 1962 and 1973, and the major amendments through 2025.</p>
+        <span class="card-action">Explore archive →</span>
+      </a>
+      <a class="archive-card" href="#military-civilian">
+        <span class="card-num">03</span>
+        <span class="card-title">Military Rule & Civilian Rule</span>
+        <p>Martial law, military presidencies, civilian governments and the pattern of interrupted parliamentary politics.</p>
+        <span class="card-action">Explore archive →</span>
+      </a>
+      <a class="archive-card" href="#elections">
+        <span class="card-num">04</span>
+        <span class="card-title">Elections & Governments</span>
+        <p>General elections from 1970 to 2024, prime ministers, presidents and the making of governments.</p>
+        <span class="card-action">Explore archive →</span>
+      </a>
+      <a class="archive-card" href="#parties-leaders">
+        <span class="card-num">05</span>
+        <span class="card-title">Political Parties & Leaders</span>
+        <p>League factions, PPP, PML-N, PTI, regional parties, and the people who held national office.</p>
+        <span class="card-action">Explore archive →</span>
+      </a>
+      <a class="archive-card" href="#federalism">
+        <span class="card-num">06</span>
+        <span class="card-title">Provinces & Federalism</span>
+        <p>One Unit, the 1973 federation, the Eighteenth Amendment, provincial politics and local government.</p>
+        <span class="card-action">Explore archive →</span>
+      </a>
+      <a class="archive-card" href="#political-crises">
+        <span class="card-num">07</span>
+        <span class="card-title">Major Political Crises</span>
+        <p>Dissolutions, coups, judicial cases, emergency, no-confidence and contested elections — with attribution.</p>
+        <span class="card-action">Explore archive →</span>
+      </a>
+      <a class="archive-card" href="#timeline">
+        <span class="card-num">08</span>
+        <span class="card-title">Pakistan's Political Timeline</span>
+        <p>A chronological record from 1947 independence through the verified political record of 2026.</p>
+        <span class="card-action">Explore archive →</span>
+      </a>
+    </nav>
+
+    <div class="fact-grid" role="list">
+      <div class="fact" role="listitem"><strong>1947</strong><span>Independence; Jinnah as Governor-General, Liaquat Ali Khan as Prime Minister</span></div>
+      <div class="fact" role="listitem"><strong>1949</strong><span>Objectives Resolution adopted by the Constituent Assembly</span></div>
+      <div class="fact" role="listitem"><strong>1956</strong><span>First Constitution; Islamic Republic of Pakistan</span></div>
+      <div class="fact" role="listitem"><strong>1970</strong><span>First general election on adult franchise and population basis</span></div>
+      <div class="fact" role="listitem"><strong>1973</strong><span>Current Constitution; bicameral parliamentary federation</span></div>
+      <div class="fact" role="listitem"><strong>1988</strong><span>Return to elected civilian government after the Zia era</span></div>
+      <div class="fact" role="listitem"><strong>2013</strong><span>First elected-to-elected transfer in the post-2008 parliamentary sequence</span></div>
+      <div class="fact" role="listitem"><strong>2024</strong><span>Latest general election; archive endpoint verified through 2026</span></div>
+    </div>
+
+    <article class="section featured" id="independence">
+      <span class="kicker">Foundation of the state</span>
+      <h2>1947 — The New State</h2>
+      <p>
+        At midnight on 14–15 August 1947 the British Indian Empire was partitioned.
+        Pakistan came into existence as a dominion under the Indian Independence Act 1947.
+        The new state had two geographically separated wings, East Bengal (later East Pakistan)
+        and a western grouping of provinces and princely-state territories, with a thousand miles
+        of Indian territory between them. Muhammad Ali Jinnah became the first Governor-General.
+        He was not President of Pakistan: that office did not exist until the 1956 Constitution.
+        Jinnah was also the first President of the Constituent Assembly. Liaquat Ali Khan,
+        leader of the Pakistan Muslim League in the Assembly, became the first Prime Minister
+        on 15 August 1947, the date recorded by the National Assembly’s official list.
+      </p>
+      <p>
+        The immediate constitutional problem was that Pakistan had a state but not a finished
+        constitution. Until a constituent assembly could write one, the Government of India Act 1935,
+        as adapted by the Independence Act and subsequent orders, served as the interim framework.
+        That Act had been designed for a federal British India. It gave the centre wide emergency
+        and residual powers and left the new government to improvise a federation out of provinces,
+        princely states and tribal areas whose accession and administrative integration were still
+        incomplete.
+      </p>
+      <p>
+        The administrative crisis was as severe as the constitutional one. Partition produced
+        one of the largest forced migrations of the twentieth century. Refugee rehabilitation,
+        the division of military and civil assets, the establishment of a central secretariat
+        (first in Karachi), and the need to staff a new civil service all competed with constitution-making.
+        Several princely states acceded to Pakistan, among them Bahawalpur, Khairpur, Kalat
+        (after a disputed interval in 1947–48), and the frontier states. Junagadh’s accession
+        was not made effective. The dispute over Jammu and Kashmir, after the ruler’s accession
+        to India and the first India–Pakistan war of 1947–48, became a lasting feature of
+        Pakistan’s foreign and domestic politics. A United Nations-supervised ceasefire line
+        took shape in 1949; the political consequence inside Pakistan was an early fusion of
+        national security, military influence and Kashmir policy.
+      </p>
+      <p>
+        The early federal structure was asymmetric. East Bengal contained the majority of the
+        population. West Pakistan contained the capital, the larger share of the civil-military
+        elite, and the army’s main recruiting grounds. That imbalance — population in the east,
+        power in the west — was the central unsolved problem of the first twenty-four years.
+        Jinnah died in Karachi on 11 September 1948. Khawaja Nazimuddin succeeded him as
+        Governor-General. Liaquat Ali Khan was assassinated in Rawalpindi on 16 October 1951.
+        Nazimuddin then became Prime Minister, and Ghulam Muhammad, the finance minister,
+        became Governor-General. Those two successions moved the centre of gravity from
+        the League’s political leadership toward the bureaucratic executive — a shift that
+        shaped the 1950s.
+      </p>
+
+      <h3 id="objectives">The Objectives Resolution, 1949</h3>
+      <p>
+        On 7 March 1949 Prime Minister Liaquat Ali Khan introduced the Objectives Resolution
+        in the Constituent Assembly. The Assembly adopted it on 12 March 1949. The Resolution
+        set out the aims that were to guide the future constitution: sovereignty as a trust from
+        God, to be exercised by the people through chosen representatives; democracy, freedom,
+        equality and social justice “as enunciated by Islam”; adequate provision for Muslims to
+        order their lives according to the Quran and Sunnah; and, equally, the safeguarding of
+        the legitimate interests of minorities, including their freedom to practise their religions
+        and develop their cultures.
+      </p>
+      <p>
+        The Resolution was at first a preamble — a statement of intent, not an operative clause
+        that courts could enforce against the rest of the constitution. Its later career is
+        therefore a constitutional story in its own right. When the 1973 Constitution was revived
+        in 1985, the Eighth Amendment inserted the Objectives Resolution into the Constitution
+        as Article 2A, making it a substantive part of the text. Supporters have treated Article 2A
+        as the moral and Islamic foundation of the republic. Critics have argued that converting
+        a preamble into an operative article created a hierarchy of clauses and opened the door
+        to contested judicial interpretation of what “Islamisation” required. Both readings
+        belong in the historical record; the legal fact is the insertion of Article 2A in 1985.
+      </p>
+      <div class="callout">
+        <strong>Offices, not titles.</strong> Jinnah was Governor-General of the Dominion of Pakistan
+        and President of the Constituent Assembly. Liaquat Ali Khan was Prime Minister. Iskander
+        Mirza became the first President only when the 1956 Constitution came into force on
+        23 March 1956. This archive keeps those offices distinct.
+      </div>
+
+      <h3 id="governors-general">Governor-Generals, 1947–1956</h3>
+      <p>
+        The office of Governor-General existed only while Pakistan was a dominion, from independence
+        until 23 March 1956. The Governor-General represented the Crown and, in practice, became
+        a powerful head of state — especially after 1951, when Ghulam Muhammad used the office
+        to dismiss a prime minister and, in 1954, to dissolve the first Constituent Assembly.
+      </p>
+      <div class="table-wrap">
+        <table class="record-table">
+          <thead>
+            <tr><th>Governor-General</th><th>Tenure</th><th>Note</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Muhammad Ali Jinnah</td><td>15 August 1947 – 11 September 1948</td><td>Also President of the Constituent Assembly. Died in office.</td></tr>
+            <tr><td>Khawaja Nazimuddin</td><td>14 September 1948 – 17 October 1951</td><td>Succeeded Jinnah; became Prime Minister after Liaquat’s assassination.</td></tr>
+            <tr><td>Ghulam Muhammad</td><td>17 October 1951 – 7 August 1955</td><td>Dismissed Nazimuddin (1953); dissolved the first Constituent Assembly (1954).</td></tr>
+            <tr><td>Iskander Mirza</td><td>7 August 1955 – 23 March 1956</td><td>Last Governor-General; became first President under the 1956 Constitution.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <a class="back-archive" href="#archive-nav">Back to political archive</a>
+    </article>
+
+    <article class="section featured" id="constitutions">
+      <span class="kicker">Constitutional history</span>
+      <h2>Constitutions & Institutions</h2>
+      <p>
+        Pakistan has had three constitutions (1956, 1962, 1973), one long interim use of a
+        colonial statute (1947–1956), an interim constitution (1972), and repeated extra-constitutional
+        interruptions. The 1973 Constitution remains in force. It has been suspended, revived,
+        and heavily amended. The National Assembly currently publishes the text “as amended up to
+        21 November 2025,” which includes the Twenty-sixth Amendment (2024) and the Twenty-seventh
+        Amendment (2025).
+      </p>
+      <div class="const-track">
+        <div class="const-item"><b>1947–1956</b><span>Government of India Act 1935 as interim constitution. Dominion with Governor-General and Prime Minister. Constituent Assembly also served as legislature.</span></div>
+        <div class="const-item"><b>1956</b><span>First Constitution. Adopted 29 February 1956; in force 23 March 1956. Islamic Republic. Parliamentary system. Unicameral legislature. Iskander Mirza first President.</span></div>
+        <div class="const-item"><b>1958</b><span>7 October: Iskander Mirza abrogates the Constitution and proclaims Martial Law. 27 October: Ayub Khan becomes President. The 1956 Constitution is ended.</span></div>
+        <div class="const-item"><b>1962</b><span>Second Constitution. Presidential system. Unicameral legislature. Indirect elections through Basic Democracies. Promulgated by Ayub Khan.</span></div>
+        <div class="const-item"><b>1969</b><span>Ayub resigns. Yahya Khan assumes power under a second Martial Law. The 1962 Constitution is abrogated. Legal Framework Order 1970 prepares elections.</span></div>
+        <div class="const-item"><b>1972</b><span>Interim Constitution under Zulfikar Ali Bhutto, then President and Chief Martial Law Administrator. Transitional document pending a permanent constitution.</span></div>
+        <div class="const-item"><b>1973</b><span>Third Constitution. Passed 10 April 1973, authenticated 12 April, in force 14 August 1973. Parliamentary. Bicameral Majlis-e-Shoora: National Assembly and Senate. Federal structure. Still in force.</span></div>
+      </div>
+
+      <h3>The 1956 Constitution</h3>
+      <p>
+        After nine years of drafting, the first Constituent Assembly was dissolved by Governor-General
+        Ghulam Muhammad in October 1954 — a crisis litigated in the Maulvi Tamizuddin Khan case.
+        A second Constituent Assembly produced the 1956 Constitution. Pakistan ceased to be a
+        dominion and became the Islamic Republic of Pakistan. The system was parliamentary:
+        a President as head of state and a Prime Minister as head of government, responsible to
+        a unicameral National Assembly. One Unit, imposed in 1955, had already merged the western
+        provinces into a single West Pakistan to create a parity of two units — East and West —
+        in the federal legislature. That parity, not population, was the political price of
+        constitution-making. The document lasted two and a half years.
+      </p>
+
+      <h3>The 1962 Constitution</h3>
+      <p>
+        Ayub Khan’s constitution replaced parliamentary government with a presidential system.
+        The President was the chief executive. The legislature was unicameral. Members were
+        elected indirectly by an electoral college of “Basic Democrats” — local councillors
+        created under the Basic Democracies Order of 1959. The arrangement was presented as
+        controlled democracy; opponents treated it as a method of insulating the presidency
+        from adult-franchise politics. Fatima Jinnah contested the 1965 presidential election
+        against Ayub; official results returned Ayub. Urban protest in 1968–69 ended the
+        system. Ayub resigned on 25 March 1969 and handed power to General Yahya Khan.
+      </p>
+
+      <h3>The 1973 Constitution</h3>
+      <p>
+        The 1973 Constitution is Pakistan’s longest-lived basic law. It established a
+        parliamentary federal republic with a bicameral parliament: a National Assembly elected
+        by adult franchise on a population basis, and a Senate giving the provinces more equal
+        representation. The Prime Minister is head of government; the President is head of state.
+        The original 1973 design made the Prime Minister the effective centre of executive power.
+        Later amendments moved that centre toward the President (Eighth and Seventeenth) and
+        then back toward parliament (Thirteenth and Eighteenth). Islamic provisions, fundamental
+        rights, a federal legislative list, and provincial autonomy are all part of the same text,
+        which is why amendment politics has been so intense.
+      </p>
+      <div class="callout">
+        <strong>How to read the presidency.</strong> Pakistan’s President has not always held the
+        same powers. Under 1956 and the original 1973 text the office was largely ceremonial in
+        design. Under 1962, and again under Zia (Eighth Amendment) and Musharraf (Seventeenth),
+        the President could dissolve the National Assembly. The Eighteenth Amendment (2010)
+        returned the parliamentary centre of gravity. Treat each presidency as a constitutional
+        period, not a single office with a fixed meaning.
+      </div>
+
+      <h3 id="amendments">Constitutional amendment database</h3>
+      <p>
+        The table below records major amendments to the 1973 Constitution. Descriptions follow
+        the official subject of each amendment, not a political verdict on it. The Twenty-sixth
+        and Twenty-seventh Amendments are part of the Constitution as published by the National
+        Assembly up to 21 November 2025.
+      </p>
+      <div class="table-wrap">
+        <table class="record-table">
+          <thead>
+            <tr><th>Amdt.</th><th>Year</th><th>Subject</th><th>Political significance</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1st</td><td>1974</td><td>Territorial clauses; recognition of the new international boundary after 1971</td><td>Removed references to East Pakistan / Bangladesh as a province of Pakistan.</td></tr>
+            <tr><td>2nd</td><td>1974</td><td>Definition of a Muslim; status of Ahmadis</td><td>Declared Ahmadis (Qadiani and Lahori groups) non-Muslim for constitutional purposes. A consequential and still-contested change in minority status.</td></tr>
+            <tr><td>8th</td><td>1985</td><td>Revival of the Constitution; Article 58(2)(b); Article 2A</td><td>Validated a large body of Zia-era laws; empowered the President to dissolve the National Assembly; made the Objectives Resolution a substantive article.</td></tr>
+            <tr><td>13th</td><td>1997</td><td>Repeal of presidential dissolution power</td><td>Removed Article 58(2)(b). Restored the Prime Minister’s parliamentary primacy.</td></tr>
+            <tr><td>14th</td><td>1997</td><td>Anti-defection (Article 63A)</td><td>Party discipline: voting against party directions on specified matters could bring disqualification.</td></tr>
+            <tr><td>17th</td><td>2003</td><td>Legal Framework Order incorporated</td><td>Restored a presidential power to dissolve the Assembly; regularised aspects of the Musharraf-era constitutional order.</td></tr>
+            <tr><td>18th</td><td>2010</td><td>Parliamentary restoration; provincial autonomy; renaming of NWFP</td><td>Largest civilian amendment package: removed 58(2)(b) again, devolved the concurrent list, renamed the North-West Frontier Province as Khyber Pakhtunkhwa, added a right to education (Article 25A).</td></tr>
+            <tr><td>19th</td><td>2011</td><td>Judicial appointments</td><td>Adjusted the Judicial Commission / parliamentary committee process for appointing superior-court judges.</td></tr>
+            <tr><td>20th</td><td>2012</td><td>Caretaker governments and Election Commission</td><td>Set out a procedure for appointing caretaker administrations and election commissioners.</td></tr>
+            <tr><td>21st</td><td>2015</td><td>Military courts for terrorism cases</td><td>Temporary constitutional cover for military courts after the 2014 Peshawar school attack, with a sunset clause later extended.</td></tr>
+            <tr><td>25th</td><td>2018</td><td>Merger of FATA with Khyber Pakhtunkhwa</td><td>Ended the separate constitutional status of the Federally Administered Tribal Areas; National Assembly seat totals were revised.</td></tr>
+            <tr><td>26th</td><td>2024</td><td>Judicial appointments and constitutional benches</td><td>Assented 21 October 2024. Capped the Chief Justice’s term at three years; a special parliamentary committee nominates the CJP from among the three most senior judges; reconstituted the Judicial Commission; limited suo motu practice; added an environmental right (Article 9A). Supporters described it as judicial reform; the International Commission of Jurists and opposition parties described it as a reduction of judicial independence.</td></tr>
+            <tr><td>27th</td><td>2025</td><td>Federal Constitutional Court; Article 243</td><td>Assented 13 November 2025. Created a Federal Constitutional Court with constitutional jurisdiction; amended Article 243 to create a Chief of Defence Forces (held concurrently by the Chief of Army Staff) and to abolish the Chairman Joint Chiefs of Staff Committee from 27 November 2025. Opposition parties protested the speed and content of passage.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note">
+        Not every amendment is listed. The 3rd–7th, 10th–12th, 16th, 22nd–24th and related
+        instruments are part of the official text; they are omitted here only for compactness.
+        The 9th and 15th Amendment bills, which sought to give Sharia a more sweeping status,
+        were not enacted.
+      </p>
+      <a class="back-archive" href="#archive-nav">Back to political archive</a>
+    </article>
+
+    <article class="section" id="military-civilian">
+      <span class="kicker">Civil–military sequence</span>
+      <h2>Military Rule & Civilian Rule</h2>
+      <p>
+        Pakistan’s political calendar is often described as an alternation of “civilian” and
+        “military” periods. The record is more precise than that. There have been martial-law
+        governments, military presidents ruling through a constitution they themselves issued,
+        civilian presidents with the power to dismiss elected cabinets, caretaker cabinets
+        appointed to hold elections, and parliamentary governments with and without a working
+        majority. The labels below follow offices and proclamations, not moral verdicts.
+      </p>
+      <div class="era-bar" aria-label="Approximate political eras">
+        <span class="civ">1947–58 parliamentary / bureaucratic</span>
+        <span class="mil">1958–71 military-led</span>
+        <span class="civ">1971–77 civilian</span>
+        <span class="mil">1977–88 military-led</span>
+        <span class="mix">1988–99 elected, interrupted</span>
+        <span class="mil">1999–08 military-led</span>
+      </div>
+      <p>
+        After 2008 the National Assembly completed its term (2008–13) and transferred power to
+        another elected government (2013–18), then to a third (2018–22). That sequence is unique
+        in the country’s history. It did not end civil–military or judicial-political conflict;
+        it did change the baseline from extra-constitutional takeover to parliamentary and legal
+        contest.
+      </p>
+
+      <h3>1958: first Martial Law</h3>
+      <p>
+        On 7 October 1958 President Iskander Mirza abrogated the 1956 Constitution, dismissed
+        the government of Feroz Khan Noon, dissolved legislatures and proclaimed Martial Law,
+        appointing General Mohammad Ayub Khan as Chief Martial Law Administrator. Twenty days
+        later, on 27 October 1958, Ayub Khan removed Mirza and assumed the presidency. The
+        Supreme Court’s Dosso judgment (1958) treated the revolution as a successful law-creating
+        fact — a doctrine later rejected in Asma Jilani (1972). Ayub combined military presidency
+        with Basic Democracies, a 1962 presidential constitution, and a development-state rhetoric.
+        The 1965 war with India and the 1968–69 urban movement ended the experiment. Ayub resigned
+        on 25 March 1969. General Agha Mohammad Yahya Khan imposed a second Martial Law.
+      </p>
+
+      <h3 id="election-1970">The 1970 general election</h3>
+      <p>
+        The Legal Framework Order, 1970, issued by Yahya Khan, promised the first general election
+        in Pakistan’s history on the basis of adult franchise and population, and dissolved One Unit
+        so that the four western provinces reappeared. National Assembly polling was held on
+        7 December 1970; provincial polling followed on 17 December. These were not a continuation
+        of any earlier “nationwide general election”: from 1947 to 1970 Pakistan had not held a
+        National Assembly election on adult franchise.
+      </p>
+      <p>
+        The result produced a dual mandate. The Awami League, led by Sheikh Mujibur Rahman and
+        contesting on the 1966 Six-Point programme of provincial autonomy, won 160 of the 162
+        National Assembly seats allocated to East Pakistan and therefore an overall majority of
+        the 300 general seats. The Pakistan Peoples Party, led by Zulfikar Ali Bhutto, won 81
+        seats, concentrated in the Punjab and Sindh. No party spanned both wings. The constitutional
+        question was whether power would be transferred to the majority party, and on what terms
+        a constitution would then be written.
+      </p>
+      <p>
+        Negotiations in Dhaka and Islamabad in early 1971 failed. The National Assembly session
+        scheduled for 3 March was postponed. Political confrontation in East Pakistan widened
+        into civil conflict after the military operation that began in Dhaka on 25 March 1971.
+        A government-in-exile of Bangladesh was proclaimed. In December 1971 the civil conflict
+        became an India–Pakistan war. Pakistani forces in the east surrendered on 16 December 1971.
+        East Pakistan became the independent state of Bangladesh. The political consequence for
+        the remaining Pakistan was a legitimacy crisis, the end of the two-wing federation, and
+        the transfer of power to Zulfikar Ali Bhutto on 20 December 1971 as President and Chief
+        Martial Law Administrator. Nurul Amin had been appointed Prime Minister on 7 December 1971
+        for thirteen days; the National Assembly records his tenure as 7–20 December 1971.
+      </p>
+      <div class="note">
+        Language on 1971 is kept deliberately exact. There was a constitutional crisis after the
+        1970 election; a civil conflict in East Pakistan after 25 March 1971; a military operation
+        by the Pakistan Army; and an international war with India in December 1971. Competing
+        national narratives exist in Pakistan, Bangladesh and India. This archive records the
+        sequence of political facts, not a wartime verdict.
+      </div>
+
+      <h3 id="east-pakistan">East Pakistan and 1971</h3>
+      <p>
+        The two-wing structure was never only a map. East Bengal / East Pakistan had the larger
+        population and, after 1955, was one of two units in a parity federation that denied it
+        a population majority in the legislature. The 1952 language movement in Dhaka, the 1954
+        provincial election victory of the United Front over the Muslim League, the dismissal of
+        that ministry, and the 1966 Six Points were successive political expressions of the same
+        grievance: representation, language, and the location of power. The 1970 election converted
+        that grievance into a parliamentary majority that was not allowed to form a government.
+        After 1971 the remaining Pakistan rewrote its territory (First Amendment, 1974), its
+        constitution (1973), and its idea of the federation. The shock remains a founding fact
+        of the post-1971 political system.
+      </p>
+
+      <h3 id="bhutto-era">Zulfikar Ali Bhutto, 1971–1977</h3>
+      <p>
+        Bhutto assumed office on 20 December 1971 as President and Chief Martial Law Administrator.
+        An Interim Constitution followed in 1972. Martial law was lifted as the 1973 Constitution
+        came into force on 14 August 1973; Bhutto stepped down from the presidency to become
+        Prime Minister (National Assembly list: 14 August 1973 – 5 July 1977). Fazal Elahi Chaudhry
+        became the civilian President. The new constitution was federal and parliamentary, and
+        was adopted with the support of opposition parties then in the Assembly.
+      </p>
+      <p>
+        The Bhutto government nationalised major industries, banks and educational institutions;
+        hosted the Islamic Summit in Lahore in 1974; and signed the Simla Agreement with India
+        in 1972, which converted the 1971 ceasefire line in Kashmir into the Line of Control
+        and committed both states to bilateral negotiation. A nuclear programme was pursued after
+        India’s 1974 test; later governments continued it. The Second Amendment (1974) altered
+        the constitutional status of Ahmadis. Opposition coalesced in the provinces — notably
+        in Balochistan and the NWFP, where the National Awami Party governments were dismissed
+        in 1973 — and then nationally in the Pakistan National Alliance (PNA) before the 1977
+        election.
+      </p>
+      <p>
+        National Assembly polling was held on 7 March 1977. Official results gave the PPP a
+        large majority. The PNA alleged widespread rigging and launched a mass movement.
+        Negotiations for a re-election were under way when, on 5 July 1977, General Mohammad
+        Zia-ul-Haq, the Chief of Army Staff, deposed the government, proclaimed Martial Law
+        and suspended the operation of the Constitution. Bhutto was tried for conspiracy to
+        murder, convicted, and executed on 4 April 1979 after the Supreme Court upheld the
+        conviction. The fairness of that trial has been a lasting political dispute; the legal
+        fact is the court’s judgment and the hanging.
+      </p>
+
+      <h3 id="zia-era">Zia-ul-Haq, 1977–1988</h3>
+      <p>
+        The third Martial Law lasted, in its full form, until 1985. Parliamentary politics were
+        suspended. Zia promised elections, postponed them, and in 1978 assumed the presidency
+        (National Assembly list: 16 September 1978 – 17 August 1988). Islamisation became state
+        policy: the Hudood Ordinances (1979), Zakat and Ushr, blasphemy-law expansions, and
+        a Federal Shariat Court. The Soviet intervention in Afghanistan in 1979 aligned Pakistan
+        with a US- and Saudi-backed mujahideen war; the domestic political effect was to
+        strengthen the military presidency and to militarise parts of the Afghan-border society.
+      </p>
+      <p>
+        Non-party elections to the National Assembly were held on 25 February 1985 (ECP).
+        Muhammad Khan Junejo became Prime Minister on 23 March 1985. The Constitution was
+        revived with the Eighth Amendment, including Article 58(2)(b) — the presidential power
+        to dissolve the National Assembly — and Article 2A. In May 1988 Zia dismissed the
+        Junejo government under that power. On 17 August 1988 Zia died in a plane crash near
+        Bahawalpur, together with the US ambassador and Pakistani senior officers. Ghulam Ishaq
+        Khan, Chairman of the Senate, became President. Party-based general elections followed
+        on 16 November 1988.
+      </p>
+      <p>
+        The political consequence of the Zia years was a constitution that looked parliamentary
+        but could be interrupted from the presidency; a party system that returned, but with
+        Islamist and Afghan-war aftershocks; and a judiciary that, in the Nusrat Bhutto case
+        (1977), had granted the Martial Law regime a doctrine of necessity. Those three facts
+        framed the 1990s.
+      </p>
+
+      <h3 id="democratic-1988">Elected governments, 1988–1999</h3>
+      <p>
+        The eleven years after Zia are often called a democratic decade. They were elected, and
+        they were repeatedly interrupted. Article 58(2)(b) was used to dismiss governments.
+        Benazir Bhutto of the PPP became Prime Minister on 2 December 1988, the first woman to
+        head a democratic government in a Muslim-majority country. President Ghulam Ishaq Khan
+        dismissed her government on 6 August 1990. After a caretaker interval under Ghulam Mustafa
+        Jatoi, Nawaz Sharif of the Islami Jamhoori Ittehad / PML became Prime Minister on
+        6 November 1990.
+      </p>
+      <p>
+        On 18 April 1993 Ishaq Khan dismissed Nawaz Sharif and appointed Balakh Sher Mazari
+        as caretaker. The Supreme Court restored Sharif on 26 May 1993. The dual confrontation
+        of President and Prime Minister ended in both men’s resignation in July 1993, a caretaker
+        government under Moeenuddin (Moin) Qureshi, and elections on 6 October 1993. Benazir
+        Bhutto returned as Prime Minister on 19 October 1993. President Farooq Leghari, her
+        former party colleague, dismissed her government on 5 November 1996. After Malik Meraj
+        Khalid’s caretaker cabinet, Nawaz Sharif won a large majority in the 3 February 1997
+        election and took office on 17 February 1997.
+      </p>
+      <p>
+        The Thirteenth Amendment (1997) removed Article 58(2)(b). The Fourteenth added an
+        anti-defection clause. In May 1998, after India’s nuclear tests, Pakistan conducted
+        its own tests in Balochistan. Relations between the Sharif government and the military
+        command deteriorated after the 1999 Kargil conflict with India. On 12 October 1999
+        General Pervez Musharraf, Chief of Army Staff, took power, dismissed the government
+        and declared himself Chief Executive. The National Assembly records Sharif’s second
+        elected tenure as ending on 12 October 1999.
+      </p>
+
+      <h3 id="musharraf-era">Musharraf era, 1999–2008</h3>
+      <p>
+        Musharraf’s first years were extra-constitutional: a Provisional Constitution Order,
+        a military presidency in practice, and a 2000 Supreme Court judgment that granted
+        another doctrine of necessity with a three-year election deadline. He assumed the
+        presidency on 20 June 2001 (National Assembly list). After the 11 September 2001
+        attacks the government aligned with the United States in the Afghanistan war, a
+        choice that reshaped domestic security politics for the next two decades.
+      </p>
+      <p>
+        A Legal Framework Order (2002) and general elections on 10 October 2002 produced a
+        National Assembly in which the Pakistan Muslim League (Quaid-e-Azam) was the largest
+        party. Zafarullah Jamali, then Chaudhry Shujaat Hussain, then Shaukat Aziz served as
+        Prime Minister. The Seventeenth Amendment (2003) absorbed the LFO into the Constitution
+        and restored a presidential dissolution power. A local-government “devolution” plan
+        (2001) created a new tier of nazims, bypassing the provinces.
+      </p>
+      <p>
+        In March 2007 Musharraf suspended Chief Justice Iftikhar Muhammad Chaudhry. The resulting
+        lawyers’ movement became the widest urban professional protest in decades. On 3 November
+        2007 Musharraf proclaimed emergency, suspended the Constitution and dismissed a large
+        number of superior-court judges. Benazir Bhutto had returned from exile in October 2007
+        under a National Reconciliation Ordinance; she was assassinated in Rawalpindi on
+        27 December 2007. General elections, postponed to 18 February 2008, returned the PPP
+        as the largest party. Musharraf resigned the presidency on 18 August 2008 facing
+        impeachment. Asif Ali Zardari was elected President on 9 September 2008.
+      </p>
+
+      <h3 id="democratic-2008">Parliamentary sequence, 2008–2018</h3>
+      <p>
+        The 2008 election produced a PPP-led coalition. Yousaf Raza Gillani became Prime Minister
+        on 25 March 2008. The Eighteenth Amendment, passed in April 2010, is the central
+        constitutional event of the period: it re-parliamentaryised the 1973 text, removed
+        58(2)(b), devolved the concurrent legislative list to the provinces, renamed the NWFP
+        as Khyber Pakhtunkhwa, and strengthened the Election Commission. Fiscal federalism
+        continued through the National Finance Commission. Gillani was convicted of contempt
+        by the Supreme Court in 2012 and ceased to be Prime Minister; Raja Pervez Ashraf
+        succeeded him on 22 June 2012. The Assembly completed its five-year term.
+      </p>
+      <p>
+        The 11 May 2013 general election returned the Pakistan Muslim League-Nawaz as the largest
+        party. That transfer — one elected government to another — was the first in the
+        post-2008 parliamentary sequence. Nawaz Sharif became Prime Minister on 5 June 2013.
+        In 2016 the International Consortium of Investigative Journalists published the Panama
+        Papers, which included companies linked to Sharif’s family. The Supreme Court, in its
+        Panama case judgments of 2017, disqualified Nawaz Sharif from office; he left on
+        28 July 2017. Shahid Khaqan Abbasi served as Prime Minister until the Assembly’s term
+        ended on 31 May 2018. The disqualification was a court judgment. Political parties
+        have offered competing interpretations of its motives; this archive records the judgment
+        and the change of office, not those interpretations as fact.
+      </p>
+
+      <h3 id="pti-era">2018–2022: PTI government and no-confidence</h3>
+      <p>
+        General elections were held on 25 July 2018. The Pakistan Tehreek-e-Insaf emerged as
+        the largest party and formed a coalition government. Imran Khan took oath as Prime
+        Minister on 18 August 2018 (National Assembly list: 18 August 2018 – 10 April 2022).
+        Arif Alvi was elected President. The COVID-19 pandemic, an IMF-supported adjustment,
+        and a foreign-policy opening toward Russia in early 2022 were the main governing
+        contexts. Opposition parties, grouped as the Pakistan Democratic Movement, alleged
+        that the 2018 election had been managed; the PTI government rejected that claim.
+        Neither allegation nor denial is treated here as a finding.
+      </p>
+      <p>
+        On 10 April 2022 the National Assembly passed a vote of no confidence against Imran Khan,
+        the first successful use of that constitutional instrument against a Prime Minister.
+        Shehbaz Sharif was elected Prime Minister the next day (National Assembly: 11 April 2022 –
+        14 August 2023). Khan and the PTI described the vote as the product of a foreign
+        conspiracy and a civil-military alignment; the incoming coalition described it as
+        a parliamentary majority exercising a constitutional right. The recorded fact is the
+        vote and the change of office.
+      </p>
+
+      <h3 id="transition-2022">2022–2024 transition</h3>
+      <p>
+        Shehbaz Sharif’s first prime ministership ran until the National Assembly’s term ended.
+        He left office on 14 August 2023. Anwaar-ul-Haq Kakar headed a caretaker government
+        from 14 August 2023 to 3 March 2024 (National Assembly dates). General elections,
+        delayed beyond the usual ninety-day window, were held on 8 February 2024. On 1 March 2024
+        the National Assembly elected Sardar Ayaz Sadiq as Speaker and Syed Ghulam Mustafa Shah
+        as Deputy Speaker. On 3 March 2024 the Assembly elected Shehbaz Sharif Prime Minister
+        again. On 9 March 2024 the presidential electoral college elected Asif Ali Zardari;
+        he took office on 10 March 2024. Yusuf Raza Gilani became Chairman of the Senate on
+        9 April 2024.
+      </p>
+
+      <h3 id="period-2024">Political record, 2024–2026</h3>
+      <p>
+        This subsection stops at the verified record as of September 2026. It does not forecast
+        elections, court cases or changes of office.
+      </p>
+      <div class="now-grid">
+        <div class="now-card"><em>Prime Minister</em><strong>Muhammad Shehbaz Sharif</strong><p>3 March 2024 – present. National Assembly official list, updated 2026.</p></div>
+        <div class="now-card"><em>President</em><strong>Asif Ali Zardari</strong><p>10 March 2024 – present. Second non-consecutive presidency.</p></div>
+        <div class="now-card"><em>Speaker, National Assembly</em><strong>Sardar Ayaz Sadiq</strong><p>1 March 2024 – present. Third time as Speaker (also 2013–15 and 2015–18).</p></div>
+        <div class="now-card"><em>Chairman, Senate</em><strong>Syed Yousaf Raza Gilani</strong><p>9 April 2024 – present. Former Prime Minister (2008–12).</p></div>
+        <div class="now-card"><em>Deputy Speaker</em><strong>Syed Ghulam Mustafa Shah</strong><p>Elected 1 March 2024 with the 16th National Assembly.</p></div>
+        <div class="now-card"><em>Leader of the Opposition (NA)</em><strong>Mehmood Khan Achakzai</strong><p>Serving as Leader of the Opposition in National Assembly proceedings in 2026.</p></div>
+      </div>
+      <p>
+        The 8 February 2024 National Assembly election did not give any party a majority of
+        general seats. Independent candidates, a large number of them publicly associated with
+        PTI after the party was not allowed to use its election symbol, won the largest block
+        of general seats (ECP-announced results placed independents at 101 of the seats then
+        declared). PML-N won 75 general seats and PPP 54. A coalition led by PML-N, with PPP
+        and the Muttahida Qaumi Movement-Pakistan among its partners, formed the federal
+        government. Opposition parties alleged interference and result manipulation; the ECP
+        published constituency results and rejected the charge as a finding. Subsequent
+        litigation over reserved seats for women and non-Muslims changed the Assembly’s
+        party arithmetic; by 2025 the National Assembly secretariat recorded PML-N as the
+        largest parliamentary party after reserved-seat notifications.
+      </p>
+      <p>
+        Two constitutional packages defined the mid-term of this Assembly. The Twenty-sixth
+        Amendment (assented 21 October 2024) changed the method of appointing the Chief Justice
+        and the composition of the Judicial Commission. The Twenty-seventh Amendment (assented
+        13 November 2025) created a Federal Constitutional Court and rewrote Article 243 to
+        establish a Chief of Defence Forces, a post held concurrently by the Chief of Army Staff,
+        with the Chairman Joint Chiefs of Staff Committee abolished from 27 November 2025.
+        In May 2025, after a military conflict with India, President Zardari and Prime Minister
+        Shehbaz Sharif conferred the rank of Field Marshal on Chief of Army Staff Syed Asim Munir.
+        Parliament later passed related defence legislation, including in 2026.
+      </p>
+      <p>
+        Parliamentary life in 2026 included passage of the federal budget for fiscal year 2026–27
+        in June, after an opposition walkout, and government–opposition correspondence on the
+        appointment of a new Chief Election Commissioner. The five-year term of CEC Sikandar
+        Sultan Raja expired on 26 January 2025; as of September 2026 consultations under
+        Article 213 were still a live parliamentary issue. Deputy Prime Minister and Foreign
+        Minister Ishaq Dar remained a principal figure of the coalition. Provincial governments
+        elected in 2024 continued: Maryam Nawaz Sharif as Chief Minister of Punjab from
+        26 February 2024 — the first woman to hold that office — with PPP-led government in
+        Sindh and coalition administrations in Khyber Pakhtunkhwa and Balochistan subject to
+        the 2024 provincial results and later floor changes.
+      </p>
+      <a class="back-archive" href="#archive-nav">Back to political archive</a>
+    </article>
+
+    <article class="section featured" id="elections">
+      <span class="kicker">Electoral record</span>
+      <h2>Elections & Governments</h2>
+      <p>
+        The Election Commission of Pakistan lists twelve general elections from 1970 through 2024:
+        1970, 1977, 1985, 1988, 1990, 1993, 1997, 2002, 2008, 2013, 2018 and 2024. There was no
+        nationwide National Assembly election on adult franchise between 1947 and 1970. The 1985
+        election was held on a non-party basis. The 2002 election was held under the Musharraf-era
+        Legal Framework Order. Turnout figures below for 1985–2024 are taken from an ECP official
+        introduction (poll dates and turnout table). Seat totals are stated only where they are
+        securely documented; disputed 2024 reserved-seat arithmetic is described separately.
+      </p>
+
+      <h3>General election database</h3>
+      <div class="election-grid">
+        <div class="election-card">
+          <em>7 December 1970</em><strong>1970</strong>
+          <p>First adult-franchise, population-basis NA election (Legal Framework Order). Awami League 160 of 162 East Pakistan seats (majority of 300 general seats); PPP 81 seats in the West. Failure to transfer power; 1971 war and Bangladesh.</p>
+        </div>
+        <div class="election-card">
+          <em>7 March 1977</em><strong>1977</strong>
+          <p>PPP declared winner of a large NA majority. Pakistan National Alliance alleged rigging and launched a mass movement. Coup of 5 July 1977 followed. Turnout not listed in the ECP 1985–2024 turnout table.</p>
+        </div>
+        <div class="election-card">
+          <em>25 February 1985 · turnout 53.69%</em><strong>1985</strong>
+          <p>Non-party election under Martial Law. Muhammad Khan Junejo became Prime Minister. Constitution revived with the Eighth Amendment. Party organisations were not on the ballot.</p>
+        </div>
+        <div class="election-card">
+          <em>16 November 1988 · turnout 43.07%</em><strong>1988</strong>
+          <p>Return to party-based parliamentary election after Zia’s death. PPP emerged as largest party; Benazir Bhutto became Prime Minister on 2 December 1988 at the head of a coalition.</p>
+        </div>
+        <div class="election-card">
+          <em>24 October 1990 · turnout 45.46%</em><strong>1990</strong>
+          <p>Held after the dismissal of the first Benazir government. Islami Jamhoori Ittehad / Nawaz Sharif formed the government (PM from 6 November 1990). Opposition alleged a managed contest; the legal fact is the notified result.</p>
+        </div>
+        <div class="election-card">
+          <em>6 October 1993 · turnout 40.28%</em><strong>1993</strong>
+          <p>After the 1993 presidential–prime ministerial crisis and dual resignations. PPP and PML-N were close; Benazir Bhutto formed the government (PM from 19 October 1993).</p>
+        </div>
+        <div class="election-card">
+          <em>3 February 1997 · turnout 35.42%</em><strong>1997</strong>
+          <p>PML-N won a large majority. Nawaz Sharif became Prime Minister (17 February 1997). Thirteenth Amendment removed Article 58(2)(b). Lowest turnout in the ECP 1985–2024 series.</p>
+        </div>
+        <div class="election-card">
+          <em>10 October 2002 · turnout 41.68%</em><strong>2002</strong>
+          <p>Election under the Legal Framework Order. PML-Q emerged as the largest parliamentary party. Jamali, then Shujaat, then Aziz served as Prime Minister. Seventeenth Amendment followed in 2003.</p>
+        </div>
+        <div class="election-card">
+          <em>18 February 2008 · turnout 44.11%</em><strong>2008</strong>
+          <p>Held after emergency (November 2007) and the assassination of Benazir Bhutto. PPP emerged as largest party; Yousaf Raza Gillani became Prime Minister. Musharraf resigned in August 2008.</p>
+        </div>
+        <div class="election-card">
+          <em>11 May 2013 · turnout 53.62%</em><strong>2013</strong>
+          <p>PML-N won a majority and Nawaz Sharif became Prime Minister. First democratic transfer between elected civilian governments in the post-2008 sequence. Highest turnout in the ECP 1985–2024 series.</p>
+        </div>
+        <div class="election-card">
+          <em>25 July 2018 · turnout 51.70%</em><strong>2018</strong>
+          <p>PTI emerged as largest party and formed a coalition. Imran Khan became Prime Minister (18 August 2018). Opposition parties alleged a managed election; PTI rejected the charge. FATA had been merged into KP (25th Amendment).</p>
+        </div>
+        <div class="election-card">
+          <em>8 February 2024 · turnout 47.65%</em><strong>2024</strong>
+          <p>No party won a majority of general seats. Independents (many PTI-backed) were the largest general-seat block; PML-N and PPP formed a coalition. Shehbaz Sharif elected PM on 3 March 2024. See dedicated note below.</p>
+        </div>
+      </div>
+
+      <h3 id="election-2024">The 2024 general election</h3>
+      <p>
+        Polling for the National Assembly and the four provincial assemblies was held on
+        8 February 2024. The National Assembly’s general seats are filled by first-past-the-post
+        contests; reserved seats for women and non-Muslims are then allocated to parties by
+        formula. PTI was not permitted to use its election symbol; candidates associated with
+        the party ran as independents, many of whom later joined the Sunni Ittehad Council.
+      </p>
+      <p>
+        ECP-announced results for general seats, as reported when the Commission completed
+        declarations, placed independent candidates first (101), PML-N second (75) and PPP
+        third (54), with MQM-P on 17 and smaller parties on the remainder of the then-declared
+        seats. Shehbaz Sharif was elected Prime Minister on 3 March 2024 with 201 votes in the
+        National Assembly, against 92 for Omar Ayub Khan, the candidate of the SIC / PTI-backed
+        opposition. Asif Ali Zardari was elected President on 9 March 2024.
+      </p>
+      <p>
+        The election is politically sensitive. Opposition parties alleged interference, delay
+        in result transmission and alteration of counts. The ECP published Form-47/Form-49
+        constituency results and did not accept those allegations as proven. Domestic and
+        international observer groups recorded both administrative failures and a competitive
+        race. Reserved-seat litigation continued into 2024–25 and changed the Assembly’s
+        notified party position. This archive therefore states the ECP general-seat snapshot,
+        the parliamentary election of the Prime Minister and President, and the existence of
+        a dispute — not a finding on who “really won.”
+      </p>
+
+      <h3 id="prime-ministers">Prime Ministers of Pakistan</h3>
+      <p>
+        The National Assembly’s official list records every tenure below, including caretakers.
+        Spellings follow common usage; dates follow the Assembly list (last updated 2026).
+        Zulfikar Ali Bhutto headed the government as President from 20 December 1971 until
+        14 August 1973; the Assembly list records his prime ministership from the day the 1973
+        Constitution came into force. There was no Prime Minister during the Ayub presidency
+        (1958–69) or the first phase of Zia’s Martial Law (1977–85).
+      </p>
+      <div class="table-wrap">
+        <table class="record-table">
+          <thead>
+            <tr><th>#</th><th>Prime Minister</th><th>Tenure (NA official)</th><th>Status</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Liaquat Ali Khan</td><td>15 Aug 1947 – 16 Oct 1951</td><td><span class="tag civ">Elected / appointed</span></td></tr>
+            <tr><td>2</td><td>Khawaja Nazimuddin</td><td>17 Oct 1951 – 17 Apr 1953</td><td><span class="tag civ">Civilian</span></td></tr>
+            <tr><td>3</td><td>Mohammad Ali Bogra</td><td>17 Apr 1953 – 11 Aug 1955</td><td><span class="tag civ">Civilian</span></td></tr>
+            <tr><td>4</td><td>Chaudhry Muhammad Ali</td><td>11 Aug 1955 – 12 Sep 1956</td><td><span class="tag civ">Civilian</span></td></tr>
+            <tr><td>5</td><td>Huseyn Shaheed Suhrawardy</td><td>12 Sep 1956 – 18 Oct 1957</td><td><span class="tag civ">Civilian</span></td></tr>
+            <tr><td>6</td><td>I. I. Chundrigar</td><td>18 Oct 1957 – 16 Dec 1957</td><td><span class="tag civ">Civilian</span></td></tr>
+            <tr><td>7</td><td>Feroz Khan Noon</td><td>16 Dec 1957 – 7 Oct 1958</td><td><span class="tag civ">Civilian</span></td></tr>
+            <tr><td>8</td><td>Nurul Amin</td><td>7 Dec 1971 – 20 Dec 1971</td><td><span class="tag civ">Civilian</span></td></tr>
+            <tr><td>9</td><td>Zulfikar Ali Bhutto</td><td>14 Aug 1973 – 5 Jul 1977</td><td><span class="tag civ">Civilian</span></td></tr>
+            <tr><td>10</td><td>Muhammad Khan Junejo</td><td>23 Mar 1985 – 29 May 1988</td><td><span class="tag civ">Civilian</span></td></tr>
+            <tr><td>11</td><td>Benazir Bhutto</td><td>2 Dec 1988 – 6 Aug 1990</td><td><span class="tag civ">Civilian</span></td></tr>
+            <tr><td>12</td><td>Ghulam Mustafa Jatoi</td><td>6 Aug 1990 – 6 Nov 1990</td><td><span class="tag care">Caretaker</span></td></tr>
+            <tr><td>13</td><td>Nawaz Sharif</td><td>6 Nov 1990 – 18 Apr 1993</td><td><span class="tag civ">Civilian</span></td></tr>
+            <tr><td>14</td><td>Balakh Sher Mazari</td><td>18 Apr 1993 – 26 May 1993</td><td><span class="tag care">Caretaker</span></td></tr>
+            <tr><td>15</td><td>Nawaz Sharif</td><td>26 May 1993 – 8 Jul 1993</td><td><span class="tag civ">Restored</span></td></tr>
+            <tr><td>16</td><td>Moeenuddin (Moin) Qureshi</td><td>8 Jul 1993 – 19 Oct 1993</td><td><span class="tag care">Caretaker</span></td></tr>
+            <tr><td>17</td><td>Benazir Bhutto</td><td>19 Oct 1993 – 5 Nov 1996</td><td><span class="tag civ">Civilian</span></td></tr>
+            <tr><td>18</td><td>Malik Meraj Khalid</td><td>6 Nov 1996 – 17 Feb 1997</td><td><span class="tag care">Caretaker</span></td></tr>
+            <tr><td>19</td><td>Nawaz Sharif</td><td>17 Feb 1997 – 12 Oct 1999</td><td><span class="tag civ">Civilian</span></td></tr>
+            <tr><td>20</td><td>Zafarullah Khan Jamali</td><td>23 Nov 2002 – 26 Jun 2004</td><td><span class="tag civ">Civilian</span></td></tr>
+            <tr><td>21</td><td>Chaudhry Shujaat Hussain</td><td>30 Jun 2004 – 26 Aug 2004</td><td><span class="tag civ">Civilian</span></td></tr>
+            <tr><td>22</td><td>Shaukat Aziz</td><td>28 Aug 2004 – 15 Nov 2007</td><td><span class="tag civ">Civilian</span></td></tr>
+            <tr><td>23</td><td>Muhammad Mian Soomro</td><td>16 Nov 2007 – 24 Mar 2008</td><td><span class="tag care">Caretaker</span></td></tr>
+            <tr><td>24</td><td>Yousaf Raza Gillani</td><td>25 Mar 2008 – 25 Apr 2012</td><td><span class="tag civ">Civilian</span></td></tr>
+            <tr><td>25</td><td>Raja Pervez Ashraf</td><td>22 Jun 2012 – 24 Mar 2013</td><td><span class="tag civ">Civilian</span></td></tr>
+            <tr><td>26</td><td>Mir Hazar Khan Khoso</td><td>25 Mar 2013 – 5 Jun 2013</td><td><span class="tag care">Caretaker</span></td></tr>
+            <tr><td>27</td><td>Nawaz Sharif</td><td>5 Jun 2013 – 28 Jul 2017</td><td><span class="tag civ">Civilian</span></td></tr>
+            <tr><td>28</td><td>Shahid Khaqan Abbasi</td><td>1 Aug 2017 – 31 May 2018</td><td><span class="tag civ">Civilian</span></td></tr>
+            <tr><td>29</td><td>Nasir-ul-Mulk</td><td>1 Jun 2018 – 18 Aug 2018</td><td><span class="tag care">Caretaker</span></td></tr>
+            <tr><td>30</td><td>Imran Khan</td><td>18 Aug 2018 – 10 Apr 2022</td><td><span class="tag civ">Civilian</span></td></tr>
+            <tr><td>31</td><td>Shehbaz Sharif</td><td>11 Apr 2022 – 14 Aug 2023</td><td><span class="tag civ">Civilian</span></td></tr>
+            <tr><td>32</td><td>Anwaar-ul-Haq Kakar</td><td>14 Aug 2023 – 3 Mar 2024</td><td><span class="tag care">Caretaker</span></td></tr>
+            <tr><td>33</td><td>Shehbaz Sharif</td><td>3 Mar 2024 – present</td><td><span class="tag civ">Civilian</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note">
+        Numbering follows chronological tenures on the National Assembly list, not a ranking.
+        Caretaker prime ministers are included because they held the office. Gillani’s NA end
+        date is 25 April 2012; Raja Pervez Ashraf took oath on 22 June 2012 after the contempt
+        disqualification sequence.
+      </p>
+
+      <h3 id="presidents">Presidents of Pakistan</h3>
+      <p>
+        The presidency begins with the 1956 Constitution. Before that the head of state was the
+        monarch, represented by the Governor-General. Dates below follow the National Assembly’s
+        official presidents list (updated 2026). Acting tenures are marked.
+      </p>
+      <div class="table-wrap">
+        <table class="record-table">
+          <thead>
+            <tr><th>President</th><th>Tenure (NA official)</th><th>Constitutional character</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Iskander Mirza</td><td>23 Mar 1956 – 27 Oct 1958</td><td>First President, 1956 parliamentary constitution; proclaimed Martial Law, then removed.</td></tr>
+            <tr><td>Ayub Khan</td><td>27 Oct 1958 – 25 Mar 1969</td><td>Military president; 1962 presidential constitution.</td></tr>
+            <tr><td>Yahya Khan</td><td>25 Mar 1969 – 20 Dec 1971</td><td>Military president under Martial Law.</td></tr>
+            <tr><td>Zulfikar Ali Bhutto</td><td>20 Dec 1971 – 14 Aug 1973</td><td>Civilian president and CMLA, then civilian president until the 1973 Constitution.</td></tr>
+            <tr><td>Fazal Elahi Chaudhry</td><td>14 Aug 1973 – 16 Sep 1978</td><td>Parliamentary president under the original 1973 design.</td></tr>
+            <tr><td>Zia-ul-Haq</td><td>16 Sep 1978 – 17 Aug 1988</td><td>Military president; Eighth Amendment powers.</td></tr>
+            <tr><td>Ghulam Ishaq Khan</td><td>17 Aug 1988 – 8 Jul 1993</td><td>Civilian president using Article 58(2)(b).</td></tr>
+            <tr><td>Wasim Sajjad</td><td>18 Jul 1993 – 14 Nov 1993</td><td><span class="tag act">Acting</span> Senate Chairman.</td></tr>
+            <tr><td>Farooq Leghari</td><td>14 Nov 1993 – 2 Dec 1997</td><td>Civilian president; dismissed the second Benazir government.</td></tr>
+            <tr><td>Wasim Sajjad</td><td>2 Dec 1997 – 1 Jan 1998</td><td><span class="tag act">Acting</span></td></tr>
+            <tr><td>Muhammad Rafiq Tarar</td><td>1 Jan 1998 – 20 Jun 2001</td><td>Civilian president; office overtaken by the 1999 coup.</td></tr>
+            <tr><td>Pervez Musharraf</td><td>20 Jun 2001 – 15 Oct 2007; 29 Nov 2007 – 18 Aug 2008</td><td>Military then uniform-off presidency; Seventeenth Amendment powers.</td></tr>
+            <tr><td>Muhammad Mian Soomro</td><td>18 Aug 2008 – 9 Sep 2008</td><td><span class="tag act">Acting</span> Senate Chairman.</td></tr>
+            <tr><td>Asif Ali Zardari</td><td>9 Sep 2008 – 9 Sep 2013</td><td>Civilian; Eighteenth Amendment reduced presidential power during this term.</td></tr>
+            <tr><td>Mamnoon Hussain</td><td>9 Sep 2013 – 9 Sep 2018</td><td>Parliamentary president.</td></tr>
+            <tr><td>Arif Alvi</td><td>9 Sep 2018 – 10 Mar 2024</td><td>Parliamentary president; term ran past the 2022 change of government.</td></tr>
+            <tr><td>Asif Ali Zardari</td><td>10 Mar 2024 – present</td><td>Parliamentary president; second non-consecutive term.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 id="parliament">Speakers and the evolution of Parliament</h3>
+      <p>
+        From 1947 to 1954 the Constituent Assembly was also the legislature; its presiding officer
+        was styled President of the Assembly. The 1973 Constitution created a bicameral
+        Majlis-e-Shoora: a National Assembly (lower house) and a Senate (upper house). Parliament
+        House in Islamabad is the seat of both. The official National Assembly speakers list
+        (updated September 2026) is the source of the dates below.
+      </p>
+      <div class="table-wrap">
+        <table class="record-table">
+          <thead>
+            <tr><th>Presiding officer</th><th>Tenure (NA official)</th><th>Note</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Muhammad Ali Jinnah</td><td>11 Aug 1947 – 11 Sep 1948</td><td>President, Constituent Assembly</td></tr>
+            <tr><td>Maulvi Tamizuddin Khan</td><td>14 Dec 1948 – 24 Oct 1954</td><td>President, Constituent Assembly; litigant in the 1954–55 dissolution case</td></tr>
+            <tr><td>Abdul Wahab Khan</td><td>12 Aug 1955 – 7 Oct 1958</td><td>Second Constituent Assembly / 1956 NA</td></tr>
+            <tr><td>Maulvi Tamizuddin Khan</td><td>6 Nov 1962 – 19 Aug 1963</td><td>1962 presidential legislature</td></tr>
+            <tr><td>Fazlul Qadir Chaudhry</td><td>29 Nov 1963 – 12 Jun 1965</td><td></td></tr>
+            <tr><td>Abdul Jabbar Khan</td><td>12 Jun 1965 – 25 Mar 1969</td><td></td></tr>
+            <tr><td>Zulfikar Ali Bhutto</td><td>14 Apr 1972 – 12 Apr 1973</td><td>President of the Assembly</td></tr>
+            <tr><td>Fazal Elahi Chaudhry</td><td>15 Aug 1972 – 7 Aug 1973</td><td>Then President of Pakistan</td></tr>
+            <tr><td>Sahibzada Farooq Ali</td><td>9 Aug 1973 – 27 Mar 1977</td><td>First years of the 1973 bicameral parliament</td></tr>
+            <tr><td>Malik Meraj Khalid</td><td>27 Mar 1977 – 5 Jul 1977</td><td>Also later caretaker PM</td></tr>
+            <tr><td>Syed Fakhar Imam</td><td>22 Mar 1985 – 26 May 1986</td><td>Non-party Assembly</td></tr>
+            <tr><td>Hamid Nasir Chattha</td><td>31 May 1986 – 3 Dec 1988</td><td></td></tr>
+            <tr><td>Malik Meraj Khalid</td><td>3 Dec 1988 – 4 Nov 1990</td><td></td></tr>
+            <tr><td>Gohar Ayub Khan</td><td>4 Nov 1990 – 17 Oct 1993</td><td></td></tr>
+            <tr><td>Yousaf Raza Gillani</td><td>17 Oct 1993 – 16 Feb 1997</td><td>Later Prime Minister; Senate Chairman from 2024</td></tr>
+            <tr><td>Ilahi Bakhsh Soomro</td><td>16 Feb 1997 – 20 Aug 2001</td><td></td></tr>
+            <tr><td>Chaudhry Amir Hussain</td><td>19 Nov 2002 – 19 Mar 2008</td><td></td></tr>
+            <tr><td>Fahmida Mirza</td><td>19 Mar 2008 – 3 Jun 2013</td><td>First woman Speaker of the National Assembly</td></tr>
+            <tr><td>Ayaz Sadiq</td><td>3 Jun 2013 – 22 Aug 2015</td><td>First term as Speaker</td></tr>
+            <tr><td>Murtaza Javed Abbasi</td><td>22 Aug 2015 – 9 Nov 2015</td><td>NA official list; interval during the 2015 speakership challenge</td></tr>
+            <tr><td>Ayaz Sadiq</td><td>9 Nov 2015 – 15 Aug 2018</td><td>Re-elected Speaker</td></tr>
+            <tr><td>Asad Qaiser</td><td>15 Aug 2018 – 10 Apr 2022</td><td></td></tr>
+            <tr><td>Raja Pervez Ashraf</td><td>16 Apr 2022 – 1 Mar 2024</td><td>Former Prime Minister</td></tr>
+            <tr><td>Ayaz Sadiq</td><td>1 Mar 2024 – present</td><td>Third time as Speaker</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <a class="back-archive" href="#archive-nav">Back to political archive</a>
+    </article>
+
+    <article class="section" id="parties-leaders">
+      <span class="kicker">Parties, people, representation</span>
+      <h2>Political Parties & Leaders</h2>
+      <p>
+        Pakistani parties have been national, regional, religious, ethnic and personal-machine
+        organisations, often several of those at once. Founding dates are sometimes disputed
+        because parties split, renamed themselves, or revived older labels. The notes below
+        record historical role, not a ranking of virtue or strength.
+      </p>
+      <div class="party-grid">
+        <div class="party-card"><em>1906 / 1947</em><strong>Pakistan Muslim League and its factions</strong><p>The All-India Muslim League (1906) was the independence vehicle. After 1947 the Pakistan Muslim League fragmented repeatedly. Convention League under Ayub, Council League, PML-N, PML-Q and smaller groups all claim League ancestry. The League’s historical significance is the founding of the state; its later significance is that “Muslim League” became a reusable label rather than a single organisation.</p></div>
+        <div class="party-card"><em>1967</em><strong>Pakistan Peoples Party</strong><p>Founded 30 November 1967 in Lahore by Zulfikar Ali Bhutto. Combined a populist, left-leaning programme with a strong Sindh base after the 1970s. Governed federally in 1971–77, 1988–90, 1993–96, 2008–13, and as a coalition partner in 2022– and 2024–. Benazir Bhutto and later Asif Ali Zardari and Bilawal Bhutto Zardari have been its principal national figures.</p></div>
+        <div class="party-card"><em>1993 label</em><strong>Pakistan Muslim League-Nawaz</strong><p>The Nawaz Sharif faction of the League, consolidated after the IJI period (1988–93). Governed federally in 1990–93, 1997–99, 2013–18, and from 2022 in coalition (Shehbaz Sharif). Strongest historically in Punjab. Maryam Nawaz became Chief Minister of Punjab in 2024.</p></div>
+        <div class="party-card"><em>2002</em><strong>Pakistan Muslim League-Q</strong><p>Formed around supporters of the Musharraf-era parliamentary experiment. Largest party after the 2002 election. Later a smaller coalition partner. Distinct from PML-N despite the shared League name.</p></div>
+        <div class="party-card"><em>1996</em><strong>Pakistan Tehreek-e-Insaf</strong><p>Founded 25 April 1996 by Imran Khan. Became a national governing party after 2018. After 2022 it was the principal opposition force; in 2024 its candidates largely contested as independents after the party symbol was withheld. Competing accounts of 2018 and 2024 elections are recorded in the election archive, not resolved here.</p></div>
+        <div class="party-card"><em>1949 (East Pakistan)</em><strong>Awami League</strong><p>Founded in East Pakistan; under Sheikh Mujibur Rahman it won the 1970 majority on the Six Points. After 1971 it became the founding party of Bangladesh and ceased to be a Pakistani party. It belongs in this archive because the 1970–71 crisis is Pakistani political history.</p></div>
+        <div class="party-card"><em>1984</em><strong>Muttahida Qaumi Movement</strong><p>Grew from the All-Pakistan Muhajir Students Organisation (1978) into the Mohajir / Muttahida Qaumi Movement in 1984 under Altaf Hussain. Dominant in urban Sindh, especially Karachi, in several elections. Later split; MQM-Pakistan has been a federal coalition partner, including after 2024.</p></div>
+        <div class="party-card"><em>1986</em><strong>Awami National Party</strong><p>Successor, via the National Awami Party, to the Khudai Khidmatgar / Wali Khan tradition of Pashtun nationalist electoral politics. Governed Khyber Pakhtunkhwa in coalition periods; Abdul Wali Khan and later Asfandyar Wali Khan are its principal dynastic leaders.</p></div>
+        <div class="party-card"><em>1941</em><strong>Jamaat-e-Islami</strong><p>Founded by Abul A’la Maududi on 26 August 1941. Cadre-based Islamist party; influential in constitution-making debates, the 1977 PNA, the Afghan-war years, and as a coalition or opposition force. Electoral seat totals have usually been modest relative to its organisational weight.</p></div>
+        <div class="party-card"><em>1945 / later splits</em><strong>Jamiat Ulema-e-Islam</strong><p>Deobandi ulama party, later split; the Fazlur Rehman faction (JUI-F) has been the most consequential in national coalitions, including the 2002 MMA and later assemblies. Distinct from Jamaat-e-Islami.</p></div>
+        <div class="party-card"><em>2002 alliance</em><strong>Muttahida Majlis-e-Amal</strong><p>Electoral alliance of religious parties, strongest in the 2002 election in Khyber Pakhtunkhwa and Balochistan. Later revived in varying form. An alliance, not a single party.</p></div>
+        <div class="party-card"><em>Regional</em><strong>Balochistan and Pashtun parties</strong><p>Balochistan National Party (Mengal and other factions), National Party, Balochistan Awami Party, and Pakhtunkhwa Milli Awami Party (Mehmood Khan Achakzai) have been the main electoral vehicles of Baloch and southern-Pashtun regional politics. PkMAP’s Achakzai was Leader of the Opposition in the National Assembly in 2026.</p></div>
+      </div>
+      <p>
+        The Pakistan National Alliance (1977) was a multi-party opposition movement, not a
+        standing party. Smaller groups — Tehreek-e-Labbaik Pakistan, Istehkam-e-Pakistan Party,
+        National Peoples Party, and others — appear in specific elections and coalitions.
+        They are omitted as cards where their national-historical weight is limited.
+      </p>
+
+      <h3>People who shaped Pakistani politics</h3>
+      <p>
+        Inclusion here follows documented political office or movement leadership, not celebrity.
+      </p>
+      <div class="figure-grid">
+        <div class="figure-card"><strong>Muhammad Ali Jinnah</strong><p>Leader of the All-India Muslim League; first Governor-General; first President of the Constituent Assembly. Died 11 September 1948.</p></div>
+        <div class="figure-card"><strong>Liaquat Ali Khan</strong><p>First Prime Minister (1947–51). Introduced the Objectives Resolution. Assassinated 16 October 1951.</p></div>
+        <div class="figure-card"><strong>Fatima Jinnah</strong><p>Independence-era political figure; candidate against Ayub Khan in the 1965 presidential election.</p></div>
+        <div class="figure-card"><strong>Khawaja Nazimuddin</strong><p>Governor-General, then Prime Minister; dismissed by Ghulam Muhammad in 1953.</p></div>
+        <div class="figure-card"><strong>Huseyn Shaheed Suhrawardy</strong><p>Prime Minister 1956–57; earlier chief minister of undivided Bengal; linked to both League and later opposition politics.</p></div>
+        <div class="figure-card"><strong>Iskander Mirza</strong><p>Last Governor-General; first President; proclaimed the 1958 Martial Law, then was removed by Ayub Khan.</p></div>
+        <div class="figure-card"><strong>Ayub Khan</strong><p>Military president 1958–69; author of the 1962 Constitution and Basic Democracies.</p></div>
+        <div class="figure-card"><strong>Sheikh Mujibur Rahman</strong><p>Awami League leader; 1970 majority mandate; founding president of Bangladesh. Essential to Pakistan’s 1970–71 political history.</p></div>
+        <div class="figure-card"><strong>Zulfikar Ali Bhutto</strong><p>President 1971–73; Prime Minister 1973–77; principal author of the 1973 Constitution as head of government; executed 1979.</p></div>
+        <div class="figure-card"><strong>Nusrat Bhutto</strong><p>PPP co-chair after 1979; opposition leader under Martial Law; litigant in the 1977 Supreme Court “doctrine of necessity” case.</p></div>
+        <div class="figure-card"><strong>Zia-ul-Haq</strong><p>Chief Martial Law Administrator 1977; President 1978–88; Islamisation programme; Eighth Amendment.</p></div>
+        <div class="figure-card"><strong>Benazir Bhutto</strong><p>Prime Minister 1988–90 and 1993–96; first woman to head a democratic government in a Muslim-majority country. Assassinated 27 December 2007.</p></div>
+        <div class="figure-card"><strong>Nawaz Sharif</strong><p>Prime Minister 1990–93, 1997–99, 2013–17. Central figure of PML-N. Disqualified by the Supreme Court in 2017.</p></div>
+        <div class="figure-card"><strong>Shehbaz Sharif</strong><p>Long-time Chief Minister of Punjab; Prime Minister 2022–23 and from 3 March 2024.</p></div>
+        <div class="figure-card"><strong>Pervez Musharraf</strong><p>Took power 12 October 1999; President 2001–08; LFO and Seventeenth Amendment; resigned 2008.</p></div>
+        <div class="figure-card"><strong>Asif Ali Zardari</strong><p>President 2008–13 and from 10 March 2024; PPP co-chair; held office during the Eighteenth Amendment.</p></div>
+        <div class="figure-card"><strong>Imran Khan</strong><p>Founder of PTI; Prime Minister 2018–22; removed by vote of no confidence on 10 April 2022. Subsequent legal cases are recorded as court proceedings, not as political verdicts.</p></div>
+        <div class="figure-card"><strong>Abdul Ghaffar Khan / Abdul Wali Khan</strong><p>Khudai Khidmatgar and NAP/ANP leadership; principal current of Pashtun electoral nationalism in the NWFP / Khyber Pakhtunkhwa.</p></div>
+        <div class="figure-card"><strong>Abul A’la Maududi / Mufti Mahmood</strong><p>Maududi founded Jamaat-e-Islami. Mufti Mahmood led JUI and the 1970s religious opposition, including the PNA. Separate organisations, often allied.</p></div>
+        <div class="figure-card"><strong>Altaf Hussain</strong><p>Founder-leader of MQM; reshaped urban Sindh’s electoral map from the 1980s. Later operated from exile; the party split.</p></div>
+      </div>
+
+      <h3 id="women-politics">Women in Pakistani politics</h3>
+      <p>
+        Women’s political history in Pakistan is older than reserved seats, but reserved seats
+        have been the main institutional path into the legislatures. A smaller number of women
+        have held the highest executive and presiding offices.
+      </p>
+      <div class="figure-grid">
+        <div class="figure-card"><strong>Fatima Jinnah</strong><p>Independence-era campaigner; 1965 presidential candidate against a military president — the first woman to contest that office.</p></div>
+        <div class="figure-card"><strong>Benazir Bhutto</strong><p>Prime Minister from 2 December 1988. First woman to head a democratic government in a Muslim-majority country. Elected again in 1993. Assassinated while campaigning in 2007.</p></div>
+        <div class="figure-card"><strong>Nusrat Bhutto</strong><p>PPP co-chair and opposition leader after 1977; kept the party in being under Martial Law.</p></div>
+        <div class="figure-card"><strong>Fahmida Mirza</strong><p>Speaker of the National Assembly, 19 March 2008 – 3 June 2013. First woman to preside over Pakistan’s lower house (NA official list).</p></div>
+        <div class="figure-card"><strong>Begum Ashraf Abbasi</strong><p>Deputy Speaker of the National Assembly in the 1970s and again in the 1988 Assembly — among the first women in the chair of the House.</p></div>
+        <div class="figure-card"><strong>Begum Nasim Wali Khan</strong><p>ANP leader in the NWFP; a principal woman figure of Pashtun electoral politics after the 1970s.</p></div>
+        <div class="figure-card"><strong>Hina Rabbani Khar</strong><p>Appointed foreign minister in 2011; first woman to hold that federal portfolio.</p></div>
+        <div class="figure-card"><strong>Sherry Rehman</strong><p>Information minister, later senator and ambassador; a long-serving PPP parliamentarian and public advocate on minority and climate files.</p></div>
+        <div class="figure-card"><strong>Shehla Raza</strong><p>Deputy Speaker of the Sindh Assembly over more than one term — a leading provincial presiding officer.</p></div>
+        <div class="figure-card"><strong>Maryam Nawaz Sharif</strong><p>Elected Chief Minister of Punjab on 26 February 2024 and sworn in the same day — the first woman to hold that office, and the first woman chief minister of any Pakistani province.</p></div>
+      </div>
+      <p>
+        Reserved seats for women in the National Assembly and provincial assemblies, expanded
+        in the 2002 framework and retained after 2010, have produced a larger cohort of women
+        legislators than executive office alone would suggest. Minority representation is
+        separately reserved (non-Muslim seats in the National Assembly and provincial assemblies).
+        Those seats are a constitutional mechanism, not a measure of social equality.
+      </p>
+      <a class="back-archive" href="#archive-nav">Back to political archive</a>
+    </article>
+
+    <article class="section" id="federalism">
+      <span class="kicker">Federation and the provinces</span>
+      <h2>Provinces & Federalism</h2>
+      <p>
+        Pakistan is a federation whose internal map has been rewritten several times. The
+        original western units were the Punjab, Sindh, the North-West Frontier Province and
+        Balochistan (then a mix of province, states and tribal areas), plus princely states
+        and the tribal agencies. East Bengal was the majority-population wing. Islamabad
+        Capital Territory, Gilgit-Baltistan and Azad Jammu and Kashmir sit in different
+        constitutional categories: ICT is a federal territory represented in parliament;
+        GB and AJK have their own legislatures and are not provinces of Pakistan under the
+        1973 Constitution.
+      </p>
+      <h3>One Unit and its undoing</h3>
+      <p>
+        On 14 October 1955 the western provinces and states were merged into a single
+        “West Pakistan” to create a two-unit federation with East Pakistan. The stated
+        purpose was administrative simplification and parity. The political effect in the
+        smaller western provinces was the loss of their own ministries and the sense that
+        Punjab dominated the new unit. Yahya Khan dissolved One Unit with effect from
+        1 July 1970, restoring Punjab, Sindh, NWFP and Balochistan in time for the 1970
+        election. That restoration is the basis of the present four-province map.
+      </p>
+      <h3>The 1973 federation and the Eighteenth Amendment</h3>
+      <p>
+        The 1973 Constitution listed federal subjects and, until 2010, a concurrent list.
+        Provinces had assemblies, chief ministers and governors. In practice the centre
+        remained strong, especially under military-led governments. The Eighteenth Amendment
+        (2010) abolished the concurrent list, transferred a large body of legislative and
+        administrative work to the provinces (including school and health administration),
+        renamed the NWFP as Khyber Pakhtunkhwa, and restated the Council of Common Interests
+        as the federal–provincial coordinating forum. National Finance Commission awards
+        govern the vertical and horizontal share of taxes. Federalism in Pakistan is therefore
+        not only a map: it is a fiscal argument that reappears at every NFC and every budget.
+      </p>
+      <h3>Provincial political traditions</h3>
+      <p>
+        <strong>Punjab</strong> has been the demographic and electoral centre of gravity of
+        the post-1971 state. PML-N, PPP (in earlier decades), PTI (especially 2018 and 2024)
+        and, historically, the Unionist then League traditions have competed here. Lahore,
+        Rawalpindi–Islamabad’s military-bureaucratic complex, and the central Punjab cities
+        have supplied a disproportionate share of federal office-holders. Maryam Nawaz’s
+        2024 chief ministership is a new fact in a province that had not previously had a
+        woman in that office.
+      </p>
+      <p>
+        <strong>Sindh</strong> has a dual political geography: rural Sindh, where the PPP has
+        been the principal electoral force since the 1970s, and urban Sindh, especially Karachi
+        and Hyderabad, where MQM (and later its successors and rivals, including PTI and
+        religious parties) have been decisive. The 1980s ethnic violence in Karachi is part
+        of the province’s political history, as is the long argument over rural–urban resource
+        allocation.
+      </p>
+      <p>
+        <strong>Khyber Pakhtunkhwa</strong> (NWFP until 2010) has alternated among ANP, religious
+        alliances (notably MMA in 2002), PML-N, and PTI, which won the provincial assembly
+        in 2018 and remained the principal force in 2024. The 25th Amendment’s merger of FATA
+        into the province (2018) extended the provincial franchise and courts to the former
+        tribal districts — a constitutional change whose administrative completion is still
+        a political subject.
+      </p>
+      <p>
+        <strong>Balochistan</strong> is the largest province by area and the smallest by
+        population. Its politics combine sardari and party forms, repeated federal
+        interventions, nationalist parties (BNP and others), and, at times, insurgency.
+        Neither “tribal” nor “nationalist” is an adequate single label. Quetta’s mixed
+        population, the Mekran coast, and the gas- and mineral-bearing districts have
+        different political economies. Federal–provincial conflict over resources is a
+        constitutional as well as a security issue.
+      </p>
+      <p>
+        <strong>Islamabad</strong> is the federal capital, represented in the National Assembly
+        but without a provincial assembly. Its local government has been repeatedly redesigned.
+        Politically it is a national stage rather than a provincial system.
+      </p>
+
+      <h3 id="local-government">Local government</h3>
+      <p>
+        Local government has been used both to widen participation and to bypass parties.
+        Ayub Khan’s Basic Democracies (1959) created an electoral college for the presidency.
+        Zia-ul-Haq’s 1979 local-government system was non-party in design. Musharraf’s 2001
+        Devolution Plan created district nazims and, again, a local tier stronger than the
+        provinces for a time. After 2010, local government became a provincial subject; each
+        province has written its own local government laws, with uneven elections and frequent
+        suspension. The historical pattern is that military-led governments have often invested
+        in local government as a substitute for provincial and parliamentary politics, while
+        elected provincial governments have often been reluctant to devolve in turn.
+      </p>
+      <a class="back-archive" href="#archive-nav">Back to political archive</a>
+    </article>
+
+    <article class="section dark" id="political-crises">
+      <span class="kicker">Crises and the courts</span>
+      <h2>Major Political Crises</h2>
+      <p>
+        The cards below are a documentary index, not a league table of blame. Where events are
+        disputed, the card says who alleged, who ruled, or who reported.
+      </p>
+      <div class="crisis-grid">
+        <div class="crisis-card"><strong>1948–51 succession shock</strong><p>Jinnah’s death (1948) and Liaquat’s assassination (1951) removed the two founding office-holders and shifted power toward the bureaucratic Governor-General.</p></div>
+        <div class="crisis-card"><strong>1954 Assembly dissolution</strong><p>Governor-General Ghulam Muhammad dissolved the first Constituent Assembly. Maulvi Tamizuddin Khan’s challenge failed in the Federal Court (Justice Munir), which privileged the Governor-General’s powers.</p></div>
+        <div class="crisis-card"><strong>1958 Martial Law</strong><p>Iskander Mirza abrogated the Constitution on 7 October; Ayub Khan took the presidency on 27 October. Dosso (1958) treated the coup as a new legal order.</p></div>
+        <div class="crisis-card"><strong>1968–69 anti-Ayub movement</strong><p>Urban protest, student and labour mobilisation, and elite defection forced Ayub’s resignation and a second Martial Law under Yahya Khan.</p></div>
+        <div class="crisis-card"><strong>1970–71 constitutional crisis</strong><p>Awami League majority not transferred into government; military operation in East Pakistan; India–Pakistan war; Bangladesh independence. See the 1970 and East Pakistan sections.</p></div>
+        <div class="crisis-card"><strong>1977 election and PNA</strong><p>Official results gave PPP a large majority. The Pakistan National Alliance alleged rigging. Street movement and failed talks preceded the 5 July coup.</p></div>
+        <div class="crisis-card"><strong>1988–99 dismissals</strong><p>Article 58(2)(b) was used to dismiss elected governments in 1988/90, 1993 and 1996. The Supreme Court restored Nawaz Sharif in May 1993, then both President and Prime Minister resigned.</p></div>
+        <div class="crisis-card"><strong>1999 coup</strong><p>On 12 October 1999 the army command dismissed the Sharif government. Musharraf became Chief Executive, later President. A Supreme Court judgment in 2000 granted a time-limited doctrine of necessity.</p></div>
+        <div class="crisis-card"><strong>2007 judicial crisis and emergency</strong><p>Suspension of the Chief Justice (March) produced the lawyers’ movement. Emergency of 3 November 2007 suspended the Constitution and removed judges. Musharraf resigned in 2008.</p></div>
+        <div class="crisis-card"><strong>Benazir Bhutto assassination</strong><p>27 December 2007, Rawalpindi. A UN commission later examined the killing. Criminal and political accountability remain contested; the fact of the assassination is not.</p></div>
+        <div class="crisis-card"><strong>2014 protests</strong><p>PTI and allied sit-ins in Islamabad contested the 2013 election result. The government was not displaced. Competing claims of rigging were not converted into a court-ordered re-election.</p></div>
+        <div class="crisis-card"><strong>2017 Panama disqualification</strong><p>The Supreme Court disqualified Nawaz Sharif from office. That is a court judgment. Parties disagree about its political meaning.</p></div>
+        <div class="crisis-card"><strong>2018 election controversies</strong><p>PTI formed a government as largest party. Opposition parties alleged pre-poll management. No election tribunal rewrote the national result.</p></div>
+        <div class="crisis-card"><strong>2022 no-confidence</strong><p>10 April 2022: first successful parliamentary vote of no confidence against a Prime Minister. PTI alleged a foreign-backed conspiracy; the coalition called it a constitutional majority. The recorded fact is the vote.</p></div>
+        <div class="crisis-card"><strong>2023–24 election delay and 8 February 2024</strong><p>Elections were held after the usual ninety-day window. Opposition parties alleged result interference. The ECP notified winners. Reserved-seat cases then changed parliamentary arithmetic.</p></div>
+        <div class="crisis-card"><strong>2024–25 constitutional packages</strong><p>Twenty-sixth Amendment (October 2024) and Twenty-seventh Amendment (November 2025) remade judicial appointment and military command clauses. Opposition parties described both as rushed; the government described both as reform. Both are now part of the official constitutional text.</p></div>
+      </div>
+
+      <h3 id="judiciary">Judiciary and politics — a historical note</h3>
+      <p>
+        This is not legal advice. It is a record of constitutional cases that changed political
+        possibility. The Tamizuddin case (1955) and Dosso (1958) enlarged extra-parliamentary
+        power. Asma Jilani (1972) rejected Dosso and held Yahya’s Martial Law illegal — after
+        it had already ended. Nusrat Bhutto (1977) granted Zia a doctrine of necessity. The
+        1993 restoration of Nawaz Sharif was a rare judicial check on 58(2)(b). The 2000
+        Musharraf validation and the 2007 emergency, followed by the restoration of judges in
+        2009, book-ended the lawyers’ movement. The Panama judgments (2017) removed a sitting
+        Prime Minister. After 2022 a further series of cases involving PTI, election symbols,
+        reserved seats and bail became part of ordinary political competition. In each instance
+        this archive distinguishes the court’s order from the political interpretation placed
+        on it.
+      </p>
+      <a class="back-archive" href="#archive-nav">Back to political archive</a>
+    </article>
+
+    <article class="section featured" id="timeline">
+      <span class="kicker">Chronology</span>
+      <h2>Pakistan's Political Timeline</h2>
+      <p>
+        A compact chronology of the dates used throughout this archive. Entries are political
+        and constitutional; wars are included only where they changed the political system.
+      </p>
+      <nav class="jump" aria-label="Jump by decade">
+        <a href="#t1940">1940s</a>
+        <a href="#t1950">1950s</a>
+        <a href="#t1960">1960s</a>
+        <a href="#t1970">1970s</a>
+        <a href="#t1980">1980s</a>
+        <a href="#t1990">1990s</a>
+        <a href="#t2000">2000s</a>
+        <a href="#t2010">2010s</a>
+        <a href="#t2020">2020s</a>
+      </nav>
+      <div class="timeline">
+        <p class="decade" id="t1940">1940s</p>
+        <article><strong>14 August 1947</strong> — Independence. Jinnah Governor-General; Liaquat Ali Khan Prime Minister. Government of India Act 1935 as interim constitution.</article>
+        <article><strong>11 September 1948</strong> — Jinnah dies. Khawaja Nazimuddin becomes Governor-General.</article>
+        <article><strong>1 January 1949</strong> — UN-supervised ceasefire in Jammu and Kashmir takes effect (Karachi Agreement signed 27 July 1949).</article>
+        <article><strong>12 March 1949</strong> — Constituent Assembly adopts the Objectives Resolution (introduced 7 March by Liaquat Ali Khan).</article>
+        <p class="decade" id="t1950">1950s</p>
+        <article><strong>16 October 1951</strong> — Liaquat Ali Khan assassinated in Rawalpindi. Nazimuddin becomes Prime Minister; Ghulam Muhammad Governor-General.</article>
+        <article><strong>17 April 1953</strong> — Governor-General dismisses Prime Minister Nazimuddin; Mohammad Ali Bogra appointed.</article>
+        <article><strong>24 October 1954</strong> — First Constituent Assembly dissolved.</article>
+        <article><strong>14 October 1955</strong> — One Unit: West Pakistan merged into a single province.</article>
+        <article><strong>23 March 1956</strong> — First Constitution in force. Islamic Republic. Iskander Mirza first President.</article>
+        <article><strong>7 October 1958</strong> — Martial Law proclaimed; Constitution abrogated. 27 October: Ayub Khan becomes President.</article>
+        <p class="decade" id="t1960">1960s</p>
+        <article><strong>8 June 1962</strong> — 1962 Constitution in force (presidential system; Basic Democracies electoral college).</article>
+        <article><strong>1965</strong> — Presidential election: Ayub Khan declared winner over Fatima Jinnah. Indo-Pakistan war the same year.</article>
+        <article><strong>25 March 1969</strong> — Ayub resigns; Yahya Khan imposes Martial Law; 1962 Constitution abrogated.</article>
+        <p class="decade" id="t1970">1970s</p>
+        <article><strong>1 July 1970</strong> — One Unit dissolved; four western provinces restored.</article>
+        <article><strong>7 December 1970</strong> — First general election on adult franchise. Awami League majority; PPP largest in the West.</article>
+        <article><strong>25 March 1971</strong> — Military operation in Dhaka; civil conflict in East Pakistan.</article>
+        <article><strong>16 December 1971</strong> — Surrender in Dhaka; Bangladesh independent. 20 December: Bhutto takes power in remaining Pakistan.</article>
+        <article><strong>21 April 1972</strong> — Interim Constitution.</article>
+        <article><strong>14 August 1973</strong> — 1973 Constitution in force (passed 10 April; authenticated 12 April). Parliamentary, bicameral, federal.</article>
+        <article><strong>1974</strong> — First Amendment (territory after 1971); Second Amendment (Ahmadi constitutional status); Islamic Summit, Lahore; India’s nuclear test and Pakistan’s nuclear decision.</article>
+        <article><strong>7 March 1977</strong> — General election; PNA alleges rigging.</article>
+        <article><strong>5 July 1977</strong> — Zia-ul-Haq coup and Martial Law.</article>
+        <article><strong>4 April 1979</strong> — Zulfikar Ali Bhutto executed.</article>
+        <p class="decade" id="t1980">1980s</p>
+        <article><strong>1979</strong> — Hudood Ordinances; Soviet intervention in Afghanistan.</article>
+        <article><strong>25 February 1985</strong> — Non-party elections. Junejo Prime Minister (23 March). Eighth Amendment later that year.</article>
+        <article><strong>29 May 1988</strong> — Zia dismisses Junejo.</article>
+        <article><strong>17 August 1988</strong> — Zia dies in a plane crash. Ghulam Ishaq Khan becomes President.</article>
+        <article><strong>16 November 1988</strong> — Party-based general election. Benazir Bhutto Prime Minister from 2 December.</article>
+        <p class="decade" id="t1990">1990s</p>
+        <article><strong>6 August 1990</strong> — First Benazir government dismissed. Nawaz Sharif Prime Minister from 6 November 1990.</article>
+        <article><strong>18 April – 26 May 1993</strong> — Sharif dismissed; Supreme Court restores him; both President and Prime Minister later resign.</article>
+        <article><strong>6 October 1993</strong> — Election; Benazir Prime Minister from 19 October.</article>
+        <article><strong>5 November 1996</strong> — Second Benazir government dismissed by President Leghari.</article>
+        <article><strong>3 February 1997</strong> — PML-N landslide. Thirteenth Amendment removes 58(2)(b).</article>
+        <article><strong>May 1998</strong> — Pakistan conducts nuclear tests.</article>
+        <article><strong>12 October 1999</strong> — Military coup; Musharraf takes power.</article>
+        <p class="decade" id="t2000">2000s</p>
+        <article><strong>20 June 2001</strong> — Musharraf becomes President (NA list).</article>
+        <article><strong>10 October 2002</strong> — General election under the Legal Framework Order. PML-Q largest party.</article>
+        <article><strong>2003</strong> — Seventeenth Amendment.</article>
+        <article><strong>March 2007</strong> — Chief Justice suspended; lawyers’ movement begins.</article>
+        <article><strong>3 November 2007</strong> — Emergency proclaimed; Constitution suspended.</article>
+        <article><strong>27 December 2007</strong> — Benazir Bhutto assassinated.</article>
+        <article><strong>18 February 2008</strong> — General election; PPP largest party. Musharraf resigns 18 August. Zardari President from 9 September.</article>
+        <p class="decade" id="t2010">2010s</p>
+        <article><strong>8 April 2010</strong> — Eighteenth Amendment passed (presidential assent 19 April 2010).</article>
+        <article><strong>11 May 2013</strong> — Election; first elected-to-elected transfer of the post-2008 sequence. Nawaz Sharif Prime Minister from 5 June.</article>
+        <article><strong>28 July 2017</strong> — Supreme Court disqualifies Nawaz Sharif. Shahid Khaqan Abbasi becomes Prime Minister on 1 August.</article>
+        <article><strong>24 May 2018</strong> — Twenty-fifth Amendment: FATA merged into Khyber Pakhtunkhwa.</article>
+        <article><strong>25 July 2018</strong> — Election; PTI largest party. Imran Khan Prime Minister from 18 August.</article>
+        <p class="decade" id="t2020">2020s</p>
+        <article><strong>10 April 2022</strong> — Vote of no confidence. Shehbaz Sharif Prime Minister from 11 April 2022.</article>
+        <article><strong>14 August 2023</strong> — National Assembly term ends. Anwaar-ul-Haq Kakar caretaker Prime Minister until 3 March 2024.</article>
+        <article><strong>8 February 2024</strong> — General election. Independents largest general-seat block; coalition government formed.</article>
+        <article><strong>26 February 2024</strong> — Maryam Nawaz sworn in as Chief Minister of Punjab, first woman in that office.</article>
+        <article><strong>1 March 2024</strong> — Ayaz Sadiq elected Speaker; Ghulam Mustafa Shah Deputy Speaker.</article>
+        <article><strong>3 March 2024</strong> — Shehbaz Sharif elected Prime Minister (second tenure).</article>
+        <article><strong>10 March 2024</strong> — Asif Ali Zardari sworn in as President (second tenure). Senate elects Yusuf Raza Gilani Chairman on 9 April.</article>
+        <article><strong>21 October 2024</strong> — Twenty-sixth Amendment assented: judicial appointments, CJP term, Judicial Commission.</article>
+        <article><strong>May 2025</strong> — India–Pakistan military conflict. Rank of Field Marshal conferred on Chief of Army Staff Syed Asim Munir (23 May 2025).</article>
+        <article><strong>13 November 2025</strong> — Twenty-seventh Amendment assented: Federal Constitutional Court; Article 243 / Chief of Defence Forces. Official Constitution text published as amended up to 21 November 2025.</article>
+        <article><strong>June 2026</strong> — National Assembly passes the federal budget for FY 2026–27 after opposition walkout.</article>
+        <article><strong>September 2026</strong> — Prime Minister Shehbaz Sharif in office; President Zardari in office; Speaker Ayaz Sadiq in office. Government–opposition consultations on a new Chief Election Commissioner are on the parliamentary record. This is the archive’s verified endpoint, not a prediction.</article>
+      </div>
+      <a class="back-archive" href="#archive-nav">Back to political archive</a>
+    </article>
+
+    <article class="section" id="institutions">
+      <span class="kicker">How the system is supposed to work</span>
+      <h2>Political institutions</h2>
+      <p>
+        Offices below are described as they stand in the 1973 Constitution after the Eighteenth
+        Amendment, with notes on how they have differed in other periods.
+      </p>
+      <div class="office-grid">
+        <div class="office-card"><em>Head of state</em><strong>President</strong><p>Elected by an electoral college of Parliament and the provincial assemblies for five years. After 2010 the President acts on the advice of the Prime Minister and Cabinet, except where the Constitution says otherwise. Under 1962, and under 58(2)(b), the office was executive in a stronger sense.</p></div>
+        <div class="office-card"><em>Head of government</em><strong>Prime Minister</strong><p>Elected by the National Assembly; commands the federal Cabinet. The working centre of a parliamentary government — except in periods when a military president, a dissolving civilian president, or a Chief Martial Law Administrator held the effective executive.</p></div>
+        <div class="office-card"><em>Lower house</em><strong>National Assembly</strong><p>Population-basis house. General seats plus reserved seats for women and non-Muslims. Five-year term unless dissolved. Originates money bills. Elects the Prime Minister and the Speaker.</p></div>
+        <div class="office-card"><em>Upper house</em><strong>Senate</strong><p>Created by the 1973 Constitution. Provincial (and territorial) representation on a more equal basis than the Assembly. Chairman is first in line to act as President. Cannot be dissolved with the Assembly.</p></div>
+        <div class="office-card"><em>Apex courts</em><strong>Supreme Court / FCC</strong><p>Until 2025 the Supreme Court was the apex constitutional court. The Twenty-seventh Amendment created a Federal Constitutional Court with constitutional jurisdiction. Historical political cases are listed in the crises section. This page does not give legal advice.</p></div>
+        <div class="office-card"><em>Elections</em><strong>Election Commission</strong><p>A constitutional body. Conducts federal and provincial elections. The Twentieth Amendment set out appointment procedures involving government and opposition. CEC tenure and appointments were a live parliamentary issue in 2025–26.</p></div>
+        <div class="office-card"><em>Federalism</em><strong>Council of Common Interests</strong><p>Federal–provincial forum chaired by the Prime Minister. Strengthened in the 1973 design and again by the Eighteenth Amendment. Complements the National Finance Commission on fiscal federalism.</p></div>
+        <div class="office-card"><em>Islamic provisions</em><strong>Council of Islamic Ideology</strong><p>Advisory constitutional body on whether laws are consistent with Islamic injunctions. Influential as a recommending institution, not as a legislature.</p></div>
+        <div class="office-card"><em>Provinces</em><strong>Assemblies and governments</strong><p>Each province has an elected assembly, a chief minister and a governor. Governors are federal appointees acting on advice in the parliamentary periods. Provincial autonomy expanded sharply in 2010.</p></div>
+        <div class="office-card"><em>Transitions</em><strong>Caretaker governments</strong><p>Neutral cabinets appointed to hold elections, now under a constitutional procedure (Twentieth Amendment and later practice). They are not a parliamentary government and are not a Martial Law administration — a distinction this archive keeps.</p></div>
+      </div>
+      <a class="back-archive" href="#archive-nav">Back to political archive</a>
+    </article>
+
+    <article class="section" id="sources">
+      <span class="kicker">Research & Sources</span>
+      <h2>Sources & Records</h2>
+      <p>
+        This archive is a historical reference compiled from official parliamentary, electoral
+        and constitutional records together with established historical sources. Political
+        controversies are presented with attribution where accounts differ. Office dates for
+        prime ministers, presidents and speakers follow the National Assembly of Pakistan lists
+        as they stood in September 2026. Election dates and 1985–2024 turnout figures follow
+        Election Commission of Pakistan publications. The constitutional text is the National
+        Assembly edition “as amended up to 21 November 2025.”
+      </p>
+      <ul class="source-list">
+        <li><a href="https://na.gov.pk/" rel="noopener">National Assembly of Pakistan</a></li>
+        <li><a href="https://na.gov.pk/en/priminister_list.php" rel="noopener">National Assembly — Prime Ministers list</a></li>
+        <li><a href="https://na.gov.pk/en/president_list.php" rel="noopener">National Assembly — Presidents list</a></li>
+        <li><a href="https://na.gov.pk/en/spkrs_list.php" rel="noopener">National Assembly — Speakers list</a></li>
+        <li><a href="https://www.na.gov.pk/en/downloads.php" rel="noopener">National Assembly — Constitution (as amended up to 21 November 2025) and other downloads</a></li>
+        <li><a href="https://www.na.gov.pk/en/content.php?id=121" rel="noopener">National Assembly — Assemblies from 1st to 15th</a></li>
+        <li><a href="https://www.senate.gov.pk/" rel="noopener">Senate of Pakistan</a></li>
+        <li><a href="https://www.ecp.gov.pk/" rel="noopener">Election Commission of Pakistan</a></li>
+        <li><a href="https://president.gov.pk/" rel="noopener">Presidency of Pakistan</a></li>
+        <li><a href="https://www.pmo.gov.pk/" rel="noopener">Prime Minister’s Office</a></li>
+        <li><a href="https://www.supremecourt.gov.pk/" rel="noopener">Supreme Court of Pakistan</a></li>
+        <li><a href="https://www.pid.gov.pk/" rel="noopener">Press Information Department / official government releases</a></li>
+        <li><a href="https://www.pbs.gov.pk/" rel="noopener">Pakistan Bureau of Statistics</a> (demographic context)</li>
+        <li><a href="https://www.britannica.com/place/Pakistan" rel="noopener">Encyclopaedia Britannica — Pakistan</a></li>
+        <li><a href="https://www.britannica.com/topic/list-of-prime-ministers-of-Pakistan-2230533" rel="noopener">Encyclopaedia Britannica — Prime ministers of Pakistan</a></li>
+        <li><a href="https://www.loc.gov/item/2018311993/" rel="noopener">Library of Congress — Constitution of the Islamic Republic of Pakistan</a></li>
+        <li><a href="https://data.ipu.org/parliament/PK/PK-LC01/" rel="noopener">Inter-Parliamentary Union — Pakistan National Assembly</a></li>
+        <li><a href="https://www.dawn.com/" rel="noopener">Dawn</a> (contemporary parliamentary and election reporting, including 2024–2026)</li>
+        <li><a href="https://www.thenews.com.pk/" rel="noopener">The News International</a> (Twenty-seventh Amendment reporting, November 2025)</li>
+        <li><a href="https://www.icj.org/pakistan-26th-constitutional-amendment-is-a-blow-to-the-independence-of-the-judiciary/" rel="noopener">International Commission of Jurists — comment on the 26th Amendment</a></li>
+      </ul>
+      <p class="note">
+        Where official lists use different spellings (Liaqat / Liaquat; Suharwardi / Suhrawardy;
+        Zulfiqar / Zulfikar), this page uses the common historical spelling in prose and the
+        National Assembly date in tables. Seat numbers that could not be tied to an ECP or
+        National Assembly publication are omitted rather than guessed. This page does not use
+        partisan websites as sole sources for disputed events.
+      </p>
+    </article>
+
+    <aside class="urdu-note" lang="ur">
+      <h2>قومی سیاسی تاریخ کا ریکارڈ</h2>
+      <p>
+        یہ صفحہ پاکستان کی سیاسی تاریخ کا ایک قومی آرکائیو ہے: 1947 سے 2026 تک آئین، انتخابات،
+        حکومتیں، وزرائے اعظم، صدور، سیاسی جماعتیں، فوجی اور شہری ادوار، پارلیمان اور بڑے سیاسی
+        بحران۔ یہاں صرف وہ باتیں لکھی گئی ہیں جن کی تصدیق مستند اداروں سے ہو سکتی ہے۔ اختلافی
+        واقعات کو الزام یا عدالتی فیصلے کے طور پر واضح کیا گیا ہے، رائے کے طور پر نہیں۔
+      </p>
+    </aside>
+
+  </main>
+
   <div id="site-footer"></div>
   <script src="js/app.js"></script>
 </body>
