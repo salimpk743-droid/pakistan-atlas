@@ -1,623 +1,1445 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Sports History of Pakistan Since 1947 | Cricket, Hockey, Squash & All Major Sports</title>
-
-  <meta name="description" content="A comprehensive history of Pakistan sports since 1947, covering cricket, hockey, squash, athletics, wrestling, boxing, snooker, kabaddi, football, weightlifting, Asian Games, Commonwealth Games, Olympics and Pakistan's greatest athletes and teams.">
-
-  <meta name="keywords" content="Pakistan sports history, sports of Pakistan, Pakistan cricket history, Pakistan hockey history, Pakistan squash history, Pakistan Olympics, Pakistan Asian Games, Pakistan Commonwealth Games, Pakistani athletes, Pakistan sports achievements">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sports History of Pakistan Since 1947 | Cricket, Hockey, Squash & Olympic Archive</title>
+  <meta name="description" content="A national sports archive of Pakistan from 1947 to the present: cricket, hockey, squash, athletics, wrestling, boxing, Olympics, Asian Games, Commonwealth Games, world championships, and the country’s major athletes.">
+  <meta name="keywords" content="Pakistan sports history, Pakistan sports achievements, Pakistan cricket history, Pakistan hockey history, Pakistan Olympic history, Pakistan Asian Games, Pakistan Commonwealth Games, Pakistan athletes, Pakistani sportsmen, Pakistani sportswomen">
   <link rel="canonical" href="https://pakistan-atlas.vercel.app/sports.html">
-
   <meta property="og:title" content="Sports History of Pakistan Since 1947">
-  <meta property="og:description" content="The collective sporting history of Pakistan from 1947 to the present, covering cricket, hockey, squash and the country's major international sports achievements.">
+  <meta property="og:description" content="Pakistan’s sporting history from independence to the present: cricket, hockey, squash, Olympics, Asian Games and the country’s major athletes.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://pakistan-atlas.vercel.app/sports.html">
-
+  <meta property="og:image" content="https://pakistan-atlas.vercel.app/images/flag-pakistan.svg">
+  <meta property="og:site_name" content="Pakistan Atlas">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Sports History of Pakistan Since 1947">
+  <meta name="twitter:description" content="A national archive of Pakistan’s cricket, hockey, squash, Olympic and multi-sport history since 1947.">
+  <meta name="twitter:image" content="https://pakistan-atlas.vercel.app/images/flag-pakistan.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600&family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=3">
   <style>
     :root {
-      --green: #073b2a;
-      --deep: #06271d;
-      --gold: #c79b45;
-      --cream: #f5f0e6;
-      --paper: #fffdf8;
-      --ink: #17231e;
-      --muted: #64716b;
-      --line: #d9ddd7;
-      --red: #8d302b;
+      --archive-green: #073b2a;
+      --archive-deep: #052318;
+      --archive-gold: #c79b45;
+      --archive-cream: #f5f0e6;
+      --archive-paper: #fffdf8;
+      --archive-ink: #17231e;
+      --archive-muted: #5f6c66;
+      --archive-line: #d8ddd6;
+      --archive-red: #8d302b;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    html { scroll-behavior: smooth; }
 
-    body {
-      margin: 0;
-      background: var(--cream);
-      color: var(--ink);
-      font-family: Georgia, "Times New Roman", serif;
-      line-height: 1.8;
+    .skip-link {
+      position: absolute;
+      left: -999px;
+      top: 8px;
+      background: #fff;
+      color: var(--archive-green);
+      padding: 8px 14px;
+      z-index: 200;
+      font-family: "Source Sans 3", Arial, sans-serif;
+      font-weight: 700;
     }
+    .skip-link:focus { left: 12px; }
 
-    header {
+    .archive-hero {
       background:
-        linear-gradient(135deg, rgba(3,27,20,.96), rgba(7,59,42,.93)),
-        radial-gradient(circle at top right, rgba(199,155,69,.25), transparent 35%);
-      color: white;
-      padding: 85px 20px 70px;
-      border-bottom: 7px solid var(--gold);
+        linear-gradient(160deg, rgba(5, 35, 24, .97), rgba(7, 59, 42, .92)),
+        radial-gradient(circle at 88% 0%, rgba(199, 155, 69, .22), transparent 42%);
+      color: #fff;
+      padding: 2.4rem 0 2.6rem;
+      border-bottom: 5px solid var(--archive-gold);
     }
-
-    .hero {
-      max-width: 1180px;
-      margin: auto;
+    .archive-hero .wrap {
+      width: min(1120px, 92%);
+      margin: 0 auto;
     }
-
-    .eyebrow {
+    .archive-hero .eyebrow {
+      margin: 0;
+      font-family: "Source Sans 3", Arial, sans-serif;
+      font-size: .72rem;
+      letter-spacing: .2em;
       text-transform: uppercase;
-      letter-spacing: .18em;
-      font-family: Arial, sans-serif;
-      font-size: .78rem;
       color: #e8c978;
       font-weight: 700;
     }
-
-    h1 {
-      font-size: clamp(2.8rem, 7vw, 6.8rem);
-      line-height: .96;
-      margin: 18px 0 25px;
-      max-width: 1000px;
+    .archive-hero h1 {
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: clamp(1.65rem, 3.1vw, 2.45rem);
+      line-height: 1.22;
+      font-weight: 700;
+      letter-spacing: -.02em;
+      max-width: 18.5em;
+      margin: .55rem 0 1rem;
+      color: #fff;
     }
-
-    .hero p {
-      max-width: 900px;
-      font-size: 1.18rem;
-      color: #e8eee9;
-    }
-
-    .hero-meta {
-      margin-top: 35px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .hero-meta span {
-      border: 1px solid rgba(255,255,255,.25);
-      padding: 8px 13px;
-      border-radius: 999px;
-      font-family: Arial, sans-serif;
-      font-size: .82rem;
-    }
-
-    main {
-      max-width: 1180px;
-      margin: auto;
-      padding: 35px 20px 80px;
-    }
-
-    .intro {
-      background: var(--paper);
-      padding: 35px;
-      border-left: 6px solid var(--gold);
-      margin-bottom: 35px;
-      box-shadow: 0 12px 35px rgba(0,0,0,.05);
-    }
-
-    .intro p {
+    .archive-hero .deck {
+      max-width: 44em;
       margin: 0;
-      font-size: 1.08rem;
+      font-family: "Source Serif 4", Georgia, serif;
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: #e4ece7;
+    }
+    .archive-hero .crumb {
+      margin: .9rem 0 0;
+      font-family: "Source Sans 3", Arial, sans-serif;
+      font-size: .82rem;
+      color: #c9d6cf;
+    }
+    .archive-hero .crumb a { color: #f0cf78; }
+
+    .sports-main {
+      width: min(1120px, 92%);
+      margin: 0 auto;
+      padding: 2rem 0 4.5rem;
+      color: var(--archive-ink);
+      font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+      line-height: 1.75;
+    }
+    .sports-main section { padding: 0; }
+    .sports-main h2 {
+      font-family: "Playfair Display", Georgia, serif;
+      color: var(--archive-green);
+      font-size: clamp(1.45rem, 2.4vw, 1.95rem);
+      line-height: 1.2;
+      margin: 0 0 .9rem;
+      letter-spacing: -.015em;
+    }
+    .sports-main h3 {
+      font-family: "Playfair Display", Georgia, serif;
+      color: var(--archive-red);
+      font-size: 1.18rem;
+      margin: 1.6rem 0 .55rem;
+    }
+    .sports-main h4 {
+      font-family: "Source Sans 3", Arial, sans-serif;
+      color: var(--archive-green);
+      font-size: .92rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      margin: 1.2rem 0 .4rem;
+    }
+    .sports-main p { margin: 0 0 1rem; font-size: 1.02rem; }
+    .sports-main a { color: var(--archive-green); }
+    .sports-main a:hover { color: #0b5a3d; }
+
+    .kicker {
+      display: inline-block;
+      font-family: "Source Sans 3", Arial, sans-serif;
+      font-size: .72rem;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--archive-gold);
+      font-weight: 700;
+      margin-bottom: .35rem;
+    }
+
+    .lede {
+      background: var(--archive-paper);
+      border-left: 5px solid var(--archive-gold);
+      padding: 1.5rem 1.6rem;
+      box-shadow: 0 10px 28px rgba(7, 59, 42, .05);
+      margin: 0 0 1.6rem;
+    }
+    .lede p { margin: 0; font-size: 1.05rem; }
+
+    .archive-nav {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin: 0 0 2rem;
+    }
+    .archive-card {
+      display: flex;
+      flex-direction: column;
+      background: var(--archive-paper);
+      border: 1px solid var(--archive-line);
+      border-top: 4px solid var(--archive-green);
+      padding: 1.15rem 1.15rem 1.05rem;
+      text-decoration: none;
+      color: inherit;
+      min-height: 100%;
+      box-shadow: 0 8px 22px rgba(7, 59, 42, .04);
+      transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+    }
+    .archive-card:hover,
+    .archive-card:focus-visible {
+      transform: translateY(-3px);
+      box-shadow: 0 14px 30px rgba(7, 59, 42, .12);
+      border-top-color: var(--archive-gold);
+      color: inherit;
+    }
+    .archive-card:focus-visible {
+      outline: 3px solid var(--archive-gold);
+      outline-offset: 3px;
+    }
+    .archive-card .card-num {
+      font-family: "Source Sans 3", Arial, sans-serif;
+      font-size: .72rem;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--archive-gold);
+      font-weight: 700;
+    }
+    .archive-card .card-title {
+      display: block;
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 1.18rem;
+      color: var(--archive-green);
+      margin: .35rem 0 .45rem;
+      font-weight: 700;
+      line-height: 1.25;
+    }
+    .archive-card p {
+      margin: 0 0 1rem;
+      color: var(--archive-muted);
+      font-size: .94rem;
+      flex: 1;
+    }
+    .archive-card .card-action {
+      font-family: "Source Sans 3", Arial, sans-serif;
+      font-size: .82rem;
+      font-weight: 700;
+      color: var(--archive-green);
     }
 
     .fact-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 12px;
-      margin: 30px 0 55px;
+      margin: 0 0 2rem;
     }
-
     .fact {
-      background: var(--green);
-      color: white;
-      padding: 22px;
-      min-height: 130px;
+      background: var(--archive-green);
+      color: #fff;
+      padding: 1.1rem 1.05rem 1.15rem;
+      min-height: 118px;
     }
-
     .fact strong {
       display: block;
-      font-size: 1.8rem;
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 1.55rem;
       color: #f0cf78;
       line-height: 1.1;
-      margin-bottom: 8px;
+      margin-bottom: .4rem;
     }
-
     .fact span {
-      font-family: Arial, sans-serif;
-      font-size: .82rem;
-      color: #d9e5de;
+      font-family: "Source Sans 3", Arial, sans-serif;
+      font-size: .8rem;
+      color: #d5e4dc;
     }
 
     .section {
-      background: var(--paper);
-      margin: 30px 0;
-      padding: 42px;
-      box-shadow: 0 10px 30px rgba(0,0,0,.045);
-      border-top: 4px solid var(--green);
+      background: var(--archive-paper);
+      margin: 0 0 1.35rem;
+      padding: 1.7rem 1.7rem 1.5rem;
+      border-top: 4px solid var(--archive-green);
+      box-shadow: 0 10px 26px rgba(7, 59, 42, .045);
+      scroll-margin-top: 92px;
     }
-
-    .section.featured {
-      border-top-color: var(--gold);
+    .section.featured { border-top-color: var(--archive-gold); }
+    .section.dark {
+      background: var(--archive-deep);
+      color: #e6eee9;
+      border-top-color: var(--archive-gold);
     }
+    .section.dark h2 { color: #f0cf78; }
+    .section.dark h3 { color: #e8c978; }
+    .section.dark a { color: #f0cf78; }
+    .section.dark .kicker { color: #e8c978; }
 
-    h2 {
-      color: var(--green);
-      font-size: clamp(2rem, 4vw, 3.5rem);
-      line-height: 1.05;
-      margin: 0 0 22px;
+    .sport-index {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: .2rem 0 1.1rem;
     }
-
-    h3 {
-      color: var(--red);
-      font-size: 1.45rem;
-      margin-top: 30px;
+    .sport-index a {
+      font-family: "Source Sans 3", Arial, sans-serif;
+      font-size: .78rem;
+      font-weight: 600;
+      padding: .28rem .7rem;
+      border: 1px solid var(--archive-line);
+      border-radius: 999px;
+      background: #f3f6f2;
+      color: var(--archive-green);
     }
-
-    .date {
-      display: inline-block;
-      font-family: Arial, sans-serif;
-      font-size: .75rem;
-      text-transform: uppercase;
-      letter-spacing: .12em;
-      color: var(--gold);
-      font-weight: 700;
-      margin-bottom: 10px;
-    }
-
-    .section p {
-      font-size: 1.04rem;
+    .sport-index a:hover,
+    .sport-index a:focus-visible {
+      background: var(--archive-green);
+      color: #fff;
+      border-color: var(--archive-green);
     }
 
     .timeline {
-      border-left: 3px solid var(--gold);
-      padding-left: 25px;
-      margin: 28px 0;
+      border-left: 3px solid var(--archive-gold);
+      padding: 0 0 0 1.2rem;
+      margin: 1.1rem 0 1.2rem;
     }
+    .timeline article { margin: 0 0 1rem; }
+    .timeline strong { color: var(--archive-green); }
+    .section.dark .timeline strong { color: #f0cf78; }
 
-    .timeline article {
-      margin: 0 0 27px;
-    }
-
-    .timeline strong {
-      color: var(--green);
-    }
-
-    .names {
+    .names, .callout {
       background: #eef1eb;
-      padding: 25px;
-      margin: 25px 0;
-      border-radius: 4px;
+      padding: 1rem 1.1rem;
+      margin: 1rem 0;
+    }
+    .names strong, .callout strong { color: var(--archive-green); }
+    .callout {
+      border-left: 4px solid var(--archive-gold);
+      background: #f7f1e2;
     }
 
-    .names strong {
-      color: var(--green);
+    .medal-table, .record-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "Source Sans 3", Arial, sans-serif;
+      font-size: .88rem;
+      margin: .7rem 0 1.1rem;
+    }
+    .medal-table th, .medal-table td,
+    .record-table th, .record-table td {
+      text-align: left;
+      padding: .5rem .55rem;
+      border-bottom: 1px solid var(--archive-line);
+      vertical-align: top;
+    }
+    .medal-table th, .record-table th {
+      background: var(--archive-green);
+      color: #fff;
+      font-weight: 600;
+    }
+    .medal-table tbody tr:nth-child(even),
+    .record-table tbody tr:nth-child(even) { background: #f3f6f2; }
+    .g { color: #9a740e; font-weight: 700; }
+    .s { color: #5c6570; font-weight: 700; }
+    .b { color: #8d5a32; font-weight: 700; }
+
+    .back-archive {
+      display: inline-block;
+      margin-top: .4rem;
+      font-family: "Source Sans 3", Arial, sans-serif;
+      font-size: .82rem;
+      font-weight: 700;
     }
 
-    .score {
-      font-family: Arial, sans-serif;
-      font-size: .83rem;
-      color: var(--muted);
-      border-top: 1px solid var(--line);
-      padding-top: 14px;
-      margin-top: 20px;
+    .source-list {
+      list-style: none;
+      padding: 0;
+      margin: .4rem 0 0;
+      font-family: "Source Sans 3", Arial, sans-serif;
+      font-size: .92rem;
     }
+    .source-list li { margin: 0 0 .45rem; }
 
-    .urdu {
+    .urdu-note {
       direction: rtl;
       text-align: right;
-      font-family: "Noto Nastaliq Urdu", "Noto Naskh Arabic", serif;
+      font-family: "Noto Nastaliq Urdu", serif;
       background: #f1eee5;
-      border-right: 5px solid var(--gold);
-      border-left: 0;
-      padding: 38px;
-      margin-top: 50px;
+      border-right: 5px solid var(--archive-gold);
+      padding: 1.4rem 1.5rem;
+      margin-top: 1.4rem;
     }
+    .urdu-note h2 { text-align: right; }
 
-    .urdu h2,
-    .urdu h3 {
-      text-align: right;
+    @media (max-width: 900px) {
+      .archive-nav, .fact-grid { grid-template-columns: repeat(2, 1fr); }
     }
-
-    .sources {
-      background: var(--deep);
-      color: #e6eee9;
-      padding: 38px;
-      margin-top: 45px;
-    }
-
-    .sources h2 {
-      color: #f0cf78;
-    }
-
-    .sources p {
-      font-family: Arial, sans-serif;
-      font-size: .9rem;
-    }
-
-    footer {
-      background: #031b14;
-      color: #cfd9d3;
-      text-align: center;
-      padding: 35px 20px;
-      font-family: Arial, sans-serif;
-      font-size: .85rem;
-    }
-
-    @media (max-width: 850px) {
-      .fact-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .section,
-      .intro,
-      .urdu {
-        padding: 25px;
-      }
-    }
-
-    @media (max-width: 550px) {
-      .fact-grid {
-        grid-template-columns: 1fr;
-      }
-
-      header {
-        padding-top: 60px;
-      }
+    @media (max-width: 620px) {
+      .archive-nav, .fact-grid { grid-template-columns: 1fr; }
+      .archive-hero { padding: 1.6rem 0 1.8rem; }
+      .section, .lede { padding: 1.2rem; }
+      .medal-table, .record-table { font-size: .8rem; }
     }
   </style>
-
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Sports History of Pakistan Since 1947",
+    "description": "A national sports archive of Pakistan covering cricket, hockey, squash, Olympics, Asian Games, Commonwealth Games and major athletes from 1947 to the present.",
+    "url": "https://pakistan-atlas.vercel.app/sports.html",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Pakistan Atlas",
+      "url": "https://pakistan-atlas.vercel.app/"
+    }
+  }
+  </script>
 </head>
-
 <body>
+  <a class="skip-link" href="#main">Skip to sports archive</a>
+  <div id="site-header"></div>
 
-<header>
-  <div class="hero">
-    <div class="eyebrow">Pakistan Atlas · National Sports History</div>
+  <header class="archive-hero">
+    <div class="wrap">
+      <p class="eyebrow">Pakistan Atlas · National Sports Archive</p>
+      <h1>Pakistan in sport, 1947 to the present</h1>
+      <p class="deck">
+        From the hockey fields of the 1950s to the cricket titles of 1992, 2009 and 2017,
+        from the squash dynasty of Hashim Khan, Jahangir Khan and Jansher Khan to
+        Arshad Nadeem’s Olympic javelin gold in 2024, this page is a historical record
+        of how Pakistan’s sporting identity was built — and how it changed.
+      </p>
+      <p class="crumb"><a href="index.html">Home</a> · Sports history archive</p>
+    </div>
+  </header>
 
-```
-<h1>Pakistan<br>in Sport</h1>
+  <main id="main" class="sports-main">
 
-<p>
-  From the hockey fields of the 1950s to the cricketing triumphs of 1992, 2009 and 2017,
-  from the extraordinary squash dynasty of Hashim Khan, Jahangir Khan and Jansher Khan
-  to Arshad Nadeem's historic Olympic javelin gold in 2024, Pakistan's sporting history
-  is a story of teams, individuals, rivalries, unexpected victories and generations of
-  athletes who carried the national colours around the world.
-</p>
+    <section class="lede" aria-label="Introduction">
+      <p>
+        Pakistan entered international sport as a new country in 1947 and made its Olympic debut
+        at London 1948. The early decades established a pattern that still shapes the national
+        story: field hockey became the country’s greatest Olympic team sport; squash produced an
+        extraordinary line of world champions; cricket grew into the most followed game; and
+        wrestling, boxing, athletics, weightlifting, snooker, kabaddi, sailing and wushu produced
+        continental, Commonwealth and world-level medalists. The first Olympic medal came in hockey
+        at Melbourne 1956. The first Olympic gold followed in Rome in 1960. Decades later,
+        Arshad Nadeem became the first Pakistani athlete to win an individual Olympic gold medal,
+        with a 92.97-metre javelin throw at Paris 2024.
+      </p>
+    </section>
 
-<div class="hero-meta">
-  <span>Since 1947</span>
-  <span>Olympic Sport</span>
-  <span>Asian Games</span>
-  <span>Commonwealth Games</span>
-  <span>World Championships</span>
-  <span>Team & Individual Sports</span>
-</div>
-```
+    <nav class="archive-nav" id="archive-nav" aria-label="Sports archive sections">
+      <a class="archive-card" href="#since-1947">
+        <span class="card-num">01</span>
+        <span class="card-title">Pakistan Since 1947</span>
+        <p>Independence, early institutions, hockey’s golden era, cricket’s rise, and the later turn toward individual champions.</p>
+        <span class="card-action">Explore history →</span>
+      </a>
+      <a class="archive-card" href="#olympics">
+        <span class="card-num">02</span>
+        <span class="card-title">Olympic Games</span>
+        <p>London 1948 to Paris 2024: eleven Olympic medals, four golds, and the first individual Olympic title.</p>
+        <span class="card-action">Explore history →</span>
+      </a>
+      <a class="archive-card" href="#asian-games">
+        <span class="card-num">03</span>
+        <span class="card-title">Asian Games</span>
+        <p>Hockey, athletics, boxing, wrestling, squash, cricket, sailing, snooker, kabaddi and other verified continental medals.</p>
+        <span class="card-action">Explore history →</span>
+      </a>
+      <a class="archive-card" href="#commonwealth-games">
+        <span class="card-num">04</span>
+        <span class="card-title">Commonwealth Games</span>
+        <p>Wrestling’s long medal run, boxing, athletics, weightlifting, hockey and later individual champions.</p>
+        <span class="card-action">Explore history →</span>
+      </a>
+      <a class="archive-card" href="#world-championships">
+        <span class="card-num">05</span>
+        <span class="card-title">World Championships</span>
+        <p>ICC titles, Hockey World Cups, squash World Opens, IBSF snooker titles and World Athletics medals — kept distinct.</p>
+        <span class="card-action">Explore history →</span>
+      </a>
+      <a class="archive-card" href="#team-individual">
+        <span class="card-num">06</span>
+        <span class="card-title">Team & Individual Sports</span>
+        <p>Cricket, hockey, squash and a full sport-by-sport archive, including disciplines with limited major titles.</p>
+        <span class="card-action">Explore history →</span>
+      </a>
+    </nav>
 
-  </div>
-</header>
+    <div class="fact-grid" role="list">
+      <div class="fact" role="listitem"><strong>1948</strong><span>Olympic debut at London</span></div>
+      <div class="fact" role="listitem"><strong>4</strong><span>Men’s Hockey World Cup titles</span></div>
+      <div class="fact" role="listitem"><strong>3</strong><span>Senior men’s ICC limited-overs titles</span></div>
+      <div class="fact" role="listitem"><strong>2024</strong><span>First individual Olympic gold</span></div>
+    </div>
 
-<main>
+    <article class="section featured" id="since-1947">
+      <span class="kicker">Collective history</span>
+      <h2>Pakistan since 1947</h2>
+      <p>
+        Sport in the new state did not begin from nothing. Cricket, hockey, wrestling, polo and
+        athletics already had deep roots in the cities, cantonments, clubs and akharas of the
+        territories that became Pakistan. What changed after independence was the need to build
+        national teams, federations and a public identity under a new flag. The Pakistan Olympic
+        Association, later working with the Pakistan Sports Board, and sport-specific bodies such
+        as the Pakistan Hockey Federation (1948) and the Board of Control for Cricket in Pakistan
+        (1952; now the Pakistan Cricket Board) became the institutional frame.
+      </p>
+      <p>
+        The first international age was led by team sport. Hockey gave Pakistan an Olympic language
+        almost immediately: fourth at London 1948 and Helsinki 1952, silver at Melbourne 1956, then
+        gold at Rome 1960. That 1960 victory ended India’s long Olympic winning streak in men’s
+        hockey and made the Green Shirts the country’s defining Olympic team. Through the 1960s,
+        1970s and 1980s hockey remained the sport by which Pakistan was most seriously measured
+        abroad. Cricket, granted Test status in 1952, grew more slowly as a world force and then
+        overtook hockey in popular attention after the 1992 World Cup.
+      </p>
+      <p>
+        Individual sport told a different story. Hashim Khan’s British Open titles in the 1950s
+        opened a squash dynasty that, through Roshan Khan, Azam Khan, Qamar Zaman, Jahangir Khan
+        and Jansher Khan, gave Pakistan a claim unique in world sport: decades of control at the
+        top of a major individual game. Wrestling and boxing, drawing on pehlwani culture and
+        amateur clubs, produced Pakistan’s first Olympic medals outside hockey: Muhammad Bashir
+        in 1960 and Hussain Shah in 1988. Athletics had an early continental hero in Abdul Khaliq,
+        the “Flying Bird of Asia,” long before Arshad Nadeem’s 2024 Olympic gold recast the
+        country’s individual Olympic history.
+      </p>
+      <p>
+        The later twentieth century was a period of both glory and strain. Hockey won World Cups
+        in 1971, 1978, 1982 and 1994, then declined as astroturf, professionalisation and
+        administrative instability changed the world game. Cricket absorbed the national audience,
+        especially after satellite television and the 1992 World Cup. Squash’s dominance faded as
+        Egyptian and later other players took the world rankings. Women’s sport, long underfunded,
+        became impossible to treat as a footnote after the Pakistan women’s cricket team’s Asian
+        Games gold medals in 2010 and 2014 and the wider emergence of women in cricket, athletics,
+        boxing, shooting and squash.
+      </p>
+      <p>
+        The twenty-first century has been a transition from historic team-sport dominance toward
+        scattered but highly visible individual achievements: Sohail Abbas and later rebuild
+        attempts in hockey; a succession of cricket generations from Inzamam-ul-Haq and Younis Khan
+        through Misbah-ul-Haq, Sarfaraz Ahmed and Babar Azam; Muhammad Asif’s amateur world snooker
+        titles; Muhammad Inam Butt in wrestling; Nooh Dastgir Butt in weightlifting; and Arshad
+        Nadeem in the javelin. South Asian Games, Islamic Solidarity Games and Asian indoor and
+        beach competitions have remained important stages even when Olympic medals were scarce.
+        The honest record is not a straight line of triumph. It is a national archive of eras,
+        declines, rebuilds and occasional historic days.
+      </p>
+      <a class="back-archive" href="#archive-nav">Back to sports archive</a>
+    </article>
 
-<section class="intro">
-  <p>
-    Pakistan entered international sport as a new country in 1947 and made its Olympic debut
-    at London 1948. The early years established a pattern that would define much of the
-    country's sporting identity: field hockey became Pakistan's greatest Olympic team sport,
-    squash produced an extraordinary succession of world champions, cricket developed into
-    the country's most followed game, while wrestling, boxing, athletics, weightlifting,
-    snooker, kabaddi, wushu and other disciplines repeatedly produced continental,
-    Commonwealth and world-level medalists. Pakistan's first Olympic medal came in hockey
-    at Melbourne 1956, its first Olympic gold followed in Rome in 1960, and decades later
-    Arshad Nadeem became the first Pakistani athlete to win an individual Olympic gold medal
-    with his 92.97-metre javelin throw at Paris 2024.
-  </p>
-</section>
+    <article class="section featured" id="olympics">
+      <span class="kicker">Olympic record</span>
+      <h2>Olympic Games</h2>
+      <p>
+        Pakistan’s Olympic history begins at London 1948. It should not be confused with Asian Games
+        or Commonwealth medals. Across summer Games from 1948 through Paris 2024, Pakistan has won
+        eleven Olympic medals: four gold, three silver and four bronze. Eight of those medals came
+        in men’s field hockey. Only three were won by individual athletes.
+      </p>
+      <h3>Compact Olympic medal table</h3>
+      <table class="medal-table">
+        <thead>
+          <tr><th>Year</th><th>Games</th><th>Athlete / team</th><th>Sport</th><th>Medal</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1956</td><td>Melbourne</td><td>Men’s hockey team</td><td>Field hockey</td><td class="s">Silver</td></tr>
+          <tr><td>1960</td><td>Rome</td><td>Men’s hockey team</td><td>Field hockey</td><td class="g">Gold</td></tr>
+          <tr><td>1960</td><td>Rome</td><td>Muhammad Bashir</td><td>Wrestling, 73 kg freestyle</td><td class="b">Bronze</td></tr>
+          <tr><td>1964</td><td>Tokyo</td><td>Men’s hockey team</td><td>Field hockey</td><td class="s">Silver</td></tr>
+          <tr><td>1968</td><td>Mexico City</td><td>Men’s hockey team</td><td>Field hockey</td><td class="g">Gold</td></tr>
+          <tr><td>1972</td><td>Munich</td><td>Men’s hockey team</td><td>Field hockey</td><td class="s">Silver</td></tr>
+          <tr><td>1976</td><td>Montreal</td><td>Men’s hockey team</td><td>Field hockey</td><td class="b">Bronze</td></tr>
+          <tr><td>1984</td><td>Los Angeles</td><td>Men’s hockey team</td><td>Field hockey</td><td class="g">Gold</td></tr>
+          <tr><td>1988</td><td>Seoul</td><td>Hussain Shah</td><td>Boxing, middleweight</td><td class="b">Bronze</td></tr>
+          <tr><td>1992</td><td>Barcelona</td><td>Men’s hockey team</td><td>Field hockey</td><td class="b">Bronze</td></tr>
+          <tr><td>2024</td><td>Paris</td><td>Arshad Nadeem</td><td>Athletics, javelin</td><td class="g">Gold</td></tr>
+        </tbody>
+      </table>
+      <p>
+        The 1960 hockey gold is the founding Olympic legend: a 1–0 final win over India. Mexico City
+        1968 and Los Angeles 1984 completed a set of three hockey golds. After Barcelona 1992 there
+        was a 32-year Olympic medal drought, broken at Paris 2024. Arshad Nadeem’s 92.97 m throw set
+        an Olympic record, gave Pakistan its first individual Olympic gold, and was the country’s
+        first Olympic gold in any sport since 1984. Paris 2024 was Pakistan’s nineteenth Summer
+        Olympic appearance; the team was small, and the javelin gold stood almost alone against a
+        long period of limited qualification.
+      </p>
+      <p>
+        Hockey also finished fourth at London 1948, Helsinki 1952 and Sydney 2000 — close, but not
+        medals. Pakistan did not send a hockey team to every recent Games. That absence is part of
+        the Olympic story, not a footnote to the golden era.
+      </p>
+      <a class="back-archive" href="#archive-nav">Back to sports archive</a>
+    </article>
 
-<div class="fact-grid">
-  <div class="fact">
-    <strong>1948</strong>
-    <span>Pakistan's first Olympic Games appearance</span>
-  </div>
+    <article class="section" id="asian-games">
+      <span class="kicker">Continental record</span>
+      <h2>Asian Games</h2>
+      <p>
+        Pakistan missed the inaugural Asian Games in 1951 and has competed in every edition from
+        Manila 1954 onward. Hockey has been the great medal engine: eight men’s gold medals
+        (1958, 1962, 1970, 1974, 1978, 1982, 1990 and 2010), more than any other nation in the
+        men’s tournament. Athletics produced an early golden generation around Abdul Khaliq,
+        Muhammad Sharif Butt, Muhammad Nawaz and others at Manila 1954 and Tokyo 1958. Boxing and
+        wrestling have been consistent medal sports. Sailing, often overlooked in popular memory,
+        produced a remarkable Asian Games run from 1978, including golds for Byram D. Avari and
+        Munir Sadiq.
+      </p>
+      <p>
+        Cricket entered the Asian Games in 2010. The Pakistan women’s team won gold at Guangzhou
+        2010 and again at Incheon 2014, both times defeating Bangladesh in the final. The men took
+        bronze at Guangzhou 2010. Squash, snooker, kabaddi, wushu, rowing, weightlifting and
+        cycling have added further medals in different editions. Performances have been uneven in
+        the twenty-first century: strong nights in 2010 (including hockey gold and the cricket
+        medals) contrasted with much thinner tallies in 2018.
+      </p>
+      <p>
+        South Asian Games and Islamic Solidarity Games have often been the next rung down: more
+        medals, more sports, and an important stage for women athletes such as sprinter Naseem
+        Hameed, who won the women’s 100 metres at the 2010 South Asian Games. Those medals are
+        regional, not Olympic, and are recorded here as such.
+      </p>
+      <a class="back-archive" href="#archive-nav">Back to sports archive</a>
+    </article>
 
-  <div class="fact">
-    <strong>1992</strong>
-    <span>Pakistan's first men's Cricket World Cup title</span>
-  </div>
+    <article class="section" id="commonwealth-games">
+      <span class="kicker">Commonwealth record</span>
+      <h2>Commonwealth Games</h2>
+      <p>
+        Pakistan first competed at the 1954 British Empire and Commonwealth Games in Vancouver and
+        was a regular medal-winning nation in wrestling, athletics, boxing and weightlifting before
+        withdrawing from the Commonwealth between the mid-1970s and 1989. Wrestling has been by far
+        the most productive Commonwealth sport, with a long list of gold medals from the 1958, 1962,
+        1966 and 1970 Games through later champions such as Azhar Hussain and Muhammad Inam Butt.
+      </p>
+      <p>
+        Athletics golds include Muhammad Iqbal in the hammer (1954), Ghulam Raziq in the 120 yards
+        hurdles (1962), and Arshad Nadeem in the javelin at Birmingham 2022 — Pakistan’s first
+        athletics gold at the Games since 1962. Weightlifting’s modern highlight is Nooh Dastgir
+        Butt’s +109 kg gold at Birmingham 2022. Hockey won bronze at Manchester 2002 and silver at
+        Melbourne 2006. Boxing has a thinner but real record, including Muhammad Waseem’s bronze
+        at Delhi 2010. At Glasgow 2026, boxer Fatima Zahra won bronze in the women’s 60 kg division,
+        a first Commonwealth boxing medal for a Pakistani woman.
+      </p>
+      <p>
+        Commonwealth medals are not Olympic medals. Several Pakistani champions who never stood on
+        an Olympic podium still built substantial Commonwealth careers, especially in wrestling.
+      </p>
+      <a class="back-archive" href="#archive-nav">Back to sports archive</a>
+    </article>
 
-  <div class="fact">
-    <strong>4</strong>
-    <span>Men's Hockey World Cup titles</span>
-  </div>
+    <article class="section featured" id="world-championships">
+      <span class="kicker">World titles, kept distinct</span>
+      <h2>World championships</h2>
+      <p>
+        “World championship” is not a single event. Pakistan’s verified world-level titles sit in
+        different governing bodies. Bilateral series wins, Asian titles and regional Games medals
+        are not world championships.
+      </p>
+      <h3>Cricket — ICC events</h3>
+      <p>
+        Senior men’s ICC limited-overs titles: the 1992 Cricket World Cup, the 2009 ICC World
+        Twenty20, and the 2017 ICC Champions Trophy. Pakistan were runners-up at the 1999 World Cup,
+        the 2007 World Twenty20 and the 2022 T20 World Cup. These are ICC events. The Asia Cup
+        (won in 2000 and 2012) is an Asian Cricket Council championship, not an ICC world title.
+        The Under-19 World Cups of 2004 and 2006 are ICC youth world titles.
+      </p>
+      <h3>Hockey — FIH World Cup</h3>
+      <p>
+        Pakistan won the first Hockey World Cup in Barcelona in 1971, then again in 1978, 1982 and
+        1994 — four titles, still joint-most in the men’s event. Runners-up in 1975 and 1990.
+        The Champions Trophy (1978, 1980, 1994) and Asia Cup (1982, 1985, 1989) are major events
+        but are not the World Cup.
+      </p>
+      <h3>Squash — World Open / World Championships</h3>
+      <p>
+        Jahangir Khan won the World Open six times (1981–1985, 1988). Jansher Khan won it eight
+        times (1987, 1989, 1990, 1992–1996), a men’s record. The British Open, which Hashim Khan
+        won seven times, was the de facto world championship before the World Open era and remains
+        a separate, older title.
+      </p>
+      <h3>Athletics — World Athletics Championships</h3>
+      <p>
+        Arshad Nadeem won silver in the men’s javelin at the 2023 World Athletics Championships in
+        Budapest. Pakistan has not won a World Athletics gold.
+      </p>
+      <h3>Snooker — amateur and professional worlds</h3>
+      <p>
+        Muhammad Asif has won the IBSF World Snooker Championship three times (2012, 2019, 2024).
+        Ahsan Ramzan won the same amateur world title in 2021. These are amateur world titles
+        organised by the International Billiards and Snooker Federation. They are not the
+        professional World Snooker Championship staged at the Crucible Theatre. No Pakistani player
+        has won that professional world title.
+      </p>
+      <h3>Wrestling and other worlds</h3>
+      <p>
+        Pakistan has won world-level medals in beach wrestling and other United World Wrestling
+        events through athletes such as Muhammad Inam Butt, but it has not produced a cluster of
+        Olympic-style senior world championship golds comparable to its Commonwealth wrestling
+        record. Circle-style kabaddi has a “World Cup” won by Pakistan in 2020; that tournament is
+        not the standard-style Kabaddi World Cup, which Pakistan has not won.
+      </p>
+      <a class="back-archive" href="#archive-nav">Back to sports archive</a>
+    </article>
 
-  <div class="fact">
-    <strong>2024</strong>
-    <span>Arshad Nadeem's historic individual Olympic gold</span>
-  </div>
-</div>
+    <article class="section featured" id="team-individual">
+      <span class="kicker">Sport by sport</span>
+      <h2>Team and individual sports</h2>
+      <p>
+        The sections below treat each major sport as a historical file, not a highlight reel.
+        Cricket is the longest entry because it is the country’s dominant public sport. Hockey and
+        squash follow because they produced Pakistan’s deepest world-level dynasties. Other sports
+        are written in proportion to verified international results.
+      </p>
+      <nav class="sport-index" aria-label="Sports in this archive">
+        <a href="#cricket">Cricket</a>
+        <a href="#womens-cricket">Women’s cricket</a>
+        <a href="#hockey">Hockey</a>
+        <a href="#squash">Squash</a>
+        <a href="#athletics">Athletics</a>
+        <a href="#wrestling">Wrestling</a>
+        <a href="#boxing">Boxing</a>
+        <a href="#snooker">Snooker</a>
+        <a href="#kabaddi">Kabaddi</a>
+        <a href="#weightlifting">Weightlifting</a>
+        <a href="#football">Football</a>
+        <a href="#badminton">Badminton</a>
+        <a href="#table-tennis">Table tennis</a>
+        <a href="#tennis">Tennis</a>
+        <a href="#swimming">Swimming</a>
+        <a href="#cycling">Cycling</a>
+        <a href="#archery">Archery</a>
+        <a href="#shooting">Shooting</a>
+        <a href="#judo">Judo</a>
+        <a href="#karate">Karate</a>
+        <a href="#taekwondo">Taekwondo</a>
+        <a href="#wushu">Wushu</a>
+        <a href="#rowing">Rowing</a>
+        <a href="#sailing">Sailing</a>
+        <a href="#equestrian">Equestrian</a>
+        <a href="#polo">Polo</a>
+        <a href="#golf">Golf</a>
+        <a href="#basketball">Basketball</a>
+        <a href="#volleyball">Volleyball</a>
+        <a href="#handball">Handball</a>
+        <a href="#rugby">Rugby</a>
+        <a href="#chess">Chess</a>
+        <a href="#women-in-sport">Women in sport</a>
+        <a href="#institutions">Institutions</a>
+      </nav>
+    </article>
 
-<section class="section featured">
-  <span class="date">01 · Cricket</span>
-  <h2>Cricket — Pakistan's Great National Sporting Story</h2>
+    <article class="section featured" id="cricket">
+      <span class="kicker">01 · Cricket</span>
+      <h2>Cricket — Pakistan’s great national sporting story</h2>
+      <p>
+        Cricket is the sport most deeply embedded in Pakistan’s popular culture. The Board of
+        Control for Cricket in Pakistan was formed in 1948 and the country was granted Test status
+        in 1952. The first Test was played against India at Delhi in October 1952; India won by an
+        innings and 70 runs. Pakistan’s first Test victory came in the second match of that series,
+        at Lucknow, by an innings and 43 runs. Abdul Hafeez Kardar captained the early side. Fazal
+        Mahmood became the great fast-bowling hero of the 1950s, notably when Pakistan beat England
+        at The Oval in 1954. Hanif Mohammad became the defining batsman of the early Test era,
+        including his 337 against West Indies at Bridgetown in 1958. Around them stood Imtiaz Ahmed,
+        Wazir Mohammad, Saeed Ahmed and, soon after, the next generation: Mushtaq Mohammad, Majid
+        Khan, Zaheer Abbas, Asif Iqbal and wicketkeeper Wasim Bari.
+      </p>
+      <p>
+        By the 1970s and 1980s Pakistan had a recognisable cricket identity: high-class batting,
+        wrist-spin, and reverse-swinging fast bowling. Javed Miandad’s competitive batting, Imran
+        Khan’s all-round cricket and captaincy, Abdul Qadir’s leg-spin, and the later emergence of
+        Wasim Akram and Waqar Younis made Pakistan one of the most distinctive Test sides in the
+        world. Salim Malik, Ramiz Raja and Inzamam-ul-Haq belong to the same broad era. This was
+        still not, yet, a World Cup-winning country.
+      </p>
+      <h3>1992: the first ICC Cricket World Cup</h3>
+      <p>
+        The defining popular moment came at the 1992 ICC Cricket World Cup in Australia and New
+        Zealand. Captained by Imran Khan, Pakistan won only one of their first five completed
+        matches and appeared close to elimination, then won three in a row to reach the semi-finals.
+        They beat New Zealand in the semi-final and England in the final at Melbourne. Wasim Akram
+        was the tournament’s leading wicket-taker, with 18 wickets. Inzamam-ul-Haq’s batting in the
+        knockouts announced a future great. The squad’s remembered names also include Javed Miandad,
+        Ramiz Raja, Aaqib Javed, Mushtaq Ahmed, Saleem Malik and Moin Khan. The victory was an ICC
+        world title, not an Asian trophy, and it permanently changed cricket’s place in the
+        national imagination.
+      </p>
+      <h3>1999, T20 cricket, and the 2009 World Twenty20</h3>
+      <p>
+        Pakistan remained a major limited-overs side through the 1990s. Saeed Anwar became one of
+        the era’s celebrated opening batsmen. Saqlain Mushtaq, Mushtaq Ahmed, Moin Khan and Rashid
+        Latif were central limited-overs figures. Pakistan reached the 1999 World Cup final and lost
+        to Australia at Lord’s. That is a World Cup final, not a title.
+      </p>
+      <p>
+        Pakistan also won the inaugural Asian Test Championship in 1998–99, defeating Sri Lanka in
+        the final at Dhaka after earlier beating India in the tournament. That is an Asian Test
+        event, not an ICC World Test Championship. In the early 2000s Mohammad Yousuf, Shoaib Akhtar,
+        Shahid Afridi, Abdul Razzaq, Younis Khan, Mohammad Hafeez and Shoaib Malik carried the side
+        through a more turbulent period, including the first ICC World Twenty20 in 2007. Pakistan
+        reached that inaugural T20 final and lost a close match to India in Johannesburg.
+      </p>
+      <p>
+        Two years later they won it. In the 2009 ICC World Twenty20 final at Lord’s, Pakistan beat
+        Sri Lanka by eight wickets. Shahid Afridi scored an unbeaten 54. Younis Khan captained a
+        versatile squad that included Umar Gul, Abdul Razzaq, Mohammad Hafeez, Kamran Akmal,
+        Misbah-ul-Haq and Shoaib Malik. This is Pakistan’s second senior men’s ICC world title.
+      </p>
+      <h3>2017 Champions Trophy and the modern generation</h3>
+      <p>
+        The third senior men’s ICC limited-overs title arrived in the 2017 ICC Champions Trophy.
+        Under Sarfaraz Ahmed, Pakistan recovered from a heavy group-stage defeat to India and won
+        the final against India by 180 runs at The Oval. Fakhar Zaman scored a century in the final.
+        Mohammad Amir took early wickets. Hasan Ali was the tournament’s leading wicket-taker, with
+        13 wickets. The side also included Babar Azam, Mohammad Hafeez, Shoaib Malik, Imad Wasim,
+        Shadab Khan, Junaid Khan and Wahab Riaz. That victory completed a unique senior men’s set:
+        World Cup, World Twenty20 and Champions Trophy.
+      </p>
+      <p>
+        Pakistan reached the men’s T20 World Cup final again in 2022 and lost to England in
+        Melbourne. Babar Azam’s batting, Mohammad Rizwan’s keeping and batting, Shaheen Shah
+        Afridi’s new-ball bowling, and the pace of Haris Rauf and Naseem Shah defined that campaign.
+        The broader modern generation also includes Imam-ul-Haq, Fakhar Zaman, Shan Masood, Saud
+        Shakeel, Azhar Ali, Yasir Shah, Mohammad Amir, Shadab Khan and Sarfaraz Ahmed. These are
+        important international careers; they are not, by themselves, world championships.
+      </p>
+      <h3>Asia Cup, Tests, and what is not a world title</h3>
+      <p>
+        Pakistan have won the senior men’s Asia Cup twice, in 2000 under Moin Khan and in 2012 under
+        Misbah-ul-Haq. They have been runners-up in other editions, including 1986, 2014, 2022 and
+        2025. Asia Cup titles are Asian championships. Home and away Test series wins against
+        England, Australia, India, West Indies, Sri Lanka, New Zealand, South Africa and others
+        belong in the bilateral record, not in a list of world championships.
+      </p>
+      <h3>Under-19 cricket</h3>
+      <p>
+        The Pakistan Under-19 side won consecutive ICC Under-19 World Cups in 2004 and 2006 — the
+        first team to win the youth World Cup back to back. The 2004 title, in Bangladesh, was won
+        against West Indies by 25 runs, with Khalid Latif as captain. The 2006 title, in Sri Lanka,
+        was won against India; Sarfaraz Ahmed captained a side that was bowled out for 109 and then
+        dismissed India for 71. Pakistan were also U19 World Cup runners-up in 1988, 2010 and 2014.
+        The youth tournament has been a pathway for later senior players including Wahab Riaz,
+        Fawad Alam, Imad Wasim, Anwar Ali, Babar Azam, Shaheen Shah Afridi and Shadab Khan.
+      </p>
+      <p>
+        In December 2025 Pakistan won the ACC Men’s U19 Asia Cup outright for the first time,
+        defeating India by 191 runs in the Dubai final. Sameer Minhas scored 172. Pakistan had
+        previously shared the 2012 U19 Asia Cup with India after a tied final. The 2025 title is an
+        Asian youth championship, not an ICC World Cup.
+      </p>
+      <div class="names">
+        <strong>Major Pakistan men’s cricket figures across generations:</strong>
+        Abdul Hafeez Kardar, Fazal Mahmood, Hanif Mohammad, Imtiaz Ahmed, Saeed Ahmed,
+        Mushtaq Mohammad, Majid Khan, Zaheer Abbas, Asif Iqbal, Wasim Bari, Javed Miandad,
+        Imran Khan, Wasim Akram, Waqar Younis, Abdul Qadir, Aaqib Javed, Salim Malik,
+        Ramiz Raja, Inzamam-ul-Haq, Saeed Anwar, Saqlain Mushtaq, Mushtaq Ahmed, Moin Khan,
+        Rashid Latif, Shoaib Akhtar, Mohammad Yousuf, Shahid Afridi, Abdul Razzaq, Younis Khan,
+        Mohammad Hafeez, Shoaib Malik, Misbah-ul-Haq, Umar Gul, Saeed Ajmal, Wahab Riaz,
+        Sarfaraz Ahmed, Mohammad Amir, Azhar Ali, Yasir Shah, Babar Azam, Mohammad Rizwan,
+        Fakhar Zaman, Imam-ul-Haq, Shadab Khan, Shaheen Shah Afridi, Naseem Shah, Haris Rauf,
+        Shan Masood, Saud Shakeel, Abrar Ahmed, Mohammad Nawaz and other Pakistan internationals.
+      </div>
+      <h3>Cricket tournament record</h3>
+      <div class="timeline">
+        <article><strong>1952:</strong> First Test, at Delhi; first Test win, at Lucknow, later in the same series.</article>
+        <article><strong>1954:</strong> First Test series win in England, sealed at The Oval.</article>
+        <article><strong>1992:</strong> ICC Cricket World Cup winners, beating England in the Melbourne final.</article>
+        <article><strong>1998–99:</strong> Inaugural Asian Test Championship winners. Asian title, not an ICC world title.</article>
+        <article><strong>1999:</strong> World Cup runners-up, losing the Lord’s final to Australia.</article>
+        <article><strong>2000:</strong> Asia Cup winners, Dhaka. Asian title.</article>
+        <article><strong>2004 & 2006:</strong> Consecutive ICC Under-19 World Cup titles.</article>
+        <article><strong>2007:</strong> Runners-up, inaugural ICC World Twenty20.</article>
+        <article><strong>2009:</strong> ICC World Twenty20 winners at Lord’s.</article>
+        <article><strong>2012:</strong> Asia Cup winners, Dhaka. Asian title.</article>
+        <article><strong>2017:</strong> ICC Champions Trophy winners at The Oval.</article>
+        <article><strong>2022:</strong> Men’s T20 World Cup runners-up.</article>
+        <article><strong>2025:</strong> First outright ACC Men’s U19 Asia Cup, by 191 runs against India.</article>
+      </div>
+      <a class="back-archive" href="#archive-nav">Back to sports archive</a>
+    </article>
 
-  <p>
-    Cricket is the sport most deeply embedded in Pakistan's popular culture. Pakistan became
-    a Test-playing nation in 1952, and its first Test victory came in only its second Test,
-    when it defeated India by an innings and 43 runs at Lucknow. From that beginning emerged
-    generations of batsmen, fast bowlers, spinners, wicketkeepers and all-rounders who made
-    Pakistan one of the most distinctive cricketing nations in the world. Abdul Hafeez
-    Kardar led the early side, while Fazal Mahmood became the great fast-bowling hero of the
-    1950s. Hanif Mohammad became one of the defining batsmen of the early Test era, followed
-    by Saeed Ahmed, Mushtaq Mohammad, Majid Khan, Zaheer Abbas, Asif Iqbal and Wasim Bari.
-    Pakistan's cricket identity then changed dramatically with the emergence of Imran Khan,
-    Javed Miandad, Wasim Akram, Waqar Younis, Abdul Qadir, Salim Malik, Ramiz Raja and
-    Inzamam-ul-Haq. The 1980s and 1990s produced an unusually rich combination of
-    fast bowling, wrist-spin, aggressive batting and tactical improvisation.
-  </p>
+    <article class="section featured" id="womens-cricket">
+      <span class="kicker">Women’s cricket</span>
+      <h2>Pakistan women’s cricket</h2>
+      <p>
+        Organised Pakistan women’s international cricket is younger than the men’s game, but it is
+        not a footnote. Shaiza Khan and Sharmeen Khan were the pioneers who helped establish a
+        national side in the 1990s. Pakistan women played their first recorded One-Day Internationals
+        in 1997. The early touring years were difficult, with heavy defeats and little domestic
+        infrastructure, but they created the first generation of internationals.
+      </p>
+      <p>
+        Sana Mir became the defining figure of the next era. She captained Pakistan for eight years,
+        led the side to Asian Games gold medals in 2010 and 2014, was the first Pakistan woman to
+        take 100 ODI wickets, and in 2018 became the first Pakistani woman to be ranked the world’s
+        No. 1 ODI bowler. In June 2025 she became the first Pakistani woman inducted into the ICC
+        Cricket Hall of Fame. Bismah Maroof later captained with a batter’s authority; Nida Dar
+        became the side’s leading all-round presence in T20 cricket; Javeria Khan, Sidra Amin,
+        Aliya Riaz, Diana Baig, Nashra Sundhu, Muneeba Ali and Fatima Sana have been central to
+        the 2010s and 2020s. Other important names from the longer record include Sadia Yousuf,
+        Anam Amin, Nahida Khan, Asmavia Iqbal and Batool Fatima.
+      </p>
+      <p>
+        The Asian Games gold medals are the side’s clearest multi-sport titles. At Guangzhou 2010
+        Pakistan beat Bangladesh by ten wickets in the final. At Incheon 2014 they beat Bangladesh
+        again in a rain-affected final. At Hangzhou 2022 the women reached the last four but did not
+        medal. Pakistan women have not won an ICC Women’s World Cup or T20 World Cup. They have
+        been regular ICC tournament participants and a consistent top-ten to top-twelve side rather
+        than a world champion. That is the accurate measure: substantial, historic, still unfinished.
+      </p>
+      <a class="back-archive" href="#archive-nav">Back to sports archive</a>
+    </article>
 
-  <p>
-    The defining moment came at the 1992 ICC Cricket World Cup in Australia and New Zealand.
-    Pakistan, captained by Imran Khan, appeared to be in serious danger of elimination after
-    taking only one win from their opening five matches, but three consecutive victories
-    carried them into the semi-finals. They defeated New Zealand in the semi-final and then
-    defeated England in the final at Melbourne to become world champions for the first time.
-    Wasim Akram was the tournament's leading wicket-taker with 18 wickets, while Inzamam-ul-Haq
-    produced the explosive semi-final and final performances that announced him as a future
-    batting great. Imran's captaincy, Akram's left-arm pace, Javed Miandad's experience,
-    Inzamam's aggression, Ramiz Raja's batting and the contributions of Aaqib Javed, Mushtaq
-    Ahmed, Saleem Malik, Moin Khan and others formed one of the most remembered teams in
-    Pakistan sporting history. The victory transformed cricket's place in the national
-    imagination and helped establish the 1990s as a golden generation.
-  </p>
+    <article class="section featured" id="hockey">
+      <span class="kicker">02 · Field hockey</span>
+      <h2>Hockey — Pakistan’s historic Olympic dynasty</h2>
+      <p>
+        Field hockey built Pakistan’s earliest international sporting identity. The Pakistan Hockey
+        Federation was formed in 1948. The men’s team finished fourth at the 1948 and 1952 Olympics,
+        won silver at Melbourne 1956, then gold at Rome 1960 by defeating India 1–0. Further Olympic
+        golds came at Mexico City 1968 and Los Angeles 1984, with silvers in 1964 and 1972 and
+        bronzes in 1976 and 1992. Air Marshal Nur Khan later helped drive the creation of the Hockey
+        World Cup and the Champions Trophy, events in which Pakistan were not merely participants
+        but founding powers.
+      </p>
+      <p>
+        Pakistan won the first Hockey World Cup, in Barcelona in 1971, and won it again in 1978,
+        1982 and 1994. Asian Games golds came in 1958, 1962, 1970, 1974, 1978, 1982, 1990 and 2010.
+        The Asia Cup was won in 1982, 1985 and 1989. The Champions Trophy was won in 1978, 1980 and
+        1994. The Asian Champions Trophy was won in 2012, 2013 and 2018. Commonwealth medals include
+        bronze in 2002 and silver in 2006. These are separate competitions; stacking them together
+        as a single “world record” would be misleading. Taken in their own categories, they still
+        amount to one of Asia’s great team-sport dynasties.
+      </p>
+      <p>
+        The playing generations are as important as the titles. Abdul Hamid, Munir Dar, Manzoor
+        Hussain Atif, Motiullah, Anwar Ahmed Khan, Islahuddin Siddiqui, Samiullah Khan — the
+        “Flying Horse” — Hassan Sardar, Kaleemullah Khan, Akhtar Rasool, Shahbaz Ahmed, the
+        “Maradona of hockey,” goalkeeper Mansoor Ahmed, and later penalty-corner specialist
+        Sohail Abbas, at one time the world’s leading international goalscorer, mark different
+        peaks. Waseem Ahmed became the most-capped player. The 1982 World Cup side and the 1984
+        Olympic champions sit at the heart of the golden era.
+      </p>
+      <p>
+        The decline is part of the same file. Astroturf changed a game Pakistan had mastered on
+        grass. Other nations professionalised faster. Qualification failures, including missed
+        World Cups in 2014 and 2023, and the absence of the team from several recent Olympics,
+        ended the assumption that Pakistan would always be a medal favourite. Women’s hockey has
+        existed as a national programme but has not reached the same international height as the
+        men’s side. Rebuild efforts, including a return toward the World Cup pathway in the
+        mid-2020s, belong to the present tense of the sport, not to the golden-era medal table.
+      </p>
+      <a class="back-archive" href="#archive-nav">Back to sports archive</a>
+    </article>
 
-  <p>
-    Pakistan remained a major limited-overs force through the 1990s and early 2000s. It
-    reached the 1999 World Cup final, where Australia won, and continued to produce elite
-    players. Saeed Anwar became one of the most celebrated opening batsmen of his generation;
-    Inzamam-ul-Haq developed into one of Pakistan's leading run-scorers; Mohammad Yousuf,
-    formerly Yousuf Youhana, became one of the finest Test batsmen of the 2000s; Shoaib Akhtar
-    became famous for extreme pace; Shahid Afridi became one of the world's most explosive
-    all-rounders; and Saqlain Mushtaq, Mushtaq Ahmed, Danish Kaneria and Saeed Ajmal carried
-    forward Pakistan's long spin-bowling tradition. Pakistan also won the inaugural Asian
-    Test Championship in 1998-99, defeating Sri Lanka and India in the tournament, and enjoyed
-    major Test-series successes against England, New Zealand, Australia, West Indies and
-    Sri Lanka across the 1990s and 2000s.
-  </p>
+    <article class="section featured" id="squash">
+      <span class="kicker">03 · Squash</span>
+      <h2>Squash — the Khan dynasty</h2>
+      <p>
+        Few countries have dominated an individual sport as completely as Pakistan dominated squash
+        in the second half of the twentieth century. Hashim Khan, a Pakistani professional from the
+        Peshawar world of club markers, won the British Open seven times: 1951 through 1956, and
+        again in 1958. In that era the British Open was the de facto world championship. He also
+        won British Professional, US Open and Canadian Open titles. Roshan Khan won the British
+        Open in 1957. Azam Khan won it four times, 1959 to 1962. Qamar Zaman won it in 1975 and
+        was among the world’s leading professionals of that decade. Hiddy Jahan, a major figure of
+        the 1970s and early 1980s, reached the British Open final, including the 1982 final against
+        Jahangir Khan.
+      </p>
+      <p>
+        Jahangir Khan then produced one of the most extreme careers in any sport. He won the World
+        Open six times (1981, 1982, 1983, 1984, 1985 and 1988) and the British Open ten consecutive
+        times from 1982 to 1991. He went 555 competitive matches unbeaten between 1981 and 1986, a
+        streak recorded by Guinness World Records. Jansher Khan succeeded and then surpassed him in
+        World Open titles, winning a men’s record eight (1987, 1989, 1990 and 1992–1996) and six
+        British Opens. Their rivalry meant that Pakistani players controlled the top of world squash
+        for much of the 1980s and 1990s.
+      </p>
+      <p>
+        Later Pakistani professionals — including Zarak Jahan Khan, Aamir Atlas Khan, Farhan Mehboob
+        and others — remained international players, but the era of automatic world No. 1s ended.
+        The modern world tour has been led largely by Egyptian players. Pakistan’s squash history
+        is therefore both a record of unmatched dominance and a warning about how quickly a national
+        production line can thin.
+      </p>
+      <div class="names">
+        <strong>Iconic squash names:</strong>
+        Hashim Khan, Roshan Khan, Azam Khan, Mohibullah Khan, Qamar Zaman, Jahangir Khan,
+        Jansher Khan, Hiddy Jahan, Zarak Jahan Khan, Aamir Atlas Khan and later international
+        professionals who represented Pakistan.
+      </div>
+      <a class="back-archive" href="#archive-nav">Back to sports archive</a>
+    </article>
 
-  <p>
-    The next major global breakthrough came in the ICC World Twenty20. Pakistan were runners-up
-    in the inaugural 2007 tournament, losing a close final to India in Johannesburg, but two
-    years later they went all the way. In the 2009 ICC World Twenty20 final at Lord's, Pakistan
-    defeated Sri Lanka by eight wickets, with Shahid Afridi scoring an unbeaten 54 and playing
-    the decisive all-round role. The victorious generation included Younis Khan, Shahid Afridi,
-    Umar Gul, Abdul Razzaq, Mohammad Hafeez, Kamran Akmal, Misbah-ul-Haq, Shoaib Malik,
-    Salman Butt and other members of an unusually versatile T20 squad. Pakistan later became
-    one of the most consistent teams in ICC men's T20 World Cup history, reaching the final
-    again in 2022 after an unexpected run through the tournament.
-  </p>
+    <article class="section featured" id="athletics">
+      <span class="kicker">04 · Athletics</span>
+      <h2>Athletics — from the Flying Bird of Asia to Olympic gold</h2>
+      <p>
+        Pakistan’s athletics history has two widely separated peaks. The first was continental.
+        Abdul Khaliq, remembered as the “Flying Bird of Asia,” won the Asian Games 100 metres in
+        1954 and 1958, with further relay and 200-metre medals. He competed at the Melbourne 1956
+        and Rome 1960 Olympics without reaching an Olympic final medal. Ghulam Raziq became a
+        celebrated hurdler and won Commonwealth gold in the 120 yards hurdles in 1962. Muhammad
+        Iqbal won Commonwealth hammer gold in 1954. Muhammad Nawaz, Jalal Khan, Mubarak Shah and
+        others made the 1950s and 1960s the most productive Asian Games era for Pakistani track
+        and field.
+      </p>
+      <p>
+        For decades after that, athletics remained a South Asian and occasional Asian medal sport
+        without an Olympic podium. Naseem Hameed’s women’s 100 metres gold at the 2010 South Asian
+        Games was an important national moment for women’s track and field, not an Olympic or World
+        Athletics medal.
+      </p>
+      <h3 id="arshad-nadeem">Arshad Nadeem, Paris 2024</h3>
+      <p>
+        The second peak is Arshad Nadeem. He finished fifth at the Tokyo 2020 Olympic final with
+        84.62 metres, won Commonwealth gold at Birmingham 2022, and took silver at the 2023 World
+        Athletics Championships in Budapest. At Paris 2024 he threw 92.97 metres in the men’s
+        javelin final, an Olympic record, to win gold. It was Pakistan’s first Olympic medal since
+        1992, first gold since 1984, and first individual Olympic gold. The previous Olympic record
+        of 90.57 metres had stood since 2008. The 2024 throw was the event that moved athletics from
+        a supporting chapter in this archive to a central one.
+      </p>
+      <p>
+        Pakistan has not won a World Athletics gold. Nadeem’s world championship medal is silver.
+        That distinction matters: the Olympic title is the historic first; the world championship
+        record remains incomplete.
+      </p>
+      <a class="back-archive" href="#archive-nav">Back to sports archive</a>
+    </article>
 
-  <p>
-    Pakistan's third senior men's ICC world title arrived in the 2017 ICC Champions Trophy.
-    Under captain Sarfaraz Ahmed, Pakistan recovered from a heavy group-stage defeat to India
-    and produced a remarkable knockout campaign. Fakhar Zaman scored a century in the final,
-    Mohammad Amir removed India's leading batsmen early, and Pakistan won the final by
-    180 runs. Hasan Ali finished as the tournament's leading wicket-taker with 13 wickets.
-    The side also featured Babar Azam, Mohammad Hafeez, Shoaib Malik, Imad Wasim, Shadab Khan,
-    Junaid Khan and Wahab Riaz. The 2017 victory completed Pakistan's senior men's collection
-    of the three major ICC limited-overs titles: World Cup, World Twenty20 and Champions Trophy.
-  </p>
+    <article class="section" id="wrestling">
+      <span class="kicker">05 · Wrestling</span>
+      <h2>Wrestling — pehlwani culture and the Olympic mat</h2>
+      <p>
+        Wrestling in Pakistan is two related traditions. Pehlwani, the akhara culture of dangals,
+        oil, and kushti, is older than the state and remains a living popular sport, especially in
+        Punjab. Modern Olympic freestyle wrestling is the international code in which Pakistan has
+        actually won Games medals. The two should not be collapsed into one achievement list.
+      </p>
+      <p>
+        Muhammad Bashir won Pakistan’s first Olympic medal outside hockey: bronze in freestyle
+        (73 kg) at Rome 1960. He was also a Commonwealth champion. The Commonwealth Games, not the
+        Olympics, became wrestling’s great Pakistani stage. Gold medals arrived in clusters at
+        Cardiff 1958, Perth 1962, Kingston 1966 and Edinburgh 1970. In the modern era Azhar Hussain
+        won Commonwealth gold at Delhi 2010 (and a Greco-Roman silver at the same Games). Muhammad
+        Inam Butt won Commonwealth gold in 2010 and 2018, and silver at Birmingham 2022. He has also
+        won world-level titles in beach wrestling. Inam is a leading modern grappler; he is not an
+        Olympic medalist.
+      </p>
+      <p>
+        Asian Games wrestling has produced gold, silver and bronze across decades, though not at
+        the density of the Commonwealth record. South Asian Games wrestling has been even more
+        productive. The honest Olympic file remains short: one bronze, in 1960.
+      </p>
+      <a class="back-archive" href="#archive-nav">Back to sports archive</a>
+    </article>
 
-  <p>
-    The modern batting era has been defined by Babar Azam, one of Pakistan's most technically
-    accomplished contemporary batters, alongside Mohammad Rizwan, Fakhar Zaman, Imam-ul-Haq,
-    Azhar Ali, Shan Masood, Sarfaraz Ahmed and Saud Shakeel. The fast-bowling tradition has
-    continued through Shaheen Shah Afridi, Naseem Shah, Haris Rauf, Mohammad Abbas, Mohammad
-    Wasim Jr and others, while Shadab Khan, Mohammad Nawaz, Abrar Ahmed, Yasir Shah and
-    Noman Ali represent different phases of Pakistan's spin and all-round resources. The
-    country has also produced important wicketkeepers including Wasim Bari, Moin Khan,
-    Rashid Latif, Kamran Akmal, Sarfaraz Ahmed and Mohammad Rizwan. In women's cricket,
-    Shaiza Khan and Sharmeen Khan were pioneers who helped establish organised women's
-    international cricket in the 1990s. Sana Mir subsequently became the defining figure of
-    the women's game, captaining Pakistan, winning Asian Games gold medals in 2010 and 2014,
-    becoming the first Pakistan woman to take 100 ODI wickets and becoming the first Pakistan
-    woman inducted into the ICC Cricket Hall of Fame. Other major women's players include
-    Nida Dar, Bismah Maroof, Javeria Khan, Sidra Amin, Aliya Riaz, Muneeba Ali, Diana Baig,
-    Nashra Sundhu, Sadia Yousuf, Anam Amin, Sana Mir and the newer generation led by Fatima
-    Sana and other emerging players.
-  </p>
+    <article class="section" id="boxing">
+      <span class="kicker">06 · Boxing</span>
+      <h2>Boxing</h2>
+      <p>
+        Hussain Shah won Pakistan’s only Olympic boxing medal: bronze in the middleweight division
+        at Seoul 1988. That remains the ceiling of the Olympic file. Asian Games boxing has been
+        far more productive, including Mehrullah Lassi’s gold at Busan 2002. Commonwealth boxing
+        medals include Muhammad Waseem’s bronze at Delhi 2010. At Glasgow 2026, Fatima Zahra won
+        bronze in the women’s 60 kg division, the first Commonwealth boxing medal for a Pakistani
+        woman.
+      </p>
+      <p>
+        Professional boxing has produced internationally known Pakistani and Pakistan-origin
+        fighters, but this archive is concerned with the national amateur and Olympic record.
+        Women’s boxing is a developing programme rather than a historic medal factory. Pakistan
+        has not won an Olympic boxing gold.
+      </p>
+      <a class="back-archive" href="#archive-nav">Back to sports archive</a>
+    </article>
 
-  <p>
-    Pakistan's cricket story also extends beyond the senior men's and women's teams. The
-    Pakistan Under-19 side won consecutive ICC Under-19 World Cups in 2004 and 2006. The
-    2004 champions included future internationals such as Wahab Riaz, Fawad Alam, Abid Ali
-    and Riaz Afridi, while the 2006 champions were captained by Sarfaraz Ahmed and included
-    Anwar Ali and Imad Wasim. Pakistan reached further U19 finals in 2010 and 2014, and the
-    tournament has repeatedly served as a pathway for national stars including Inzamam-ul-Haq,
-    Aqib Javed, Basit Ali, Mushtaq Ahmed, Abdul Razzaq, Shoaib Malik, Azhar Ali, Umar Gul,
-    Wahab Riaz, Sarfaraz Ahmed, Imad Wasim, Shan Masood, Ahmed Shehzad, Umar Akmal, Babar
-    Azam, Imam-ul-Haq, Mohammad Nawaz, Shadab Khan and Shaheen Shah Afridi. In December 2025,
-    Pakistan U19 won its first outright ACC Men's U19 Asia Cup title by defeating India by
-    191 runs, adding another important chapter to the youth system.
-  </p>
+    <article class="section" id="snooker">
+      <span class="kicker">07 · Cue sports</span>
+      <h2>Snooker and billiards</h2>
+      <p>
+        Pakistan has a genuine world-level cue-sports record — at amateur, not professional Crucible,
+        level. Muhammad Asif, a Pakistani professional and amateur champion, has won the IBSF World
+        Snooker Championship three times: 2012 in Sofia, 2019 in Antalya, and 2024 in Doha. Ahsan
+        Ramzan won the same amateur world title in 2021. Pakistani players have also won IBSF team
+        and 6-red events. These titles are awarded by the International Billiards and Snooker
+        Federation.
+      </p>
+      <p>
+        They should not be described as professional World Snooker Championship titles. No Pakistani
+        player has won the ranking world championship at the Crucible. Muhammad Asif did play on
+        the professional World Snooker Tour after turning professional, without becoming a ranking
+        world champion. Asian Championships and Asian Games snooker medals form a second, continental
+        layer of the same story. Cue sports are one of the few disciplines in which Pakistan has
+        repeatedly produced world amateur champions in the twenty-first century.
+      </p>
+      <a class="back-archive" href="#archive-nav">Back to sports archive</a>
+    </article>
 
-  <div class="names">
-    <strong>Major Pakistan men's cricket figures across generations:</strong>
-    Abdul Hafeez Kardar, Fazal Mahmood, Hanif Mohammad, Saeed Ahmed, Mushtaq Mohammad,
-    Imtiaz Ahmed, Majid Khan, Zaheer Abbas, Asif Iqbal, Wasim Bari, Javed Miandad,
-    Imran Khan, Wasim Akram, Waqar Younis, Abdul Qadir, Aaqib Javed, Salim Malik,
-    Ramiz Raja, Inzamam-ul-Haq, Saqlain Mushtaq, Saeed Anwar, Moin Khan, Rashid Latif,
-    Mushtaq Ahmed, Shoaib Akhtar, Mohammad Yousuf, Younis Khan, Shahid Afridi,
-    Abdul Razzaq, Umar Gul, Mohammad Hafeez, Shoaib Malik, Misbah-ul-Haq, Kamran Akmal,
-    Danish Kaneria, Saeed Ajmal, Wahab Riaz, Sarfaraz Ahmed, Mohammad Amir, Azhar Ali,
-    Yasir Shah, Babar Azam, Mohammad Rizwan, Fakhar Zaman, Imam-ul-Haq, Shadab Khan,
-    Shaheen Shah Afridi, Naseem Shah, Haris Rauf, Shan Masood, Saud Shakeel, Abrar Ahmed,
-    Mohammad Nawaz and other internationals who have represented Pakistan.
-  </div>
+    <article class="section" id="kabaddi">
+      <span class="kicker">08 · Kabaddi</span>
+      <h2>Kabaddi</h2>
+      <p>
+        Kabaddi is a traditional subcontinental game with a large following in Punjab on both sides
+        of the border. International kabaddi is split between codes, and titles are easy to confuse.
+        In the standard indoor game played at the Asian Games, Pakistan have won silver medals
+        (including 1998 and 2006) and multiple bronzes, but have not won Asian Games gold. India
+        have dominated that event. Pakistan have also not won the standard-style Kabaddi World Cup.
+      </p>
+      <p>
+        Circle-style kabaddi, closer to the traditional outdoor game, has a separate World Cup.
+        India won the first several men’s editions. Pakistan won the 2020 circle-style World Cup in
+        Lahore, beating India 43–41 in the final — the only non-Indian winner of that competition.
+        Pakistan were runners-up in several earlier circle-style World Cups. The circle-style Asia
+        Cup has also been won by Pakistan. Those are real titles. They are not the same tournament
+        as the standard-style World Cup, and they are not Olympic medals. The India–Pakistan rivalry
+        is the sport’s central international fact.
+      </p>
+      <a class="back-archive" href="#archive-nav">Back to sports archive</a>
+    </article>
 
-  <div class="timeline">
-    <article><strong>1952:</strong> Pakistan plays its first Test and wins its second Test against India at Lucknow.</article>
-    <article><strong>1992:</strong> Imran Khan leads Pakistan to its first Cricket World Cup.</article>
-    <article><strong>1999:</strong> Pakistan reaches the World Cup final.</article>
-    <article><strong>2004 & 2006:</strong> Pakistan wins consecutive ICC Under-19 World Cups.</article>
-    <article><strong>2007:</strong> Pakistan reaches the inaugural World Twenty20 final.</article>
-    <article><strong>2009:</strong> Pakistan wins the ICC World Twenty20 at Lord's.</article>
-    <article><strong>2017:</strong> Sarfaraz Ahmed leads Pakistan to Champions Trophy glory.</article>
-    <article><strong>2022:</strong> Pakistan reaches the men's T20 World Cup final.</article>
-    <article><strong>2025:</strong> Pakistan U19 wins its first outright ACC Men's U19 Asia Cup.</article>
-  </div>
-</section>
+    <article class="section" id="weightlifting">
+      <span class="kicker">09 · Weightlifting</span>
+      <h2>Weightlifting</h2>
+      <p>
+        Weightlifting has given Pakistan Commonwealth and occasional Asian medals, but not an
+        Olympic medal. The outstanding modern result is Nooh Dastgir Butt’s gold in the men’s
+        +109 kg at the 2022 Commonwealth Games in Birmingham. Earlier generations won Commonwealth
+        medals in lighter weight classes. Pakistan has participated at Asian Games and world
+        championships without becoming a sustained world power in the sport. The file is respectable
+        at Commonwealth level and thin at Olympic level.
+      </p>
+    </article>
 
-<section class="section featured">
-  <span class="date">02 · Field Hockey</span>
-  <h2>Hockey — Pakistan's Historic Olympic Dynasty</h2>
+    <article class="section" id="football">
+      <span class="kicker">10 · Football</span>
+      <h2>Football</h2>
+      <p>
+        Football is widely played and has a longer international history than its results suggest.
+        The national team debuted in 1950. Pakistan have never qualified for the FIFA World Cup
+        finals and have not qualified for the AFC Asian Cup finals in the modern championship era.
+        Regional peaks include gold medals at the South Asian Games in 1989 and 1991, and an early
+        title at the 1952 Asian Quadrangular Football Tournament. Those are regional results.
+      </p>
+      <p>
+        Unlike hockey and cricket, football has not produced a senior world or Asian championship
+        for Pakistan. Club football, the Pakistan Premier League and youth programmes exist; they
+        have not yet changed the senior international record. Honesty is the point of this entry.
+      </p>
+    </article>
 
-  <p>
-    Field hockey is the sport that built Pakistan's earliest international sporting identity.
-    Pakistan joined the International Hockey Federation in 1948 and quickly developed into a
-    world power. The men's team won its first Olympic medal, silver, at Melbourne 1956 and
-    then captured Olympic gold at Rome 1960 by defeating India 1–0. Pakistan won further
-    Olympic gold medals at Mexico City 1968 and Los Angeles 1984, alongside silver medals in
-    1964 and 1972 and bronze medals in 1976 and 1992. The 1960 victory was especially
-    historic because it ended India's long Olympic winning streak in men's hockey.
-  </p>
+    <article class="section" id="badminton">
+      <span class="kicker">11 · Badminton</span>
+      <h2>Badminton</h2>
+      <p>
+        Pakistan has competed in badminton at South Asian Games, Islamic Solidarity Games, Asian
+        and Commonwealth level, with occasional regional medals. It has not won an Olympic, World
+        Championship or Asian Games gold in the sport. Badminton remains a participation and
+        development sport in the national file rather than a historic medal sport.
+      </p>
+    </article>
 
-  <p>
-    Pakistan became the first winner of the Hockey World Cup when the inaugural tournament
-    was held in Barcelona in 1971. The Green Shirts went on to win the World Cup again in
-    1978, 1982 and 1994, giving Pakistan four world titles. The country also won eight Asian
-    Games men's hockey gold medals — in 1958, 1962, 1970, 1974, 1978, 1982, 1990 and 2010 —
-    and three Asia Cup titles in 1982, 1985 and 1989. Pakistan also won the Champions Trophy
-    in 1978, 1980 and 1994 and later added Asian Champions Trophy titles in 2012, 2013 and
-    2018. These results make hockey one of the greatest team-sport achievements in Pakistan's
-    history.
-  </p>
+    <article class="section" id="table-tennis">
+      <span class="kicker">12 · Table tennis</span>
+      <h2>Table tennis</h2>
+      <p>
+        Table tennis has a domestic following and a national championship structure. Internationally,
+        Pakistan has taken part in South Asian and other regional events without winning a major
+        Olympic, world or Asian Games title. No such title is claimed here.
+      </p>
+    </article>
 
-  <p>
-    The list of great Pakistani hockey players is extensive. Abdul Waheed Khan, Manzoor-ul-Haq,
-    Munir Dar, Abdul Hamid, Islahuddin Siddiqui, Samiullah Khan, Shahbaz Ahmed, Hassan Sardar,
-    Kaleemullah Khan, Akhtar Rasool, Manzoor Hussain, Motiullah, Anwar Ahmed Khan, Asad Malik,
-    Tanvir Dar, Qamar Ibrahim and Sohail Abbas became symbols of different generations.
-    Samiullah became famous as the "Flying Horse", while Shahbaz Ahmed's attacking skill
-    earned him the nickname "Maradona of hockey." Goalkeeper Mansoor Ahmed was another
-    central figure of Pakistan's great modern teams. Pakistan's drag-flick tradition later
-    produced Sohail Abbas, one of the game's most famous penalty-corner specialists.
-  </p>
+    <article class="section" id="tennis">
+      <span class="kicker">13 · Tennis</span>
+      <h2>Tennis</h2>
+      <p>
+        Pakistan’s outstanding tennis career belongs to Aisam-ul-Haq Qureshi, a Lahore-born
+        professional who specialised in doubles. He reached world No. 8 in doubles, won 18 ATP
+        Tour doubles titles, and in 2010 became the first Pakistani to play a Grand Slam final,
+        finishing runner-up in both men’s doubles (with Rohan Bopanna) and mixed doubles (with
+        Květa Peschke) at the US Open. He did not win a Grand Slam title. Pakistan have not won
+        a Davis Cup, and no Pakistani has won an Olympic tennis medal. Qureshi’s career is the
+        country’s clearest tennis achievement.
+      </p>
+    </article>
 
-  <p>
-    Women's hockey has also been part of Pakistan's sporting development, although it has
-    never reached the same international heights as the men's side. The history of Pakistani
-    hockey is therefore best understood as both a record of extraordinary success and a story
-    of a sport that has faced organisational, financial and competitive challenges in the
-    modern era. The return to the international World Cup pathway in 2026 marked an important
-    attempt to rebuild one of the country's most decorated sporting institutions.
-  </p>
-</section>
+    <article class="section" id="swimming">
+      <span class="kicker">14 · Swimming</span>
+      <h2>Swimming</h2>
+      <p>
+        Pakistani swimmers have competed at Olympic, Asian, Commonwealth and South Asian level,
+        often through universality places at the Olympics. Kiran Khan is among the better-known
+        women swimmers of the 2000s. Pakistan has won South Asian medals but has not won an Olympic,
+        World Aquatics or Asian Games swimming gold. Swimming’s national story is participation
+        and regional competition, not world titles.
+      </p>
+    </article>
 
-<section class="section">
-  <span class="date">03 · Squash</span>
-  <h2>Squash — The Khan Dynasty</h2>
+    <article class="section" id="cycling">
+      <span class="kicker">15 · Cycling</span>
+      <h2>Cycling</h2>
+      <p>
+        Cycling appears in Pakistan’s Asian Games medal history, including track medals in earlier
+        decades, and remains a national championship sport. Pakistan has not become a regular
+        Olympic cycling medal contender. Road racing, track and mountain biking exist as domestic
+        and occasional continental activities rather than as a world-title production line.
+      </p>
+    </article>
 
-  <p>
-    Few countries have ever dominated an individual sport as completely as Pakistan dominated
-    squash during the second half of the twentieth century. Hashim Khan opened the modern
-    chapter by winning the British Open seven times between 1951 and 1958, including four
-    consecutive titles from 1953 to 1956. He also won British Professional, US Open and
-    Canadian Open championships. His success established a family and national tradition
-    that continued through Roshan Khan, Azam Khan, Qamar Zaman, Jahangir Khan and Jansher
-    Khan.
-  </p>
+    <article class="section" id="archery">
+      <span class="kicker">16 · Archery</span>
+      <h2>Archery</h2>
+      <p>
+        Archery is an Olympic sport in which Pakistan has had limited international impact.
+        Athletes have competed at regional events and sought Olympic qualification. Pakistan has
+        not won an Olympic, world or Asian Games archery title of major note. The sport is recorded
+        here as part of the national programme, not as a medal dynasty.
+      </p>
+    </article>
 
-  <p>
-    Jahangir Khan became one of the greatest squash players in history. He won six World Open
-    titles and the British Open ten consecutive times from 1982 through 1991. His era was
-    followed by Jansher Khan, who won a record eight World Open titles and six British Open
-    titles. Their rivalry and succession meant that Pakistani players controlled the top of
-    world squash for much of the 1980s and 1990s. The wider generation included Mohibullah
-    Khan, Hiddy Jahan, Qamar Zaman, Roshan Khan, Azam Khan and other elite players. Pakistan's
-    squash history remains one of the country's strongest examples of individual athletes
-    repeatedly winning world championships over multiple generations.
-  </p>
+    <article class="section" id="shooting">
+      <span class="kicker">17 · Shooting</span>
+      <h2>Shooting</h2>
+      <p>
+        Shooting has produced Commonwealth medals for Pakistan and a growing women’s presence.
+        At Paris 2024, Kishmala Talat, Gulfam Joseph and Ghulam Mustafa Bashir competed after
+        earning qualification marks — a contrast with universality places in other sports — but
+        did not win Olympic medals. Pakistan has not won an Olympic shooting medal. Commonwealth
+        and South Asian medals form the verified international layer.
+      </p>
+    </article>
 
-  <div class="names">
-    <strong>Iconic squash names:</strong>
-    Hashim Khan, Roshan Khan, Azam Khan, Mohibullah Khan, Qamar Zaman,
-    Jahangir Khan, Jansher Khan, Hiddy Jahan, Zarak Jahan Khan, Zubair Khan,
-    Aamir Atlas Khan, Farhan Mehboob, Yasir Butt and other international players.
-  </div>
-</section>
+    <article class="section" id="judo">
+      <span class="kicker">18 · Judo</span>
+      <h2>Judo</h2>
+      <p>
+        Judo is a regular Commonwealth and Asian programme sport for Pakistan. Shah Hussain Shah,
+        son of Olympic boxing medalist Hussain Shah, won Commonwealth bronze at Birmingham 2022
+        in the men’s −90 kg. Pakistan has not won an Olympic judo medal. The sport’s international
+        record is real at Commonwealth level and modest on the Olympic stage.
+      </p>
+    </article>
 
-<section class="section">
-  <span class="date">04 · Athletics</span>
-  <h2>Athletics — From Track and Field to Olympic Gold</h2>
+    <article class="section" id="karate">
+      <span class="kicker">19 · Karate</span>
+      <h2>Karate</h2>
+      <p>
+        Karate has brought Pakistan occasional Asian Games and Islamic Solidarity Games medals,
+        including bronze at continental level. It has not produced an Olympic medal for Pakistan
+        (karate was on the Tokyo 2020 programme). South Asian competition has been the more
+        regular source of titles.
+      </p>
+    </article>
 
-  <p>
-    Pakistan's athletics history includes medals and memorable performances at the Asian
-    Games, Commonwealth Games and Olympics, but the defining modern chapter belongs to
-    javelin thrower Arshad Nadeem. Before him, Pakistan's Olympic individual medals came
-    in wrestling and boxing, while most Olympic success had come through hockey. Nadeem
-    changed that history at the Paris 2024 Olympics. He threw 92.97 metres in the men's
-    javelin final, setting an Olympic record and becoming Pakistan's first Olympic champion
-    in an individual sport. He had already won Commonwealth Games gold in 2022 and World
-    Athletics Championships silver in 2023.
-  </p>
+    <article class="section" id="taekwondo">
+      <span class="kicker">20 · Taekwondo</span>
+      <h2>Taekwondo</h2>
+      <p>
+        Taekwondo is an Olympic sport with a national federation and regular South Asian and
+        Islamic Solidarity Games participation. Pakistan has not won an Olympic taekwondo medal
+        and has not been a leading Asian Games power in the sport. Regional medals exist; world
+        titles do not.
+      </p>
+    </article>
 
-  <p>
-    Nadeem's Olympic achievement was not an isolated result but the culmination of years of
-    improvement. He finished fifth at Tokyo 2020 with 84.62 metres and then developed into
-    one of the world's leading javelin throwers. His 2024 Olympic record was 3.52 metres
-    farther than India's Neeraj Chopra's silver-medal throw and surpassed the previous
-    Olympic record of 90.57 metres. The victory gave Pakistan its first individual Olympic
-    gold and its first Olympic gold in any sport since hockey's 1984 triumph.
-  </p>
+    <article class="section" id="wushu">
+      <span class="kicker">21 · Wushu</span>
+      <h2>Wushu</h2>
+      <p>
+        Wushu has been a useful Asian Games medal sport for Pakistan, with silver and bronze medals
+        in recent editions. It is not an Olympic sport. The results are continental, and they are
+        among the more consistent modern additions to Pakistan’s multi-sport tally, even if they
+        rarely enter popular sporting memory beside cricket and hockey.
+      </p>
+    </article>
 
-  <p>
-    Earlier Pakistani athletics names include Abdul Khaliq, the famous "Flying Bird of Asia",
-    who won sprint medals at the Asian Games and Commonwealth level, as well as Ghulam Raziq,
-    who became a celebrated hurdler. Abdul Khaliq's achievements in the 100 and 200 metres
-    made him one of the earliest Pakistani track heroes. Later generations produced athletes
-    such as Liaquat Ali, Naseem Hameed, Mohammad Imran and other medalists in South Asian and
-    Asian competition. Naseem Hameed became a particularly important figure after winning
-    the women's 100 metres at the 2010 South Asian Games.
-  </p>
-</section>
+    <article class="section" id="rowing">
+      <span class="kicker">22 · Rowing</span>
+      <h2>Rowing</h2>
+      <p>
+        Rowing has produced Asian Games bronze medals for Pakistan. The sport is based largely in
+        a small high-performance group rather than a mass culture. Pakistan has not won an Olympic
+        rowing medal. The Asian Games bronzes are the verified international highlight.
+      </p>
+    </article>
 
-<section class="section">
-  <span class="date">05 · Wrestling</span>
-  <h2>Wrestling — A Deep Pakistani Tradition</h2>
+    <article class="section" id="sailing">
+      <span class="kicker">23 · Sailing</span>
+      <h2>Sailing</h2>
+      <p>
+        Sailing is one of Pakistan’s most successful and least publicised Asian Games sports.
+        Byram D. Avari and Munir Sadiq won Enterprise-class gold at Bangkok 1978. Avari retained
+        the title at Delhi 1982 with Goshpi Avari. Munir Sadiq later won further golds with Muhammad
+        Zakaullah in 1986 and 1990, and additional medals in 1994 and 1998, becoming the first
+        sailor to win five Asian Games medals. Pakistan also won gold in the OK dinghy class in
+        1982. These are Asian Games titles, not Olympic medals. Munir Sadiq competed in the 470
+        at the 1984 Olympics without medalling. The sailing file is a reminder that Pakistan’s
+        continental record is broader than hockey and cricket.
+      </p>
+    </article>
 
-  <p>
-    Wrestling has deep roots in Pakistan's physical culture and has remained one of the
-    country's most productive combat sports. Muhammad Bashir won Pakistan's first Olympic
-    medal outside hockey with a bronze in freestyle wrestling at Rome 1960. The sport later
-    became especially successful at the Commonwealth Games, where Pakistani wrestlers
-    repeatedly won gold medals. Muhammad Inam Butt became one of the best-known modern
-    representatives of the sport, winning Commonwealth Games gold and world-level titles
-    in beach wrestling and developing a reputation as one of Pakistan's leading grapplers.
-  </p>
+    <article class="section" id="equestrian">
+      <span class="kicker">24 · Equestrian sports</span>
+      <h2>Equestrian sports</h2>
+      <p>
+        Equestrian sport in Pakistan is centred on army, police and club traditions, including
+        showjumping and tent pegging. Tent pegging has produced occasional multi-sport medals.
+        Pakistan has not been an Olympic equestrian medal nation. The sport is historically real
+        in garrison life and thin in the Olympic record.
+      </p>
+    </article>
 
-  <p>
-    Pakistan's wrestling tradition includes classical pehlwani culture, national akharas,
-    Commonwealth champions and South Asian Games medalists. The modern competitive system
-    has produced wrestlers such as Muhammad Inam, Azhar Hussain, Mohammad Bashir and
-    generations of Punjab and Khyber Pakhtunkhwa wrestlers who have represented Pakistan
-    at Asian, Commonwealth and Olympic competitions.
-  </p>
-</section>
+    <article class="section" id="polo">
+      <span class="kicker">25 · Polo</span>
+      <h2>Polo</h2>
+      <p>
+        Polo is older in the northern mountains than most modern Olympic sports. Shandur and other
+        high-altitude grounds in Gilgit-Baltistan and Chitral carry a living polo culture that is
+        part of the national atlas as much as of the sports page. International arena polo and
+        club polo exist, including army teams. Polo is not an Olympic medal sport for Pakistan,
+        and this archive does not invent world championships around the festival game. Its
+        importance is historical and cultural.
+      </p>
+    </article>
 
-<section class="section">
-  <span class="date">06 · Boxing</span>
-  <h2>Boxing — Huss
+    <article class="section" id="golf">
+      <span class="kicker">26 · Golf</span>
+      <h2>Golf</h2>
+      <p>
+        Golf has clubs in the major cities and a national championship. Pakistani golfers have
+        competed regionally. The country has not produced a major-championship winner or an Olympic
+        golf medal. Golf is recorded as a participation sport with a thin international medal file.
+      </p>
+    </article>
+
+    <article class="section" id="basketball">
+      <span class="kicker">27 · Basketball</span>
+      <h2>Basketball</h2>
+      <p>
+        Basketball is played in schools, universities and the national championship. Pakistan has
+        competed in regional events, including South Asian competition, without qualifying for an
+        Olympic basketball tournament or winning a world or Asian championship. The sport’s
+        significance is domestic.
+      </p>
+    </article>
+
+    <article class="section" id="volleyball">
+      <span class="kicker">28 · Volleyball</span>
+      <h2>Volleyball</h2>
+      <p>
+        Volleyball has a national federation and a place in South Asian Games programmes, with
+        occasional regional medals (including an Asian Games bronze in the historical table).
+        Pakistan has not been a world or Olympic volleyball power. The sport is widely played
+        and lightly decorated at the highest level.
+      </p>
+    </article>
+
+    <article class="section" id="handball">
+      <span class="kicker">29 · Handball</span>
+      <h2>Handball</h2>
+      <p>
+        Handball is an Olympic sport in which Pakistan’s international footprint is small.
+        National teams have appeared in regional competitions. There is no Olympic, world or
+        Asian Games gold to record. Handball is part of the multi-sport programme, not of the
+        medal dynasties.
+      </p>
+    </article>
+
+    <article class="section" id="rugby">
+      <span class="kicker">30 · Rugby</span>
+      <h2>Rugby</h2>
+      <p>
+        Rugby union and rugby sevens have a small organised presence, including a national sevens
+        side at regional events. Pakistan have not qualified for a Rugby World Cup. The sport is
+        growing from a low base and has no major world title in this archive.
+      </p>
+    </article>
+
+    <article class="section" id="chess">
+      <span class="kicker">31 · Chess</span>
+      <h2>Chess</h2>
+      <p>
+        Chess has a national federation, rated players and Olympiad teams. Pakistan has not
+        produced a World Chess Champion or a large cluster of grandmasters by global standards.
+        The honest description is participation in FIDE events and gradual development, not a
+        historic world-title story.
+      </p>
+    </article>
+
+    <article class="section" id="women-in-sport">
+      <span class="kicker">Women in Pakistani sport</span>
+      <h2>Women in Pakistani sport</h2>
+      <p>
+        Women’s sport is not a single late addition. It runs through cricket, athletics, boxing,
+        shooting, squash, swimming and football, usually with less money, fewer domestic leagues
+        and more social friction than the men’s programmes. The documented peaks include Sana Mir
+        and the women’s cricket Asian Games golds of 2010 and 2014; Naseem Hameed’s South Asian
+        Games sprint title in 2010; Kishmala Talat’s Olympic shooting qualification in 2024; and
+        Fatima Zahra’s Commonwealth boxing bronze in 2026. Bismah Maroof, Nida Dar, Javeria Khan,
+        Fatima Sana, Kiran Khan and others belong in the same national file as Imran Khan or
+        Jahangir Khan, even when the medal cabinets are smaller.
+      </p>
+      <p>
+        The structural facts are as important as the names: later international debuts, thinner
+        school sport, and a still-incomplete professional pathway. An archive that treated women’s
+        sport only as a closing paragraph would misread the last two decades.
+      </p>
+    </article>
+
+    <article class="section" id="institutions">
+      <span class="kicker">Federations and the state</span>
+      <h2>Institutions</h2>
+      <p>
+        The Pakistan Sports Board is the federal sports body. The Pakistan Olympic Association
+        (NOC Pakistan) selects Olympic and many multi-sport teams. The Pakistan Cricket Board
+        governs cricket. The Pakistan Hockey Federation governs hockey. Other federations cover
+        squash, athletics, wrestling, boxing, football, billiards and snooker, kabaddi, weightlifting
+        and the remaining Olympic sports. Army, navy, WAPDA, railways and departmental clubs have
+        historically supplied a large share of national athletes, especially outside cricket.
+      </p>
+      <p>
+        Nur Khan’s dual role in hockey and cricket administration is part of the institutional
+        story, as is the long argument about funding, selection and the gap between cricket’s
+        commercial wealth and the rest of the Olympic programme. Titles in this archive are
+        credited to athletes and teams; they were made possible, and sometimes obstructed, by
+        these organisations.
+      </p>
+      <a class="back-archive" href="#archive-nav">Back to sports archive</a>
+    </article>
+
+    <article class="section dark" id="sources">
+      <span class="kicker">Records</span>
+      <h2>Sources & records</h2>
+      <p>
+        This page privileges official and governing-body records over unsourced secondary claims.
+        Medal lists were checked against Olympic, ICC, FIH, World Athletics, Commonwealth and
+        Asian Games records. Where a result could not be verified at that level, it was omitted
+        or described cautiously. Birthplaces are not assigned unless they are securely documented.
+      </p>
+      <ul class="source-list">
+        <li><a href="https://www.sports.gov.pk/" rel="noopener">Pakistan Sports Board</a></li>
+        <li><a href="https://nocpakistan.org/" rel="noopener">Pakistan Olympic Association / NOC Pakistan</a></li>
+        <li><a href="https://www.olympics.com/" rel="noopener">International Olympic Committee / Olympics.com</a></li>
+        <li><a href="https://www.olympedia.org/" rel="noopener">Olympedia</a></li>
+        <li><a href="https://www.icc-cricket.com/" rel="noopener">International Cricket Council</a></li>
+        <li><a href="https://www.pcb.com.pk/" rel="noopener">Pakistan Cricket Board</a></li>
+        <li><a href="https://www.espncricinfo.com/" rel="noopener">ESPNcricinfo (match records)</a></li>
+        <li><a href="https://www.fih.hockey/" rel="noopener">International Hockey Federation</a></li>
+        <li><a href="https://www.worldsquash.org/" rel="noopener">World Squash Federation</a></li>
+        <li><a href="https://www.psasquashtour.com/" rel="noopener">Professional Squash Association</a></li>
+        <li><a href="https://worldathletics.org/" rel="noopener">World Athletics</a></li>
+        <li><a href="https://www.commonwealthsport.com/" rel="noopener">Commonwealth Sport</a></li>
+        <li><a href="https://www.ocasia.org/" rel="noopener">Olympic Council of Asia</a></li>
+        <li><a href="https://uww.org/" rel="noopener">United World Wrestling</a></li>
+        <li><a href="https://www.ibsf.info/" rel="noopener">International Billiards & Snooker Federation</a></li>
+        <li><a href="https://www.thecgf.com/" rel="noopener">Commonwealth Games Federation records</a></li>
+      </ul>
+      <p>
+        Unverified claims omitted or qualified here include exact career goal totals where
+        governing-body figures disagree, unsourced “world championship” labels attached to
+        bilateral or regional events, and birthplaces attached to athletes only because they
+        played for a particular city club.
+      </p>
+    </article>
+
+    <aside class="urdu-note" lang="ur">
+      <h2>قومی کھیلوں کا ریکارڈ</h2>
+      <p>
+        یہ صفحہ پاکستان کی کھیلوں کی تاریخ کا ایک قومی ریکارڈ ہے: 1947 سے آج تک ہاکی، کرکٹ،
+        اسکواش، ایتھلیٹکس، کشتی، باکسنگ اور اولمپک و ایشیائی کھیل۔ یہاں صرف وہ کامیابیاں لکھی گئی
+        ہیں جن کی تصدیق مستند اداروں سے ہو سکتی ہے۔
+      </p>
+    </aside>
+
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="js/app.js"></script>
+</body>
+</html>
