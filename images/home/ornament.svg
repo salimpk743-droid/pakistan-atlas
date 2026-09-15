@@ -1,10 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="72" height="24" viewBox="0 0 72 24" aria-hidden="true">
-  <g fill="none" stroke="#c9a227" stroke-width="1.1">
-    <path d="M4 12 L12 4 L20 12 L12 20 Z"/>
-    <path d="M20 12 H32"/>
-    <path d="M32 6 V18"/>
-    <path d="M36 12 L44 4 L52 12 L44 20 Z"/>
-    <path d="M52 12 H64"/>
-    <path d="M66 7.5 L70 12 L66 16.5"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="28" viewBox="0 0 80 28" aria-hidden="true">
+  <g fill="none" stroke="#c9a227" stroke-width="0.9">
+    <path d="M8 14 L14 5 L20 14 L14 23 Z"/>
+    <path d="M14 5 L20 14 L14 23 L8 14 Z"/>
+    <circle cx="14" cy="14" r="2.2"/>
+    <path d="M22 14 H30"/>
+    <path d="M34 14 L40 6 L46 14 L40 22 Z"/>
+    <path d="M40 8.5 L43.5 14 L40 19.5 L36.5 14 Z"/>
+    <path d="M48 14 H56"/>
+    <path d="M58 8 V20"/>
+    <path d="M56 10 H60 M56 18 H60"/>
+    <path d="M62 14 H70"/>
+    <path d="M72 9 L76 14 L72 19"/>
   </g>
 </svg>

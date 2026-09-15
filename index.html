@@ -20,7 +20,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css?v=4" />
-  <link rel="stylesheet" href="css/home.css?v=2" />
+  <link rel="stylesheet" href="css/home.css?v=6" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -47,81 +47,78 @@
   <div id="site-header"></div>
 
   <section class="atlas-hero" aria-labelledby="atlas-welcome">
-    <div class="atlas-hero-wash" aria-hidden="true"></div>
-    <div class="container atlas-hero-inner">
-      <div class="atlas-hero-left">
-        <div class="atlas-bricks" aria-hidden="true"></div>
-        <figure class="atlas-portrait">
-          <img src="images/home/iqbal.jpg" alt="Allama Muhammad Iqbal" width="720" height="900" />
-          <figcaption>Allama Iqbal</figcaption>
-        </figure>
-      </div>
+    <p class="visually-hidden">Editorial collage of Indus Valley heritage, the Flag of Pakistan, northern mountains and Faisal Mosque.</p>
+    <div class="atlas-scene" aria-hidden="true">
+      <img class="scene-statue" src="images/home/statue.jpg" alt="" width="733" height="1100" fetchpriority="high" />
+      <img class="scene-ruins" src="images/home/ruins.jpg" alt="" width="1400" height="933" />
+      <img class="scene-mountains" src="images/home/mountains.jpg" alt="" width="1500" height="1000" fetchpriority="high" />
+      <img class="scene-flag" src="images/home/flag-wave.jpg" alt="" width="1400" height="933" />
+      <img class="scene-mosque" src="images/home/mosque-day.jpg" alt="" width="1400" height="933" />
+      <div class="scene-veil"></div>
+    </div>
 
-      <div class="atlas-hero-center">
-        <div class="atlas-eyebrows">
-          <p class="atlas-kicker">The Indus Land</p>
-          <p class="atlas-kicker-right">People · Places · Heritage · Tomorrow</p>
+    <div class="atlas-hero-copy">
+      <div class="container atlas-hero-copy-grid">
+        <div class="atlas-hero-left-label">
+          <p class="atlas-kicker">The Indus Land <span class="kicker-rule" aria-hidden="true"></span></p>
         </div>
-        <h1 id="atlas-welcome">
-          <span class="welcome-line">Welcome to</span>
-          <span class="pakistan-line">Pakistan</span>
-        </h1>
-        <p class="atlas-lead">Explore the Indus land — its people, places, culture, history and natural beauty.</p>
-        <p class="atlas-urdu-title" lang="ur" dir="rtl">پاکستان میں خوش آمدید</p>
-        <p class="atlas-urdu-sub" lang="ur" dir="rtl">دریائے سندھ کی سرزمین، تاریخ، ثقافت، جغرافیہ اور عوام کا ایک جامع سفر</p>
-      </div>
-
-      <div class="atlas-hero-right">
-        <img class="atlas-flag" src="images/flag-pakistan.svg" alt="Flag of Pakistan" width="90" height="60" />
-        <blockquote class="atlas-quote">
-          <p>An ancient civilisation.</p>
-          <p>A rich heritage.</p>
-          <p>A vibrant people.</p>
-          <p>A shared future.</p>
-        </blockquote>
-        <figure class="atlas-portrait">
-          <img src="images/home/jinnah.jpg" alt="Quaid-e-Azam Muhammad Ali Jinnah" width="720" height="864" />
-          <figcaption>Quaid-e-Azam</figcaption>
-        </figure>
+        <div class="atlas-hero-center">
+          <h1 id="atlas-welcome">
+            <span class="welcome-line">Welcome to</span>
+            <span class="pakistan-line">Pakistan</span>
+          </h1>
+          <p class="atlas-lead">Explore the Indus land — its people, places, culture,<br />history and natural beauty.</p>
+          <p class="atlas-urdu-title" lang="ur" dir="rtl">پاکستان میں خوش آمدید</p>
+          <p class="atlas-urdu-sub" lang="ur" dir="rtl">دریائے سندھ کی سرزمین، تاریخ، ثقافت، عوام اور قدرتی حسن کا ایک جامع سفر</p>
+        </div>
+        <div class="atlas-hero-right-copy">
+          <p class="atlas-kicker-right">People • Places • Heritage • Tomorrow</p>
+          <blockquote class="atlas-quote">
+            <p>An ancient civilisation.</p>
+            <p>A rich heritage.</p>
+            <p>A vibrant people.</p>
+            <p>A shared future.</p>
+          </blockquote>
+        </div>
       </div>
     </div>
 
     <div class="atlas-stats" role="list">
       <div class="atlas-stat" role="listitem">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20 L8 8 L12 14 L16 6 L20 20 Z"/></svg>
-        <div><b>7 Regions</b><span>4 provinces + ICT + GB + AJK</span></div>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 4l3 1 2-1 2 2 3-1 2 3v4l-2 3 1 4-3 2-3-1-2 2-3-2-2-4 1-4-2-4z"/></svg>
+        <div><b>7</b><span>Regions</span></div>
       </div>
       <div class="atlas-stat" role="listitem">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"/><circle cx="16" cy="9" r="2.4"/><path d="M4 19c.4-3.2 2.6-5 5-5s4.6 1.8 5 5"/><path d="M14 19c.2-2.2 1.5-3.4 3.2-3.4 1.6 0 2.8 1 3.1 3.4"/></svg>
-        <div><b>241.5 million*</b><span>People · PBS 2023</span></div>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M9 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm7 .5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zM3.5 20c.5-3.4 2.8-5.5 5.5-5.5s5 2.1 5.5 5.5H3.5zm10.2 0c.2-2.2 1.4-3.8 3.3-3.8 1.8 0 3 1.4 3.3 3.8h-6.6z"/></svg>
+        <div><b>240+ Million</b><span>People</span></div>
       </div>
       <div class="atlas-stat" role="listitem">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="8" width="16" height="11"/><path d="M8 8 V5 h8 v3"/></svg>
-        <div><b>160+ districts</b><span>Province to tehsil</span></div>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 20V9h5v11H4zm5.5 0V5h5v15h-5zM15 20v-8h5v8h-5zM3 20h18v2H3z"/></svg>
+        <div><b>Thousands of Years</b><span>of History</span></div>
       </div>
       <div class="atlas-stat" role="listitem">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17 L8 9 L12 13 L17 6 L21 17 Z"/></svg>
-        <div><b>796,096 km²</b><span>Land · 4 provinces + ICT</span></div>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 19l6.5-10 3.5 5 4-7L21 19H3z"/></svg>
+        <div><b>Breathtaking</b><span>Landscapes</span></div>
       </div>
       <div class="atlas-stat" role="listitem">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20 V10 h5 v10"/><path d="M9 20 V6 h6 v14"/><path d="M15 20 V12 h5 v8"/></svg>
-        <div><b>Thousands of years</b><span>Of recorded history</span></div>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3c.4 2.2 1.6 3.8 3.5 5.1C13.8 9 12.8 10.4 12 12c-.8-1.6-1.8-3-3.5-3.9C10.4 6.8 11.6 5.2 12 3zm0 9c2.2.4 3.8 1.6 5.1 3.5-1.3 1.7-2.7 2.7-5.1 3.5-2.2-.4-3.8-1.6-5.1-3.5C8.2 13.6 9.8 12.4 12 12z"/></svg>
+        <div><b>Diverse</b><span>Cultures</span></div>
       </div>
       <div class="atlas-stat" role="listitem">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 3 v3 M12 18 v3 M3 12 h3 M18 12 h3 M5.6 5.6 l2.1 2.1 M16.3 16.3 l2.1 2.1 M5.6 18.4 l2.1-2.1 M16.3 7.7 l2.1-2.1"/></svg>
-        <div><b>Living cultures</b><span>Languages, arts, faiths</span></div>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 21s.5-6 5-10c4.5 4 5 10 5 10H7zm5-11c-1.8-2.2-2.2-5.2-1.2-8 3 .8 5.2 3.4 5.7 6.5-1.5-.8-2.9-1.2-4.5-1.2z"/></svg>
+        <div><b>A Brighter</b><span>Tomorrow</span></div>
       </div>
     </div>
-    <p class="atlas-footnote">*Pakistan Bureau of Statistics 2023 census: 241,499,431 people in the four provinces and Islamabad Capital Territory. Azad Jammu and Kashmir and Gilgit-Baltistan are counted separately. Area 796,096 km² is the same 4+ICT frame.</p>
 
     <div class="atlas-cta-wrap">
-      <a class="atlas-cta" href="#explore-pakistan">Explore Pakistan <span aria-hidden="true">→</span></a>
-      <p class="atlas-motto">Different Lands · One People · A Shared Home</p>
+      <span class="cta-rule" aria-hidden="true"></span>
+      <a class="atlas-cta" href="#explore-pakistan">Begin Your Journey <span aria-hidden="true">→</span></a>
+      <span class="cta-rule cta-rule-rev" aria-hidden="true"></span>
     </div>
     <div class="atlas-hero-ornament" aria-hidden="true"></div>
   </section>
 
-  <section class="atlas-section" id="explore-pakistan">
+<section class="atlas-section" id="explore-pakistan">
     <div class="container">
       <header class="atlas-section-head">
         <h2>Explore Pakistan</h2>
@@ -240,6 +237,15 @@
   <div id="site-footer"></div>
   <script src="js/app.js"></script>
   <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const ul = document.querySelector("#mainNav ul");
+      if (ul && !ul.querySelector(".nav-search")) {
+        const li = document.createElement("li");
+        li.innerHTML = '<a class="nav-search" href="districts.html" aria-label="Search districts"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M16.2 16.2 L20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></a>';
+        ul.appendChild(li);
+      }
+    });
+
     const UNIT_MARK = {
       punjab: '<svg viewBox="0 0 32 32" aria-hidden="true"><path d="M6 24c2-8 5-14 10-18 5 4 8 10 10 18"/><path d="M8 24h16"/><path d="M16 6v6"/></svg>',
       sindh: '<svg viewBox="0 0 32 32" aria-hidden="true"><rect x="6" y="8" width="20" height="16"/><path d="M6 16h20 M16 8v16"/><path d="M10 12h4 M18 20h4"/></svg>',

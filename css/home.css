@@ -5,18 +5,68 @@ body.home {
   --atlas-green: #01411c;
   --atlas-forest: #0a3d22;
   --atlas-gold: #c9a227;
-  --atlas-gold-soft: #e4c86a;
-  --atlas-ivory: #f6f1e4;
+  --atlas-gold-soft: #e3c66a;
+  --atlas-ivory: #f4efe4;
   --atlas-cream: #f7f4ee;
   --atlas-ink: #1a1a1a;
   --atlas-muted: #5c5c5c;
   background: var(--atlas-cream);
 }
 
-body.home header.site {
-  background: #f6f1e6;
-  border-bottom: 1px solid rgba(1, 65, 28, 0.08);
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
+
+body.home .topbar { display: none; }
+body.home header.site {
+  background: #f3eee3;
+  box-shadow: none;
+  border-bottom: 1px solid rgba(20, 40, 24, 0.07);
+}
+body.home .nav-wrap { padding: 0.82rem 0; }
+body.home .logo { color: #14301c; }
+body.home .logo-mark {
+  width: 44px;
+  height: 44px;
+  border: 2px solid var(--atlas-gold);
+}
+body.home nav ul {
+  gap: 1.7rem;
+  align-items: center;
+}
+body.home nav a {
+  color: #1d2c20;
+  font-weight: 500;
+  font-size: 0.98rem;
+  letter-spacing: 0.01em;
+}
+body.home nav a.active { color: #0e2416; font-weight: 600; }
+body.home nav a.active::after {
+  width: 100%;
+  height: 1.5px;
+  margin-top: 0.42rem;
+  background: var(--atlas-gold);
+}
+body.home .nav-search {
+  display: grid;
+  place-items: center;
+  color: #1d2c20 !important;
+  padding: 0.1rem;
+}
+body.home .nav-search svg {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+body.home .nav-search::after { display: none !important; }
 
 .skip-link {
   position: absolute;
@@ -28,11 +78,7 @@ body.home header.site {
   font-weight: 700;
   padding: 0.55rem 1rem;
 }
-.skip-link:focus {
-  left: 0.8rem;
-  top: 0.8rem;
-}
-
+.skip-link:focus { left: 0.8rem; top: 0.8rem; }
 body.home a:focus-visible {
   outline: 2px solid var(--atlas-gold);
   outline-offset: 3px;
@@ -41,197 +87,228 @@ body.home a:focus-visible {
 /* ---------- Hero ---------- */
 .atlas-hero {
   position: relative;
-  background:
-    radial-gradient(1200px 520px at 50% -10%, rgba(201, 162, 39, 0.16), transparent 60%),
-    linear-gradient(180deg, #01351a 0%, #01411c 48%, #012411 100%);
+  background: #01411c;
   color: #f4ead0;
   overflow: hidden;
   padding: 0 !important;
   isolation: isolate;
+  min-height: calc(100vh - 74px);
+  display: flex;
+  flex-direction: column;
 }
-.atlas-hero-wash {
+.atlas-scene {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+.scene-statue {
+  position: absolute;
+  left: -1.5%;
+  top: 0;
+  width: 30%;
+  height: 86%;
+  object-fit: cover;
+  object-position: 64% 4%;
+  -webkit-mask-image: linear-gradient(to right, #000 56%, transparent 100%);
+  mask-image: linear-gradient(to right, #000 56%, transparent 100%);
+}
+.scene-ruins {
+  position: absolute;
+  left: 0;
+  bottom: 12%;
+  width: 34%;
+  height: 48%;
+  object-fit: cover;
+  object-position: 38% 62%;
+  -webkit-mask-image: linear-gradient(to right, #000 48%, transparent), linear-gradient(to top, #000 50%, transparent);
+  -webkit-mask-composite: source-in;
+  mask-image: linear-gradient(to right, #000 48%, transparent), linear-gradient(to top, #000 50%, transparent);
+  mask-composite: intersect;
+}
+.scene-mountains {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 44%;
+  height: 88%;
+  object-fit: cover;
+  object-position: 60% 36%;
+  -webkit-mask-image: linear-gradient(to left, #000 60%, transparent 100%);
+  mask-image: linear-gradient(to left, #000 60%, transparent 100%);
+}
+.scene-flag {
+  position: absolute;
+  right: -3%;
+  top: -5%;
+  width: 38%;
+  height: 54%;
+  object-fit: cover;
+  object-position: 16% 40%;
+  -webkit-mask-image: linear-gradient(to left, #000 52%, transparent 94%), linear-gradient(to bottom, #000 70%, transparent 100%);
+  -webkit-mask-composite: source-in;
+  mask-image: linear-gradient(to left, #000 52%, transparent 94%), linear-gradient(to bottom, #000 70%, transparent 100%);
+  mask-composite: intersect;
+  filter: saturate(1.14) contrast(1.08) brightness(1.05);
+}
+.scene-mosque {
+  position: absolute;
+  right: 0.5%;
+  bottom: 13%;
+  width: 30%;
+  height: 46%;
+  object-fit: cover;
+  object-position: 48% 28%;
+  -webkit-mask-image: linear-gradient(to left, #000 70%, transparent 100%), linear-gradient(to top, #000 78%, transparent 100%);
+  -webkit-mask-composite: source-in;
+  mask-image: linear-gradient(to left, #000 70%, transparent 100%), linear-gradient(to top, #000 78%, transparent 100%);
+  mask-composite: intersect;
+}
+.scene-veil {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(1, 24, 10, 0.55) 0%, rgba(1, 36, 17, 0.5) 42%, rgba(1, 24, 10, 0.2) 70%, rgba(1, 18, 8, 0.55) 100%),
-    url("../images/home/mosque.jpg") right center / 46% auto no-repeat;
-  opacity: 0.38;
-  pointer-events: none;
-  z-index: 0;
+    radial-gradient(680px 340px at 50% 20%, rgba(201, 162, 39, 0.1), transparent 62%),
+    linear-gradient(180deg, rgba(1, 36, 17, 0.06) 0%, transparent 32%, rgba(1, 18, 8, 0.28) 100%);
 }
-.atlas-hero-wash::after {
+.scene-veil::after {
   content: "";
   position: absolute;
   inset: 0;
-  background:
-    repeating-linear-gradient(
-      -18deg,
-      transparent 0 18px,
-      rgba(201, 162, 39, 0.035) 18px 19px
-    );
-  mix-blend-mode: overlay;
+  background: linear-gradient(90deg,
+    transparent 0 20%,
+    rgba(1, 38, 17, 0.55) 36%,
+    rgba(1, 38, 17, 0.78) 50%,
+    rgba(1, 38, 17, 0.5) 64%,
+    transparent 80% 100%);
 }
-.atlas-hero-inner {
+
+.atlas-hero-copy {
   position: relative;
   z-index: 1;
-  display: grid;
-  grid-template-columns: minmax(160px, 0.95fr) minmax(280px, 1.55fr) minmax(160px, 0.95fr);
-  gap: 1.4rem;
+  flex: 1;
+  display: flex;
   align-items: center;
-  padding: 2rem 0 1.2rem;
-  min-height: min(78vh, 760px);
+  min-height: 0;
+  padding: 1.4rem 0 0.4rem;
 }
-.atlas-hero-left,
-.atlas-hero-right {
-  position: relative;
-  min-width: 0;
+.atlas-hero-copy-grid {
+  display: grid;
+  grid-template-columns: minmax(80px, 1fr) minmax(380px, 680px) minmax(180px, 260px);
+  gap: 0.4rem 0.8rem;
+  align-items: start;
+  width: min(1360px, 96%);
+  margin: 0 auto;
 }
-.atlas-bricks {
-  position: absolute;
-  inset: auto 8% -6% -18%;
-  height: 46%;
-  background:
-    repeating-linear-gradient(
-      90deg,
-      #8a5a32 0 18px,
-      #6e4524 18px 20px
-    ),
-    repeating-linear-gradient(
-      0deg,
-      #7a4e2a 0 10px,
-      #5c381c 10px 12px
-    );
-  clip-path: polygon(8% 100%, 18% 62%, 32% 78%, 46% 40%, 62% 58%, 78% 22%, 92% 48%, 100% 100%);
-  opacity: 0.45;
-  filter: saturate(0.8);
-  pointer-events: none;
-  z-index: 0;
-}
-.atlas-portrait {
-  position: relative;
-  z-index: 1;
-  margin: 0;
-  border: 1px solid rgba(232, 214, 150, 0.28);
-  background: rgba(0, 0, 0, 0.18);
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
-}
-.atlas-portrait img {
-  width: 100%;
-  height: 340px;
-  object-fit: cover;
-  object-position: top center;
-}
-.atlas-portrait figcaption {
-  padding: 0.55rem 0.7rem 0.7rem;
-  font-size: 0.78rem;
-  letter-spacing: 0.04em;
-  text-align: center;
-  color: #ead9a8;
-  background: rgba(1, 20, 8, 0.55);
-  line-height: 1.35;
+.atlas-hero-left-label {
+  padding-top: 0.45rem;
+  justify-self: end;
+  padding-right: 0.2rem;
 }
 .atlas-hero-center {
   text-align: center;
   min-width: 0;
-  padding: 0.4rem 0.4rem 0.8rem;
+  padding: 0.15rem 0.1rem 0.2rem;
 }
-.atlas-eyebrows {
-  display: flex;
-  justify-content: space-between;
-  gap: 0.8rem;
-  align-items: baseline;
-  margin-bottom: 1.1rem;
-  flex-wrap: wrap;
+.atlas-hero-right-copy {
+  padding-top: 0.35rem;
+  text-align: left;
+  min-width: 0;
 }
 .atlas-kicker,
 .atlas-kicker-right {
   margin: 0;
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   letter-spacing: 0.28em;
   text-transform: uppercase;
   color: var(--atlas-gold-soft);
   font-weight: 600;
 }
+.atlas-kicker {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  white-space: nowrap;
+}
+.kicker-rule {
+  display: block;
+  width: 4.4rem;
+  height: 1px;
+  background: #d4b24a;
+  flex-shrink: 0;
+}
 .atlas-kicker-right {
-  letter-spacing: 0.18em;
-  font-size: 0.64rem;
-  color: rgba(244, 234, 208, 0.78);
+  letter-spacing: 0.2em;
+  font-size: 0.62rem;
+  color: rgba(244, 234, 208, 0.82);
+  margin: 0 0 1.5rem;
 }
 .atlas-hero h1 {
   font-family: "Playfair Display", Georgia, serif;
   font-weight: 700;
-  font-size: clamp(2.5rem, 4.4vw + 1.55rem, 5.5rem);
-  line-height: 0.94;
-  letter-spacing: -0.03em;
+  font-size: clamp(2.6rem, 7vw, 7.1rem);
+  line-height: 0.9;
+  letter-spacing: -0.035em;
   color: #f7f1e1;
-  margin: 0 0 1rem;
+  margin: 0.05rem 0 0.7rem;
 }
 .atlas-hero h1 .welcome-line {
   display: block;
   font-weight: 600;
-  font-size: 0.72em;
+  font-size: 0.7em;
   letter-spacing: -0.02em;
-  color: #f4ead0;
+  color: #f6f0e2;
 }
 .atlas-hero h1 .pakistan-line {
   display: block;
   color: var(--atlas-gold-soft);
-  font-size: 1.18em;
+  font-size: 1.2em;
   text-shadow: 0 10px 40px rgba(0, 0, 0, 0.28);
 }
 .atlas-lead {
-  font-size: clamp(1.05rem, 1.4vw + 0.7rem, 1.45rem);
-  line-height: 1.45;
+  font-size: clamp(1.05rem, 1.25vw + 0.72rem, 1.42rem);
+  line-height: 1.4;
   max-width: 22em;
-  margin: 0 auto 1.15rem;
+  margin: 0 auto 0.85rem;
   color: #efe4c8;
   font-weight: 400;
 }
 .atlas-urdu-title {
   font-family: "Noto Nastaliq Urdu", serif;
   direction: rtl;
-  font-size: clamp(1.45rem, 2.4vw + 0.7rem, 2.25rem);
+  font-size: clamp(1.5rem, 2.5vw + 0.7rem, 2.35rem);
   line-height: 2.05;
   color: #f3e6c4;
-  margin: 0.4rem 0 0.15rem;
+  margin: 0.35rem 0 0.1rem;
   font-weight: 600;
 }
 .atlas-urdu-sub {
   font-family: "Noto Nastaliq Urdu", serif;
   direction: rtl;
-  font-size: clamp(0.95rem, 1.1vw + 0.7rem, 1.18rem);
+  font-size: clamp(0.95rem, 1.05vw + 0.7rem, 1.16rem);
   line-height: 2.15;
   color: rgba(243, 230, 196, 0.88);
-  max-width: 28em;
+  max-width: 30em;
   margin: 0 auto;
 }
-.atlas-flag {
-  width: 84px;
-  height: auto;
-  margin: 0 auto 1rem;
-  filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.35));
-}
 .atlas-quote {
-  margin: 0 auto 1.1rem;
-  padding: 0 0 0.8rem;
-  max-width: 16em;
-  text-align: center;
-  border-bottom: 1px solid rgba(201, 162, 39, 0.45);
+  margin: 0.4rem 0 0;
+  padding: 0 0 0.85rem;
+  max-width: 15.5em;
+  text-align: left;
+  border-bottom: 1px solid rgba(201, 162, 39, 0.5);
 }
 .atlas-quote p {
   margin: 0;
   font-family: "Playfair Display", Georgia, serif;
   font-style: italic;
   font-weight: 400;
-  font-size: 1.02rem;
-  line-height: 1.45;
+  font-size: 1.05rem;
+  line-height: 1.48;
   color: #f0e4c4;
 }
-.atlas-hero-right .atlas-portrait img {
-  height: 280px;
-}
 
-/* Stats */
 .atlas-stats {
   position: relative;
   z-index: 1;
@@ -239,31 +316,28 @@ body.home a:focus-visible {
   grid-template-columns: repeat(6, 1fr);
   gap: 0;
   width: min(1280px, 94%);
-  margin: 0.4rem auto 0;
+  margin: 0 auto;
   border-top: 1px solid rgba(201, 162, 39, 0.28);
-  border-bottom: 1px solid rgba(201, 162, 39, 0.18);
 }
 .atlas-stat {
   display: flex;
   align-items: center;
   gap: 0.7rem;
-  padding: 1.05rem 0.85rem;
+  padding: 0.95rem 0.7rem;
   color: #f4ead0;
-  border-right: 1px solid rgba(201, 162, 39, 0.18);
+  border-right: 1px solid rgba(201, 162, 39, 0.2);
 }
 .atlas-stat:last-child { border-right: 0; }
 .atlas-stat svg {
-  width: 28px;
-  height: 28px;
+  width: 26px;
+  height: 26px;
   flex-shrink: 0;
-  stroke: var(--atlas-gold-soft);
-  fill: none;
-  stroke-width: 1.6;
+  color: var(--atlas-gold-soft);
 }
 .atlas-stat b {
   display: block;
-  font-family: "Playfair Display", Georgia, serif;
-  font-size: 1.05rem;
+  font-family: "Source Sans 3", system-ui, sans-serif;
+  font-size: 0.98rem;
   font-weight: 700;
   color: #fff;
   line-height: 1.2;
@@ -272,40 +346,42 @@ body.home a:focus-visible {
   display: block;
   font-size: 0.78rem;
   color: rgba(244, 234, 208, 0.78);
-  letter-spacing: 0.01em;
-}
-.atlas-footnote {
-  position: relative;
-  z-index: 1;
-  width: min(1280px, 94%);
-  margin: 0.55rem auto 0;
-  font-size: 0.78rem;
-  color: rgba(244, 234, 208, 0.72);
-  text-align: center;
-  line-height: 1.5;
 }
 .atlas-cta-wrap {
   position: relative;
   z-index: 1;
-  text-align: center;
-  padding: 1.35rem 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.15rem;
+  padding: 1.15rem 1rem 1.2rem;
 }
+.cta-rule {
+  width: 5.5rem;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #d4b24a);
+  flex-shrink: 0;
+}
+.cta-rule-rev { background: linear-gradient(90deg, #d4b24a, transparent); }
 .atlas-cta {
   display: inline-flex;
   align-items: center;
-  gap: 0.55rem;
-  background: var(--atlas-gold);
+  gap: 0.5rem;
+  background: #d4b24a;
   color: #1a1406 !important;
   font-weight: 700;
-  font-size: 1.05rem;
+  font-size: 0.98rem;
   letter-spacing: 0.02em;
-  padding: 0.85rem 1.7rem;
+  padding: 0.72rem 1.55rem;
   border-radius: 999px;
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.2);
 }
-.atlas-cta:hover {
-  background: #e0b83a;
-  color: #111 !important;
+.atlas-cta:hover { background: #e0c05a; color: #111 !important; }
+.atlas-hero-ornament {
+  height: 28px;
+  background: url("../images/home/ornament.svg") center / 80px 28px repeat-x;
+  opacity: 0.8;
+  border-top: 1px solid rgba(201, 162, 39, 0.18);
 }
 .atlas-motto {
   margin: 0.95rem 0 0;
@@ -313,13 +389,7 @@ body.home a:focus-visible {
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: rgba(244, 234, 208, 0.7);
-}
-.atlas-hero-ornament {
-  height: 26px;
-  background:
-    url("../images/home/ornament.svg") center / 72px 24px repeat-x;
-  opacity: 0.85;
-  border-top: 1px solid rgba(201, 162, 39, 0.2);
+  text-align: center;
 }
 
 /* ---------- Sections ---------- */
@@ -626,6 +696,7 @@ body.home .atlas-section-alt {
 
 body.home .ad-slot { margin: 2rem auto 0; width: min(1280px, 94%); }
 
+
 /* ---------- Breakpoints ---------- */
 @media (max-width: 1100px) {
   .atlas-archives { grid-template-columns: repeat(3, 1fr); }
@@ -633,31 +704,37 @@ body.home .ad-slot { margin: 2rem auto 0; width: min(1280px, 94%); }
   .atlas-stats { grid-template-columns: repeat(3, 1fr); }
   .atlas-stat:nth-child(3) { border-right: 0; }
   .atlas-stat:nth-child(n + 4) { border-top: 1px solid rgba(201, 162, 39, 0.18); }
-  .atlas-portrait img { height: 260px; }
-  .atlas-hero-right .atlas-portrait img { height: 200px; }
+  .scene-statue { width: 34%; }
+  .scene-mountains { width: 48%; }
+  .scene-flag { width: 42%; }
+  .atlas-hero-copy-grid {
+    grid-template-columns: 0.55fr minmax(240px, 1.7fr) 0.9fr;
+  }
+  .atlas-hero h1 { font-size: clamp(2.5rem, 4.6vw + 1.1rem, 4.6rem); }
 }
 @media (max-width: 900px) {
-  .atlas-hero-inner {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      "left right"
-      "center center";
-    min-height: auto;
-    padding: 1.4rem 0 0.6rem;
-    gap: 0.9rem;
+  .atlas-hero { min-height: 0; }
+  .atlas-scene {
+    position: relative;
+    height: 230px;
+    inset: auto;
   }
-  .atlas-hero-left { grid-area: left; }
-  .atlas-hero-right { grid-area: right; }
-  .atlas-hero-center { grid-area: center; padding: 0.2rem 0 0.6rem; }
-  .atlas-hero-wash { opacity: 0.18; background-size: cover; }
-  .atlas-bricks { display: none; }
+  .scene-statue { width: 48%; height: 100%; }
+  .scene-ruins { width: 50%; height: 55%; bottom: 0; }
+  .scene-mountains { width: 62%; height: 100%; }
+  .scene-flag { width: 48%; height: 70%; top: -8%; }
+  .scene-mosque { display: none; }
+  .scene-veil::after { background: none; }
+  .atlas-hero-copy {
+    flex: none;
+    padding: 1.15rem 0 0.3rem;
+  }
+  .atlas-hero-copy-grid { grid-template-columns: 1fr; }
+  .atlas-hero-left-label,
+  .atlas-hero-right-copy { text-align: center; }
+  .atlas-kicker { justify-content: center; }
+  .atlas-kicker-right { width: 100%; text-align: center; margin-bottom: 0; }
   .atlas-quote { display: none; }
-  .atlas-flag { width: 56px; margin-bottom: 0.6rem; }
-  .atlas-portrait img,
-  .atlas-hero-right .atlas-portrait img { height: 150px; }
-  .atlas-portrait figcaption { font-size: 0.7rem; padding: 0.4rem 0.4rem 0.5rem; }
-  .atlas-eyebrows { justify-content: center; }
-  .atlas-kicker-right { width: 100%; text-align: center; }
   .atlas-archives { grid-template-columns: repeat(2, 1fr); }
   .atlas-heritage-row { grid-template-columns: 1fr; }
   .atlas-heritage-row img { height: 180px; }
@@ -666,25 +743,23 @@ body.home .ad-slot { margin: 2rem auto 0; width: min(1280px, 94%); }
   .atlas-archives { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 560px) {
-  .atlas-hero-inner {
-    grid-template-columns: 1fr 1fr;
-    padding-top: 1rem;
-  }
-  .atlas-hero h1 {
-    font-size: clamp(2.45rem, 11vw, 3.15rem);
-  }
+  .atlas-scene { height: 188px; }
+  .scene-statue { width: 50%; object-position: 62% 8%; }
+  .scene-ruins { display: none; }
+  .scene-flag { width: 56%; height: 64%; }
+  .atlas-hero h1 { font-size: clamp(2.5rem, 11.2vw, 3.2rem); }
   .atlas-urdu-title { font-size: 1.55rem; }
   .atlas-stats { grid-template-columns: 1fr 1fr; }
-  .atlas-stat { padding: 0.85rem 0.55rem; border-right: 1px solid rgba(201, 162, 39, 0.18); }
+  .atlas-stat { padding: 0.8rem 0.5rem; }
   .atlas-stat:nth-child(2n) { border-right: 0; }
   .atlas-stat:nth-child(n + 3) { border-top: 1px solid rgba(201, 162, 39, 0.18); }
   .atlas-stat:nth-child(3) { border-right: 1px solid rgba(201, 162, 39, 0.18); }
   .atlas-archives,
   .atlas-units,
   .atlas-heritage-row { grid-template-columns: 1fr; }
-  .atlas-portrait img,
-  .atlas-hero-right .atlas-portrait img { height: 128px; }
   .atlas-cta { width: min(100%, 22rem); justify-content: center; }
-  .atlas-kicker { letter-spacing: 0.2em; }
-  .atlas-lead { font-size: 1.08rem; }
+  .cta-rule { width: 2.2rem; }
+  .atlas-kicker { letter-spacing: 0.18em; }
+  .atlas-lead { font-size: 1.06rem; }
+  .atlas-lead br { display: none; }
 }
