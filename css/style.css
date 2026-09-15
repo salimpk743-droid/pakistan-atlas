@@ -108,8 +108,21 @@ header.site {
 .logo small { display: block; font-weight: 400; font-size: 0.72rem; color: var(--muted); letter-spacing: .04em; }
 
 nav ul { list-style: none; display: flex; gap: 1.1rem; flex-wrap: wrap; }
-nav a { font-weight: 600; font-size: 0.95rem; color: var(--ink); }
+nav a { font-weight: 600; font-size: 0.95rem; color: var(--ink); position: relative; }
 nav a.active, nav a:hover { color: var(--green); }
+nav a.active::after {
+  content: "";
+  display: block;
+  width: 1.35rem;
+  height: 2px;
+  margin-top: 0.22rem;
+  background: var(--gold);
+  border-radius: 2px;
+}
+nav a:focus-visible, .logo:focus-visible, .menu-btn:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
 .menu-btn { display: none; background: none; border: 0; font-size: 1.4rem; cursor: pointer; }
 
 .hero {

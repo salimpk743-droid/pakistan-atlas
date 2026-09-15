@@ -3,106 +3,289 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pakistan Atlas — Provinces, Districts, Culture and Facts</title>
-  <meta name="description" content="A student-friendly atlas of Pakistan: provinces, districts, population, universities, hospitals, culture and current public updates. Built so young Pakistanis can learn every corner of the country." />
+  <title>Pakistan Atlas | Explore Pakistan's Provinces, Districts, Culture, History & Geography</title>
+  <meta name="description" content="Pakistan Atlas is an educational guide to Pakistan's provinces and districts, culture, literature, geography, sports, history and heritage." />
   <link rel="canonical" href="https://pakistan-atlas.vercel.app/" />
-  <meta property="og:title" content="Pakistan Atlas — Provinces, Districts, Culture and Facts" />
-  <meta property="og:description" content="A student-friendly atlas of Pakistan: provinces, districts, population, universities, hospitals, culture and current public updates. Built so young Pakistanis can learn every corner of the country." />
+  <meta name="theme-color" content="#01411c" />
+  <meta property="og:title" content="Pakistan Atlas | Explore Pakistan's Provinces, Districts, Culture, History & Geography" />
+  <meta property="og:description" content="Pakistan Atlas is an educational guide to Pakistan's provinces and districts, culture, literature, geography, sports, history and heritage." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://pakistan-atlas.vercel.app/" />
   <meta property="og:image" content="https://pakistan-atlas.vercel.app/images/flag-pakistan.svg" />
   <meta property="og:site_name" content="Pakistan Atlas" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Pakistan Atlas — Provinces, Districts, Culture and Facts" />
-  <meta name="twitter:description" content="A student-friendly atlas of Pakistan: provinces, districts, population, universities, hospitals, culture and current public updates. Built so young Pakistanis can learn every corner of the country." />
+  <meta name="twitter:title" content="Pakistan Atlas | Explore Pakistan's Provinces, Districts, Culture, History & Geography" />
+  <meta name="twitter:description" content="Pakistan Atlas is an educational guide to Pakistan's provinces and districts, culture, literature, geography, sports, history and heritage." />
   <meta name="twitter:image" content="https://pakistan-atlas.vercel.app/images/flag-pakistan.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600&family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css?v=3" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css?v=4" />
+  <link rel="stylesheet" href="css/home.css?v=2" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Pakistan Atlas",
-    "url": "https://pakistan-atlas.vercel.app/",
-    "description": "A student-friendly atlas of Pakistan's provinces, districts, culture and public information."
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "name": "Pakistan Atlas",
+        "url": "https://pakistan-atlas.vercel.app/",
+        "description": "An educational guide to Pakistan's provinces and districts, culture, literature, geography, sports, history and heritage."
+      },
+      {
+        "@type": "WebPage",
+        "name": "Welcome to Pakistan",
+        "url": "https://pakistan-atlas.vercel.app/",
+        "isPartOf": { "@type": "WebSite", "url": "https://pakistan-atlas.vercel.app/" },
+        "description": "Pakistan Atlas is an educational guide to Pakistan's provinces and districts, culture, literature, geography, sports, history and heritage."
+      }
+    ]
   }
   </script>
 </head>
-<body>
+<body class="home">
+  <a class="skip-link" href="#explore-pakistan">Skip to archives</a>
   <div id="site-header"></div>
 
-  <div class="container home-shell">
-    <aside class="side-panel">
-      <h3>Explore</h3>
-      <a class="side-link news" href="latest-news.html">Culture</a>
-      <a class="side-link" href="islamabad.html">Islamabad</a>
-      <a class="side-link" href="punjab.html">Punjab</a>
-      <a class="side-link" href="khyber-pakhtunkhwa.html">Khyber Pakhtunkhwa</a>
-      <a class="side-link" href="sindh.html">Sindh</a>
-      <a class="side-link" href="balochistan.html">Balochistan</a>
-      <a class="side-link" href="gilgit-baltistan.html">Gilgit Baltistan</a>
-      <a class="side-link" href="azad-kashmir.html">Azad Kashmir</a>
-    </aside>
+  <section class="atlas-hero" aria-labelledby="atlas-welcome">
+    <div class="atlas-hero-wash" aria-hidden="true"></div>
+    <div class="container atlas-hero-inner">
+      <div class="atlas-hero-left">
+        <div class="atlas-bricks" aria-hidden="true"></div>
+        <figure class="atlas-portrait">
+          <img src="images/home/iqbal.jpg" alt="Allama Muhammad Iqbal" width="720" height="900" />
+          <figcaption>Allama Iqbal</figcaption>
+        </figure>
+      </div>
 
-    <div>
-  <section class="hero" style="padding:14px;">
-    <div style="display:flex;align-items:center;justify-content:center;gap:12px;">
-      <img src="images/allama-iqbal.jpg" alt="Allama Muhammad Iqbal" style="width:34%;height:160px;object-fit:cover;object-position:top center;border-radius:14px;border:1px solid rgba(255,255,255,.3);" />
-      <img src="images/flag-pakistan.svg" alt="Flag of Pakistan" style="width:72px;height:auto;flex-shrink:0;" />
-      <img src="images/quaid-e-azam.jpg" alt="Quaid-e-Azam Muhammad Ali Jinnah" style="width:34%;height:160px;object-fit:cover;object-position:top center;border-radius:14px;border:1px solid rgba(255,255,255,.3);" />
+      <div class="atlas-hero-center">
+        <div class="atlas-eyebrows">
+          <p class="atlas-kicker">The Indus Land</p>
+          <p class="atlas-kicker-right">People · Places · Heritage · Tomorrow</p>
+        </div>
+        <h1 id="atlas-welcome">
+          <span class="welcome-line">Welcome to</span>
+          <span class="pakistan-line">Pakistan</span>
+        </h1>
+        <p class="atlas-lead">Explore the Indus land — its people, places, culture, history and natural beauty.</p>
+        <p class="atlas-urdu-title" lang="ur" dir="rtl">پاکستان میں خوش آمدید</p>
+        <p class="atlas-urdu-sub" lang="ur" dir="rtl">دریائے سندھ کی سرزمین، تاریخ، ثقافت، جغرافیہ اور عوام کا ایک جامع سفر</p>
+      </div>
+
+      <div class="atlas-hero-right">
+        <img class="atlas-flag" src="images/flag-pakistan.svg" alt="Flag of Pakistan" width="90" height="60" />
+        <blockquote class="atlas-quote">
+          <p>An ancient civilisation.</p>
+          <p>A rich heritage.</p>
+          <p>A vibrant people.</p>
+          <p>A shared future.</p>
+        </blockquote>
+        <figure class="atlas-portrait">
+          <img src="images/home/jinnah.jpg" alt="Quaid-e-Azam Muhammad Ali Jinnah" width="720" height="864" />
+          <figcaption>Quaid-e-Azam</figcaption>
+        </figure>
+      </div>
     </div>
-    <div class="hero-center" style="padding-top:12px;">
-      <p class="urdu" style="font-size:1.2rem">خوش آمدید پاکستان</p>
-      <h1>Welcome to Pakistan</h1>
-      <p class="lead">Choose a province on the left to open every district. Use the right column for culture, literature, geography, sports and history.</p>
+
+    <div class="atlas-stats" role="list">
+      <div class="atlas-stat" role="listitem">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20 L8 8 L12 14 L16 6 L20 20 Z"/></svg>
+        <div><b>7 Regions</b><span>4 provinces + ICT + GB + AJK</span></div>
+      </div>
+      <div class="atlas-stat" role="listitem">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"/><circle cx="16" cy="9" r="2.4"/><path d="M4 19c.4-3.2 2.6-5 5-5s4.6 1.8 5 5"/><path d="M14 19c.2-2.2 1.5-3.4 3.2-3.4 1.6 0 2.8 1 3.1 3.4"/></svg>
+        <div><b>241.5 million*</b><span>People · PBS 2023</span></div>
+      </div>
+      <div class="atlas-stat" role="listitem">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="8" width="16" height="11"/><path d="M8 8 V5 h8 v3"/></svg>
+        <div><b>160+ districts</b><span>Province to tehsil</span></div>
+      </div>
+      <div class="atlas-stat" role="listitem">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17 L8 9 L12 13 L17 6 L21 17 Z"/></svg>
+        <div><b>796,096 km²</b><span>Land · 4 provinces + ICT</span></div>
+      </div>
+      <div class="atlas-stat" role="listitem">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20 V10 h5 v10"/><path d="M9 20 V6 h6 v14"/><path d="M15 20 V12 h5 v8"/></svg>
+        <div><b>Thousands of years</b><span>Of recorded history</span></div>
+      </div>
+      <div class="atlas-stat" role="listitem">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 3 v3 M12 18 v3 M3 12 h3 M18 12 h3 M5.6 5.6 l2.1 2.1 M16.3 16.3 l2.1 2.1 M5.6 18.4 l2.1-2.1 M16.3 7.7 l2.1-2.1"/></svg>
+        <div><b>Living cultures</b><span>Languages, arts, faiths</span></div>
+      </div>
+    </div>
+    <p class="atlas-footnote">*Pakistan Bureau of Statistics 2023 census: 241,499,431 people in the four provinces and Islamabad Capital Territory. Azad Jammu and Kashmir and Gilgit-Baltistan are counted separately. Area 796,096 km² is the same 4+ICT frame.</p>
+
+    <div class="atlas-cta-wrap">
+      <a class="atlas-cta" href="#explore-pakistan">Explore Pakistan <span aria-hidden="true">→</span></a>
+      <p class="atlas-motto">Different Lands · One People · A Shared Home</p>
+    </div>
+    <div class="atlas-hero-ornament" aria-hidden="true"></div>
+  </section>
+
+  <section class="atlas-section" id="explore-pakistan">
+    <div class="container">
+      <header class="atlas-section-head">
+        <h2>Explore Pakistan</h2>
+        <p>Discover the people, places, landscapes, stories and traditions that make Pakistan unique.</p>
+      </header>
+      <div class="atlas-archives">
+        <article class="atlas-archive">
+          <a class="atlas-archive-visual" href="latest-news.html">
+            <img src="images/home/street.jpg" alt="A tree-lined residential street in Islamabad" width="750" height="1000" loading="lazy" />
+            <span class="atlas-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 4 v2 M12 18 v2 M4 12 h2 M18 12 h2 M6.2 6.2 l1.5 1.5 M16.3 16.3 l1.5 1.5 M6.2 17.8 l1.5-1.5 M16.3 7.7 l1.5-1.5"/></svg></span>
+          </a>
+          <div class="atlas-archive-body">
+            <h3><a href="latest-news.html">Culture</a></h3>
+            <p>People, traditions, languages, arts and everyday life across Pakistan.</p>
+            <a class="atlas-more" href="latest-news.html">Open archive →</a>
+          </div>
+        </article>
+        <article class="atlas-archive">
+          <a class="atlas-archive-visual" href="current-affairs.html">
+            <img src="images/home/iqbal.jpg" alt="Allama Muhammad Iqbal" width="720" height="900" loading="lazy" />
+            <span class="atlas-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 5 h10 v14 H6 z"/><path d="M16 7 h3 v10 h-3"/></svg></span>
+          </a>
+          <div class="atlas-archive-body">
+            <h3><a href="current-affairs.html">Literature</a></h3>
+            <p>Poets, writers, books and literary heritage.</p>
+            <a class="atlas-more" href="current-affairs.html">Open archive →</a>
+          </div>
+        </article>
+        <article class="atlas-archive">
+          <a class="atlas-archive-visual" href="politics.html">
+            <img src="images/home/hills.jpg" alt="Margalla Hills above Islamabad" width="975" height="1300" loading="lazy" />
+            <span class="atlas-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 18 L8 9 L12 14 L16 7 L21 18 Z"/></svg></span>
+          </a>
+          <div class="atlas-archive-body">
+            <h3><a href="politics.html">Geography</a></h3>
+            <p>Mountains, rivers, regions and landscapes.</p>
+            <a class="atlas-more" href="politics.html">Open archive →</a>
+          </div>
+        </article>
+        <article class="atlas-archive">
+          <a class="atlas-archive-visual sports" href="sports.html" aria-label="Sports archive">
+            <svg width="88" height="88" viewBox="0 0 88 88" aria-hidden="true">
+              <circle cx="44" cy="44" r="30" fill="none" stroke="#e4c86a" stroke-width="1.4"/>
+              <path d="M28 58 L50 18" stroke="#e4c86a" stroke-width="4" stroke-linecap="round"/>
+              <path d="M48 16 h10 v8 h-10 z" fill="#e4c86a"/>
+              <circle cx="58" cy="60" r="8" fill="none" stroke="#e4c86a" stroke-width="1.6"/>
+            </svg>
+            <span class="atlas-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 4 v16 M4 12 h16"/></svg></span>
+          </a>
+          <div class="atlas-archive-body">
+            <h3><a href="sports.html">Sports</a></h3>
+            <p>Pakistan's sporting journey and national achievements.</p>
+            <a class="atlas-more" href="sports.html">Open archive →</a>
+          </div>
+        </article>
+        <article class="atlas-archive">
+          <a class="atlas-archive-visual" href="history.html">
+            <img src="images/home/jinnah.jpg" alt="Quaid-e-Azam Muhammad Ali Jinnah" width="720" height="864" loading="lazy" />
+            <span class="atlas-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20 V10 h5 v10"/><path d="M9 20 V6 h6 v14"/><path d="M15 20 V12 h5 v8"/></svg></span>
+          </a>
+          <div class="atlas-archive-body">
+            <h3><a href="history.html">History</a></h3>
+            <p>From the past to the present — Pakistan's national story.</p>
+            <a class="atlas-more" href="history.html">Open archive →</a>
+          </div>
+        </article>
+      </div>
     </div>
   </section>
 
-    <div class="stats" style="margin-top:1rem">
-      <div class="stat"><b>241.5m</b><span>People in 2023 census*</span></div>
-      <div class="stat"><b>7 units</b><span>4 provinces + ICT + GB + AJK</span></div>
-      <div class="stat"><b>160+</b><span>Districts on this atlas</span></div>
-      <div class="stat"><b>796k</b><span>km² of land</span></div>
+  <section class="atlas-section atlas-section-alt" id="explore-regions">
+    <div class="container">
+      <header class="atlas-section-head">
+        <h2>Explore Every Region</h2>
+        <p>From province to district, discover Pakistan in detail.</p>
+      </header>
+      <nav class="atlas-quick" aria-label="Regions and culture">
+        <a class="gold" href="latest-news.html">Culture</a>
+        <a href="islamabad.html">Islamabad</a>
+        <a href="punjab.html">Punjab</a>
+        <a href="khyber-pakhtunkhwa.html">Khyber Pakhtunkhwa</a>
+        <a href="sindh.html">Sindh</a>
+        <a href="balochistan.html">Balochistan</a>
+        <a href="gilgit-baltistan.html">Gilgit Baltistan</a>
+        <a href="azad-kashmir.html">Azad Kashmir</a>
+      </nav>
+      <div class="atlas-units" id="homeUnits"></div>
+      <p class="atlas-note">*About 241.5 million for the four provinces plus ICT (PBS 2023). AJK and Gilgit-Baltistan are counted separately. Open a card to read every district in that unit.</p>
     </div>
+  </section>
 
-    <div class="section-title" style="margin-top:2rem">
-      <h2>All seven units</h2>
-      <p>Islamabad, Balochistan, Gilgit-Baltistan and Azad Kashmir are included with Punjab, Sindh and KP. Click a card or use the left menu.</p>
+  <section class="atlas-heritage" id="heritage" aria-labelledby="heritage-heading">
+    <div class="container">
+      <h2 id="heritage-heading">A Land of History, Heritage & Hope</h2>
+      <p class="lede">Pakistan — past, present and future, together.</p>
+      <div class="atlas-heritage-row">
+        <figure>
+          <img src="images/home/mosque.jpg" alt="Faisal Mosque in Islamabad" width="1400" height="875" loading="lazy" />
+          <figcaption>Faisal Mosque, Islamabad</figcaption>
+        </figure>
+        <figure>
+          <img src="images/home/hills.jpg" alt="Cloud over the Margalla Hills" width="975" height="1300" loading="lazy" />
+          <figcaption>Margalla Hills</figcaption>
+        </figure>
+        <figure>
+          <img src="images/home/highway.jpg" alt="Kashmir Highway toward the northern hills of Islamabad" width="1400" height="875" loading="lazy" />
+          <figcaption>Toward the northern hills</figcaption>
+        </figure>
+      </div>
+      <p class="atlas-motto">Different Lands · One People · A Shared Home</p>
+      <p class="atlas-credit">Islamabad photographs: islamabadians. Portraits of Iqbal and Jinnah from the atlas image library.</p>
     </div>
-    <div class="grid-3" id="homeUnits"></div>
-    <p style="margin-top:1rem;font-size:.9rem;color:#5c5c5c">*About 241.5 million for the four provinces plus ICT. AJK and GB are counted separately.</p>
-    <div class="ad-slot">Advertisement space — paste AdSense here after approval</div>
-    </div>
+  </section>
 
-    <aside class="side-panel">
-      <h3>Read &amp; debate</h3>
-      <a class="side-link gold" href="latest-news.html">Culture</a>
-      <a class="side-link gold" href="current-affairs.html">Literature &amp; Poetry</a>
-      <a class="side-link gold" href="politics.html">Geography</a>
-      <a class="side-link gold" href="sports.html">Sports</a>
-      <a class="side-link gold" href="history.html">History</a>
-      <p style="font-size:.85rem;color:#5c5c5c;margin-top:.6rem">Culture = people, traditions, languages, arts and everyday life across Pakistan. Literature, geography, sports and history = national archives.</p>
-    </aside>
-  </div>
-
+  <div class="ad-slot">Advertisement space — paste AdSense here after approval</div>
   <div id="site-footer"></div>
   <script src="js/app.js"></script>
   <script>
+    const UNIT_MARK = {
+      punjab: '<svg viewBox="0 0 32 32" aria-hidden="true"><path d="M6 24c2-8 5-14 10-18 5 4 8 10 10 18"/><path d="M8 24h16"/><path d="M16 6v6"/></svg>',
+      sindh: '<svg viewBox="0 0 32 32" aria-hidden="true"><rect x="6" y="8" width="20" height="16"/><path d="M6 16h20 M16 8v16"/><path d="M10 12h4 M18 20h4"/></svg>',
+      kpk: '<svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 24 L12 10 L16 16 L22 8 L28 24 Z"/></svg>',
+      balochistan: '<svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 20c6-2 8 4 14 2 4-1 6-5 10-4"/><path d="M6 24h20"/><circle cx="22" cy="10" r="3"/></svg>',
+      ict: '<svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 6 L26 24 H6 Z"/><path d="M16 12 v6"/><circle cx="16" cy="20" r="1.4"/></svg>',
+      gb: '<svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 24 L10 12 L14 18 L20 6 L28 24 Z"/><path d="M6 24h20"/></svg>',
+      ajk: '<svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 18c4 6 8 6 12 0 4 6 8 6 12 0"/><path d="M6 24h20"/><path d="M16 6v8"/></svg>'
+    };
     loadData().then(data => {
       const box = document.getElementById("homeUnits");
-      const provinceRoutes = { ict: "islamabad-capital-territory.html", punjab: "punjab.html", kpk: "khyber-pakhtunkhwa.html", sindh: "sindh.html", balochistan: "balochistan.html", gb: "gilgit-baltistan.html", ajk: "azad-kashmir.html" };
-      box.innerHTML = data.units.map(u => `
-        <article class="card">
-          <a href="${provinceRoutes[u.id]}"><img src="images/flag-pakistan.svg" alt="Flag of Pakistan" loading="lazy" width="240" height="150" /></a>
-          <div class="card-body">
-            <span class="badge">${u.type}</span>
-            <h3><a href="${provinceRoutes[u.id]}">${u.name}</a> <small class="urdu">${u.urdu}</small></h3>
-            <p>Capital ${u.capital} · Population ${fmt(u.population_2023)}</p>
-            <p>${u.culture.slice(0, 140)}…</p>
-            <p class="meta"><a href="${provinceRoutes[u.id]}">Open all districts →</a></p>
+      const provinceRoutes = {
+        ict: "islamabad-capital-territory.html",
+        punjab: "punjab.html",
+        kpk: "khyber-pakhtunkhwa.html",
+        sindh: "sindh.html",
+        balochistan: "balochistan.html",
+        gb: "gilgit-baltistan.html",
+        ajk: "azad-kashmir.html"
+      };
+      const order = ["ict", "punjab", "kpk", "sindh", "balochistan", "gb", "ajk"];
+      const census2023 = new Set(["punjab", "sindh", "kpk", "balochistan", "ict"]);
+      const byId = Object.fromEntries(data.units.map(u => [u.id, u]));
+      box.innerHTML = order.map(id => {
+        const u = byId[id];
+        const href = provinceRoutes[u.id];
+        const pop = census2023.has(u.id)
+          ? fmt(u.population_2023) + " people (PBS 2023)"
+          : fmt(u.population_2023) + " people";
+        const blurb = (u.culture || "").slice(0, 140).trim() + "…";
+        return `
+        <article class="atlas-unit unit-${u.id}">
+          <div class="atlas-unit-head">
+            <div class="atlas-unit-mark">${UNIT_MARK[u.id] || ""}</div>
+            <div>
+              <span class="badge">${u.type}</span>
+              <h3><a href="${href}">${u.name}</a> <small class="urdu">${u.urdu}</small></h3>
+            </div>
           </div>
-        </article>`).join("");
+          <div class="atlas-unit-body">
+            <p class="unit-meta">Capital ${u.capital} · ${pop} · ${fmt(u.area_km2)} km²</p>
+            <p class="unit-blurb">${blurb}</p>
+            <p class="meta"><a href="${href}">Open all districts →</a></p>
+          </div>
+        </article>`;
+      }).join("");
     });
   </script>
 </body>
