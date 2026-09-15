@@ -1,168 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Showbiz — Pakistan Atlas</title>
-  <meta name="description" content="Pakistan Atlas Showbiz archive: Pakistani cinema, television, dramas, actors, actresses, models, music, writers and directors.">
-  <link rel="canonical" href="https://pakistan-atlas.vercel.app/showbiz.html">
-  <link rel="stylesheet" href="css/style.css?v=5">
-  <link rel="stylesheet" href="css/home.css?v=9">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Showbiz | Pakistan Atlas — Pakistani Cinema, Television, Music & Stars</title>
+  <meta name="description" content="Explore Pakistani showbiz: classic and modern film stars, television actors, popular dramas, models, singers, writers, directors and the evolution of Pakistan's entertainment industry." />
+  <meta name="theme-color" content="#071713" />
+  <meta property="og:title" content="Showbiz | Pakistan Atlas" />
+  <meta property="og:description" content="A detailed guide to Pakistani cinema, television, music, fashion and the stars who shaped the country's entertainment culture." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://pakistan-atlas.vercel.app/showbiz.html" />
+  <meta property="og:image" content="https://pakistan-atlas.vercel.app/images/home/humsafar-header.jpg" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600&family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css?v=5" />
   <style>
-    :root{--sb-bg:#061713;--sb-panel:#0b211b;--sb-gold:#d9b45b;--sb-text:#eef3ee;--sb-muted:#aab9b0}
-    body{background:var(--sb-bg);color:var(--sb-text)}
-    .showbiz-hero{position:relative;min-height:620px;overflow:hidden;display:flex;align-items:center;background:#061713}
-    .showbiz-hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}
-    .showbiz-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(3,15,12,.97) 0%,rgba(3,15,12,.86) 35%,rgba(3,15,12,.45) 68%,rgba(3,15,12,.55) 100%)}
-    .showbiz-hero-content{position:relative;z-index:2;max-width:720px;padding:90px 7%;}
-    .showbiz-kicker{color:var(--sb-gold);letter-spacing:3px;font-size:13px;font-weight:700;margin-bottom:20px}
-    .showbiz-hero h1{margin:0;color:#f0cf78;font-size:clamp(58px,9vw,112px);line-height:.9}
-    .showbiz-subtitle{font-size:28px;line-height:1.25;margin:26px 0 16px}
-    .showbiz-hero p{color:#d4ddd7;line-height:1.8;max-width:620px}
-    .showbiz-urdu{font-size:42px;color:var(--sb-gold);margin-top:28px}
-    .image-credit{position:absolute;z-index:3;right:18px;bottom:14px;padding:6px 10px;background:rgba(0,0,0,.68);border-radius:4px;color:#fff;font-size:12px}
-    .showbiz-wrap{max-width:1200px;margin:auto;padding:70px 6%}
-    .showbiz-section{margin-bottom:65px}
-    .showbiz-section h2{color:var(--sb-gold);font-size:32px;margin-bottom:18px}
-    .showbiz-section>p{color:var(--sb-muted);line-height:1.8;max-width:900px}
-    .sb-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:28px}
-    .sb-card{background:var(--sb-panel);border:1px solid rgba(217,180,91,.18);border-radius:14px;padding:24px}
-    .sb-card h3{margin:0 0 10px;color:#f0cf78;font-size:19px}
-    .sb-card p{margin:0;color:var(--sb-muted);line-height:1.65;font-size:14px}
-    .sb-list{columns:2;column-gap:45px;color:#cbd6cf;line-height:2;margin-top:22px;padding-left:20px}
-    .sb-list li{break-inside:avoid}
-    .urdu-block{direction:rtl;text-align:right;background:#0a201a;border-right:3px solid var(--sb-gold);padding:30px;border-radius:12px;line-height:2;color:#d8e1dc}
-    .directory{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-top:25px}
-    .directory a{display:block;text-decoration:none;color:#dce6df;background:#0b211b;border:1px solid rgba(217,180,91,.15);padding:14px;border-radius:10px}
-    .directory a:hover{border-color:var(--sb-gold);color:var(--sb-gold)}
-    @media(max-width:700px){.showbiz-hero{min-height:560px}.showbiz-hero-content{padding:70px 7%}.showbiz-subtitle{font-size:22px}.sb-list{columns:1}.showbiz-hero-bg{object-position:center}}
+    :root{--sb-bg:#071713;--sb-panel:#0d211b;--sb-panel2:#102a22;--sb-gold:#d9b45b;--sb-gold2:#f0cf78;--sb-text:#f3f0e7;--sb-muted:#b8c2bc;--sb-line:rgba(217,180,91,.22)}
+    body.showbiz-page{margin:0;background:var(--sb-bg);color:var(--sb-text);font-family:"Source Sans 3",Arial,sans-serif}
+    .sb-hero{position:relative;min-height:650px;overflow:hidden;background:#06120f;border-bottom:1px solid var(--sb-line)}
+    .sb-hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top}
+    .sb-hero-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(3,14,11,.97) 0%,rgba(3,14,11,.9) 30%,rgba(3,14,11,.5) 62%,rgba(3,14,11,.25) 100%),linear-gradient(0deg,rgba(3,14,11,.8),transparent 55%)}
+    .sb-hero-content{position:relative;z-index:2;max-width:760px;padding:100px 24px 120px;margin:0 auto 0 5%}
+    .sb-kicker{margin:0 0 18px;color:var(--sb-gold);font-size:13px;font-weight:700;letter-spacing:3px;text-transform:uppercase}
+    .sb-hero h1{margin:0;font-family:"Playfair Display",serif;font-size:clamp(58px,8vw,108px);line-height:.95;color:var(--sb-gold2);text-shadow:0 4px 25px rgba(0,0,0,.4)}
+    .sb-subtitle{font-family:"Playfair Display",serif;font-size:clamp(24px,3vw,38px);margin:25px 0 18px;line-height:1.15}
+    .sb-intro{max-width:680px;color:#e2e6e2;font-size:18px;line-height:1.7}
+    .sb-urdu-title{font-family:"Noto Nastaliq Urdu",serif;font-size:38px;color:var(--sb-gold2);margin:28px 0 0;line-height:1.8}
+    .sb-credit{position:absolute;z-index:4;right:18px;bottom:16px;background:rgba(0,0,0,.72);color:#fff;padding:7px 11px;border-radius:4px;font-size:12px}
+    .sb-credit a{color:#fff;text-decoration:underline}
+    .sb-nav-strip{position:absolute;z-index:4;left:0;right:0;bottom:0;background:rgba(4,17,13,.88);border-top:1px solid var(--sb-line);backdrop-filter:blur(7px)}
+    .sb-nav-inner{display:flex;flex-wrap:wrap;gap:0;max-width:1180px;margin:auto}
+    .sb-nav-inner a{flex:1 1 130px;text-align:center;padding:16px 10px;color:#e7e4da;text-decoration:none;border-right:1px solid var(--sb-line);font-weight:600}
+    .sb-nav-inner a:hover{color:var(--sb-gold2);background:rgba(217,180,91,.06)}
+    .sb-main{background:linear-gradient(180deg,#071713 0%,#091b16 100%);padding:70px 0}
+    .sb-container{width:min(1160px,92%);margin:auto}
+    .sb-section{margin-bottom:75px}
+    .sb-heading{text-align:center;margin-bottom:38px}
+    .sb-heading .eyebrow{color:var(--sb-gold);font-size:12px;letter-spacing:3px;text-transform:uppercase;font-weight:700}
+    .sb-heading h2{font-family:"Playfair Display",serif;color:var(--sb-gold2);font-size:clamp(32px,4vw,48px);margin:8px 0 10px}
+    .sb-heading p{max-width:760px;margin:auto;color:var(--sb-muted);font-size:17px;line-height:1.7}
+    .sb-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .sb-card{background:linear-gradient(145deg,var(--sb-panel),var(--sb-panel2));border:1px solid var(--sb-line);border-radius:14px;padding:25px;box-shadow:0 12px 35px rgba(0,0,0,.16)}
+    .sb-card h3{margin:0 0 10px;color:var(--sb-gold2);font-family:"Playfair Display",serif;font-size:23px}
+    .sb-card p{margin:0;color:var(--sb-muted);line-height:1.65}
+    .sb-list{margin:10px 0 0;padding-left:20px;color:#dfe5e0;line-height:1.85}
+    .sb-list strong{color:#f1e7c9}
+    .sb-timeline{display:grid;gap:14px;max-width:900px;margin:auto}
+    .sb-era{display:grid;grid-template-columns:150px 1fr;gap:22px;align-items:start;padding:20px 0;border-bottom:1px solid var(--sb-line)}
+    .sb-era-year{color:var(--sb-gold2);font-family:"Playfair Display",serif;font-size:22px;font-weight:700}
+    .sb-era h3{margin:0 0 5px;color:#eee8d9;font-size:20px}
+    .sb-era p{margin:0;color:var(--sb-muted);line-height:1.65}
+    .sb-drama-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}
+    .sb-drama{padding:18px;background:#0b211a;border:1px solid var(--sb-line);border-radius:12px}
+    .sb-drama h3{margin:0 0 7px;color:#f0cf78;font-size:19px}
+    .sb-drama p{margin:0;color:var(--sb-muted);font-size:14px;line-height:1.5}
+    .sb-urdu{background:#0a1d17;border:1px solid var(--sb-line);border-radius:16px;padding:35px;text-align:right}
+    .sb-urdu h2{font-family:"Noto Nastaliq Urdu",serif;color:var(--sb-gold2);font-size:38px;margin:0 0 18px;line-height:1.8}
+    .sb-urdu p,.sb-urdu li{font-family:"Noto Nastaliq Urdu",serif;color:#d9dfdb;font-size:20px;line-height:2.15}
+    .sb-directory{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+    .sb-directory div{padding:18px 20px;background:rgba(217,180,91,.035);border-left:3px solid var(--sb-gold);border-radius:8px}
+    .sb-directory strong{display:block;color:var(--sb-gold2);margin-bottom:5px}
+    .sb-directory span{color:var(--sb-muted);line-height:1.6}
+    .sb-note{margin-top:30px;padding:16px 20px;border:1px solid var(--sb-line);border-radius:10px;color:#bfc9c2;background:rgba(217,180,91,.035);font-size:14px;line-height:1.6}
+    @media(max-width:850px){.sb-grid{grid-template-columns:1fr 1fr}.sb-drama-grid{grid-template-columns:1fr 1fr}.sb-hero-content{margin-left:0;padding:75px 24px 130px}.sb-hero{min-height:700px}.sb-era{grid-template-columns:100px 1fr}}
+    @media(max-width:560px){.sb-grid,.sb-drama-grid,.sb-directory{grid-template-columns:1fr}.sb-hero-content{padding:65px 20px 150px}.sb-hero h1{font-size:64px}.sb-subtitle{font-size:25px}.sb-intro{font-size:16px}.sb-urdu-title{font-size:31px}.sb-nav-inner a{flex-basis:50%;border-bottom:1px solid var(--sb-line)}}
   </style>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebPage","name":"Showbiz | Pakistan Atlas","url":"https://pakistan-atlas.vercel.app/showbiz.html","description":"Guide to Pakistani cinema, television, music, fashion and entertainment culture."}
+  </script>
 </head>
-<body>
-  <a class="skip-link" href="#main">Skip to content</a>
+<body class="showbiz-page">
+  <a class="skip-link" href="#showbiz-content">Skip to Showbiz content</a>
   <div id="site-header"></div>
 
-  <main id="main">
-    <section class="showbiz-hero">
-      <img src="images/humsafar-header.jpg" alt="Fawad Khan and Mahira Khan in Humsafar" class="showbiz-hero-bg">
-      <div class="showbiz-overlay"></div>
-      <div class="showbiz-hero-content">
-        <div class="showbiz-kicker">PAKISTANI CINEMA • TELEVISION • MUSIC • FASHION</div>
-        <h1>Showbiz</h1>
-        <div class="showbiz-subtitle">Stories, Stars and the Spirit of a Creative Nation</div>
-        <p>Explore Pakistan's entertainment world — from classic cinema and legendary performers to landmark television dramas, contemporary stars, models, musicians, writers and directors.</p>
-        <div class="showbiz-urdu">شو بز</div>
+  <main id="showbiz-content">
+    <section class="sb-hero" aria-labelledby="showbiz-title">
+      <img class="sb-hero-bg" src="images/home/humsafar-header.jpg" alt="Fawad Khan and Mahira Khan in Humsafar" width="1600" height="900" fetchpriority="high" />
+      <div class="sb-hero-overlay"></div>
+      <div class="sb-hero-content">
+        <p class="sb-kicker">Pakistani Cinema • Television • Music • Fashion</p>
+        <h1 id="showbiz-title">Showbiz</h1>
+        <p class="sb-subtitle">Stories, Stars and the Spirit of a Creative Nation</p>
+        <p class="sb-intro">From classic cinema and unforgettable television dramas to contemporary stars, singers, models, writers and directors, Pakistani showbiz reflects changing generations, languages, identities and popular culture.</p>
+        <p class="sb-urdu-title" lang="ur" dir="rtl">پاکستانی شوبز کی دنیا</p>
       </div>
-      <div class="image-credit">Image credit: Dawn.com</div>
+      <div class="sb-credit">Image credit: <a href="https://www.dawn.com/" target="_blank" rel="noopener noreferrer">Dawn.com</a></div>
+      <nav class="sb-nav-strip" aria-label="Showbiz sections">
+        <div class="sb-nav-inner">
+          <a href="#history">History</a><a href="#actors">Actors &amp; Actresses</a><a href="#dramas">Popular Dramas</a><a href="#cinema">Cinema</a><a href="#music">Music</a><a href="#models">Models</a><a href="#creators">Writers &amp; Directors</a>
+        </div>
+      </nav>
     </section>
 
-    <div class="showbiz-wrap">
-      <section class="showbiz-section">
-        <h2>Pakistan's Showbiz Industry</h2>
-        <p>Pakistani showbiz has developed across film, television, music, fashion and digital media. Its history includes the golden age of Pakistani cinema, the expansion of television drama, the rise of private channels and a new generation of performers reaching audiences around the world.</p>
-        <div class="sb-grid">
-          <article class="sb-card"><h3>Film</h3><p>From classic Pakistani cinema and Lollywood to contemporary productions and actors working across Pakistan and beyond.</p></article>
-          <article class="sb-card"><h3>Television</h3><p>PTV helped establish a powerful drama tradition, followed by private networks and a growing digital audience.</p></article>
-          <article class="sb-card"><h3>Music</h3><p>Qawwali, ghazal, pop, rock and contemporary music have all contributed to Pakistan's cultural identity.</p></article>
-          <article class="sb-card"><h3>Fashion & Models</h3><p>Pakistan's fashion industry has produced prominent models, designers, photographers and fashion personalities.</p></article>
-        </div>
-      </section>
+    <div class="sb-main"><div class="sb-container">
+      <section class="sb-section"><header class="sb-heading"><span class="eyebrow">Pakistan Atlas Archive</span><h2>Understanding Pakistani Showbiz</h2><p>Entertainment in Pakistan spans film, television, music, fashion, theatre and increasingly digital platforms. Its history combines Urdu and regional-language traditions with changing production styles and audiences.</p></header><div class="sb-grid">
+        <article class="sb-card"><h3>Film</h3><p>Pakistani cinema developed a distinctive popular culture around Lahore's film industry, later joined by new waves of filmmaking in Karachi and other centres.</p></article>
+        <article class="sb-card"><h3>Television</h3><p>Television drama became one of Pakistan's most influential storytelling forms, with PTV and later private channels reaching audiences across the country and abroad.</p></article>
+        <article class="sb-card"><h3>Music &amp; Fashion</h3><p>Classical, folk, qawwali, pop and contemporary music coexist with a fashion industry shaped by designers, models, television personalities and digital creators.</p></article>
+      </div></section>
 
-      <section class="showbiz-section">
-        <h2>Classic & Legendary Stars</h2>
-        <ul class="sb-list">
-          <li>Waheed Murad</li><li>Mohammad Ali</li><li>Nadeem Baig</li><li>Javed Sheikh</li>
-          <li>Talat Hussain</li><li>Abid Ali</li><li>Shabnam</li><li>Babra Sharif</li>
-          <li>Samina Peerzada</li><li>Vital Signs</li><li>Junoon</li><li>Strings</li>
-        </ul>
-      </section>
+      <section class="sb-section" id="history"><header class="sb-heading"><span class="eyebrow">Then &amp; Now</span><h2>A Short History</h2><p>The story of Pakistani showbiz is a story of changing media, audiences and artistic generations.</p></header><div class="sb-timeline">
+        <div class="sb-era"><div class="sb-era-year">1940s–60s</div><div><h3>Early Pakistani Cinema</h3><p>After independence, the film industry developed around Lahore and Karachi. Stars, musicians and filmmakers helped establish a recognisable Pakistani popular cinema.</p></div></div>
+        <div class="sb-era"><div class="sb-era-year">1960s–70s</div><div><h3>The Golden-Age Tradition</h3><p>Film stars became major cultural icons, while television and stage performance expanded the country's entertainment landscape.</p></div></div>
+        <div class="sb-era"><div class="sb-era-year">1970s–90s</div><div><h3>Television Becomes Central</h3><p>PTV drama, serials, music programmes and family entertainment became important parts of everyday life, with strong literary and theatrical influences.</p></div></div>
+        <div class="sb-era"><div class="sb-era-year">2000s</div><div><h3>Private Channels &amp; New Stars</h3><p>Private television networks expanded drama production and created a larger commercial ecosystem for actors, writers, directors and presenters.</p></div></div>
+        <div class="sb-era"><div class="sb-era-year">2010s–Today</div><div><h3>Digital &amp; Global Audiences</h3><p>Streaming, social media and online video have widened the reach of Pakistani dramas, music and performers.</p></div></div>
+      </div></section>
 
-      <section class="showbiz-section">
-        <h2>Actors & Actresses</h2>
-        <div class="sb-grid">
-          <article class="sb-card"><h3>Leading Actors</h3><p>Fawad Khan, Humayun Saeed, Faisal Qureshi, Ahsan Khan, Hamza Ali Abbasi, Ahmed Ali Akbar, Wahaj Ali, Bilal Abbas Khan, Ahad Raza Mir, Osman Khalid Butt, Sheheryar Munawar, Farhan Saeed and Ali Rehman Khan.</p></article>
-          <article class="sb-card"><h3>Leading Actresses</h3><p>Mahira Khan, Sanam Saeed, Sajal Aly, Yumna Zaidi, Ayeza Khan, Hania Aamir, Mehwish Hayat, Sanam Baloch, Hiba Bukhari and Iqra Aziz.</p></article>
-        </div>
-      </section>
+      <section class="sb-section" id="actors"><header class="sb-heading"><span class="eyebrow">The Performers</span><h2>Actors &amp; Actresses</h2><p>Generations of performers have shaped Pakistani cinema and television, from classic film icons to today's internationally recognised television stars.</p></header><div class="sb-grid">
+        <article class="sb-card"><h3>Classic Film &amp; Television</h3><ul class="sb-list"><li><strong>Waheed Murad</strong> — celebrated film star.</li><li><strong>Mohammad Ali</strong> — major actor of Pakistani cinema.</li><li><strong>Nadeem Baig</strong> — prominent film star.</li><li><strong>Javed Sheikh</strong> — actor and filmmaker.</li><li><strong>Talat Hussain</strong> — respected television and film actor.</li><li><strong>Abid Ali</strong> — influential television performer.</li></ul></article>
+        <article class="sb-card"><h3>Leading Modern Actors</h3><ul class="sb-list"><li>Fawad Khan</li><li>Humayun Saeed</li><li>Faisal Qureshi</li><li>Ahsan Khan</li><li>Hamza Ali Abbasi</li><li>Ahmed Ali Akbar</li><li>Wahaj Ali</li><li>Bilal Abbas Khan</li><li>Ahad Raza Mir</li><li>Osman Khalid Butt</li><li>Sheheryar Munawar</li><li>Farhan Saeed</li></ul></article>
+        <article class="sb-card"><h3>Leading Actresses</h3><ul class="sb-list"><li>Shabnam</li><li>Babra Sharif</li><li>Samina Peerzada</li><li>Sanam Saeed</li><li>Mahira Khan</li><li>Sajal Aly</li><li>Yumna Zaidi</li><li>Ayeza Khan</li><li>Hania Aamir</li><li>Mehwish Hayat</li><li>Sanam Baloch</li><li>Hiba Bukhari</li><li>Iqra Aziz</li></ul></article>
+      </div></section>
 
-      <section class="showbiz-section">
-        <h2>Popular Pakistani Dramas</h2>
-        <p>Some dramas that have become especially recognizable within Pakistan's television culture include:</p>
-        <ul class="sb-list">
-          <li>Waris</li><li>Dhoop Kinare</li><li>Alpha Bravo Charlie</li><li>Humsafar</li>
-          <li>Zindagi Gulzar Hai</li><li>Pyarey Afzal</li><li>Yakeen Ka Safar</li><li>Ehd-e-Wafa</li>
-          <li>Mere Paas Tum Ho</li><li>Parizaad</li><li>Tere Bin</li><li>Khaie</li>
-          <li>Kabhi Main Kabhi Tum</li><li>Suno Chanda</li><li>Chupke Chupke</li>
-        </ul>
-      </section>
+      <section class="sb-section" id="dramas"><header class="sb-heading"><span class="eyebrow">Television Classics &amp; Hits</span><h2>Popular Pakistani Dramas</h2><p>These titles represent widely remembered eras, genres and conversations in Pakistani television drama.</p></header><div class="sb-drama-grid">
+        <article class="sb-drama"><h3>Waris</h3><p>A landmark classic remembered for social and family storytelling.</p></article><article class="sb-drama"><h3>Dhoop Kinare</h3><p>A beloved television classic with enduring popularity.</p></article><article class="sb-drama"><h3>Alpha Bravo Charlie</h3><p>A widely remembered drama centred on friendship, service and duty.</p></article><article class="sb-drama"><h3>Humsafar</h3><p>A defining modern drama featuring Fawad Khan and Mahira Khan.</p></article><article class="sb-drama"><h3>Zindagi Gulzar Hai</h3><p>A major contemporary drama remembered for its characters and social themes.</p></article><article class="sb-drama"><h3>Pyarey Afzal</h3><p>A popular romantic drama with a strong cultural footprint.</p></article><article class="sb-drama"><h3>Yakeen Ka Safar</h3><p>A character-driven drama known for themes of growth and resilience.</p></article><article class="sb-drama"><h3>Ehd-e-Wafa</h3><p>A friendship and coming-of-age story with a broad audience.</p></article><article class="sb-drama"><h3>Mere Paas Tum Ho</h3><p>A widely discussed modern television drama.</p></article><article class="sb-drama"><h3>Parizaad</h3><p>A modern drama noted for its central character and social commentary.</p></article><article class="sb-drama"><h3>Tere Bin</h3><p>A contemporary romantic drama with a large international following.</p></article><article class="sb-drama"><h3>Khaie</h3><p>A modern drama exploring conflict, revenge and family power.</p></article><article class="sb-drama"><h3>Kabhi Main Kabhi Tum</h3><p>A contemporary romantic family drama.</p></article><article class="sb-drama"><h3>Suno Chanda</h3><p>A popular romantic comedy associated with Ramadan television.</p></article><article class="sb-drama"><h3>Chupke Chupke</h3><p>A light-hearted family romantic comedy.</p></article>
+      </div></section>
 
-      <section class="showbiz-section">
-        <h2>Genres & Television Culture</h2>
-        <div class="sb-grid">
-          <article class="sb-card"><h3>Family Drama</h3><p>Family relationships, social expectations, generational tensions and everyday life remain central themes.</p></article>
-          <article class="sb-card"><h3>Romance</h3><p>Romantic storytelling has been a major part of Pakistani television, often combined with family and social themes.</p></article>
-          <article class="sb-card"><h3>Social Issues</h3><p>Many productions explore questions of class, gender, education, marriage, justice and social responsibility.</p></article>
-          <article class="sb-card"><h3>Military & National Stories</h3><p>Some productions have explored national history, public service, military life and collective identity.</p></article>
-        </div>
-      </section>
+      <section class="sb-section" id="cinema"><header class="sb-heading"><span class="eyebrow">The Big Screen</span><h2>Pakistani Cinema &amp; Lollywood</h2><p>Pakistani cinema has passed through different eras, from classic studio-era films to contemporary independent and commercial productions.</p></header><div class="sb-grid"><article class="sb-card"><h3>Lollywood</h3><p>The term is commonly associated with Lahore's Urdu and Punjabi film industry. Lahore has played a central role in Pakistan's cinema history.</p></article><article class="sb-card"><h3>Major Film Stars</h3><p>Waheed Murad, Mohammad Ali, Nadeem and Javed Sheikh represent important generations of Pakistani screen performance.</p></article><article class="sb-card"><h3>Contemporary Cinema</h3><p>Modern Pakistani films have explored comedy, romance, social issues, historical subjects and new visual styles.</p></article></div></section>
 
-      <section class="showbiz-section">
-        <h2>Models & Fashion Personalities</h2>
-        <p>Pakistan's fashion scene has developed alongside television, advertising and designer culture. Notable models and personalities associated with the industry include Iman Ali, Mehreen Syed, Amna Ilyas, Tooba Siddiqui, Ayesha Omar, Humaima Malick, Cybil Chaudhry and Vaneeza Ahmed.</p>
-      </section>
+      <section class="sb-section" id="models"><header class="sb-heading"><span class="eyebrow">Fashion &amp; Style</span><h2>Models &amp; Fashion Personalities</h2><p>Pakistan's fashion and advertising industries have produced recognisable models and performers who have crossed into television and film.</p></header><div class="sb-grid"><article class="sb-card"><h3>Notable Names</h3><ul class="sb-list"><li>Iman Ali</li><li>Mehreen Syed</li><li>Amna Ilyas</li><li>Tooba Siddiqui</li><li>Ayesha Omar</li><li>Humaima Malick</li><li>Cybil Chaudhry</li><li>Vaneeza Ahmed</li></ul></article><article class="sb-card"><h3>Fashion Ecosystem</h3><p>Models work across fashion editorials, runway shows, advertising, television, film and brand campaigns. The industry also connects designers, photographers, stylists and makeup artists.</p></article><article class="sb-card"><h3>Changing Media</h3><p>Digital platforms and social media have expanded the ways fashion personalities build audiences and collaborate with entertainment brands.</p></article></div></section>
 
-      <section class="showbiz-section">
-        <h2>Music & Popular Culture</h2>
-        <p>Pakistan's musical landscape spans classical traditions, qawwali, ghazal, pop, rock and contemporary music.</p>
-        <ul class="sb-list">
-          <li>Nusrat Fateh Ali Khan</li><li>Abida Parveen</li><li>Atif Aslam</li><li>Ali Zafar</li>
-          <li>Rahat Fateh Ali Khan</li><li>Shafqat Amanat Ali</li><li>Meesha Shafi</li><li>Momina Mustehsan</li>
-          <li>Ali Azmat</li><li>Faakhir</li><li>Umair Jaswal</li>
-        </ul>
-      </section>
+      <section class="sb-section" id="music"><header class="sb-heading"><span class="eyebrow">Sound of Pakistan</span><h2>Music &amp; Singing</h2><p>Pakistani music ranges from classical and folk traditions to qawwali, ghazal, pop, rock and contemporary fusion.</p></header><div class="sb-grid"><article class="sb-card"><h3>Classical &amp; Qawwali</h3><ul class="sb-list"><li>Nusrat Fateh Ali Khan</li><li>Abida Parveen</li><li>Rahat Fateh Ali Khan</li><li>Shafqat Amanat Ali</li></ul></article><article class="sb-card"><h3>Pop, Rock &amp; Contemporary</h3><ul class="sb-list"><li>Vital Signs</li><li>Junoon</li><li>Strings</li><li>Atif Aslam</li><li>Ali Zafar</li><li>Ali Azmat</li><li>Meesha Shafi</li><li>Momina Mustehsan</li><li>Umair Jaswal</li></ul></article><article class="sb-card"><h3>Music Across Generations</h3><p>Pakistan's music culture moves between classical traditions, regional folk forms, film music, television soundtracks and independent digital releases.</p></article></div></section>
 
-      <section class="showbiz-section">
-        <h2>Writers, Directors & Producers</h2>
-        <p>Behind Pakistan's most memorable productions are writers, directors and producers who have shaped its storytelling tradition. Important names associated with Pakistani television and film include Haseena Moin, Farhat Ishtiaq, Umera Ahmed, Momina Duraid, Sarmad Sultan Khoosat, Shoaib Mansoor and Mehreen Jabbar.</p>
-      </section>
+      <section class="sb-section" id="creators"><header class="sb-heading"><span class="eyebrow">Behind the Screen</span><h2>Writers, Directors &amp; Producers</h2><p>Strong writing and direction have long been central to Pakistani television and cinema.</p></header><div class="sb-directory"><div><strong>Haseena Moin</strong><span>Celebrated television writer associated with memorable characters and dialogue.</span></div><div><strong>Umera Ahmed</strong><span>Prominent writer whose work has been adapted for television.</span></div><div><strong>Farhat Ishtiaq</strong><span>Well-known television and fiction writer.</span></div><div><strong>Sarmad Sultan Khoosat</strong><span>Actor, director and filmmaker.</span></div><div><strong>Shoiab Mansoor</strong><span>Writer-director known for influential Pakistani film and television work.</span></div><div><strong>Mehreen Jabbar</strong><span>Director associated with Pakistani television and film.</span></div><div><strong>Momina Duraid</strong><span>Producer and television industry figure.</span></div><div><strong>Hajra Yamin</strong><span>Actor associated with television, theatre and film.</span></div></div></section>
 
-      <section class="showbiz-section">
-        <h2>Major Television Networks</h2>
-        <div class="sb-grid">
-          <article class="sb-card"><h3>PTV</h3><p>Pakistan Television played a foundational role in establishing the country's television drama tradition.</p></article>
-          <article class="sb-card"><h3>Hum TV</h3><p>A major private television network known for Pakistani drama productions and entertainment programming.</p></article>
-          <article class="sb-card"><h3>ARY Digital</h3><p>A major entertainment broadcaster with a significant drama and television audience.</p></article>
-          <article class="sb-card"><h3>Geo Entertainment</h3><p>A major Pakistani entertainment network with dramas and popular television programming.</p></article>
-          <article class="sb-card"><h3>Green Entertainment</h3><p>A newer entertainment network contributing to contemporary Pakistani television.</p></article>
-          <article class="sb-card"><h3>Digital Platforms</h3><p>Streaming and digital platforms have expanded the reach of Pakistani dramas and performers.</p></article>
-        </div>
-      </section>
+      <section class="sb-section"><header class="sb-heading"><span class="eyebrow">Television Landscape</span><h2>Networks &amp; Platforms</h2><p>Pakistan's entertainment audience is served by public television, private networks and digital platforms.</p></header><div class="sb-grid"><article class="sb-card"><h3>PTV</h3><p>Pakistan Television played a foundational role in national television drama, music and entertainment.</p></article><article class="sb-card"><h3>Private Networks</h3><p>Hum TV, ARY Digital and Geo Entertainment became important producers and distributors of Pakistani dramas and entertainment.</p></article><article class="sb-card"><h3>Digital Era</h3><p>YouTube, streaming services and social platforms have expanded distribution and enabled Pakistani productions to reach viewers around the world.</p></article></div></section>
 
-      <section class="showbiz-section">
-        <h2>Awards & Recognition</h2>
-        <p>Pakistan's entertainment industry is recognized through major awards and industry events, including the Lux Style Awards, Hum Awards and other national and media awards. Pakistani performers have also built audiences in South Asia and among the country's global diaspora.</p>
-      </section>
+      <section class="sb-section"><header class="sb-heading"><span class="eyebrow">Recognition</span><h2>Awards &amp; Industry Recognition</h2><p>Awards help document changing tastes and recognise achievement across acting, directing, writing, music, fashion and production.</p></header><div class="sb-grid"><article class="sb-card"><h3>Lux Style Awards</h3><p>One of Pakistan's best-known entertainment and fashion award platforms.</p></article><article class="sb-card"><h3>Hum Awards</h3><p>Recognise achievements particularly associated with Pakistani television and entertainment.</p></article><article class="sb-card"><h3>National Recognition</h3><p>Artists and creators may also receive national honours and recognition from cultural and professional institutions.</p></article></div></section>
 
-      <section class="showbiz-section">
-        <div class="urdu-block">
-          <h2>پاکستانی شو بز</h2>
-          <p>پاکستانی شو بز کی دنیا میں فلم، ٹیلی ویژن، ڈرامہ، موسیقی اور فیشن سب شامل ہیں۔ پاکستان ٹیلی ویژن کے ابتدائی دور سے لے کر نجی چینلز اور ڈیجیٹل پلیٹ فارمز تک، پاکستانی فنکاروں اور تخلیق کاروں نے ایک مضبوط تفریحی روایت قائم کی ہے۔</p>
-          <p>پاکستانی ڈراموں نے خاندانی زندگی، معاشرتی مسائل، محبت، تعلیم، طبقاتی فرق اور قومی موضوعات کو مختلف انداز میں پیش کیا ہے۔ فلم اور موسیقی کے شعبوں نے بھی پاکستان کی ثقافتی شناخت کو دنیا تک پہنچانے میں اہم کردار ادا کیا ہے۔</p>
-        </div>
-      </section>
+      <section class="sb-section"><header class="sb-heading"><span class="eyebrow">Beyond Pakistan</span><h2>Global Reach</h2><p>Pakistani dramas, music and performers have built audiences among the Pakistani diaspora and international viewers through television, online video and streaming.</p></header><div class="sb-card"><p>Shows such as <strong>Humsafar</strong>, <strong>Zindagi Gulzar Hai</strong>, <strong>Yakeen Ka Safar</strong>, <strong>Tere Bin</strong> and other widely distributed productions demonstrate how Pakistani storytelling can travel across borders. Music has similarly connected Pakistani artists with audiences throughout South Asia, the Middle East, Europe and North America.</p></div></section>
 
-      <section class="showbiz-section">
-        <h2>Quick Directory</h2>
-        <div class="directory">
-          <a href="#film">Film & Cinema</a>
-          <a href="#television">Television</a>
-          <a href="#music">Music</a>
-          <a href="#actors">Actors & Actresses</a>
-          <a href="#models">Models & Fashion</a>
-          <a href="#writers">Writers & Directors</a>
-        </div>
-      </section>
-    </div>
+      <section class="sb-section"><div class="sb-urdu" lang="ur" dir="rtl"><h2>پاکستانی شوبز — ایک مختصر تعارف</h2><p>پاکستانی شوبز کی دنیا فلم، ٹیلی ویژن، موسیقی، فیشن، تھیٹر اور ڈیجیٹل میڈیا پر مشتمل ہے۔ اس شعبے نے مختلف ادوار میں نئے فنکار، مصنف، ہدایت کار، گلوکار اور ماڈلز متعارف کرائے ہیں۔</p><p>پاکستانی ٹیلی ویژن ڈرامہ خاص طور پر اپنی کہانی، مکالمے اور کردار نگاری کے لیے مشہور رہا ہے۔ پی ٹی وی کے کلاسیکی دور سے لے کر نجی چینلز اور موجودہ ڈیجیٹل پلیٹ فارمز تک، پاکستانی تفریحی صنعت نے اپنے ناظرین کو مسلسل وسعت دی ہے۔</p><p>آج پاکستانی فنکار اور ڈرامے بیرونِ ملک پاکستانی کمیونٹی کے ساتھ ساتھ دنیا بھر کے ناظرین تک بھی پہنچ رہے ہیں۔</p></div></section>
+
+      <section class="sb-section"><header class="sb-heading"><span class="eyebrow">Quick Directory</span><h2>Explore the Archive</h2></header><div class="sb-directory"><div><strong>Classic Stars</strong><span>Waheed Murad · Mohammad Ali · Nadeem · Javed Sheikh · Talat Hussain</span></div><div><strong>Modern Stars</strong><span>Fawad Khan · Humayun Saeed · Mahira Khan · Sajal Aly · Yumna Zaidi · Wahaj Ali · Bilal Abbas Khan</span></div><div><strong>Drama Classics</strong><span>Waris · Dhoop Kinare · Alpha Bravo Charlie · Humsafar</span></div><div><strong>Contemporary Hits</strong><span>Parizaad · Tere Bin · Khaie · Kabhi Main Kabhi Tum · Suno Chanda</span></div><div><strong>Music</strong><span>Nusrat Fateh Ali Khan · Abida Parveen · Atif Aslam · Ali Zafar · Junoon · Vital Signs · Strings</span></div><div><strong>Fashion</strong><span>Iman Ali · Mehreen Syed · Amna Ilyas · Tooba Siddiqui · Vaneeza Ahmed</span></div></div><div class="sb-note">Editorial note: entertainment careers, awards, productions and platform availability change over time. This archive is intended as an educational overview rather than a complete filmography or current ranking.</div></section>
+    </div></div>
   </main>
 
   <div id="site-footer"></div>
