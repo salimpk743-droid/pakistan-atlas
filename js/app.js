@@ -123,6 +123,28 @@ function lazyImages() {
   });
 }
 
+function setupShowbizImages() {
+  const image = "/images/humsafar-header.jpg?v=2";
+
+  // Homepage Showbiz archive card: replace the decorative emblem
+  // with the real Humsafar image already stored in /images.
+  document.querySelectorAll(".atlas-archive-visual.showbiz").forEach((card) => {
+    card.style.backgroundImage = `url("${image}")`;
+    card.style.backgroundSize = "cover";
+    card.style.backgroundPosition = "center";
+    card.style.backgroundRepeat = "no-repeat";
+
+    const emblem = card.querySelector(".showbiz-emblem");
+    if (emblem) emblem.style.display = "none";
+  });
+
+  // Showbiz page hero: use an absolute root path so the image works
+  // consistently regardless of the page URL.
+  document.querySelectorAll(".sb-hero-bg").forEach((img) => {
+    img.src = image;
+  });
+}
+
 function renderChrome() {
   enhanceHead();
   addSkipAndMain();
@@ -187,6 +209,7 @@ function renderChrome() {
   }
   setupBackToTop();
   lazyImages();
+  setupShowbizImages();
 }
 
 async function loadData() {
