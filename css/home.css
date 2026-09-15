@@ -110,7 +110,7 @@ body.home a:focus-visible {
   width: 30%;
   height: 86%;
   object-fit: cover;
-  object-position: 64% 4%;
+  object-position: 48% 8%;
   -webkit-mask-image: linear-gradient(to right, #000 56%, transparent 100%);
   mask-image: linear-gradient(to right, #000 56%, transparent 100%);
 }
