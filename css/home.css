@@ -11,6 +11,10 @@ body.home {
   --atlas-ink: #1a1a1a;
   --atlas-muted: #5c5c5c;
   background: var(--atlas-cream);
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(201, 162, 39, 0.28);
 }
 
 .visually-hidden {
@@ -93,6 +97,7 @@ body.home a:focus-visible {
   padding: 0 !important;
   isolation: isolate;
   min-height: calc(100vh - 74px);
+  min-height: calc(100dvh - 74px);
   display: flex;
   flex-direction: column;
 }
@@ -328,7 +333,9 @@ body.home a:focus-visible {
   padding: 0.95rem 0.7rem;
   color: #f4ead0;
   border-right: 1px solid rgba(201, 162, 39, 0.2);
+  min-width: 0;
 }
+.atlas-stat div { min-width: 0; }
 .atlas-stat:last-child { border-right: 0; }
 .atlas-stat svg {
   width: 26px;
@@ -375,8 +382,10 @@ body.home a:focus-visible {
   font-size: 0.98rem;
   letter-spacing: 0.02em;
   padding: 0.72rem 1.55rem;
+  min-height: 44px;
   border-radius: 999px;
   box-shadow: 0 8px 22px rgba(0, 0, 0, 0.2);
+  -webkit-tap-highlight-color: transparent;
 }
 .atlas-cta:hover { background: #e0c05a; color: #111 !important; }
 .atlas-hero-ornament {
@@ -706,7 +715,7 @@ body.home .ad-slot { margin: 2rem auto 0; width: min(1280px, 94%); }
   .atlas-stats { grid-template-columns: repeat(3, 1fr); }
   .atlas-stat:nth-child(3) { border-right: 0; }
   .atlas-stat:nth-child(n + 4) { border-top: 1px solid rgba(201, 162, 39, 0.18); }
-  .scene-statue { width: 36%; object-position: 50% 10%; }
+  .scene-statue { width: 24%; object-position: 50% 10%; }
   .scene-mountains { width: 48%; }
   .scene-flag { width: 42%; }
   .atlas-hero-copy-grid {
@@ -718,13 +727,24 @@ body.home .ad-slot { margin: 2rem auto 0; width: min(1280px, 94%); }
   .atlas-hero { min-height: 0; }
   .atlas-scene {
     position: relative;
-    height: 230px;
+    height: 216px;
     inset: auto;
   }
-  .scene-statue { width: 46%; height: 100%; object-position: 50% 12%; }
-  .scene-ruins { width: 50%; height: 55%; bottom: 0; }
+  .scene-statue {
+    left: 3%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30%;
+    height: 90%;
+    object-fit: contain;
+    object-position: center center;
+    -webkit-mask-image: none;
+    mask-image: none;
+    filter: brightness(1.12) contrast(1.08) drop-shadow(0 6px 14px rgba(0, 0, 0, 0.35));
+  }
+  .scene-ruins { display: none; }
   .scene-mountains { width: 62%; height: 100%; }
-  .scene-flag { width: 48%; height: 70%; top: -8%; }
+  .scene-flag { width: 48%; height: 78%; top: -6%; }
   .scene-mosque { display: none; }
   .scene-veil::after { background: none; }
   .atlas-hero-copy {
@@ -740,28 +760,99 @@ body.home .ad-slot { margin: 2rem auto 0; width: min(1280px, 94%); }
   .atlas-archives { grid-template-columns: repeat(2, 1fr); }
   .atlas-heritage-row { grid-template-columns: 1fr; }
   .atlas-heritage-row img { height: 180px; }
+  body.home .menu-btn {
+    width: 44px;
+    height: 44px;
+    font-size: 1.55rem;
+    color: #14301c;
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    -webkit-tap-highlight-color: transparent;
+  }
+  body.home header.site { position: sticky; }
+  body.home nav.open {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    background: #f3eee3;
+    padding: 0.35rem 1.1rem 0.85rem;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12);
+    z-index: 80;
+    border-top: 1px solid rgba(20, 40, 24, 0.08);
+  }
+  body.home nav.open ul {
+    flex-direction: column;
+    gap: 0;
+    align-items: stretch;
+  }
+  body.home nav.open a {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0.2rem 0.15rem;
+    border-bottom: 1px solid rgba(20, 40, 24, 0.07);
+  }
+  body.home nav.open .nav-search { justify-content: flex-start; }
+  body.home .logo span { font-size: 1.12rem; }
 }
 @media (max-width: 700px) {
   .atlas-archives { grid-template-columns: 1fr 1fr; }
+  body.home .atlas-section { padding: 2.7rem 0 2.2rem; }
 }
 @media (max-width: 560px) {
-  .atlas-scene { height: 188px; }
-  .scene-statue { width: 52%; object-position: 50% 10%; }
-  .scene-ruins { display: none; }
-  .scene-flag { width: 56%; height: 64%; }
-  .atlas-hero h1 { font-size: clamp(2.5rem, 11.2vw, 3.2rem); }
-  .atlas-urdu-title { font-size: 1.55rem; }
-  .atlas-stats { grid-template-columns: 1fr 1fr; }
-  .atlas-stat { padding: 0.8rem 0.5rem; }
+  body.home .container { width: min(1280px, calc(100% - 1.35rem)); }
+  .atlas-scene { height: 192px; }
+  .scene-statue {
+    left: 2.5%;
+    width: 34%;
+    height: 92%;
+    object-fit: contain;
+    object-position: center center;
+  }
+  .scene-flag { width: 54%; height: 70%; }
+  .atlas-hero h1 { font-size: clamp(2.15rem, 10vw, 2.85rem); }
+  .atlas-hero h1 .pakistan-line { font-size: 1.18em; }
+  .atlas-urdu-title { font-size: 1.38rem; line-height: 1.9; }
+  .atlas-urdu-sub { font-size: 0.95rem; line-height: 1.95; padding: 0 0.4rem; }
+  .atlas-lead { font-size: 1.02rem; max-width: 20em; }
+  .atlas-lead br { display: none; }
+  .atlas-stats { grid-template-columns: 1fr 1fr; width: 100%; }
+  .atlas-stat { padding: 0.72rem 0.45rem; gap: 0.42rem; }
+  .atlas-stat svg { width: 20px; height: 20px; }
+  .atlas-stat b { font-size: 0.84rem; }
+  .atlas-stat span { font-size: 0.72rem; }
   .atlas-stat:nth-child(2n) { border-right: 0; }
   .atlas-stat:nth-child(n + 3) { border-top: 1px solid rgba(201, 162, 39, 0.18); }
   .atlas-stat:nth-child(3) { border-right: 1px solid rgba(201, 162, 39, 0.18); }
   .atlas-archives,
   .atlas-units,
   .atlas-heritage-row { grid-template-columns: 1fr; }
+  .atlas-archive-visual { height: 176px; }
+  .atlas-cta-wrap { padding: 0.95rem 0.75rem 1.05rem; gap: 0.7rem; }
   .atlas-cta { width: min(100%, 22rem); justify-content: center; }
-  .cta-rule { width: 2.2rem; }
-  .atlas-kicker { letter-spacing: 0.18em; }
-  .atlas-lead { font-size: 1.06rem; }
-  .atlas-lead br { display: none; }
+  .cta-rule { width: 1.8rem; }
+  .atlas-kicker { letter-spacing: 0.16em; font-size: 0.62rem; }
+  .atlas-quick a {
+    min-height: 40px;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.4rem 0.85rem;
+  }
+  .atlas-unit h3 { font-size: 1.12rem; }
+  .atlas-unit h3 .urdu { display: block; margin: 0.15rem 0 0; }
+  .atlas-credit { padding: 0 0.4rem; line-height: 1.5; }
+  body.home .ad-slot { width: calc(100% - 1.35rem); margin: 1.4rem auto 0; }
+}
+@media (max-width: 380px) {
+  .scene-statue { width: 28%; }
+  .atlas-hero h1 { font-size: 2.05rem; }
+  .atlas-stat { flex-direction: column; align-items: flex-start; gap: 0.2rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .atlas-archive,
+  .atlas-unit { transition: none; }
 }
