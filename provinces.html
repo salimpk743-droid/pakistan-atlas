@@ -2,22 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Provinces and Territories of Pakistan</title>
-  <meta name="description" content="Read each Pakistani province and territory: capital, 2023 population, area, culture, education and local issues." />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Provinces and Territories of Pakistan | Pakistan Atlas</title>
+  <meta name="description" content="Read every Pakistani province and territory: capital, 2023 population, area, culture, education, hospitals and district pages." />
   <link rel="canonical" href="https://pakistan-atlas.vercel.app/provinces.html" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <meta name="theme-color" content="#01411c" />
   <meta property="og:title" content="Provinces and Territories of Pakistan" />
   <meta property="og:description" content="Read each Pakistani province and territory: capital, 2023 population, area, culture, education and local issues." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://pakistan-atlas.vercel.app/provinces.html" />
   <meta property="og:image" content="https://pakistan-atlas.vercel.app/images/flag-pakistan.svg" />
   <meta property="og:site_name" content="Pakistan Atlas" />
+  <meta property="og:locale" content="en_PK" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Provinces and Territories of Pakistan" />
   <meta name="twitter:description" content="Read each Pakistani province and territory: capital, 2023 population, area, culture, education and local issues." />
   <meta name="twitter:image" content="https://pakistan-atlas.vercel.app/images/flag-pakistan.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600&family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css?v=5" />
 </head>
 <body>
   <div id="site-header"></div>
@@ -35,9 +40,18 @@
   <script src="js/app.js"></script>
   <script>
     loadData().then(data => {
+      const routes = {
+        ict: "islamabad-capital-territory.html",
+        punjab: "punjab.html",
+        kpk: "khyber-pakhtunkhwa.html",
+        sindh: "sindh.html",
+        balochistan: "balochistan.html",
+        gb: "gilgit-baltistan.html",
+        ajk: "azad-kashmir.html"
+      };
       document.getElementById("list").innerHTML = data.units.map(u => `
         <article class="prose" style="margin-bottom:1.2rem" id="${u.id}">
-          <h2>${u.name} <span class="urdu">${u.urdu}</span></h2>
+          <h2><a href="${routes[u.id]}">${u.name}</a> <span class="urdu">${u.urdu}</span></h2>
           <p><span class="badge">${u.type}</span> Capital: <strong>${u.capital}</strong> · Area ${fmt(u.area_km2)} km² · Population ${fmt(u.population_2023)} · About ${u.districts_approx} districts</p>
           <div class="grid-2" style="margin-top:1rem">
             <div><h3>Culture</h3><p>${u.culture}</p></div>
@@ -45,7 +59,7 @@
             <div><h3>Universities &amp; colleges</h3><p>${u.education_note}</p></div>
             <div><h3>Hospitals</h3><p>${u.health_note}</p></div>
           </div>
-          <p class="meta">Example places: ${u.sample_places.join(", ")}</p>
+          <p class="meta"><a href="${routes[u.id]}">Open all ${u.name} districts →</a></p>
         </article>`).join("");
     });
   </script>

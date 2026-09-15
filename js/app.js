@@ -8,12 +8,123 @@ const NAV = [
   ["about.html", "About"]
 ];
 
+const SITE = "https://pakistan-atlas.vercel.app";
+
 function currentPage() {
   const p = location.pathname.split("/").pop() || "index.html";
   return p === "" ? "index.html" : p;
 }
 
+function enhanceHead() {
+  const head = document.head;
+  if (!document.querySelector('link[rel="icon"]')) {
+    const icon = document.createElement("link");
+    icon.rel = "icon";
+    icon.type = "image/svg+xml";
+    icon.href = "favicon.svg";
+    head.appendChild(icon);
+  }
+  if (!document.querySelector('link[rel="apple-touch-icon"]')) {
+    const apple = document.createElement("link");
+    apple.rel = "apple-touch-icon";
+    apple.href = "favicon.svg";
+    head.appendChild(apple);
+  }
+  if (!document.querySelector('meta[name="theme-color"]')) {
+    const theme = document.createElement("meta");
+    theme.name = "theme-color";
+    theme.content = "#01411c";
+    head.appendChild(theme);
+  }
+  if (!document.querySelector('meta[name="viewport"]')) {
+    const vp = document.createElement("meta");
+    vp.name = "viewport";
+    vp.content = "width=device-width, initial-scale=1, viewport-fit=cover";
+    head.appendChild(vp);
+  } else {
+    const vp = document.querySelector('meta[name="viewport"]');
+    if (vp && !/viewport-fit/.test(vp.content || "")) {
+      vp.content = "width=device-width, initial-scale=1, viewport-fit=cover";
+    }
+  }
+  if (!document.querySelector('script[data-site-schema]') && !document.querySelector('script[type="application/ld+json"]')) {
+    const schema = document.createElement("script");
+    schema.type = "application/ld+json";
+    schema.setAttribute("data-site-schema", "1");
+    schema.textContent = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      name: "Pakistan Atlas",
+      url: SITE + "/",
+      inLanguage: ["en", "ur"],
+      potentialAction: {
+        "@type": "SearchAction",
+        target: SITE + "/districts.html?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    });
+    head.appendChild(schema);
+  }
+}
+
+function addSkipAndMain() {
+  if (!document.querySelector(".skip-link")) {
+    const a = document.createElement("a");
+    a.className = "skip-link";
+    a.href = "#main-content";
+    a.textContent = "Skip to content";
+    document.body.prepend(a);
+  }
+  if (!document.getElementById("main-content")) {
+    const target = document.querySelector(".atlas-hero, .page-hero, .archive-hero, main, section");
+    if (target && !target.id) target.id = "main-content";
+  }
+}
+
+function setupMenu(btn, nav) {
+  const setOpen = (open) => {
+    nav.classList.toggle("open", open);
+    btn.setAttribute("aria-expanded", open ? "true" : "false");
+    btn.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+  };
+  btn.setAttribute("aria-controls", "mainNav");
+  btn.setAttribute("aria-expanded", "false");
+  btn.onclick = () => setOpen(!nav.classList.contains("open"));
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") setOpen(false);
+  });
+  document.addEventListener("click", (e) => {
+    if (!nav.classList.contains("open")) return;
+    if (nav.contains(e.target) || btn.contains(e.target)) return;
+    setOpen(false);
+  });
+}
+
+function setupBackToTop() {
+  if (document.querySelector(".back-to-top")) return;
+  const btn = document.createElement("button");
+  btn.className = "back-to-top";
+  btn.type = "button";
+  btn.setAttribute("aria-label", "Back to top");
+  btn.textContent = "↑";
+  btn.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
+  document.body.appendChild(btn);
+  const onScroll = () => btn.classList.toggle("show", window.scrollY > 480);
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+}
+
+function lazyImages() {
+  document.querySelectorAll("img:not([loading]):not([fetchpriority])").forEach((img, i) => {
+    if (i === 0) return;
+    img.loading = "lazy";
+    img.decoding = "async";
+  });
+}
+
 function renderChrome() {
+  enhanceHead();
+  addSkipAndMain();
   const header = document.getElementById("site-header");
   const footer = document.getElementById("site-footer");
   const page = currentPage();
@@ -31,19 +142,20 @@ function renderChrome() {
             <div class="logo-mark">★</div>
             <div>Pakistan Atlas<small>Every province · every district</small></div>
           </a>
-          <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
-          <nav id="mainNav">
+          <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+          <nav id="mainNav" aria-label="Main">
             <ul>
               ${NAV.map(([href, label]) =>
                 `<li><a class="${page === href ? "active" : ""}" href="${href}">${label}</a></li>`
               ).join("")}
+              <li><a class="nav-search" href="districts.html" aria-label="Search districts"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M16.2 16.2 L20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></a></li>
             </ul>
           </nav>
         </div>
       </header>`;
     const btn = document.getElementById("menuBtn");
     const nav = document.getElementById("mainNav");
-    if (btn && nav) btn.onclick = () => nav.classList.toggle("open");
+    if (btn && nav) setupMenu(btn, nav);
   }
   if (footer) {
     footer.innerHTML = `
@@ -51,31 +163,38 @@ function renderChrome() {
         <div class="container foot-grid">
           <div>
             <strong>Pakistan Atlas</strong>
-            <p style="margin-top:.6rem">A student-friendly knowledge site on Pakistan’s provinces, districts, culture, schools and hospitals. Figures are compiled from public sources and should be checked against Pakistan Bureau of Statistics and official departments.</p>
+            <p>A student-friendly guide to Pakistan’s provinces, districts, culture, literature, geography, sports and history. Figures follow public sources and should be checked against the Pakistan Bureau of Statistics.</p>
           </div>
           <div>
             <strong>Explore</strong>
-            <p><a href="provinces.html">Provinces</a><br><a href="districts.html">Districts</a><br><a href="latest-news.html">Culture</a><br><a href="politics.html">Geography</a><br><a href="current-affairs.html">Literature & Poetry</a></p>
+            <p><a href="provinces.html">Provinces</a><br><a href="districts.html">Districts</a><br><a href="latest-news.html">Culture</a><br><a href="current-affairs.html">Literature</a><br><a href="politics.html">Geography</a></p>
+          </div>
+          <div>
+            <strong>Learn</strong>
+            <p><a href="sports.html">Sports</a><br><a href="history.html">History</a><br><a href="about.html">About</a><br><a href="contact.html">Contact</a></p>
           </div>
           <div>
             <strong>Trust</strong>
-            <p><a href="about.html">About</a><br><a href="contact.html">Contact</a><br><a href="privacy.html">Privacy</a><br><a href="disclaimer.html">Disclaimer</a></p>
-          </div>
-          <div>
-            <strong>For publishers</strong>
-            <p>Replace the dashed ad boxes with your AdSense unit after approval. Keep original articles coming so the site stays useful.</p>
+            <p><a href="privacy.html">Privacy</a><br><a href="disclaimer.html">Disclaimer</a><br><a href="terms.html">Terms</a><br><a href="sitemap.xml">Sitemap</a></p>
           </div>
         </div>
         <div class="container foot-bottom">
           <span>© ${new Date().getFullYear()} Pakistan Atlas · Built for young readers</span>
-          <span><a href="terms.html">Terms</a></span>
+          <span><a href="index.html">Home</a></span>
         </div>
       </footer>`;
   }
+  setupBackToTop();
+  lazyImages();
 }
 
 async function loadData() {
   const res = await fetch("data/provinces.json");
+  return res.json();
+}
+
+async function loadDistricts() {
+  const res = await fetch("data/districts.json");
   return res.json();
 }
 

@@ -2,74 +2,93 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Districts of Pakistan — growing database</title>
-  <meta name="description" content="Search sample districts of Pakistan and add village photographs district by district." />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Districts of Pakistan — search every district | Pakistan Atlas</title>
+  <meta name="description" content="Search every district of Pakistan by name or province. Open headquarters, population notes, culture, schools and hospitals on Pakistan Atlas." />
   <link rel="canonical" href="https://pakistan-atlas.vercel.app/districts.html" />
-  <meta property="og:title" content="Districts of Pakistan — growing database" />
-  <meta property="og:description" content="Search sample districts of Pakistan and add village photographs district by district." />
+  <meta name="theme-color" content="#01411c" />
+  <meta property="og:title" content="Districts of Pakistan — search every district | Pakistan Atlas" />
+  <meta property="og:description" content="Search every district of Pakistan by name or province. Open headquarters, population notes, culture, schools and hospitals on Pakistan Atlas." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://pakistan-atlas.vercel.app/districts.html" />
   <meta property="og:image" content="https://pakistan-atlas.vercel.app/images/flag-pakistan.svg" />
   <meta property="og:site_name" content="Pakistan Atlas" />
+  <meta property="og:locale" content="en_PK" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Districts of Pakistan — growing database" />
-  <meta name="twitter:description" content="Search sample districts of Pakistan and add village photographs district by district." />
+  <meta name="twitter:title" content="Districts of Pakistan — Pakistan Atlas" />
+  <meta name="twitter:description" content="Search every district of Pakistan by name or province." />
   <meta name="twitter:image" content="https://pakistan-atlas.vercel.app/images/flag-pakistan.svg" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600&family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css?v=5" />
 </head>
 <body>
   <div id="site-header"></div>
   <div class="page-hero"><div class="container">
-    <h1>Districts &amp; villages</h1>
-    <p>Pakistan has roughly 160–170 districts depending on the latest gazette. This page starts with signature districts. Add the rest in data/provinces.json.</p>
+    <p><a href="index.html" style="color:#fff">Home</a> · Districts</p>
+    <h1>Find a district</h1>
+    <p>Search by district, headquarters or province. Open a card to read the full page.</p>
   </div></div>
   <section>
     <div class="container">
-      <div class="upload-note">To add a village photo: save it as <code>images/villages/district-village.jpg</code> and mention the file on that district card. Keep people’s faces and private homes out of photos unless you have permission.</div>
-      <div class="search"><input id="q" type="search" placeholder="Search district or province…" /></div>
-      <div class="table-wrap">
-        <table>
-          <thead><tr><th>District</th><th>Province / territory</th><th>Population (approx.)</th><th>Notes &amp; photo slot</th></tr></thead>
-          <tbody id="rows"></tbody>
-        </table>
+      <div class="search">
+        <label class="visually-hidden" for="q" style="position:absolute;left:-999px">Search districts</label>
+        <input id="q" type="search" placeholder="Try Lahore, Swat, Gwadar, Peshawar…" autocomplete="off" enterkeyhint="search" />
       </div>
-      <div class="ad-slot">AdSense unit — in-article</div>
-      <article class="prose" style="margin-top:1.5rem">
-        <h2>How a full district page should look</h2>
-        <p>When you expand the database, every district page should carry the same headings so students can compare places fairly:</p>
-        <ul>
-          <li>Headquarters, area, 2017 and 2023 population, tehsils.</li>
-          <li>Public universities, degree colleges, medical and engineering campuses.</li>
-          <li>DHQ / THQ hospitals and major private hospitals.</li>
-          <li>Languages, crafts, urs or festivals, and two or three named villages.</li>
-          <li>Documented local issues: water, schools for girls, roads, floods or drought — written without insulting any community.</li>
-        </ul>
-      </article>
+      <p class="search-count" id="count"></p>
+      <div class="district-results" id="rows"></div>
     </div>
   </section>
   <div id="site-footer"></div>
   <script src="js/app.js"></script>
   <script>
+    const PROVINCE_HREF = {
+      ict: "islamabad-capital-territory.html",
+      punjab: "punjab.html",
+      kpk: "khyber-pakhtunkhwa.html",
+      sindh: "sindh.html",
+      balochistan: "balochistan.html",
+      gb: "gilgit-baltistan.html",
+      ajk: "azad-kashmir.html"
+    };
     let rows = [];
-    loadData().then(data => {
-      rows = data.district_samples;
-      draw(rows);
-    });
     function draw(list) {
+      document.getElementById("count").textContent = list.length
+        ? list.length + " district" + (list.length === 1 ? "" : "s")
+        : "No districts match that search.";
       document.getElementById("rows").innerHTML = list.map(d => `
-        <tr>
-          <td><strong>${d.name}</strong></td>
-          <td>${d.province}</td>
-          <td>${fmt(d.pop)}</td>
-          <td>${d.note}<br><em>Photo: images/villages/${d.name.toLowerCase().replace(/\s+/g,'-')}.jpg</em></td>
-        </tr>`).join("");
+        <a class="district-result" href="${d.slug}.html">
+          <strong>${d.name}</strong>
+          <span>${d.province} · HQ ${d.hq}</span>
+        </a>`).join("");
+    }
+    loadDistricts().then(data => {
+      rows = Object.values(data).flatMap(p =>
+        (p.districts || []).map(d => ({
+          slug: d.slug,
+          name: d.name,
+          hq: d.hq,
+          province: p.name,
+          hay: (d.name + " " + d.hq + " " + p.name + " " + (p.short || "")).toLowerCase()
+        }))
+      ).sort((a, b) => a.name.localeCompare(b.name));
+      const params = new URLSearchParams(location.search);
+      const start = params.get("q") || "";
+      const input = document.getElementById("q");
+      if (start) input.value = start;
+      draw(filter(start));
+      input.focus({ preventScroll: true });
+    });
+    function filter(q) {
+      q = (q || "").trim().toLowerCase();
+      return q ? rows.filter(d => d.hay.includes(q)) : rows;
     }
     document.addEventListener("input", e => {
       if (e.target.id !== "q") return;
-      const q = e.target.value.toLowerCase();
-      draw(rows.filter(d => (d.name + d.province + d.note).toLowerCase().includes(q)));
+      draw(filter(e.target.value));
     });
   </script>
 </body>

@@ -17,9 +17,12 @@
   <meta name="twitter:title" content="Pakistan Atlas | Explore Pakistan's Provinces, Districts, Culture, History & Geography" />
   <meta name="twitter:description" content="Pakistan Atlas is an educational guide to Pakistan's provinces and districts, culture, literature, geography, sports, history and heritage." />
   <meta name="twitter:image" content="https://pakistan-atlas.vercel.app/images/flag-pakistan.svg" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <meta property="og:locale" content="en_PK" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css?v=4" />
+  <link rel="stylesheet" href="css/style.css?v=5" />
   <link rel="stylesheet" href="css/home.css?v=9" />
   <script type="application/ld+json">
   {
@@ -237,15 +240,6 @@
   <div id="site-footer"></div>
   <script src="js/app.js"></script>
   <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const ul = document.querySelector("#mainNav ul");
-      if (ul && !ul.querySelector(".nav-search")) {
-        const li = document.createElement("li");
-        li.innerHTML = '<a class="nav-search" href="districts.html" aria-label="Search districts"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M16.2 16.2 L20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></a>';
-        ul.appendChild(li);
-      }
-    });
-
     const UNIT_MARK = {
       punjab: '<svg viewBox="0 0 32 32" aria-hidden="true"><path d="M6 24c2-8 5-14 10-18 5 4 8 10 10 18"/><path d="M8 24h16"/><path d="M16 6v6"/></svg>',
       sindh: '<svg viewBox="0 0 32 32" aria-hidden="true"><rect x="6" y="8" width="20" height="16"/><path d="M6 16h20 M16 8v16"/><path d="M10 12h4 M18 20h4"/></svg>',
