@@ -2,7 +2,7 @@ const NAV = [
   ["index.html", "Home"],
   ["latest-news.html", "News"],
   ["current-affairs.html", "Literature"],
-  ["politics.html", "Politics"],
+  ["politics.html", "Geography"],
   ["sports.html", "Sports"],
   ["history.html", "History"],
   ["about.html", "About"]
@@ -55,7 +55,7 @@ function renderChrome() {
           </div>
           <div>
             <strong>Explore</strong>
-            <p><a href="provinces.html">Provinces</a><br><a href="districts.html">Districts</a><br><a href="current-affairs.html">Literature & Poetry</a><br><a href="culture.html">Culture</a></p>
+            <p><a href="provinces.html">Provinces</a><br><a href="districts.html">Districts</a><br><a href="politics.html">Geography</a><br><a href="current-affairs.html">Literature & Poetry</a></p>
           </div>
           <div>
             <strong>Trust</strong>
