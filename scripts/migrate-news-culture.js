@@ -9,11 +9,14 @@ const culturePath = path.join(ROOT, "culture.html");
 const appPath = path.join(ROOT, "js", "app.js");
 const sitemapPath = path.join(ROOT, "scripts", "generate-sitemap.js");
 
-// The current latest-news.html is the full Culture archive. Preserve that
-// complete page under its proper URL before replacing latest-news.html.
+// Only migrate when latest-news.html is genuinely the old Culture archive.
+// Do not trigger merely because the Current News page links to Culture.
 if (fs.existsSync(latestPath)) {
   const latest = fs.readFileSync(latestPath, "utf8");
-  if (/Pakistan Culture &amp; Society|Pakistan Culture & Society/i.test(latest) && /latest-news\.html/.test(latest)) {
+  const isLegacyCultureArchive = /<title>\s*Pakistan Culture &amp; Society\s*\|\s*Traditions, Food, Music &amp; Heritage\s*<\/title>/i.test(latest)
+    && /<h1[^>]*>\s*Pakistan Culture &amp; Society\s*<\/h1>/i.test(latest);
+
+  if (isLegacyCultureArchive) {
     let culture = latest
       .replace(/https:\/\/pakistan-atlas\.vercel\.app\/latest-news\.html/g, `${SITE}/culture.html`)
       .replace(/href="latest-news\.html"/g, 'href="culture.html"')
@@ -77,12 +80,12 @@ if (fs.existsSync(latestPath)) {
     </section>
   </main>
   <div id="site-footer"></div>
-  <script src="js/app.js"></script>
+  <script src="js/app.js?v=3"></script>
 </body>
 </html>
 `;
     fs.writeFileSync(latestPath, news, "utf8");
-    console.log("Migrated the full Culture archive to culture.html and created Current News at latest-news.html.");
+    console.log("Migrated the legacy Culture archive to culture.html and created Current News at latest-news.html.");
   }
 }
 
