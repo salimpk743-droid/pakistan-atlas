@@ -17,6 +17,10 @@ const canonicalGroups = new Map();
 const titleGroups = new Map();
 const descriptionGroups = new Map();
 
+function tags(html, name) {
+  return html.match(new RegExp(`<${name}\\b[^>]*>`, "gi")) || [];
+}
+
 function attr(tag, name) {
   const m = tag.match(new RegExp(`${name}\\s*=\\s*["']([^"']*)["']`, "i"));
   return m ? m[1].trim() : "";
@@ -77,11 +81,16 @@ for (const file of htmlFiles) {
   if (UTILITY.has(file)) continue;
   const html = fs.readFileSync(path.join(ROOT, file), "utf8");
   const titles = [...html.matchAll(/<title\b[^>]*>([\s\S]*?)<\/title>/gi)].map(m => decode(m[1].replace(/<[^>]+>/g, "")));
-  const descriptions = [...html.matchAll(/<meta\b[^>]*name\s*=\s*["']description["'][^>]*>/gi)].map(m => attr(m[0], "content"));
-  const canonicals = [...html.matchAll(/<link\b[^>]*rel\s*=\s*["']canonical["'][^>]*>/gi)].map(m => attr(m[0], "href"));
+  const descriptions = tags(html, "meta")
+    .filter(tag => /\bname\s*=\s*["']description["']/i.test(tag))
+    .map(tag => attr(tag, "content"));
+  const canonicals = tags(html, "link")
+    .filter(tag => /\brel\s*=\s*["']canonical["']/i.test(tag))
+    .map(tag => attr(tag, "href"));
   const h1s = [...html.matchAll(/<h1\b[^>]*>([\s\S]*?)<\/h1>/gi)];
-  const noindex = /<meta\b[^>]*name\s*=\s*["']robots["'][^>]*content\s*=\s*["'][^"']*noindex/i.test(html)
-    || /<meta\b[^>]*content\s*=\s*["'][^"']*noindex[^"']*["'][^>]*name\s*=\s*["']robots["']/i.test(html);
+  const noindex = tags(html, "meta").some(tag =>
+    /\bname\s*=\s*["']robots["']/i.test(tag) && /\bcontent\s*=\s*["'][^"']*noindex/i.test(tag)
+  );
 
   if (titles.length === 0) report(file, "missing <title>");
   if (titles.length > 1) report(file, "duplicate <title> tags", `${titles.length} found`);
