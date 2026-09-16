@@ -153,7 +153,7 @@
 
     header h1 {
       font-size: clamp(2.15rem, 6.2vw, 3.2rem);
-      line-height: .88;
+      line-height: 1.12;
       letter-spacing: -0.03em;
       margin: 0;
       max-width: 900px;
@@ -404,6 +404,22 @@
         letter-spacing: -2px;
       }
     }
+  
+    /* atlas-book-type */
+    h1, h2, h3 { text-wrap: balance; }
+    p { text-wrap: pretty; }
+    @media (max-width: 640px) {
+      .hero {
+        min-height: auto !important;
+        padding: 3.1rem 1.15rem !important;
+      }
+      .hero h1 {
+        font-size: clamp(1.85rem, 8.2vw, 2.3rem) !important;
+        line-height: 1.15 !important;
+        letter-spacing: -0.02em !important;
+      }
+    }
+
   </style>
 </head>
 

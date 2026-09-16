@@ -16,16 +16,20 @@ html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 html, body { max-width: 100%; }
 body {
   font-family: "Source Sans 3", "Noto Nastaliq Urdu", system-ui, sans-serif;
   color: var(--ink);
   background: var(--cream);
-  line-height: 1.65;
+  line-height: 1.7;
   overflow-x: hidden;
   -webkit-tap-highlight-color: rgba(201, 162, 39, 0.28);
 }
+h1, h2, h3 { text-wrap: balance; }
+p { text-wrap: pretty; }
 img, video { max-width: 100%; height: auto; }
 img { display: block; }
 svg { max-width: 100%; }
@@ -408,7 +412,7 @@ th, td { padding: 0.8rem 1rem; text-align: left; border-bottom: 1px solid #eee; 
 th { background: var(--green); color: #fff; font-weight: 600; }
 tr:hover td { background: #f3faf5; }
 
-.prose { background: #fff; padding: 2rem; border-radius: var(--radius); box-shadow: var(--shadow); overflow-wrap: anywhere; font-size: 1.05rem; line-height: 1.8; }
+.prose { background: #fffdf8; padding: 2rem; border-radius: var(--radius); box-shadow: var(--shadow); overflow-wrap: anywhere; font-size: 1.08rem; line-height: 1.85; }
 .prose h2, .prose h3 { font-family: "Playfair Display", serif; color: var(--green); margin: 1.4rem 0 0.5rem; line-height: 1.25; }
 .prose h2 { font-size: clamp(1.4rem, 2vw, 1.85rem); }
 .prose h3 { font-size: clamp(1.15rem, 1.5vw, 1.4rem); }

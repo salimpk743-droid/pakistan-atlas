@@ -268,7 +268,7 @@
     }
 
     h2 {
-      font-size: clamp(2.2rem, 5vw, 4.3rem);
+      font-size: clamp(2.2rem, 5vw, 3.15rem);
       font-weight: 400;
       line-height: 1.05;
       color: var(--night);
@@ -760,6 +760,22 @@
         padding: 65px 7%;
       }
     }
+  
+    /* atlas-book-type */
+    h1, h2, h3 { text-wrap: balance; }
+    p { text-wrap: pretty; }
+    @media (max-width: 640px) {
+      .hero {
+        min-height: auto !important;
+        padding: 3.1rem 1.15rem !important;
+      }
+      .hero h1 {
+        font-size: clamp(1.85rem, 8.2vw, 2.3rem) !important;
+        line-height: 1.15 !important;
+        letter-spacing: -0.02em !important;
+      }
+    }
+
   </style>
 </head>
 

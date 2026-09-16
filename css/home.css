@@ -419,24 +419,27 @@ body.home .atlas-section-alt {
   font-size: clamp(1.8rem, 2vw + 1.2rem, 2.45rem);
   color: var(--atlas-green);
   line-height: 1.15;
+  text-wrap: balance;
 }
 .atlas-section-head p {
   color: var(--atlas-muted);
   max-width: 42rem;
   margin: 0.55rem auto 0;
-  font-size: 1.05rem;
+  font-size: 1.08rem;
+  line-height: 1.7;
+  text-wrap: pretty;
 }
 
-/* Archive cards */
+/* Archive cards — book-chapter plates */
 .atlas-archives {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.15rem;
+  gap: 1.25rem;
 }
 .atlas-archive {
   display: flex;
   flex-direction: column;
-  background: #fff;
+  background: #fffdf8;
   border: 1px solid rgba(1, 65, 28, 0.08);
   border-top: 3px solid var(--atlas-gold);
   box-shadow: 0 10px 28px rgba(1, 65, 28, 0.07);
@@ -452,20 +455,55 @@ body.home .atlas-section-alt {
 }
 .atlas-archive-visual {
   position: relative;
-  height: 200px;
+  height: 232px;
   background: #12351f;
   overflow: hidden;
+}
+.atlas-archive-visual::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 48%;
+  background: linear-gradient(180deg, transparent, rgba(6, 18, 12, 0.82));
+  pointer-events: none;
+  z-index: 1;
 }
 .atlas-archive-visual img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center top;
+  object-position: center 22%;
+  transform: scale(1.001);
+  transition: transform 0.45s ease;
 }
+.atlas-archive:hover .atlas-archive-visual img,
+.atlas-archive:focus-within .atlas-archive-visual img {
+  transform: scale(1.05);
+}
+.atlas-archive-visual img[src*="wc1992"] { object-position: 52% 46%; }
+.atlas-archive-visual img[src*="showbiz-stars"] { object-position: 50% 12%; }
+.atlas-archive-visual img[src*="iqbal"] { object-position: 50% 10%; }
+.atlas-archive-visual img[src*="jinnah"] { object-position: 50% 8%; }
+.atlas-archive-visual img[src*="hills"] { object-position: 50% 38%; }
+.atlas-archive-visual img[src*="street"] { object-position: 50% 42%; }
 .atlas-archive-visual.sports,
 .atlas-archive-visual.showbiz {
   background: #12351f;
   display: block;
+}
+.atlas-plate {
+  position: absolute;
+  left: 0.85rem;
+  right: 0.85rem;
+  bottom: 0.72rem;
+  z-index: 2;
+  font-size: 0.66rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #f6edd4;
+  font-weight: 700;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.45);
+  pointer-events: none;
 }
 .atlas-icon {
   position: absolute;
@@ -479,6 +517,7 @@ body.home .atlas-section-alt {
   display: grid;
   place-items: center;
   color: var(--atlas-gold-soft);
+  z-index: 2;
 }
 .atlas-icon svg {
   width: 16px;
@@ -496,19 +535,22 @@ body.home .atlas-section-alt {
 }
 .atlas-archive h3 {
   font-family: "Playfair Display", Georgia, serif;
-  font-size: 1.28rem;
+  font-size: 1.32rem;
   color: var(--atlas-green);
   margin: 0;
   padding-bottom: 0.35rem;
   border-bottom: 1px solid rgba(201, 162, 39, 0.45);
+  text-wrap: balance;
 }
 .atlas-archive h3 a { color: inherit; }
 .atlas-archive h3 a:hover { color: var(--atlas-green); }
 .atlas-archive p {
   color: var(--atlas-muted);
-  font-size: 0.92rem;
+  font-size: 0.98rem;
+  line-height: 1.65;
   margin: 0;
   flex: 1;
+  text-wrap: pretty;
 }
 .atlas-more {
   font-weight: 700;
@@ -828,7 +870,8 @@ body.home .ad-slot { margin: 2rem auto 0; width: min(1280px, 94%); }
   .atlas-archives,
   .atlas-units,
   .atlas-heritage-row { grid-template-columns: 1fr; }
-  .atlas-archive-visual { height: 176px; }
+  .atlas-archive-visual { height: 198px; }
+  .atlas-plate { font-size: 0.6rem; letter-spacing: 0.12em; }
   .atlas-cta-wrap { padding: 0.95rem 0.75rem 1.05rem; gap: 0.7rem; }
   .atlas-cta { width: min(100%, 22rem); justify-content: center; }
   .cta-rule { width: 1.8rem; }
@@ -853,4 +896,5 @@ body.home .ad-slot { margin: 2rem auto 0; width: min(1280px, 94%); }
 @media (prefers-reduced-motion: reduce) {
   .atlas-archive,
   .atlas-unit { transition: none; }
+  .atlas-archive-visual img { transition: none; transform: none !important; }
 }
