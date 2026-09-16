@@ -21,6 +21,7 @@ function tags(html, name) {
   return html.match(new RegExp(`<${name}\\b[^>]*>`, "gi")) || [];
 }
 
+// Quote-aware attribute parsing prevents apostrophes in text such as "Pakistan's" from truncating values.
 function attr(tag, name) {
   const m = tag.match(new RegExp(`${name}\\s*=\\s*(["'])(.*?)\\1`, "i"));
   return m ? m[2].trim() : "";
