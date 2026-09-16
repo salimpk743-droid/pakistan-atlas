@@ -10,20 +10,29 @@ const cultureCredit = '<span class="atlas-photo-credit"><a href="https://commons
 let html = fs.readFileSync(file, "utf8");
 
 function applyCultureImage(doc) {
-  const archive = doc.match(/<div class="atlas-archives">[\s\S]*?<\/div>\s*<\/div>/);
-  if (!archive) return doc;
+  let changed = false;
+  const updated = doc.replace(/<article class="atlas-archive">[\s\S]*?<\/article>/g, (card) => {
+    if (!/href="culture\.html"/i.test(card)) return card;
 
-  const cards = [...archive[0].matchAll(/<article class="atlas-archive">[\s\S]*?<\/article>/g)];
-  if (cards.length < 2) return doc;
+    let next = card
+      .replace(/<img\b([^>]*?)\bsrc="[^"]+"([^>]*)>/i, `<img$1src="${cultureImage}"$2>`)
+      .replace(/<img\b([^>]*?)\balt="[^"]*"([^>]*)>/i, '<img$1alt="Pakistani truck art, a vibrant tradition of Pakistani visual culture"$2>');
 
-  const second = cards[1][0];
-  const updatedSecond = second
-    .replace(/<img\b([^>]*?)\bsrc="[^"]+"([^>]*)>/i, `<img$1src="${cultureImage}"$2>`)
-    .replace(/<img\b([^>]*?)\balt="[^"]*"([^>]*)>/i, '<img$1alt="Pakistani truck art, a vibrant tradition of Pakistani visual culture"$2>')
-    .replace(/<span class="atlas-photo-credit">[\s\S]*?<\/span>/i, cultureCredit);
+    if (/<span class="atlas-photo-credit">[\s\S]*?<\/span>/i.test(next)) {
+      next = next.replace(/<span class="atlas-photo-credit">[\s\S]*?<\/span>/i, cultureCredit);
+    } else {
+      next = next.replace(/(<\/a>\s*<\/span>\s*)<\/a>/i, `$1${cultureCredit}</a>`);
+      if (!/atlas-photo-credit/.test(next)) {
+        next = next.replace(/<\/article>\s*$/i, `        ${cultureCredit}\n\n        </article>`);
+      }
+    }
 
-  if (updatedSecond === second) return doc;
-  return doc.replace(second, updatedSecond);
+    if (next !== card) changed = true;
+    return next;
+  });
+
+  if (changed) console.log("Culture homepage card image and attribution updated.");
+  return updated;
 }
 
 function ensureCacheBustedApp(doc) {
@@ -59,4 +68,4 @@ if (!html.includes(marker)) {
 html = applyCultureImage(html);
 html = ensureCacheBustedApp(html);
 fs.writeFileSync(file, html, "utf8");
-console.log("Homepage fixed: Current News is between Home and Culture, and the Culture card uses credited Pakistani truck art.");
+console.log("Homepage navigation preserved: Current News remains between Home and Culture.");
