@@ -1,7 +1,6 @@
 {
   "cleanUrls": false,
   "trailingSlash": false,
-  "buildCommand": "node scripts/generate-sitemap.js",
   "redirects": [
     { "source": "/province.html", "has": [{ "type": "query", "key": "id", "value": "punjab" }], "destination": "/punjab.html", "permanent": true },
     { "source": "/province.html", "has": [{ "type": "query", "key": "id", "value": "sindh" }], "destination": "/sindh.html", "permanent": true },
