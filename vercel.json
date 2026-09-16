@@ -6,9 +6,19 @@
     { "source": "/province.html", "has": [{ "type": "query", "key": "id", "value": "sindh" }], "destination": "/sindh.html", "permanent": true },
     { "source": "/province.html", "has": [{ "type": "query", "key": "id", "value": "kpk" }], "destination": "/khyber-pakhtunkhwa.html", "permanent": true },
     { "source": "/province.html", "has": [{ "type": "query", "key": "id", "value": "balochistan" }], "destination": "/balochistan.html", "permanent": true },
-    { "source": "/province.html", "has": [{ "type": "query", "key": "gb" }], "destination": "/gilgit-baltistan.html", "permanent": true },
-    { "source": "/province.html", "has": [{ "type": "query", "key": "ajk" }], "destination": "/azad-kashmir.html", "permanent": true },
-    { "source": "/province.html", "has": [{ "type": "query", "key": "id", "value": "ict" }], "destination": "/islamabad-capital-territory.html", "permanent": true }
+    { "source": "/province.html", "has": [{ "type": "query", "key": "id", "value": "gb" }], "destination": "/gilgit-baltistan.html", "permanent": true },
+    { "source": "/province.html", "has": [{ "type": "query", "key": "id", "value": "ajk" }], "destination": "/azad-kashmir.html", "permanent": true },
+    { "source": "/province.html", "has": [{ "type": "query", "key": "id", "value": "ict" }], "destination": "/islamabad-capital-territory.html", "permanent": true },
+    { "source": "/index.html", "destination": "/", "permanent": true },
+    { "source": "/bajur.html", "destination": "/bajaur.html", "permanent": true },
+    { "source": "/dgkhan.html", "destination": "/dera-ghazi-khan.html", "permanent": true },
+    { "source": "/dikhan.html", "destination": "/dera-ismail-khan.html", "permanent": true },
+    { "source": "/rykhan.html", "destination": "/rahim-yar-khan.html", "permanent": true },
+    { "source": "/nankana.html", "destination": "/nankana-sahib.html", "permanent": true },
+    { "source": "/tts.html", "destination": "/toba-tek-singh.html", "permanent": true },
+    { "source": "/lakki.html", "destination": "/lakki-marwat.html", "permanent": true },
+    { "source": "/swa-lower.html", "destination": "/lower-swat.html", "permanent": true },
+    { "source": "/swa-upper.html", "destination": "/upper-swat.html", "permanent": true }
   ],
   "headers": [
     {
