@@ -22,8 +22,8 @@ function tags(html, name) {
 }
 
 function attr(tag, name) {
-  const m = tag.match(new RegExp(`${name}\\s*=\\s*["']([^"']*)["']`, "i"));
-  return m ? m[1].trim() : "";
+  const m = tag.match(new RegExp(`${name}\\s*=\\s*(["'])(.*?)\\1`, "i"));
+  return m ? m[2].trim() : "";
 }
 
 function report(file, issue, detail = "") {
@@ -82,14 +82,14 @@ for (const file of htmlFiles) {
   const html = fs.readFileSync(path.join(ROOT, file), "utf8");
   const titles = [...html.matchAll(/<title\b[^>]*>([\s\S]*?)<\/title>/gi)].map(m => decode(m[1].replace(/<[^>]+>/g, "")));
   const descriptions = tags(html, "meta")
-    .filter(tag => /\bname\s*=\s*["']description["']/i.test(tag))
+    .filter(tag => /\bname\s*=\s*(["'])description\1/i.test(tag))
     .map(tag => attr(tag, "content"));
   const canonicals = tags(html, "link")
-    .filter(tag => /\brel\s*=\s*["']canonical["']/i.test(tag))
+    .filter(tag => /\brel\s*=\s*(["'])canonical\1/i.test(tag))
     .map(tag => attr(tag, "href"));
   const h1s = [...html.matchAll(/<h1\b[^>]*>([\s\S]*?)<\/h1>/gi)];
   const noindex = tags(html, "meta").some(tag =>
-    /\bname\s*=\s*["']robots["']/i.test(tag) && /\bcontent\s*=\s*["'][^"']*noindex/i.test(tag)
+    /\bname\s*=\s*(["'])robots\1/i.test(tag) && /\bcontent\s*=\s*(["'])[^"']*noindex/i.test(tag)
   );
 
   if (titles.length === 0) report(file, "missing <title>");
