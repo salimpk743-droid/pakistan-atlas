@@ -6,7 +6,8 @@ const SITE = "https://pakistan-atlas.vercel.app";
 
 const canonicalPages = ["haveli.html", "islamabad.html", "sudhanoti.html"];
 const descriptions = {
-  "latest-news.html": "Explore Pakistan's cultures, languages, traditions, food, music, clothing, crafts, festivals, architecture and heritage across the country.",
+  "latest-news.html": "A Pakistan Atlas starting point for current news, public updates, official announcements and reliable sources. Headlines change frequently; use the linked sources for the latest reports.",
+  "culture.html": "Explore Pakistan's cultures, languages, traditions, food, music, clothing, crafts, festivals, architecture and heritage across the country.",
   "current-affairs.html": "Explore Pakistan's literary heritage through Urdu poetry, writers, fiction, Sufi traditions, regional languages, books and literary movements.",
   "politics.html": "Explore Pakistan's geography through the Indus basin, mountains, deserts, plateaus, glaciers, coastline, climate and major regions."
 };
