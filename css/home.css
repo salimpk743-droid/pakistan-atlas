@@ -480,8 +480,8 @@ body.home .atlas-section-alt {
 .atlas-archive:focus-within .atlas-archive-visual img {
   transform: scale(1.05);
 }
-.atlas-archive-visual img[src*="wc1992"] { object-position: 52% 46%; }
-.atlas-archive-visual img[src*="showbiz-stars"] { object-position: 50% 12%; }
+.atlas-archive-visual img[src*="wc1992"] { object-position: 62% 42%; }
+.atlas-archive-visual img[src*="humsafar"] { object-position: 50% 48%; }
 .atlas-archive-visual img[src*="iqbal"] { object-position: 50% 10%; }
 .atlas-archive-visual img[src*="jinnah"] { object-position: 50% 8%; }
 .atlas-archive-visual img[src*="hills"] { object-position: 50% 38%; }
@@ -494,7 +494,7 @@ body.home .atlas-section-alt {
 .atlas-plate {
   position: absolute;
   left: 0.85rem;
-  right: 0.85rem;
+  right: 5.5rem;
   bottom: 0.72rem;
   z-index: 2;
   font-size: 0.66rem;
@@ -504,6 +504,20 @@ body.home .atlas-section-alt {
   font-weight: 700;
   text-shadow: 0 1px 8px rgba(0, 0, 0, 0.45);
   pointer-events: none;
+}
+.atlas-photo-credit {
+  position: absolute;
+  right: 0.65rem;
+  bottom: 0.55rem;
+  z-index: 2;
+  font-size: 0.58rem;
+  letter-spacing: 0.02em;
+  color: rgba(246, 237, 212, 0.9);
+  font-weight: 600;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.55);
+  pointer-events: none;
+  max-width: 46%;
+  text-align: right;
 }
 .atlas-icon {
   position: absolute;
