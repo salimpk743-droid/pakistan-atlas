@@ -7,7 +7,6 @@ const ALLOWED_NOINDEX = new Set([
   "404.html",
   "province.html",
   "google316eb4b51e11f5de.html",
-  "culture.html",
   "news.html"
 ]);
 const UTILITY = new Set(["google316eb4b51e11f5de.html"]);
@@ -62,8 +61,9 @@ if (!navMatch) {
   }
 
   const expectedLabels = new Map([
-    ["/", "Home"],
-    ["latest-news.html", "Culture"],
+    ["index.html", "Home"],
+    ["latest-news.html", "Current News"],
+    ["culture.html", "Culture"],
     ["current-affairs.html", "Literature"],
     ["politics.html", "Geography"],
     ["sports.html", "Sports"],
