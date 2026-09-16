@@ -1,5 +1,6 @@
 const fs = require("fs");
 const path = require("path");
+const { execFileSync } = require("child_process");
 
 const ROOT = path.resolve(__dirname, "..");
 const SITE = "https://pakistan-atlas.vercel.app";
@@ -36,13 +37,21 @@ function getAttr(tag, name) {
 }
 
 function getCanonical(html) {
-  const tag = getTag(html, "link", (value) => /\brel\s*=\s*["']canonical["']/i.test(value));
+  const tag = getTag(html, "link", (value) => /\\brel\\s*=\\s*["']canonical["']/i.test(value));
   return getAttr(tag, "href");
 }
 
 function hasNoindex(html) {
-  const tags = html.match(/<meta\b[^>]*>/gi) || [];
-  return tags.some((tag) => /\bname\s*=\s*["']robots["']/i.test(tag) && /\bcontent\s*=\s*["'][^"']*noindex/i.test(tag));
+  const tags = html.match(/<meta\\b[^>]*>/gi) || [];
+  return tags.some((tag) => /\\bname\\s*=\\s*["']robots["']/i.test(tag) && /\\bcontent\\s*=\\s*["'][^"']*noindex/i.test(tag));
+}
+
+function getLastModified(name) {
+  try {
+    const value = execFileSync("git", ["log", "-1", "--format=%cs", "--", name], { cwd: ROOT, encoding: "utf8" }).trim();
+    if (/^\\d{4}-\\d{2}-\\d{2}$/.test(value)) return value;
+  } catch (_) {}
+  return "";
 }
 
 const candidates = fs.readdirSync(ROOT)
@@ -73,7 +82,7 @@ for (const name of candidates) {
   }
 
   seen.add(canonical);
-  urls.push(canonical);
+  urls.push({ url: canonical, lastmod: getLastModified(name) });
 }
 
 if (!urls.length) {
@@ -84,11 +93,11 @@ if (!urls.length) {
 const xml = [
   '<?xml version="1.0" encoding="UTF-8"?>',
   '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
-  ...urls.map((url) => `  <url><loc>${url}</loc></url>`),
+  ...urls.map(({ url, lastmod }) => `  <url><loc>${url}</loc>${lastmod ? `<lastmod>${lastmod}</lastmod>` : ""}</url>`),
   '</urlset>',
   ''
 ].join("\n");
 
 fs.writeFileSync(path.join(ROOT, "sitemap.xml"), xml, "utf8");
-console.log(`Generated ${urls.length} self-canonical, indexable sitemap URLs.`);
+console.log(`Generated ${urls.length} self-canonical, indexable sitemap URLs with stable lastmod dates.`);
 console.log(`Skipped ${skipped.length} non-sitemap candidates.`);
