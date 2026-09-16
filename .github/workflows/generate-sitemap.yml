@@ -15,6 +15,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Restore Current News and Culture structure
+        run: node scripts/migrate-news-culture.js
+
       - name: Apply known SEO fixes
         run: node scripts/fix-known-seo.js
 
@@ -25,11 +28,11 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add sitemap.xml haveli.html islamabad.html sudhanoti.html politics.html latest-news.html current-affairs.html scripts/fix-known-seo.js scripts/generate-sitemap.js
+          git add sitemap.xml culture.html latest-news.html js/app.js current-affairs.html haveli.html islamabad.html sudhanoti.html politics.html scripts/fix-known-seo.js scripts/generate-sitemap.js scripts/migrate-news-culture.js
           if git diff --cached --quiet; then
             echo "SEO files and sitemap are already up to date."
           else
-            git commit -m "SEO: fix metadata and refresh sitemap"
+            git commit -m "Fix Current News and Culture navigation"
             git push
           fi
 
