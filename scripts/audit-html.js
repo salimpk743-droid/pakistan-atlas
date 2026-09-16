@@ -6,7 +6,6 @@ const APP = fs.readFileSync(path.join(ROOT, "js", "app.js"), "utf8");
 const LEGACY = new Set(["culture.html", "news.html"]);
 const htmlFiles = fs.readdirSync(ROOT).filter(f => f.toLowerCase().endsWith(".html"));
 const errors = [];
-const pages = new Map();
 const canonicalGroups = new Map();
 const titleGroups = new Map();
 const descriptionGroups = new Map();
@@ -21,7 +20,7 @@ function report(file, issue, detail = "") {
 }
 
 function normalizeUrl(href, fromFile) {
-  if (!href || /^(#|mailto:|tel:|javascript:|https?:\\/\\/|\\/\\/)/i.test(href)) return null;
+  if (!href || /^(#|mailto:|tel:|javascript:|https?:\/\/|\/\/)/i.test(href)) return null;
   const clean = href.split("#")[0].split("?")[0];
   if (!clean) return null;
   const base = path.dirname(path.join(ROOT, fromFile));
@@ -34,11 +33,11 @@ function decode(text) {
 }
 
 // Read the actual NAV constant from js/app.js so the audit follows the site's source of truth.
-const navMatch = APP.match(/const\\s+NAV\\s*=\\s*\\[([\\s\\S]*?)\\];/);
+const navMatch = APP.match(/const\s+NAV\s*=\s*\[([\s\S]*?)\];/);
 if (!navMatch) {
   report("js/app.js", "global NAV constant not found");
 } else {
-  const NAV = [...navMatch[1].matchAll(/\\[\\s*["']([^"']+)["']\\s*,\\s*["']([^"']+)["']\\s*\\]/g)]
+  const NAV = [...navMatch[1].matchAll(/\[\s*["']([^"']+)["']\s*,\s*["']([^"']+)["']\s*\]/g)]
     .map(m => [m[1], m[2]]);
 
   if (!NAV.length) report("js/app.js", "global NAV contains no links");
@@ -69,12 +68,12 @@ if (!navMatch) {
 
 for (const file of htmlFiles) {
   const html = fs.readFileSync(path.join(ROOT, file), "utf8");
-  const titles = [...html.matchAll(/<title\\b[^>]*>([\\s\\S]*?)<\\/title>/gi)].map(m => decode(m[1].replace(/<[^>]+>/g, "")));
-  const descriptions = [...html.matchAll(/<meta\\b[^>]*name\\s*=\\s*["']description["'][^>]*>/gi)].map(m => attr(m[0], "content"));
-  const canonicals = [...html.matchAll(/<link\\b[^>]*rel\\s*=\\s*["']canonical["'][^>]*>/gi)].map(m => attr(m[0], "href"));
-  const h1s = [...html.matchAll(/<h1\\b[^>]*>([\\s\\S]*?)<\\/h1>/gi)];
-  const noindex = /<meta\\b[^>]*name\\s*=\\s*["']robots["'][^>]*content\\s*=\\s*["'][^"']*noindex/i.test(html)
-    || /<meta\\b[^>]*content\\s*=\\s*["'][^"']*noindex[^"']*["'][^>]*name\\s*=\\s*["']robots["']/i.test(html);
+  const titles = [...html.matchAll(/<title\b[^>]*>([\s\S]*?)<\/title>/gi)].map(m => decode(m[1].replace(/<[^>]+>/g, "")));
+  const descriptions = [...html.matchAll(/<meta\b[^>]*name\s*=\s*["']description["'][^>]*>/gi)].map(m => attr(m[0], "content"));
+  const canonicals = [...html.matchAll(/<link\b[^>]*rel\s*=\s*["']canonical["'][^>]*>/gi)].map(m => attr(m[0], "href"));
+  const h1s = [...html.matchAll(/<h1\b[^>]*>([\s\S]*?)<\/h1>/gi)];
+  const noindex = /<meta\b[^>]*name\s*=\s*["']robots["'][^>]*content\s*=\s*["'][^"']*noindex/i.test(html)
+    || /<meta\b[^>]*content\s*=\s*["'][^"']*noindex[^"']*["'][^>]*name\s*=\s*["']robots["']/i.test(html);
 
   if (titles.length === 0) report(file, "missing <title>");
   if (titles.length > 1) report(file, "duplicate <title> tags", `${titles.length} found`);
@@ -103,20 +102,16 @@ for (const file of htmlFiles) {
     descriptionGroups.get(description).push(file);
   }
 
-  // Check local HTML references in anchors, areas, stylesheet links, and similar href/src attributes.
-  const links = [...html.matchAll(/<(?:a|area|link)\\b[^>]*(?:href|src)\\s*=\\s*["']([^"']+)["'][^>]*>/gi)].map(m => m[1]);
+  const links = [...html.matchAll(/<(?:a|area|link)\b[^>]*(?:href|src)\s*=\s*["']([^"']+)["'][^>]*>/gi)].map(m => m[1]);
   for (const href of links) {
     const target = normalizeUrl(href, file);
     if (!target || !target.toLowerCase().endsWith(".html")) continue;
     if (!fs.existsSync(path.join(ROOT, target))) report(file, "broken internal link", href);
   }
 
-  // Every normal page should load the same dynamic header/footer navigation source.
-  if (!LEGACY.has(file) && !/<script\\b[^>]*src\\s*=\\s*["']js\\/app\\.js(?:[?#][^"']*)?["'][^>]*>/i.test(html)) {
+  if (!LEGACY.has(file) && !/<script\b[^>]*src\s*=\s*["']js\/app\.js(?:[?#][^"']*)?["'][^>]*>/i.test(html)) {
     report(file, "missing js/app.js navigation source");
   }
-
-  pages.set(file, { title, description, canonical });
 }
 
 for (const [canonical, files] of canonicalGroups) {
