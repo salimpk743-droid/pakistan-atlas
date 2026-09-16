@@ -42,10 +42,13 @@ function fixPoliticsTitle() {
 function fixDescription(file, description) {
   const full = path.join(ROOT, file);
   let html = fs.readFileSync(full, "utf8");
-  const re = /(<meta\b[^>]*name\s*=\s*["']description["'][^>]*content\s*=\s*["'])([^"']*)(["'][^>]*>)/i;
-  if (!re.test(html)) return false;
-  const fixed = html.replace(re, `$1${description}$3`);
-  if (fixed === html) return false;
+  const tagRe = /<meta\b[^>]*name\s*=\s*["']description["'][^>]*>/gi;
+  let count = 0;
+  const fixed = html.replace(tagRe, () => {
+    count += 1;
+    return count === 1 ? `<meta name="description" content="${description}">` : "";
+  });
+  if (count === 0 || fixed === html) return false;
   fs.writeFileSync(full, fixed, "utf8");
   return true;
 }
