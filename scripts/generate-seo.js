@@ -227,7 +227,21 @@ function upsertMetadata(fileName, html) {
 }
 
 function generateSitemap() {
-  const excluded = new Set(["province.html", "district.html", "404.html", "google316eb4b51e11f5de.html"]);
+  const excluded = new Set([
+    "province.html",
+    "district.html",
+    "404.html",
+    "google316eb4b51e11f5de.html",
+    "bajur.html",
+    "dgkhan.html",
+    "dikhan.html",
+    "rykhan.html",
+    "nankana.html",
+    "tts.html",
+    "lakki.html",
+    "swa-lower.html",
+    "swa-upper.html"
+  ]);
   const urls = fs.readdirSync(ROOT)
     .filter((name) => name.endsWith(".html") && !excluded.has(name))
     .sort()
