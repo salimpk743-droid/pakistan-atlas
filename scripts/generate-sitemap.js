@@ -26,16 +26,24 @@ const excluded = new Set([
   "swa-upper.html"
 ]);
 
+function getTag(html, tagName, predicate) {
+  const tags = html.match(new RegExp(`<${tagName}\\b[^>]*>`, "gi")) || [];
+  return tags.find(predicate) || "";
+}
+
+function getAttr(tag, name) {
+  const match = tag.match(new RegExp(`${name}\\s*=\\s*["']([^"']+)["']`, "i"));
+  return match ? match[1].trim() : "";
+}
+
 function getCanonical(html) {
-  const match = html.match(/<link\b[^>]*rel\s*=\s*["']canonical["'][^>]*>/i);
-  if (!match) return "";
-  const href = match[0].match(/href\s*=\s*["']([^"']+)["']/i);
-  return href ? href[1].trim() : "";
+  const tag = getTag(html, "link", (value) => /\brel\s*=\s*["']canonical["']/i.test(value));
+  return getAttr(tag, "href");
 }
 
 function hasNoindex(html) {
-  return /<meta\b[^>]*name\s*=\s*["']robots["'][^>]*content\s*=\s*["'][^"']*noindex/i.test(html)
-    || /<meta\b[^>]*content\s*=\s*["'][^"']*noindex[^"']*["'][^>]*name\s*=\s*["']robots["']/i.test(html);
+  const tags = html.match(/<meta\b[^>]*>/gi) || [];
+  return tags.some((tag) => /\bname\s*=\s*["']robots["']/i.test(tag) && /\bcontent\s*=\s*["'][^"']*noindex/i.test(tag));
 }
 
 const candidates = fs.readdirSync(ROOT)
@@ -45,18 +53,33 @@ const candidates = fs.readdirSync(ROOT)
 
 const urls = [];
 const seen = new Set();
+const skipped = [];
 
 for (const name of candidates) {
   const html = fs.readFileSync(path.join(ROOT, name), "utf8");
-  if (hasNoindex(html)) continue;
+  if (hasNoindex(html)) {
+    skipped.push(`${name}: noindex`);
+    continue;
+  }
 
   const expected = `${SITE}/${name === "index.html" ? "" : name}`;
   const canonical = getCanonical(html);
-  if (canonical !== expected) continue;
-  if (seen.has(canonical)) continue;
+  if (canonical !== expected) {
+    skipped.push(`${name}: canonical is ${canonical || "missing"}`);
+    continue;
+  }
+  if (seen.has(canonical)) {
+    skipped.push(`${name}: duplicate canonical ${canonical}`);
+    continue;
+  }
 
   seen.add(canonical);
   urls.push(canonical);
+}
+
+if (!urls.length) {
+  console.error("Sitemap generation aborted: no self-canonical indexable pages were found.");
+  process.exit(1);
 }
 
 const xml = [
@@ -69,3 +92,4 @@ const xml = [
 
 fs.writeFileSync(path.join(ROOT, "sitemap.xml"), xml, "utf8");
 console.log(`Generated ${urls.length} self-canonical, indexable sitemap URLs.`);
+console.log(`Skipped ${skipped.length} non-sitemap candidates.`);
