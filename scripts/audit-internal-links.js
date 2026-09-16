@@ -31,7 +31,7 @@ function report(file, issue, detail = "") {
 }
 
 function localTarget(href, fromFile) {
-  if (!href || /^(#|mailto:|tel:|javascript:|https?:\/\/|\/\//i.test(href)) return null;
+  if (!href || /^(#|mailto:|tel:|javascript:|https?:\/\/|\/\/)/i.test(href)) return null;
   if (href.includes("${") || href.includes("}")) return null;
   const clean = href.split("#")[0].split("?")[0];
   if (!clean) return null;
