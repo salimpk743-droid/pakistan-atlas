@@ -15,11 +15,11 @@ const redirectSources = new Set([
   "lakki.html",
   "swa-lower.html",
   "swa-upper.html",
-  "culture.html",
   "news.html"
 ]);
 const majorSections = [
   "latest-news.html",
+  "culture.html",
   "current-affairs.html",
   "politics.html",
   "sports.html",
