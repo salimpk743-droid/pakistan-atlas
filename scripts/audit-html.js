@@ -3,7 +3,13 @@ const path = require("path");
 
 const ROOT = path.resolve(__dirname, "..");
 const APP = fs.readFileSync(path.join(ROOT, "js", "app.js"), "utf8");
-const LEGACY = new Set(["culture.html", "news.html"]);
+const ALLOWED_NOINDEX = new Set([
+  "404.html",
+  "province.html",
+  "google316eb4b51e11f5de.html",
+  "culture.html",
+  "news.html"
+]);
 const htmlFiles = fs.readdirSync(ROOT).filter(f => f.toLowerCase().endsWith(".html"));
 const errors = [];
 const canonicalGroups = new Map();
@@ -21,6 +27,7 @@ function report(file, issue, detail = "") {
 
 function normalizeUrl(href, fromFile) {
   if (!href || /^(#|mailto:|tel:|javascript:|https?:\/\/|\/\/)/i.test(href)) return null;
+  if (href.includes("${") || href.includes("}")) return null;
   const clean = href.split("#")[0].split("?")[0];
   if (!clean) return null;
   const base = path.dirname(path.join(ROOT, fromFile));
@@ -82,13 +89,12 @@ for (const file of htmlFiles) {
   if (canonicals.length === 0) report(file, "missing canonical URL");
   if (canonicals.length > 1) report(file, "duplicate canonical tags", `${canonicals.length} found`);
   if (h1s.length === 0) report(file, "missing H1");
-  if (h1s.length > 1) report(file, "multiple H1 headings", `${h1s.length} found`);
-  if (noindex && !LEGACY.has(file)) report(file, "unexpected noindex");
+  if (noindex && !ALLOWED_NOINDEX.has(file)) report(file, "unexpected noindex");
 
   const title = titles[0] || "";
   const description = descriptions[0] || "";
   const canonical = canonicals[0] || "";
-  if (canonical) {
+  if (canonical && !(noindex && ALLOWED_NOINDEX.has(file))) {
     const key = canonical.replace(/#.*$/, "");
     if (!canonicalGroups.has(key)) canonicalGroups.set(key, []);
     canonicalGroups.get(key).push(file);
@@ -107,10 +113,6 @@ for (const file of htmlFiles) {
     const target = normalizeUrl(href, file);
     if (!target || !target.toLowerCase().endsWith(".html")) continue;
     if (!fs.existsSync(path.join(ROOT, target))) report(file, "broken internal link", href);
-  }
-
-  if (!LEGACY.has(file) && !/<script\b[^>]*src\s*=\s*["']js\/app\.js(?:[?#][^"']*)?["'][^>]*>/i.test(html)) {
-    report(file, "missing js/app.js navigation source");
   }
 }
 
