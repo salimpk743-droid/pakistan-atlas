@@ -21,7 +21,7 @@ function canonicalFor(file) {
 function noindex(file) {
   const html = fs.readFileSync(path.join(ROOT, file), "utf8");
   return /<meta\b[^>]*name\s*=\s*["']robots["'][^>]*content\s*=\s*["'][^"']*noindex/i.test(html)
-    || /<meta\b[^>]*content\s*=\s*["'][^"']*noindex[^"']* ["'][^>]*name\s*=\s*["']robots["']/i.test(html);
+    || /<meta\b[^>]*content\s*=\s*["'][^"']*noindex[^"']*["'][^>]*name\s*=\s*["']robots["']/i.test(html);
 }
 
 const locs = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/gi)].map((m) => m[1].trim());
