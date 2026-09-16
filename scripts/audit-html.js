@@ -10,6 +10,7 @@ const ALLOWED_NOINDEX = new Set([
   "culture.html",
   "news.html"
 ]);
+const UTILITY = new Set(["google316eb4b51e11f5de.html"]);
 const htmlFiles = fs.readdirSync(ROOT).filter(f => f.toLowerCase().endsWith(".html"));
 const errors = [];
 const canonicalGroups = new Map();
@@ -39,25 +40,24 @@ function decode(text) {
   return text.replace(/&amp;/g, "&").replace(/&quot;/g, '"').replace(/&#39;/g, "'").trim();
 }
 
-// Read the actual NAV constant from js/app.js so the audit follows the site's source of truth.
 const navMatch = APP.match(/const\s+NAV\s*=\s*\[([\s\S]*?)\];/);
 if (!navMatch) {
   report("js/app.js", "global NAV constant not found");
 } else {
   const NAV = [...navMatch[1].matchAll(/\[\s*["']([^"']+)["']\s*,\s*["']([^"']+)["']\s*\]/g)]
     .map(m => [m[1], m[2]]);
-
   if (!NAV.length) report("js/app.js", "global NAV contains no links");
 
   const seenNavHrefs = new Set();
   for (const [href, label] of NAV) {
     if (seenNavHrefs.has(href)) report("js/app.js", "duplicate global NAV target", `${href} (${label})`);
     seenNavHrefs.add(href);
-    if (!fs.existsSync(path.join(ROOT, href))) report("js/app.js", "global NAV target missing", `${href} (${label})`);
+    const target = href === "/" ? "index.html" : href;
+    if (!fs.existsSync(path.join(ROOT, target))) report("js/app.js", "global NAV target missing", `${href} (${label})`);
   }
 
   const expectedLabels = new Map([
-    ["index.html", "Home"],
+    ["/", "Home"],
     ["latest-news.html", "Culture"],
     ["current-affairs.html", "Literature"],
     ["politics.html", "Geography"],
@@ -74,6 +74,7 @@ if (!navMatch) {
 }
 
 for (const file of htmlFiles) {
+  if (UTILITY.has(file)) continue;
   const html = fs.readFileSync(path.join(ROOT, file), "utf8");
   const titles = [...html.matchAll(/<title\b[^>]*>([\s\S]*?)<\/title>/gi)].map(m => decode(m[1].replace(/<[^>]+>/g, "")));
   const descriptions = [...html.matchAll(/<meta\b[^>]*name\s*=\s*["']description["'][^>]*>/gi)].map(m => attr(m[0], "content"));
@@ -119,11 +120,9 @@ for (const file of htmlFiles) {
 for (const [canonical, files] of canonicalGroups) {
   if (files.length > 1) report(files.join(", "), "duplicate canonical URL", canonical);
 }
-
 for (const [title, files] of titleGroups) {
   if (files.length > 1) report(files.join(", "), "duplicate page title", title);
 }
-
 for (const [description, files] of descriptionGroups) {
   if (files.length > 1) report(files.join(", "), "duplicate meta description", description);
 }
