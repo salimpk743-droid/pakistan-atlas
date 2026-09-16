@@ -1,6 +1,7 @@
 const NAV = [
   ["index.html", "Home"],
-  ["latest-news.html", "Culture"],
+  ["latest-news.html", "Current News"],
+  ["culture.html", "Culture"],
   ["current-affairs.html", "Literature"],
   ["politics.html", "Geography"],
   ["sports.html", "Sports"],

@@ -9,7 +9,6 @@ const excluded = new Set([
   "district.html",
   "404.html",
   "google316eb4b51e11f5de.html",
-  "culture.html",
   "news.html",
   "contact.html",
   "privacy.html",
