@@ -15,20 +15,26 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Apply known SEO fixes
+        run: node scripts/fix-known-seo.js
+
       - name: Generate sitemap
         run: node scripts/generate-sitemap.js
+
+      - name: Audit HTML
+        run: node scripts/audit-html.js
 
       - name: Audit sitemap
         run: node scripts/audit-sitemap.js
 
-      - name: Commit sitemap if changed
+      - name: Commit SEO fixes and sitemap if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add sitemap.xml
+          git add sitemap.xml haveli.html islamabad.html sudhanoti.html politics.html latest-news.html current-affairs.html scripts/fix-known-seo.js
           if git diff --cached --quiet; then
-            echo "Sitemap is already up to date."
+            echo "SEO files and sitemap are already up to date."
           else
-            git commit -m "SEO: refresh sitemap with canonical URLs"
+            git commit -m "SEO: fix metadata and refresh sitemap"
             git push
           fi
