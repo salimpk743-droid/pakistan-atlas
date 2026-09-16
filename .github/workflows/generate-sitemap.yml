@@ -18,6 +18,9 @@ jobs:
       - name: Generate sitemap
         run: node scripts/generate-sitemap.js
 
+      - name: Audit sitemap
+        run: node scripts/audit-sitemap.js
+
       - name: Commit sitemap if changed
         run: |
           git config user.name "github-actions[bot]"
