@@ -20,7 +20,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600&family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css?v=5" />
+  <link rel="stylesheet" href="css/style.css?v=6" />
   <style>
     :root{--sb-bg:#071713;--sb-panel:#0d211b;--sb-panel2:#102a22;--sb-gold:#d9b45b;--sb-gold2:#f0cf78;--sb-text:#f3f0e7;--sb-muted:#b8c2bc;--sb-line:rgba(217,180,91,.22)}
     body.showbiz-page{margin:0;background:var(--sb-bg);color:var(--sb-text);font-family:"Source Sans 3",Arial,sans-serif}
@@ -29,10 +29,10 @@
     .sb-hero-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(3,14,11,.97) 0%,rgba(3,14,11,.9) 30%,rgba(3,14,11,.5) 62%,rgba(3,14,11,.25) 100%),linear-gradient(0deg,rgba(3,14,11,.8),transparent 55%)}
     .sb-hero-content{position:relative;z-index:2;max-width:760px;padding:100px 24px 120px;margin:0 auto 0 5%}
     .sb-kicker{margin:0 0 18px;color:var(--sb-gold);font-size:13px;font-weight:700;letter-spacing:3px;text-transform:uppercase}
-    .sb-hero h1{margin:0;font-family:"Playfair Display",serif;font-size:clamp(58px,8vw,108px);line-height:.95;color:var(--sb-gold2);text-shadow:0 4px 25px rgba(0,0,0,.4)}
-    .sb-subtitle{font-family:"Playfair Display",serif;font-size:clamp(24px,3vw,38px);margin:25px 0 18px;line-height:1.15}
+    .sb-hero h1{margin:0;font-family:"Playfair Display",serif;font-size:clamp(2.4rem,6vw,4.2rem);line-height:.95;color:var(--sb-gold2);text-shadow:0 4px 25px rgba(0,0,0,.4)}
+    .sb-subtitle{font-family:"Playfair Display",serif;font-size:clamp(1.2rem,2.2vw,1.7rem);margin:25px 0 18px;line-height:1.15}
     .sb-intro{max-width:680px;color:#e2e6e2;font-size:18px;line-height:1.7}
-    .sb-urdu-title{font-family:"Noto Nastaliq Urdu",serif;font-size:38px;color:var(--sb-gold2);margin:28px 0 0;line-height:1.8}
+    .sb-urdu-title{font-family:"Noto Nastaliq Urdu",serif;font-size:clamp(1.4rem,3vw,1.9rem);color:var(--sb-gold2);margin:28px 0 0;line-height:1.8}
     .sb-credit{position:absolute;z-index:4;right:18px;bottom:16px;background:rgba(0,0,0,.72);color:#fff;padding:7px 11px;border-radius:4px;font-size:12px}
     .sb-credit a{color:#fff;text-decoration:underline}
     .sb-nav-strip{position:absolute;z-index:4;left:0;right:0;bottom:0;background:rgba(4,17,13,.88);border-top:1px solid var(--sb-line);backdrop-filter:blur(7px)}
@@ -68,9 +68,10 @@
     .sb-directory div{padding:18px 20px;background:rgba(217,180,91,.035);border-left:3px solid var(--sb-gold);border-radius:8px}
     .sb-directory strong{display:block;color:var(--sb-gold2);margin-bottom:5px}
     .sb-directory span{color:var(--sb-muted);line-height:1.6}
+    .sb-pair{margin:0 auto 28px;max-width:760px;border-radius:16px;overflow:hidden;border:1px solid var(--sb-line);background:#0b211a}.sb-pair img{width:100%;height:auto;display:block;object-fit:cover}.sb-pair figcaption{padding:10px 14px 14px;color:var(--sb-muted);font-size:13px;text-align:center;line-height:1.5}
     .sb-note{margin-top:30px;padding:16px 20px;border:1px solid var(--sb-line);border-radius:10px;color:#bfc9c2;background:rgba(217,180,91,.035);font-size:14px;line-height:1.6}
     @media(max-width:850px){.sb-grid{grid-template-columns:1fr 1fr}.sb-drama-grid{grid-template-columns:1fr 1fr}.sb-hero-content{margin-left:0;padding:75px 24px 130px}.sb-hero{min-height:700px}.sb-era{grid-template-columns:100px 1fr}}
-    @media(max-width:560px){.sb-grid,.sb-drama-grid,.sb-directory{grid-template-columns:1fr}.sb-hero-content{padding:65px 20px 150px}.sb-hero h1{font-size:64px}.sb-subtitle{font-size:25px}.sb-intro{font-size:16px}.sb-urdu-title{font-size:31px}.sb-nav-inner a{flex-basis:50%;border-bottom:1px solid var(--sb-line)}}
+    @media(max-width:560px){.sb-grid,.sb-drama-grid,.sb-directory{grid-template-columns:1fr}.sb-hero-content{padding:65px 20px 150px}.sb-hero h1{font-size:2.45rem}.sb-subtitle{font-size:25px}.sb-intro{font-size:16px}.sb-urdu-title{font-size:31px}.sb-nav-inner a{flex-basis:50%;border-bottom:1px solid var(--sb-line)}}
   </style>
 </head>
 <body class="showbiz-page">
@@ -111,7 +112,12 @@
         <div class="sb-era"><div class="sb-era-year">2010s–Today</div><div><h3>Digital &amp; Global Audiences</h3><p>Streaming, social media and online video have widened the reach of Pakistani dramas, music and performers.</p></div></div>
       </div></section>
 
-      <section class="sb-section" id="actors"><header class="sb-heading"><span class="eyebrow">The Performers</span><h2>Actors &amp; Actresses</h2><p>Generations of performers have shaped Pakistani cinema and television, from classic film icons to today's internationally recognised television stars.</p></header><div class="sb-grid">
+      <section class="sb-section" id="actors"><header class="sb-heading"><span class="eyebrow">The Performers</span><h2>Actors &amp; Actresses</h2><p>Generations of performers have shaped Pakistani cinema and television, from classic film icons to today's internationally recognised television stars.</p></header>
+      <figure class="sb-pair">
+        <img src="images/home/showbiz-stars.jpg" alt="Mahira Khan and Fawad Khan" width="1088" height="720" loading="lazy" />
+        <figcaption>Mahira Khan and Fawad Khan — two of the most recognised faces of contemporary Pakistani television and film.</figcaption>
+      </figure>
+      <div class="sb-grid">
         <article class="sb-card"><h3>Classic Film &amp; Television</h3><ul class="sb-list"><li><strong>Waheed Murad</strong> — celebrated film star.</li><li><strong>Mohammad Ali</strong> — major actor of Pakistani cinema.</li><li><strong>Nadeem Baig</strong> — prominent film star.</li><li><strong>Javed Sheikh</strong> — actor and filmmaker.</li><li><strong>Talat Hussain</strong> — respected television and film actor.</li><li><strong>Abid Ali</strong> — influential television performer.</li><li><strong>Shabnam</strong> — iconic actress of Pakistani cinema.</li><li><strong>Babra Sharif</strong> — leading film actress.</li><li><strong>Samina Peerzada</strong> — prominent actress, director and producer.</li></ul></article>
         <article class="sb-card"><h3>Leading Modern Actors</h3><ul class="sb-list"><li>Fawad Khan</li><li>Humayun Saeed</li><li>Faisal Qureshi</li><li>Ahsan Khan</li><li>Hamza Ali Abbasi</li><li>Ahmed Ali Akbar</li><li>Wahaj Ali</li><li>Bilal Abbas Khan</li><li>Ahad Raza Mir</li><li>Osman Khalid Butt</li><li>Sheheryar Munawar</li><li>Farhan Saeed</li><li>Ali Rehman Khan</li><li>Usman Mukhtar</li><li>Imran Abbas</li><li>Feroze Khan</li></ul></article>
         <article class="sb-card"><h3>Leading Actresses</h3><ul class="sb-list"><li>Mahira Khan</li><li>Sanam Saeed</li><li>Sajal Aly</li><li>Yumna Zaidi</li><li>Ayeza Khan</li><li>Hania Aamir</li><li>Mehwish Hayat</li><li>Sanam Baloch</li><li>Hiba Bukhari</li><li>Iqra Aziz</li><li>Humaima Malick</li><li>Ayesha Omar</li></ul></article>

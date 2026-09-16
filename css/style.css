@@ -408,9 +408,11 @@ th, td { padding: 0.8rem 1rem; text-align: left; border-bottom: 1px solid #eee; 
 th { background: var(--green); color: #fff; font-weight: 600; }
 tr:hover td { background: #f3faf5; }
 
-.prose { background: #fff; padding: 2rem; border-radius: var(--radius); box-shadow: var(--shadow); overflow-wrap: anywhere; }
-.prose h2, .prose h3 { font-family: "Playfair Display", serif; color: var(--green); margin: 1.4rem 0 0.5rem; }
-.prose p, .prose li { margin-bottom: 0.8rem; }
+.prose { background: #fff; padding: 2rem; border-radius: var(--radius); box-shadow: var(--shadow); overflow-wrap: anywhere; font-size: 1.05rem; line-height: 1.8; }
+.prose h2, .prose h3 { font-family: "Playfair Display", serif; color: var(--green); margin: 1.4rem 0 0.5rem; line-height: 1.25; }
+.prose h2 { font-size: clamp(1.4rem, 2vw, 1.85rem); }
+.prose h3 { font-size: clamp(1.15rem, 1.5vw, 1.4rem); }
+.prose p, .prose li { margin-bottom: 0.9rem; font-size: 1.05rem; line-height: 1.8; }
 .prose ul { padding-left: 1.2rem; }
 .prose img { height: auto; }
 

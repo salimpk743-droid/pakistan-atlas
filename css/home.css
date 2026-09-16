@@ -430,8 +430,8 @@ body.home .atlas-section-alt {
 /* Archive cards */
 .atlas-archives {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 1.05rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.15rem;
 }
 .atlas-archive {
   display: flex;
@@ -452,7 +452,7 @@ body.home .atlas-section-alt {
 }
 .atlas-archive-visual {
   position: relative;
-  height: 168px;
+  height: 200px;
   background: #12351f;
   overflow: hidden;
 }
@@ -462,12 +462,10 @@ body.home .atlas-section-alt {
   object-fit: cover;
   object-position: center top;
 }
-.atlas-archive-visual.sports {
-  background:
-    radial-gradient(circle at 70% 20%, rgba(201, 162, 39, 0.28), transparent 46%),
-    linear-gradient(160deg, #0b3d22, #012411);
-  display: grid;
-  place-items: center;
+.atlas-archive-visual.sports,
+.atlas-archive-visual.showbiz {
+  background: #12351f;
+  display: block;
 }
 .atlas-icon {
   position: absolute;
