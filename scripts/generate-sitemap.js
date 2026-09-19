@@ -37,19 +37,19 @@ function getAttr(tag, name) {
 }
 
 function getCanonical(html) {
-  const tag = getTag(html, "link", (value) => /\brel\s*=\\s*["']canonical["']/i.test(value));
+  const tag = getTag(html, "link", (value) => /\brel\s*=\s*["']canonical["']/i.test(value));
   return getAttr(tag, "href");
 }
 
 function hasNoindex(html) {
-  const tags = html.match(/<meta\\b[^>]*>/gi) || [];
+  const tags = html.match(/<meta\b[^>]*>/gi) || [];
   return tags.some((tag) => /\bname\s*=\\s*["']robots["']/i.test(tag) && /\bcontent\s*=\\s*["'][^"']*noindex/i.test(tag));
 }
 
 function getLastModified(name) {
   try {
     const value = execFileSync("git", ["log", "-1", "--format=%cs", "--", name], { cwd: ROOT, encoding: "utf8" }).trim();
-    if (/^\\d{4}-\\d{2}-\\d{2}$/.test(value)) return value;
+    if (/^\d{4}-\d{2}-\d{2}$/.test(value)) return value;
   } catch (_) {}
   return "";
 }
