@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pakistan-atlas.vercel.app/sitemap.xml
+Sitemap: https://mybook.pk/sitemap.xml
