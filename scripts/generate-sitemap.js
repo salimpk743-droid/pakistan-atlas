@@ -3,7 +3,7 @@ const path = require("path");
 const { execFileSync } = require("child_process");
 
 const ROOT = path.resolve(__dirname, "..");
-const SITE = "https://pakistan-atlas.vercel.app";
+const SITE = "https://mybook.pk";
 
 const excluded = new Set([
   "province.html",
