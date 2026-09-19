@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 
 const ROOT = path.resolve(__dirname, "..");
-const SITE = "https://pakistan-atlas.vercel.app";
+const SITE = "https://mybook.pk";
 const provinceRoutes = {
   punjab: "punjab.html",
   sindh: "sindh.html",
@@ -47,7 +47,7 @@ function schemaScript(value) {
 function provincePage(unit, districtData) {
   const route = provinceRoutes[unit.id];
   const districts = districtData[unit.id]?.districts || [];
-  const description = `Explore ${unit.name}: capital ${unit.capital}, population, area, culture, education, health and ${districts.length} district pages in Pakistan Atlas.`;
+  const description = `Explore ${unit.name}: capital ${unit.capital}, population, area, culture, education, health and ${districts.length} district pages in MyBook.Pk.`;
   const cards = districts.map((district) => `
         <article class="card">
           <div class="card-body">
@@ -73,14 +73,14 @@ function provincePage(unit, districtData) {
     name: `${unit.name}, Pakistan`,
     description,
     url: `${SITE}/${route}`,
-    isPartOf: { "@type": "WebSite", name: "Pakistan Atlas", url: `${SITE}/` }
+    isPartOf: { "@type": "WebSite", name: "MyBook.Pk", url: `${SITE}/` }
   };
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>${esc(unit.name)}, Pakistan — Districts, Population, Cities &amp; Facts | Pakistan Atlas</title>
+  <title>${esc(unit.name)}, Pakistan — Districts, Population, Cities &amp; Facts | MyBook.Pk</title>
   <meta name="description" content="${esc(description)}" />
   <link rel="canonical" href="${SITE}/${route}" />
   <meta property="og:title" content="${esc(unit.name)}, Pakistan — Districts, Population, Cities &amp; Facts" />
@@ -88,9 +88,9 @@ function provincePage(unit, districtData) {
   <meta property="og:type" content="website" />
   <meta property="og:url" content="${SITE}/${route}" />
   <meta property="og:image" content="${SITE}/images/flag-pakistan.svg" />
-  <meta property="og:site_name" content="Pakistan Atlas" />
+  <meta property="og:site_name" content="MyBook.Pk" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="${esc(unit.name)}, Pakistan — Pakistan Atlas" />
+  <meta name="twitter:title" content="${esc(unit.name)}, Pakistan — MyBook.Pk" />
   <meta name="twitter:description" content="${esc(description)}" />
   <meta name="twitter:image" content="${SITE}/images/flag-pakistan.svg" />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600&family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
@@ -143,17 +143,17 @@ function districtPage(district, province) {
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>${esc(district.name)} District, ${esc(province.name)} — Population, Services &amp; Facts | Pakistan Atlas</title>
+  <title>${esc(district.name)} District, ${esc(province.name)} — Population, Services &amp; Facts | MyBook.Pk</title>
   <meta name="description" content="${esc(description)}" />
   <link rel="canonical" href="${SITE}/${route}" />
-  <meta property="og:title" content="${esc(district.name)} District, ${esc(province.name)} — Pakistan Atlas" />
+  <meta property="og:title" content="${esc(district.name)} District, ${esc(province.name)} — MyBook.Pk" />
   <meta property="og:description" content="${esc(description)}" />
   <meta property="og:type" content="place" />
   <meta property="og:url" content="${SITE}/${route}" />
   <meta property="og:image" content="${SITE}/images/flag-pakistan.svg" />
-  <meta property="og:site_name" content="Pakistan Atlas" />
+  <meta property="og:site_name" content="MyBook.Pk" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="${esc(district.name)} District — Pakistan Atlas" />
+  <meta name="twitter:title" content="${esc(district.name)} District — MyBook.Pk" />
   <meta name="twitter:description" content="${esc(description)}" />
   <meta name="twitter:image" content="${SITE}/images/flag-pakistan.svg" />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600&family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
@@ -188,9 +188,9 @@ function districtPage(district, province) {
 function upsertMetadata(fileName, html) {
   if (fileName === "province.html" || fileName === "district.html") return html;
   const canonical = `${SITE}/${fileName === "index.html" ? "" : fileName}`;
-  const title = (html.match(/<title>([^<]+)<\/title>/i) || [null, "Pakistan Atlas"])[1].trim();
+  const title = (html.match(/<title>([^<]+)<\/title>/i) || [null, "MyBook.Pk"])[1].trim();
   const h1 = (html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i) || [null, title])[1].replace(/<[^>]+>/g, "").trim();
-  const description = (html.match(/<meta\s+name="description"\s+content="([^"]*)"\s*\/?\s*>/i) || [null, `Learn about ${h1} with facts, places, history and public information from Pakistan Atlas.`])[1];
+  const description = (html.match(/<meta\s+name="description"\s+content="([^"]*)"\s*\/?\s*>/i) || [null, `Learn about ${h1} with facts, places, history and public information from MyBook.Pk.`])[1];
   let result = html;
   if (!/<meta\s+name="description"/i.test(result)) {
     result = result.replace(/<title>[^<]*<\/title>/i, `$&\n  <meta name="description" content="${esc(description)}" />`);
@@ -201,7 +201,7 @@ function upsertMetadata(fileName, html) {
     result = result.replace(/<meta\s+name="description"[^>]*>/i, `$&\n  <link rel="canonical" href="${canonical}" />`);
   }
   if (!/property="og:title"/i.test(result)) {
-    const social = `  <meta property="og:title" content="${esc(title)}" />\n  <meta property="og:description" content="${esc(description)}" />\n  <meta property="og:type" content="website" />\n  <meta property="og:url" content="${canonical}" />\n  <meta property="og:image" content="${SITE}/images/flag-pakistan.svg" />\n  <meta property="og:site_name" content="Pakistan Atlas" />\n  <meta name="twitter:card" content="summary" />\n  <meta name="twitter:title" content="${esc(title)}" />\n  <meta name="twitter:description" content="${esc(description)}" />\n  <meta name="twitter:image" content="${SITE}/images/flag-pakistan.svg" />`;
+    const social = `  <meta property="og:title" content="${esc(title)}" />\n  <meta property="og:description" content="${esc(description)}" />\n  <meta property="og:type" content="website" />\n  <meta property="og:url" content="${canonical}" />\n  <meta property="og:image" content="${SITE}/images/flag-pakistan.svg" />\n  <meta property="og:site_name" content="MyBook.Pk" />\n  <meta name="twitter:card" content="summary" />\n  <meta name="twitter:title" content="${esc(title)}" />\n  <meta name="twitter:description" content="${esc(description)}" />\n  <meta name="twitter:image" content="${SITE}/images/flag-pakistan.svg" />`;
     result = result.replace(/<link\s+rel="canonical"[^>]*>/i, `$&\n${social}`);
   }
   if (!/property="og:image"/i.test(result)) {
