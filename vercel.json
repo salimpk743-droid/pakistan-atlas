@@ -16,7 +16,7 @@
     { "source": "/rykhan.html", "destination": "/rahim-yar-khan.html", "permanent": true },
     { "source": "/nankana.html", "destination": "/nankana-sahib.html", "permanent": true },
     { "source": "/tts.html", "destination": "/toba-tek-singh.html", "permanent": true },
-    { "source": "/lakki.html", "destination": "/lakki-marwat.html", "permanent": true },
+    { "source": "/lakki.html", "destination": "/lakki-marwat.html", "permanent": true }
   ],
   "headers": [
     {
