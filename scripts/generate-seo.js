@@ -35,7 +35,18 @@ function formatNumber(value) {
   return value == null ? "Not stated" : Number(value).toLocaleString("en-PK");
 }
 
+const districtAliases = {
+  bajur: "bajaur.html",
+  dgkhan: "dera-ghazi-khan.html",
+  dikhan: "dera-ismail-khan.html",
+  rykhan: "rahim-yar-khan.html",
+  nankana: "nankana-sahib.html",
+  tts: "toba-tek-singh.html",
+  lakki: "lakki-marwat.html"
+};
+
 function districtHref(district) {
+  if (districtAliases[district.slug]) return districtAliases[district.slug];
   const candidate = `${district.slug}.html`;
   return fs.existsSync(path.join(ROOT, candidate)) ? candidate : `district.html?p=${district.provinceId}&d=${district.slug}`;
 }
