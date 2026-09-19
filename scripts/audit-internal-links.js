@@ -12,8 +12,6 @@ const redirectSources = new Set([
   "nankana.html",
   "tts.html",
   "lakki.html",
-  "swa-lower.html",
-  "swa-upper.html",
   "news.html"
 ]);
 const majorSections = [
