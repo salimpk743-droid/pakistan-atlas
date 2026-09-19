@@ -28,6 +28,9 @@ jobs:
       - name: Apply known SEO fixes
         run: node scripts/fix-known-seo.js
 
+      - name: Regenerate SEO pages and canonical district links
+        run: node scripts/generate-seo.js
+
       - name: Generate sitemap
         run: node scripts/generate-sitemap.js
 
