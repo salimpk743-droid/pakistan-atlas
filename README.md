@@ -1,4 +1,4 @@
-# Pakistan Atlas
+# MyBook.Pk
 
 A static educational website about Pakistan’s provinces, districts, culture, universities and hospitals. Built as plain HTML, CSS and JavaScript so you can host it free on **Vercel** from a **GitHub** repository.
 
@@ -48,7 +48,7 @@ pakistan-atlas/
 cd pakistan-atlas
 git init
 git add .
-git commit -m "First version of Pakistan Atlas"
+git commit -m "First version of MyBook.Pk"
 git branch -M main
 git remote add origin https://github.com/YOUR-USER/pakistan-atlas.git
 git push -u origin main
@@ -56,7 +56,7 @@ git push -u origin main
 
 4. Open [vercel.com](https://vercel.com) → Import Git Repository → select `pakistan-atlas`.
 5. Framework preset: **Other**. Output directory: leave empty. Click Deploy.
-6. You will get a URL like `pakistan-atlas.vercel.app`.
+6. You will get a URL like `mybook.pk`.
 
 ## Custom domain later
 
@@ -106,7 +106,7 @@ After adding or removing HTML district pages or changing the province data, run:
 node scripts/generate-seo.js
 ```
 
-The script regenerates the seven static province landing pages, adds consistent canonical and social metadata to HTML pages, updates legacy province links, and rebuilds `sitemap.xml` using `https://pakistan-atlas.vercel.app` as the canonical hostname. Islamabad remains a district page at `islamabad.html`; its territory landing page is `islamabad-capital-territory.html`.
+The script regenerates the seven static province landing pages, adds consistent canonical and social metadata to HTML pages, updates legacy province links, and rebuilds `sitemap.xml` using `https://mybook.pk` as the canonical hostname. Islamabad remains a district page at `islamabad.html`; its territory landing page is `islamabad-capital-territory.html`.
 
 ## Colours
 
