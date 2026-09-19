@@ -250,8 +250,6 @@ function generateSitemap() {
     "nankana.html",
     "tts.html",
     "lakki.html",
-    "swa-lower.html",
-    "swa-upper.html"
   ]);
   const urls = fs.readdirSync(ROOT)
     .filter((name) => name.endsWith(".html") && !excluded.has(name))
