@@ -11,7 +11,7 @@ const NAV = [
   ["about.html", "About"]
 ];
 
-const SITE = "https://pakistan-atlas.vercel.app";
+const SITE = "https://mybook.pk";
 
 function currentPage() {
   const p = location.pathname.split("/").pop() || "index.html";
@@ -57,7 +57,7 @@ function enhanceHead() {
     schema.textContent = JSON.stringify({
       "@context": "https://schema.org",
       "@type": "WebSite",
-      name: "Pakistan Atlas",
+      name: "MyBook.Pk",
       url: SITE + "/",
       inLanguage: ["en", "ur"],
       potentialAction: {
@@ -165,7 +165,7 @@ function renderChrome() {
         <div class="container nav-wrap">
           <a class="logo" href="index.html">
             <div class="logo-mark">★</div>
-            <div>Pakistan Atlas<small>Every province · every district</small></div>
+            <div>MyBook.Pk<small>Every province · every district</small></div>
           </a>
           <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
           <nav id="mainNav" aria-label="Main">
@@ -187,7 +187,7 @@ function renderChrome() {
       <footer>
         <div class="container foot-grid">
           <div>
-            <strong>Pakistan Atlas</strong>
+            <strong>MyBook.Pk</strong>
             <p>A student-friendly guide to Pakistan’s provinces, districts, culture, literature, geography, sports and history. Figures follow public sources and should be checked against the Pakistan Bureau of Statistics.</p>
           </div>
           <div>
@@ -204,7 +204,7 @@ function renderChrome() {
           </div>
         </div>
         <div class="container foot-bottom">
-          <span>© ${new Date().getFullYear()} Pakistan Atlas · Built for young readers</span>
+          <span>© ${new Date().getFullYear()} MyBook.Pk · Built for young readers</span>
           <span><a href="index.html">Home</a></span>
         </div>
       </footer>`;
