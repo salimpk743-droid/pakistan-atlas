@@ -37,13 +37,13 @@ function getAttr(tag, name) {
 }
 
 function getCanonical(html) {
-  const tag = getTag(html, "link", (value) => /\\brel\\s*=\\s*["']canonical["']/i.test(value));
+  const tag = getTag(html, "link", (value) => /\brel\s*=\\s*["']canonical["']/i.test(value));
   return getAttr(tag, "href");
 }
 
 function hasNoindex(html) {
   const tags = html.match(/<meta\\b[^>]*>/gi) || [];
-  return tags.some((tag) => /\\bname\\s*=\\s*["']robots["']/i.test(tag) && /\\bcontent\\s*=\\s*["'][^"']*noindex/i.test(tag));
+  return tags.some((tag) => /\bname\s*=\\s*["']robots["']/i.test(tag) && /\bcontent\s*=\\s*["'][^"']*noindex/i.test(tag));
 }
 
 function getLastModified(name) {
