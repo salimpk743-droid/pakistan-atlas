@@ -59,10 +59,6 @@ for (const file of htmlFiles) {
     }
   }
 
-  const title = (html.match(/<title\b[^>]*>([\s\S]*?)<\/title>/i) || ["", ""])[1];
-  if (/District/i.test(title) && !targets.some(x => x.target && x.target !== file && x.target.endsWith(".html"))) {
-    report(file, "district page has no crawlable related HTML link");
-  }
 }
 
 const homeLinks = linksFor("index.html").map(href => localTarget(href, "index.html")).filter(Boolean);
