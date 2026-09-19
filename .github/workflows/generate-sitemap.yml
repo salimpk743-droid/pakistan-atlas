@@ -15,6 +15,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Rebrand site text and canonical host
+        run: |
+          find . -type f \( -name "*.html" -o -name "*.js" -o -name "*.xml" -o -name "*.txt" -o -name "*.md" -o -name "*.json" \) -not -path "./.git/*" -print0 | xargs -0 sed -i -e "s/Pakistan Atlas/MyBook.Pk/g" -e "s/pakistan-atlas.vercel.app/mybook.pk/g"
+
       - name: Fix homepage Current News and Culture cards
         run: node scripts/fix-home-navigation.js
 
@@ -31,7 +35,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add index.html sitemap.xml culture.html latest-news.html js/app.js current-affairs.html haveli.html islamabad.html sudhanoti.html politics.html scripts/fix-home-navigation.js scripts/fix-known-seo.js scripts/generate-sitemap.js scripts/migrate-news-culture.js
+          git add .
           if git diff --cached --quiet; then
             echo "SEO files and sitemap are already up to date."
           else
