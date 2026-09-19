@@ -22,8 +22,6 @@ const excluded = new Set([
   "nankana.html",
   "tts.html",
   "lakki.html",
-  "swa-lower.html",
-  "swa-upper.html"
 ]);
 
 function getTag(html, tagName, predicate) {
