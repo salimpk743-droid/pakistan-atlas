@@ -4,7 +4,7 @@ Use this if you want another platform to extend the site. Keep the existing file
 
 ---
 
-Build and improve a static educational website called **Pakistan Atlas**.
+Build and improve a static educational website called **MyBook.Pk**.
 
 Purpose: authentic, calm, student-friendly knowledge about Pakistan so young people can learn every province and district. The site should also be ready for Google AdSense later (original articles, Privacy, About, Contact, Disclaimer, ads.txt).
 

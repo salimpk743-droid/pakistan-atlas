@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="theme-color" content="#01411c" />
-  <title>Province — Pakistan Atlas</title>
+  <title>Province — MyBook.Pk</title>
   <meta name="description" content="Explore districts, capitals, population and local information for Pakistan's provinces and territories." />
   <meta name="robots" content="noindex,follow" />
-  <link rel="canonical" href="https://pakistan-atlas.vercel.app/province.html" />
+  <link rel="canonical" href="https://mybook.pk/province.html" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -81,7 +81,7 @@
     fetch("data/districts.json").then(r => r.json()).then(db => {
       const p = db[id];
       if (!p) { document.getElementById("title").textContent = "Not found"; return; }
-      document.title = p.name + " districts — Pakistan Atlas";
+      document.title = p.name + " districts — MyBook.Pk";
       document.getElementById("title").innerHTML = p.name + ' <span class="urdu">' + p.urdu + "</span>";
       document.getElementById("intro").textContent = p.intro + " Capital: " + p.capital + ".";
       document.getElementById("crumb").innerHTML = '<a href="index.html" style="color:#fff">Home</a> · ' + p.districts.length + " districts";

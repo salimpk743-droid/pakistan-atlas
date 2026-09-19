@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 
 const ROOT = path.resolve(__dirname, "..");
-const SITE = "https://pakistan-atlas.vercel.app";
+const SITE = "https://mybook.pk";
 const sitemap = fs.readFileSync(path.join(ROOT, "sitemap.xml"), "utf8");
 const htmlFiles = new Set(fs.readdirSync(ROOT).filter((name) => name.endsWith(".html")));
 const errors = [];
