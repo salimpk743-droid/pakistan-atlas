@@ -4,75 +4,396 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#01411c">
-  <title>Pakistan Culture &amp; Society | Traditions, Food, Music &amp; Heritage</title>
-  <meta name="description" content="Explore Pakistan's cultures, languages, traditions, food, music, clothing, crafts, festivals, architecture and heritage across the country.">
-  <link rel="canonical" href="https://mybook.pk/culture.html" />
+  <title>Pakistan Culture | Provinces, Languages, Food, Music, Festivals &amp; Heritage</title>
+  <meta name="description" content="Detailed guide to Pakistan culture in English and Urdu: regional traditions of Punjab, Sindh, Khyber Pakhtunkhwa, Balochistan, Gilgit-Baltistan, Azad Jammu and Kashmir and Islamabad, plus languages, literature, food, dress, music, crafts, festivals and heritage.">
+  <link rel="canonical" href="https://mybook.pk/culture.html">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <meta property="og:title" content="Pakistan Culture &amp; Society | MyBook.Pk">
-  <meta property="og:description" content="A national cultural archive exploring the people, traditions, languages, arts, food, music and heritage of Pakistan.">
-  <meta property="og:type" content="website">
+  <meta property="og:title" content="Pakistan Culture | Provinces, Languages, Food, Music, Festivals &amp; Heritage">
+  <meta property="og:description" content="A detailed English and Urdu cultural guide to Pakistan's regions, languages, traditions, food, dress, music, crafts, festivals and heritage.">
+  <meta property="og:type" content="article">
   <meta property="og:url" content="https://mybook.pk/culture.html">
-  <meta property="og:image" content="https://mybook.pk/images/flag-pakistan.svg" />
   <meta property="og:site_name" content="MyBook.Pk">
   <meta property="og:locale" content="en_PK">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Pakistan Culture &amp; Society | MyBook.Pk">
-  <meta name="twitter:description" content="Explore Pakistan's cultures, languages, traditions, arts, food, music and heritage.">
-  <meta name="twitter:image" content="https://mybook.pk/images/flag-pakistan.svg" />
-  <link rel="stylesheet" href="css/style.css?v=7">
+  <meta property="og:locale:alternate" content="ur_PK">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Pakistan Culture | MyBook.Pk">
+  <meta name="twitter:description" content="Explore Pakistan's regional cultures, languages, cuisine, music, crafts, festivals and heritage in English and Urdu.">
+  <link rel="stylesheet" href="css/style.css?v=8">
+  <style>
+    .culture-hero{position:relative;overflow:hidden;background:
+      radial-gradient(circle at 85% 15%,rgba(201,162,39,.24),transparent 28%),
+      radial-gradient(circle at 12% 88%,rgba(255,255,255,.1),transparent 30%),
+      linear-gradient(135deg,#01411c 0%,#046a2e 55%,#0c7b39 100%);color:#fff}
+    .culture-hero .container{padding:4.4rem 0 3.6rem;position:relative}
+    .culture-kicker{display:inline-block;border:1px solid rgba(255,255,255,.35);padding:.28rem .72rem;border-radius:999px;font-size:.82rem;letter-spacing:.04em;margin-bottom:1rem;background:rgba(255,255,255,.06)}
+    .culture-hero h1{font-family:"Playfair Display",serif;font-size:clamp(2.2rem,5vw,4rem);line-height:1.08;max-width:900px}
+    .culture-hero .lead{font-size:clamp(1.05rem,2vw,1.25rem);max-width:860px;margin-top:1rem;opacity:.96}
+    .culture-jump{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:1.5rem}
+    .culture-jump a{background:#fff;color:var(--green);border-radius:999px;padding:.58rem .85rem;font-weight:700;font-size:.9rem}
+    .culture-statbar{margin-top:-1.3rem;position:relative;z-index:2}
+    .culture-statgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+    .culture-stat{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);padding:1rem 1.1rem}
+    .culture-stat strong{display:block;color:var(--green);font-family:"Playfair Display",serif;font-size:1.3rem}
+    .culture-stat span{color:var(--muted);font-size:.88rem}
+    .culture-layout{display:grid;grid-template-columns:minmax(0,1fr) 290px;gap:1.25rem;align-items:start}
+    .culture-toc{position:sticky;top:86px;background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);padding:1rem}
+    .culture-toc h3{margin-bottom:.55rem}
+    .culture-toc a{display:block;padding:.42rem .5rem;border-radius:8px;color:var(--ink);font-size:.92rem}
+    .culture-toc a:hover{background:var(--green-light);color:var(--green)}
+    .culture-note{background:#f3faf5;border:1px solid #dcecdf;border-left:4px solid var(--green);padding:1rem 1.1rem;border-radius:12px;margin:1rem 0 1.4rem}
+    .culture-section{margin:0 0 2.5rem}
+    .culture-section>h2{font-size:clamp(1.55rem,2.5vw,2.1rem);margin-bottom:.35rem}
+    .culture-section>h2 span{font-family:"Noto Nastaliq Urdu",serif;font-size:.78em;font-weight:600;display:block;color:#5e6b61;margin-top:.15rem}
+    .culture-section .intro{color:var(--muted)}
+    .culture-two{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+    .culture-panel{background:#fff;border:1px solid #edf1ee;border-radius:16px;padding:1.2rem;box-shadow:0 6px 22px rgba(1,65,28,.05)}
+    .culture-panel h3{font-family:"Playfair Display",serif;color:var(--green);margin-bottom:.4rem}
+    .culture-panel p{margin-bottom:.7rem}
+    .culture-panel ul{padding-left:1.1rem}
+    .culture-panel.urdu{font-family:"Noto Nastaliq Urdu",serif;line-height:2.2;text-align:right}
+    .culture-panel.urdu h3{font-family:"Noto Nastaliq Urdu",serif}
+    .region-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
+    .region-card{background:linear-gradient(180deg,#fff,#fbfdfb);border:1px solid #e6eee8;border-radius:18px;padding:1.25rem;box-shadow:0 8px 26px rgba(1,65,28,.06)}
+    .region-card .region-head{display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;margin-bottom:.65rem}
+    .region-card h3{font-family:"Playfair Display",serif;color:var(--green);font-size:1.35rem}
+    .region-card .region-urdu{font-family:"Noto Nastaliq Urdu",serif;color:#6b776d;white-space:nowrap}
+    .region-card .tagline{color:var(--muted);font-size:.94rem;margin-bottom:.75rem}
+    .region-card .detail{margin-bottom:.75rem}
+    .region-card .detail strong{color:var(--green)}
+    .region-card .urdu-copy{font-family:"Noto Nastaliq Urdu",serif;direction:rtl;text-align:right;line-height:2.15;color:#39443d;background:#f8fbf8;border-radius:12px;padding:.75rem .85rem;margin-top:.75rem}
+    .culture-links{display:flex;flex-wrap:wrap;gap:.55rem}
+    .culture-links a{background:var(--green-light);padding:.48rem .72rem;border-radius:999px;font-weight:700;font-size:.84rem}
+    .culture-table{font-size:.95rem}
+    .culture-table td:first-child{font-weight:700;color:var(--green);white-space:nowrap}
+    .culture-sources{font-size:.9rem;color:var(--muted)}
+    .culture-sources a{text-decoration:underline;text-underline-offset:2px}
+    @media(max-width:900px){
+      .culture-layout{grid-template-columns:1fr}
+      .culture-toc{position:static}
+      .culture-statgrid,.region-grid{grid-template-columns:1fr 1fr}
+    }
+    @media(max-width:600px){
+      .culture-hero .container{padding:3rem 0 2.6rem}
+      .culture-statgrid,.culture-two,.region-grid{grid-template-columns:1fr}
+      .culture-statbar{margin-top:0}
+      .culture-jump a{font-size:.82rem}
+    }
+  </style>
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"CollectionPage","name":"Pakistan Culture & Society","url":"https://mybook.pk/culture.html","description":"A national cultural archive exploring Pakistan's people, traditions, languages, arts, food, music and heritage.","isPartOf":{"@type":"WebSite","name":"MyBook.Pk","url":"https://mybook.pk/"},"inLanguage":["en","ur"]}
+  {
+    "@context":"https://schema.org",
+    "@type":"Article",
+    "headline":"Pakistan Culture: Provinces, Languages, Food, Music, Festivals and Heritage",
+    "description":"Detailed English and Urdu cultural guide to Pakistan and its regions.",
+    "mainEntityOfPage":{"@type":"WebPage","@id":"https://mybook.pk/culture.html"},
+    "inLanguage":["en","ur"],
+    "isPartOf":{"@type":"WebSite","name":"MyBook.Pk","url":"https://mybook.pk/"},
+    "about":{"@type":"Country","name":"Pakistan"}
+  }
   </script>
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://mybook.pk/"},{"@type":"ListItem","position":2,"name":"Culture","item":"https://mybook.pk/culture.html"}]}
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://mybook.pk/"},
+    {"@type":"ListItem","position":2,"name":"Culture","item":"https://mybook.pk/culture.html"}]}
   </script>
 </head>
 <body>
   <div id="site-header"></div>
   <main id="main-content">
-    <section class="page-hero">
+    <header class="culture-hero">
       <div class="container">
-        <p class="eyebrow">MyBook.Pk · Culture</p>
-        <h1>Pakistan Culture &amp; Society</h1>
-        <p>Pakistan's cultural life reflects many regional traditions, languages, crafts, foods, musical forms, festivals and styles of dress. This archive introduces those traditions while recognising the diversity within and between regions.</p>
+        <div class="culture-kicker">MyBook.Pk · Pakistan Culture &amp; Society</div>
+        <h1>Pakistan Culture: A Detailed Guide to the Traditions, People &amp; Heritage of Every Region</h1>
+        <p class="lead">Pakistan's cultural identity is not a single tradition. It is a living mosaic shaped by the Indus Valley, Gandhara, Persianate and Central Asian exchanges, Islamic scholarship, mountain communities, desert life, river plains, coastal towns and generations of local craftsmanship.</p>
+        <div class="culture-jump" aria-label="Culture page sections">
+          <a href="#regional-cultures">Regional cultures</a>
+          <a href="#languages">Languages &amp; literature</a>
+          <a href="#food">Food &amp; hospitality</a>
+          <a href="#dress">Dress &amp; textiles</a>
+          <a href="#music">Music &amp; performance</a>
+          <a href="#crafts">Crafts &amp; arts</a>
+          <a href="#festivals">Festivals &amp; traditions</a>
+          <a href="#heritage">Heritage &amp; architecture</a>
+          <a href="#urdu">اردو میں مکمل تعارف</a>
+        </div>
       </div>
-    </section>
+    </header>
+
+    <div class="culture-statbar">
+      <div class="container culture-statgrid">
+        <div class="culture-stat"><strong>7 regions</strong><span>Provinces and administrative territories covered</span></div>
+        <div class="culture-stat"><strong>Many languages</strong><span>Urdu plus major regional and community languages</span></div>
+        <div class="culture-stat"><strong>Living heritage</strong><span>Music, crafts, oral traditions, foodways and festivals</span></div>
+        <div class="culture-stat"><strong>UNESCO heritage</strong><span>6 World Heritage properties in Pakistan</span></div>
+      </div>
+    </div>
 
     <section>
-      <div class="container prose">
-        <figure class="culture-feature" style="margin:0 0 2rem;">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Truck_Art_of_Pakistan.jpg/1280px-Truck_Art_of_Pakistan.jpg" alt="Pakistani truck art, a vibrant tradition of Pakistani visual culture" width="1280" height="853" loading="eager" style="display:block;width:100%;height:auto;max-height:520px;object-fit:cover;">
-          <figcaption style="font-size:.82rem;margin-top:.45rem;">
-            Photo: <a href="https://commons.wikimedia.org/wiki/File:Truck_Art_of_Pakistan.jpg" rel="noopener noreferrer">Baharwassan / Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="noopener noreferrer">CC BY-SA 4.0</a>.
-          </figcaption>
-        </figure>
+      <div class="container culture-layout">
+        <article class="prose">
+          <div class="culture-note"><strong>How to use this guide:</strong> Start with the regional sections for a province-by-province cultural picture, then explore the themes below. Descriptions are written as a general educational overview; traditions can differ between districts, communities, families and generations.</div>
 
-        <h2>Regional cultures</h2>
-        <div class="archive-grid">
-          <article class="archive-card"><h3>Punjab</h3><p>Punjabi language, poetry, folk music, farming traditions, embroidery, food and seasonal celebrations are important parts of Punjab's cultural landscape.</p></article>
-          <article class="archive-card"><h3>Sindh</h3><p>Sindhi traditions include ajrak and Sindhi topi, regional music, handicrafts, Sufi heritage and distinctive foods and festivals.</p></article>
-          <article class="archive-card"><h3>Khyber Pakhtunkhwa</h3><p>Pashto language and poetry, traditional music, hospitality, embroidery, crafts and regional cuisine form part of the province's diverse cultural heritage.</p></article>
-          <article class="archive-card"><h3>Balochistan</h3><p>Balochi and Brahui traditions include distinctive embroidery, textiles, folk music, oral poetry, cuisine and community customs.</p></article>
-          <article class="archive-card"><h3>Gilgit-Baltistan</h3><p>Mountain communities maintain languages, music, crafts, foodways and festivals shaped by the high-altitude environment and long regional histories.</p></article>
-          <article class="archive-card"><h3>Azad Jammu &amp; Kashmir</h3><p>Kashmiri, Pahari and related traditions include regional languages, embroidery, music, cuisine, woodwork and celebrations.</p></article>
-          <article class="archive-card"><h3>Islamabad Capital Territory</h3><p>Islamabad brings together people and traditions from across Pakistan, alongside its own modern civic, artistic and educational life.</p></article>
-        </div>
+          <section class="culture-section">
+            <h2>What is Pakistani culture? <span lang="ur" dir="rtl">پاکستانی ثقافت کیا ہے؟</span></h2>
+            <p class="intro">Pakistani culture is the everyday life and inherited knowledge of communities living across a geographically diverse country. Its visible forms include languages, clothing, food, architecture, music, poetry, crafts and celebrations; less visible traditions include hospitality, family customs, oral history, local etiquette, religious practices and ways of adapting to the environment.</p>
+            <p>From the wheat and rice plains of Punjab and the Indus landscapes of Sindh to the mountain valleys of Khyber Pakhtunkhwa and Gilgit-Baltistan, the dry plateaus and Makran coast of Balochistan, the valleys of Azad Jammu and Kashmir and the planned capital of Islamabad, local cultures respond to place. A cultural overview is therefore strongest when it recognises both the shared national story and regional difference. UNESCO's reporting on Pakistan also describes the country's heritage as including practices, expressions, knowledge and skills, oral traditions, performing arts, social practices and festivals. citeturn564324search1turn564324search2</p>
+          </section>
 
-        <h2>Languages and literature</h2>
-        <p>Urdu serves as a major national language, while Punjabi, Sindhi, Pashto, Balochi, Saraiki, Hindko, Brahui, Kashmiri, Shina, Balti, Burushaski and many other languages are spoken across Pakistan. Poetry, storytelling and oral traditions remain important ways communities preserve memory and identity.</p>
+          <section class="culture-section" id="regional-cultures">
+            <h2>Regional cultures of Pakistan <span lang="ur" dir="rtl">پاکستان کے علاقائی ثقافتی رنگ</span></h2>
+            <p class="intro">The following sections give a fuller, practical introduction to the cultural character of the seven regions represented across this site.</p>
+            <div class="region-grid">
 
-        <h2>Food and hospitality</h2>
-        <p>Pakistani cuisine varies widely by region. Biryani and nihari, Punjabi saag and makki di roti, Sindhi dishes, Balochi sajji, Pashtun meat dishes, Kashmiri preparations and the foods of Gilgit-Baltistan illustrate only part of the country's culinary diversity.</p>
+              <article class="region-card" id="punjab">
+                <div class="region-head"><div><h3>Punjab</h3><div class="region-urdu">پنجاب</div></div><span class="badge">River plains · Sufi traditions</span></div>
+                <p class="tagline">A region of Punjabi and Saraiki traditions, agriculture, Sufi poetry, folk storytelling, powerful food cultures and historic urban centres.</p>
+                <p class="detail"><strong>Languages &amp; literature:</strong> Punjabi is central to the region's cultural identity, alongside Saraiki in southern areas and Urdu as a major shared language. Punjabi poetry and qissa traditions, including stories associated with Heer-Ranjha, remain part of the wider literary imagination.</p>
+                <p class="detail"><strong>Music &amp; performance:</strong> Bhangra, dhol-based folk performance, qawwali and Sufi musical traditions are widely associated with Punjab. Weddings often bring together drumming, songs and dances with local variation.</p>
+                <p class="detail"><strong>Food &amp; crafts:</strong> Saag with makki di roti, lassi, tandoori breads, kebabs and many regional sweets are familiar Punjabi foods. Phulkari-inspired embroidery, pottery, woodwork, metalwork and Chiniot furniture are examples of crafts associated with parts of Punjab.</p>
+                <p class="detail"><strong>Heritage:</strong> Lahore, Multan, Taxila and the Potohar region show different layers of Punjab's history. UNESCO lists Taxila and the Fort and Shalamar Gardens in Lahore among Pakistan's World Heritage properties. citeturn564324search0turn564324search5</p>
+                <div class="urdu-copy" lang="ur">پنجاب کی ثقافت پنجابی اور سرائیکی زبانوں، صوفی شاعری، لوک داستانوں، زرعی زندگی، موسیقی، دستکاری اور متنوع کھانوں سے عبارت ہے۔ لاہور، ملتان اور ٹیکسلا جیسے مراکز اس خطے کی مختلف تاریخی پرتوں کو ظاہر کرتے ہیں۔</div>
+              </article>
 
-        <h2>Arts, crafts and living heritage</h2>
-        <p>Truck art, ajrak block printing, embroidery, pottery, woodwork, weaving, calligraphy and regional musical traditions are examples of creative practices that connect contemporary life with older forms of craftsmanship.</p>
+              <article class="region-card" id="sindh">
+                <div class="region-head"><div><h3>Sindh</h3><div class="region-urdu">سندھ</div></div><span class="badge">Indus · Sufi · Ajrak</span></div>
+                <p class="tagline">A culture shaped by the Indus, Sindhi language and poetry, Sufi traditions, ajrak, regional embroidery and a long urban and mercantile history.</p>
+                <p class="detail"><strong>Languages &amp; literature:</strong> Sindhi is an important literary language with a deep poetic tradition. Shah Abdul Latif Bhittai is one of the best-known figures in Sindhi literature and Sufi thought.</p>
+                <p class="detail"><strong>Dress &amp; textiles:</strong> Ajrak block printing and the Sindhi topi are widely recognised cultural symbols. Textile work and embroidery vary considerably between districts and communities.</p>
+                <p class="detail"><strong>Food &amp; music:</strong> Sindhi cuisine includes rice dishes, fish and river or coastal foods, saiyun and a wide range of vegetable, lentil and meat preparations. Folk music commonly features instruments such as the yaktaro and alghoza in regional settings.</p>
+                <p class="detail"><strong>Heritage:</strong> Mohenjo-daro, Thatta and Makli connect contemporary Sindh to ancient and medieval history. UNESCO describes Makli's necropolis as a major record of Sindh's civilisation from the 14th to 18th centuries, while Mohenjo-daro represents a major urban centre of the Indus civilisation. citeturn564324search8turn564324search10</p>
+                <div class="urdu-copy" lang="ur">سندھ کی تہذیبی شناخت دریائے سندھ، سندھی زبان و ادب، صوفی روایت، اجرک، سندھی ٹوپی، لوک موسیقی اور دستکاری سے جڑی ہوئی ہے۔ موئن جو دڑو، ٹھٹہ اور مکلی اس خطے کے قدیم اور تاریخی ورثے کی اہم مثالیں ہیں۔</div>
+              </article>
 
-        <div class="urdu" lang="ur" dir="rtl">
-          <h2>پاکستان کی ثقافت</h2>
-          <p>پاکستان کی ثقافت مختلف علاقوں کی زبانوں، روایات، لباس، کھانوں، موسیقی، دستکاری، تہواروں اور تاریخی ورثے کا مجموعہ ہے۔ پنجاب، سندھ، خیبر پختونخوا، بلوچستان، گلگت بلتستان، آزاد جموں و کشمیر اور اسلام آباد کی ثقافتی زندگی میں اپنی اپنی نمایاں خصوصیات پائی جاتی ہیں۔</p>
-        </div>
+              <article class="region-card" id="kpk">
+                <div class="region-head"><div><h3>Khyber Pakhtunkhwa</h3><div class="region-urdu">خیبر پختونخوا</div></div><span class="badge">Pashto · mountains · hospitality</span></div>
+                <p class="tagline">A culturally diverse mountainous region where Pashto traditions meet Hindko, Kohistani, Chitrali and other local languages and lifeways.</p>
+                <p class="detail"><strong>Languages &amp; poetry:</strong> Pashto has a strong oral and literary tradition. Poetry, storytelling and local proverbs carry social memory across generations, while other northern and central communities maintain their own languages.</p>
+                <p class="detail"><strong>Music &amp; dance:</strong> Rabab and mangey are associated with Pashtun musical traditions, while attan is a well-known group dance with many regional styles. Chitrali and northern areas have distinct musical traditions as well.</p>
+                <p class="detail"><strong>Food &amp; hospitality:</strong> Kabuli-style rice dishes, chapli kebab, tikka, rosh and breads are among the foods often associated with KP, though cuisine differs widely across valleys and districts. Hospitality is an important social value in many communities.</p>
+                <p class="detail"><strong>Heritage:</strong> The province includes major Buddhist and Gandharan archaeological landscapes, including Takht-i-Bahi and the neighbouring remains at Sahr-i-Bahlol, a UNESCO World Heritage property. citeturn564324search0</p>
+                <div class="urdu-copy" lang="ur">خیبر پختونخوا میں پشتو شاعری، لوک داستان، رباب کی موسیقی، اتن، مہمان نوازی اور پہاڑی طرزِ زندگی نمایاں ہیں۔ چترال، ہزارہ، کوہستان اور دیگر علاقوں میں الگ الگ زبانیں اور ثقافتی روایات بھی پائی جاتی ہیں۔</div>
+              </article>
 
-        <p><strong>Image note:</strong> The featured truck-art photograph is by Baharwassan and is published on Wikimedia Commons under the Creative Commons Attribution-ShareAlike 4.0 International licence. The image is used with attribution and the licence link above.</p>
+              <article class="region-card" id="balochistan">
+                <div class="region-head"><div><h3>Balochistan</h3><div class="region-urdu">بلوچستان</div></div><span class="badge">Balochi · Brahui · Makran</span></div>
+                <p class="tagline">Pakistan's largest province by area, with Baloch, Brahui and Pashtun communities, desert and plateau landscapes, and a long relationship with the Arabian Sea.</p>
+                <p class="detail"><strong>Languages &amp; oral tradition:</strong> Balochi and Brahui are important cultural languages, with Pashto also prominent in the north. Oral poetry, genealogy, storytelling and music play a significant role in cultural transmission.</p>
+                <p class="detail"><strong>Dress &amp; crafts:</strong> Balochi embroidery is especially recognised for detailed patterns and colourful thread work. Textile traditions, mirror work and jewellery also vary by community and area.</p>
+                <p class="detail"><strong>Food &amp; music:</strong> Sajji is one of the best-known foods associated with Balochistan, alongside rice dishes, breads and pastoral or coastal foods. Sorud-type bowed instruments and dambura traditions appear in Balochi musical settings.</p>
+                <p class="detail"><strong>Regional identity:</strong> Quetta, Ziarat, Khuzdar, Turbat and Gwadar reflect very different ecological and cultural settings. The Makran coast, inland plateaus and juniper landscapes each contribute to the province's cultural geography.</p>
+                <div class="urdu-copy" lang="ur">بلوچستان میں بلوچی، براہوی اور پشتون ثقافتیں اپنے مخصوص لباس، کشیدہ کاری، لوک شاعری، موسیقی، قبائلی و برادری روایات اور ساحلی و صحرائی ماحول کے ساتھ نمایاں ہیں۔ سجی، روایتی دستکاری اور مکران کے ساحلی علاقے اس ثقافتی تنوع کی اہم مثالیں ہیں۔</div>
+              </article>
+
+              <article class="region-card" id="gb">
+                <div class="region-head"><div><h3>Gilgit-Baltistan</h3><div class="region-urdu">گلگت بلتستان</div></div><span class="badge">High mountains · polo · apricots</span></div>
+                <p class="tagline">High-altitude cultures of the Karakoram, Himalaya and Hindu Kush, with Shina, Balti, Burushaski, Wakhi and other linguistic communities.</p>
+                <p class="detail"><strong>Languages:</strong> The region's linguistic diversity is central to its cultural identity. Shina, Balti, Burushaski and Wakhi communities maintain distinctive oral traditions and local knowledge.</p>
+                <p class="detail"><strong>Food &amp; agriculture:</strong> Apricots, dried fruits, breads, soups, noodles and locally adapted mountain foods are part of everyday life. Terraced farming and orchard systems shape landscapes and seasonal rhythms.</p>
+                <p class="detail"><strong>Music, games &amp; celebrations:</strong> Polo has a strong place in northern cultural life, while local drums, flute traditions and community festivals vary by valley. Shandur polo is one of the better-known public celebrations linked with the region.</p>
+                <p class="detail"><strong>Architecture &amp; heritage:</strong> Forts and historic settlements in places such as Baltit, Altit and Shigar demonstrate how architecture adapted to mountain environments.</p>
+                <div class="urdu-copy" lang="ur">گلگت بلتستان کی ثقافت بلند پہاڑوں، وادیوں، باغات، مقامی زبانوں اور روایتی کھیلوں سے تشکیل پاتی ہے۔ شینا، بلتی، بروشسکی اور وخی زبانیں، پولو، خوبانی کے باغات اور قدیم قلعے اس خطے کی نمایاں شناخت ہیں۔</div>
+              </article>
+
+              <article class="region-card" id="ajk">
+                <div class="region-head"><div><h3>Azad Jammu and Kashmir</h3><div class="region-urdu">آزاد جموں و کشمیر</div></div><span class="badge">Kashmiri · Pahari · mountain valleys</span></div>
+                <p class="tagline">A landscape of valleys, rivers, forests and mountain settlements with Kashmiri, Pahari, Gojri and related cultural traditions.</p>
+                <p class="detail"><strong>Languages &amp; identity:</strong> Kashmiri, Pahari and Gojri are among the languages heard across different communities. Oral storytelling, regional poetry and family traditions remain important cultural channels.</p>
+                <p class="detail"><strong>Crafts &amp; dress:</strong> Woollens, embroidery, shawls, woodwork and mountain handicrafts reflect local materials and climate. Clothing styles vary between valley communities.</p>
+                <p class="detail"><strong>Food &amp; hospitality:</strong> Rice, meat dishes, breads, dairy products and seasonal vegetables form part of local foodways, with household recipes changing from valley to valley.</p>
+                <p class="detail"><strong>Architecture:</strong> Traditional timber work and sloped-roof mountain homes are among the visual elements associated with older settlements, alongside newer urban construction.</p>
+                <div class="urdu-copy" lang="ur">آزاد جموں و کشمیر کی ثقافت کشمیری، پہاڑی اور گوجری زبانوں، پہاڑی وادیوں، لکڑی کے کام، کشیدہ کاری، مقامی کھانوں اور روایتی خاندانی رسم و رواج سے جڑی ہوئی ہے۔</div>
+              </article>
+
+              <article class="region-card" id="islamabad">
+                <div class="region-head"><div><h3>Islamabad Capital Territory</h3><div class="region-urdu">اسلام آباد</div></div><span class="badge">Capital · contemporary Pakistan</span></div>
+                <p class="tagline">A planned capital whose contemporary culture brings together people, foods, languages, arts and institutions from across Pakistan.</p>
+                <p class="detail"><strong>Urban culture:</strong> Islamabad combines a planned modern cityscape with older villages and cultural sites around the Margalla Hills. It hosts universities, museums, embassies, national institutions and a large student population.</p>
+                <p class="detail"><strong>Heritage &amp; public spaces:</strong> Faisal Mosque, Saidpur, Lok Virsa and the wider Margalla landscape are important parts of the city's cultural life, while events and food districts bring regional traditions together.</p>
+                <p class="detail"><strong>Everyday diversity:</strong> Because residents come from all parts of Pakistan, the capital is a practical meeting place for Punjabi, Sindhi, Pashtun, Baloch, Kashmiri, Gilgiti-Baltistani and other food and cultural traditions.</p>
+                <div class="urdu-copy" lang="ur">اسلام آباد ایک منصوبہ بند دارالحکومت ہونے کے ساتھ ساتھ پورے پاکستان کی ثقافتوں کا امتزاج بھی ہے۔ یہاں مختلف صوبوں سے آنے والے لوگ، جامعات، عجائب گھر، لوک ورثہ، فیصل مسجد، سیدپور اور مارگلہ کی پہاڑیاں شہر کی ثقافتی شناخت تشکیل دیتے ہیں۔</div>
+              </article>
+
+            </div>
+          </section>
+
+          <section class="culture-section" id="languages">
+            <h2>Languages, literature and oral traditions <span lang="ur" dir="rtl">زبانیں، ادب اور زبانی روایات</span></h2>
+            <div class="culture-two">
+              <div class="culture-panel">
+                <h3>Pakistan's language landscape</h3>
+                <p>Urdu functions as a major national lingua franca and English is widely used in education, administration and professional life. Regional languages such as Punjabi, Sindhi, Pashto, Balochi, Saraiki, Hindko, Brahui, Kashmiri, Shina, Balti, Burushaski, Wakhi and Gojri add depth to the national linguistic landscape.</p>
+                <p>PBS's 2023 national census report records Punjabi as the largest reported mother tongue category, followed by Pashto, Sindhi, Saraiki, Urdu and Balochi, illustrating the scale of linguistic diversity in contemporary Pakistan. citeturn564324search47</p>
+              </div>
+              <div class="culture-panel urdu" lang="ur" dir="rtl">
+                <h3>پاکستان کی لسانی دنیا</h3>
+                <p>اردو پاکستان میں ایک اہم قومی رابطے کی زبان ہے جبکہ انگریزی تعلیم، انتظامیہ اور پیشہ ورانہ شعبوں میں وسیع پیمانے پر استعمال ہوتی ہے۔ پنجابی، سندھی، پشتو، بلوچی، سرائیکی، ہندکو، براہوی، کشمیری، شینا، بلتی، بروشسکی، وخی اور گوجری سمیت متعدد زبانیں ملک کی لسانی رنگا رنگی کو ظاہر کرتی ہیں۔</p>
+                <p>ادب میں شاعری، قصہ گوئی، صوفی روایت، لوک گیت اور زبانی تاریخ اہم کردار ادا کرتے ہیں۔</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="culture-section" id="food">
+            <h2>Pakistani food and hospitality <span lang="ur" dir="rtl">پاکستانی کھانے اور مہمان نوازی</span></h2>
+            <p>Food is one of the easiest ways to see regional culture in practice. Rice and wheat dominate many everyday meals, but the ingredients, cooking methods and serving customs change with climate, agriculture and local history.</p>
+            <div class="culture-two">
+              <div class="culture-panel">
+                <h3>Regional food traditions</h3>
+                <ul>
+                  <li><strong>Punjab:</strong> saag, makki di roti, lassi, tandoori breads, kebabs and rich meat gravies.</li>
+                  <li><strong>Sindh:</strong> rice dishes, fish and seafood, saiyun, vegetable curries and distinctive spice blends.</li>
+                  <li><strong>Khyber Pakhtunkhwa:</strong> chapli kebab, tikka, rosh, pulao and breads, with strong meat and grill traditions.</li>
+                  <li><strong>Balochistan:</strong> sajji, landhi-style dried meat traditions, rice and breads, plus seafood along the Makran coast.</li>
+                  <li><strong>Gilgit-Baltistan:</strong> mountain breads, noodles, soups, dried fruits, apricots and locally sourced foods.</li>
+                  <li><strong>AJK:</strong> rice, meat, breads, dairy and seasonal vegetables, with valley-specific recipes.</li>
+                  <li><strong>Islamabad:</strong> a national food meeting-place where restaurants and markets bring regional cuisines together.</li>
+                </ul>
+              </div>
+              <div class="culture-panel urdu" lang="ur" dir="rtl">
+                <h3>کھانوں کی علاقائی پہچان</h3>
+                <p>پاکستان میں کھانا صرف ذائقہ نہیں بلکہ ماحول، زراعت، تاریخ اور خاندانی روایت کا اظہار بھی ہے۔ پنجاب کے ساگ اور مکئی کی روٹی، سندھ کے چاول اور مچھلی، خیبر پختونخوا کے کباب اور روایتی گوشت، بلوچستان کی سجی، گلگت بلتستان کے خشک میوہ جات اور پہاڑی کھانے، آزاد کشمیر کے گھریلو پکوان اور اسلام آباد کی قومی سطح کی فوڈ ڈائیورسٹی اس تنوع کی چند مثالیں ہیں۔</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="culture-section" id="dress">
+            <h2>Dress, textiles and embroidery <span lang="ur" dir="rtl">لباس، کپڑے اور کڑھائی</span></h2>
+            <p>Traditional dress is closely connected with climate, modesty, occupation and local identity. The shalwar kameez is widely worn across the country, but fabrics, cuts, colours and embroidery differ by region and occasion.</p>
+            <div class="culture-two">
+              <div class="culture-panel">
+                <h3>Examples of regional expression</h3>
+                <p>Ajrak and Sindhi topi are strongly associated with Sindh. Balochi embroidery is known for detailed stitching and patterns. Punjab has long textile and embroidery traditions, while northern communities use wool, shawls and mountain-adapted clothing. Kashmiri and Pahari communities have their own shawl and embroidery traditions.</p>
+              </div>
+              <div class="culture-panel urdu" lang="ur" dir="rtl">
+                <h3>علاقائی ملبوسات</h3>
+                <p>شلوار قمیض پورے ملک میں عام ہے، لیکن ہر خطے میں اس کے کپڑے، رنگ، کٹ، کڑھائی اور انداز مختلف ہو سکتے ہیں۔ اجرک و سندھی ٹوپی، بلوچی کڑھائی، پنجابی ٹیکسٹائل، شمالی علاقوں کے اونی ملبوسات اور کشمیری و پہاڑی شالیں علاقائی شناخت کی مثالیں ہیں۔</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="culture-section" id="music">
+            <h2>Music, poetry, dance and performance <span lang="ur" dir="rtl">موسیقی، شاعری، رقص اور فنونِ ادائیگی</span></h2>
+            <p>Pakistan's musical culture ranges from classical and semi-classical traditions to Sufi devotional music, village folk performance and modern popular genres. Poetry and song often overlap, making the region's literary languages part of its musical identity.</p>
+            <div class="culture-two">
+              <div class="culture-panel">
+                <h3>Instruments and traditions</h3>
+                <p>Rabab is closely associated with Pashtun music; dhol supports many Punjabi and South Asian folk performances; Sindhi traditions include instruments such as yaktaro and alghoza; Balochi music includes dambura and bowed-string traditions; northern valleys use drums, flutes and local ensembles.</p>
+                <p>Qawwali and other Sufi musical traditions have also contributed strongly to Pakistan's national cultural image.</p>
+              </div>
+              <div class="culture-panel urdu" lang="ur" dir="rtl">
+                <h3>لوک اور صوفی موسیقی</h3>
+                <p>پاکستان میں رباب، ڈھول، الگوزہ، یکتارو، دمبورا اور مختلف طبلہ و بانسری کی روایتیں پائی جاتی ہیں۔ قوالی اور صوفی موسیقی نے بھی قومی ثقافتی منظرنامے پر گہرا اثر ڈالا ہے۔ علاقائی شاعری اکثر موسیقی اور لوک گائیکی کے ساتھ جڑی ہوتی ہے۔</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="culture-section" id="crafts">
+            <h2>Arts, crafts and living skills <span lang="ur" dir="rtl">فن، دستکاری اور ہنر</span></h2>
+            <div class="culture-two">
+              <div class="culture-panel">
+                <h3>Craft traditions</h3>
+                <p>Pakistan's craft heritage includes ajrak block printing, embroidery, weaving, pottery, wood carving, metalwork, carpets, truck art, calligraphy and jewellery. Many crafts are still practiced by households and workshops rather than existing only as museum objects.</p>
+                <p>Truck art is a striking contemporary example: highly decorated vehicles combine painting, poetry, calligraphic motifs and regional visual symbols. Other crafts are more closely tied to household textiles and local building materials.</p>
+              </div>
+              <div class="culture-panel urdu" lang="ur" dir="rtl">
+                <h3>زندہ دستکاری</h3>
+                <p>پاکستان کی دستکاری میں اجرک کی چھپائی، کڑھائی، بُنائی، مٹی کے برتن، لکڑی کا کام، دھات کاری، قالین، ٹرک آرٹ، خطاطی اور زیورات شامل ہیں۔ بہت سے ہنر آج بھی کاریگروں، گھروں اور چھوٹی ورکشاپوں میں زندہ ہیں۔</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="culture-section" id="festivals">
+            <h2>Festivals, weddings and social traditions <span lang="ur" dir="rtl">تہوار، شادیاں اور معاشرتی روایات</span></h2>
+            <p>Pakistan's calendar contains national, religious, seasonal and local celebrations. Eid holidays, Ramadan practices, Muharram observances, weddings and regional festivals all shape community life in different ways.</p>
+            <div class="culture-two">
+              <div class="culture-panel">
+                <h3>Regional examples</h3>
+                <ul>
+                  <li><strong>Punjab:</strong> Basant has historical cultural associations, while village fairs, urs and harvest-related gatherings continue in many places.</li>
+                  <li><strong>Sindh:</strong> Urs gatherings, cultural days, Sufi traditions and seasonal fairs are important examples of communal heritage.</li>
+                  <li><strong>KP:</strong> weddings, jirga-linked social customs in some communities, attan and local mountain festivals.</li>
+                  <li><strong>Balochistan:</strong> community gatherings, traditional music, weddings and local tribal or pastoral customs.</li>
+                  <li><strong>GB:</strong> polo events, harvest celebrations and valley-specific festivals linked with seasonal cycles.</li>
+                  <li><strong>AJK:</strong> wedding traditions, seasonal gatherings and community events rooted in valley life.</li>
+                </ul>
+              </div>
+              <div class="culture-panel urdu" lang="ur" dir="rtl">
+                <h3>تہوار اور معاشرتی زندگی</h3>
+                <p>عیدین، رمضان، محرم، شادی بیاہ، میلوں، عرس، علاقائی ثقافتی دنوں اور موسمی تقریبات کے ذریعے پاکستان کی اجتماعی زندگی کے کئی رنگ سامنے آتے ہیں۔ ہر خطے اور برادری میں ان تقریبات کے انداز اور رسم و رواج مختلف ہو سکتے ہیں۔</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="culture-section" id="heritage">
+            <h2>Architecture, archaeology and cultural heritage <span lang="ur" dir="rtl">فنِ تعمیر، آثارِ قدیمہ اور ثقافتی ورثہ</span></h2>
+            <p>Pakistan's cultural map includes ancient archaeological cities, Buddhist and Gandharan remains, Islamic architecture, Mughal gardens, forts, shrines, colonial buildings, wooden mountain settlements and modern civic spaces.</p>
+            <div class="table-wrap culture-table">
+              <table>
+                <thead><tr><th>Heritage example</th><th>Region</th><th>Why it matters</th></tr></thead>
+                <tbody>
+                  <tr><td>Moenjodaro</td><td>Sindh</td><td>Major urban centre of the Indus civilisation, known for its planned streets, drainage and monumental remains. citeturn564324search10</td></tr>
+                  <tr><td>Taxila</td><td>Punjab</td><td>A major archaeological landscape showing layers of settlement and Buddhist learning along historic trade routes. citeturn564324search5</td></tr>
+                  <tr><td>Fort &amp; Shalamar Gardens</td><td>Punjab</td><td>A major Mughal-era cultural and architectural complex in Lahore. citeturn564324search0</td></tr>
+                  <tr><td>Makli, Thatta</td><td>Sindh</td><td>A vast historic necropolis reflecting the civilisation of Sindh from the 14th to 18th centuries. citeturn564324search8</td></tr>
+                  <tr><td>Rohtas Fort</td><td>Punjab</td><td>A major fortified site on the historic route through northern Punjab. citeturn564324search0</td></tr>
+                  <tr><td>Takht-i-Bahi</td><td>Khyber Pakhtunkhwa</td><td>A well-preserved Buddhist monastic site associated with Gandharan heritage. citeturn564324search0</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="culture-sources">UNESCO currently lists six World Heritage properties in Pakistan, all cultural, including Moenjodaro, Taxila, Makli, Lahore Fort and Shalamar Gardens, Rohtas Fort and Takht-i-Bahi. Pakistan's UNESCO intangible heritage record also includes practices such as Suri Jagek and a number of shared or transnational traditions. citeturn564324search0turn564324search2turn564324search3</p>
+          </section>
+
+          <section class="culture-section" id="urdu">
+            <h2>پاکستان کی ثقافت — اردو میں تفصیلی تعارف <span lang="ur" dir="rtl">پاکستانی تہذیب و ثقافت</span></h2>
+            <div class="culture-panel urdu" lang="ur" dir="rtl">
+              <h3>ثقافتی تنوع</h3>
+              <p>پاکستان ایک وسیع ثقافتی تنوع رکھنے والا ملک ہے۔ یہاں دریائے سندھ کی قدیم تہذیب، گندھارا کے آثار، اسلامی فنِ تعمیر، صوفی روایت، پہاڑی وادیوں کی زندگی، صحرائی اور ساحلی معاشروں، زرعی علاقوں اور جدید شہری ثقافت کی مختلف شکلیں ایک دوسرے کے ساتھ موجود ہیں۔</p>
+              <h3>علاقائی شناخت</h3>
+              <p>پنجاب میں پنجابی اور سرائیکی زبانیں، صوفی شاعری، لوک موسیقی، زرعی روایات اور متنوع کھانے نمایاں ہیں۔ سندھ میں سندھی زبان و ادب، اجرک، سندھی ٹوپی، صوفی روایت اور موئن جو دڑو و مکلی جیسے تاریخی ورثے اہم ہیں۔ خیبر پختونخوا میں پشتو شاعری، رباب، اتن، مہمان نوازی اور پہاڑی علاقوں کی جداگانہ روایات پائی جاتی ہیں۔ بلوچستان میں بلوچی و براہوی زبانیں، کشیدہ کاری، لوک شاعری، موسیقی اور مکران و اندرونِ بلوچستان کے مختلف طرزِ زندگی نمایاں ہیں۔ گلگت بلتستان میں شینا، بلتی، بروشسکی اور وخی زبانیں، پولو، باغات اور پہاڑی دستکاری اہم ہیں۔ آزاد جموں و کشمیر میں کشمیری، پہاڑی اور گوجری روایات، لکڑی کا کام، شالیں اور پہاڑی خوراکیں ثقافتی شناخت کا حصہ ہیں۔ اسلام آباد میں پورے پاکستان سے آنے والی ثقافتیں ایک جدید دارالحکومت کے ماحول میں ملتی ہیں۔</p>
+              <h3>زبان، کھانا، لباس اور موسیقی</h3>
+              <p>پاکستانی ثقافت کو سمجھنے کے لیے زبان اور ادب، کھانے، لباس، موسیقی، لوک داستانوں اور دستکاری کو ایک ساتھ دیکھنا ضروری ہے۔ شلوار قمیض ملک بھر میں عام لباس ہے، مگر ہر خطے کے کپڑے، کڑھائی اور انداز میں فرق ہوتا ہے۔ اجرک، بلوچی کڑھائی، شمالی علاقوں کے اونی ملبوسات، لکڑی کا کام، ٹرک آرٹ، قالین اور بُنائی قومی ثقافتی منظرنامے کو رنگ دیتے ہیں۔ اسی طرح ساگ، بریانی، سجی، کباب، چاول کے پکوان، خشک میوہ جات اور مختلف گھریلو کھانے علاقائی ماحول اور تاریخی روابط کی عکاسی کرتے ہیں۔</p>
+              <h3>ورثہ اور نئی نسل</h3>
+              <p>ثقافتی ورثہ صرف قدیم عمارتوں یا عجائب گھروں تک محدود نہیں۔ زبان، گیت، دستکاری، کھانے کی ترکیبیں، زبانی تاریخ اور اجتماعی رسومات بھی زندہ ورثہ ہیں۔ نئی نسل، تعلیمی اداروں، مقامی کاریگروں، ثقافتی مراکز، عجائب گھروں اور ڈیجیٹل ذرائع کے ذریعے ان روایات کو محفوظ اور نئی شکلوں میں پیش کر رہی ہے۔</p>
+            </div>
+          </section>
+
+          <section class="culture-section">
+            <h2>Explore the Atlas <span lang="ur" dir="rtl">پاکستان کے مزید علاقائی صفحات</span></h2>
+            <p>For district-level geography, local history, population notes and places, continue into the province and district pages across MyBook.Pk.</p>
+            <div class="culture-links">
+              <a href="provinces.html">All Provinces</a>
+              <a href="punjab.html">Punjab</a>
+              <a href="sindh.html">Sindh</a>
+              <a href="khyber-pakhtunkhwa.html">Khyber Pakhtunkhwa</a>
+              <a href="balochistan.html">Balochistan</a>
+              <a href="gilgit-baltistan.html">Gilgit-Baltistan</a>
+              <a href="azad-kashmir.html">Azad Kashmir</a>
+              <a href="islamabad-capital-territory.html">Islamabad</a>
+              <a href="districts.html">District Directory</a>
+              <a href="history.html">History</a>
+            </div>
+          </section>
+
+          <section class="culture-section">
+            <h2>Sources &amp; editorial notes <span lang="ur" dir="rtl">ماخذ اور اداری نوٹ</span></h2>
+            <p class="culture-sources">This page is an educational overview. For demographic statements, MyBook.Pk uses the Pakistan Bureau of Statistics 2023 census as a baseline. For heritage references, the page links to UNESCO's World Heritage and Intangible Cultural Heritage records. Cultural descriptions are intentionally broad because traditions vary within regions and communities. citeturn564324search9turn564324search14turn564324search0turn564324search2</p>
+            <p class="culture-sources">Key external references: <a href="https://www.pbs.gov.pk/census/" rel="noopener noreferrer">Pakistan Bureau of Statistics Census</a>, <a href="https://whc.unesco.org/en/statesparties/pk" rel="noopener noreferrer">UNESCO World Heritage — Pakistan</a>, <a href="https://ich.unesco.org/en/state/pakistan-PK" rel="noopener noreferrer">UNESCO Intangible Cultural Heritage — Pakistan</a>, and <a href="https://tourism.gov.pk/" rel="noopener noreferrer">Pakistan Tourism Development Corporation / official tourism portal</a>.</p>
+          </section>
+        </article>
+
+        <aside class="culture-toc" aria-label="On this page">
+          <h3>On this page</h3>
+          <a href="#regional-cultures">Regional cultures</a>
+          <a href="#languages">Languages &amp; literature</a>
+          <a href="#food">Food &amp; hospitality</a>
+          <a href="#dress">Dress &amp; textiles</a>
+          <a href="#music">Music &amp; performance</a>
+          <a href="#crafts">Arts &amp; crafts</a>
+          <a href="#festivals">Festivals &amp; social life</a>
+          <a href="#heritage">Heritage &amp; architecture</a>
+          <a href="#urdu">Urdu guide</a>
+          <a href="provinces.html">Province directory</a>
+          <a href="districts.html">District directory</a>
+        </aside>
       </div>
     </section>
   </main>
