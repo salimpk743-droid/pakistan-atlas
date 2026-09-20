@@ -22,6 +22,10 @@ const provinceNames = {
   ict: "Islamabad Capital Territory"
 };
 const staticBreadcrumbs = new Map();
+const ADSENSE_PUBLISHER = "ca-pub-8924686927214586";
+const ADSENSE_SCRIPT = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_PUBLISHER}" crossorigin="anonymous"></script>`;
+const ADSENSE_META = `<meta name="google-adsense-account" content="${ADSENSE_PUBLISHER}" />`;
+
 
 function esc(value) {
   return String(value)
@@ -203,6 +207,11 @@ function upsertMetadata(fileName, html) {
   const h1 = (html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i) || [null, title])[1].replace(/<[^>]+>/g, "").trim();
   const description = (html.match(/<meta\s+name="description"\s+content="([^"]*)"\s*\/?\s*>/i) || [null, `Learn about ${h1} with facts, places, history and public information from MyBook.Pk.`])[1];
   let result = html;
+  if (!/adsbygoogle\.js\?client=ca-pub-8924686927214586/i.test(result)) {
+    result = result.replace(/<head>/i, `<head>\n  ${ADSENSE_SCRIPT}\n  ${ADSENSE_META}`);
+  } else if (!/name="google-adsense-account"/i.test(result)) {
+    result = result.replace(/<head>/i, `<head>\n  ${ADSENSE_META}`);
+  }
   if (!/<meta\s+name="description"/i.test(result)) {
     result = result.replace(/<title>[^<]*<\/title>/i, `$&\n  <meta name="description" content="${esc(description)}" />`);
   }
