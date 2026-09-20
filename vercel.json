@@ -2,46 +2,194 @@
   "cleanUrls": false,
   "trailingSlash": false,
   "redirects": [
-    { "source": "/province.html", "has": [{ "type": "query", "key": "id", "value": "punjab" }], "destination": "/punjab.html", "permanent": true },
-    { "source": "/province.html", "has": [{ "type": "query", "key": "id", "value": "sindh" }], "destination": "/sindh.html", "permanent": true },
-    { "source": "/province.html", "has": [{ "type": "query", "key": "id", "value": "kpk" }], "destination": "/khyber-pakhtunkhwa.html", "permanent": true },
-    { "source": "/province.html", "has": [{ "type": "query", "key": "id", "value": "balochistan" }], "destination": "/balochistan.html", "permanent": true },
-    { "source": "/province.html", "has": [{ "type": "query", "key": "id", "value": "gb" }], "destination": "/gilgit-baltistan.html", "permanent": true },
-    { "source": "/province.html", "has": [{ "type": "query", "key": "id", "value": "ajk" }], "destination": "/azad-kashmir.html", "permanent": true },
-    { "source": "/province.html", "has": [{ "type": "query", "key": "id", "value": "ict" }], "destination": "/islamabad-capital-territory.html", "permanent": true },
-    { "source": "/index.html", "destination": "/", "permanent": true },
-    { "source": "/bajur.html", "destination": "/bajaur.html", "permanent": true },
-    { "source": "/dgkhan.html", "destination": "/dera-ghazi-khan.html", "permanent": true },
-    { "source": "/dikhan.html", "destination": "/dera-ismail-khan.html", "permanent": true },
-    { "source": "/rykhan.html", "destination": "/rahim-yar-khan.html", "permanent": true },
-    { "source": "/nankana.html", "destination": "/nankana-sahib.html", "permanent": true },
-    { "source": "/tts.html", "destination": "/toba-tek-singh.html", "permanent": true },
-    { "source": "/lakki.html", "destination": "/lakki-marwat.html", "permanent": true }
+    {
+      "source": "/province.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "punjab"
+        }
+      ],
+      "destination": "/punjab.html",
+      "permanent": true
+    },
+    {
+      "source": "/province.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "sindh"
+        }
+      ],
+      "destination": "/sindh.html",
+      "permanent": true
+    },
+    {
+      "source": "/province.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "kpk"
+        }
+      ],
+      "destination": "/khyber-pakhtunkhwa.html",
+      "permanent": true
+    },
+    {
+      "source": "/province.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "balochistan"
+        }
+      ],
+      "destination": "/balochistan.html",
+      "permanent": true
+    },
+    {
+      "source": "/province.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "gb"
+        }
+      ],
+      "destination": "/gilgit-baltistan.html",
+      "permanent": true
+    },
+    {
+      "source": "/province.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "ajk"
+        }
+      ],
+      "destination": "/azad-kashmir.html",
+      "permanent": true
+    },
+    {
+      "source": "/province.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "ict"
+        }
+      ],
+      "destination": "/islamabad-capital-territory.html",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/bajur.html",
+      "destination": "/bajaur.html",
+      "permanent": true
+    },
+    {
+      "source": "/dgkhan.html",
+      "destination": "/dera-ghazi-khan.html",
+      "permanent": true
+    },
+    {
+      "source": "/dikhan.html",
+      "destination": "/dera-ismail-khan.html",
+      "permanent": true
+    },
+    {
+      "source": "/rykhan.html",
+      "destination": "/rahim-yar-khan.html",
+      "permanent": true
+    },
+    {
+      "source": "/nankana.html",
+      "destination": "/nankana-sahib.html",
+      "permanent": true
+    },
+    {
+      "source": "/tts.html",
+      "destination": "/toba-tek-singh.html",
+      "permanent": true
+    },
+    {
+      "source": "/lakki.html",
+      "destination": "/lakki-marwat.html",
+      "permanent": true
+    },
+    {
+      "source": "/current-affairs.html",
+      "destination": "/literature.html",
+      "permanent": true
+    },
+    {
+      "source": "/politics.html",
+      "destination": "/geography.html",
+      "permanent": true
+    }
   ],
   "headers": [
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
-        { "key": "X-Frame-Options", "value": "SAMEORIGIN" }
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        }
       ]
     },
     {
       "source": "/css/(.*)",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
     },
     {
       "source": "/js/(.*)",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=86400" }]
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        }
+      ]
     },
     {
       "source": "/images/(.*)",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=2592000" }]
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=2592000"
+        }
+      ]
     },
     {
       "source": "/assets/(.*)",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=2592000" }]
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=2592000"
+        }
+      ]
     }
   ]
 }
