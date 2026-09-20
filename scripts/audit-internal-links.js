@@ -15,10 +15,9 @@ const redirectSources = new Set([
   "news.html"
 ]);
 const majorSections = [
-  "latest-news.html",
   "culture.html",
-  "current-affairs.html",
-  "politics.html",
+  "literature.html",
+  "geography.html",
   "sports.html",
   "history.html",
   "showbiz.html"
