@@ -6,10 +6,9 @@ const SITE = "https://mybook.pk";
 
 const canonicalPages = ["haveli.html", "islamabad.html", "sudhanoti.html"];
 const descriptions = {
-  "latest-news.html": "A MyBook.Pk starting point for current news, public updates, official announcements and reliable sources. Headlines change frequently; use the linked sources for the latest reports.",
   "culture.html": "Explore Pakistan's cultures, languages, traditions, food, music, clothing, crafts, festivals, architecture and heritage across the country.",
-  "current-affairs.html": "Explore Pakistan's literary heritage through Urdu poetry, writers, fiction, Sufi traditions, regional languages, books and literary movements.",
-  "politics.html": "Explore Pakistan's geography through the Indus basin, mountains, deserts, plateaus, glaciers, coastline, climate and major regions."
+  "literature.html": "Explore Pakistan's literary heritage through Urdu poetry, writers, fiction, Sufi traditions, regional languages, books and literary movements.",
+  "geography.html": "Explore Pakistan's geography through the Indus basin, mountains, deserts, plateaus, glaciers, coastline, climate and major regions."
 };
 
 function addCanonical(file) {
@@ -23,20 +22,6 @@ function addCanonical(file) {
 
   html = html.replace(description[0], `${description[0]}\n  <link rel="canonical" href="${canonical}">`);
   fs.writeFileSync(full, html, "utf8");
-  return true;
-}
-
-function fixPoliticsTitle() {
-  const full = path.join(ROOT, "politics.html");
-  let html = fs.readFileSync(full, "utf8");
-  let seen = false;
-  const fixed = html.replace(/<title\b[^>]*>[\s\S]*?<\/title>/gi, (tag) => {
-    if (seen) return "";
-    seen = true;
-    return tag;
-  });
-  if (fixed === html) return false;
-  fs.writeFileSync(full, fixed, "utf8");
   return true;
 }
 
@@ -56,7 +41,6 @@ function fixDescription(file, description) {
 
 const changed = [];
 for (const file of canonicalPages) if (addCanonical(file)) changed.push(file);
-if (fixPoliticsTitle()) changed.push("politics.html title");
 for (const [file, description] of Object.entries(descriptions)) {
   if (fixDescription(file, description)) changed.push(`${file} description`);
 }
