@@ -93,6 +93,8 @@ function provincePage(unit, districtData) {
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
+  ${ADSENSE_SCRIPT}
+  ${ADSENSE_META}
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>${esc(unit.name)}, Pakistan — Districts, Population, Cities &amp; Facts | MyBook.Pk</title>
