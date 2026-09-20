@@ -1,7 +1,5 @@
-// Main navigation: Current News intentionally sits between Home and Culture.
 const NAV = [
   ["index.html", "Home"],
-  ["latest-news.html", "Current News"],
   ["culture.html", "Culture"],
   ["current-affairs.html", "Literature"],
   ["politics.html", "Geography"],
@@ -192,7 +190,7 @@ function renderChrome() {
           </div>
           <div>
             <strong>Explore</strong>
-            <p><a href="provinces.html">Provinces</a><br><a href="districts.html">Districts</a><br><a href="culture.html">Culture</a><br><a href="latest-news.html">Current News</a><br><a href="current-affairs.html">Literature</a><br><a href="politics.html">Geography</a></p>
+            <p><a href="provinces.html">Provinces</a><br><a href="districts.html">Districts</a><br><a href="culture.html">Culture</a><br><a href="current-affairs.html">Literature</a><br><a href="politics.html">Geography</a></p>
           </div>
           <div>
             <strong>Learn</strong>
