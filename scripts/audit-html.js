@@ -100,9 +100,14 @@ for (const file of htmlFiles) {
   if (canonicals.length > 1) report(file, "duplicate canonical tags", `${canonicals.length} found`);
   if (h1s.length === 0) report(file, "missing H1");
   if (noindex && !ALLOWED_NOINDEX.has(file)) report(file, "unexpected noindex");
+  if (!noindex && file !== "404.html" && !/name="robots"[^>]*content="[^"]*index/i.test(html)) report(file, "missing explicit indexable robots directive");
 
   const title = titles[0] || "";
+  if (title.length > 65) report(file, "title too long", `${title.length} chars`);
+  if (title.length < 20) report(file, "title too short", `${title.length} chars`);
   const description = descriptions[0] || "";
+  if (description.length > 170) report(file, "meta description too long", `${description.length} chars`);
+  if (description.length < 70) report(file, "meta description too short", `${description.length} chars`);
   const canonical = canonicals[0] || "";
   if (canonical && !(noindex && ALLOWED_NOINDEX.has(file))) {
     const key = canonical.replace(/#.*$/, "");

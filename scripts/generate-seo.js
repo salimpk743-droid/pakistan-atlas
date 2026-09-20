@@ -99,6 +99,7 @@ function provincePage(unit, districtData) {
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>${esc(unit.name)}, Pakistan — Districts, Population, Cities &amp; Facts | MyBook.Pk</title>
   <meta name="description" content="${esc(description)}" />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
   <link rel="canonical" href="${SITE}/${route}" />
   <meta property="og:title" content="${esc(unit.name)}, Pakistan — Districts, Population, Cities &amp; Facts" />
   <meta property="og:description" content="${esc(description)}" />
@@ -214,6 +215,11 @@ function upsertMetadata(fileName, html) {
   } else if (!/name="google-adsense-account"/i.test(result)) {
     result = result.replace(/<head>/i, `<head>\n  ${ADSENSE_META}`);
   }
+  if (!/<meta\s+name="robots"/i.test(result)) {
+    result = result.replace(/<meta\s+name="description"[^>]*>/i, `  if (!/<meta\s+name="description"/i.test(result)) {\n  <meta name="robots" content="index,follow,max-image-preview:large" />`);
+  } else {
+    result = result.replace(/<meta\s+name="robots"[^>]*>/i, `<meta name="robots" content="index,follow,max-image-preview:large" />`);
+  }
   if (!/<meta\s+name="description"/i.test(result)) {
     result = result.replace(/<title>[^<]*<\/title>/i, `$&\n  <meta name="description" content="${esc(description)}" />`);
   }
@@ -251,6 +257,7 @@ function upsertMetadata(fileName, html) {
 function generateSitemap() {
   const excluded = new Set([
     "province.html",
+    "district.html",
     "district.html",
     "404.html",
     "google316eb4b51e11f5de.html",
