@@ -19,12 +19,6 @@ jobs:
         run: |
           find . -type f \( -name "*.html" -o -name "*.js" -o -name "*.xml" -o -name "*.txt" -o -name "*.md" -o -name "*.json" \) -not -path "./.git/*" -print0 | xargs -0 sed -i -e "s/Pakistan Atlas/MyBook.Pk/g" -e "s/pakistan-atlas.vercel.app/mybook.pk/g"
 
-      - name: Fix homepage Current News and Culture cards
-        run: node scripts/fix-home-navigation.js
-
-      - name: Restore Current News and Culture structure
-        run: node scripts/migrate-news-culture.js
-
       - name: Apply known SEO fixes
         run: node scripts/fix-known-seo.js
 
