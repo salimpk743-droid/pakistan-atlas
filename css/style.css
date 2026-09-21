@@ -169,6 +169,7 @@ nav a:focus-visible, .logo:focus-visible, .menu-btn:focus-visible {
 .nav-search svg { width: 18px; height: 18px; display: block; }
 
 .skip-link {
+  display: none !important;
   position: absolute;
   left: -999px;
   top: 0;
