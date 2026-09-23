@@ -67,6 +67,10 @@ for (const name of candidates) {
     skipped.push(`${name}: noindex`);
     continue;
   }
+  if (name === "district.html" || name === "province.html") {
+    skipped.push(`${name}: dynamic template`);
+    continue;
+  }
 
   const expected = `${SITE}/${name === "index.html" ? "" : name}`;
   const canonical = getCanonical(html);
