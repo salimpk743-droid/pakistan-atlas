@@ -224,7 +224,9 @@ function upsertMetadata(fileName, html) {
     result = result.replace(/<title>[^<]*<\/title>/i, "$&\n  " + robotsTag);
   }
   if (!/<meta\s+name="description"/i.test(result)) {
+    result = result.replace(/<title>[^<]*<\/title>/i, "  if (!/<meta\s+name="description"/i.test(result)) {
     result = result.replace(/<title>[^<]*<\/title>/i, "result = result.replace(/<title>[^<]*<\/title>/i, "$&\n  <meta name="description" content=\"" + esc(description) + "\" />");\n  <meta name=\"description\" content=\"" + esc(description) + "\" />");
+  }\n  <meta name=\"description\" content=\"" + esc(description) + "\" />");
   }
   if (/<link\s+rel="canonical"/i.test(result)) {
     result = result.replace(/<link\s+rel="canonical"[^>]*>/i, '<link rel="canonical" href="' + canonical + '" />');
