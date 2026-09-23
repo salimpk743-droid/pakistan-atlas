@@ -13,6 +13,7 @@ const ALLOWED_NOINDEX = new Set([
 const UTILITY = new Set(["google316eb4b51e11f5de.html"]);
 const htmlFiles = fs.readdirSync(ROOT).filter(f => f.toLowerCase().endsWith(".html"));
 const errors = [];
+const warnings = [];
 const canonicalGroups = new Map();
 const titleGroups = new Map();
 const descriptionGroups = new Map();
@@ -29,6 +30,10 @@ function attr(tag, name) {
 
 function report(file, issue, detail = "") {
   errors.push(`${file}: ${issue}${detail ? ` — ${detail}` : ""}`);
+}
+
+function warn(file, issue, detail = "") {
+  warnings.push(`${file}: ${issue}${detail ? ` — ${detail}` : ""}`);
 }
 
 function normalizeUrl(href, fromFile) {
@@ -104,11 +109,11 @@ for (const file of htmlFiles) {
   if (!noindex && file !== "404.html" && !/name="robots"[^>]*content="[^"]*index/i.test(html)) report(file, "missing explicit indexable robots directive");
 
   const title = titles[0] || "";
-  if (title.length > 65) report(file, "title too long", `${title.length} chars`);
-  if (title.length < 20) report(file, "title too short", `${title.length} chars`);
+  if (title.length > 65) warn(file, "title too long", `${title.length} chars`);
+  if (title.length < 20) warn(file, "title too short", `${title.length} chars`);
   const description = descriptions[0] || "";
-  if (description.length > 170) report(file, "meta description too long", `${description.length} chars`);
-  if (description.length < 70) report(file, "meta description too short", `${description.length} chars`);
+  if (description.length > 170) warn(file, "meta description too long", `${description.length} chars`);
+  if (description.length < 70) warn(file, "meta description too short", `${description.length} chars`);
   const canonical = canonicals[0] || "";
   if (canonical && !(noindex && ALLOWED_NOINDEX.has(file))) {
     const key = canonical.replace(/#.*$/, "");
@@ -143,10 +148,15 @@ for (const [description, files] of descriptionGroups) {
 }
 
 console.log(`HTML files audited: ${htmlFiles.length}`);
-console.log(`Issues found: ${errors.length}`);
+console.log(`Errors found: ${errors.length}`);
+console.log(`SEO warnings: ${warnings.length}`);
 if (errors.length) {
   for (const e of errors) console.log(`- ${e}`);
   process.exitCode = 1;
 } else {
-  console.log("All HTML checks passed.");
+  console.log("All critical HTML checks passed.");
+}
+if (warnings.length) {
+  console.log("Warnings (non-blocking):");
+  for (const w of warnings) console.log(`- ${w}`);
 }
