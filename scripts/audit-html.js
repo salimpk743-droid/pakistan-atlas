@@ -6,6 +6,7 @@ const APP = fs.readFileSync(path.join(ROOT, "js", "app.js"), "utf8");
 const ALLOWED_NOINDEX = new Set([
   "404.html",
   "province.html",
+  "district.html",
   "google316eb4b51e11f5de.html",
   "news.html"
 ]);
