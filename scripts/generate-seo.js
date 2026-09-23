@@ -206,32 +206,32 @@ function districtPage(district, province) {
 function upsertMetadata(fileName, html) {
   if (fileName === "province.html" || fileName === "district.html") return html;
   const canonical = SITE + "/" + (fileName === "index.html" ? "" : fileName);
-  const title = (html.match(/<title>([^<]+)<\\/title>/i) || [null, "MyBook.Pk"])[1].trim();
-  const h1 = (html.match(/<h1[^>]*>([\\s\\S]*?)<\\/h1>/i) || [null, title])[1].replace(/<[^>]+>/g, "").trim();
-  const description = (html.match(/<meta\\s+name="description"\\s+content="([^"]*)"\\s*\\/?\\s*>/i) || [null, "Learn about " + h1 + " with facts, places, history and public information from MyBook.Pk."])[1];
+  const title = (html.match(/<title>([^<]+)<\/title>/i) || [null, "MyBook.Pk"])[1].trim();
+  const h1 = (html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i) || [null, title])[1].replace(/<[^>]+>/g, "").trim();
+  const description = (html.match(/<meta\s+name="description"\s+content="([^"]*)"\s*\/?\s*>/i) || [null, "Learn about " + h1 + " with facts, places, history and public information from MyBook.Pk."])[1];
   let result = html;
-  if (!/adsbygoogle\\.js\\?client=ca-pub-8924686927214586/i.test(result)) {
-    result = result.replace(/<head>/i, "<head>\\n  " + ADSENSE_SCRIPT + "\\n  " + ADSENSE_META);
+  if (!/adsbygoogle\.js\?client=ca-pub-8924686927214586/i.test(result)) {
+    result = result.replace(/<head>/i, "<head>\n  " + ADSENSE_SCRIPT + "\n  " + ADSENSE_META);
   } else if (!/name="google-adsense-account"/i.test(result)) {
-    result = result.replace(/<head>/i, "<head>\\n  " + ADSENSE_META);
+    result = result.replace(/<head>/i, "<head>\n  " + ADSENSE_META);
   }
   const robotsTag = '<meta name="robots" content="index,follow,max-image-preview:large" />';
-  if (/<meta\\s+name="robots"[^>]*>/i.test(result)) {
-    result = result.replace(/<meta\\s+name="robots"[^>]*>/i, robotsTag);
-  } else if (/<meta\\s+name="description"[^>]*>/i.test(result)) {
-    result = result.replace(/<meta\\s+name="description"[^>]*>/i, "$&\\n  " + robotsTag);
+  if (/<meta\s+name="robots"[^>]*>/i.test(result)) {
+    result = result.replace(/<meta\s+name="robots"[^>]*>/i, robotsTag);
+  } else if (/<meta\s+name="description"[^>]*>/i.test(result)) {
+    result = result.replace(/<meta\s+name="description"[^>]*>/i, "$&\n  " + robotsTag);
   } else {
-    result = result.replace(/<title>[^<]*<\\/title>/i, "$&\\n  " + robotsTag);
+    result = result.replace(/<title>[^<]*<\/title>/i, "$&\n  " + robotsTag);
   }
-  if (!/<meta\\s+name="description"/i.test(result)) {
-    result = result.replace(/<title>[^<]*<\\/title>/i, "$&\\n  <meta name="description" content=\"" + esc(description) + "\" />");
+  if (!/<meta\s+name="description"/i.test(result)) {
+    result = result.replace(/<title>[^<]*<\/title>/i, "$&\n  <meta name="description" content=\"" + esc(description) + "\" />");
   }
-  if (/<link\\s+rel="canonical"/i.test(result)) {
-    result = result.replace(/<link\\s+rel="canonical"[^>]*>/i, '<link rel="canonical" href="' + canonical + '" />');
+  if (/<link\s+rel="canonical"/i.test(result)) {
+    result = result.replace(/<link\s+rel="canonical"[^>]*>/i, '<link rel="canonical" href="' + canonical + '" />');
   } else {
-    result = result.replace(/<meta\\s+name="description"[^>]*>/i, "$&\\n  <link rel="canonical" href=\"" + canonical + "\" />");
+    result = result.replace(/<meta\s+name="description"[^>]*>/i, "$&\n  <link rel="canonical" href=\"" + canonical + "\" />");
   }
-  result = result.replace(/province\\.html\\?id=(ict|punjab|kpk|sindh|balochistan|gb|ajk)/g, function(_, id) { return provinceRoutes[id]; });
+  result = result.replace(/province\.html\?id=(ict|punjab|kpk|sindh|balochistan|gb|ajk)/g, function(_, id) { return provinceRoutes[id]; });
   return result;
 }
 
