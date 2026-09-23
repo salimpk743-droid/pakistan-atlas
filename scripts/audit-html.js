@@ -106,7 +106,7 @@ for (const file of htmlFiles) {
   if (canonicals.length > 1) report(file, "duplicate canonical tags", `${canonicals.length} found`);
   if (h1s.length === 0) report(file, "missing H1");
   if (noindex && !ALLOWED_NOINDEX.has(file)) report(file, "unexpected noindex");
-  if (!noindex && file !== "404.html" && !/name="robots"[^>]*content="[^"]*index/i.test(html)) report(file, "missing explicit indexable robots directive");
+  if (!noindex && file !== "404.html" && !ALLOWED_NOINDEX.has(file) && !/name="robots"[^>]*content="[^"]*index/i.test(html)) report(file, "missing explicit indexable robots directive");
 
   const title = titles[0] || "";
   if (title.length > 65) warn(file, "title too long", `${title.length} chars`);
