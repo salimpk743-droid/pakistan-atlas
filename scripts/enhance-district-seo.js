@@ -56,14 +56,57 @@ function optimizeMetadata(html, info) {
   const description = `<meta name="description" content="${esc(descriptionText)}" />`;
   html = replaceTag(html, oldDescription, description);
 
+  // Add a concise search-intent summary only to pages that do not already have a rich editorial structure.
+  // Preserve custom editorial pages while improving thin/generated district pages.
+  if (!/<h2[^>]*>[^<]*(at a glance|quick facts|population and area|schools and hospitals|history)[^<]*<\\/h2>/i.test(html)) {
+    const summary = `
+    <section class="district-search-answers" aria-labelledby="district-search-answers">
+      <h2 id="district-search-answers">${esc(name)} District: Quick Answers</h2>
+      <dl>
+        <dt>Population</dt><dd>${esc(district.pop || "See the latest Pakistan Bureau of Statistics census table.")}</dd>
+        <dt>Headquarters / main city</dt><dd>${esc(district.hq || "See the district profile.")}</dd>
+        <dt>Province / territory</dt><dd>${esc(provinceName)}</dd>
+        <dt>Famous for</dt><dd>${esc(about || "Its local history, communities and geography.")}</dd>
+        <dt>Geography</dt><dd>${esc(about || "The district's landscape and settlement pattern are described below.")}</dd>
+        <dt>Culture</dt><dd>${esc(district.culture || "Local culture and communities are described below.")}</dd>
+        <dt>Education</dt><dd>${esc(district.education || "See the district's education information below.")}</dd>
+        <dt>Healthcare</dt><dd>${esc(district.health || "See the district's healthcare information below.")}</dd>
+        <dt>Villages / local areas</dt><dd>${esc(district.villages || "See the local places section below.")}</dd>
+      </dl>
+    </section>
+`;
+    const contentMarker = /(<div class="container prose">)/i;
+    if (contentMarker.test(html)) html = html.replace(contentMarker, `$1${summary}`);
+  }
+
   // Add contextual internal links once. These are navigation links, not keyword blocks.
   if (!html.includes('class="seo-related-reading"')) {
     const route = provinceRoutes[provinceId];
-    const sameProvince = (districts[provinceId]?.districts || [])
-      .filter((d) => d.slug !== district.slug && fs.existsSync(path.join(ROOT, `${d.slug}.html`)))
-      .slice(0, 4);
+    const provinceDistricts = (districts[provinceId]?.districts || [])
+      .filter((d) => fs.existsSync(path.join(ROOT, `${d.slug}.html`)));
+    const currentIndex = provinceDistricts.findIndex((d) => d.slug === district.slug);
+    const nearby = [];
+    for (const offset of [-2, -1, 1, 2]) {
+      const candidate = provinceDistricts[currentIndex + offset];
+      if (candidate && candidate.slug !== district.slug) nearby.push(candidate);
+    }
 
-    const relatedDistricts = sameProvince
+    const hubSlugs = {
+      punjab: "lahore",
+      sindh: "hyderabad",
+      kpk: "peshawar",
+      balochistan: "quetta",
+      gb: "gilgit",
+      ajk: "muzaffarabad",
+      ict: "islamabad"
+    };
+    const hubSlug = hubSlugs[provinceId];
+    const hub = provinceDistricts.find((d) => d.slug === hubSlug && d.slug !== district.slug);
+
+    const relatedDistricts = [hub, ...nearby]
+      .filter(Boolean)
+      .filter((d, i, arr) => arr.findIndex((x) => x.slug === d.slug) === i)
+      .slice(0, 5)
       .map((d) => `<li><a href="${esc(d.slug)}.html">${esc(d.name)} District</a></li>`)
       .join("");
 
