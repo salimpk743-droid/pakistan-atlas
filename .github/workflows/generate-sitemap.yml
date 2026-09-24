@@ -25,6 +25,9 @@ jobs:
       - name: Regenerate SEO pages and canonical district links
         run: node scripts/generate-seo.js
 
+      - name: Enhance district SEO and internal links
+        run: node scripts/enhance-district-seo.js
+
       - name: Generate sitemap
         run: node scripts/generate-sitemap.js
 
@@ -36,7 +39,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "SEO files and sitemap are already up to date."
           else
-            git commit -m "Fix homepage Current News and Culture cards"
+            git commit -m "Improve district SEO and internal linking"
             git push
           fi
 
