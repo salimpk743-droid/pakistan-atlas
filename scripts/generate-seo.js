@@ -97,7 +97,7 @@ function provincePage(unit, districtData) {
   ${ADSENSE_META}
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>${esc(unit.name)}, Pakistan — Districts, Population, Cities &amp; Facts | MyBook.Pk</title>
+  <title>${esc(unit.name)}, Pakistan — Districts, Population &amp; Facts | MyBook.Pk</title>
   <meta name="description" content="${esc(description)}" />
   <meta name="robots" content="index,follow,max-image-preview:large" />
   <link rel="canonical" href="${SITE}/${route}" />
