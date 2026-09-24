@@ -58,7 +58,7 @@ function optimizeMetadata(html, info) {
 
   // Add a concise search-intent summary only to pages that do not already have a rich editorial structure.
   // Preserve custom editorial pages while improving thin/generated district pages.
-  if (!/<h2[^>]*>[^<]*(at a glance|quick facts|population and area|schools and hospitals|history)[^<]*<\\/h2>/i.test(html)) {
+  if (!/<h2[^>]*>[^<]*(at a glance|quick facts|population and area|schools and hospitals|history)[^<]*<\/h2>/i.test(html)) {
     const summary = `
     <section class="district-search-answers" aria-labelledby="district-search-answers">
       <h2 id="district-search-answers">${esc(name)} District: Quick Answers</h2>
