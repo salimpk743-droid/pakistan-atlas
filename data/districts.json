@@ -168,23 +168,48 @@
         "tehsils_2023": [
           {
             "name": "Faisalabad City",
-            "major_towns": "Faisalabad"
+            "major_towns": "Faisalabad",
+            "area_km2": 168,
+            "population_2023": 3691999,
+            "density_2023": 21976.18,
+            "urban_proportion_2023": 100,
+            "source": "PBS 2023 Census Table 1"
           },
           {
             "name": "Faisalabad Sadar",
-            "major_towns": "Faisalabad"
+            "major_towns": "Faisalabad",
+            "area_km2": 1186,
+            "population_2023": 1742958,
+            "density_2023": 1469.61,
+            "urban_proportion_2023": 5.56,
+            "source": "PBS 2023 Census Table 1"
           },
           {
             "name": "Jaranwala",
-            "major_towns": "Jaranwala"
+            "major_towns": "Jaranwala",
+            "area_km2": 1811,
+            "population_2023": 1731148,
+            "density_2023": 955.91,
+            "urban_proportion_2023": 15.46,
+            "source": "PBS 2023 Census Table 1"
           },
           {
             "name": "Samundri",
-            "major_towns": "Samundri"
+            "major_towns": "Samundri",
+            "area_km2": 754,
+            "population_2023": 729672,
+            "density_2023": 967.73,
+            "urban_proportion_2023": 25.54,
+            "source": "PBS 2023 Census Table 1"
           },
           {
             "name": "Tandlianwala",
-            "major_towns": "Tandlianwala"
+            "major_towns": "Tandlianwala",
+            "area_km2": 1284,
+            "population_2023": 931973,
+            "density_2023": 725.6,
+            "urban_proportion_2023": 9.46,
+            "source": "PBS 2023 Census Table 1"
           },
           {
             "name": "Chak Jhumra",
@@ -340,23 +365,48 @@
         "tehsils_2023": [
           {
             "name": "Lahore City",
-            "major_towns": "Lahore"
+            "major_towns": "Lahore",
+            "area_km2": 214,
+            "population_2023": 4123354,
+            "density_2023": 19268.01,
+            "urban_proportion_2023": 100,
+            "source": "PBS 2023 Census Table 1"
           },
           {
             "name": "Lahore Cantt",
-            "major_towns": "Lahore Cantonment"
+            "major_towns": "Lahore Cantonment",
+            "area_km2": 466,
+            "population_2023": 1885098,
+            "density_2023": 4045.27,
+            "urban_proportion_2023": 100,
+            "source": "PBS 2023 Census Table 1"
           },
           {
             "name": "Model Town",
-            "major_towns": "Model Town, Lahore"
+            "major_towns": "Model Town, Lahore",
+            "area_km2": 353,
+            "population_2023": 3244906,
+            "density_2023": 9192.37,
+            "urban_proportion_2023": 100,
+            "source": "PBS 2023 Census Table 1"
           },
           {
             "name": "Raiwind",
-            "major_towns": "Raiwind"
+            "major_towns": "Raiwind",
+            "area_km2": 467,
+            "population_2023": 1080637,
+            "density_2023": 2314,
+            "urban_proportion_2023": 100,
+            "source": "PBS 2023 Census Table 1"
           },
           {
             "name": "Shalimar",
-            "major_towns": "Baghbanpura / Shalimar, Lahore"
+            "major_towns": "Baghbanpura / Shalimar, Lahore",
+            "area_km2": 272,
+            "population_2023": 2670140,
+            "density_2023": 9816.69,
+            "urban_proportion_2023": 100,
+            "source": "PBS 2023 Census Table 1"
           }
         ],
         "administrative_source": "PBS 2023 administrative framework"
