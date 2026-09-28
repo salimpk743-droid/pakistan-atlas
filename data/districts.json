@@ -69,7 +69,35 @@
         "density_2023": 172.57,
         "urban_proportion_2023": 37.79,
         "population_source": "PBS 2023 Census, Table 1",
-        "last_verified": "2026-09-28"
+        "last_verified": "2026-09-28",
+        "division_2023": "Bahawalpur Division",
+        "tehsils_2023": [
+          {
+            "name": "Bahawalpur City",
+            "major_towns": "Bahawalpur"
+          },
+          {
+            "name": "Bahawalpur Saddar",
+            "major_towns": "Bahawalpur"
+          },
+          {
+            "name": "Ahmadpur East",
+            "major_towns": "Ahmadpur East"
+          },
+          {
+            "name": "Hasilpur",
+            "major_towns": "Hasilpur"
+          },
+          {
+            "name": "Khairpur Tamewali",
+            "major_towns": "Khairpur Tamewali"
+          },
+          {
+            "name": "Yazman",
+            "major_towns": "Yazman"
+          }
+        ],
+        "administrative_source": "PBS 2023 administrative framework"
       },
       {
         "slug": "bhakkar",
@@ -135,7 +163,35 @@
         "density_2023": 1549.57,
         "urban_proportion_2023": 48.4,
         "population_source": "PBS 2023 Census, Table 1",
-        "last_verified": "2026-09-28"
+        "last_verified": "2026-09-28",
+        "division_2023": "Faisalabad Division",
+        "tehsils_2023": [
+          {
+            "name": "Faisalabad City",
+            "major_towns": "Faisalabad"
+          },
+          {
+            "name": "Faisalabad Sadar",
+            "major_towns": "Faisalabad"
+          },
+          {
+            "name": "Jaranwala",
+            "major_towns": "Jaranwala"
+          },
+          {
+            "name": "Samundri",
+            "major_towns": "Samundri"
+          },
+          {
+            "name": "Tandlianwala",
+            "major_towns": "Tandlianwala"
+          },
+          {
+            "name": "Chak Jhumra",
+            "major_towns": "Chak Jhumra"
+          }
+        ],
+        "administrative_source": "PBS 2023 administrative framework"
       },
       {
         "slug": "gujranwala",
@@ -153,7 +209,31 @@
         "density_2023": 1645.43,
         "urban_proportion_2023": 60.3,
         "population_source": "PBS 2023 Census, Table 1",
-        "last_verified": "2026-09-28"
+        "last_verified": "2026-09-28",
+        "division_2023": "Gujranwala Division",
+        "tehsils_2023": [
+          {
+            "name": "Gujranwala City",
+            "major_towns": "Gujranwala"
+          },
+          {
+            "name": "Gujranwala Sadar",
+            "major_towns": "Gujranwala"
+          },
+          {
+            "name": "Kamoke",
+            "major_towns": "Kamoke"
+          },
+          {
+            "name": "Nowshera Virkan",
+            "major_towns": "Nowshera Virkan"
+          },
+          {
+            "name": "Wazirabad",
+            "major_towns": "Wazirabad"
+          }
+        ],
+        "administrative_source": "PBS 2023 administrative framework"
       },
       {
         "slug": "gujrat",
@@ -255,7 +335,31 @@
         "density_2023": 7338.68,
         "urban_proportion_2023": 100,
         "population_source": "PBS 2023 Census, Table 1",
-        "last_verified": "2026-09-28"
+        "last_verified": "2026-09-28",
+        "division_2023": "Lahore Division",
+        "tehsils_2023": [
+          {
+            "name": "Lahore City",
+            "major_towns": "Lahore"
+          },
+          {
+            "name": "Lahore Cantt",
+            "major_towns": "Lahore Cantonment"
+          },
+          {
+            "name": "Model Town",
+            "major_towns": "Model Town, Lahore"
+          },
+          {
+            "name": "Raiwind",
+            "major_towns": "Raiwind"
+          },
+          {
+            "name": "Shalimar",
+            "major_towns": "Baghbanpura / Shalimar, Lahore"
+          }
+        ],
+        "administrative_source": "PBS 2023 administrative framework"
       },
       {
         "slug": "layyah",
@@ -321,7 +425,27 @@
         "density_2023": 1441.48,
         "urban_proportion_2023": 46.62,
         "population_source": "PBS 2023 Census, Table 1",
-        "last_verified": "2026-09-28"
+        "last_verified": "2026-09-28",
+        "division_2023": "Multan Division",
+        "tehsils_2023": [
+          {
+            "name": "Multan City",
+            "major_towns": "Multan"
+          },
+          {
+            "name": "Multan Saddar",
+            "major_towns": "Multan"
+          },
+          {
+            "name": "Jalalpur Pirwala",
+            "major_towns": "Jalalpur Pirwala"
+          },
+          {
+            "name": "Shujabad",
+            "major_towns": "Shujabad"
+          }
+        ],
+        "administrative_source": "PBS 2023 administrative framework"
       },
       {
         "slug": "muzaffargarh",
@@ -423,7 +547,39 @@
         "density_2023": 1157.79,
         "urban_proportion_2023": 68.82,
         "population_source": "PBS 2023 Census, Table 1",
-        "last_verified": "2026-09-28"
+        "last_verified": "2026-09-28",
+        "division_2023": "Rawalpindi Division",
+        "tehsils_2023": [
+          {
+            "name": "Rawalpindi",
+            "major_towns": "Rawalpindi"
+          },
+          {
+            "name": "Gujar Khan",
+            "major_towns": "Gujar Khan"
+          },
+          {
+            "name": "Kahuta",
+            "major_towns": "Kahuta"
+          },
+          {
+            "name": "Kallar Syedan",
+            "major_towns": "Kallar Syedan"
+          },
+          {
+            "name": "Kotli Sattian",
+            "major_towns": "Kotli Sattian"
+          },
+          {
+            "name": "Murree",
+            "major_towns": "Murree"
+          },
+          {
+            "name": "Taxila",
+            "major_towns": "Taxila"
+          }
+        ],
+        "administrative_source": "PBS 2023 administrative framework"
       },
       {
         "slug": "sahiwal",
@@ -477,7 +633,27 @@
         "density_2023": 1491.84,
         "urban_proportion_2023": 32.94,
         "population_source": "PBS 2023 Census, Table 1",
-        "last_verified": "2026-09-28"
+        "last_verified": "2026-09-28",
+        "division_2023": "Gujranwala Division",
+        "tehsils_2023": [
+          {
+            "name": "Sialkot",
+            "major_towns": "Sialkot"
+          },
+          {
+            "name": "Daska",
+            "major_towns": "Daska"
+          },
+          {
+            "name": "Pasrur",
+            "major_towns": "Pasrur"
+          },
+          {
+            "name": "Sambrial",
+            "major_towns": "Sambrial"
+          }
+        ],
+        "administrative_source": "PBS 2023 administrative framework"
       },
       {
         "slug": "tts",
@@ -913,7 +1089,27 @@
         "density_2023": 3134.89,
         "urban_proportion_2023": 40.05,
         "population_source": "PBS 2023 Census, Table 1",
-        "last_verified": "2026-09-28"
+        "last_verified": "2026-09-28",
+        "division_2023": "Peshawar Division",
+        "tehsils_2023": [
+          {
+            "name": "Peshawar City",
+            "major_towns": "Peshawar"
+          },
+          {
+            "name": "Peshawar Sadar",
+            "major_towns": "Peshawar"
+          },
+          {
+            "name": "Chamkani",
+            "major_towns": "Chamkani"
+          },
+          {
+            "name": "Hashtnagar",
+            "major_towns": "Charsadda?"
+          }
+        ],
+        "administrative_source": "PBS 2023 administrative framework"
       },
       {
         "slug": "shangla",
@@ -955,7 +1151,35 @@
         "density_2023": 503.54,
         "urban_proportion_2023": 29.56,
         "population_source": "PBS 2023 Census, Table 1",
-        "last_verified": "2026-09-28"
+        "last_verified": "2026-09-28",
+        "division_2023": "Malakand Division",
+        "tehsils_2023": [
+          {
+            "name": "Babuzai",
+            "major_towns": "Mingora / Saidu Sharif"
+          },
+          {
+            "name": "Barikot",
+            "major_towns": "Barikot"
+          },
+          {
+            "name": "Kabal",
+            "major_towns": "Kabal"
+          },
+          {
+            "name": "Khwazakhela",
+            "major_towns": "Khwazakhela"
+          },
+          {
+            "name": "Matta",
+            "major_towns": "Matta"
+          },
+          {
+            "name": "Bahrain",
+            "major_towns": "Bahrain"
+          }
+        ],
+        "administrative_source": "PBS 2023 administrative framework"
       },
       {
         "slug": "bar-swat",
@@ -1761,7 +1985,27 @@
         "density_2023": 752.97,
         "urban_proportion_2023": 60.32,
         "population_source": "PBS 2023 Census, Table 1",
-        "last_verified": "2026-09-28"
+        "last_verified": "2026-09-28",
+        "division_2023": "Quetta Division",
+        "tehsils_2023": [
+          {
+            "name": "Quetta City",
+            "major_towns": "Quetta"
+          },
+          {
+            "name": "Chiltan",
+            "major_towns": "Quetta"
+          },
+          {
+            "name": "Panjpai",
+            "major_towns": "Panjpai"
+          },
+          {
+            "name": "Sariab",
+            "major_towns": "Quetta"
+          }
+        ],
+        "administrative_source": "PBS 2023 administrative framework"
       },
       {
         "slug": "sherani",
