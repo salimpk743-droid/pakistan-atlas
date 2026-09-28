@@ -402,6 +402,7 @@ for (const unit of provinces.units) {
   fs.writeFileSync(path.join(ROOT, provinceRoutes[unit.id]), provincePage(unit, districts));
 }
 buildHubs();
+buildHubs();
 for (const fileName of fs.readdirSync(ROOT).filter((name) => name.endsWith(".html"))) {
   const filePath = path.join(ROOT, fileName);
   const original = fs.readFileSync(filePath, "utf8");
