@@ -63,7 +63,13 @@
         "health": "BVH / QAMC teaching hospital cluster.",
         "culture": "Saraiki language, desert crafts and the Sadiqgarh heritage.",
         "issues": "Desert water, summer heat and spreading the university’s reach into tehsils.",
-        "villages": "Yazman, Ahmadpur East countryside"
+        "villages": "Yazman, Ahmadpur East countryside",
+        "population_2023": 4284964,
+        "area_km2": 24830,
+        "density_2023": 172.57,
+        "urban_proportion_2023": 37.79,
+        "population_source": "PBS 2023 Census, Table 1",
+        "last_verified": "2026-09-28"
       },
       {
         "slug": "bhakkar",
@@ -123,7 +129,13 @@
         "health": "Allied / DHQ teaching hospitals.",
         "culture": "Punjabi industry-town life and a huge mandi.",
         "issues": "Air quality, factory labour conditions and urban crowding.",
-        "villages": "Jaranwala and Samundri rural unions"
+        "villages": "Jaranwala and Samundri rural unions",
+        "population_2023": 9075819,
+        "area_km2": 5857,
+        "density_2023": 1549.57,
+        "urban_proportion_2023": 48.4,
+        "population_source": "PBS 2023 Census, Table 1",
+        "last_verified": "2026-09-28"
       },
       {
         "slug": "gujranwala",
@@ -135,7 +147,13 @@
         "health": "DHQ / teaching hospital Gujranwala.",
         "culture": "Punjabi business culture and wrestlers’ tradition.",
         "issues": "Industry pollution and traffic.",
-        "villages": "Kamoke, Nowshera Virkan countryside"
+        "villages": "Kamoke, Nowshera Virkan countryside",
+        "population_2023": 5959750,
+        "area_km2": 3622,
+        "density_2023": 1645.43,
+        "urban_proportion_2023": 60.3,
+        "population_source": "PBS 2023 Census, Table 1",
+        "last_verified": "2026-09-28"
       },
       {
         "slug": "gujrat",
@@ -231,7 +249,13 @@
         "health": "Mayo, Services, Jinnah, Children’s Hospital and a huge private sector.",
         "culture": "Urdu and Punjabi high culture, film, food streets and urs of Data Ganj Bakhsh.",
         "issues": "Smog, heritage pressure and unequal services between old city and new housing schemes.",
-        "villages": "Peripheral union councils toward Raiwind and Wagah"
+        "villages": "Peripheral union councils toward Raiwind and Wagah",
+        "population_2023": 13004135,
+        "area_km2": 1772,
+        "density_2023": 7338.68,
+        "urban_proportion_2023": 100,
+        "population_source": "PBS 2023 Census, Table 1",
+        "last_verified": "2026-09-28"
       },
       {
         "slug": "layyah",
@@ -291,7 +315,13 @@
         "health": "Nishtar Hospital is the main teaching centre.",
         "culture": "Saraiki language, blue tiles, mangoes and shrine economy.",
         "issues": "Inner-city congestion and summer heat.",
-        "villages": "Shujabad, Jalalpur Pirwala villages"
+        "villages": "Shujabad, Jalalpur Pirwala villages",
+        "population_2023": 5362305,
+        "area_km2": 3720,
+        "density_2023": 1441.48,
+        "urban_proportion_2023": 46.62,
+        "population_source": "PBS 2023 Census, Table 1",
+        "last_verified": "2026-09-28"
       },
       {
         "slug": "muzaffargarh",
@@ -387,7 +417,13 @@
         "health": "Holy Family, Benazir Bhutto Hospital, CMH and DHQ.",
         "culture": "Potohari-Punjabi city culture next to the federal capital.",
         "issues": "Congestion and the split of Murree / Talagang as newer districts.",
-        "villages": "Kahuta, Kallar Syedan, Gujar Khan villages"
+        "villages": "Kahuta, Kallar Syedan, Gujar Khan villages",
+        "population_2023": 6118911,
+        "area_km2": 5285,
+        "density_2023": 1157.79,
+        "urban_proportion_2023": 68.82,
+        "population_source": "PBS 2023 Census, Table 1",
+        "last_verified": "2026-09-28"
       },
       {
         "slug": "sahiwal",
@@ -435,7 +471,13 @@
         "health": "Allama Iqbal Memorial / DHQ teaching setup.",
         "culture": "Punjabi workshop culture and Iqbal’s city.",
         "issues": "Airport-linked growth must still serve rural tehsils.",
-        "villages": "Daska, Pasrur, Sambrial villages"
+        "villages": "Daska, Pasrur, Sambrial villages",
+        "population_2023": 4499394,
+        "area_km2": 3016,
+        "density_2023": 1491.84,
+        "urban_proportion_2023": 32.94,
+        "population_source": "PBS 2023 Census, Table 1",
+        "last_verified": "2026-09-28"
       },
       {
         "slug": "tts",
@@ -865,7 +907,13 @@
         "health": "Lady Reading Hospital, Hayatabad Medical Complex and Khyber Teaching Hospital are the city's major public hospitals.",
         "culture": "Pashto literature and rubab music have deep roots here, centred on the city's historic caravan bazaar.",
         "issues": "Air quality, traffic congestion and protecting the old city's built fabric are persistent challenges.",
-        "villages": "Badhber, Mathra and Regi rural areas."
+        "villages": "Badhber, Mathra and Regi rural areas.",
+        "population_2023": 4758762,
+        "area_km2": 1518,
+        "density_2023": 3134.89,
+        "urban_proportion_2023": 40.05,
+        "population_source": "PBS 2023 Census, Table 1",
+        "last_verified": "2026-09-28"
       },
       {
         "slug": "shangla",
@@ -901,7 +949,13 @@
         "health": "The Saidu Group of Teaching Hospitals in Saidu Sharif is the main referral centre.",
         "culture": "Yousafzai Swati culture, trout fishing and mountain crafts define daily life here.",
         "issues": "Tourism crowding and recovery from the 2022 floods remain ongoing concerns.",
-        "villages": "Kabal and Barikot villages."
+        "villages": "Kabal and Barikot villages.",
+        "population_2023": 2687384,
+        "area_km2": 5337,
+        "density_2023": 503.54,
+        "urban_proportion_2023": 29.56,
+        "population_source": "PBS 2023 Census, Table 1",
+        "last_verified": "2026-09-28"
       },
       {
         "slug": "bar-swat",
@@ -1701,7 +1755,13 @@
         "health": "Sandeman / BMC teaching hospitals.",
         "culture": "Pashto, Brahui and Balochi together; winter dry fruit.",
         "issues": "Water, quake-safe housing, smog in still winter air.",
-        "villages": "Hanna, Sariab rural"
+        "villages": "Hanna, Sariab rural",
+        "population_2023": 2595492,
+        "area_km2": 3447,
+        "density_2023": 752.97,
+        "urban_proportion_2023": 60.32,
+        "population_source": "PBS 2023 Census, Table 1",
+        "last_verified": "2026-09-28"
       },
       {
         "slug": "sherani",
