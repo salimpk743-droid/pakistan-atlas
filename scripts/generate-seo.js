@@ -277,6 +277,51 @@ const hubRoutes = {
   ict: "districts-of-islamabad-capital-territory.html"
 };
 
+
+function buildTehsilPages() {
+  const priority = new Set(["lahore","faisalabad","rawalpindi","multan","gujranwala","sialkot","bahawalpur","peshawar","swat","quetta"]);
+  for (const unit of provinces.units) {
+    for (const district of districts[unit.id]?.districts || []) {
+      if (!priority.has(district.slug) || !district.tehsils_2023?.length) continue;
+      const route = `tehsils-of-${district.slug}.html`;
+      const links = district.tehsils_2023.map(t => `
+        <article class="card"><div class="card-body">
+          <h2>${esc(t.name)} Tehsil</h2>
+          <p><strong>Major town / locality:</strong> ${esc(t.major_towns)}</p>
+          <p>This administrative unit is part of ${esc(district.name)} District in ${esc(district.division_2023)}.</p>
+        </div></article>`).join("");
+      const description = `Tehsils and major towns of ${district.name} District, ${unit.name}: ${district.tehsils_2023.map(t=>t.name).join(", ")}.`;
+      const breadcrumb = schemaScript({
+        "@context":"https://schema.org","@type":"BreadcrumbList",
+        itemListElement:[
+          {"@type":"ListItem","position":1,"name":"Home","item":`${SITE}/`},
+          {"@type":"ListItem","position":2,"name":unit.name,"item":`${SITE}/${provinceRoutes[unit.id]}`},
+          {"@type":"ListItem","position":3,"name":district.name+" District","item":`${SITE}/${districtHref({...district,provinceId:unit.id})}`},
+          {"@type":"ListItem","position":4,"name":"Tehsils","item":`${SITE}/${route}`}
+        ]
+      });
+      const page = `<!DOCTYPE html><html lang="en"><head>
+${ADSENSE_SCRIPT}${ADSENSE_META}<meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Tehsils of ${esc(district.name)} District — ${esc(unit.name)} | MyBook.Pk</title>
+<meta name="description" content="${esc(description)}"/><meta name="robots" content="index,follow,max-image-preview:large"/>
+<link rel="canonical" href="${SITE}/${route}"/><meta property="og:title" content="Tehsils of ${esc(district.name)} District — MyBook.Pk"/>
+<meta property="og:description" content="${esc(description)}"/><meta property="og:type" content="website"/><meta property="og:url" content="${SITE}/${route}"/>
+<link rel="stylesheet" href="css/style.css"/>${breadcrumb}</head><body>
+<div id="site-header"></div><div class="page-hero"><div class="container">
+<p><a href="index.html" style="color:#fff">Home</a> · <a href="${provinceRoutes[unit.id]}" style="color:#fff">${esc(unit.name)}</a> · <a href="${districtHref({...district,provinceId:unit.id})}" style="color:#fff">${esc(district.name)} District</a></p>
+<h1>Tehsils of ${esc(district.name)} District</h1><p>${esc(district.division_2023)} · 2023 administrative reference</p>
+</div></div><section><div class="container prose">
+<h2>${esc(district.name)} administrative structure</h2>
+<p>${esc(district.name)} District is part of <strong>${esc(district.division_2023)}</strong>. The list below records the tehsils/subdivisions represented in the 2023 administrative reference data, together with associated major towns or localities.</p>
+<div class="grid-3">${links}</div>
+<h2>Related pages</h2><p><a href="${districtHref({...district,provinceId:unit.id})}">${esc(district.name)} District</a> · <a href="${provinceRoutes[unit.id]}">Districts of ${esc(unit.name)}</a> · <a href="districts-of-pakistan.html">Districts of Pakistan</a></p>
+<section class="source-box"><h2>Source and date</h2><p>Administrative hierarchy follows Pakistan Bureau of Statistics 2023 census framework and district tables. <a href="https://www.pbs.gov.pk/gis/" rel="noopener">PBS administrative units 2023 →</a></p><p class="meta"><strong>Last reviewed:</strong> 28 September 2026. Administrative boundaries can change, so this page is explicitly dated.</p></section>
+</div></section><div id="site-footer"></div><script src="js/app.js"></script></body></html>`;
+      fs.writeFileSync(path.join(ROOT, route), page);
+    }
+  }
+}
+
 function buildHubs() {
   const provinceLinks = provinces.units.map(unit => ({
     name: unit.name,
@@ -402,6 +447,7 @@ for (const unit of provinces.units) {
   fs.writeFileSync(path.join(ROOT, provinceRoutes[unit.id]), provincePage(unit, districts));
 }
 buildHubs();
+buildTehsilPages();
 buildHubs();
 for (const fileName of fs.readdirSync(ROOT).filter((name) => name.endsWith(".html"))) {
   const filePath = path.join(ROOT, fileName);
