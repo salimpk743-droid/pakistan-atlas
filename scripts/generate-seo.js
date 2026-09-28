@@ -210,7 +210,7 @@ function hubPage(title, intro, links, canonicalPath) {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: SITE + "/" },
-      { "@type": "ListItem", position: 2, name: "Pakistan Atlas", item: SITE + "/provinces.html" },
+      { "@type": "ListItem", position: 2, name: "MyBook.Pk", item: SITE + "/provinces.html" },
       { "@type": "ListItem", position: 3, name: title, item: SITE + "/" + canonicalPath }
     ]
   };
@@ -240,7 +240,7 @@ function hubPage(title, intro, links, canonicalPath) {
 <body>
   <div id="site-header"></div>
   <div class="page-hero"><div class="container">
-    <p><a href="index.html" style="color:#fff">Home</a> · Pakistan Atlas</p>
+    <p><a href="index.html" style="color:#fff">Home</a> · MyBook.Pk</p>
     <h1>${esc(title)}</h1>
     <p>${esc(intro)}</p>
   </div></div>
