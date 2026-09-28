@@ -203,6 +203,122 @@ function districtPage(district, province) {
 `;
 }
 
+function hubPage(title, intro, links, canonicalPath) {
+  const description = intro.slice(0, 155);
+  const breadcrumb = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: SITE + "/" },
+      { "@type": "ListItem", position: 2, name: "Pakistan Atlas", item: SITE + "/provinces.html" },
+      { "@type": "ListItem", position: 3, name: title, item: SITE + "/" + canonicalPath }
+    ]
+  };
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+  ${ADSENSE_SCRIPT}
+  ${ADSENSE_META}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>${esc(title)} | MyBook.Pk</title>
+  <meta name="description" content="${esc(description)}" />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <link rel="canonical" href="${SITE}/${canonicalPath}" />
+  <meta property="og:title" content="${esc(title)} | MyBook.Pk" />
+  <meta property="og:description" content="${esc(description)}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="${SITE}/${canonicalPath}" />
+  <meta property="og:image" content="${SITE}/images/flag-pakistan.svg" />
+  <meta property="og:site_name" content="MyBook.Pk" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="${esc(title)} | MyBook.Pk" />
+  <meta name="twitter:description" content="${esc(description)}" />
+  <link rel="stylesheet" href="css/style.css" />
+  ${schemaScript(breadcrumb)}
+</head>
+<body>
+  <div id="site-header"></div>
+  <div class="page-hero"><div class="container">
+    <p><a href="index.html" style="color:#fff">Home</a> · Pakistan Atlas</p>
+    <h1>${esc(title)}</h1>
+    <p>${esc(intro)}</p>
+  </div></div>
+  <main class="container prose">
+    <div class="trust-box">
+      <strong>Editorial note</strong>
+      <p>MyBook.Pk separates reference data from editorial description. Population and administrative figures are labelled by year and should be checked against the latest official Pakistan Bureau of Statistics material before formal use.</p>
+    </div>
+    <div class="grid-3">${links.map(link => `
+      <article class="card"><div class="card-body">
+        <h2><a href="${esc(link.href)}">${esc(link.name)}</a></h2>
+        <p>${esc(link.summary)}</p>
+      </div></article>`).join("")}</div>
+    <section>
+      <h2>Sources and editorial method</h2>
+      <p>Primary statistical references should be Pakistan Bureau of Statistics and relevant provincial or territorial government sources. When a current official figure is unavailable, MyBook.Pk should say so rather than fill the gap with an estimate.</p>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/app.js"></script>
+</body>
+</html>`;
+}
+
+const hubRoutes = {
+  provinces: "provinces-of-pakistan.html",
+  districts: "districts-of-pakistan.html",
+  punjab: "districts-of-punjab.html",
+  sindh: "districts-of-sindh.html",
+  kpk: "districts-of-khyber-pakhtunkhwa.html",
+  balochistan: "districts-of-balochistan.html",
+  gb: "districts-of-gilgit-baltistan.html",
+  ajk: "districts-of-azad-kashmir.html",
+  ict: "districts-of-islamabad-capital-territory.html"
+};
+
+function buildHubs() {
+  const provinceLinks = provinces.units.map(unit => ({
+    name: unit.name,
+    href: provinceRoutes[unit.id],
+    summary: `${unit.name}: capital ${unit.capital}, 2023 population baseline and district reference pages.`
+  }));
+  fs.writeFileSync(path.join(ROOT, hubRoutes.provinces), hubPage(
+    "Provinces and Territories of Pakistan — Names, Capitals & Facts",
+    "A structured guide to Pakistan's provinces and administrative territories, with capitals, population baselines and links to district information.",
+    provinceLinks, hubRoutes.provinces
+  ));
+
+  const allDistrictLinks = [];
+  for (const unit of provinces.units) {
+    for (const district of districts[unit.id]?.districts || []) {
+      allDistrictLinks.push({
+        name: `${district.name} District`,
+        href: districtHref({ ...district, provinceId: unit.id }),
+        summary: `${unit.name} · Headquarters: ${district.hq} · Public data note: ${district.pop}.`
+      });
+    }
+  }
+  fs.writeFileSync(path.join(ROOT, hubRoutes.districts), hubPage(
+    "Districts of Pakistan — Complete Directory by Province",
+    "Browse Pakistan's districts by province and territory, with headquarters, population notes and links to individual district pages.",
+    allDistrictLinks, hubRoutes.districts
+  ));
+
+  for (const unit of provinces.units) {
+    const links = (districts[unit.id]?.districts || []).map(district => ({
+      name: `${district.name} District`,
+      href: districtHref({ ...district, provinceId: unit.id }),
+      summary: `Headquarters: ${district.hq}. Public data note: ${district.pop}.`
+    }));
+    fs.writeFileSync(path.join(ROOT, hubRoutes[unit.id]), hubPage(
+      `Districts of ${unit.name} — List, Headquarters & Facts`,
+      `Browse the districts of ${unit.name}, Pakistan, with headquarters, population notes and links to individual district pages.`,
+      links, hubRoutes[unit.id]
+    ));
+  }
+}
+
 function upsertMetadata(fileName, html) {
   if (fileName === "province.html" || fileName === "district.html") return html;
   const canonical = SITE + "/" + (fileName === "index.html" ? "" : fileName);
@@ -247,24 +363,16 @@ function upsertMetadata(fileName, html) {
 
 function generateSitemap() {
   const excluded = new Set([
-    "province.html",
-    "district.html",
-    "district.html",
-    "404.html",
-    "google316eb4b51e11f5de.html",
-    "bajur.html",
-    "dgkhan.html",
-    "dikhan.html",
-    "rykhan.html",
-    "nankana.html",
-    "tts.html",
-    "lakki.html",
+    "province.html", "district.html", "404.html", "google316eb4b51e11f5de.html",
+    "bajur.html", "dgkhan.html", "dikhan.html", "rykhan.html", "nankana.html", "tts.html", "lakki.html",
+    "news.html"
   ]);
   const urls = fs.readdirSync(ROOT)
-    .filter((name) => name.endsWith(".html") && !excluded.has(name))
+    .filter(name => name.endsWith(".html") && !excluded.has(name))
+    .filter(name => !name.includes("?"))
     .sort()
-    .map((name) => `${SITE}/${name === "index.html" ? "" : name}`);
-  const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((url) => `  <url><loc>${url}</loc></url>`).join("\n")}\n</urlset>\n`;
+    .map(name => `${SITE}/${name === "index.html" ? "" : name}`);
+  const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map(url => `  <url><loc>${url}</loc></url>`).join("\n")}\n</urlset>\n`;
   fs.writeFileSync(path.join(ROOT, "sitemap.xml"), xml);
   return urls.length;
 }
