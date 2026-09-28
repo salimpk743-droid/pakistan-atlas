@@ -78,7 +78,7 @@ function provincePage(unit, districtData) {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: `${SITE}/` },
-      { "@type": "ListItem", position: 2, name: "Provinces", item: `${SITE}/provinces.html` },
+      { "@type": "ListItem", position: 2, name: "Provinces", item: `${SITE}/provinces-of-pakistan.html` },
       { "@type": "ListItem", position: 3, name: unit.name, item: `${SITE}/${route}` }
     ]
   };
@@ -119,7 +119,7 @@ function provincePage(unit, districtData) {
 <body>
   <div id="site-header"></div>
   <div class="page-hero"><div class="container">
-    <p style="opacity:.9"><a href="index.html" style="color:#fff">Home</a> · <a href="provinces.html" style="color:#fff">Provinces</a></p>
+    <p style="opacity:.9"><a href="index.html" style="color:#fff">Home</a> · <a href="provinces-of-pakistan.html" style="color:#fff">Provinces of Pakistan</a></p>
     <h1>${esc(unit.name)} <span class="urdu">${esc(unit.urdu)}</span></h1>
     <p>${esc(unit.intro || unit.culture)}</p>
   </div></div>
