@@ -63,7 +63,41 @@
         "health": "BVH / QAMC teaching hospital cluster.",
         "culture": "Saraiki language, desert crafts and the Sadiqgarh heritage.",
         "issues": "Desert water, summer heat and spreading the university’s reach into tehsils.",
-        "villages": "Yazman, Ahmadpur East countryside"
+        "villages": "Yazman, Ahmadpur East countryside",
+        "population_2023": 4284964,
+        "area_km2": 24830,
+        "density_2023": 172.57,
+        "urban_proportion_2023": 37.79,
+        "population_source": "PBS 2023 Census, Table 1",
+        "last_verified": "2026-09-28",
+        "division_2023": "Bahawalpur Division",
+        "tehsils_2023": [
+          {
+            "name": "Bahawalpur City",
+            "major_towns": "Bahawalpur"
+          },
+          {
+            "name": "Bahawalpur Saddar",
+            "major_towns": "Bahawalpur"
+          },
+          {
+            "name": "Ahmadpur East",
+            "major_towns": "Ahmadpur East"
+          },
+          {
+            "name": "Hasilpur",
+            "major_towns": "Hasilpur"
+          },
+          {
+            "name": "Khairpur Tamewali",
+            "major_towns": "Khairpur Tamewali"
+          },
+          {
+            "name": "Yazman",
+            "major_towns": "Yazman"
+          }
+        ],
+        "administrative_source": "PBS 2023 administrative framework"
       },
       {
         "slug": "bhakkar",
@@ -123,19 +157,108 @@
         "health": "Allied / DHQ teaching hospitals.",
         "culture": "Punjabi industry-town life and a huge mandi.",
         "issues": "Air quality, factory labour conditions and urban crowding.",
-        "villages": "Jaranwala and Samundri rural unions"
+        "villages": "Jaranwala and Samundri rural unions",
+        "population_2023": 9075819,
+        "area_km2": 5857,
+        "density_2023": 1549.57,
+        "urban_proportion_2023": 48.4,
+        "population_source": "PBS 2023 Census, Table 1",
+        "last_verified": "2026-09-28",
+        "division_2023": "Faisalabad Division",
+        "tehsils_2023": [
+          {
+            "name": "Faisalabad City",
+            "major_towns": "Faisalabad",
+            "area_km2": 168,
+            "population_2023": 3691999,
+            "density_2023": 21976.18,
+            "urban_proportion_2023": 100,
+            "source": "PBS 2023 Census Table 1"
+          },
+          {
+            "name": "Faisalabad Sadar",
+            "major_towns": "Faisalabad",
+            "area_km2": 1186,
+            "population_2023": 1742958,
+            "density_2023": 1469.61,
+            "urban_proportion_2023": 5.56,
+            "source": "PBS 2023 Census Table 1"
+          },
+          {
+            "name": "Jaranwala",
+            "major_towns": "Jaranwala",
+            "area_km2": 1811,
+            "population_2023": 1731148,
+            "density_2023": 955.91,
+            "urban_proportion_2023": 15.46,
+            "source": "PBS 2023 Census Table 1"
+          },
+          {
+            "name": "Samundri",
+            "major_towns": "Samundri",
+            "area_km2": 754,
+            "population_2023": 729672,
+            "density_2023": 967.73,
+            "urban_proportion_2023": 25.54,
+            "source": "PBS 2023 Census Table 1"
+          },
+          {
+            "name": "Tandlianwala",
+            "major_towns": "Tandlianwala",
+            "area_km2": 1284,
+            "population_2023": 931973,
+            "density_2023": 725.6,
+            "urban_proportion_2023": 9.46,
+            "source": "PBS 2023 Census Table 1"
+          },
+          {
+            "name": "Chak Jhumra",
+            "major_towns": "Chak Jhumra"
+          }
+        ],
+        "administrative_source": "PBS 2023 administrative framework"
       },
       {
         "slug": "gujranwala",
         "name": "Gujranwala",
         "hq": "Gujranwala",
-        "pop": "Census 2023 — see PBS",
+        "pop": "5,959,750 (2023 major-city figure; district total should be taken from the PBS district table)",
         "about": "Industrial city of Punjab’s north-east, known for electrical goods and food.",
         "education": "University of the Punjab Gujranwala campus and many colleges.",
         "health": "DHQ / teaching hospital Gujranwala.",
         "culture": "Punjabi business culture and wrestlers’ tradition.",
         "issues": "Industry pollution and traffic.",
-        "villages": "Kamoke, Nowshera Virkan countryside"
+        "villages": "Kamoke, Nowshera Virkan countryside",
+        "population_2023": 5959750,
+        "area_km2": 3622,
+        "density_2023": 1645.43,
+        "urban_proportion_2023": 60.3,
+        "population_source": "PBS 2023 Census, Table 1",
+        "last_verified": "2026-09-28",
+        "division_2023": "Gujranwala Division",
+        "tehsils_2023": [
+          {
+            "name": "Gujranwala City",
+            "major_towns": "Gujranwala"
+          },
+          {
+            "name": "Gujranwala Sadar",
+            "major_towns": "Gujranwala"
+          },
+          {
+            "name": "Kamoke",
+            "major_towns": "Kamoke"
+          },
+          {
+            "name": "Nowshera Virkan",
+            "major_towns": "Nowshera Virkan"
+          },
+          {
+            "name": "Wazirabad",
+            "major_towns": "Wazirabad"
+          }
+        ],
+        "administrative_source": "PBS 2023 administrative framework"
       },
       {
         "slug": "gujrat",
@@ -231,7 +354,62 @@
         "health": "Mayo, Services, Jinnah, Children’s Hospital and a huge private sector.",
         "culture": "Urdu and Punjabi high culture, film, food streets and urs of Data Ganj Bakhsh.",
         "issues": "Smog, heritage pressure and unequal services between old city and new housing schemes.",
-        "villages": "Peripheral union councils toward Raiwind and Wagah"
+        "villages": "Peripheral union councils toward Raiwind and Wagah",
+        "population_2023": 13004135,
+        "area_km2": 1772,
+        "density_2023": 7338.68,
+        "urban_proportion_2023": 100,
+        "population_source": "PBS 2023 Census, Table 1",
+        "last_verified": "2026-09-28",
+        "division_2023": "Lahore Division",
+        "tehsils_2023": [
+          {
+            "name": "Lahore City",
+            "major_towns": "Lahore",
+            "area_km2": 214,
+            "population_2023": 4123354,
+            "density_2023": 19268.01,
+            "urban_proportion_2023": 100,
+            "source": "PBS 2023 Census Table 1"
+          },
+          {
+            "name": "Lahore Cantt",
+            "major_towns": "Lahore Cantonment",
+            "area_km2": 466,
+            "population_2023": 1885098,
+            "density_2023": 4045.27,
+            "urban_proportion_2023": 100,
+            "source": "PBS 2023 Census Table 1"
+          },
+          {
+            "name": "Model Town",
+            "major_towns": "Model Town, Lahore",
+            "area_km2": 353,
+            "population_2023": 3244906,
+            "density_2023": 9192.37,
+            "urban_proportion_2023": 100,
+            "source": "PBS 2023 Census Table 1"
+          },
+          {
+            "name": "Raiwind",
+            "major_towns": "Raiwind",
+            "area_km2": 467,
+            "population_2023": 1080637,
+            "density_2023": 2314,
+            "urban_proportion_2023": 100,
+            "source": "PBS 2023 Census Table 1"
+          },
+          {
+            "name": "Shalimar",
+            "major_towns": "Baghbanpura / Shalimar, Lahore",
+            "area_km2": 272,
+            "population_2023": 2670140,
+            "density_2023": 9816.69,
+            "urban_proportion_2023": 100,
+            "source": "PBS 2023 Census Table 1"
+          }
+        ],
+        "administrative_source": "PBS 2023 administrative framework"
       },
       {
         "slug": "layyah",
@@ -291,7 +469,33 @@
         "health": "Nishtar Hospital is the main teaching centre.",
         "culture": "Saraiki language, blue tiles, mangoes and shrine economy.",
         "issues": "Inner-city congestion and summer heat.",
-        "villages": "Shujabad, Jalalpur Pirwala villages"
+        "villages": "Shujabad, Jalalpur Pirwala villages",
+        "population_2023": 5362305,
+        "area_km2": 3720,
+        "density_2023": 1441.48,
+        "urban_proportion_2023": 46.62,
+        "population_source": "PBS 2023 Census, Table 1",
+        "last_verified": "2026-09-28",
+        "division_2023": "Multan Division",
+        "tehsils_2023": [
+          {
+            "name": "Multan City",
+            "major_towns": "Multan"
+          },
+          {
+            "name": "Multan Saddar",
+            "major_towns": "Multan"
+          },
+          {
+            "name": "Jalalpur Pirwala",
+            "major_towns": "Jalalpur Pirwala"
+          },
+          {
+            "name": "Shujabad",
+            "major_towns": "Shujabad"
+          }
+        ],
+        "administrative_source": "PBS 2023 administrative framework"
       },
       {
         "slug": "muzaffargarh",
@@ -387,7 +591,45 @@
         "health": "Holy Family, Benazir Bhutto Hospital, CMH and DHQ.",
         "culture": "Potohari-Punjabi city culture next to the federal capital.",
         "issues": "Congestion and the split of Murree / Talagang as newer districts.",
-        "villages": "Kahuta, Kallar Syedan, Gujar Khan villages"
+        "villages": "Kahuta, Kallar Syedan, Gujar Khan villages",
+        "population_2023": 6118911,
+        "area_km2": 5285,
+        "density_2023": 1157.79,
+        "urban_proportion_2023": 68.82,
+        "population_source": "PBS 2023 Census, Table 1",
+        "last_verified": "2026-09-28",
+        "division_2023": "Rawalpindi Division",
+        "tehsils_2023": [
+          {
+            "name": "Rawalpindi",
+            "major_towns": "Rawalpindi"
+          },
+          {
+            "name": "Gujar Khan",
+            "major_towns": "Gujar Khan"
+          },
+          {
+            "name": "Kahuta",
+            "major_towns": "Kahuta"
+          },
+          {
+            "name": "Kallar Syedan",
+            "major_towns": "Kallar Syedan"
+          },
+          {
+            "name": "Kotli Sattian",
+            "major_towns": "Kotli Sattian"
+          },
+          {
+            "name": "Murree",
+            "major_towns": "Murree"
+          },
+          {
+            "name": "Taxila",
+            "major_towns": "Taxila"
+          }
+        ],
+        "administrative_source": "PBS 2023 administrative framework"
       },
       {
         "slug": "sahiwal",
@@ -435,7 +677,33 @@
         "health": "Allama Iqbal Memorial / DHQ teaching setup.",
         "culture": "Punjabi workshop culture and Iqbal’s city.",
         "issues": "Airport-linked growth must still serve rural tehsils.",
-        "villages": "Daska, Pasrur, Sambrial villages"
+        "villages": "Daska, Pasrur, Sambrial villages",
+        "population_2023": 4499394,
+        "area_km2": 3016,
+        "density_2023": 1491.84,
+        "urban_proportion_2023": 32.94,
+        "population_source": "PBS 2023 Census, Table 1",
+        "last_verified": "2026-09-28",
+        "division_2023": "Gujranwala Division",
+        "tehsils_2023": [
+          {
+            "name": "Sialkot",
+            "major_towns": "Sialkot"
+          },
+          {
+            "name": "Daska",
+            "major_towns": "Daska"
+          },
+          {
+            "name": "Pasrur",
+            "major_towns": "Pasrur"
+          },
+          {
+            "name": "Sambrial",
+            "major_towns": "Sambrial"
+          }
+        ],
+        "administrative_source": "PBS 2023 administrative framework"
       },
       {
         "slug": "tts",
@@ -865,7 +1133,33 @@
         "health": "Lady Reading Hospital, Hayatabad Medical Complex and Khyber Teaching Hospital are the city's major public hospitals.",
         "culture": "Pashto literature and rubab music have deep roots here, centred on the city's historic caravan bazaar.",
         "issues": "Air quality, traffic congestion and protecting the old city's built fabric are persistent challenges.",
-        "villages": "Badhber, Mathra and Regi rural areas."
+        "villages": "Badhber, Mathra and Regi rural areas.",
+        "population_2023": 4758762,
+        "area_km2": 1518,
+        "density_2023": 3134.89,
+        "urban_proportion_2023": 40.05,
+        "population_source": "PBS 2023 Census, Table 1",
+        "last_verified": "2026-09-28",
+        "division_2023": "Peshawar Division",
+        "tehsils_2023": [
+          {
+            "name": "Peshawar City",
+            "major_towns": "Peshawar"
+          },
+          {
+            "name": "Peshawar Sadar",
+            "major_towns": "Peshawar"
+          },
+          {
+            "name": "Chamkani",
+            "major_towns": "Chamkani"
+          },
+          {
+            "name": "Hashtnagar",
+            "major_towns": "Charsadda?"
+          }
+        ],
+        "administrative_source": "PBS 2023 administrative framework"
       },
       {
         "slug": "shangla",
@@ -901,7 +1195,41 @@
         "health": "The Saidu Group of Teaching Hospitals in Saidu Sharif is the main referral centre.",
         "culture": "Yousafzai Swati culture, trout fishing and mountain crafts define daily life here.",
         "issues": "Tourism crowding and recovery from the 2022 floods remain ongoing concerns.",
-        "villages": "Kabal and Barikot villages."
+        "villages": "Kabal and Barikot villages.",
+        "population_2023": 2687384,
+        "area_km2": 5337,
+        "density_2023": 503.54,
+        "urban_proportion_2023": 29.56,
+        "population_source": "PBS 2023 Census, Table 1",
+        "last_verified": "2026-09-28",
+        "division_2023": "Malakand Division",
+        "tehsils_2023": [
+          {
+            "name": "Babuzai",
+            "major_towns": "Mingora / Saidu Sharif"
+          },
+          {
+            "name": "Barikot",
+            "major_towns": "Barikot"
+          },
+          {
+            "name": "Kabal",
+            "major_towns": "Kabal"
+          },
+          {
+            "name": "Khwazakhela",
+            "major_towns": "Khwazakhela"
+          },
+          {
+            "name": "Matta",
+            "major_towns": "Matta"
+          },
+          {
+            "name": "Bahrain",
+            "major_towns": "Bahrain"
+          }
+        ],
+        "administrative_source": "PBS 2023 administrative framework"
       },
       {
         "slug": "bar-swat",
@@ -1695,13 +2023,39 @@
         "slug": "quetta",
         "name": "Quetta",
         "hq": "Quetta",
-        "pop": "About 2.3–2.6 million in recent tables",
+        "pop": "2,595,492 (2023 major-city figure; district total should be taken from the PBS district table)",
         "about": "Provincial capital in a high dry bowl. Fruit markets, cantonment and university city. Some tables now split Quetta East / West — confirm before citing a count.",
         "education": "University of Balochistan, BUITEMS, Bolan Medical College.",
         "health": "Sandeman / BMC teaching hospitals.",
         "culture": "Pashto, Brahui and Balochi together; winter dry fruit.",
         "issues": "Water, quake-safe housing, smog in still winter air.",
-        "villages": "Hanna, Sariab rural"
+        "villages": "Hanna, Sariab rural",
+        "population_2023": 2595492,
+        "area_km2": 3447,
+        "density_2023": 752.97,
+        "urban_proportion_2023": 60.32,
+        "population_source": "PBS 2023 Census, Table 1",
+        "last_verified": "2026-09-28",
+        "division_2023": "Quetta Division",
+        "tehsils_2023": [
+          {
+            "name": "Quetta City",
+            "major_towns": "Quetta"
+          },
+          {
+            "name": "Chiltan",
+            "major_towns": "Quetta"
+          },
+          {
+            "name": "Panjpai",
+            "major_towns": "Panjpai"
+          },
+          {
+            "name": "Sariab",
+            "major_towns": "Quetta"
+          }
+        ],
+        "administrative_source": "PBS 2023 administrative framework"
       },
       {
         "slug": "sherani",

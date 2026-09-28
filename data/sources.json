@@ -1,0 +1,10 @@
+{
+  "statistical_primary": {
+    "name": "Pakistan Bureau of Statistics — Census 2023 District Tables",
+    "url": "https://www.pbs.gov.pk/result-excel/",
+    "scope": "District-level population, area, density and related census fields.",
+    "rule": "Use the district table when the page describes a district; do not substitute a major-city population for a district population."
+  },
+  "editorial_rule": "Every statistical value published by MyBook.Pk should identify its geographic unit and year. If a current official figure cannot be verified, show that limitation instead of inventing an estimate.",
+  "last_reviewed": "2026-09-28"
+}
