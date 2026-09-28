@@ -146,7 +146,7 @@ function provincePage(unit, districtData) {
 
 function districtPage(district, province) {
   const route = `${district.slug}.html`;
-  const description = `Learn about ${district.name} District in ${province.name}, including population, headquarters, education, health, culture, public issues and local places.`;
+  const description = `Learn about ${district.name} District in ${province.name}, including 2023 census population, headquarters, education, health, culture, geography and local places.`;
   const breadcrumbs = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -176,7 +176,7 @@ function districtPage(district, province) {
   <meta name="twitter:image" content="${SITE}/images/flag-pakistan.svg" />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600&family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
-  ${schemaScript({ "@context": "https://schema.org", "@type": "Place", name: `${district.name} District`, containedInPlace: { "@type": "AdministrativeArea", name: province.name }, url: `${SITE}/${route}` })}
+  ${schemaScript({ "@context": "https://schema.org", "@type": "WebPage", name: `${district.name} District, ${province.name}`, description, url: `${SITE}/${route}`, about: { "@type": "AdministrativeArea", name: `${district.name} District` }, isPartOf: { "@type": "WebSite", name: "MyBook.Pk", url: `${SITE}/` } })}
   ${schemaScript(breadcrumbs)}
 </head>
 <body>
@@ -188,11 +188,11 @@ function districtPage(district, province) {
   </div></div>
   <section><div class="container prose">
     <p>${esc(district.about)}</p>
-    <h2>Population and headquarters</h2><p>The district headquarters is <strong>${esc(district.hq)}</strong>. The available public data note is <strong>${esc(district.pop)}</strong>. Check the Pakistan Bureau of Statistics and the relevant provincial department for updated official tables.</p>
+    <h2>District quick facts</h2><div class="grid-2"><div><p><strong>Province:</strong> ${esc(province.name)}</p><p><strong>Headquarters:</strong> ${esc(district.hq)}</p><p><strong>Population:</strong> ${esc(district.pop)}</p><p><strong>Population year:</strong> 2023 census where stated</p></div><div><p><strong>Primary statistical source:</strong> Pakistan Bureau of Statistics</p><p><a href="https://www.pbs.gov.pk/result-excel/" rel="noopener">Check the PBS 2023 district tables →</a></p><p class="meta">Always distinguish district population from city population when comparing figures.</p></div></div>
     <h2>Education</h2><p>${esc(district.education)}</p>
     <h2>Hospitals and healthcare</h2><p>${esc(district.health)}</p>
     <h2>Culture and geography</h2><p>${esc(district.culture)}</p>
-    <h2>Public issues</h2><p>${esc(district.issues)}</p>
+    <h2>Public issues</h2><p>${esc(district.issues)}</p><h2>Related reading</h2><p><a href="${esc(provinceRoutes[province.id])}">${esc(province.name)} overview</a> · <a href="districts-of-pakistan.html">Districts of Pakistan</a> · <a href="provinces-of-pakistan.html">Provinces and territories of Pakistan</a></p>
     <h2>Villages and local places</h2><p>${esc(district.villages)}</p>
     <p class="meta"><strong>Sources:</strong> Pakistan Bureau of Statistics census material and public provincial or district sources. Statistics are not presented where the source dataset does not provide them.</p>
   </div></section>
