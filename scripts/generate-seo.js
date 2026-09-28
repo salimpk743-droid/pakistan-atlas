@@ -194,7 +194,7 @@ function districtPage(district, province) {
     <h2>Culture and geography</h2><p>${esc(district.culture)}</p>
     <h2>Public issues</h2><p>${esc(district.issues)}</p><h2>Related reading</h2><p><a href="${esc(provinceRoutes[province.id])}">${esc(province.name)} overview</a> · <a href="districts-of-pakistan.html">Districts of Pakistan</a> · <a href="provinces-of-pakistan.html">Provinces and territories of Pakistan</a></p>
     <h2>Villages and local places</h2><p>${esc(district.villages)}</p>
-    <p class="meta"><strong>Sources:</strong> Pakistan Bureau of Statistics census material and public provincial or district sources. Statistics are not presented where the source dataset does not provide them.</p>
+    <section class="source-box"><h2>Sources and verification</h2><p>Population and other census statistics should be read at the district level. The primary statistical reference is the Pakistan Bureau of Statistics 2023 Census district tables and district reports.</p><p><a href="https://www.pbs.gov.pk/result-excel/" rel="noopener">PBS 2023 detailed tables →</a> · <a href="https://www.pbs.gov.pk/censusarchive/" rel="noopener">PBS district census archive →</a></p><p class="meta"><strong>Last reviewed:</strong> 28 September 2026. If a figure is not available in the cited official dataset, this page does not invent an estimate.</p></section>
   </div></section>
   <div id="site-footer"></div>
   <script src="js/app.js"></script>
