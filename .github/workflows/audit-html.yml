@@ -30,14 +30,9 @@ jobs:
               if any(part.startswith('.') for part in path.parts):
                   continue
               text = path.read_text(encoding='utf-8')
-              if re.search(r'<meta\\s+name=["\\']google-adsense-account["\\'][^>]*>', text, re.I):
-                  new = re.sub(
-                      r'<meta\\s+name=["\\']google-adsense-account["\\'][^>]*>',
-                      tag,
-                      text,
-                      count=1,
-                      flags=re.I,
-                  )
+              pattern = r'<meta\\s+[^>]*google-adsense-account[^>]*>'
+              if re.search(pattern, text, re.I):
+                  new = re.sub(pattern, tag, text, count=1, flags=re.I)
               elif re.search(r'</head\\s*>', text, re.I):
                   new = re.sub(r'</head\\s*>', f'  {tag}\\n</head>', text, count=1, flags=re.I)
               else:
