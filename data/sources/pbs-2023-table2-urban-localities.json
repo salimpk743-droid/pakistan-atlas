@@ -1,0 +1,3200 @@
+{
+ "punjab": {
+  "ATTOCK DISTRICT": [
+   {
+    "name": "ATTOCK MC",
+    "tehsil": "ATTOCK TEHSIL",
+    "population_2023": 142826
+   },
+   {
+    "name": "FATEH JANG MC",
+    "tehsil": "FATEH JANG TEHSIL",
+    "population_2023": 81321
+   },
+   {
+    "name": "HASAN ABDAL MC",
+    "tehsil": "HASAN ABDAL TEHSIL",
+    "population_2023": 69529
+   },
+   {
+    "name": "JAND MC",
+    "tehsil": "JAND TEHSIL",
+    "population_2023": 56254
+   },
+   {
+    "name": "KAMRA CANTONMENT",
+    "tehsil": "ATTOCK TEHSIL",
+    "population_2023": 67425
+   },
+   {
+    "name": "PINDI GHEB MC",
+    "tehsil": "PINDI GHEB TEHSIL",
+    "population_2023": 63810
+   },
+   {
+    "name": "ATTOCK CANTONMENT",
+    "tehsil": "ATTOCK TEHSIL",
+    "population_2023": 33718
+   },
+   {
+    "name": "HAZRO MC",
+    "tehsil": "HAZRO TEHSIL",
+    "population_2023": 44242
+   },
+   {
+    "name": "MIRZA TC",
+    "tehsil": "ATTOCK TEHSIL",
+    "population_2023": 34378
+   },
+   {
+    "name": "GHUR GHUSHTI MC",
+    "tehsil": "HAZRO TEHSIL",
+    "population_2023": 18730
+   },
+   {
+    "name": "SANJWAL CANTONMENT",
+    "tehsil": "ATTOCK TEHSIL",
+    "population_2023": 11751
+   }
+  ],
+  "BAHAWALNAGAR DISTRICT": [
+   {
+    "name": "BAHAWALNAGAR MC",
+    "tehsil": "BAHAWALNAGAR TEHSIL",
+    "population_2023": 241873
+   },
+   {
+    "name": "CHISHTIAN MC",
+    "tehsil": "CHISHTIAN TEHSIL",
+    "population_2023": 192403
+   },
+   {
+    "name": "HAROONABAD MC",
+    "tehsil": "HAROONABAD TEHSIL",
+    "population_2023": 149679
+   },
+   {
+    "name": "FAQIR WALI TC",
+    "tehsil": "HAROONABAD TEHSIL",
+    "population_2023": 61586
+   },
+   {
+    "name": "FORT ABBAS MC",
+    "tehsil": "FORT ABBAS TEHSIL",
+    "population_2023": 83192
+   },
+   {
+    "name": "MINCHINABAD MC",
+    "tehsil": "MINCHINABAD TEHSIL",
+    "population_2023": 67164
+   },
+   {
+    "name": "AHMED PUR MECLEOD GUNJ TC",
+    "tehsil": "MINCHINABAD TEHSIL",
+    "population_2023": 25997
+   },
+   {
+    "name": "DAHARANWALA TC",
+    "tehsil": "CHISHTIAN TEHSIL",
+    "population_2023": 37126
+   },
+   {
+    "name": "DONGA BONGA MC",
+    "tehsil": "BAHAWALNAGAR TEHSIL",
+    "population_2023": 39150
+   },
+   {
+    "name": "KHICHI WALA TC",
+    "tehsil": "FORT ABBAS TEHSIL",
+    "population_2023": 26545
+   },
+   {
+    "name": "MANDI SADIQ GANJ TC",
+    "tehsil": "MINCHINABAD TEHSIL",
+    "population_2023": 25075
+   },
+   {
+    "name": "MAROOT TC",
+    "tehsil": "FORT ABBAS TEHSIL",
+    "population_2023": 24328
+   }
+  ],
+  "BAHAWALPUR DISTRICT": [
+   {
+    "name": "BAHAWALPUR METROPOLITAN CORPORATION",
+    "tehsil": "BAHAWALPUR CITY TEHSIL",
+    "population_2023": 815202
+   },
+   {
+    "name": "AHMADPUR EAST MC",
+    "tehsil": "AHMADPUR EAST TEHSIL",
+    "population_2023": 196618
+   },
+   {
+    "name": "HASILPUR MC",
+    "tehsil": "HASILPUR TEHSIL",
+    "population_2023": 168146
+   },
+   {
+    "name": "BAHAWALPUR CANTONMENT",
+    "tehsil": "BAHAWALPUR SADDAR TEHSIL",
+    "population_2023": 88593
+   },
+   {
+    "name": "UCH SHARIF MC",
+    "tehsil": "AHMADPUR EAST TEHSIL",
+    "population_2023": 98852
+   },
+   {
+    "name": "YAZMAN MC",
+    "tehsil": "YAZMAN TEHSIL",
+    "population_2023": 60738
+   },
+   {
+    "name": "CHANI GOTH TC",
+    "tehsil": "AHMADPUR EAST TEHSIL",
+    "population_2023": 25722
+   },
+   {
+    "name": "KHAIRPUR TAMEWALI MC",
+    "tehsil": "KHAIRPUR TAMEWALI TEHSIL",
+    "population_2023": 47284
+   },
+   {
+    "name": "KHANQAH SHARIF TC",
+    "tehsil": "BAHAWALPUR SADDAR TEHSIL",
+    "population_2023": 32739
+   },
+   {
+    "name": "MUBARAK PUR TC",
+    "tehsil": "AHMADPUR EAST TEHSIL",
+    "population_2023": 27503
+   },
+   {
+    "name": "QAIM PUR TC",
+    "tehsil": "HASILPUR TEHSIL",
+    "population_2023": 28302
+   },
+   {
+    "name": "SAMASATTA TC",
+    "tehsil": "BAHAWALPUR SADDAR TEHSIL",
+    "population_2023": 29622
+   }
+  ],
+  "BHAKKAR DISTRICT": [
+   {
+    "name": "BHAKKAR MC",
+    "tehsil": "BHAKKAR TEHSIL",
+    "population_2023": 131658
+   },
+   {
+    "name": "DARYA KHAN MC",
+    "tehsil": "DARYA KHAN TEHSIL",
+    "population_2023": 68622
+   },
+   {
+    "name": "DULLEWALA MC",
+    "tehsil": "DARYA KHAN TEHSIL",
+    "population_2023": 25276
+   },
+   {
+    "name": "HYDERABAD TC",
+    "tehsil": "MANKERA TEHSIL",
+    "population_2023": 25319
+   },
+   {
+    "name": "KALUR KOT MC",
+    "tehsil": "KALUR KOT TEHSIL",
+    "population_2023": 34319
+   },
+   {
+    "name": "KOTLA JAM DAGGER TC",
+    "tehsil": "BHAKKAR TEHSIL",
+    "population_2023": 27726
+   },
+   {
+    "name": "JANDANWALA MC",
+    "tehsil": "KALUR KOT TEHSIL",
+    "population_2023": 21280
+   },
+   {
+    "name": "MANKERA MC",
+    "tehsil": "MANKERA TEHSIL",
+    "population_2023": 18234
+   }
+  ],
+  "CHAKWAL DISTRICT": [
+   {
+    "name": "CHAKWAL MC",
+    "tehsil": "CHAKWAL TEHSIL",
+    "population_2023": 218356
+   },
+   {
+    "name": "TALAGANG MC",
+    "tehsil": "TALA GANG TEHSIL",
+    "population_2023": 79431
+   },
+   {
+    "name": "CHOA SAIDAN SHAH MC",
+    "tehsil": "CHOA SAIDAN SHAH TEHSIL",
+    "population_2023": 41074
+   },
+   {
+    "name": "DHUDIAL TC",
+    "tehsil": "CHAKWAL TEHSIL",
+    "population_2023": 25686
+   },
+   {
+    "name": "KALLAR KAHAR MC",
+    "tehsil": "KALLAR KAHAR TEHSIL",
+    "population_2023": 27928
+   },
+   {
+    "name": "BHAUN MC",
+    "tehsil": "KALLAR KAHAR TEHSIL",
+    "population_2023": 21711
+   },
+   {
+    "name": "LAWA MC",
+    "tehsil": "LAWA TEHSIL",
+    "population_2023": 20619
+   }
+  ],
+  "CHINIOT DISTRICT": [
+   {
+    "name": "CHINIOT MC",
+    "tehsil": "CHINIOT TEHSIL",
+    "population_2023": 318165
+   },
+   {
+    "name": "CHENAB NAGAR MC",
+    "tehsil": "LALIAN TEHSIL",
+    "population_2023": 81695
+   },
+   {
+    "name": "LALIAN MC",
+    "tehsil": "LALIAN TEHSIL",
+    "population_2023": 52542
+   },
+   {
+    "name": "BHAWANA MC",
+    "tehsil": "BHAWANA TEHSIL",
+    "population_2023": 39270
+   }
+  ],
+  "DERA GHAZI KHAN DISTRICT": [
+   {
+    "name": "DERA GHAZI KHAN MUNICIPAL CORPORATION",
+    "tehsil": "DERA GHAZI KHAN TEHSIL",
+    "population_2023": 494464
+   },
+   {
+    "name": "TAUNSA MC",
+    "tehsil": "TAUNSA TEHSIL",
+    "population_2023": 115704
+   },
+   {
+    "name": "KOT CHHUTA MC",
+    "tehsil": "KOT CHHUTTA TEHSIL",
+    "population_2023": 59870
+   },
+   {
+    "name": "CHOTI ZAREEN TC",
+    "tehsil": "KOT CHHUTTA TEHSIL",
+    "population_2023": 41789
+   },
+   {
+    "name": "SHADAN LUND TC",
+    "tehsil": "DERA GHAZI KHAN TEHSIL",
+    "population_2023": 31541
+   },
+   {
+    "name": "VEHOWA TC",
+    "tehsil": "TAUNSA TEHSIL",
+    "population_2023": 42418
+   },
+   {
+    "name": "SAKHI SARWAR TC",
+    "tehsil": "KOT CHHUTTA TEHSIL",
+    "population_2023": 21626
+   }
+  ],
+  "FAISALABAD DISTRICT": [
+   {
+    "name": "JARANWALA MC",
+    "tehsil": "JARANWALA TEHSIL",
+    "population_2023": 170872
+   },
+   {
+    "name": "SAMMUNDARI MC",
+    "tehsil": "SAMMUNDRI TEHSIL",
+    "population_2023": 186371
+   },
+   {
+    "name": "CHAK JHUMRA MC",
+    "tehsil": "CHAK JHUMRA TEHSIL",
+    "population_2023": 60131
+   },
+   {
+    "name": "DIJKOT MC",
+    "tehsil": "FAISALABAD SADAR TEHSIL",
+    "population_2023": 96934
+   },
+   {
+    "name": "KHURIAN WALA MC",
+    "tehsil": "JARANWALA TEHSIL",
+    "population_2023": 96743
+   },
+   {
+    "name": "MAMU KANJAN MC",
+    "tehsil": "TANDLIAN WALA TEHSIL",
+    "population_2023": 40249
+   },
+   {
+    "name": "TANDLIAN WALA MC",
+    "tehsil": "TANDLIAN WALA TEHSIL",
+    "population_2023": 49680
+   }
+  ],
+  "GUJRANWALA DISTRICT": [
+   {
+    "name": "GUJRANWALA METROPOLITAN CORPORATION",
+    "tehsil": "GUJRANWALA CITY TEHSIL",
+    "population_2023": 2511118
+   },
+   {
+    "name": "KAMOKE MUNICIPAL CORPORATION",
+    "tehsil": "KAMOKE TEHSIL",
+    "population_2023": 292023
+   },
+   {
+    "name": "GUJRANWALA CANTONMENT",
+    "tehsil": "GUJRANWALA SADDAR TEHSIL",
+    "population_2023": 156929
+   },
+   {
+    "name": "LUDHEWALA WARAICH MC",
+    "tehsil": "GUJRANWALA SADDAR TEHSIL",
+    "population_2023": 100331
+   },
+   {
+    "name": "WAZIRABAD MC",
+    "tehsil": "WAZIRABAD TEHSIL",
+    "population_2023": 152624
+   },
+   {
+    "name": "ALI PUR CHATHA MC",
+    "tehsil": "WAZIRABAD TEHSIL",
+    "population_2023": 76964
+   },
+   {
+    "name": "GHAKKHAR MC",
+    "tehsil": "WAZIRABAD TEHSIL",
+    "population_2023": 80320
+   },
+   {
+    "name": "NOWSHERA VIRKAN MC",
+    "tehsil": "NOWSHERA VIRKAN TEHSIL",
+    "population_2023": 59639
+   },
+   {
+    "name": "QILA DIDAR SINGH MC",
+    "tehsil": "GUJRANWALA SADDAR TEHSIL",
+    "population_2023": 74523
+   },
+   {
+    "name": "EMINABAD TC",
+    "tehsil": "GUJRANWALA SADDAR TEHSIL",
+    "population_2023": 30399
+   },
+   {
+    "name": "DHONKAL MC",
+    "tehsil": "WAZIRABAD TEHSIL",
+    "population_2023": 16396
+   },
+   {
+    "name": "RASOOL NAGAR TC",
+    "tehsil": "WAZIRABAD TEHSIL",
+    "population_2023": 19315
+   },
+   {
+    "name": "SOHDHRA TC",
+    "tehsil": "WAZIRABAD TEHSIL",
+    "population_2023": 23390
+   }
+  ],
+  "GUJRAT DISTRICT": [
+   {
+    "name": "JALALPUR JATTAN MC",
+    "tehsil": "GUJRAT TEHSIL",
+    "population_2023": 146743
+   },
+   {
+    "name": "LALA MUSA MC",
+    "tehsil": "KHARIAN TEHSIL",
+    "population_2023": 121036
+   },
+   {
+    "name": "DINGA MC",
+    "tehsil": "KHARIAN TEHSIL",
+    "population_2023": 94252
+   },
+   {
+    "name": "KHARIAN CANTONMENT",
+    "tehsil": "KHARIAN TEHSIL",
+    "population_2023": 58523
+   },
+   {
+    "name": "KUNJAH MC",
+    "tehsil": "GUJRAT TEHSIL",
+    "population_2023": 90905
+   },
+   {
+    "name": "MANGOWAL TC",
+    "tehsil": "GUJRAT TEHSIL",
+    "population_2023": 86648
+   },
+   {
+    "name": "SARAI ALAMGIR MC",
+    "tehsil": "SARAI ALAMGIR TEHSIL",
+    "population_2023": 73967
+   },
+   {
+    "name": "KHARIAN MC",
+    "tehsil": "KHARIAN TEHSIL",
+    "population_2023": 44513
+   },
+   {
+    "name": "SHADIWAL TC",
+    "tehsil": "GUJRAT TEHSIL",
+    "population_2023": 33437
+   }
+  ],
+  "HAFIZABAD DISTRICT": [
+   {
+    "name": "HAFIZABAD MC",
+    "tehsil": "HAFIZABAD TEHSIL",
+    "population_2023": 318621
+   },
+   {
+    "name": "PINDI BHATTIAN MC",
+    "tehsil": "PINDI BHATTIAN TEHSIL",
+    "population_2023": 66511
+   },
+   {
+    "name": "SUKHEKE MC",
+    "tehsil": "PINDI BHATTIAN TEHSIL",
+    "population_2023": 50458
+   },
+   {
+    "name": "JALALPUR BHATTIAN MC",
+    "tehsil": "PINDI BHATTIAN TEHSIL",
+    "population_2023": 44421
+   },
+   {
+    "name": "VANIKE TARAR TC",
+    "tehsil": "HAFIZABAD TEHSIL",
+    "population_2023": 24369
+   }
+  ],
+  "JHANG DISTRICT": [
+   {
+    "name": "JHANG MC",
+    "tehsil": "JHANG TEHSIL",
+    "population_2023": 606533
+   },
+   {
+    "name": "AHMADPUR SIAL MC",
+    "tehsil": "AHMADPUR SIAL TEHSIL",
+    "population_2023": 37801
+   },
+   {
+    "name": "GARH MAHARAJA MC",
+    "tehsil": "AHMADPUR SIAL TEHSIL",
+    "population_2023": 42401
+   },
+   {
+    "name": "SHORKOT MC",
+    "tehsil": "SHORKOT TEHSIL",
+    "population_2023": 47248
+   },
+   {
+    "name": "BAGH TC",
+    "tehsil": "JHANG TEHSIL",
+    "population_2023": 16560
+   }
+  ],
+  "JHELUM DISTRICT": [
+   {
+    "name": "JHELUM MUNICIPAL CORPORATION",
+    "tehsil": "JHELUM TEHSIL",
+    "population_2023": 291022
+   },
+   {
+    "name": "DINA MC",
+    "tehsil": "DINA TEHSIL",
+    "population_2023": 84629
+   },
+   {
+    "name": "KHEWRA MC",
+    "tehsil": "PIND DADAN KHAN TEHSIL",
+    "population_2023": 36552
+   },
+   {
+    "name": "PIND DADAN KHAN MC",
+    "tehsil": "PIND DADAN KHAN TEHSIL",
+    "population_2023": 28197
+   },
+   {
+    "name": "SOHAWA MC",
+    "tehsil": "SOHAWA TEHSIL",
+    "population_2023": 37488
+   },
+   {
+    "name": "DOMELI TC",
+    "tehsil": "SOHAWA TEHSIL",
+    "population_2023": 22897
+   },
+   {
+    "name": "JHELUM CANTONMENT",
+    "tehsil": "JHELUM TEHSIL",
+    "population_2023": 21404
+   },
+   {
+    "name": "MANGLA CANTONMENT",
+    "tehsil": "DINA TEHSIL",
+    "population_2023": 19129
+   }
+  ],
+  "KASUR DISTRICT": [
+   {
+    "name": "KASUR MC",
+    "tehsil": "KASUR TEHSIL",
+    "population_2023": 510875
+   },
+   {
+    "name": "KOT RADHA KISHAN MC",
+    "tehsil": "KOT RADHA KISHAN TEHSIL",
+    "population_2023": 102057
+   },
+   {
+    "name": "PATTOKI MC",
+    "tehsil": "PATTOKI TEHSIL",
+    "population_2023": 113735
+   },
+   {
+    "name": "PHOOL NAGAR MC",
+    "tehsil": "PATTOKI TEHSIL",
+    "population_2023": 114530
+   },
+   {
+    "name": "ALAHABAD MC",
+    "tehsil": "CHUNIAN TEHSIL",
+    "population_2023": 80097
+   },
+   {
+    "name": "CHUNIAN MC",
+    "tehsil": "CHUNIAN TEHSIL",
+    "population_2023": 87547
+   },
+   {
+    "name": "MUSTAFABAD MC",
+    "tehsil": "KASUR TEHSIL",
+    "population_2023": 81550
+   },
+   {
+    "name": "RAJA JANG MC",
+    "tehsil": "KASUR TEHSIL",
+    "population_2023": 66404
+   },
+   {
+    "name": "KANGANPUR MC",
+    "tehsil": "CHUNIAN TEHSIL",
+    "population_2023": 38568
+   },
+   {
+    "name": "KHADIAN MC",
+    "tehsil": "KASUR TEHSIL",
+    "population_2023": 48519
+   }
+  ],
+  "KHANEWAL DISTRICT": [
+   {
+    "name": "KHANEWAL MC",
+    "tehsil": "KHANEWAL TEHSIL",
+    "population_2023": 281890
+   },
+   {
+    "name": "MIAN CHANNU MC",
+    "tehsil": "MIAN CHANNU TEHSIL",
+    "population_2023": 140112
+   },
+   {
+    "name": "ABDUL HAKIM TC",
+    "tehsil": "KABIRWALA TEHSIL",
+    "population_2023": 67501
+   },
+   {
+    "name": "JAHANIAN MC",
+    "tehsil": "JAHANIAN TEHSIL",
+    "population_2023": 50318
+   },
+   {
+    "name": "KABIRWALA MC",
+    "tehsil": "KABIRWALA TEHSIL",
+    "population_2023": 91932
+   },
+   {
+    "name": "MAKHDOOMPUR PAHORAN TC",
+    "tehsil": "KHANEWAL TEHSIL",
+    "population_2023": 29065
+   },
+   {
+    "name": "TULAMBA TC",
+    "tehsil": "MIAN CHANNU TEHSIL",
+    "population_2023": 35069
+   },
+   {
+    "name": "SARAI SIDHU TC",
+    "tehsil": "KABIRWALA TEHSIL",
+    "population_2023": 20899
+   }
+  ],
+  "KHUSHAB DISTRICT": [
+   {
+    "name": "JAUHARABAD MC",
+    "tehsil": "KHUSHAB TEHSIL",
+    "population_2023": 113188
+   },
+   {
+    "name": "KHUSHAB MC",
+    "tehsil": "KHUSHAB TEHSIL",
+    "population_2023": 139905
+   },
+   {
+    "name": "HADALI MC",
+    "tehsil": "KHUSHAB TEHSIL",
+    "population_2023": 45302
+   },
+   {
+    "name": "MITHA TAWANA MC",
+    "tehsil": "KHUSHAB TEHSIL",
+    "population_2023": 32870
+   },
+   {
+    "name": "GIROTE TC",
+    "tehsil": "KHUSHAB TEHSIL",
+    "population_2023": 24283
+   },
+   {
+    "name": "NOOR PUR MC",
+    "tehsil": "NOOR PUR TEHSIL",
+    "population_2023": 20100
+   },
+   {
+    "name": "NOWSHERA MC",
+    "tehsil": "NOWSHERA TEHSIL",
+    "population_2023": 18577
+   },
+   {
+    "name": "QUAIDABAD MC",
+    "tehsil": "QUAIDABAD TEHSIL",
+    "population_2023": 24520
+   }
+  ],
+  "LAHORE DISTRICT": [
+   {
+    "name": "WALTON CANTONMENT",
+    "tehsil": "LAHORE CANTT TEHSIL",
+    "population_2023": 810739
+   },
+   {
+    "name": "LAHORE CANTONMENT",
+    "tehsil": "LAHORE CANTT TEHSIL",
+    "population_2023": 443314
+   }
+  ],
+  "LAYYAH DISTRICT": [
+   {
+    "name": "LAYYAH MC",
+    "tehsil": "LAYYAH TEHSIL",
+    "population_2023": 151274
+   },
+   {
+    "name": "CHAUBARA MC",
+    "tehsil": "CHOUBARA TEHSIL",
+    "population_2023": 57002
+   },
+   {
+    "name": "CHOWK AZAM MC",
+    "tehsil": "LAYYAH TEHSIL",
+    "population_2023": 87376
+   },
+   {
+    "name": "FATEH PUR MC",
+    "tehsil": "KAROR LAL ESAN TEHSIL",
+    "population_2023": 52255
+   },
+   {
+    "name": "KAROR LAL ESAN MC",
+    "tehsil": "KAROR LAL ESAN TEHSIL",
+    "population_2023": 38375
+   }
+  ],
+  "LODHRAN DISTRICT": [
+   {
+    "name": "LODHRAN MC",
+    "tehsil": "LODHRAN TEHSIL",
+    "population_2023": 144512
+   },
+   {
+    "name": "DUNYAPUR MC",
+    "tehsil": "DUNYAPUR TEHSIL",
+    "population_2023": 51888
+   },
+   {
+    "name": "KAHROR PACCA MC",
+    "tehsil": "KAHROR PACCA TEHSIL",
+    "population_2023": 98325
+   },
+   {
+    "name": "DHANOTE TC",
+    "tehsil": "KAHROR PACCA TEHSIL",
+    "population_2023": 30328
+   }
+  ],
+  "MANDI BAHAUDDIN DISTRICT": [
+   {
+    "name": "MANDI BAHAUDDIN MC",
+    "tehsil": "MANDI BAHAUDDIN TEHSIL",
+    "population_2023": 232361
+   },
+   {
+    "name": "MALAKWAL MC",
+    "tehsil": "MALAKWAL TEHSIL",
+    "population_2023": 51327
+   },
+   {
+    "name": "PHALIA MC",
+    "tehsil": "PHALIA TEHSIL",
+    "population_2023": 62453
+   }
+  ],
+  "MIANWALI DISTRICT": [
+   {
+    "name": "MIANWALI MC",
+    "tehsil": "MIANWALI TEHSIL",
+    "population_2023": 129500
+   },
+   {
+    "name": "DAUD KHEL MC",
+    "tehsil": "MIANWALI TEHSIL",
+    "population_2023": 33141
+   },
+   {
+    "name": "ISA KHEL MC",
+    "tehsil": "ISAKHEL TEHSIL",
+    "population_2023": 27612
+   },
+   {
+    "name": "KALABAGH MC",
+    "tehsil": "ISAKHEL TEHSIL",
+    "population_2023": 27916
+   },
+   {
+    "name": "KAMAR MASHANI MC",
+    "tehsil": "ISAKHEL TEHSIL",
+    "population_2023": 39013
+   },
+   {
+    "name": "KUNDIAN MC",
+    "tehsil": "PIPLAN TEHSIL",
+    "population_2023": 48658
+   },
+   {
+    "name": "LIAQATABAD MC",
+    "tehsil": "PIPLAN TEHSIL",
+    "population_2023": 35297
+   },
+   {
+    "name": "HARNOLI TC",
+    "tehsil": "PIPLAN TEHSIL",
+    "population_2023": 22316
+   }
+  ],
+  "MULTAN DISTRICT": [
+   {
+    "name": "MULTAN MUNICIPAL CORPORATION",
+    "tehsil": "MULTAN CITY TEHSIL",
+    "population_2023": 2169915
+   },
+   {
+    "name": "SHUJABAD MC",
+    "tehsil": "SHUJABAD TEHSIL",
+    "population_2023": 151115
+   },
+   {
+    "name": "JALALPUR PIRWALA MC",
+    "tehsil": "JALALPUR PIRWALA TEHSIL",
+    "population_2023": 89679
+   },
+   {
+    "name": "MULTAN CANTONMENT",
+    "tehsil": "MULTAN SADDAR TEHSIL",
+    "population_2023": 45466
+   },
+   {
+    "name": "QADIRPUR RAN TC",
+    "tehsil": "MULTAN SADDAR TEHSIL",
+    "population_2023": 27278
+   },
+   {
+    "name": "MAKHDOOM RASHID TC",
+    "tehsil": "MULTAN SADDAR TEHSIL",
+    "population_2023": 16418
+   }
+  ],
+  "MUZAFFARGARH DISTRICT": [
+   {
+    "name": "MUZAFFARGARH MC",
+    "tehsil": "MUZAFFARGARH TEHSIL",
+    "population_2023": 235541
+   },
+   {
+    "name": "JATOI MC",
+    "tehsil": "JATOI TEHSIL",
+    "population_2023": 155196
+   },
+   {
+    "name": "KOT ADDU MC",
+    "tehsil": "KOT ADDU TEHSIL",
+    "population_2023": 142161
+   },
+   {
+    "name": "ALIPUR MC",
+    "tehsil": "ALIPUR TEHSIL",
+    "population_2023": 74095
+   },
+   {
+    "name": "CHOWK SARWAR SHAHEED MC",
+    "tehsil": "CHOWK SARWAR SHAHEED TEHSIL",
+    "population_2023": 63421
+   },
+   {
+    "name": "SHEHR SULTAN MC",
+    "tehsil": "JATOI TEHSIL",
+    "population_2023": 62184
+   },
+   {
+    "name": "DAIRA DIN PANAH TC",
+    "tehsil": "KOT ADDU TEHSIL",
+    "population_2023": 37644
+   },
+   {
+    "name": "GHALWAN TC",
+    "tehsil": "ALIPUR TEHSIL",
+    "population_2023": 49137
+   },
+   {
+    "name": "KHAIR PUR SADAT TC",
+    "tehsil": "ALIPUR TEHSIL",
+    "population_2023": 26747
+   },
+   {
+    "name": "KHANGARH MC",
+    "tehsil": "MUZAFFARGARH TEHSIL",
+    "population_2023": 32161
+   },
+   {
+    "name": "SEET PUR TC",
+    "tehsil": "ALIPUR TEHSIL",
+    "population_2023": 27914
+   },
+   {
+    "name": "SINAWAN MC",
+    "tehsil": "KOT ADDU TEHSIL",
+    "population_2023": 40593
+   }
+  ],
+  "NANKANA SAHIB DISTRICT": [
+   {
+    "name": "SANGLA HILL MC",
+    "tehsil": "SANGLA HILL TEHSIL",
+    "population_2023": 103709
+   },
+   {
+    "name": "NANKANA MC",
+    "tehsil": "NANKANA SAHIB TEHSIL",
+    "population_2023": 94988
+   },
+   {
+    "name": "SHAHKOT MC",
+    "tehsil": "SHAH KOT TEHSIL",
+    "population_2023": 89638
+   },
+   {
+    "name": "WARBURTON MC",
+    "tehsil": "NANKANA SAHIB TEHSIL",
+    "population_2023": 35053
+   }
+  ],
+  "NAROWAL DISTRICT": [
+   {
+    "name": "NAROWAL MC",
+    "tehsil": "NAROWAL TEHSIL",
+    "population_2023": 130692
+   },
+   {
+    "name": "SHAKARGARH MC",
+    "tehsil": "SHAKARGARH TEHSIL",
+    "population_2023": 126742
+   },
+   {
+    "name": "ZAFARWAL MC",
+    "tehsil": "ZAFARWAL TEHSIL",
+    "population_2023": 52639
+   },
+   {
+    "name": "BADHOMALHI TC",
+    "tehsil": "NAROWAL TEHSIL",
+    "population_2023": 19351
+   },
+   {
+    "name": "QILA SOBHA SINGH TC",
+    "tehsil": "NAROWAL TEHSIL",
+    "population_2023": 19671
+   }
+  ],
+  "OKARA DISTRICT": [
+   {
+    "name": "OKARA MUNICIPAL CORPORATION",
+    "tehsil": "OKARA TEHSIL",
+    "population_2023": 533693
+   },
+   {
+    "name": "DEPALPUR MC",
+    "tehsil": "DEPALPUR TEHSIL",
+    "population_2023": 122759
+   },
+   {
+    "name": "HAVELI LAKHA WASAWEWALA MC",
+    "tehsil": "DEPALPUR TEHSIL",
+    "population_2023": 122389
+   },
+   {
+    "name": "RENALA KHURD MC",
+    "tehsil": "RENALA KHURD TEHSIL",
+    "population_2023": 100054
+   },
+   {
+    "name": "BASIRPUR TC",
+    "tehsil": "DEPALPUR TEHSIL",
+    "population_2023": 65541
+   },
+   {
+    "name": "HUJRA SHAH MUQEEM MC",
+    "tehsil": "DEPALPUR TEHSIL",
+    "population_2023": 95921
+   },
+   {
+    "name": "MANDI AHMAD ABAD TC",
+    "tehsil": "DEPALPUR TEHSIL",
+    "population_2023": 54860
+   },
+   {
+    "name": "OKARA CANTONMENT",
+    "tehsil": "OKARA TEHSIL",
+    "population_2023": 65590
+   },
+   {
+    "name": "BANGLA GOGERA TC",
+    "tehsil": "OKARA TEHSIL",
+    "population_2023": 26697
+   }
+  ],
+  "PAKPATTAN DISTRICT": [
+   {
+    "name": "PAKPATTAN MC",
+    "tehsil": "PAKPATTAN TEHSIL",
+    "population_2023": 221280
+   },
+   {
+    "name": "ARIF WALA MC",
+    "tehsil": "ARIF WALA TEHSIL",
+    "population_2023": 157063
+   },
+   {
+    "name": "QABULA TC",
+    "tehsil": "ARIF WALA TEHSIL",
+    "population_2023": 52495
+   },
+   {
+    "name": "MALKA HANS TC",
+    "tehsil": "PAKPATTAN TEHSIL",
+    "population_2023": 41737
+   }
+  ],
+  "RAHIM YAR KHAN DISTRICT": [
+   {
+    "name": "RAHIM YAR KHAN MUNICIPAL CORPORATION",
+    "tehsil": "RAHIM YAR KHAN TEHSIL",
+    "population_2023": 519261
+   },
+   {
+    "name": "KHANPUR MC",
+    "tehsil": "KHANPUR TEHSIL",
+    "population_2023": 247170
+   },
+   {
+    "name": "SADIQABAD MUNICIPAL CORPORATION",
+    "tehsil": "SADIQABAD TEHSIL",
+    "population_2023": 274210
+   },
+   {
+    "name": "LIAQUATPUR MC",
+    "tehsil": "LIAQUAT PUR TEHSIL",
+    "population_2023": 66933
+   },
+   {
+    "name": "ZAHIRPIR MC",
+    "tehsil": "KHANPUR TEHSIL",
+    "population_2023": 76979
+   },
+   {
+    "name": "AHMADPUR LUMMA TC",
+    "tehsil": "SADIQABAD TEHSIL",
+    "population_2023": 27029
+   },
+   {
+    "name": "KHAN BELA TC",
+    "tehsil": "LIAQUAT PUR TEHSIL",
+    "population_2023": 35739
+   },
+   {
+    "name": "KOT SAMABA MC",
+    "tehsil": "RAHIM YAR KHAN TEHSIL",
+    "population_2023": 35908
+   },
+   {
+    "name": "TRINDA SAWAI KHAN MC",
+    "tehsil": "RAHIM YAR KHAN TEHSIL",
+    "population_2023": 36223
+   },
+   {
+    "name": "SANJAR PUR NAO TC",
+    "tehsil": "SADIQABAD TEHSIL",
+    "population_2023": 22800
+   }
+  ],
+  "RAJANPUR DISTRICT": [
+   {
+    "name": "JAMPUR MC",
+    "tehsil": "JAMPUR TEHSIL",
+    "population_2023": 155243
+   },
+   {
+    "name": "RAJANPUR MC",
+    "tehsil": "RAJANPUR TEHSIL",
+    "population_2023": 137553
+   },
+   {
+    "name": "FAZALPUR MC",
+    "tehsil": "RAJANPUR TEHSIL",
+    "population_2023": 98627
+   },
+   {
+    "name": "KOT MITHAN MC",
+    "tehsil": "RAJANPUR TEHSIL",
+    "population_2023": 74479
+   },
+   {
+    "name": "DAJAL TC",
+    "tehsil": "JAMPUR TEHSIL",
+    "population_2023": 40666
+   },
+   {
+    "name": "HAJI PUR TC",
+    "tehsil": "JAMPUR TEHSIL",
+    "population_2023": 35087
+   },
+   {
+    "name": "KOTLA MUGHLAN TC",
+    "tehsil": "JAMPUR TEHSIL",
+    "population_2023": 26366
+   },
+   {
+    "name": "MOHAMMAD PUR TC",
+    "tehsil": "JAMPUR TEHSIL",
+    "population_2023": 47331
+   },
+   {
+    "name": "ROJHAN MC",
+    "tehsil": "ROJHAN TEHSIL",
+    "population_2023": 15871
+   }
+  ],
+  "RAWALPINDI DISTRICT": [
+   {
+    "name": "RAWALPINDI CANTONMENT",
+    "tehsil": "RAWALPINDI TEHSIL",
+    "population_2023": 740483
+   },
+   {
+    "name": "RAWALPINDI METROPOLITAN CORPORATION",
+    "tehsil": "RAWALPINDI TEHSIL",
+    "population_2023": 2284014
+   },
+   {
+    "name": "CHAKLALA CANTONMENT",
+    "tehsil": "RAWALPINDI TEHSIL",
+    "population_2023": 333115
+   },
+   {
+    "name": "WAH CANTONMENT",
+    "tehsil": "TAXILA TEHSIL",
+    "population_2023": 400733
+   },
+   {
+    "name": "GUJAR KHAN MC",
+    "tehsil": "GUJAR KHAN TEHSIL",
+    "population_2023": 103284
+   },
+   {
+    "name": "KAHUTA MC",
+    "tehsil": "KAHUTA TEHSIL",
+    "population_2023": 75349
+   },
+   {
+    "name": "KALLAR SYEDAN MC",
+    "tehsil": "KALLAR SAYADDAN TEHSIL",
+    "population_2023": 60941
+   },
+   {
+    "name": "TAXILA CANTONMENT",
+    "tehsil": "TAXILA TEHSIL",
+    "population_2023": 61456
+   },
+   {
+    "name": "TAXILA MC",
+    "tehsil": "TAXILA TEHSIL",
+    "population_2023": 75444
+   },
+   {
+    "name": "DAULTALA MC",
+    "tehsil": "GUJAR KHAN TEHSIL",
+    "population_2023": 27237
+   },
+   {
+    "name": "KOTLI SATTIAN MC",
+    "tehsil": "KOTLI SATTIAN TEHSIL",
+    "population_2023": 23543
+   },
+   {
+    "name": "MURREE MC",
+    "tehsil": "MURREE TEHSIL",
+    "population_2023": 16317
+   },
+   {
+    "name": "MURREE HILLS CANTONMENT",
+    "tehsil": "MURREE TEHSIL",
+    "population_2023": 8869
+   }
+  ],
+  "SAHIWAL DISTRICT": [
+   {
+    "name": "CHICHAWATNI MC",
+    "tehsil": "CHICHAWATNI TEHSIL",
+    "population_2023": 112191
+   },
+   {
+    "name": "HARAPPA TC",
+    "tehsil": "SAHIWAL TEHSIL",
+    "population_2023": 68702
+   },
+   {
+    "name": "KAMEER TC",
+    "tehsil": "SAHIWAL TEHSIL",
+    "population_2023": 38394
+   }
+  ],
+  "SARGODHA DISTRICT": [
+   {
+    "name": "SARGODHA MUNICIPAL CORPORATION",
+    "tehsil": "SARGODHA TEHSIL",
+    "population_2023": 785698
+   },
+   {
+    "name": "BHALWAL MC",
+    "tehsil": "BHALWAL TEHSIL",
+    "population_2023": 117982
+   },
+   {
+    "name": "SARGODHA CANTONMENT",
+    "tehsil": "SARGODHA TEHSIL",
+    "population_2023": 190188
+   },
+   {
+    "name": "BHERA MC",
+    "tehsil": "BHERA TEHSIL",
+    "population_2023": 70921
+   },
+   {
+    "name": "KOT MOMIN MC",
+    "tehsil": "KOT MOMIN TEHSIL",
+    "population_2023": 63411
+   },
+   {
+    "name": "SAHIWAL MC",
+    "tehsil": "SAHIWAL TEHSIL",
+    "population_2023": 57374
+   },
+   {
+    "name": "46-ADDA TC",
+    "tehsil": "SARGODHA TEHSIL",
+    "population_2023": 26819
+   },
+   {
+    "name": "BHAGTAN WALA TC",
+    "tehsil": "SARGODHA TEHSIL",
+    "population_2023": 26872
+   },
+   {
+    "name": "DHAREMA TC",
+    "tehsil": "SARGODHA TEHSIL",
+    "population_2023": 25940
+   },
+   {
+    "name": "FAROOKA TC",
+    "tehsil": "SAHIWAL TEHSIL",
+    "population_2023": 36704
+   },
+   {
+    "name": "JHAWARIAN TC",
+    "tehsil": "SHAHPUR TEHSIL",
+    "population_2023": 36437
+   },
+   {
+    "name": "MIANI TC",
+    "tehsil": "BHERA TEHSIL",
+    "population_2023": 40781
+   },
+   {
+    "name": "PHULARWAN TC",
+    "tehsil": "BHALWAL TEHSIL",
+    "population_2023": 25749
+   },
+   {
+    "name": "SHAHPUR CITY TC",
+    "tehsil": "SHAHPUR TEHSIL",
+    "population_2023": 27217
+   },
+   {
+    "name": "SHAHPUR SADDAR MC",
+    "tehsil": "SHAHPUR TEHSIL",
+    "population_2023": 28183
+   },
+   {
+    "name": "SILLANWALI MC",
+    "tehsil": "SILLANWALI TEHSIL",
+    "population_2023": 49311
+   }
+  ],
+  "SHEIKHUPURA DISTRICT": [
+   {
+    "name": "SHEIKHUPURA MC",
+    "tehsil": "SHEIKHUPURA TEHSIL",
+    "population_2023": 591424
+   },
+   {
+    "name": "MURIDKE MC",
+    "tehsil": "MURIDKE TEHSIL",
+    "population_2023": 254291
+   },
+   {
+    "name": "FAROOQ ABAD MC",
+    "tehsil": "SHEIKHUPURA TEHSIL",
+    "population_2023": 109717
+   },
+   {
+    "name": "FEROZEWALA MC",
+    "tehsil": "FEROZEWALA TEHSIL",
+    "population_2023": 177238
+   },
+   {
+    "name": "KOT ABDUL MALIK MC",
+    "tehsil": "FEROZEWALA TEHSIL",
+    "population_2023": 162030
+   },
+   {
+    "name": "MANAWALA JODH SINGH MC",
+    "tehsil": "SHEIKHUPURA TEHSIL",
+    "population_2023": 51746
+   },
+   {
+    "name": "NARANG MANDI MC",
+    "tehsil": "MURIDKE TEHSIL",
+    "population_2023": 67137
+   },
+   {
+    "name": "SAFDARABAD MC",
+    "tehsil": "SAFDARABAD TEHSIL",
+    "population_2023": 54242
+   },
+   {
+    "name": "KHANQAH DOGRAN MC",
+    "tehsil": "SAFDARABAD TEHSIL",
+    "population_2023": 34949
+   },
+   {
+    "name": "SHARAK PUR MC",
+    "tehsil": "SHARAK PUR TEHSIL",
+    "population_2023": 48019
+   }
+  ],
+  "SIALKOT DISTRICT": [
+   {
+    "name": "SIALKOT MUNICIPAL CORPORATION",
+    "tehsil": "SIALKOT TEHSIL",
+    "population_2023": 835337
+   },
+   {
+    "name": "DASKA MC",
+    "tehsil": "DASKA TEHSIL",
+    "population_2023": 228626
+   },
+   {
+    "name": "PASRUR MC",
+    "tehsil": "PASRUR TEHSIL",
+    "population_2023": 102717
+   },
+   {
+    "name": "SAMBRIAL MC",
+    "tehsil": "SAMBRIAL TEHSIL",
+    "population_2023": 119571
+   },
+   {
+    "name": "SIALKOT CANTONMENT",
+    "tehsil": "SIALKOT TEHSIL",
+    "population_2023": 76480
+   },
+   {
+    "name": "CHAWINDA TC",
+    "tehsil": "PASRUR TEHSIL",
+    "population_2023": 29140
+   },
+   {
+    "name": "JAMKE CHEEMA TC",
+    "tehsil": "DASKA TEHSIL",
+    "population_2023": 30698
+   },
+   {
+    "name": "KOTLI LOHARAN TC",
+    "tehsil": "SIALKOT TEHSIL",
+    "population_2023": 37063
+   },
+   {
+    "name": "BHOPALWALA TC",
+    "tehsil": "SAMBRIAL TEHSIL",
+    "population_2023": 22336
+   }
+  ],
+  "TOBA TEK SINGH DISTRICT": [
+   {
+    "name": "GOJRA MC",
+    "tehsil": "GOJRA TEHSIL",
+    "population_2023": 214349
+   },
+   {
+    "name": "KAMALIA MC",
+    "tehsil": "KAMALIA TEHSIL",
+    "population_2023": 166617
+   },
+   {
+    "name": "TOBA TEK SINGH MC",
+    "tehsil": "TOBA TEK SINGH TEHSIL",
+    "population_2023": 123102
+   },
+   {
+    "name": "PIR MAHAL MC",
+    "tehsil": "PIRMAHAL TEHSIL",
+    "population_2023": 47376
+   }
+  ],
+  "VEHARI DISTRICT": [
+   {
+    "name": "BUREWALA MC",
+    "tehsil": "BUREWALA TEHSIL",
+    "population_2023": 361664
+   },
+   {
+    "name": "VEHARI MC",
+    "tehsil": "VEHARI TEHSIL",
+    "population_2023": 210288
+   },
+   {
+    "name": "MAILSI MC",
+    "tehsil": "MAILSI TEHSIL",
+    "population_2023": 125431
+   },
+   {
+    "name": "JALLA JEEM TC",
+    "tehsil": "MAILSI TEHSIL",
+    "population_2023": 28096
+   },
+   {
+    "name": "KARAMPUR TC",
+    "tehsil": "MAILSI TEHSIL",
+    "population_2023": 27840
+   },
+   {
+    "name": "TIBBA SULTANPUR TC",
+    "tehsil": "MAILSI TEHSIL",
+    "population_2023": 29596
+   }
+  ]
+ },
+ "sindh": {
+  "BADIN DISTRICT": [
+   {
+    "name": "BADIN MC",
+    "tehsil": "BADIN TALUKA",
+    "population_2023": 117455
+   },
+   {
+    "name": "MATLI MC",
+    "tehsil": "MATLI TALUKA",
+    "population_2023": 74402
+   },
+   {
+    "name": "KHOSKI TC",
+    "tehsil": "TANDO BAGO TALUKA",
+    "population_2023": 29324
+   },
+   {
+    "name": "SHAHEED FAZAL RAHU TC",
+    "tehsil": "GOLARCHI (S.F.RAHU) TALUKA",
+    "population_2023": 35313
+   },
+   {
+    "name": "TALHAR TC",
+    "tehsil": "TALHAR TALUKA",
+    "population_2023": 27231
+   },
+   {
+    "name": "TANDO GHULAM ALI TC",
+    "tehsil": "MATLI TALUKA",
+    "population_2023": 36961
+   },
+   {
+    "name": "KADHAN TC",
+    "tehsil": "BADIN TALUKA",
+    "population_2023": 14956
+   },
+   {
+    "name": "KARIO GHANWAR TC",
+    "tehsil": "GOLARCHI (S.F.RAHU) TALUKA",
+    "population_2023": 21775
+   },
+   {
+    "name": "NINDO TC",
+    "tehsil": "BADIN TALUKA",
+    "population_2023": 10151
+   },
+   {
+    "name": "PANGRIO TC",
+    "tehsil": "TANDO BAGO TALUKA",
+    "population_2023": 17982
+   },
+   {
+    "name": "RAJO KHANANI TC",
+    "tehsil": "TALHAR TALUKA",
+    "population_2023": 21513
+   },
+   {
+    "name": "TANDO BAGO MC",
+    "tehsil": "TANDO BAGO TALUKA",
+    "population_2023": 22786
+   }
+  ],
+  "DADU DISTRICT": [
+   {
+    "name": "DADU MC",
+    "tehsil": "DADU TALUKA",
+    "population_2023": 188317
+   },
+   {
+    "name": "KHAIR PUR NATHAN SHAH MC",
+    "tehsil": "KHAIRPUR NATHAN SHAH TALUKA",
+    "population_2023": 50786
+   },
+   {
+    "name": "MEHAR MC",
+    "tehsil": "MEHAR TALUKA",
+    "population_2023": 67082
+   },
+   {
+    "name": "JOHI TC",
+    "tehsil": "JOHI TALUKA",
+    "population_2023": 40086
+   },
+   {
+    "name": "RADHAN TC",
+    "tehsil": "MEHAR TALUKA",
+    "population_2023": 32721
+   },
+   {
+    "name": "SITA ROAD TC",
+    "tehsil": "KHAIRPUR NATHAN SHAH TALUKA",
+    "population_2023": 32760
+   },
+   {
+    "name": "PHULJI TC",
+    "tehsil": "DADU TALUKA",
+    "population_2023": 12700
+   },
+   {
+    "name": "THARI MOHABAT TC",
+    "tehsil": "MEHAR TALUKA",
+    "population_2023": 14582
+   }
+  ],
+  "GHOTKI DISTRICT": [
+   {
+    "name": "GHOTKI MC",
+    "tehsil": "GHOTKI TALUKA",
+    "population_2023": 119879
+   },
+   {
+    "name": "DAHARKI TC",
+    "tehsil": "DAHARKI TALUKA",
+    "population_2023": 90177
+   },
+   {
+    "name": "MIRPUR MATHELO MC",
+    "tehsil": "MIRPUR MATHELO TALUKA",
+    "population_2023": 74651
+   },
+   {
+    "name": "UBAURO TC",
+    "tehsil": "UBAURO TALUKA",
+    "population_2023": 50981
+   },
+   {
+    "name": "KHANGARH TC",
+    "tehsil": "KHANGARH TALUKA",
+    "population_2023": 32648
+   },
+   {
+    "name": "ADILPUR TC",
+    "tehsil": "GHOTKI TALUKA",
+    "population_2023": 11046
+   }
+  ],
+  "HYDERABAD DISTRICT": [
+   {
+    "name": "QASIMABAD MC",
+    "tehsil": "QASIMABAD TALUKA",
+    "population_2023": 335758
+   },
+   {
+    "name": "TANDO JAM MC",
+    "tehsil": "HYDERABAD TALUKA",
+    "population_2023": 74303
+   },
+   {
+    "name": "HUSRI TC",
+    "tehsil": "HYDERABAD TALUKA",
+    "population_2023": 26801
+   }
+  ],
+  "JACOBABAD DISTRICT": [
+   {
+    "name": "JACOBABAD MC",
+    "tehsil": "JACOBABAD TALUKA",
+    "population_2023": 219315
+   },
+   {
+    "name": "THUL MC",
+    "tehsil": "THUL TALUKA",
+    "population_2023": 88554
+   },
+   {
+    "name": "GARHI KHAIRO TC",
+    "tehsil": "GARHI KHAIRO TALUKA",
+    "population_2023": 20007
+   },
+   {
+    "name": "MIRPUR BURIRO TC",
+    "tehsil": "THUL TALUKA",
+    "population_2023": 14174
+   },
+   {
+    "name": "SOHRAB KHAN SARKI TC",
+    "tehsil": "THUL TALUKA",
+    "population_2023": 19867
+   }
+  ],
+  "JAMSHORO DISTRICT": [
+   {
+    "name": "BOLHARI MC",
+    "tehsil": "KOTRI TALUKA",
+    "population_2023": 169613
+   },
+   {
+    "name": "KOTRI MC",
+    "tehsil": "KOTRI TALUKA",
+    "population_2023": 106615
+   },
+   {
+    "name": "JAMSHORO TC",
+    "tehsil": "KOTRI TALUKA",
+    "population_2023": 88190
+   },
+   {
+    "name": "SEHWAN TC",
+    "tehsil": "SEHWAN TALUKA",
+    "population_2023": 75167
+   },
+   {
+    "name": "BHAN TC",
+    "tehsil": "SEHWAN TALUKA",
+    "population_2023": 43108
+   },
+   {
+    "name": "SANN TC",
+    "tehsil": "MANJHAND TALUKA",
+    "population_2023": 13156
+   },
+   {
+    "name": "THANO BULA KHAN TC",
+    "tehsil": "THANO BULA KHAN TALUKA",
+    "population_2023": 17462
+   },
+   {
+    "name": "MANJHAND TC",
+    "tehsil": "MANJHAND TALUKA",
+    "population_2023": 8435
+   }
+  ],
+  "KAMBAR SHAHDAD KOT DISTRICT": [
+   {
+    "name": "KAMBAR MC",
+    "tehsil": "KAMBAR ALI KHAN TALUKA",
+    "population_2023": 112313
+   },
+   {
+    "name": "SHAHDAD KOT MC",
+    "tehsil": "SHAHDAD KOT TALUKA",
+    "population_2023": 120687
+   },
+   {
+    "name": "BEHRAM TC",
+    "tehsil": "MIRO KHAN TALUKA",
+    "population_2023": 26679
+   },
+   {
+    "name": "NASIRABAD TC",
+    "tehsil": "NASIRABAD TALUKA",
+    "population_2023": 38105
+   },
+   {
+    "name": "QUBO SAEED KHAN TC",
+    "tehsil": "QUBO SAEED KHAN TALUKA",
+    "population_2023": 30646
+   },
+   {
+    "name": "WARAH TC",
+    "tehsil": "WARAH TALUKA",
+    "population_2023": 38394
+   },
+   {
+    "name": "GAJI KHUHAWAR TC",
+    "tehsil": "WARAH TALUKA",
+    "population_2023": 17879
+   },
+   {
+    "name": "MIRO KHAN TC",
+    "tehsil": "MIRO KHAN TALUKA",
+    "population_2023": 20428
+   },
+   {
+    "name": "WAGAN TC",
+    "tehsil": "WARAH TALUKA",
+    "population_2023": 16734
+   }
+  ],
+  "KARACHI CENTRAL DISTRICT": [],
+  "KARACHI EAST DISTRICT": [],
+  "KARACHI SOUTH DISTRICT": [],
+  "KARACHI WEST DISTRICT": [],
+  "KASHMORE DISTRICT": [
+   {
+    "name": "KANDHKOT MC",
+    "tehsil": "KANDHKOT TALUKA",
+    "population_2023": 99155
+   },
+   {
+    "name": "KASHMORE TC",
+    "tehsil": "KASHMORE TALUKA",
+    "population_2023": 63984
+   },
+   {
+    "name": "GHOUSPUR TC",
+    "tehsil": "KANDHKOT TALUKA",
+    "population_2023": 43476
+   },
+   {
+    "name": "GUDDU TC",
+    "tehsil": "KASHMORE TALUKA",
+    "population_2023": 23499
+   },
+   {
+    "name": "KARAMPUR TC",
+    "tehsil": "TANGWANI TALUKA",
+    "population_2023": 20050
+   },
+   {
+    "name": "TANGWANI TC",
+    "tehsil": "TANGWANI TALUKA",
+    "population_2023": 12015
+   },
+   {
+    "name": "BUXAPUR TC",
+    "tehsil": "KASHMORE TALUKA",
+    "population_2023": 9603
+   }
+  ],
+  "KEAMARI DISTRICT": [],
+  "KHAIRPUR DISTRICT": [
+   {
+    "name": "KHAIRPUR MC",
+    "tehsil": "KHAIRPUR TALUKA",
+    "population_2023": 191044
+   },
+   {
+    "name": "GAMBAT MC",
+    "tehsil": "GAMBAT TALUKA",
+    "population_2023": 59790
+   },
+   {
+    "name": "KINGRI (PIRJO GOTH) MC",
+    "tehsil": "KINGRI TALUKA",
+    "population_2023": 54266
+   },
+   {
+    "name": "CHOWNDIKO TC",
+    "tehsil": "NARA TALUKA",
+    "population_2023": 40305
+   },
+   {
+    "name": "FAQIRABAD TC",
+    "tehsil": "KOT DIJI TALUKA",
+    "population_2023": 38630
+   },
+   {
+    "name": "HINGORJA TC",
+    "tehsil": "SOBHO DERO TALUKA",
+    "population_2023": 32159
+   },
+   {
+    "name": "KOT DIJI TC",
+    "tehsil": "KOT DIJI TALUKA",
+    "population_2023": 36418
+   },
+   {
+    "name": "PACCA CHANG TC",
+    "tehsil": "FAIZ GANJ TALUKA",
+    "population_2023": 38385
+   },
+   {
+    "name": "PIRYALOI TC",
+    "tehsil": "KINGRI TALUKA",
+    "population_2023": 27294
+   },
+   {
+    "name": "RANIPUR TC",
+    "tehsil": "SOBHO DERO TALUKA",
+    "population_2023": 34337
+   },
+   {
+    "name": "SETHARJA TC",
+    "tehsil": "MIRWAH TALUKA",
+    "population_2023": 32741
+   },
+   {
+    "name": "SOBHO DERO TC",
+    "tehsil": "SOBHO DERO TALUKA",
+    "population_2023": 34812
+   },
+   {
+    "name": "THARI MIRWAH TC",
+    "tehsil": "MIRWAH TALUKA",
+    "population_2023": 25264
+   },
+   {
+    "name": "AGRA TC",
+    "tehsil": "GAMBAT TALUKA",
+    "population_2023": 20222
+   },
+   {
+    "name": "AHMED PUR TC",
+    "tehsil": "KINGRI TALUKA",
+    "population_2023": 24812
+   },
+   {
+    "name": "BABARLOI TC",
+    "tehsil": "KHAIRPUR TALUKA",
+    "population_2023": 17432
+   },
+   {
+    "name": "BOZDAR WADA TC",
+    "tehsil": "MIRWAH TALUKA",
+    "population_2023": 18959
+   },
+   {
+    "name": "KARONDI TC",
+    "tehsil": "FAIZ GANJ TALUKA",
+    "population_2023": 10330
+   },
+   {
+    "name": "KHUHRA TC",
+    "tehsil": "GAMBAT TALUKA",
+    "population_2023": 24341
+   },
+   {
+    "name": "KUMB TC",
+    "tehsil": "KOT DIJI TALUKA",
+    "population_2023": 19352
+   },
+   {
+    "name": "TANDO MIR ALI TC",
+    "tehsil": "MIRWAH TALUKA",
+    "population_2023": 24605
+   },
+   {
+    "name": "THERHI II TC",
+    "tehsil": "KHAIRPUR TALUKA",
+    "population_2023": 16531
+   },
+   {
+    "name": "THERHI-I TC",
+    "tehsil": "KHAIRPUR TALUKA",
+    "population_2023": 22234
+   }
+  ],
+  "KORANGI DISTRICT": [],
+  "LARKANA DISTRICT": [
+   {
+    "name": "LARKANA MUNICIPAL CORPORATION",
+    "tehsil": "LARKANA TALUKA",
+    "population_2023": 551716
+   },
+   {
+    "name": "NAUDERO MC",
+    "tehsil": "RATODERO TALUKA",
+    "population_2023": 52846
+   },
+   {
+    "name": "RATODERO MC",
+    "tehsil": "RATODERO TALUKA",
+    "population_2023": 81935
+   },
+   {
+    "name": "ARIJA TC",
+    "tehsil": "BAKRANI TALUKA",
+    "population_2023": 26047
+   },
+   {
+    "name": "BADAH TC",
+    "tehsil": "DOKRI TALUKA",
+    "population_2023": 43756
+   },
+   {
+    "name": "DOKRI TC",
+    "tehsil": "DOKRI TALUKA",
+    "population_2023": 27125
+   },
+   {
+    "name": "GARELLO TC",
+    "tehsil": "BAKRANI TALUKA",
+    "population_2023": 14726
+   }
+  ],
+  "MALIR DISTRICT": [],
+  "MATIARI DISTRICT": [
+   {
+    "name": "HALA MC",
+    "tehsil": "HALA TALUKA",
+    "population_2023": 71094
+   },
+   {
+    "name": "BHIT SHAH TC",
+    "tehsil": "HALA TALUKA",
+    "population_2023": 45345
+   },
+   {
+    "name": "HALA OLD TC",
+    "tehsil": "HALA TALUKA",
+    "population_2023": 13992
+   },
+   {
+    "name": "KHYBER TC",
+    "tehsil": "MATIARI TALUKA",
+    "population_2023": 12937
+   },
+   {
+    "name": "MATIARI TC",
+    "tehsil": "MATIARI TALUKA",
+    "population_2023": 22517
+   },
+   {
+    "name": "NEW SAEEDABAD TC",
+    "tehsil": "SAEEDABAD TALUKA",
+    "population_2023": 24084
+   },
+   {
+    "name": "ODERO LAL STATION TC",
+    "tehsil": "MATIARI TALUKA",
+    "population_2023": 12704
+   }
+  ],
+  "MIRPUR KHAS DISTRICT": [
+   {
+    "name": "MIRPUR KHAS MC",
+    "tehsil": "MIRPUR KHAS TALUKA",
+    "population_2023": 267833
+   },
+   {
+    "name": "DIGRI TC",
+    "tehsil": "DIGRI TALUKA",
+    "population_2023": 41774
+   },
+   {
+    "name": "JHUDO TC",
+    "tehsil": "JHUDO TALUKA",
+    "population_2023": 37379
+   },
+   {
+    "name": "KOT GHULAM MUHAMMAD TC",
+    "tehsil": "KOT GHULAM MUHAMMAD TALUKA",
+    "population_2023": 30088
+   },
+   {
+    "name": "NAUKOT TC",
+    "tehsil": "JHUDO TALUKA",
+    "population_2023": 30296
+   },
+   {
+    "name": "TANDO JAN MUHAMMAD TC",
+    "tehsil": "DIGRI TALUKA",
+    "population_2023": 41188
+   },
+   {
+    "name": "HINGORNO TC",
+    "tehsil": "SINDHRI TALUKA",
+    "population_2023": 20569
+   },
+   {
+    "name": "MIRWAH TC",
+    "tehsil": "SHUJAABAD TALUKA",
+    "population_2023": 23048
+   }
+  ],
+  "NAUSHAHRO FEROZE DISTRICT": [
+   {
+    "name": "MORO MC",
+    "tehsil": "MORO TALUKA",
+    "population_2023": 142685
+   },
+   {
+    "name": "MEHRABPUR TC",
+    "tehsil": "MEHRABPUR TALUKA",
+    "population_2023": 57978
+   },
+   {
+    "name": "NAUSHAHRO FEROZE TC",
+    "tehsil": "NAUSHAHRO FEROZE TALUKA",
+    "population_2023": 87416
+   },
+   {
+    "name": "BHIRIA ROAD TC",
+    "tehsil": "BHIRIA TALUKA",
+    "population_2023": 30527
+   },
+   {
+    "name": "HALANI TC",
+    "tehsil": "MEHRABPUR TALUKA",
+    "population_2023": 25317
+   },
+   {
+    "name": "KANDIARO TC",
+    "tehsil": "KANDIARO TALUKA",
+    "population_2023": 44382
+   },
+   {
+    "name": "MITHIANI TC",
+    "tehsil": "NAUSHAHRO FEROZE TALUKA",
+    "population_2023": 31936
+   },
+   {
+    "name": "PADIDAN TC",
+    "tehsil": "NAUSHAHRO FEROZE TALUKA",
+    "population_2023": 27092
+   },
+   {
+    "name": "THARU SHAH TC",
+    "tehsil": "BHIRIA TALUKA",
+    "population_2023": 27651
+   },
+   {
+    "name": "BHIRIA CITY TC",
+    "tehsil": "BHIRIA TALUKA",
+    "population_2023": 14370
+   },
+   {
+    "name": "DARYA KHAN MARRI TC",
+    "tehsil": "NAUSHAHRO FEROZE TALUKA",
+    "population_2023": 17890
+   }
+  ],
+  "SANGHAR DISTRICT": [
+   {
+    "name": "SHAHDADPUR MC",
+    "tehsil": "SHAHDADPUR TALUKA",
+    "population_2023": 113342
+   },
+   {
+    "name": "TANDO ADAM MC",
+    "tehsil": "TANDO ADAM TALUKA",
+    "population_2023": 174291
+   },
+   {
+    "name": "KHIPRO TC",
+    "tehsil": "KHIPRO TALUKA",
+    "population_2023": 58307
+   },
+   {
+    "name": "SANGHAR MC",
+    "tehsil": "SANGHAR TALUKA",
+    "population_2023": 74112
+   },
+   {
+    "name": "JATIA TC",
+    "tehsil": "SHAHDADPUR TALUKA",
+    "population_2023": 41993
+   },
+   {
+    "name": "SHAHPUR CHAKAR TC",
+    "tehsil": "SHAHDADPUR TALUKA",
+    "population_2023": 42365
+   },
+   {
+    "name": "BERANI TC",
+    "tehsil": "JAM NAWAZ ALI TALUKA",
+    "population_2023": 20946
+   },
+   {
+    "name": "JHOL TC",
+    "tehsil": "SINJHORO TALUKA",
+    "population_2023": 19364
+   },
+   {
+    "name": "KANDIARI TC",
+    "tehsil": "SANGHAR TALUKA",
+    "population_2023": 11419
+   },
+   {
+    "name": "KHADRO TC",
+    "tehsil": "SINJHORO TALUKA",
+    "population_2023": 17833
+   },
+   {
+    "name": "SARHARI TC",
+    "tehsil": "SHAHDADPUR TALUKA",
+    "population_2023": 18351
+   },
+   {
+    "name": "SINJHORO MC",
+    "tehsil": "SINJHORO TALUKA",
+    "population_2023": 22637
+   },
+   {
+    "name": "JAM NAWAZ ALI TC",
+    "tehsil": "JAM NAWAZ ALI TALUKA",
+    "population_2023": 6311
+   },
+   {
+    "name": "PERUMAL TC",
+    "tehsil": "SANGHAR TALUKA",
+    "population_2023": 5524
+   },
+   {
+    "name": "TANDO MITHA KHAN TC",
+    "tehsil": "SANGHAR TALUKA",
+    "population_2023": 3987
+   }
+  ],
+  "SHAHEED BENAZIRABAD DISTRICT": [
+   {
+    "name": "NAWABSHAH MC",
+    "tehsil": "NAWABSHAH TALUKA",
+    "population_2023": 363138
+   },
+   {
+    "name": "SAKRAND TC",
+    "tehsil": "SAKRAND TALUKA",
+    "population_2023": 72040
+   },
+   {
+    "name": "BANDHI TC",
+    "tehsil": "DAUR TALUKA",
+    "population_2023": 36588
+   },
+   {
+    "name": "DAUR TC",
+    "tehsil": "DAUR TALUKA",
+    "population_2023": 35662
+   },
+   {
+    "name": "KAZI AHMED TC",
+    "tehsil": "KAZI AHMED TALUKA",
+    "population_2023": 28610
+   },
+   {
+    "name": "BUCHERY TC",
+    "tehsil": "DAUR TALUKA",
+    "population_2023": 18798
+   },
+   {
+    "name": "DAULATPUR TC",
+    "tehsil": "KAZI AHMED TALUKA",
+    "population_2023": 14508
+   },
+   {
+    "name": "JAM SAHIB TC",
+    "tehsil": "DAUR TALUKA",
+    "population_2023": 19127
+   },
+   {
+    "name": "SHAHPUR JAHANIA TC",
+    "tehsil": "KAZI AHMED TALUKA",
+    "population_2023": 9649
+   }
+  ],
+  "SHIKARPUR DISTRICT": [
+   {
+    "name": "SHIKARPUR MC",
+    "tehsil": "SHIKARPUR TALUKA",
+    "population_2023": 204938
+   },
+   {
+    "name": "LAKHI TC",
+    "tehsil": "LAKHI TALUKA",
+    "population_2023": 33588
+   },
+   {
+    "name": "CHAK TC",
+    "tehsil": "LAKHI TALUKA",
+    "population_2023": 14908
+   },
+   {
+    "name": "GARHI YASIN TC",
+    "tehsil": "GARHI YASIN TALUKA",
+    "population_2023": 16155
+   },
+   {
+    "name": "KHANPUR TC",
+    "tehsil": "KHANPUR TALUKA",
+    "population_2023": 18052
+   },
+   {
+    "name": "MADEJI TC",
+    "tehsil": "GARHI YASIN TALUKA",
+    "population_2023": 20530
+   },
+   {
+    "name": "RUSTAM TC",
+    "tehsil": "LAKHI TALUKA",
+    "population_2023": 10567
+   }
+  ],
+  "SUJAWAL DISTRICT": [
+   {
+    "name": "SUJAWAL TC",
+    "tehsil": "SUJAWAL TALUKA",
+    "population_2023": 38736
+   },
+   {
+    "name": "CHUHAR JAMALI TC",
+    "tehsil": "SHAH BUNDER TALUKA",
+    "population_2023": 18354
+   },
+   {
+    "name": "DARO TC",
+    "tehsil": "MIRPUR BATHORO TALUKA",
+    "population_2023": 10847
+   },
+   {
+    "name": "JATI TC",
+    "tehsil": "JATI TALUKA",
+    "population_2023": 10448
+   },
+   {
+    "name": "MIRPUR BATHORO TC",
+    "tehsil": "MIRPUR BATHORO TALUKA",
+    "population_2023": 10462
+   }
+  ],
+  "SUKKUR DISTRICT": [
+   {
+    "name": "PANO AQIL TC",
+    "tehsil": "PANO AQIL TALUKA",
+    "population_2023": 76942
+   },
+   {
+    "name": "ROHRI MC",
+    "tehsil": "ROHRI TALUKA",
+    "population_2023": 92135
+   },
+   {
+    "name": "PANO AQIL CANTONMENT",
+    "tehsil": "PANO AQIL TALUKA",
+    "population_2023": 25759
+   },
+   {
+    "name": "SALEHPAT TC",
+    "tehsil": "SALEHPAT TALUKA",
+    "population_2023": 29068
+   },
+   {
+    "name": "KANDHRA TC",
+    "tehsil": "ROHRI TALUKA",
+    "population_2023": 21465
+   },
+   {
+    "name": "BAGERJI TC",
+    "tehsil": "NEW SUKKUR TALUKA",
+    "population_2023": 5779
+   }
+  ],
+  "TANDO ALLAHYAR DISTRICT": [
+   {
+    "name": "TANDO ALLAHYAR MC",
+    "tehsil": "TANDO ALLAHYAR TALUKA",
+    "population_2023": 171185
+   },
+   {
+    "name": "NASIRPUR TC",
+    "tehsil": "TANDO ALLAHYAR TALUKA",
+    "population_2023": 35397
+   },
+   {
+    "name": "CHAMBAR TC",
+    "tehsil": "CHAMBER TALUKA",
+    "population_2023": 20037
+   },
+   {
+    "name": "PYARO LUND TC",
+    "tehsil": "JHANDO MARI TALUKA",
+    "population_2023": 21427
+   },
+   {
+    "name": "SANJAR CHANG TC",
+    "tehsil": "CHAMBER TALUKA",
+    "population_2023": 17669
+   },
+   {
+    "name": "SULTANABAD TC",
+    "tehsil": "TANDO ALLAHYAR TALUKA",
+    "population_2023": 19972
+   }
+  ],
+  "TANDO MUHAMMAD KHAN DISTRICT": [
+   {
+    "name": "TANDO MUHAMMAD KHAN MC",
+    "tehsil": "TANDO MUHAMMAD KHAN TALUKA",
+    "population_2023": 114406
+   },
+   {
+    "name": "TANDO GHULAM HYDER TC",
+    "tehsil": "TANDO GHULAM HYDER TALUKA",
+    "population_2023": 41277
+   },
+   {
+    "name": "BULRI SHAH KARIM TC",
+    "tehsil": "BULRI SHAH KARIM TALUKA",
+    "population_2023": 6459
+   }
+  ],
+  "THARPARKAR DISTRICT": [
+   {
+    "name": "MITHI MC",
+    "tehsil": "MITHI TALUKA",
+    "population_2023": 52376
+   },
+   {
+    "name": "CHACHRO TC",
+    "tehsil": "CHACHRO TALUKA",
+    "population_2023": 25309
+   },
+   {
+    "name": "CHELHAR TC",
+    "tehsil": "MITHI TALUKA",
+    "population_2023": 12489
+   },
+   {
+    "name": "DIPLO TC",
+    "tehsil": "DIPLO TALUKA",
+    "population_2023": 13257
+   },
+   {
+    "name": "ISLAMKOT TC",
+    "tehsil": "ISLAMKOT TALUKA",
+    "population_2023": 19064
+   },
+   {
+    "name": "NAGAR PARKAR TC",
+    "tehsil": "NAGAR PARKAR TALUKA",
+    "population_2023": 12239
+   },
+   {
+    "name": "KHEME-JO-PAR TC",
+    "tehsil": "DAHLI TALUKA",
+    "population_2023": 9671
+   }
+  ],
+  "THATTA DISTRICT": [
+   {
+    "name": "MAKLI TC",
+    "tehsil": "THATTA TALUKA",
+    "population_2023": 54137
+   },
+   {
+    "name": "THATTA MC",
+    "tehsil": "THATTA TALUKA",
+    "population_2023": 51723
+   },
+   {
+    "name": "GHARO TC",
+    "tehsil": "MIRPUR SAKRO TALUKA",
+    "population_2023": 40220
+   },
+   {
+    "name": "GARHO TC",
+    "tehsil": "GHORABARI TALUKA",
+    "population_2023": 19961
+   },
+   {
+    "name": "GHORABARI TC",
+    "tehsil": "GHORABARI TALUKA",
+    "population_2023": 15184
+   },
+   {
+    "name": "MIRPUR SAKRO TC",
+    "tehsil": "MIRPUR SAKRO TALUKA",
+    "population_2023": 12454
+   }
+  ],
+  "UMER KOT DISTRICT": [
+   {
+    "name": "UMERKOT MC",
+    "tehsil": "UMER KOT TALUKA",
+    "population_2023": 144558
+   },
+   {
+    "name": "DHORONARO TC",
+    "tehsil": "UMER KOT TALUKA",
+    "population_2023": 29507
+   },
+   {
+    "name": "KUNRI TC",
+    "tehsil": "KUNRI TALUKA",
+    "population_2023": 26609
+   },
+   {
+    "name": "CHHORE OLD TC",
+    "tehsil": "UMER KOT TALUKA",
+    "population_2023": 21178
+   },
+   {
+    "name": "NABI SAR ROAD TC",
+    "tehsil": "KUNRI TALUKA",
+    "population_2023": 14074
+   },
+   {
+    "name": "PITHORO TC",
+    "tehsil": "PITHORO TALUKA",
+    "population_2023": 7411
+   },
+   {
+    "name": "SAMARO TC",
+    "tehsil": "SAMARO TALUKA",
+    "population_2023": 9607
+   },
+   {
+    "name": "SHADI PALI TC",
+    "tehsil": "PITHORO TALUKA",
+    "population_2023": 5915
+   }
+  ]
+ },
+ "kp": {
+  "ABBOTTABAD DISTRICT": [
+   {
+    "name": "ABBOTTABAD CANTONMENT",
+    "tehsil": "ABBOTTABAD TEHSIL",
+    "population_2023": 159683
+   },
+   {
+    "name": "ABBOTTABAD MC",
+    "tehsil": "ABBOTTABAD TEHSIL",
+    "population_2023": 74712
+   },
+   {
+    "name": "HAVELIAN CANTONMENT",
+    "tehsil": "HAVELIAN TEHSIL",
+    "population_2023": 37509
+   },
+   {
+    "name": "NAWAN SHEHR TC",
+    "tehsil": "ABBOTTABAD TEHSIL",
+    "population_2023": 40711
+   },
+   {
+    "name": "HAVELIAN MC",
+    "tehsil": "HAVELIAN TEHSIL",
+    "population_2023": 18916
+   },
+   {
+    "name": "MURREE GALLIES CANTONMENT",
+    "tehsil": "ABBOTTABAD TEHSIL",
+    "population_2023": 784
+   }
+  ],
+  "BANNU DISTRICT": [
+   {
+    "name": "BANNU MC",
+    "tehsil": "BANNU TEHSIL",
+    "population_2023": 41015
+   },
+   {
+    "name": "BANNU CANTONMENT",
+    "tehsil": "BANNU TEHSIL",
+    "population_2023": 7383
+   }
+  ],
+  "CHARSADDA DISTRICT": [
+   {
+    "name": "CHARSADDA MC",
+    "tehsil": "CHARSADDA TEHSIL",
+    "population_2023": 120170
+   },
+   {
+    "name": "SHABQADAR MC",
+    "tehsil": "SHABQADAR TEHSIL",
+    "population_2023": 102340
+   },
+   {
+    "name": "TANGI MC",
+    "tehsil": "TANGI TEHSIL",
+    "population_2023": 35659
+   },
+   {
+    "name": "UTMANZAI MC",
+    "tehsil": "CHARSADDA TEHSIL",
+    "population_2023": 34257
+   }
+  ],
+  "DERA ISMAIL KHAN DISTRICT": [
+   {
+    "name": "DERA ISMAIL KHAN MC",
+    "tehsil": "DERA ISMAIL KHAN TEHSIL",
+    "population_2023": 213756
+   },
+   {
+    "name": "PAHARPUR MC",
+    "tehsil": "PAHARPUR TEHSIL",
+    "population_2023": 76027
+   },
+   {
+    "name": "PAROA MC",
+    "tehsil": "PAROA TEHSIL",
+    "population_2023": 42005
+   },
+   {
+    "name": "KULACHI MC",
+    "tehsil": "KULACHI TEHSIL",
+    "population_2023": 24481
+   },
+   {
+    "name": "PANYALA TC",
+    "tehsil": "PAHARPUR TEHSIL",
+    "population_2023": 11669
+   },
+   {
+    "name": "DERA ISMAIL KHAN CANTONMENT",
+    "tehsil": "DERA ISMAIL KHAN TEHSIL",
+    "population_2023": 6819
+   }
+  ],
+  "HANGU DISTRICT": [
+   {
+    "name": "HANGU MC",
+    "tehsil": "HANGU TEHSIL",
+    "population_2023": 43642
+   },
+   {
+    "name": "TALL MC",
+    "tehsil": "TALL TEHSIL",
+    "population_2023": 30977
+   },
+   {
+    "name": "DOABA TC",
+    "tehsil": "TALL TEHSIL",
+    "population_2023": 11108
+   }
+  ],
+  "HARIPUR DISTRICT": [
+   {
+    "name": "HARIPUR MC",
+    "tehsil": "HARIPUR TEHSIL",
+    "population_2023": 91915
+   },
+   {
+    "name": "KHALABAT MC",
+    "tehsil": "HARIPUR TEHSIL",
+    "population_2023": 55850
+   }
+  ],
+  "KARAK DISTRICT": [
+   {
+    "name": "KARAK MC",
+    "tehsil": "KARAK TEHSIL",
+    "population_2023": 58065
+   }
+  ],
+  "KHYBER DISTRICT": [
+   {
+    "name": "JAMRUD TC",
+    "tehsil": "JAMRUD TEHSIL",
+    "population_2023": 56642
+   },
+   {
+    "name": "LANDI KOTAL TC",
+    "tehsil": "LANDI KOTAL TEHSIL",
+    "population_2023": 38065
+   }
+  ],
+  "KOHAT DISTRICT": [
+   {
+    "name": "KOHAT MC",
+    "tehsil": "KOHAT TEHSIL",
+    "population_2023": 204829
+   },
+   {
+    "name": "KOHAT CANTONMENT",
+    "tehsil": "KOHAT TEHSIL",
+    "population_2023": 31051
+   },
+   {
+    "name": "LACHI TC",
+    "tehsil": "LACHI TEHSIL",
+    "population_2023": 23843
+   },
+   {
+    "name": "SHAKARDARA TC",
+    "tehsil": "LACHI TEHSIL",
+    "population_2023": 19018
+   }
+  ],
+  "KURRAM DISTRICT": [
+   {
+    "name": "SADDA TC",
+    "tehsil": "LOWER KURRAM TEHSIL",
+    "population_2023": 39888
+   },
+   {
+    "name": "PARACHINAR TC",
+    "tehsil": "UPPER KURRAM TEHSIL",
+    "population_2023": 5583
+   }
+  ],
+  "LAKKI MARWAT DISTRICT": [
+   {
+    "name": "LAKKI MARWAT MC",
+    "tehsil": "LAKKI MARWAT TEHSIL",
+    "population_2023": 70759
+   },
+   {
+    "name": "NAURANG TC",
+    "tehsil": "SARAI NAURANG TEHSIL",
+    "population_2023": 32330
+   }
+  ],
+  "LOWER CHITRAL DISTRICT": [
+   {
+    "name": "CHITRAL MC",
+    "tehsil": "CHITRAL SUB-DIVISION",
+    "population_2023": 57157
+   }
+  ],
+  "LOWER DIR DISTRICT": [
+   {
+    "name": "TIMARGARA MC",
+    "tehsil": "TEMERGARA SUB-DIVISION",
+    "population_2023": 47860
+   },
+   {
+    "name": "BATKHELA MC",
+    "tehsil": "SWAT RANI ZAI SUB-DIVISION",
+    "population_2023": 73525
+   }
+  ],
+  "MANSEHRA DISTRICT": [
+   {
+    "name": "MANSEHRA MC",
+    "tehsil": "MANSEHRA TEHSIL",
+    "population_2023": 137278
+   },
+   {
+    "name": "BAFFA TC",
+    "tehsil": "BAFFA PAKHAL TEHSIL",
+    "population_2023": 17556
+   }
+  ],
+  "MARDAN DISTRICT": [
+   {
+    "name": "MARDAN MC",
+    "tehsil": "MARDAN TEHSIL",
+    "population_2023": 363788
+   },
+   {
+    "name": "TAKHT BHAI MC",
+    "tehsil": "TAKHT BHAI TEHSIL",
+    "population_2023": 85040
+   },
+   {
+    "name": "MARDAN CANTONMENT",
+    "tehsil": "MARDAN TEHSIL",
+    "population_2023": 4514
+   }
+  ],
+  "NORTH WAZIRISTAN DISTRICT": [
+   {
+    "name": "MIRAN SHAH TC",
+    "tehsil": "MIRAN SHAH TEHSIL",
+    "population_2023": 4131
+   }
+  ],
+  "NOWSHERA DISTRICT": [
+   {
+    "name": "JEHANGIRA MC",
+    "tehsil": "JEHANGIRA TEHSIL",
+    "population_2023": 57011
+   },
+   {
+    "name": "NOWSHERA KALAN MC",
+    "tehsil": "NOWSHERA TEHSIL",
+    "population_2023": 88472
+   },
+   {
+    "name": "PABBI MC",
+    "tehsil": "PABBI TEHSIL",
+    "population_2023": 52701
+   },
+   {
+    "name": "AKORA KHATTAK MC",
+    "tehsil": "JEHANGIRA TEHSIL",
+    "population_2023": 29750
+   },
+   {
+    "name": "AMANGARH TC",
+    "tehsil": "NOWSHERA TEHSIL",
+    "population_2023": 42159
+   },
+   {
+    "name": "NOWSHERA CANTONMENT",
+    "tehsil": "NOWSHERA TEHSIL",
+    "population_2023": 34481
+   },
+   {
+    "name": "RISALPUR CANTONMENT",
+    "tehsil": "NOWSHERA TEHSIL",
+    "population_2023": 36074
+   },
+   {
+    "name": "CHERAT CANTONMENT",
+    "tehsil": "NOWSHERA TEHSIL",
+    "population_2023": 1311
+   }
+  ],
+  "PESHAWAR DISTRICT": [
+   {
+    "name": "PESHAWAR MUNICIPAL CORPORATION",
+    "tehsil": "PESHAWAR TEHSIL",
+    "population_2023": 1837741
+   },
+   {
+    "name": "PESHAWAR CANTONMENT",
+    "tehsil": "PESHAWAR TEHSIL",
+    "population_2023": 63978
+   },
+   {
+    "name": "PESHAWAR UNIVERSITY TC",
+    "tehsil": "PESHAWAR TEHSIL",
+    "population_2023": 4256
+   }
+  ],
+  "SWABI DISTRICT": [
+   {
+    "name": "SWABI MC",
+    "tehsil": "SWABI TEHSIL",
+    "population_2023": 156496
+   },
+   {
+    "name": "TOPI MC",
+    "tehsil": "TOPI TEHSIL",
+    "population_2023": 74867
+   },
+   {
+    "name": "KERNAL SHER KILLI TC",
+    "tehsil": "RAZAR TEHSIL",
+    "population_2023": 27787
+   },
+   {
+    "name": "TORDHER TC",
+    "tehsil": "LAHOR TEHSIL",
+    "population_2023": 46320
+   },
+   {
+    "name": "ZAIDA MC",
+    "tehsil": "SWABI TEHSIL",
+    "population_2023": 34200
+   }
+  ],
+  "SWAT DISTRICT": [
+   {
+    "name": "MINGORA MC",
+    "tehsil": "BABUZAI TEHSIL",
+    "population_2023": 361112
+   },
+   {
+    "name": "BARRI KOT MC",
+    "tehsil": "BARIKOT TEHSIL",
+    "population_2023": 115045
+   },
+   {
+    "name": "KABAL MC",
+    "tehsil": "KABAL TEHSIL",
+    "population_2023": 132549
+   },
+   {
+    "name": "BEHRAIN MC",
+    "tehsil": "BEHRAIN TEHSIL",
+    "population_2023": 76728
+   },
+   {
+    "name": "KHAWAZA KHELA MC",
+    "tehsil": "KHAWAZAKHELA TEHSIL",
+    "population_2023": 57113
+   },
+   {
+    "name": "MATTA MC",
+    "tehsil": "MATTA TEHSIL",
+    "population_2023": 51821
+   }
+  ],
+  "TANK DISTRICT": [
+   {
+    "name": "TANK MC",
+    "tehsil": "TANK TEHSIL",
+    "population_2023": 49172
+   }
+  ],
+  "UPPER DIR DISTRICT": [
+   {
+    "name": "DIR TC",
+    "tehsil": "DIR SUB-DIVISION",
+    "population_2023": 47842
+   }
+  ]
+ },
+ "balochistan": {
+  "AWARAN DISTRICT": [
+   {
+    "name": "AWARAN MC",
+    "tehsil": "AWARAN SUB-DIVISION",
+    "population_2023": 28780
+   },
+   {
+    "name": "GUJAR MASHKAI MC",
+    "tehsil": "MASHKAI TEHSIL",
+    "population_2023": 18056
+   }
+  ],
+  "BARKHAN DISTRICT": [
+   {
+    "name": "BARKHAN MC",
+    "tehsil": "BARKHAN TEHSIL",
+    "population_2023": 14425
+   }
+  ],
+  "CHAGAI DISTRICT": [
+   {
+    "name": "DALBANDIN MC",
+    "tehsil": "DALBANDIN SUB-DIVISION",
+    "population_2023": 20054
+   }
+  ],
+  "CHAMAN DISTRICT": [
+   {
+    "name": "CHAMAN MUNICIPAL CORPORATION",
+    "tehsil": "CHAMAN CITY SUB-DIVISION",
+    "population_2023": 130139
+   }
+  ],
+  "DERA BUGTI DISTRICT": [
+   {
+    "name": "SUI MC",
+    "tehsil": "SUI SUB-DIVISION",
+    "population_2023": 79567
+   },
+   {
+    "name": "DERA BUGTI MC",
+    "tehsil": "DERA BUGTI SUB-DIVISION",
+    "population_2023": 28880
+   }
+  ],
+  "DUKI DISTRICT": [
+   {
+    "name": "DUKI MC",
+    "tehsil": "DUKI SUB-DIVISION",
+    "population_2023": 9783
+   }
+  ],
+  "GWADAR DISTRICT": [
+   {
+    "name": "GWADAR MC",
+    "tehsil": "GWADAR SUB-DIVISION",
+    "population_2023": 70852
+   },
+   {
+    "name": "JIWANI MC",
+    "tehsil": "JIWANI TEHSIL",
+    "population_2023": 25332
+   },
+   {
+    "name": "PASNI MC",
+    "tehsil": "PASNI SUB-DIVISION",
+    "population_2023": 43494
+   },
+   {
+    "name": "ORMARA MC",
+    "tehsil": "ORMARA TEHSIL",
+    "population_2023": 16573
+   },
+   {
+    "name": "ORMARA CANTONMENT",
+    "tehsil": "ORMARA TEHSIL",
+    "population_2023": 2784
+   }
+  ],
+  "HARNAI DISTRICT": [
+   {
+    "name": "HARNAI MC",
+    "tehsil": "HARNAI SUB-DIVISION",
+    "population_2023": 14277
+   },
+   {
+    "name": "SHAHRIG MC",
+    "tehsil": "SHAHRIG TEHSIL",
+    "population_2023": 19156
+   }
+  ],
+  "JAFFARABAD DISTRICT": [
+   {
+    "name": "DERA ALLAH YAR MUNICIPAL CORPORATION",
+    "tehsil": "JHAT PAT SUB-DIVISION",
+    "population_2023": 98761
+   },
+   {
+    "name": "USTA MUHAMMAD MUNICIPAL CORPORATION",
+    "tehsil": "USTA MUHAMMAD SUB-DIVISION",
+    "population_2023": 64632
+   }
+  ],
+  "JHAL MAGSI DISTRICT": [
+   {
+    "name": "GANDAWA MC",
+    "tehsil": "GANDAWA TEHSIL",
+    "population_2023": 24130
+   }
+  ],
+  "KACHHI DISTRICT": [
+   {
+    "name": "MACH MC",
+    "tehsil": "MACH SUB-DIVISION",
+    "population_2023": 44542
+   },
+   {
+    "name": "BHAG MC",
+    "tehsil": "BHAG SUB-DIVISION",
+    "population_2023": 18634
+   },
+   {
+    "name": "DHADAR MC",
+    "tehsil": "DHADAR SUB-DIVISION",
+    "population_2023": 17276
+   }
+  ],
+  "KALAT DISTRICT": [
+   {
+    "name": "KALAT MC",
+    "tehsil": "KALAT SUB-DIVISION",
+    "population_2023": 44440
+   }
+  ],
+  "KECH DISTRICT": [
+   {
+    "name": "TURBAT MUNICIPAL CORPORATION",
+    "tehsil": "TURBAT SUB-DIVISION",
+    "population_2023": 268625
+   },
+   {
+    "name": "BULAIDA MC",
+    "tehsil": "BULAIDA SUB-DIVISION",
+    "population_2023": 68752
+   },
+   {
+    "name": "TUMP MC",
+    "tehsil": "TUMP SUB-DIVISION",
+    "population_2023": 49269
+   }
+  ],
+  "KHARAN DISTRICT": [
+   {
+    "name": "KHARAN MC",
+    "tehsil": "KHARAN SUB-DIVISION",
+    "population_2023": 80806
+   }
+  ],
+  "KHUZDAR DISTRICT": [
+   {
+    "name": "KHUZDAR MUNICIPAL CORPORATION",
+    "tehsil": "KHUZDAR SUB-DIVISION",
+    "population_2023": 218112
+   },
+   {
+    "name": "ZEHRI MC",
+    "tehsil": "ZEHRI SUB-DIVISION",
+    "population_2023": 70910
+   },
+   {
+    "name": "NAL MC",
+    "tehsil": "NAL SUB-DIVISION",
+    "population_2023": 48481
+   },
+   {
+    "name": "WADH MC",
+    "tehsil": "WADH SUB-DIVISION",
+    "population_2023": 26875
+   }
+  ],
+  "KILLA ABDULLAH DISTRICT": [
+   {
+    "name": "KILLA ABDULLAH MC",
+    "tehsil": "KILLA ABDULLAH SUB-DIVISION",
+    "population_2023": 35384
+   }
+  ],
+  "KILLA SAIFULLAH DISTRICT": [
+   {
+    "name": "KILLA SAIFULLAH MC",
+    "tehsil": "KILLA SAIFULLAH SUB-DIVISION",
+    "population_2023": 35043
+   },
+   {
+    "name": "MUSLIM BAGH MC",
+    "tehsil": "MUSLIM BAGH TEHSIL",
+    "population_2023": 29132
+   }
+  ],
+  "KOHLU DISTRICT": [
+   {
+    "name": "KOHLU MC",
+    "tehsil": "KOHLU SUB-DIVISION",
+    "population_2023": 18978
+   }
+  ],
+  "LASBELA DISTRICT": [
+   {
+    "name": "HUB MC",
+    "tehsil": "HUB SUB-DIVISION",
+    "population_2023": 195661
+   },
+   {
+    "name": "BELA MC",
+    "tehsil": "BELA SUB-DIVISION",
+    "population_2023": 29380
+   },
+   {
+    "name": "UTHAL MC",
+    "tehsil": "UTHAL SUB-DIVISION",
+    "population_2023": 37071
+   },
+   {
+    "name": "WINDER MC",
+    "tehsil": "SONMIANI/WINDER TEHSIL",
+    "population_2023": 35245
+   },
+   {
+    "name": "DUREJI MC",
+    "tehsil": "DUREJI SUB-DIVISION",
+    "population_2023": 15688
+   },
+   {
+    "name": "GADDANI MC",
+    "tehsil": "GADDANI TEHSIL",
+    "population_2023": 17540
+   }
+  ],
+  "LORALAI DISTRICT": [
+   {
+    "name": "LORALAI MC",
+    "tehsil": "BORI SUB-DIVISION",
+    "population_2023": 56613
+   },
+   {
+    "name": "LORALAI CANTONMENT",
+    "tehsil": "BORI SUB-DIVISION",
+    "population_2023": 2988
+   }
+  ],
+  "MASTUNG DISTRICT": [
+   {
+    "name": "MASTUNG MC",
+    "tehsil": "MASTUNG SUB-DIVISION",
+    "population_2023": 40374
+   }
+  ],
+  "MUSAKHEL DISTRICT": [
+   {
+    "name": "MUSAKHEL MC",
+    "tehsil": "MUSAKHEL TEHSIL",
+    "population_2023": 15805
+   }
+  ],
+  "NASIRABAD DISTRICT": [
+   {
+    "name": "DERA MURAD JAMALI MC",
+    "tehsil": "DERA MURAD JAMALI SUB-DIVISION",
+    "population_2023": 106952
+   }
+  ],
+  "NUSHKI DISTRICT": [
+   {
+    "name": "NUSHKI MC",
+    "tehsil": "NUSHKI SUB-DIVISION",
+    "population_2023": 48572
+   }
+  ],
+  "PANJGUR DISTRICT": [
+   {
+    "name": "TASP MC",
+    "tehsil": "PANJGUR SUB-DIVISION",
+    "population_2023": 66030
+   },
+   {
+    "name": "CHITKAN MUNICIPAL CORPORATION",
+    "tehsil": "PANJGUR SUB-DIVISION",
+    "population_2023": 47034
+   },
+   {
+    "name": "WASHBOOD MC",
+    "tehsil": "PANJGUR SUB-DIVISION",
+    "population_2023": 44629
+   }
+  ],
+  "PISHIN DISTRICT": [
+   {
+    "name": "PISHIN MUNICIPAL CORPORATION",
+    "tehsil": "PISHIN SUB-DIVISION",
+    "population_2023": 107646
+   },
+   {
+    "name": "HURRAM ZAI MC",
+    "tehsil": "HURRAM ZAI SUB-DIVISION",
+    "population_2023": 42945
+   },
+   {
+    "name": "KHANOZAI MC",
+    "tehsil": "KAREZAT SUB-DIVISION",
+    "population_2023": 46682
+   },
+   {
+    "name": "SARANAN MC",
+    "tehsil": "SARANAN TEHSIL",
+    "population_2023": 46512
+   }
+  ],
+  "QUETTA DISTRICT": [
+   {
+    "name": "QUETTA CANTONMENT",
+    "tehsil": "SUB-DIVISION CITY",
+    "population_2023": 164184
+   }
+  ],
+  "SIBI DISTRICT": [
+   {
+    "name": "SIBI MC",
+    "tehsil": "SIBI SUB-DIVISION",
+    "population_2023": 69300
+   }
+  ],
+  "SOHBATPUR DISTRICT": [
+   {
+    "name": "SOHBATPUR MC",
+    "tehsil": "SOHBATPUR SUB-DIVISION",
+    "population_2023": 14728
+   }
+  ],
+  "SURAB DISTRICT": [
+   {
+    "name": "SURAB MC",
+    "tehsil": "SURAB SUB-DIVISION",
+    "population_2023": 36468
+   }
+  ],
+  "WASHUK DISTRICT": [
+   {
+    "name": "WASHUK MC",
+    "tehsil": "WASHUK SUB-DIVISION",
+    "population_2023": 41107
+   }
+  ],
+  "ZHOB DISTRICT": [
+   {
+    "name": "ZHOB MC",
+    "tehsil": "ZHOB SUB-DIVISION",
+    "population_2023": 44251
+   },
+   {
+    "name": "ZHOB CANTONMENT",
+    "tehsil": "ZHOB SUB-DIVISION",
+    "population_2023": 2725
+   }
+  ],
+  "ZIARAT DISTRICT": [
+   {
+    "name": "SINJAWI MC",
+    "tehsil": "SINJAWI SUB-DIVISION",
+    "population_2023": 45539
+   },
+   {
+    "name": "ZIARAT MC",
+    "tehsil": "ZIARAT SUB-DIVISION",
+    "population_2023": 3863
+   }
+  ]
+ }
+}

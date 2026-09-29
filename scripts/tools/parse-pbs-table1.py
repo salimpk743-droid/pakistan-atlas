@@ -26,7 +26,7 @@ for prov in ['punjab','sindh','kp','balochistan']:
                     if re.fullmatch(r'(DISTRICT|TEHSIL|TALUKA|SUB-DIVISION|SUB-TEHSIL|SUB DIVISION)',nxt): name+=' '+nxt; i+=1
                     g=m2.groups()
         if name and name not in ('RURAL','URBAN'):
-            units.append(dict(name=name,area_km2=num(g[0]),population_2023=int(num(g[1])),density=num(g[6]),urban_pct=num(g[7]),hh_size=num(g[8]),growth=num(g[10])))
+            units.append(dict(name=name,area_km2=num(g[0]),population_2023=int(num(g[1])),density=num(g[6]),urban_pct=num(g[7]),hh_size=num(g[8]),growth=num(g[10]),male=int(num(g[2])),female=int(num(g[3])),sex_ratio=num(g[5]),population_2017=None if num(g[9]) is None else int(num(g[9]))))
         i+=1
     # build hierarchy
     dists=[]; cur=None

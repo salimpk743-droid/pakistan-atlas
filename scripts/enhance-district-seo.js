@@ -10,6 +10,10 @@ const QA_START = "<!-- mb:quick-answers:start -->";
 const QA_END = "<!-- mb:quick-answers:end -->";
 const REL_START = "<!-- mb:related:start -->";
 const REL_END = "<!-- mb:related:end -->";
+const FAQ_START = "<!-- mb:faq:start -->";
+const FAQ_END = "<!-- mb:faq:end -->";
+const SRC_START = "<!-- mb:sources:start -->";
+const SRC_END = "<!-- mb:sources:end -->";
 const PROSE_OPEN = '<div class="container prose">';
 
 function stripBlocks(html) {
@@ -21,7 +25,7 @@ function stripBlocks(html) {
   const form2 = (a, b) => new RegExp(`${a}[\\s\\S]*?${b}\\n[ \\t]*`, "g");
   if (out.includes(QA_START)) hadQuickAnswers = true;
   out = out.replace(form1(QA_START, QA_END), PROSE_OPEN).replace(form2(QA_START, QA_END), "");
-  out = out.replace(form2(REL_START, REL_END), "");
+  out = out.replace(form2(REL_START, REL_END), "").replace(form2(FAQ_START, FAQ_END), "").replace(form2(SRC_START, SRC_END), "");
   // Legacy, unmarked generated blocks.
   out = out.replace(/\s*<section class="district-search-answers"[\s\S]*?<\/section>/g, () => { hadQuickAnswers = true; return ""; });
   out = out.replace(/\s*<section class="seo-related-reading"[\s\S]*?<\/section>/g, "");
@@ -29,9 +33,104 @@ function stripBlocks(html) {
 }
 
 function censusRows(d) {
-  return L.unitsOf(d).map((u) => `<tr><th scope="row">${L.esc(u.name)}</th><td>${L.esc(L.unitWord[u.type] || u.type)}</td><td>${L.fmtInt(u.population_2023)}</td><td>${u.area_km2 != null ? L.fmtInt(u.area_km2) : ""}</td><td>${u.urban_proportion_2023 != null ? L.fmtNum(u.urban_proportion_2023, 2) + "%" : "–"}</td></tr>`).join("");
+  return L.unitsOf(d).map((u) => `<tr><th scope="row">${L.esc(u.name)}</th><td>${L.esc(L.unitWord[u.type] || u.type)}</td><td>${L.fmtInt(u.population_2023)}</td><td>${u.area_km2 != null ? L.fmtInt(u.area_km2) : ""}</td><td>${u.urban_proportion_2023 != null ? L.fmtNum(u.urban_proportion_2023, 2) + "%" : "–"}</td><td>${u.literacy_2023 != null ? L.fmtNum(u.literacy_2023, 2) + "%" : "–"}</td></tr>`).join("");
 }
 
+function mainTongues(d) {
+  const m = d.mother_tongue_2023;
+  if (!m || !m.main.length) return "";
+  return m.main.map((t) => `${L.esc(t.language)} ${L.fmtNum(t.pct, 2)}%`).join(" · ");
+}
+// Census-backed facts only; used for the answer-first lead sentence and the FAQ.
+function facts(info) {
+  const { district: d, province } = info;
+  const name = L.districtLabel(d);
+  const units = L.unitsOf(d);
+  const hq = L.cleanHq(d.hq || "");
+  const division = d.division || d.division_2023 || "";
+  const noun = L.unitNoun(d, 2);
+  const unitList = L.listText(units.map((u) => u.name));
+  const q = L.popQualifier(d);
+  return { d, name, units, hq, division, noun, unitList, q, province };
+}
+function lead(info) {
+  const f = facts(info);
+  const { d, name } = f;
+  if (d.status || d.created || d.population_2023 == null) return "";
+  const n = L.districtCount(info.provinceId).count;
+  const where = `${L.esc(name)} is ${n === 1 ? "the only district" : `one of the ${n} districts`} of ${L.esc(f.province.name)}${f.division ? `, in ${L.esc(f.division)}` : ""}${f.hq ? `, with its headquarters at ${L.esc(f.hq)}` : ""}.`;
+  const tehsils = d.tehsil_count && f.units.length
+    ? ` It has ${d.tehsil_count} ${L.esc(f.noun)}: ${L.esc(f.unitList)}.`
+    : f.units.length ? ` The 2023 census lists ${f.units.length} administrative units in it: ${L.esc(f.unitList)}.` : "";
+  const lit = d.literacy_2023 ? `, and ${L.fmtNum(d.literacy_2023.total, 2)}% of residents aged 10 and over were literate` : "";
+  const pop = ` The 2023 census counted ${L.fmtInt(d.population_2023)} people${f.q ? ` (${L.esc(f.q)})` : ""}${d.area_km2 != null ? ` on ${L.fmtInt(d.area_km2)} km²` : ""}${lit}.`;
+  return where + tehsils + pop;
+}
+function faqBlock(info) {
+  const f = facts(info);
+  const { d, name } = f;
+  const qa = [];
+  const add = (q, a) => qa.push(`<h3>${L.esc(q)}</h3>\n      <p>${a}</p>`);
+  // New, split or announced districts have no census row of their own: only their sourced faq_extra entries are used.
+  if (d.status || d.created || d.population_2023 == null) {
+    for (const x of d.faq_extra || []) add(x.q, `${L.esc(x.a)}${x.source ? ` (<a href="${L.esc(x.source.url)}" rel="noopener">${L.esc(x.source.publisher)}</a>)` : ""}`);
+    return qa.length ? faqWrap(name, qa) : "";
+  }
+  const q = f.q ? ` (${L.esc(f.q)})` : "";
+  if (d.tehsil_count && f.units.length) add(`How many ${f.noun} are in ${name}?`, `${L.esc(name)} has ${d.tehsil_count} ${L.esc(f.noun)}: ${L.esc(f.unitList)}.`);
+  add(`What is the population of ${name}?`, `The 2023 census counted ${L.fmtInt(d.population_2023)} people in ${L.esc(name)}${q}${d.population_2017 ? `, up from ${L.fmtInt(d.population_2017)} in 2017` : ""}${d.growth_rate_2017_2023 != null ? ` (annual growth ${L.fmtNum(d.growth_rate_2017_2023, 2)}%)` : ""}.${d.urban_proportion_2023 != null ? ` ${L.fmtNum(d.urban_proportion_2023, 2)}% of the population lived in urban areas.` : ""}`);
+  if (d.area_km2 != null) add(`What is the area of ${name}?`, `${L.esc(name)} covers ${L.fmtInt(d.area_km2)} km² according to the 2023 census${d.density_2023 != null ? `, a density of ${L.fmtNum(d.density_2023, 2)} people per km²` : ""}.`);
+  const loc = d.urban_localities_2023;
+  if (loc && loc.length) {
+    const top = loc.slice(0, 10).map((x) => `${L.esc(x.name)} (${L.fmtInt(x.population_2023)}${x.type ? `, ${L.esc(x.type)}` : ""})`);
+    add(`What are the main towns and cities in ${name}?`, `The 2023 census lists ${loc.length} urban ${loc.length === 1 ? "locality" : "localities"} in ${L.esc(name)}${loc.length > 10 ? "; the ten largest are" : ":"} ${L.listText(top)}.`);
+  } else if (d.urban_proportion_2023 === 0) {
+    add(`Is ${name} urban or rural?`, `Entirely rural: the 2023 census counted no urban population in ${L.esc(name)}, so all ${L.fmtInt(d.population_2023)} residents were enumerated in rural areas.`);
+  }
+  if (d.literacy_2023) {
+    const l = d.literacy_2023;
+    add(`What is the literacy rate of ${name}?`, `${L.fmtNum(l.total, 2)}% of people aged 10 and over were literate in the 2023 census${l.male != null ? ` (male ${L.fmtNum(l.male, 2)}%, female ${L.fmtNum(l.female, 2)}%)` : ""}${l.note ? `. ${L.esc(l.note)}` : "."}`);
+  }
+  if (d.mother_tongue_2023 && d.mother_tongue_2023.main.length) {
+    const m = d.mother_tongue_2023.main;
+    add(`Which languages are spoken in ${name}?`, `The most common mother tongue in the 2023 census was ${L.esc(m[0].language)} (${L.fmtNum(m[0].pct, 2)}% of the ${L.fmtInt(d.mother_tongue_2023.counted)} people in the mother-tongue table)${m.length > 1 ? `, followed by ${m.slice(1).map((t) => `${L.esc(t.language)} (${L.fmtNum(t.pct, 2)}%)`).join(", ")}` : ""}.`);
+  }
+  add(`Which province is ${name} in?`, `${L.esc(name)} is in ${L.esc(f.province.name)}${f.division ? `, in ${L.esc(f.division)}` : ""}${f.hq ? `. Its headquarters is ${L.esc(f.hq)}` : ""}.`);
+  for (const x of d.faq_extra || []) add(x.q, `${L.esc(x.a)}${x.source ? ` (<a href="${L.esc(x.source.url)}" rel="noopener">${L.esc(x.source.publisher)}</a>)` : ""}`);
+  return faqWrap(name, qa);
+}
+function faqWrap(name, qa) {
+  return `${FAQ_START}
+  <section class="district-faq" aria-labelledby="district-faq"><div class="container prose">
+    <h2 id="district-faq">${L.esc(name)}: FAQ</h2>
+      ${qa.join("\n      ")}
+  </div></section>
+  ${FAQ_END}`;
+}
+function sourcesBlock(info) {
+  const { district: d } = info;
+  const items = [];
+  const push = (url, label) => { if (url && !items.some((x) => x[0] === url)) items.push([url, label]); };
+  const t = d.census_tables_2023 || {};
+  push(t.table1 || d.population_source_url || (d.census_2023_row || d.census_2023_rows)?.source_url, "Pakistan Bureau of Statistics, Census 2023, Table 1: area, population, density, urban share, household size and growth by district and tehsil");
+  if (d.urban_localities_2023) push(t.table2, "Pakistan Bureau of Statistics, Census 2023, Table 2: urban localities by population size");
+  push(t.table11, "Pakistan Bureau of Statistics, Census 2023, Table 11: population by mother tongue");
+  push(t.table12, "Pakistan Bureau of Statistics, Census 2023, Table 12: literacy rate, enrolment and out-of-school population");
+  for (const x of d.admin_sources || []) push(x.url, `${x.publisher}${x.title ? `: ${x.title}` : ""}${x.date ? ` (${x.date})` : ""}`);
+  const m = (d.tehsil_count_source || d.administrative_source || "").match(/^(.*) \((https?:[^)]+)\)$/);
+  if (m) push(m[2], m[1]);
+  for (const x of d.sources || []) push(x.url, `${x.publisher}${x.title ? `: ${x.title}` : ""}${x.date ? ` (${x.date})` : ""}`);
+  if (!items.length) return "";
+  return `${SRC_START}
+  <section class="district-sources" aria-labelledby="district-sources"><div class="container prose">
+    <h2 id="district-sources">Sources</h2>
+    <ol>
+      ${items.map(([u, t]) => `<li><a href="${L.esc(u)}" rel="noopener">${L.esc(t)}</a></li>`).join("\n      ")}
+    </ol>
+    <p class="meta">Census figures checked against the PBS tables on ${L.esc(d.last_verified || "")}.</p>
+  </div></section>
+  ${SRC_END}`;
+}
 function quickAnswers(info, wrap) {
   const { district: d, provinceId, province } = info;
   const name = L.districtLabel(d);
@@ -53,6 +152,14 @@ function quickAnswers(info, wrap) {
     if (d.urban_proportion_2023 != null) add("Urban population", `${L.fmtNum(d.urban_proportion_2023, 2)}%`);
     if (d.growth_rate_2017_2023 != null) add("Annual growth 2017–2023", `${L.fmtNum(d.growth_rate_2017_2023, 2)}%`);
     if (d.avg_household_size_2023 != null) add("Average household size", L.fmtNum(d.avg_household_size_2023, 1));
+    if (d.population_2017 != null) add("Population in 2017", L.fmtInt(d.population_2017));
+    if (d.sex_ratio_2023 != null) add("Sex ratio", `${L.fmtNum(d.sex_ratio_2023, 2)} males per 100 females`);
+    const lit = d.literacy_2023;
+    if (lit) add("Literacy rate (age 10+)", `${L.fmtNum(lit.total, 2)}%${lit.male != null ? ` · male ${L.fmtNum(lit.male, 2)}% · female ${L.fmtNum(lit.female, 2)}%` : ""}`);
+    const loc = d.urban_localities_2023;
+    if (loc && loc.length) add("Largest urban localities (2023)", L.esc(loc.slice(0, 5).map((x) => `${x.name} ${L.fmtInt(x.population_2023)}`).join(" · ")));
+    const tongues = mainTongues(d);
+    if (tongues) add("Main mother tongues", tongues);
   }
   if (d.census_2023_row) {
     const r = d.census_2023_row;
@@ -74,11 +181,15 @@ function quickAnswers(info, wrap) {
   add("Division", L.esc(d.division || d.division_2023 || ""));
   add("Province / territory", `<a href="${L.provinceRoutes[provinceId]}">${L.esc(province.name)}</a>`);
   // For districts created or split in 2026 "about" is the administrative summary shown on the page itself.
-  add("Known for", d.created || d.status ? "" : L.esc(d.about || ""));
-  add("Culture", L.esc(d.culture || ""));
-  add("Education", L.esc(d.education || ""));
-  add("Healthcare", L.esc(d.health || ""));
-  add("Villages / local areas", L.esc(d.villages || ""));
+  // Free-text profile rows are only shown once they have been checked against the sources listed on the page
+  // (profile_checked); unchecked legacy text is kept in the data file for review but not published.
+  if (d.profile_checked) {
+    add("Known for", d.created || d.status ? "" : L.esc(d.about || ""));
+    add("Culture", L.esc(d.culture || ""));
+    add("Education", L.esc(d.education || ""));
+    add("Healthcare", L.esc(d.health || ""));
+    add("Villages / local areas", L.esc(d.villages || ""));
+  }
 
   let table = "";
   if (units.length) {
@@ -86,7 +197,7 @@ function quickAnswers(info, wrap) {
     table = `
       <table class="census-table">
         <caption>${L.esc(name)}: 2023 census figures by ${L.esc(L.unitNoun(d, 1))}${L.unitType(d) === "mixed" ? " / sub-division" : ""}</caption>
-        <thead><tr><th scope="col">Name</th><th scope="col">Type</th><th scope="col">Population</th><th scope="col">Area (km²)</th><th scope="col">Urban</th></tr></thead>
+        <thead><tr><th scope="col">Name</th><th scope="col">Type</th><th scope="col">Population</th><th scope="col">Area (km²)</th><th scope="col">Urban</th><th scope="col">Literacy (10+)</th></tr></thead>
         <tbody>${censusRows(d)}</tbody>
       </table>`;
     const notes = [];
@@ -102,7 +213,9 @@ function quickAnswers(info, wrap) {
       : "";
   const admin = (d.admin_sources || []).map((x) => `<a href="${L.esc(x.url)}" rel="noopener">${L.esc(x.publisher)}${x.date ? `, ${L.esc(x.date)}` : ""}</a>`).join("; ");
   const adminLine = admin ? `\n      <p class="meta">Administrative status: ${admin}.</p>` : "";
-  const inner = `<h2 id="district-search-answers">${L.esc(name)}: Quick Answers</h2>
+  const leadText = lead(info);
+  const inner = `<h2 id="district-search-answers">${L.esc(name)}: Quick Answers</h2>${leadText ? `
+      <p class="lead-answer">${leadText}</p>` : ""}
       <dl>
         ${rows.join("\n        ")}
       </dl>${table}${source}${adminLine}`;
@@ -184,6 +297,12 @@ function enhance(html, info, hasCensusUse) {
       out = insertBefore(out, quickAnswers(info, true));
     }
   }
+  // A hand-written FAQ already on the page wins (only one FAQ, and FAQPage schema reads the first).
+  const handFaq = /<h2[^>]*>(?:(?!<\/h2>)[\s\S])*?(?:\bFAQ\b|Frequently Asked Questions)/.test(out);
+  const faq = handFaq ? "" : faqBlock(info);
+  if (faq) out = insertBefore(out, faq);
+  const src = sourcesBlock(info);
+  if (src) out = insertBefore(out, src);
   out = insertBefore(out, relatedLinks(info));
   return out;
 }
