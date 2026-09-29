@@ -176,6 +176,14 @@ for (const file of htmlFiles) {
   const selfUrl = file === "index.html" ? `${SITE}/` : `${SITE}/${file}`;
   if (canonicals.length && canonicals[0] !== selfUrl) report(file, "canonical does not point to the page itself", canonicals[0]);
   if (!noindex && (!html.includes("<!-- mb:header:start -->") || !html.includes("<!-- mb:footer:start -->"))) report(file, "static header/footer missing (run scripts/build-site.js)");
+  if (!noindex) {
+    const footer = (html.match(/<!-- mb:footer:start -->([\s\S]*?)<!-- mb:footer:end -->/) || [])[1] || "";
+    for (const page of ["about.html", "sources-methodology.html", "contact.html", "privacy.html", "terms.html", "disclaimer.html"]) {
+      if (!footer.includes(`href="${page}"`)) report(file, `footer link to ${page} missing (run scripts/build-site.js)`);
+    }
+    if (!/<time datetime="\d{4}-\d{2}-\d{2}" data-mb-updated>\d{1,2} [A-Z][a-z]+ \d{4}<\/time>/.test(footer)) report(file, "visible 'Last updated' date missing (run scripts/build-site.js)");
+    if (/@@MB_DATE/.test(html)) report(file, "unreplaced date placeholder");
+  }
   if (canonicals.length > 1) report(file, "duplicate canonical tags", `${canonicals.length} found`);
   if (h1s.length === 0) report(file, "missing H1");
   if (noindex && !ALLOWED_NOINDEX.has(file)) report(file, "unexpected noindex");

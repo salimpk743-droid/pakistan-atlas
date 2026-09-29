@@ -7,6 +7,7 @@
 // so running this twice yields no diff. Verification files are never touched.
 const fs = require("fs");
 const path = require("path");
+const { execFileSync } = require("child_process");
 const L = require("./lib/site");
 
 const { SITE, esc, fmtInt, provinceRoutes, hubRoutes } = L;
@@ -16,7 +17,7 @@ const HDR_START = "<!-- mb:header:start -->";
 const HDR_END = "<!-- mb:header:end -->";
 const FTR_START = "<!-- mb:footer:start -->";
 const FTR_END = "<!-- mb:footer:end -->";
-const MANAGED_TYPES = new Set(["BreadcrumbList", "AdministrativeArea", "Place", "City", "WebPage", "CollectionPage", "WebSite", "ItemList", "FAQPage"]);
+const MANAGED_TYPES = new Set(["Organization", "BreadcrumbList", "AdministrativeArea", "Place", "City", "WebPage", "CollectionPage", "WebSite", "ItemList", "FAQPage"]);
 const LEGACY_LINKS = {
   "bajur.html": "bajaur.html", "dgkhan.html": "dera-ghazi-khan.html", "dikhan.html": "dera-ismail-khan.html",
   "rykhan.html": "rahim-yar-khan.html", "nankana.html": "nankana-sahib.html", "tts.html": "toba-tek-singh.html",
@@ -338,15 +339,45 @@ function footerHtml() {
           </div>
           <div>
             <strong>About</strong>
-            <p><a href="about.html">About</a><br><a href="contact.html">Contact</a><br><a href="privacy.html">Privacy</a><br><a href="disclaimer.html">Disclaimer</a><br><a href="terms.html">Terms</a><br><a href="sitemap.xml">Sitemap</a></p>
+            <p><a href="about.html">About</a><br><a href="sources-methodology.html">Sources &amp; methodology</a><br><a href="contact.html">Contact &amp; corrections</a><br><a href="privacy.html">Privacy policy</a><br><a href="terms.html">Terms of use</a><br><a href="disclaimer.html">Disclaimer</a><br><a href="sitemap.xml">Sitemap</a></p>
           </div>
         </div>
         <div class="container foot-bottom">
           <span>© MyBook.Pk · Built for young readers</span>
+          <span>Last updated <time datetime="${DATE_TOKEN}" data-mb-updated>${DATE_HUMAN_TOKEN}</time></span>
           <span><a href="/">Home</a></span>
         </div>
       </footer>
       ${FTR_END}`;
+}
+
+// ---------- "Last updated" dates ----------
+// Each page shows the date it last changed. build() writes placeholders; main() replaces them with today's date
+// (UTC) when the page differs from the committed version, otherwise with the page's last git commit date.
+// Placeholders are compared in normalised form, so the date itself never makes a page look changed.
+const DATE_TOKEN = "@@MB_DATE@@";
+const DATE_HUMAN_TOKEN = "@@MB_DATE_HUMAN@@";
+const MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+const humanDate = (iso) => { const [y, m, d] = iso.split("-").map(Number); return `${d} ${MONTHS[m - 1]} ${y}`; };
+const todayUtc = new Date().toISOString().slice(0, 10);
+function normaliseDates(html) {
+  return html
+    .replace(/<time datetime="\d{4}-\d{2}-\d{2}" data-mb-updated>[^<]*<\/time>/g, `<time datetime="${DATE_TOKEN}" data-mb-updated>${DATE_HUMAN_TOKEN}</time>`)
+    .replace(/"dateModified":"\d{4}-\d{2}-\d{2}"/g, `"dateModified":"${DATE_TOKEN}"`);
+}
+function git(args) {
+  try { return execFileSync("git", args, { cwd: L.ROOT, encoding: "utf8", stdio: ["ignore", "pipe", "ignore"], maxBuffer: 64 * 1024 * 1024 }); } catch (_) { return null; }
+}
+function pageDate(file, tokenised) {
+  const committed = git(["show", `HEAD:${file}`]);
+  if (committed == null || normaliseDates(committed) !== tokenised) return todayUtc;
+  const ct = (git(["log", "-1", "--format=%ct", "--", file]) || "").trim();
+  return /^\d+$/.test(ct) ? new Date(Number(ct) * 1000).toISOString().slice(0, 10) : todayUtc;
+}
+function applyDate(file, out) {
+  const tokenised = normaliseDates(out);
+  const iso = pageDate(file, tokenised);
+  return tokenised.split(DATE_TOKEN).join(iso).split(DATE_HUMAN_TOKEN).join(humanDate(iso));
 }
 
 // ---------- structured data ----------
@@ -367,11 +398,18 @@ function faqEntities(html) {
 function graphFor(file, cls, meta, crumbs, html) {
   const pageUrl = url(file);
   const website = { "@type": "WebSite", "@id": `${SITE}/#website`, name: "MyBook.Pk", url: `${SITE}/`, inLanguage: ["en", "ur"] };
+  // districts.html reads ?q= and filters the district list, so the SearchAction target works as a URL.
   if (cls.type === "home") website.potentialAction = { "@type": "SearchAction", target: `${SITE}/districts.html?q={search_term_string}`, "query-input": "required name=search_term_string" };
+  const organization = { "@type": "Organization", "@id": `${SITE}/#organization`, name: "MyBook.Pk", url: `${SITE}/`, email: "salimpk743@gmail.com",
+    description: "Independent educational website about Pakistan's provinces, districts, history and culture.",
+    publishingPrinciples: `${SITE}/sources-methodology.html`, correctionsPolicy: `${SITE}/sources-methodology.html#corrections`,
+    contactPoint: { "@type": "ContactPoint", contactType: "editorial corrections", email: "salimpk743@gmail.com", url: `${SITE}/contact.html` } };
+  if (cls.type === "home") website.publisher = { "@id": `${SITE}/#organization` };
   const isCollection = ["hub", "districts", "provinces"].includes(cls.type);
   const page = { "@type": isCollection ? "CollectionPage" : "WebPage", "@id": `${pageUrl}#webpage`, url: pageUrl, name: meta.title, isPartOf: { "@id": `${SITE}/#website` }, inLanguage: "en" };
   if (meta.description) page.description = meta.description;
-  const graph = [website, page];
+  page.dateModified = DATE_TOKEN;
+  const graph = cls.type === "home" ? [website, organization, page] : [website, page];
   if (crumbs.length) {
     page.breadcrumb = { "@id": `${pageUrl}#breadcrumb` };
     graph.push({ "@type": "BreadcrumbList", "@id": `${pageUrl}#breadcrumb`, itemListElement: crumbs.map(([href, name], i) => ({ "@type": "ListItem", position: i + 1, name, item: href === "/" ? `${SITE}/` : url(href) })) });
@@ -535,7 +573,7 @@ function build(file, html) {
   return { out, meta, cls };
 }
 
-module.exports = { build };
+module.exports = { build, normaliseDates };
 
 function main() {
   const titles = new Map();
@@ -545,7 +583,9 @@ function main() {
   for (const file of files) {
     const full = path.join(L.ROOT, file);
     const html = fs.readFileSync(full, "utf8");
-    const { out, meta, cls } = build(file, html);
+    const built = build(file, html);
+    const { meta, cls } = built;
+    const out = applyDate(file, built.out);
     if (out !== html) { fs.writeFileSync(full, out); changed++; }
     if (cls.type !== "utility") {
       titles.set(meta.title, [...(titles.get(meta.title) || []), file]);
