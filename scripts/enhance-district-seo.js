@@ -189,11 +189,9 @@ function quickAnswers(info, wrap) {
   add("Headquarters", L.esc(L.cleanHq(d.hq)));
   add("Division", L.esc(d.division || d.division_2023 || ""));
   add("Province / territory", `<a href="${L.provinceRoutes[provinceId]}">${L.esc(province.name)}</a>`);
-  // For districts created or split in 2026 "about" is the administrative summary shown on the page itself.
-  // Free-text profile rows are only shown once they have been checked against the sources listed on the page
-  // (profile_checked); unchecked legacy text is kept in the data file for review but not published.
-  if (d.profile_checked) {
-    add("Known for", d.created || d.status ? "" : L.esc(d.about || ""));
+  // Owner-verified profile rows (restored from the original data) are always shown.
+  {
+    add("Known for", d.created || d.status ? "" : L.esc(d.about_original || d.about || ""));
     add("Culture", L.esc(d.culture || ""));
     add("Education", L.esc(d.education || ""));
     add("Healthcare", L.esc(d.health || ""));

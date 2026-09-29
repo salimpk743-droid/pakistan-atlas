@@ -180,6 +180,14 @@ function provincePage(unit) {
     <p class="meta">Source: ${sourceLinks((unit.sources || []).slice(0, 1))}.</p>
     <h2>About ${esc(unit.name)}</h2>
     ${(unit.about_html || []).map((x) => `<p>${x}</p>`).join("\n    ")}
+    ${unit.culture ? `<h2>Culture and Geography of ${esc(unit.name)}</h2>
+    <p>${esc(unit.culture)}</p>` : ""}${unit.education_note || unit.health_note ? `
+    <h2>Education and Health in ${esc(unit.name)}</h2>
+    ${unit.education_note ? `<p>${esc(unit.education_note)}</p>` : ""}${unit.health_note ? `<p>${esc(unit.health_note)}</p>` : ""}` : ""}${unit.issues ? `
+    <h2>Public Issues in ${esc(unit.name)}</h2>
+    <p>${esc(unit.issues)}</p>` : ""}${unit.sample_places && unit.sample_places.length ? `
+    <h2>Notable Places in ${esc(unit.name)}</h2>
+    <p>${(Array.isArray(unit.sample_places) ? unit.sample_places : [unit.sample_places]).map(esc).join(", ")}</p>` : ""}
     <p><a href="${hubRoutes[unit.id]}">Full list: districts of ${esc(unit.name)} →</a> · <a href="${L.PROVINCES_HUB}">All provinces and territories →</a></p>${districtRankings(unit)}
     <h2>Districts of ${esc(unit.name)}</h2>
     <div class="grid-3">${list.map((d) => districtCard(d, unit.id)).join("")}
@@ -202,7 +210,7 @@ function provinceHub(unit) {
     <p>${esc(intro)}</p>
   </div></div>
   <main class="container prose">
-    <p><a href="${provinceRoutes[unit.id]}">${esc(unit.name)} province guide →</a> · <a href="${L.DISTRICTS_HUB}">All districts of Pakistan →</a></p>
+    <p><a href="${provinceRoutes[unit.id]}">${esc(unit.name)} province guide →</a> · <a href="${L.DISTRICTS_HUB}">All districts of Pakistan →</a>${OLD_HUBS[unit.id] ? ` · <a href="${OLD_HUBS[unit.id]}">Original ${esc(unit.name)} districts page →</a>` : ""}</p>
     <h2>${esc(unit.name)} districts, A–Z</h2>
     <div class="grid-3">${list.map((d) => districtCard(d, unit.id)).join("")}
     </div>
@@ -269,7 +277,7 @@ function districtsHub() {
   <div id="site-header"></div>
   <div class="page-hero"><div class="container">
     <h1>Districts of Pakistan</h1>
-    <p>Pakistan has ${total} districts (${monthYear(L.districtCount("punjab").as_of)}): ${L.provinceOrder.map((pid) => `${L.shortProvince[pid]} ${L.districtCount(pid).count}`).join(", ")}. Grouped by province and territory; search by district, headquarters or province. Each province page lists the notifications behind its count.</p>
+    <p>Pakistan has ${total} districts (${monthYear(L.districtCount("punjab").as_of)}): ${L.provinceOrder.map((pid) => `${L.shortProvince[pid]} ${L.districtCount(pid).count}`).join(", ")}. Grouped by province and territory; search by district, headquarters or province. Each province page lists the notifications behind its count. See also the <a href="districts-of-pakistan.html">original Districts of Pakistan page</a>.</p>
   </div></div>
   <section>
     <div class="container">
@@ -283,6 +291,8 @@ function districtsHub() {
 ${tail(script)}`;
 }
 
+// Original hub pages restored from the owner's site; linked from the generated hubs.
+const OLD_HUBS = { punjab: "districts-punjab.html", sindh: "districts-sindh.html", kpk: "districts-khyber-pakhtunkhwa.html", balochistan: "districts-balochistan.html", ict: "districts-islamabad-capital-territory.html", ajk: "districts-azad-kashmir.html", gb: "districts-gilgit-baltistan.html" };
 function provincesHub() {
   const cards = L.provinceOrder.map((pid) => {
     const u = L.provinceById[pid];
@@ -291,7 +301,10 @@ function provincesHub() {
       <article class="prose" style="margin-bottom:1.2rem" id="${u.id}">
         <h2><a href="${provinceRoutes[pid]}">${esc(u.name)}</a> <span class="urdu">${esc(u.urdu)}</span></h2>
         <p><span class="badge">${esc(u.type)}</span>${u.capital ? ` Capital: <strong>${esc(u.capital)}</strong> ·` : ""} Area ${fmtInt(u.area_km2)} km² · Population ${popText(u)}</p>
-        <p>${esc(u.lead || "")}</p>
+        <p>${esc(u.lead || "")}</p>${u.culture ? `
+        <h3>Culture</h3><p>${esc(u.culture)}</p>` : ""}${u.issues ? `
+        <h3>Public issues</h3><p>${esc(u.issues)}</p>` : ""}${u.education_note ? `
+        <h3>Universities &amp; colleges</h3><p>${esc(u.education_note)}</p>` : ""}
         <p class="meta"><a href="${hubRoutes[pid]}">All ${n} district${n === 1 ? "" : "s"} of ${esc(u.name)} →</a></p>
       </article>`;
   }).join("");
@@ -300,7 +313,7 @@ function provincesHub() {
   <div id="site-header"></div>
   <div class="page-hero"><div class="container">
     <h1>Provinces &amp; territories of Pakistan</h1>
-    <p>Four provinces, the federal capital territory and two further territories. Population and area follow the 2023 census (PBS; for Gilgit-Baltistan as published by its Planning &amp; Development Department) and, for Azad Kashmir, the 2017 census published by the AJ&amp;K Bureau of Statistics.</p>
+    <p>Four provinces, the federal capital territory and two further territories. Population and area follow the 2023 census (PBS; for Gilgit-Baltistan as published by its Planning &amp; Development Department) and, for Azad Kashmir, the 2017 census published by the AJ&amp;K Bureau of Statistics. See also the <a href="provinces-of-pakistan.html">original Provinces of Pakistan page</a>.</p>
   </div></div>
   <section>
     <div class="container">${cards}${sourcesSection(L.provinceOrder.flatMap((pid) => (L.provinceById[pid].sources || []).slice(0, 1)), "2026-09-30")}
@@ -374,6 +387,8 @@ function tehsilPage(info) {
     <h2>How the ${esc(L.unitNoun(d, 2))} compare</h2>
     <p>${esc(compare)}</p>${faqSection("tehsil-faq", `Tehsils of ${name}`, faq)}${urduSection(`ضلع ${ur || ""}`, urBlocks, d.last_verified)}
     <h2>Related pages</h2>
+    ${(d.tehsils_2023 || []).length ? `<h2>Major Towns and Localities by Tehsil in ${esc(name)}</h2>
+    <ul>${d.tehsils_2023.map((t) => `<li><strong>${esc(t.name)}</strong> — major town / locality: ${esc(t.major_towns || "")}</li>`).join("")}</ul>` : ""}
     <p><a href="${esc(d.slug)}.html">${esc(name)}</a> · <a href="${hubRoutes[provinceId]}">Districts of ${esc(province.name)}</a> · <a href="${provinceRoutes[provinceId]}">${esc(province.name)}</a> · <a href="${L.DISTRICTS_HUB}">Districts of Pakistan</a></p>${sourcesSection(sources, d.last_verified)}
   </div></section>
 ${tail()}`;

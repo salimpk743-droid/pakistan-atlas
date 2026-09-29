@@ -1,32 +1,4 @@
 {
-  "_comment": "Pages kept out of search results (meta robots noindex,follow) until they have sourced content. Remove an entry to re-index the page; scripts/generate-seo.js applies this list.",
-  "pages": {
-    "pakistani-drama-actors.html": "Thin list/guide page without sourced content; re-index once rebuilt with sourced facts.",
-    "pakistani-drama-actresses.html": "Thin list/guide page without sourced content; re-index once rebuilt with sourced facts.",
-    "pakistani-drama-awards.html": "Thin list/guide page without sourced content; re-index once rebuilt with sourced facts.",
-    "pakistani-drama-directors.html": "Thin list/guide page without sourced content; re-index once rebuilt with sourced facts.",
-    "pakistani-drama-osts.html": "Thin list/guide page without sourced content; re-index once rebuilt with sourced facts.",
-    "pakistani-drama-writers.html": "Thin list/guide page without sourced content; re-index once rebuilt with sourced facts.",
-    "popular-pakistani-dramas.html": "Thin list/guide page without sourced content; re-index once rebuilt with sourced facts.",
-    "classic-pakistani-dramas.html": "Thin list/guide page without sourced content; re-index once rebuilt with sourced facts.",
-    "current-pakistani-dramas-2026.html": "Thin list/guide page without sourced content; re-index once rebuilt with sourced facts.",
-    "hum-tv-dramas.html": "Thin list/guide page without sourced content; re-index once rebuilt with sourced facts.",
-    "ary-digital-dramas.html": "Thin list/guide page without sourced content; re-index once rebuilt with sourced facts.",
-    "geo-tv-dramas.html": "Thin list/guide page without sourced content; re-index once rebuilt with sourced facts.",
-    "news.html": "Placeholder page with almost no content.",
-    "islamabad-gallery.html": "Placeholder page with almost no content.",
-    "aina-asif.html": "Thin actor profile with no cited sources; re-index once credits and biography are sourced.",
-    "danish-taimoor.html": "Thin actor profile with no cited sources; re-index once credits and biography are sourced.",
-    "sarah-khan.html": "Thin actor profile with no cited sources; re-index once credits and biography are sourced.",
-    "hania-aamir.html": "Thin actor profile with no cited sources; re-index once credits and biography are sourced.",
-    "humsafar.html": "Thin drama page with no cited sources; re-index once channel, dates, credits and cast are sourced.",
-    "zindagi-gulzar-hai.html": "Thin drama page with no cited sources; re-index once channel, dates, credits and cast are sourced.",
-    "parizaad.html": "Thin drama page with no cited sources; re-index once channel, dates, credits and cast are sourced.",
-    "tere-bin.html": "Thin drama page with no cited sources; re-index once channel, dates, credits and cast are sourced.",
-    "kabhi-main-kabhi-tum.html": "Thin drama page with no cited sources; re-index once channel, dates, credits and cast are sourced.",
-    "meri-zindagi-hai-tu.html": "Thin drama page with no cited sources; re-index once channel, dates, credits and cast are sourced.",
-    "judwaa.html": "Thin drama page with no cited sources; re-index once channel, dates, credits and cast are sourced.",
-    "sher.html": "Thin drama page with no cited sources; re-index once channel, dates, credits and cast are sourced.",
-    "iqtidar.html": "Thin drama page with no cited sources; re-index once channel, dates, credits and cast are sourced."
-  }
+  "_comment": "Pages kept out of search results (meta robots noindex,follow). Empty: every page is indexable. scripts/generate-seo.js applies this list.",
+  "pages": {}
 }

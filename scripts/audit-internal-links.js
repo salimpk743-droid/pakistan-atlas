@@ -5,13 +5,6 @@ const ROOT = path.resolve(__dirname, "..");
 const errors = [];
 const redirectSources = new Set([
   "province.html",
-  "bajur.html",
-  "dgkhan.html",
-  "dikhan.html",
-  "rykhan.html",
-  "nankana.html",
-  "tts.html",
-  "lakki.html",
   "news.html"
 ]);
 // Every simple path redirect in vercel.json is also a redirect source.

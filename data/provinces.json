@@ -131,7 +131,18 @@
           ]
         }
       ],
-      "checked": "2026-09-30"
+      "checked": "2026-09-30",
+      "culture": "Punjab is the cultural heartland of Sufi poetry, Qawwali, Bhangra and harvest festivals such as Basant. Major languages are Punjabi and Saraiki. Historic cities include Lahore, Multan and Taxila.",
+      "issues": "Urban crowding in Lahore and Faisalabad, smog, groundwater stress, and the need to expand technical education in southern districts.",
+      "education_note": "Highest number of universities and colleges in the country, including University of the Punjab, UET Lahore and UVAS.",
+      "health_note": "Dense public hospital network in northern and central districts; southern Punjab still needs more specialists.",
+      "sample_places": [
+        "Lahore",
+        "Multan",
+        "Faisalabad",
+        "Rawalpindi",
+        "Bahawalpur"
+      ]
     },
     {
       "id": "sindh",
@@ -252,7 +263,18 @@
           ]
         }
       ],
-      "checked": "2026-09-30"
+      "checked": "2026-09-30",
+      "culture": "Sindh is the land of Shah Abdul Latif Bhittai, the Indus civilisation sites of Mohenjo-daro, Ajrak, Sindhi topi and the annual urs at Sehwan and Bhit Shah.",
+      "issues": "Karachi municipal services, rural waterlogging, coastal erosion and flood recovery after 2022.",
+      "education_note": "University of Karachi, NED, IBA and Sindh Agriculture University Tandojam are major institutions.",
+      "health_note": "Karachi hosts many teaching hospitals; interior Sindh needs stronger primary care.",
+      "sample_places": [
+        "Karachi",
+        "Hyderabad",
+        "Sukkur",
+        "Larkana",
+        "Thatta"
+      ]
     },
     {
       "id": "kpk",
@@ -379,7 +401,18 @@
           ]
         }
       ],
-      "checked": "2026-09-30"
+      "checked": "2026-09-30",
+      "culture": "Pashtunwali hospitality, Attan dance, rabab music and historic passes of Khyber and Malakand. Former FATA agencies are now districts of KP.",
+      "issues": "Mountain access, climate shocks, and integrating newly merged districts into the provincial service system.",
+      "education_note": "University of Peshawar, UET Peshawar, AWKUM and Gomal University.",
+      "health_note": "Lady Reading Hospital Peshawar is a major referral centre; remote districts rely on DHQ hospitals.",
+      "sample_places": [
+        "Peshawar",
+        "Abbottabad",
+        "Swat",
+        "Mardan",
+        "Dera Ismail Khan"
+      ]
     },
     {
       "id": "balochistan",
@@ -500,7 +533,18 @@
           ]
         }
       ],
-      "checked": "2026-09-30"
+      "checked": "2026-09-30",
+      "culture": "Largest province by area. Baloch and Brahui traditions, juniper forests of Ziarat, Makran coast and the historic Quetta valley.",
+      "issues": "Low population density, water scarcity, school access for girls in remote tehsils, and long travel times to hospitals.",
+      "education_note": "University of Balochistan and BUITEMS in Quetta are the main campuses; more district colleges are being added.",
+      "health_note": "BMC Quetta is the main teaching hospital. Many districts still have limited specialist cover.",
+      "sample_places": [
+        "Quetta",
+        "Gwadar",
+        "Turbat",
+        "Khuzdar",
+        "Ziarat"
+      ]
     },
     {
       "id": "ict",
@@ -621,7 +665,16 @@
           ]
         }
       ],
-      "checked": "2026-09-30"
+      "checked": "2026-09-30",
+      "culture": "Planned capital designed by Constantinos Doxiadis. Faisal Mosque, Margalla Hills and a mix of communities from every province.",
+      "issues": "Rapid housing growth, traffic and pressure on the Margalla ecosystem.",
+      "education_note": "QAU, NUST, COMSATS, IIUI and many federal colleges.",
+      "health_note": "PIMS, Polyclinic and private teaching hospitals serve the capital and northern Punjab.",
+      "sample_places": [
+        "Islamabad",
+        "Bari Imam",
+        "Saidpur Village"
+      ]
     },
     {
       "id": "ajk",
@@ -744,7 +797,17 @@
           ]
         }
       ],
-      "checked": "2026-09-30"
+      "checked": "2026-09-30",
+      "culture": "Kashmiri, Pahari and Gojri heritage. Neelum and Jhelum valleys, traditional wooden architecture and mountain crafts.",
+      "issues": "Terrain, winter access, and earthquake-resilient construction after 2005.",
+      "education_note": "University of AJK and several public colleges in each district.",
+      "health_note": "CMH and DHQ hospitals in Muzaffarabad, Mirpur and Rawalakot.",
+      "sample_places": [
+        "Muzaffarabad",
+        "Mirpur",
+        "Neelum",
+        "Rawalakot"
+      ]
     },
     {
       "id": "gb",
@@ -845,7 +908,17 @@
           ]
         }
       ],
-      "checked": "2026-09-30"
+      "checked": "2026-09-30",
+      "culture": "Meeting point of Karakoram, Himalaya and Hindu Kush. Shina, Balti, Burushaski and Wakhi languages. Polo at Shandur and apricot culture of Hunza.",
+      "issues": "Glacial lake floods, road closures in winter, and tourism carrying capacity.",
+      "education_note": "Karakoram International University Gilgit and growing college network.",
+      "health_note": "DHQ Gilgit and Skardu; specialist care often requires travel to Islamabad.",
+      "sample_places": [
+        "Gilgit",
+        "Skardu",
+        "Hunza",
+        "Chilas"
+      ]
     }
   ],
   "district_samples": [

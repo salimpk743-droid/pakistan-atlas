@@ -134,7 +134,13 @@
               "publisher": "Encyclopaedia Britannica"
             }
           }
-        ]
+        ],
+        "education": "Quaid-i-Azam University, NUST, COMSATS, IIUI and NUML anchor the city's large federal college and school network.",
+        "health": "The Pakistan Institute of Medical Sciences (PIMS) and Polyclinic are the main public hospitals, backed by several private teaching hospitals.",
+        "culture": "People from every province live here, and hiking the Margalla trails or browsing the weekly bazaars are part of everyday life.",
+        "villages": "Saidpur, Bari Imam, Shah Allah Ditta, Golra Sharif",
+        "issues": "Traffic congestion, unplanned housing at the city's edges, and pressure on the Margalla Hills National Park are the main ongoing concerns.",
+        "about_original": "Islamabad was designed in the 1960s as a planned garden capital at the foot of the Margalla Hills. The Faisal Mosque, Daman-e-Koh viewpoint, Saidpur Village and Bari Imam shrine sit alongside the government sector belt and a ring of fast-growing housing societies."
       }
     ],
     "district_count": {
@@ -356,7 +362,12 @@
         "tehsil_count": 6,
         "tehsil_count_source": "PBS 2023 census, Table 1",
         "profile_checked": "2026-09-29",
-        "sources": []
+        "sources": [],
+        "education": "Public degree colleges in Attock, Fateh Jang and Pindi Gheb; campuses linked to University of the Punjab and AIOU.",
+        "health": "DHQ Attock and THQ hospitals in tehsils.",
+        "culture": "Potohari and Punjabi speech, river-side shrines and wheat-oilseed farms.",
+        "villages": "Hassanabdal, Fateh Jang rural union councils",
+        "about_original": "North-western Punjab on the Indus. Attock Fort looks over the river crossing toward KP."
       },
       {
         "slug": "bahawalnagar",
@@ -552,7 +563,12 @@
             "title": "Bahawalnagar",
             "date": ""
           }
-        ]
+        ],
+        "education": "Government colleges in Bahawalnagar, Chishtian and Haroonabad.",
+        "health": "DHQ Bahawalnagar.",
+        "culture": "Cholistan fringe, Sufi shrines and cotton-wheat belt.",
+        "villages": "Chishtian rural, Fort Abbas villages",
+        "about_original": "South-eastern Punjab on the Indian border, once part of Bahawalpur State."
       },
       {
         "slug": "bahawalpur",
@@ -771,6 +787,37 @@
             "title": "Derawar and the Desert Forts of Cholistan (Tentative List)",
             "date": ""
           }
+        ],
+        "education": "Islamia University of Bahawalpur and a large college network.",
+        "health": "BVH / QAMC teaching hospital cluster.",
+        "culture": "Saraiki language, desert crafts and the Sadiqgarh heritage.",
+        "villages": "Yazman, Ahmadpur East countryside",
+        "about_original": "Former princely state. Palaces, the Noor Mahal area and the gateway to Cholistan Desert.",
+        "tehsils_2023": [
+          {
+            "name": "Bahawalpur City",
+            "major_towns": "Bahawalpur"
+          },
+          {
+            "name": "Bahawalpur Saddar",
+            "major_towns": "Bahawalpur"
+          },
+          {
+            "name": "Ahmadpur East",
+            "major_towns": "Ahmadpur East"
+          },
+          {
+            "name": "Hasilpur",
+            "major_towns": "Hasilpur"
+          },
+          {
+            "name": "Khairpur Tamewali",
+            "major_towns": "Khairpur Tamewali"
+          },
+          {
+            "name": "Yazman",
+            "major_towns": "Yazman"
+          }
         ]
       },
       {
@@ -931,7 +978,12 @@
         "tehsil_count": 4,
         "tehsil_count_source": "PBS 2023 census, Table 1",
         "profile_checked": "2026-09-29",
-        "sources": []
+        "sources": [],
+        "education": "Government postgraduate college and degree colleges in tehsils.",
+        "health": "DHQ Bhakkar.",
+        "culture": "Thal pastoral life and Saraiki speech.",
+        "villages": "Mankera, Darya Khan villages",
+        "about_original": "Thal desert district on the left bank of the Indus."
       },
       {
         "slug": "chakwal",
@@ -1089,7 +1141,12 @@
         ],
         "census_boundary_note": "These figures are for Chakwal District as enumerated in the 2023 census, before Talagang District was created from part of it, so the current district total is lower.",
         "profile_checked": "2026-09-29",
-        "sources": []
+        "sources": [],
+        "education": "Public colleges; campuses serving Choa Saidan Shah and Talagang used to sit in this belt.",
+        "health": "DHQ Chakwal.",
+        "culture": "Potohari folk and limestone landscape.",
+        "villages": "Kallar Kahar countryside, Choa Saidan Shah",
+        "about_original": "Salt Range and Potohar plateau. Many families have a long military tradition."
       },
       {
         "slug": "chiniot",
@@ -1210,7 +1267,12 @@
         "tehsil_count": 3,
         "tehsil_count_source": "PBS 2023 census, Table 1",
         "profile_checked": "2026-09-29",
-        "sources": []
+        "sources": [],
+        "education": "Government colleges in Chiniot and Lalian.",
+        "health": "DHQ Chiniot.",
+        "culture": "Craftsmen’s bazaars and Umer Hayat Mahal heritage.",
+        "villages": "Lalian, Bhowana villages",
+        "about_original": "Famous for wood carving and furniture on the Chenab."
       },
       {
         "slug": "dera-ghazi-khan",
@@ -1509,6 +1571,62 @@
               "publisher": "Encyclopaedia Britannica"
             }
           }
+        ],
+        "education": "Agriculture University, Government College University Faisalabad, NTU.",
+        "health": "Allied / DHQ teaching hospitals.",
+        "culture": "Punjabi industry-town life and a huge mandi.",
+        "villages": "Jaranwala and Samundri rural unions",
+        "about_original": "Textile capital of Pakistan, laid out as Lyallpur in British canal-colony years.",
+        "tehsils_2023": [
+          {
+            "name": "Faisalabad City",
+            "major_towns": "Faisalabad",
+            "area_km2": 168,
+            "population_2023": 3691999,
+            "density_2023": 21976.18,
+            "urban_proportion_2023": 100,
+            "source": "PBS 2023 Census Table 1"
+          },
+          {
+            "name": "Faisalabad Sadar",
+            "major_towns": "Faisalabad",
+            "area_km2": 1186,
+            "population_2023": 1742958,
+            "density_2023": 1469.61,
+            "urban_proportion_2023": 5.56,
+            "source": "PBS 2023 Census Table 1"
+          },
+          {
+            "name": "Jaranwala",
+            "major_towns": "Jaranwala",
+            "area_km2": 1811,
+            "population_2023": 1731148,
+            "density_2023": 955.91,
+            "urban_proportion_2023": 15.46,
+            "source": "PBS 2023 Census Table 1"
+          },
+          {
+            "name": "Samundri",
+            "major_towns": "Samundri",
+            "area_km2": 754,
+            "population_2023": 729672,
+            "density_2023": 967.73,
+            "urban_proportion_2023": 25.54,
+            "source": "PBS 2023 Census Table 1"
+          },
+          {
+            "name": "Tandlianwala",
+            "major_towns": "Tandlianwala",
+            "area_km2": 1284,
+            "population_2023": 931973,
+            "density_2023": 725.6,
+            "urban_proportion_2023": 9.46,
+            "source": "PBS 2023 Census Table 1"
+          },
+          {
+            "name": "Chak Jhumra",
+            "major_towns": "Chak Jhumra"
+          }
         ]
       },
       {
@@ -1706,6 +1824,33 @@
             "title": "Gujranwala",
             "date": ""
           }
+        ],
+        "education": "University of the Punjab Gujranwala campus and many colleges.",
+        "health": "DHQ / teaching hospital Gujranwala.",
+        "culture": "Punjabi business culture and wrestlers’ tradition.",
+        "villages": "Kamoke, Nowshera Virkan countryside",
+        "about_original": "Industrial city of Punjab’s north-east, known for electrical goods and food.",
+        "tehsils_2023": [
+          {
+            "name": "Gujranwala City",
+            "major_towns": "Gujranwala"
+          },
+          {
+            "name": "Gujranwala Sadar",
+            "major_towns": "Gujranwala"
+          },
+          {
+            "name": "Kamoke",
+            "major_towns": "Kamoke"
+          },
+          {
+            "name": "Nowshera Virkan",
+            "major_towns": "Nowshera Virkan"
+          },
+          {
+            "name": "Wazirabad",
+            "major_towns": "Wazirabad"
+          }
         ]
       },
       {
@@ -1808,7 +1953,12 @@
             "title": "Gujrat",
             "date": ""
           }
-        ]
+        ],
+        "education": "University of Gujrat and a dense college belt.",
+        "health": "Aziz Bhatti Shaheed Teaching Hospital / DHQ.",
+        "culture": "Punjabi towns of Jalalpur Jattan and Kunjah.",
+        "villages": "Kharian rural, Sarai Alamgir villages",
+        "about_original": "Chenab district known for furniture, ceramics and overseas workers."
       },
       {
         "slug": "hafizabad",
@@ -1920,7 +2070,12 @@
         "tehsil_count": 2,
         "tehsil_count_source": "PBS 2023 census, Table 1",
         "profile_checked": "2026-09-29",
-        "sources": []
+        "sources": [],
+        "education": "Government colleges in Hafizabad and Pindi Bhattian.",
+        "health": "DHQ Hafizabad.",
+        "culture": "Rural Punjabi harvest calendar.",
+        "villages": "Pindi Bhattian countryside",
+        "about_original": "Rice belt of central Punjab."
       },
       {
         "slug": "jhang",
@@ -2027,7 +2182,12 @@
             "title": "Jhang Sadar",
             "date": ""
           }
-        ]
+        ],
+        "education": "Government colleges and a growing university presence.",
+        "health": "DHQ Jhang.",
+        "culture": "Saraiki-Punjabi folk and shrine culture.",
+        "villages": "Shorkot, Ahmadpur Sial villages",
+        "about_original": "Land of the Heer-Ranjha story, at the meeting of Chenab and Jhelum systems."
       },
       {
         "slug": "jhelum",
@@ -2189,7 +2349,12 @@
             "title": "Jhelum",
             "date": ""
           }
-        ]
+        ],
+        "education": "Cadet College Hasan Abdal is close; district colleges in Jhelum and Pind Dadan Khan.",
+        "health": "DHQ Jhelum.",
+        "culture": "Potohar military towns and salt-range villages.",
+        "villages": "Pind Dadan Khan, Sohawa villages",
+        "about_original": "Grand Trunk Road and the river Jhelum. Rohtas Fort is nearby in this historic belt."
       },
       {
         "slug": "kasur",
@@ -2363,7 +2528,12 @@
             "title": "Kasur",
             "date": ""
           }
-        ]
+        ],
+        "education": "Public colleges; many students travel to Lahore universities.",
+        "health": "DHQ Kasur.",
+        "culture": "Punjabi kafis and leather / farm economy.",
+        "villages": "Pattoki, Chunian countryside",
+        "about_original": "South of Lahore, shrine of Baba Bullhe Shah and a busy border district."
       },
       {
         "slug": "khanewal",
@@ -2523,7 +2693,12 @@
         "tehsil_count": 4,
         "tehsil_count_source": "PBS 2023 census, Table 1",
         "profile_checked": "2026-09-29",
-        "sources": []
+        "sources": [],
+        "education": "Government colleges in Khanewal, Kabirwala and Mian Channu.",
+        "health": "DHQ Khanewal.",
+        "culture": "Canal-colony Punjabi and Saraiki mix.",
+        "villages": "Kabirwala, Jahanian villages",
+        "about_original": "Railway junction district in the Multan division."
       },
       {
         "slug": "khushab",
@@ -2683,7 +2858,12 @@
         "tehsil_count": 4,
         "tehsil_count_source": "PBS 2023 census, Table 1",
         "profile_checked": "2026-09-29",
-        "sources": []
+        "sources": [],
+        "education": "Colleges in Jauharabad, Khushab and Naushera.",
+        "health": "DHQ Khushab.",
+        "culture": "Soon Valley orchards and salt-range villages.",
+        "villages": "Naushera, Quaidabad villages",
+        "about_original": "Salt Range and Soon Valley on one side, Thal on the other."
       },
       {
         "slug": "lahore",
@@ -2827,6 +3007,58 @@
               "publisher": "UNESCO World Heritage Centre"
             }
           }
+        ],
+        "education": "University of the Punjab, UET, GCU, LUMS, UVAS, UHS and dozens of colleges.",
+        "health": "Mayo, Services, Jinnah, Children’s Hospital and a huge private sector.",
+        "culture": "Urdu and Punjabi high culture, film, food streets and urs of Data Ganj Bakhsh.",
+        "villages": "Peripheral union councils toward Raiwind and Wagah",
+        "about_original": "Provincial capital. Walled City, Badshahi Mosque, Lahore Fort, and Pakistan’s densest university cluster.",
+        "tehsils_2023": [
+          {
+            "name": "Lahore City",
+            "major_towns": "Lahore",
+            "area_km2": 214,
+            "population_2023": 4123354,
+            "density_2023": 19268.01,
+            "urban_proportion_2023": 100,
+            "source": "PBS 2023 Census Table 1"
+          },
+          {
+            "name": "Lahore Cantt",
+            "major_towns": "Lahore Cantonment",
+            "area_km2": 466,
+            "population_2023": 1885098,
+            "density_2023": 4045.27,
+            "urban_proportion_2023": 100,
+            "source": "PBS 2023 Census Table 1"
+          },
+          {
+            "name": "Model Town",
+            "major_towns": "Model Town, Lahore",
+            "area_km2": 353,
+            "population_2023": 3244906,
+            "density_2023": 9192.37,
+            "urban_proportion_2023": 100,
+            "source": "PBS 2023 Census Table 1"
+          },
+          {
+            "name": "Raiwind",
+            "major_towns": "Raiwind",
+            "area_km2": 467,
+            "population_2023": 1080637,
+            "density_2023": 2314,
+            "urban_proportion_2023": 100,
+            "source": "PBS 2023 Census Table 1"
+          },
+          {
+            "name": "Shalimar",
+            "major_towns": "Baghbanpura / Shalimar, Lahore",
+            "area_km2": 272,
+            "population_2023": 2670140,
+            "density_2023": 9816.69,
+            "urban_proportion_2023": 100,
+            "source": "PBS 2023 Census Table 1"
+          }
         ]
       },
       {
@@ -2959,7 +3191,12 @@
         "tehsil_count": 3,
         "tehsil_count_source": "PBS 2023 census, Table 1",
         "profile_checked": "2026-09-29",
-        "sources": []
+        "sources": [],
+        "education": "Government colleges and a university campus presence.",
+        "health": "DHQ Layyah.",
+        "culture": "Thal and Saraiki farm life.",
+        "villages": "Karor Lal Esan, Choubara villages",
+        "about_original": "Thal district between the Indus and Chenab systems."
       },
       {
         "slug": "lodhran",
@@ -3085,7 +3322,12 @@
         "tehsil_count": 3,
         "tehsil_count_source": "PBS 2023 census, Table 1",
         "profile_checked": "2026-09-29",
-        "sources": []
+        "sources": [],
+        "education": "Public colleges in Lodhran, Dunyapur and Kahror Pacca.",
+        "health": "DHQ Lodhran.",
+        "culture": "Saraiki countryside linked to Multan shrines.",
+        "villages": "Dunyapur, Kahror Pacca villages",
+        "about_original": "Compact cotton-wheat district south of Multan."
       },
       {
         "slug": "mbdin",
@@ -3200,7 +3442,12 @@
         "tehsil_count": 3,
         "tehsil_count_source": "PBS 2023 census, Table 1",
         "profile_checked": "2026-09-29",
-        "sources": []
+        "sources": [],
+        "education": "Government colleges in Mandi Bahauddin, Phalia and Malakwal.",
+        "health": "DHQ Mandi Bahauddin.",
+        "culture": "Punjabi small-town life and river-side villages.",
+        "villages": "Phalia, Malakwal villages",
+        "about_original": "Between Jhelum and Chenab, known as a clean planned mandi town."
       },
       {
         "slug": "mianwali",
@@ -3357,7 +3604,12 @@
             "title": "Mianwali",
             "date": ""
           }
-        ]
+        ],
+        "education": "Public colleges; medical college initiative in the region.",
+        "health": "DHQ Mianwali.",
+        "culture": "A mix of Punjabi, Saraiki and Pashto on the western edge.",
+        "villages": "Isa Khel, Piplan villages",
+        "about_original": "Western Punjab on the Salt Range and Indus. Lakes and namak-era geology."
       },
       {
         "slug": "multan",
@@ -3507,6 +3759,29 @@
             "publisher": "Encyclopaedia Britannica",
             "title": "Multan",
             "date": ""
+          }
+        ],
+        "education": "Bahauddin Zakariya University, NFC, medical and women’s universities.",
+        "health": "Nishtar Hospital is the main teaching centre.",
+        "culture": "Saraiki language, blue tiles, mangoes and shrine economy.",
+        "villages": "Shujabad, Jalalpur Pirwala villages",
+        "about_original": "City of saints. One of the oldest urban centres in South Asia, now a south-Punjab hub.",
+        "tehsils_2023": [
+          {
+            "name": "Multan City",
+            "major_towns": "Multan"
+          },
+          {
+            "name": "Multan Saddar",
+            "major_towns": "Multan"
+          },
+          {
+            "name": "Jalalpur Pirwala",
+            "major_towns": "Jalalpur Pirwala"
+          },
+          {
+            "name": "Shujabad",
+            "major_towns": "Shujabad"
           }
         ]
       },
@@ -3696,7 +3971,12 @@
         ],
         "census_boundary_note": "These figures are for Muzaffargarh District as enumerated in the 2023 census, before Kot Addu District was created from part of it, so the current district total is lower.",
         "profile_checked": "2026-09-29",
-        "sources": []
+        "sources": [],
+        "education": "University of Layyah / campus arrangements and government colleges.",
+        "health": "DHQ Muzaffargarh.",
+        "culture": "Saraiki riverine life.",
+        "villages": "Alipur, Jatoi countryside",
+        "about_original": "Between Chenab and Indus. Repeatedly hit by river floods."
       },
       {
         "slug": "nankana-sahib",
@@ -3956,7 +4236,12 @@
         "tehsil_count": 3,
         "tehsil_count_source": "PBS 2023 census, Table 1",
         "profile_checked": "2026-09-29",
-        "sources": []
+        "sources": [],
+        "education": "University of Narowal and government colleges.",
+        "health": "DHQ Narowal.",
+        "culture": "Punjabi border villages.",
+        "villages": "Shakargarh, Zafarwal villages",
+        "about_original": "North-east Punjab on the Indian border, including the town of Shakargarh."
       },
       {
         "slug": "okara",
@@ -4109,7 +4394,12 @@
             "title": "Okara",
             "date": ""
           }
-        ]
+        ],
+        "education": "University of Okara and colleges in Depalpur and Renala Khurd.",
+        "health": "DHQ Okara.",
+        "culture": "Punjabi farm towns.",
+        "villages": "Depalpur, Renala countryside",
+        "about_original": "Canal-colony dairy and military-farm district."
       },
       {
         "slug": "pakpattan",
@@ -4215,7 +4505,12 @@
         "tehsil_count": 2,
         "tehsil_count_source": "PBS 2023 census, Table 1",
         "profile_checked": "2026-09-29",
-        "sources": []
+        "sources": [],
+        "education": "Government colleges in Pakpattan and Arifwala.",
+        "health": "DHQ Pakpattan.",
+        "culture": "Sufi Punjabi culture and the urs calendar.",
+        "villages": "Arifwala villages",
+        "about_original": "Shrine of Baba Farid Ganjshakar on the old river route."
       },
       {
         "slug": "rahim-yar-khan",
@@ -4568,7 +4863,12 @@
           }
         ],
         "profile_checked": "2026-09-29",
-        "sources": []
+        "sources": [],
+        "education": "Government colleges in Rajanpur, Jampur and Rojhan.",
+        "health": "DHQ Rajanpur.",
+        "culture": "Saraiki-Baloch border culture.",
+        "villages": "Jampur, Rojhan villages",
+        "about_original": "Foot of the Sulaiman Range. Hill torrents can cut the district in the monsoon."
       },
       {
         "slug": "rawalpindi",
@@ -4805,6 +5105,41 @@
               "publisher": "Encyclopaedia Britannica"
             }
           }
+        ],
+        "education": "Rawalpindi Medical University, Arid Agriculture University, many colleges.",
+        "health": "Holy Family, Benazir Bhutto Hospital, CMH and DHQ.",
+        "culture": "Potohari-Punjabi city culture next to the federal capital.",
+        "villages": "Kahuta, Kallar Syedan, Gujar Khan villages",
+        "about_original": "Twin city of Islamabad. Old bazaars, cantonment, and the road to Murree.",
+        "tehsils_2023": [
+          {
+            "name": "Rawalpindi",
+            "major_towns": "Rawalpindi"
+          },
+          {
+            "name": "Gujar Khan",
+            "major_towns": "Gujar Khan"
+          },
+          {
+            "name": "Kahuta",
+            "major_towns": "Kahuta"
+          },
+          {
+            "name": "Kallar Syedan",
+            "major_towns": "Kallar Syedan"
+          },
+          {
+            "name": "Kotli Sattian",
+            "major_towns": "Kotli Sattian"
+          },
+          {
+            "name": "Murree",
+            "major_towns": "Murree"
+          },
+          {
+            "name": "Taxila",
+            "major_towns": "Taxila"
+          }
         ]
       },
       {
@@ -4902,7 +5237,12 @@
               "publisher": "Encyclopaedia Britannica"
             }
           }
-        ]
+        ],
+        "education": "Sahiwal Medical College and public university / college cluster.",
+        "health": "DHQ / teaching hospital Sahiwal.",
+        "culture": "Punjabi mandi towns of Chichawatni.",
+        "villages": "Chichawatni countryside",
+        "about_original": "Canal-colony city formerly Montgomery. Cattle breed named after the district."
       },
       {
         "slug": "sargodha",
@@ -5142,7 +5482,12 @@
             "title": "Sargodha",
             "date": ""
           }
-        ]
+        ],
+        "education": "University of Sargodha and medical college.",
+        "health": "DHQ / teaching hospital Sargodha.",
+        "culture": "Punjabi orchard economy.",
+        "villages": "Bhalwal, Shahpur, Sahiwal (Sargodha) villages",
+        "about_original": "Citrus capital of Pakistan and a large air-base city."
       },
       {
         "slug": "sheikhupura",
@@ -5314,7 +5659,12 @@
         "tehsil_count": 5,
         "tehsil_count_source": "PBS 2023 census, Table 1",
         "profile_checked": "2026-09-29",
-        "sources": []
+        "sources": [],
+        "education": "Haji University campus arrangements and many colleges.",
+        "health": "DHQ Sheikhupura.",
+        "culture": "Mughal-era heritage next to factories.",
+        "villages": "Ferozewala, Muridke countryside",
+        "about_original": "Hiran Minar and industrial belt west of Lahore."
       },
       {
         "slug": "sialkot",
@@ -5497,6 +5847,29 @@
               "url": "https://www.britannica.com/place/Sialkot-Pakistan",
               "publisher": "Encyclopaedia Britannica"
             }
+          }
+        ],
+        "education": "University of Sialkot, medical college, dense private colleges.",
+        "health": "Allama Iqbal Memorial / DHQ teaching setup.",
+        "culture": "Punjabi workshop culture and Iqbal’s city.",
+        "villages": "Daska, Pasrur, Sambrial villages",
+        "about_original": "Export city of sports goods, surgical instruments and leather. Birthplace of Allama Iqbal.",
+        "tehsils_2023": [
+          {
+            "name": "Sialkot",
+            "major_towns": "Sialkot"
+          },
+          {
+            "name": "Daska",
+            "major_towns": "Daska"
+          },
+          {
+            "name": "Pasrur",
+            "major_towns": "Pasrur"
+          },
+          {
+            "name": "Sambrial",
+            "major_towns": "Sambrial"
           }
         ]
       },
@@ -5731,7 +6104,12 @@
         "tehsil_count": 3,
         "tehsil_count_source": "PBS 2023 census, Table 1",
         "profile_checked": "2026-09-29",
-        "sources": []
+        "sources": [],
+        "education": "COMSATS Vehari and government colleges.",
+        "health": "DHQ Vehari.",
+        "culture": "Saraiki-Punjabi canal villages.",
+        "villages": "Burewala, Mailsi villages",
+        "about_original": "Cotton-wheat district created from Multan."
       },
       {
         "slug": "murree",
@@ -5845,7 +6223,13 @@
             "date": "21 December 2024"
           }
         ],
-        "created_year": "2022"
+        "created_year": "2022",
+        "education": "Colleges in Murree and Kotli Sattian.",
+        "health": "DHQ / THQ hill hospitals; serious cases often go to Rawalpindi.",
+        "culture": "Hill towns, tourism and Pahari speech.",
+        "villages": "Galiyat, Kotli Sattian villages",
+        "issues": "Landslides, unplanned hotels, winter access.",
+        "about_original": "Hill district separated from Rawalpindi. Colonial hill station and the road to Kashmir."
       },
       {
         "slug": "talagang",
@@ -5933,7 +6317,13 @@
             "date": "21 December 2024"
           }
         ],
-        "created_year": "2022"
+        "created_year": "2022",
+        "education": "Government colleges in Talagang.",
+        "health": "DHQ Talagang.",
+        "culture": "Potohari plateau villages.",
+        "villages": "Lawer, Talagang rural unions",
+        "issues": "New district still building offices and specialist wards.",
+        "about_original": "Created from Chakwal. Dry Potohar and salt-range west."
       },
       {
         "slug": "wazirabad",
@@ -6008,7 +6398,13 @@
             "date": "24 December 2024"
           }
         ],
-        "created_year": "2022"
+        "created_year": "2022",
+        "education": "Colleges in Wazirabad.",
+        "health": "DHQ / THQ Wazirabad.",
+        "culture": "Workshop and river-town Punjabi life.",
+        "villages": "Ghakhar belt villages",
+        "issues": "Industry safety and the paperwork of a new district.",
+        "about_original": "Chenab industrial town, cut out of Gujranwala. Known for cutlery."
       },
       {
         "slug": "kotaddu",
@@ -6090,7 +6486,13 @@
             "date": "21 December 2024"
           }
         ],
-        "created_year": "2024"
+        "created_year": "2024",
+        "education": "Public colleges in Kot Addu.",
+        "health": "DHQ Kot Addu.",
+        "culture": "Saraiki riverine towns.",
+        "villages": "Indus-belt union councils",
+        "issues": "Floods and new-district staffing.",
+        "about_original": "Separated from Muzaffargarh on the Indus plain."
       },
       {
         "slug": "taunsa",
@@ -6173,7 +6575,13 @@
             "date": "21 December 2024"
           }
         ],
-        "created_year": "2024"
+        "created_year": "2024",
+        "education": "Colleges in Taunsa.",
+        "health": "DHQ Taunsa.",
+        "culture": "Saraiki shrine town.",
+        "villages": "Vehoa, Koh-e-Suleman foothill villages",
+        "issues": "Hill-torrent floods and mountain-road access.",
+        "about_original": "Separated from D.G. Khan. Shrine town and the road toward Fort Munro."
       }
     ],
     "district_count": {
@@ -6354,7 +6762,12 @@
             "title": "Pakistan Military Academy – Cadets Training",
             "date": ""
           }
-        ]
+        ],
+        "education": "Ayub Medical College and COMSATS Abbottabad anchor a large education belt that draws students from across Hazara.",
+        "health": "Ayub Teaching Hospital is the main referral hospital for the district.",
+        "culture": "Hindko is widely spoken in the hills, and the Pakistan Military Academy at nearby Kakul is closely tied to the city's identity.",
+        "villages": "Villages along the Nathia Gali road.",
+        "about_original": "Abbottabad is a hill city on the approach to the Karakoram Highway, known for its cool climate and dense concentration of colleges and universities."
       },
       {
         "slug": "bajaur",
@@ -6642,7 +7055,12 @@
             "title": "Bannu",
             "date": ""
           }
-        ]
+        ],
+        "education": "The University of Science and Technology Bannu is the district's main higher-education institution.",
+        "health": "Khalifa Gul Nawaz Teaching Hospital anchors the district's public healthcare.",
+        "culture": "Locals speak a distinct southern dialect of Pashto, and the city's mandi (grain market) remains central to daily trade.",
+        "villages": "Domel and Kakki villages.",
+        "about_original": "Bannu is a southern KP city on the route toward Waziristan, historically an important trading and garrison town."
       },
       {
         "slug": "battagram",
@@ -6740,7 +7158,12 @@
             "title": "KP CM announces Rs200 billion uplift package for Hazara",
             "date": "25 February 2026"
           }
-        ]
+        ],
+        "education": "The district runs government degree colleges; students looking for more specialised courses usually travel on to Mansehra or Abbottabad.",
+        "health": "DHQ Battagram is the main public hospital serving the tehsil.",
+        "culture": "Pashto and Hindko are both spoken across the surrounding hill villages.",
+        "villages": "In January 2023, the neighbouring Allai tehsil was separated from Battagram and given full district status — it now has its own entry on this atlas.",
+        "about_original": "Battagram sits on the Karakoram Highway in Hazara Division, with a cool hill climate around its market-town headquarters."
       },
       {
         "slug": "allai",
@@ -6788,7 +7211,13 @@
           "literacy_2023": 35.71,
           "source_url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_1_kp_districts.pdf"
         },
-        "profile_checked": "2026-09-30"
+        "profile_checked": "2026-09-30",
+        "education": "Education infrastructure is still catching up after the 2023 split; many students continue to travel to Battagram or Mansehra for higher study.",
+        "health": "A district headquarters hospital is being developed at Banna; patients previously relied on Battagram's DHQ.",
+        "culture": "The area was historically the princely state of Allai, ruled by its own Nawabs until 1971, and both Pashto and Hindko are spoken across its mountain villages.",
+        "villages": "Banna, Batila, Batkul, Biari, Jumbera, Pashto, Rushing and Shakargah union councils.",
+        "issues": "Steep terrain and limited road access remain the main barrier to services reaching outlying villages.",
+        "about_original": "Allai became a full KP district in January 2023, when its tehsil was separated from Battagram in Hazara Division."
       },
       {
         "slug": "buner",
@@ -6908,7 +7337,12 @@
         "tehsil_count": 6,
         "tehsil_count_source": "PBS 2023 census, Table 1",
         "profile_checked": "2026-09-29",
-        "sources": []
+        "sources": [],
+        "education": "Public colleges in Daggar and the surrounding tehsils serve the district.",
+        "health": "DHQ Buner is the main hospital.",
+        "culture": "The population is largely Yousafzai Pashtun, living across a series of forested valleys.",
+        "villages": "Gagra and Totalai villages.",
+        "about_original": "Buner is a district of green valleys tucked between Swat and Mardan, with Daggar as its headquarters."
       },
       {
         "slug": "charsadda",
@@ -7026,7 +7460,12 @@
             "title": "Bala Hisar Mound",
             "date": ""
           }
-        ]
+        ],
+        "education": "Bacha Khan University, named after the district's most famous son, is the main higher-education institution here.",
+        "health": "DHQ Charsadda serves the district.",
+        "culture": "The Pashtun farm towns of Shabqadar and Tangi are the district's two other major population centres.",
+        "villages": "Shabqadar and Tangi villages.",
+        "about_original": "Charsadda covers the fertile Hashtnagar plain just north of Peshawar, one of the province's most productive farming belts."
       },
       {
         "slug": "chitral-lower",
@@ -7143,7 +7582,12 @@
               "publisher": "APP via The Nation"
             }
           }
-        ]
+        ],
+        "education": "The University of Chitral and a number of colleges serve the district.",
+        "health": "DHQ Chitral is the main hospital.",
+        "culture": "Khowar is the dominant language, and the Kalash festivals and polo matches draw visitors from across the country.",
+        "villages": "Ayun and the Kalash valleys.",
+        "about_original": "Lower Chitral covers the Kalash valleys and Chitral town, sitting in the shadow of Trich Mir, Pakistan's highest peak outside the Karakoram."
       },
       {
         "slug": "chitral-upper",
@@ -7225,7 +7669,12 @@
               "publisher": "Dawn"
             }
           }
-        ]
+        ],
+        "education": "Colleges in Booni serve the district.",
+        "health": "DHQ/THQ Upper Chitral provides the main hospital care.",
+        "culture": "Khowar-speaking mountain villages dot the district.",
+        "villages": "Mastuj and the Torkhow valleys.",
+        "about_original": "Upper Chitral covers the high valleys toward the Wakhan Corridor, with Booni as its headquarters."
       },
       {
         "slug": "dera-ismail-khan",
@@ -7447,7 +7896,12 @@
               "publisher": "Associated Press of Pakistan"
             }
           }
-        ]
+        ],
+        "education": "As a newly formed district, most higher education still runs through Dera Ismail Khan's colleges and Gomal University.",
+        "health": "Public health services are being reorganised under the new district administration; DHQ Dera Ismail Khan remains the nearest teaching hospital.",
+        "culture": "The district shares Dera Ismail Khan's Saraiki-Pashtun culture and Indus-plain farming life.",
+        "villages": "Paharpur and Paniala tehsils.",
+        "about_original": "Paharpur became a new KP district in October 2025, carved out of Dera Ismail Khan's Paharpur and Paniala tehsils."
       },
       {
         "slug": "hangu",
@@ -7542,7 +7996,12 @@
         "tehsil_count": 2,
         "tehsil_count_source": "PBS 2023 census, Table 1",
         "profile_checked": "2026-09-29",
-        "sources": []
+        "sources": [],
+        "education": "Government colleges serve the district's students.",
+        "health": "DHQ Hangu is the main public hospital.",
+        "culture": "The population is largely Pashtun, living across scattered upland settlements.",
+        "villages": "Doaba and villages along the Thall road.",
+        "about_original": "Hangu is a small district west of Kohat, with a mostly rural upland population."
       },
       {
         "slug": "haripur",
@@ -7656,7 +8115,12 @@
         "tehsil_count": 3,
         "tehsil_count_source": "PBS 2023 census, Table 1",
         "profile_checked": "2026-09-29",
-        "sources": []
+        "sources": [],
+        "education": "The University of Haripur and a number of colleges serve the district.",
+        "health": "DHQ Haripur is the main hospital.",
+        "culture": "Hindko-speaking towns are spread across the district.",
+        "villages": "Khanpur and Ghazi villages.",
+        "about_original": "Haripur is a Hazara district that combines farmland with industry at Hattar and proximity to Tarbela Dam."
       },
       {
         "slug": "karak",
@@ -7766,7 +8230,12 @@
               "publisher": "District Administration Karak"
             }
           }
-        ]
+        ],
+        "education": "Khushal Khan Khattak University is the district's main higher-education institution.",
+        "health": "DHQ Karak serves the district.",
+        "culture": "The population is largely Khattak Pashtun, spread across small resource towns.",
+        "villages": "Takht-e-Nasrati and Banda Daud Shah.",
+        "about_original": "Karak is an oil-and-gas producing upland district south of Kohat."
       },
       {
         "slug": "khyber",
@@ -7910,7 +8379,12 @@
               "publisher": "Dawn"
             }
           }
-        ]
+        ],
+        "education": "Colleges are expanding steadily as the district's education system is folded into the provincial one.",
+        "health": "DHQ Khyber serves the district.",
+        "culture": "The Afridi tribe is dominant across the pass towns.",
+        "villages": "Bara, Jamrud and Landi Kotal.",
+        "about_original": "Khyber district takes its name from the historic Khyber Pass and was a tribal agency until the 2018 FATA merger."
       },
       {
         "slug": "kohat",
@@ -8047,7 +8521,12 @@
             "title": "BoR notifies merger of tribal agencies, FRs with KP areas",
             "date": "2018"
           }
-        ]
+        ],
+        "education": "KMU Institute of Medical Sciences (KIMS) and a university campus serve the district.",
+        "health": "Liaquat Memorial Hospital is the main teaching hospital.",
+        "culture": "Kohat sits on the main Indus highway route and has a long Pashtun urban history.",
+        "villages": "Lachi and Gumbat villages.",
+        "about_original": "Kohat is a southern KP city built around a cantonment, with a long-established medical college."
       },
       {
         "slug": "kurram",
@@ -8175,7 +8654,12 @@
               "publisher": "Dawn"
             }
           }
-        ]
+        ],
+        "education": "Colleges in Parachinar and Sadda serve the district.",
+        "health": "DHQ Parachinar is the main hospital.",
+        "culture": "The Turi and Bangash tribes are the district's dominant communities.",
+        "villages": "Sadda and Alizai villages.",
+        "about_original": "Kurram is a high valley district toward the Afghan border, long known for its apple orchards and its history as a tribal agency."
       },
       {
         "slug": "lakki-marwat",
@@ -8384,7 +8868,12 @@
         "tehsil_count": 4,
         "tehsil_count_source": "PBS 2023 census, Table 1",
         "profile_checked": "2026-09-29",
-        "sources": []
+        "sources": [],
+        "education": "Shaheed Benazir Bhutto University in nearby Sheringal serves the wider Dir belt, alongside local colleges in Timergara.",
+        "health": "DHQ Timergara is the main hospital.",
+        "culture": "The population is a mix of Dir Kohistani and Pashtun communities.",
+        "villages": "Chakdara and Samar Bagh villages.",
+        "about_original": "Lower Dir covers the Panjkora valley below Upper Dir, with Timergara as its headquarters."
       },
       {
         "slug": "lower-kohistan",
@@ -8490,7 +8979,12 @@
               "publisher": "Peshawar High Court"
             }
           }
-        ]
+        ],
+        "education": "Colleges in Pattan serve the district.",
+        "health": "DHQ Lower Kohistan is the main hospital.",
+        "culture": "Kohistani languages are spoken across the district's river villages.",
+        "villages": "Villages in the side valleys near Pattan.",
+        "about_original": "Lower Kohistan is an Indus gorge district on the Karakoram Highway, with Pattan as its headquarters."
       },
       {
         "slug": "malakand",
@@ -8565,7 +9059,12 @@
         "tehsil_count": 2,
         "tehsil_count_source": "PBS 2023 census, Table 1",
         "profile_checked": "2026-09-29",
-        "sources": []
+        "sources": [],
+        "education": "The University of Malakand at nearby Chakdara and colleges in Batkhela serve the district.",
+        "health": "DHQ Batkhela is the main hospital.",
+        "culture": "The pass towns have long linked Peshawar-valley and Swat cultures.",
+        "villages": "Dargai and Thana villages.",
+        "about_original": "Malakand district sits at the historic Malakand Pass, the gateway between the Peshawar valley and Swat."
       },
       {
         "slug": "mansehra",
@@ -8706,7 +9205,12 @@
             "title": "Mansehra",
             "date": ""
           }
-        ]
+        ],
+        "education": "Hazara University and a number of colleges serve the district.",
+        "health": "DHQ Mansehra is the main hospital.",
+        "culture": "Hindko and Gojri communities share the district's hill culture.",
+        "villages": "Balakot, Oghi and villages in the Kaghan valley.",
+        "about_original": "Mansehra is the Hazara gateway to the Kaghan valley and the Karakoram Highway."
       },
       {
         "slug": "mardan",
@@ -8854,7 +9358,12 @@
               "publisher": "UNESCO World Heritage Centre"
             }
           }
-        ]
+        ],
+        "education": "Abdul Wali Khan University Mardan is the district's main institution of higher learning.",
+        "health": "Mardan Medical Complex is the district's principal hospital.",
+        "culture": "The plain towns include Takht-i-Bahi, a UNESCO World Heritage archaeological site.",
+        "villages": "Takht-i-Bahi and Katlang villages.",
+        "about_original": "Mardan is KP's second-largest city, built on the sugar and farm economy of the Yousafzai plain."
       },
       {
         "slug": "mohmand",
@@ -9008,7 +9517,12 @@
               "publisher": "Dawn"
             }
           }
-        ]
+        ],
+        "education": "Colleges have opened in the district since the merger, though the network is still developing.",
+        "health": "DHQ Mohmand serves the district.",
+        "culture": "The Mohmand tribe's valleys form the core of the district.",
+        "villages": "The Ekka Ghund belt.",
+        "about_original": "Mohmand district lies north of Peshawar and was a tribal agency until the 2018 FATA merger."
       },
       {
         "slug": "nowshera",
@@ -9176,7 +9690,8 @@
             "title": "Nowshera inundated by the Kabul River",
             "date": "2 August 2010"
           }
-        ]
+        ],
+        "about_original": "Nowshera is a cantonment and industrial district on the Kabul River."
       },
       {
         "slug": "north-waziristan",
@@ -9470,7 +9985,8 @@
             "title": "About the district",
             "date": ""
           }
-        ]
+        ],
+        "about_original": "Orakzai is a former tribal agency in the hills west of Kohat, now a settled KP district."
       },
       {
         "slug": "peshawar",
@@ -9641,6 +10157,29 @@
               "publisher": "Encyclopaedia Britannica"
             }
           }
+        ],
+        "education": "The University of Peshawar, UET Peshawar, Khyber Medical University and Islamia College University together form one of the province's largest education clusters.",
+        "health": "Lady Reading Hospital, Hayatabad Medical Complex and Khyber Teaching Hospital are the city's major public hospitals.",
+        "culture": "Pashto literature and rubab music have deep roots here, centred on the city's historic caravan bazaar.",
+        "villages": "Badhber, Mathra and Regi rural areas.",
+        "about_original": "Peshawar is the provincial capital and one of the oldest continuously inhabited cities in the region, blending the historic Qissa Khwani bazaar with new housing developments.",
+        "tehsils_2023": [
+          {
+            "name": "Peshawar City",
+            "major_towns": "Peshawar"
+          },
+          {
+            "name": "Peshawar Sadar",
+            "major_towns": "Peshawar"
+          },
+          {
+            "name": "Chamkani",
+            "major_towns": "Chamkani"
+          },
+          {
+            "name": "Hashtnagar",
+            "major_towns": "Charsadda?"
+          }
         ]
       },
       {
@@ -9751,7 +10290,12 @@
         "tehsil_count": 5,
         "tehsil_count_source": "PBS 2023 census, Table 1",
         "profile_checked": "2026-09-29",
-        "sources": []
+        "sources": [],
+        "education": "The University of Shangla and a number of colleges serve the district.",
+        "health": "DHQ Alpuri is the main hospital.",
+        "culture": "The population lives across scattered mountain Pashtun villages.",
+        "villages": "Puran and villages near the Besham approach.",
+        "about_original": "Shangla is a high district sitting between Swat and the Indus River, with Alpuri as its headquarters."
       },
       {
         "slug": "swabi",
@@ -9883,7 +10427,12 @@
         "tehsil_count": 4,
         "tehsil_count_source": "PBS 2023 census, Table 1",
         "profile_checked": "2026-09-29",
-        "sources": []
+        "sources": [],
+        "education": "The University of Swabi and GIKI, in nearby Topi, serve the district.",
+        "health": "DHQ Swabi is the main hospital.",
+        "culture": "The Yousafzai towns of Tordher and Zaida are among the district's population centres.",
+        "villages": "Topi and Lahor villages.",
+        "about_original": "Swabi sits on the Indus and Kabul river plains, bordering the Gadoon industrial zone and the edge of Tarbela Dam."
       },
       {
         "slug": "swat",
@@ -10001,6 +10550,37 @@
             "title": "Malala Yousafzai – Facts",
             "date": ""
           }
+        ],
+        "education": "University of Swat and a wide network of colleges serve the remaining tehsils of Babuzai, Kabal, Charbagh and Barikot.",
+        "health": "The Saidu Group of Teaching Hospitals in Saidu Sharif is the main referral centre.",
+        "culture": "Yousafzai Swati culture, trout fishing and mountain crafts define daily life here.",
+        "villages": "Kabal and Barikot villages.",
+        "about_original": "Swat is the former princely state on the Swat River, known for its Buddhist archaeology and its role as one of Pakistan's most visited mountain valleys. In December 2025 the district was divided, with its Matta, Bahrain and Khwazakhela tehsils separated into a new Bar Swat (Upper Swat) district.",
+        "tehsils_2023": [
+          {
+            "name": "Babuzai",
+            "major_towns": "Mingora / Saidu Sharif"
+          },
+          {
+            "name": "Barikot",
+            "major_towns": "Barikot"
+          },
+          {
+            "name": "Kabal",
+            "major_towns": "Kabal"
+          },
+          {
+            "name": "Khwazakhela (now in Bar Swat District since January 2026)",
+            "major_towns": "Khwazakhela"
+          },
+          {
+            "name": "Matta (now in Bar Swat District since January 2026)",
+            "major_towns": "Matta"
+          },
+          {
+            "name": "Bahrain (now in Bar Swat District since January 2026)",
+            "major_towns": "Bahrain"
+          }
         ]
       },
       {
@@ -10100,7 +10680,12 @@
               "publisher": "Dawn"
             }
           }
-        ]
+        ],
+        "education": "Most higher education still runs through University of Swat's main campus in the remaining Swat district.",
+        "health": "New district health facilities are being organised in Matta; patients also use hospitals in Saidu Sharif.",
+        "culture": "The district covers the upper Swat valley including Kalam, Bahrain and Matiltan, long known as one of Pakistan's most scenic tourist areas.",
+        "villages": "Kalam, Bahrain and Matiltan.",
+        "about_original": "Bar Swat, also called Upper Swat, was created in December 2025 when Swat district was divided, with Matta as its headquarters."
       },
       {
         "slug": "swa-upper",
@@ -10231,7 +10816,13 @@
             "title": "South Waziristan divided into two districts",
             "date": "14 October 2022"
           }
-        ]
+        ],
+        "education": "Colleges are being rebuilt and expanded across the district after years of conflict-related disruption.",
+        "health": "A district headquarters hospital serves Spinkai Raghazai and the surrounding tehsils.",
+        "culture": "The district is home to Mahsud tribes across valleys such as Ladha, Makin and Shawal.",
+        "villages": "Ladha, Makin, Sararogha and Shawal.",
+        "issues": "Rebuilding markets, schools and roads after years of displacement remains an ongoing task.",
+        "about_original": "South Waziristan Upper was created in April 2022, when the former South Waziristan district was divided in two, with Spinkai Raghazai as its headquarters."
       },
       {
         "slug": "swa-lower",
@@ -10317,7 +10908,13 @@
             "title": "South Waziristan divided into two districts",
             "date": "14 October 2022"
           }
-        ]
+        ],
+        "education": "Government colleges in and around Wana serve the district, with more courses added since the 2022 split.",
+        "health": "DHQ facilities in Wana handle most public healthcare needs.",
+        "culture": "The district is dominated by the Ahmadzai Wazir tribe, with Pashto spoken throughout.",
+        "villages": "Wana, Shakai, Toi Khwla and Birmal.",
+        "issues": "Road security and rebuilding local markets remain priorities.",
+        "about_original": "South Waziristan Lower was created alongside South Waziristan Upper in April 2022, with Wana as its headquarters."
       },
       {
         "slug": "tank",
@@ -10410,7 +11007,12 @@
             "title": "BoR notifies merger of tribal agencies, FRs with KP areas",
             "date": "2018"
           }
-        ]
+        ],
+        "education": "Government colleges serve the district's students.",
+        "health": "DHQ Tank is the main hospital.",
+        "culture": "The district shares the plains culture of southern KP.",
+        "villages": "Villages along the Jandola road.",
+        "about_original": "Tank is a small southern district sitting at the edge of Waziristan."
       },
       {
         "slug": "torghar",
@@ -10500,7 +11102,12 @@
         "tehsil_count": 3,
         "tehsil_count_source": "PBS 2023 census, Table 1",
         "profile_checked": "2026-09-29",
-        "sources": []
+        "sources": [],
+        "education": "College options are limited, and many students travel to Mansehra for further study.",
+        "health": "DHQ Torghar is the main hospital.",
+        "culture": "The district's Black Mountain villages give it its name (Torghar means \"black mountain\" in Pashto).",
+        "villages": "Villages in the Judba side valleys.",
+        "about_original": "Torghar is a small mountain district of Hazara Division, created out of Mansehra."
       },
       {
         "slug": "upper-dir",
@@ -10615,7 +11222,12 @@
             "title": "Dir Pakistan",
             "date": ""
           }
-        ]
+        ],
+        "education": "Shaheed Benazir Bhutto University in Sheringal serves the district.",
+        "health": "DHQ Dir is the main hospital.",
+        "culture": "The Kumrat forests and Dir Kohistan region are central to the district's identity.",
+        "villages": "Kumrat and Barawal villages.",
+        "about_original": "Upper Dir covers the high country toward the Lowari Pass and the Kumrat valley."
       },
       {
         "slug": "upper-kohistan",
@@ -10720,7 +11332,12 @@
             "title": "Kohistan bifurcated in lower and upper districts",
             "date": "16 January 2014"
           }
-        ]
+        ],
+        "education": "Colleges in Dassu serve the district.",
+        "health": "DHQ Upper Kohistan is the main hospital.",
+        "culture": "Kohistani river villages line the gorge.",
+        "villages": "Villages in the side valleys near Dassu.",
+        "about_original": "Upper Kohistan covers the Indus gorge around the Dasu Dam project."
       },
       {
         "slug": "kolai-palas",
@@ -10805,7 +11422,12 @@
         "tehsil_count": 2,
         "tehsil_count_source": "PBS 2023 census, Table 1",
         "profile_checked": "2026-09-29",
-        "sources": []
+        "sources": [],
+        "education": "A new college network is still being set up in the district.",
+        "health": "DHQ Kolai-Palas is the main hospital.",
+        "culture": "Kohistani villages make up the district's population.",
+        "villages": "Villages in the Palas valley.",
+        "about_original": "Kolai-Palas is one of KP's newest districts, formed from the left bank of the Indus in the Kohistan region."
       }
     ],
     "district_count": {
@@ -11092,7 +11714,12 @@
               "title": "Badin"
             }
           ]
-        }
+        },
+        "education": "Public colleges in Badin and Golarchi.",
+        "health": "DHQ Badin.",
+        "culture": "Sindhi delta culture and fisheries.",
+        "villages": "Golarchi, Tando Bago villages",
+        "about_original": "Lower Sindh coastal-agrarian district, close to the sea creeks."
       },
       {
         "slug": "dadu",
@@ -11237,7 +11864,12 @@
         "tehsil_count": 4,
         "tehsil_count_source": "PBS 2023 census, Table 1",
         "profile_checked": "2026-09-29",
-        "sources": []
+        "sources": [],
+        "education": "Colleges in Dadu, Mehar and Johi.",
+        "health": "DHQ Dadu.",
+        "culture": "Sindhi interior, lake and hill villages.",
+        "villages": "Johi, Khairpur Nathan Shah villages",
+        "about_original": "West bank of the Indus, with Manchar Lake in the wider belt and Kirthar foothills."
       },
       {
         "slug": "ghotki",
@@ -11407,7 +12039,12 @@
           "blocks": [],
           "checked": "2026-09-30",
           "sources": []
-        }
+        },
+        "education": "Colleges in Ghotki and Mirpur Mathelo.",
+        "health": "DHQ Ghotki.",
+        "culture": "Upper Sindhi towns.",
+        "villages": "Daharki, Ubauro villages",
+        "about_original": "Upper Sindh on the border with Punjab, industrial-agrarian mix."
       },
       {
         "slug": "hyderabad",
@@ -11560,7 +12197,12 @@
               "title": "Hyderabad Pakistan"
             }
           ]
-        }
+        },
+        "education": "University of Sindh is in nearby Jamshoro; city colleges and LUMHS linkage.",
+        "health": "Liaquat University Hospital.",
+        "culture": "Sindhi-Urdu city, ralli and badshahi bazaar.",
+        "villages": "Qasimabad rural edge",
+        "about_original": "Second city of Sindh. Historic capital on the Indus."
       },
       {
         "slug": "jacobabad",
@@ -11738,7 +12380,12 @@
               "title": "Jacobabad"
             }
           ]
-        }
+        },
+        "education": "Public colleges.",
+        "health": "DHQ Jacobabad.",
+        "culture": "Upper Sindh junction town.",
+        "villages": "Thul, Garhi Khairo villages",
+        "about_original": "One of the hottest cities in the country, upper Sindh."
       },
       {
         "slug": "jamshoro",
@@ -11932,7 +12579,12 @@
               "title": "Kotri"
             }
           ]
-        }
+        },
+        "education": "University of Sindh, Mehran UET, LUMHS.",
+        "health": "Teaching hospitals of the university cluster.",
+        "culture": "Campus town plus Kotri industrial edge.",
+        "villages": "Manjhand, Sehwan is a neighbouring famous town in Jamshoro district",
+        "about_original": "University district on the Indus opposite Hyderabad."
       },
       {
         "slug": "kamber",
@@ -12142,7 +12794,12 @@
           "blocks": [],
           "checked": "2026-09-30",
           "sources": []
-        }
+        },
+        "education": "Colleges in Qambar and Shahdadkot.",
+        "health": "DHQ Qambar.",
+        "culture": "Sindhi interior near the Balochistan edge.",
+        "villages": "Warah, Miro Khan villages",
+        "about_original": "North-west Sindh district created from Larkana."
       },
       {
         "slug": "karachi-central",
@@ -12274,7 +12931,13 @@
           "blocks": [],
           "checked": "2026-09-30",
           "sources": []
-        }
+        },
+        "education": "Many public and private colleges.",
+        "health": "Abbasi Shaheed and other city hospitals nearby.",
+        "culture": "Urdu-speaking neighbourhoods and mixed apartment life.",
+        "villages": "Urban union councils — not rural villages",
+        "hq": "North Nazimabad belt",
+        "about_original": "Dense urban district of Karachi."
       },
       {
         "slug": "karachi-east",
@@ -12408,7 +13071,14 @@
             }
           ]
         },
-        "division": "Karachi Division"
+        "division": "Karachi Division",
+        "education": "University of Karachi sits on this side of the city map.",
+        "health": "Several large private and public hospitals.",
+        "culture": "Mixed middle-class Karachi.",
+        "villages": "Urban",
+        "issues": "Traffic and water.",
+        "hq": "Gulshan / Faisal Cantonment belt",
+        "about_original": "Large urban district including Gulshan-e-Iqbal side."
       },
       {
         "slug": "karachi-south",
@@ -12552,7 +13222,14 @@
             }
           ]
         },
-        "division": "Karachi Division"
+        "division": "Karachi Division",
+        "education": "DJ Sindh Govt Science College and historic schools; IBA nearby.",
+        "health": "Civil Hospital / Dow cluster and Jinnah Postgraduate Medical Centre.",
+        "culture": "The oldest public face of Karachi.",
+        "villages": "Urban",
+        "issues": "Heritage, congestion, sea-level planning.",
+        "hq": "Saddar / Clifton belt",
+        "about_original": "Historic core: Saddar, Empress Market, Clifton, old port neighbourhoods."
       },
       {
         "slug": "karachi-west",
@@ -12676,7 +13353,14 @@
             }
           ]
         },
-        "division": "Karachi Division"
+        "division": "Karachi Division",
+        "education": "Public colleges across Orangi and SITE.",
+        "health": "District hospitals and Korangi-West edge facilities.",
+        "culture": "Working-class Karachi.",
+        "villages": "Urban / Baldia edge",
+        "issues": "Katchi abadis upgrading.",
+        "hq": "Orangi / SITE belt",
+        "about_original": "Industrial SITE area and large planned / unplanned neighbourhoods."
       },
       {
         "slug": "keamari",
@@ -12811,7 +13495,13 @@
             }
           ]
         },
-        "division": "Karachi Division"
+        "division": "Karachi Division",
+        "education": "Colleges near the port towns.",
+        "health": "District hospitals.",
+        "culture": "Port and fishing communities.",
+        "villages": "Mauripur, harbour islands",
+        "issues": "Port traffic and coastal settlements.",
+        "about_original": "Port district split from Karachi West. Harbour and island settlements."
       },
       {
         "slug": "korangi",
@@ -12946,7 +13636,13 @@
             }
           ]
         },
-        "division": "Karachi Division"
+        "division": "Karachi Division",
+        "education": "Public colleges in Korangi and Landhi.",
+        "health": "Creek-side and industrial-area hospitals.",
+        "culture": "Planned townships of the 1960s plus new density.",
+        "villages": "Urban",
+        "issues": "Industry and housing together.",
+        "about_original": "Industrial-residential district of eastern Karachi."
       },
       {
         "slug": "malir",
@@ -13091,7 +13787,12 @@
           "blocks": [],
           "checked": "2026-09-30",
           "sources": []
-        }
+        },
+        "education": "Colleges in Malir and Gadap.",
+        "health": "DHQ / district hospitals.",
+        "culture": "Old Malir fruit farms next to new schemes.",
+        "villages": "Gadap, Thado, rural Malir",
+        "about_original": "Eastern gateway district of Karachi, still with rural Malir farms."
       },
       {
         "slug": "kashmore",
@@ -13245,7 +13946,12 @@
           "blocks": [],
           "checked": "2026-09-30",
           "sources": []
-        }
+        },
+        "education": "Colleges in Kashmore and Kandhkot.",
+        "health": "DHQ Kashmore.",
+        "culture": "Katcha riverine belt.",
+        "villages": "Kandhkot, Tangwani villages",
+        "about_original": "Upper Sindh on the Punjab-Balochistan corner, including Kandhkot."
       },
       {
         "slug": "khairpur",
@@ -13585,7 +14291,12 @@
               "title": "Kot Diji"
             }
           ]
-        }
+        },
+        "education": "Shah Abdul Latif University.",
+        "health": "DHQ / teaching setup Khairpur.",
+        "culture": "Faiz Mahal, dates, and Sindhi scholarship.",
+        "villages": "Kot Diji, Sobho Dero villages",
+        "about_original": "Former princely state. Date-palm district of upper Sindh."
       },
       {
         "slug": "larkana",
@@ -13786,7 +14497,12 @@
               "title": "Mohenjo daro"
             }
           ]
-        }
+        },
+        "education": "Chandka / SMBB Medical University and public colleges.",
+        "health": "Chandka Medical College Hospital.",
+        "culture": "Sindhi north, rice and the Indus civilisation site nearby.",
+        "villages": "Ratodero, Dokri villages",
+        "about_original": "North Sindh political and rice city, near Mohenjo-daro."
       },
       {
         "slug": "matiari",
@@ -13961,7 +14677,12 @@
               "title": "Sindhi literature"
             }
           ]
-        }
+        },
+        "education": "Colleges in Hala and Matiari.",
+        "health": "DHQ Matiari.",
+        "culture": "Hala tile and Ajrak workshops.",
+        "villages": "Hala, New Hala villages",
+        "about_original": "Small district carved from Hyderabad, known for Hala crafts."
       },
       {
         "slug": "mirpurkhas",
@@ -14189,7 +14910,12 @@
               "title": "Mirpur Khas"
             }
           ]
-        }
+        },
+        "education": "Public colleges and a university campus presence.",
+        "health": "DHQ / Muhammad Medical College linkage.",
+        "culture": "Sindhi town plus a historic Hindu community.",
+        "villages": "Sindhri, Digri villages",
+        "about_original": "Mango district of lower Sindh."
       },
       {
         "slug": "naushahro",
@@ -14409,7 +15135,12 @@
               "title": ""
             }
           ]
-        }
+        },
+        "education": "Colleges in Moro and Naushahro Feroze.",
+        "health": "DHQ Naushahro Feroze.",
+        "culture": "Sindhi barrage-command villages.",
+        "villages": "Moro, Bhiria villages",
+        "about_original": "Central Sindh agrarian district."
       },
       {
         "slug": "sanghar",
@@ -14674,7 +15405,12 @@
               "title": "Sanghar"
             }
           ]
-        }
+        },
+        "education": "Colleges in Sanghar, Shahdadpur and Tando Adam.",
+        "health": "DHQ Sanghar.",
+        "culture": "Sindhi towns on the Nawabshah–Mirpurkhas road.",
+        "villages": "Shahdadpur, Khipro villages",
+        "about_original": "Central-east Sindh, including Shahdadpur and Tando Adam."
       },
       {
         "slug": "sba",
@@ -14908,7 +15644,12 @@
               "title": "Nawabshah"
             }
           ]
-        }
+        },
+        "education": "Quaid-e-Awam University of Engineering and Peoples University of Medical.",
+        "health": "PMC Hospital Nawabshah.",
+        "culture": "Sindhi central city.",
+        "villages": "Sakrand, Daur villages",
+        "about_original": "Central Sindh, city of Nawabshah."
       },
       {
         "slug": "shikarpur",
@@ -15092,7 +15833,12 @@
               "title": "Shikarpur"
             }
           ]
-        }
+        },
+        "education": "Public colleges.",
+        "health": "DHQ Shikarpur.",
+        "culture": "Old merchant architecture.",
+        "villages": "Lakhi, Garhi Yasin villages",
+        "about_original": "Historic trading town of upper Sindh with carved wood haveli streets."
       },
       {
         "slug": "sujawal",
@@ -15250,7 +15996,12 @@
           "blocks": [],
           "checked": "2026-09-30",
           "sources": []
-        }
+        },
+        "education": "Colleges in Sujawal.",
+        "health": "DHQ Sujawal.",
+        "culture": "Indus delta villages.",
+        "villages": "Jati, Mirpur Bathoro villages",
+        "about_original": "Delta district split from Thatta."
       },
       {
         "slug": "sukkur",
@@ -15423,7 +16174,12 @@
               "title": "Sukkur"
             }
           ]
-        }
+        },
+        "education": "Sukkur IBA University and public colleges.",
+        "health": "GHQ / teaching hospitals Sukkur.",
+        "culture": "Upper Sindh river city.",
+        "villages": "Rohri, Pano Aqil villages",
+        "about_original": "Barrage city on the Indus, with Lansdowne Bridge and Sadhu Belo nearby."
       },
       {
         "slug": "tando-allahyar",
@@ -15535,7 +16291,12 @@
           "blocks": [],
           "checked": "2026-09-30",
           "sources": []
-        }
+        },
+        "education": "Public colleges.",
+        "health": "DHQ Tando Allahyar.",
+        "culture": "Sindhi farm towns.",
+        "villages": "Chamber villages",
+        "about_original": "Small fertile district east of Hyderabad."
       },
       {
         "slug": "tando-mk",
@@ -15667,7 +16428,12 @@
           "blocks": [],
           "checked": "2026-09-30",
           "sources": []
-        }
+        },
+        "education": "Public colleges.",
+        "health": "DHQ TMK.",
+        "culture": "Sindhi lower-valley towns.",
+        "villages": "Bulri Shah Karim villages",
+        "about_original": "Lower Sindh district toward the delta."
       },
       {
         "slug": "tharparkar",
@@ -15873,7 +16639,12 @@
               "title": "Thar Desert"
             }
           ]
-        }
+        },
+        "education": "Colleges in Mithi, Islamkot and Diplo.",
+        "health": "DHQ Mithi and civil hospital network.",
+        "culture": "Parkari, Dhatki, embroidery and desert monsoon.",
+        "villages": "Nagarparkar, Islamkot, Diplo",
+        "about_original": "Desert district with a large Hindu rural population and coal-field change around Islamkot."
       },
       {
         "slug": "thatta",
@@ -16077,7 +16848,12 @@
               "title": ""
             }
           ]
-        }
+        },
+        "education": "Colleges in Thatta and Gharo.",
+        "health": "DHQ Thatta.",
+        "culture": "Sindhi heritage of Shah Jahan Mosque and Makli.",
+        "villages": "Makli, Gharo, Keti Bandar",
+        "about_original": "Historic capital near Makli necropolis and the Keenjhar lake."
       },
       {
         "slug": "umerkot",
@@ -16264,7 +17040,12 @@
               "title": "Akbar"
             }
           ]
-        }
+        },
+        "education": "Colleges in Umerkot and Kunri.",
+        "health": "DHQ Umerkot.",
+        "culture": "Sindhi-Rajasthani border culture.",
+        "villages": "Kunri, Pithoro villages",
+        "about_original": "Birthplace associated with Emperor Akbar; desert-edge district."
       }
     ],
     "district_count": {
@@ -16458,7 +17239,12 @@
               "title": ""
             }
           ]
-        }
+        },
+        "education": "Degree college Awaran.",
+        "health": "DHQ Awaran.",
+        "culture": "Baloch mountain-coast interior.",
+        "villages": "Jhal Jhao villages",
+        "about_original": "Sparsely populated southern district."
       },
       {
         "slug": "barkhan",
@@ -16555,7 +17341,12 @@
               "title": "History of District (Barkhan)"
             }
           ]
-        }
+        },
+        "education": "Colleges in Barkhan.",
+        "health": "DHQ Barkhan.",
+        "culture": "Baloch highlands.",
+        "villages": "Rakhni belt",
+        "about_original": "Eastern Balochistan toward the Punjab border."
       },
       {
         "slug": "chagai",
@@ -16817,7 +17608,12 @@
               "title": "Wazir Khan Khosa – Kharan Desert"
             }
           ]
-        }
+        },
+        "education": "Colleges in Dalbandin.",
+        "health": "DHQ Dalbandin.",
+        "culture": "Desert Baloch and Brahui towns.",
+        "villages": "Nok Kundi belt",
+        "about_original": "Huge western desert district, including Taftan border logic."
       },
       {
         "slug": "chaman",
@@ -16956,7 +17752,12 @@
               "title": "History of District (Chaman)"
             }
           ]
-        }
+        },
+        "education": "Colleges in Chaman.",
+        "health": "DHQ Chaman.",
+        "culture": "Pashtun border bazaar.",
+        "villages": "Nearby karez villages",
+        "about_original": "Busy border city district toward Spin Boldak."
       },
       {
         "slug": "dera-bugti",
@@ -17167,7 +17968,13 @@
               "title": "Sui"
             }
           ]
-        }
+        },
+        "education": "Colleges in Dera Bugti and Sui.",
+        "health": "DHQ Dera Bugti.",
+        "culture": "Bugti country.",
+        "villages": "Sui, Phelawagh",
+        "issues": "Service delivery next to energy infrastructure.",
+        "about_original": "Eastern gas-field district."
       },
       {
         "slug": "duki",
@@ -17367,7 +18174,12 @@
               "title": ""
             }
           ]
-        }
+        },
+        "education": "Colleges in Duki.",
+        "health": "DHQ Duki.",
+        "culture": "Pashtun highlands.",
+        "villages": "Coal-belt villages",
+        "about_original": "Coal-field district created from Loralai."
       },
       {
         "slug": "gwadar",
@@ -17566,7 +18378,12 @@
               "title": "History of District (Gawadar)"
             }
           ]
-        }
+        },
+        "education": "University of Gwadar and colleges.",
+        "health": "DHQ Gwadar.",
+        "culture": "Makran coastal Baloch, fish harbours of Jiwani and Pishukan.",
+        "villages": "Jiwani, Pasni is a neighbouring district town — Pishukan, Sur Bandar",
+        "about_original": "Deep-sea port on the Makran coast. Fast-changing town with a very old fishing history."
       },
       {
         "slug": "harnai",
@@ -17700,7 +18517,12 @@
               "title": "History of District (Harnai)"
             }
           ]
-        }
+        },
+        "education": "Colleges in Harnai.",
+        "health": "DHQ Harnai.",
+        "culture": "Pass towns.",
+        "villages": "Sharigh belt",
+        "about_original": "Railway-pass district in north-east Balochistan."
       },
       {
         "slug": "hub",
@@ -17796,7 +18618,13 @@
               "title": ""
             }
           ]
-        }
+        },
+        "education": "Colleges in Hub.",
+        "health": "DHQ Hub.",
+        "culture": "Industrial Makran-Sindh edge.",
+        "villages": "Sakran belt",
+        "issues": "Factory town services.",
+        "about_original": "Industrial town district on the Sindh border, created from Lasbela."
       },
       {
         "slug": "jafarabad",
@@ -17942,7 +18770,12 @@
               "title": ""
             }
           ]
-        }
+        },
+        "education": "Colleges in Dera Allah Yar.",
+        "health": "DHQ Jafarabad.",
+        "culture": "Plain Baloch-Sindh mix.",
+        "villages": "Usta Muhammad was later separated",
+        "about_original": "Irrigated plains of Nasirabad division."
       },
       {
         "slug": "jhal-magsi",
@@ -18066,7 +18899,12 @@
           "blocks": [],
           "checked": "2026-09-30",
           "sources": []
-        }
+        },
+        "education": "Colleges in Gandawa.",
+        "health": "DHQ Jhal Magsi.",
+        "culture": "Magsi plain.",
+        "villages": "Gandawa villages",
+        "about_original": "Desert-plain district known for a desert rally in some years."
       },
       {
         "slug": "kalat",
@@ -18226,7 +19064,12 @@
               "title": "History of District (Kalat)"
             }
           ]
-        }
+        },
+        "education": "Colleges in Kalat.",
+        "health": "DHQ Kalat.",
+        "culture": "Brahui-Baloch highlands.",
+        "villages": "Mangochar belt",
+        "about_original": "Historic khanate highlands."
       },
       {
         "slug": "kech",
@@ -18416,7 +19259,12 @@
               "title": ""
             }
           ]
-        }
+        },
+        "education": "University of Turbat.",
+        "health": "DHQ / teaching setup Turbat.",
+        "culture": "Makran dates, balochi music.",
+        "villages": "Tump, Mand villages",
+        "about_original": "Kech river oasis; Turbat is the largest city of Makran after the Quetta comparison."
       },
       {
         "slug": "kharan",
@@ -18572,7 +19420,12 @@
               "title": "History of District (Kharan)"
             }
           ]
-        }
+        },
+        "education": "Colleges in Kharan.",
+        "health": "DHQ Kharan.",
+        "culture": "Desert Baloch.",
+        "villages": "Basima was related to Washuk split",
+        "about_original": "Old desert state, now a district of huge empty space."
       },
       {
         "slug": "khuzdar",
@@ -18823,7 +19676,12 @@
               "title": "History of District (Awaran)"
             }
           ]
-        }
+        },
+        "education": "University of Balochistan campus / colleges.",
+        "health": "DHQ Khuzdar.",
+        "culture": "Brahui-Baloch town.",
+        "villages": "Wadh, Zehri (some notified separately — confirm)",
+        "about_original": "Central highland city on the RCD road."
       },
       {
         "slug": "kohlu",
@@ -18972,7 +19830,12 @@
               "title": "History of District (Kohlu)"
             }
           ]
-        }
+        },
+        "education": "Colleges in Kohlu.",
+        "health": "DHQ Kohlu.",
+        "culture": "Marri country highlands.",
+        "villages": "Mawand belt",
+        "about_original": "Eastern highland district."
       },
       {
         "slug": "lasbela",
@@ -19224,7 +20087,12 @@
               "title": ""
             }
           ]
-        }
+        },
+        "education": "Lasbela University of Agriculture, Water and Marine Sciences at Uthal.",
+        "health": "DHQ Uthal.",
+        "culture": "Lasi and coastal Baloch.",
+        "villages": "Bela, Sonmiani, Hub was split away",
+        "about_original": "Coastal-plain district toward Hub and the Sindh border, including Sonmiani."
       },
       {
         "slug": "loralai",
@@ -19390,7 +20258,12 @@
               "title": ""
             }
           ]
-        }
+        },
+        "education": "Colleges in Loralai.",
+        "health": "DHQ Loralai.",
+        "culture": "Pashtun highlands.",
+        "villages": "Mekhtar belt",
+        "about_original": "Almond and highland town of north-east Balochistan."
       },
       {
         "slug": "mastung",
@@ -19533,7 +20406,12 @@
               "title": "History of District (Mastung)"
             }
           ]
-        }
+        },
+        "education": "Colleges in Mastung.",
+        "health": "DHQ Mastung.",
+        "culture": "Brahui valley.",
+        "villages": "Dasht belt",
+        "about_original": "Valley south of Quetta on the way to Kalat."
       },
       {
         "slug": "musakhel",
@@ -19685,7 +20563,12 @@
               "title": "History of District (Musakhail)"
             }
           ]
-        }
+        },
+        "education": "Colleges in Musakhel.",
+        "health": "DHQ Musakhel.",
+        "culture": "Pashtun-Baloch edge.",
+        "villages": "Kingri belt",
+        "about_original": "North-eastern district toward Punjab."
       },
       {
         "slug": "nasirabad",
@@ -19855,7 +20738,12 @@
               "title": "History of District (Dera Murad Jamali)"
             }
           ]
-        }
+        },
+        "education": "Colleges in DMJ.",
+        "health": "DHQ Nasirabad.",
+        "culture": "Irrigated plains.",
+        "villages": "Tamboo belt",
+        "about_original": "Canal plain of the Pat Feeder command."
       },
       {
         "slug": "nushki",
@@ -19963,7 +20851,12 @@
           "blocks": [],
           "checked": "2026-09-30",
           "sources": []
-        }
+        },
+        "education": "Colleges in Nushki.",
+        "health": "DHQ Nushki.",
+        "culture": "Desert gateway.",
+        "villages": "Ahmedwal belt",
+        "about_original": "Desert town on the old railway toward Dalbandin."
       },
       {
         "slug": "panjgur",
@@ -20140,7 +21033,12 @@
               "title": "History of District (Panjgoor)"
             }
           ]
-        }
+        },
+        "education": "Colleges in Panjgur.",
+        "health": "DHQ Panjgur.",
+        "culture": "Makran dates.",
+        "villages": "Parom belt",
+        "about_original": "Date-palm oasis of western Makran."
       },
       {
         "slug": "pishin",
@@ -20348,7 +21246,12 @@
               "title": "History of District (Pishin)"
             }
           ]
-        }
+        },
+        "education": "Colleges in Pishin.",
+        "health": "DHQ Pishin.",
+        "culture": "Pashtun orchards.",
+        "villages": "Barshore (sometimes separate)",
+        "about_original": "Valley north of Quetta, fruit and karez country."
       },
       {
         "slug": "qilla-abdullah",
@@ -20494,7 +21397,12 @@
               "title": ""
             }
           ]
-        }
+        },
+        "education": "Colleges in the district.",
+        "health": "DHQ Qilla Abdullah.",
+        "culture": "Pashtun border highlands.",
+        "villages": "Gulistan, Dobandi",
+        "about_original": "Border highlands west of Pishin. Chaman was later treated as its own district."
       },
       {
         "slug": "qilla-saifullah",
@@ -20628,7 +21536,13 @@
           "blocks": [],
           "checked": "2026-09-30",
           "sources": []
-        }
+        },
+        "education": "Colleges in Qilla Saifullah Muslim Bagh.",
+        "health": "DHQ Qilla Saifullah.",
+        "culture": "Pashtun orchards of Muslim Bagh.",
+        "villages": "Muslim Bagh, Loiband",
+        "issues": "Cold-chain for fruit.",
+        "about_original": "Apple country of north-east Balochistan."
       },
       {
         "slug": "quetta",
@@ -20820,7 +21734,31 @@
               "title": "Quetta Pakistan"
             }
           ]
-        }
+        },
+        "education": "University of Balochistan, BUITEMS, Bolan Medical College.",
+        "health": "Sandeman / BMC teaching hospitals.",
+        "culture": "Pashto, Brahui and Balochi together; winter dry fruit.",
+        "villages": "Hanna, Sariab rural",
+        "issues": "Water, quake-safe housing, smog in still winter air.",
+        "about_original": "Provincial capital in a high dry bowl. Fruit markets, cantonment and university city. Some tables now split Quetta East / West — confirm before citing a count.",
+        "tehsils_2023": [
+          {
+            "name": "Quetta City",
+            "major_towns": "Quetta"
+          },
+          {
+            "name": "Chiltan",
+            "major_towns": "Quetta"
+          },
+          {
+            "name": "Panjpai",
+            "major_towns": "Panjpai"
+          },
+          {
+            "name": "Sariab",
+            "major_towns": "Quetta"
+          }
+        ]
       },
       {
         "slug": "sherani",
@@ -20890,7 +21828,13 @@
           "blocks": [],
           "checked": "2026-09-30",
           "sources": []
-        }
+        },
+        "education": "Colleges limited.",
+        "health": "DHQ Sherani.",
+        "culture": "Sulaiman highlands.",
+        "villages": "Stano Raaghah belt",
+        "issues": "Forest and road access.",
+        "about_original": "Sulaiman mountain district created from Zhob."
       },
       {
         "slug": "sibi",
@@ -21013,7 +21957,13 @@
           "blocks": [],
           "checked": "2026-09-30",
           "sources": []
-        }
+        },
+        "education": "Colleges in Sibi.",
+        "health": "DHQ Sibi.",
+        "culture": "Baloch-Pashtun junction and the historic mela.",
+        "villages": "Talli belt",
+        "issues": "Heat and the long summer.",
+        "about_original": "Famous for Sibi Mela and a winter heat record reputation."
       },
       {
         "slug": "sohbatpur",
@@ -21156,7 +22106,13 @@
           "blocks": [],
           "checked": "2026-09-30",
           "sources": []
-        }
+        },
+        "education": "Colleges in Sohbatpur.",
+        "health": "DHQ Sohbatpur.",
+        "culture": "Canal plains.",
+        "villages": "Hairdin belt",
+        "issues": "New-district offices.",
+        "about_original": "Plains district created from Jafarabad."
       },
       {
         "slug": "surab",
@@ -21301,7 +22257,13 @@
               "title": ""
             }
           ]
-        }
+        },
+        "education": "Colleges in Surab.",
+        "health": "DHQ Surab.",
+        "culture": "Brahui highlands.",
+        "villages": "Surab valleys",
+        "issues": "Winter closure of side roads.",
+        "about_original": "Created from Kalat highlands."
       },
       {
         "slug": "usta-muhammad",
@@ -21363,7 +22325,13 @@
               "title": ""
             }
           ]
-        }
+        },
+        "education": "Colleges in Usta Muhammad.",
+        "health": "DHQ Usta Muhammad.",
+        "culture": "Irrigated plains.",
+        "villages": "Plain union councils",
+        "issues": "Waterlogging.",
+        "about_original": "Plains town district near the Sindh border."
       },
       {
         "slug": "washuk",
@@ -21486,7 +22454,13 @@
           "blocks": [],
           "checked": "2026-09-30",
           "sources": []
-        }
+        },
+        "education": "Colleges in Washuk / Basima.",
+        "health": "DHQ Washuk.",
+        "culture": "Desert and high dry valleys.",
+        "villages": "Basima, Mashkhel belt",
+        "issues": "Distance.",
+        "about_original": "Vast western district split from Kharan."
       },
       {
         "slug": "zhob",
@@ -21645,7 +22619,13 @@
               "title": "Zhob"
             }
           ]
-        }
+        },
+        "education": "Colleges in Zhob.",
+        "health": "DHQ Zhob.",
+        "culture": "Pashtun north.",
+        "villages": "Qamar Din Karez belt",
+        "issues": "Long highway distances.",
+        "about_original": "Northern gateway toward D.I. Khan."
       },
       {
         "slug": "ziarat",
@@ -21739,7 +22719,13 @@
           "blocks": [],
           "checked": "2026-09-30",
           "sources": []
-        }
+        },
+        "education": "Colleges in Ziarat.",
+        "health": "DHQ Ziarat.",
+        "culture": "Juniper highlands.",
+        "villages": "Koshak, Sanjawi (Sanjawi sometimes listed in Loralai / Ziarat discussions)",
+        "issues": "Forest protection and winter tourism load.",
+        "about_original": "Juniper forest hill station and Quaid-e-Azam Residency."
       },
       {
         "slug": "kachhi",
@@ -22492,7 +23478,14 @@
               "publisher": "P&DD Gilgit-Baltistan"
             }
           }
-        ]
+        ],
+        "education": "Colleges in Astore.",
+        "health": "DHQ Astore.",
+        "culture": "Shina mountain villages.",
+        "villages": "Gurikot, Rama",
+        "issues": "Snow isolation.",
+        "hq": "Eidghah / Astore",
+        "about_original": "High district toward Nanga Parbat’s Rupal side and Deosai approach."
       },
       {
         "slug": "diamer",
@@ -22587,7 +23580,14 @@
               "publisher": "P&DD Gilgit-Baltistan"
             }
           }
-        ]
+        ],
+        "education": "Colleges in Chilas.",
+        "health": "DHQ Chilas.",
+        "culture": "Shina gorge villages.",
+        "villages": "Chilas side valleys",
+        "issues": "KKH slides and summer heat in the gorge.",
+        "hq": "Chilas",
+        "about_original": "Indus gorge at Chilas, under Nanga Parbat."
       },
       {
         "slug": "ghanche",
@@ -22675,7 +23675,14 @@
               "publisher": "P&DD Gilgit-Baltistan"
             }
           }
-        ]
+        ],
+        "education": "Colleges in Khaplu.",
+        "health": "DHQ Ghanche.",
+        "culture": "Balti culture and apricot terraces.",
+        "villages": "Khaplu, Mashabrum belt",
+        "issues": "Winter closure.",
+        "hq": "Khaplu",
+        "about_original": "Eastern Baltistan toward the Siachen approach valleys. Khaplu palace country."
       },
       {
         "slug": "ghizer",
@@ -22770,7 +23777,14 @@
               "publisher": "P&DD Gilgit-Baltistan"
             }
           }
-        ]
+        ],
+        "education": "Colleges in Gahkuch.",
+        "health": "DHQ Ghizer.",
+        "culture": "Shina and Burushaski / Wakhi edges.",
+        "villages": "Punial, Phander",
+        "issues": "River floods.",
+        "hq": "Gahkuch",
+        "about_original": "Western district toward Shandur and Yasin (Yasin / Gupis later split in some notifications)."
       },
       {
         "slug": "gilgit",
@@ -22858,7 +23872,14 @@
               "publisher": "P&DD Gilgit-Baltistan"
             }
           }
-        ]
+        ],
+        "education": "Karakoram International University.",
+        "health": "DHQ Gilgit.",
+        "culture": "A bazaar of many mountain languages.",
+        "villages": "Danyor, Jutial rural",
+        "issues": "City growth on a narrow valley floor.",
+        "hq": "Gilgit",
+        "about_original": "Capital district at the meeting of rivers."
       },
       {
         "slug": "hunza",
@@ -22946,7 +23967,14 @@
               "publisher": "P&DD Gilgit-Baltistan"
             }
           }
-        ]
+        ],
+        "education": "Colleges in Aliabad and Karimabad.",
+        "health": "DHQ / civil hospital Hunza.",
+        "culture": "Burushaski and Wakhi, apricot and music.",
+        "villages": "Karimabad, Gulmit, Passu, Hussaini",
+        "issues": "Tourism load and Attabad-style lake risk.",
+        "hq": "Aliabad / Karimabad",
+        "about_original": "High literacy, terraces and tourism under Rakaposhi and Ladyfinger."
       },
       {
         "slug": "kharmang",
@@ -23034,7 +24062,14 @@
               "publisher": "P&DD Gilgit-Baltistan"
             }
           }
-        ]
+        ],
+        "education": "Colleges in Tolti.",
+        "health": "DHQ Kharmang.",
+        "culture": "Balti river villages.",
+        "villages": "Tolti, Mehdiabad",
+        "issues": "Narrow road.",
+        "hq": "Tolti",
+        "about_original": "Baltistan district on the Indus toward the Line of Control."
       },
       {
         "slug": "nagar",
@@ -23122,7 +24157,14 @@
               "publisher": "P&DD Gilgit-Baltistan"
             }
           }
-        ]
+        ],
+        "education": "Colleges in Nagar.",
+        "health": "DHQ Nagar.",
+        "culture": "Burushaski Nagar villages.",
+        "villages": "Hopper, Hispar",
+        "issues": "Glacier roads.",
+        "hq": "Nagar",
+        "about_original": "Across the river from Hunza, under Hopper and Hispar glaciers."
       },
       {
         "slug": "shigar",
@@ -23210,7 +24252,14 @@
               "publisher": "P&DD Gilgit-Baltistan"
             }
           }
-        ]
+        ],
+        "education": "Colleges in Shigar.",
+        "health": "DHQ Shigar.",
+        "culture": "Balti wooden mosques and polo.",
+        "villages": "Shigar, Askole approach",
+        "issues": "Expedition traffic versus village needs.",
+        "hq": "Shigar",
+        "about_original": "Valley of the Shigar River and the road toward Concordia / Baltoro."
       },
       {
         "slug": "skardu",
@@ -23305,7 +24354,14 @@
               "publisher": "P&DD Gilgit-Baltistan"
             }
           }
-        ]
+        ],
+        "education": "University of Baltistan and colleges.",
+        "health": "DHQ Skardu.",
+        "culture": "Balti city culture.",
+        "villages": "Satpara, Gamba",
+        "issues": "Airport weather and specialist care.",
+        "hq": "Skardu",
+        "about_original": "Main town of Baltistan on the Indus, gateway to Deosai and the high peaks."
       },
       {
         "slug": "roundu",
@@ -23376,7 +24432,14 @@
               "publisher": "P&DD Gilgit-Baltistan"
             }
           }
-        ]
+        ],
+        "education": "Colleges being listed in local notices.",
+        "health": "DHQ Roundu.",
+        "culture": "Balti Indus villages.",
+        "villages": "Roundu valley",
+        "issues": "New offices.",
+        "hq": "Dambudas / notified HQ",
+        "about_original": "Created from Skardu belt on the Indus."
       },
       {
         "slug": "gupis-yasin",
@@ -23447,7 +24510,14 @@
               "publisher": "P&DD Gilgit-Baltistan"
             }
           }
-        ]
+        ],
+        "education": "Colleges in Yasin and Gupis.",
+        "health": "DHQ Gupis-Yasin.",
+        "culture": "Yasin valley languages.",
+        "villages": "Yasin, Gupis, Phander edge",
+        "issues": "Snow on Shandur side.",
+        "hq": "Gupis / Yasin",
+        "about_original": "Split from Ghizer toward Shandur."
       },
       {
         "slug": "darel",
@@ -23518,7 +24588,14 @@
               "publisher": "P&DD Gilgit-Baltistan"
             }
           }
-        ]
+        ],
+        "education": "Local colleges.",
+        "health": "DHQ Darel.",
+        "culture": "Darel valley.",
+        "villages": "Darel villages",
+        "issues": "Road access.",
+        "hq": "Darel",
+        "about_original": "Indus-right valley district created in the Diamer belt."
       },
       {
         "slug": "tangir",
@@ -23589,7 +24666,14 @@
               "publisher": "P&DD Gilgit-Baltistan"
             }
           }
-        ]
+        ],
+        "education": "Local colleges.",
+        "health": "DHQ Tangir.",
+        "culture": "Tangir valley.",
+        "villages": "Tangir villages",
+        "issues": "Road access.",
+        "hq": "Tangir",
+        "about_original": "Sister valley of Darel in the Diamer highlands."
       }
     ],
     "district_count": {
@@ -23721,7 +24805,14 @@
               "publisher": "AJ&K Bureau of Statistics"
             }
           }
-        ]
+        ],
+        "education": "University of AJK and colleges.",
+        "health": "Combined Military / DHQ hospitals.",
+        "culture": "Pahari and Kashmiri city culture.",
+        "villages": "Garhi Dupatta, Rahim Kot",
+        "issues": "Hill-city traffic and quake-safe building.",
+        "hq": "Muzaffarabad",
+        "about_original": "Capital at the meeting of Neelum and Jhelum. Rebuilt after the 2005 earthquake."
       },
       {
         "slug": "hattian",
@@ -23828,7 +24919,14 @@
               "publisher": "AJ&K Bureau of Statistics"
             }
           }
-        ]
+        ],
+        "education": "Colleges in Hattian.",
+        "health": "DHQ Hattian Bala.",
+        "culture": "Jhelum valley villages.",
+        "villages": "Leepa approach from this belt",
+        "issues": "Slide-prone roads.",
+        "hq": "Hattian Bala",
+        "about_original": "Jhelum valley district created after 2005."
       },
       {
         "slug": "neelum",
@@ -23935,7 +25033,14 @@
               "publisher": "AJ&K Bureau of Statistics"
             }
           }
-        ]
+        ],
+        "education": "Colleges in Athmuqam and Sharda.",
+        "health": "DHQ Neelum.",
+        "culture": "Kashmiri valley, Sharda heritage.",
+        "villages": "Sharda, Kel, Dowarian",
+        "issues": "Single-road access in winter and monsoon.",
+        "hq": "Athmuqam",
+        "about_original": "Long north-east valley along the Neelum River."
       },
       {
         "slug": "mirpur",
@@ -24042,7 +25147,14 @@
               "publisher": "AJ&K Bureau of Statistics"
             }
           }
-        ]
+        ],
+        "education": "MUST and colleges.",
+        "health": "DHQ / New City hospitals.",
+        "culture": "Pothwari-Pahari town culture.",
+        "villages": "Dadyal (now often its own discussion), Islamgarh",
+        "issues": "Lake-shore planning.",
+        "hq": "Mirpur",
+        "about_original": "Mangla lake city with a large overseas Kashmiri link to Britain."
       },
       {
         "slug": "bhimber",
@@ -24149,7 +25261,14 @@
               "publisher": "AJ&K Bureau of Statistics"
             }
           }
-        ]
+        ],
+        "education": "Colleges in Bhimber and Samahni.",
+        "health": "DHQ Bhimber.",
+        "culture": "Chibhal towns.",
+        "villages": "Samahni, Barnala",
+        "issues": "Heat compared with the northern valleys.",
+        "hq": "Bhimber",
+        "about_original": "Southern-most AJK district toward the Punjab plain."
       },
       {
         "slug": "kotli",
@@ -24256,7 +25375,14 @@
               "publisher": "AJ&K Bureau of Statistics"
             }
           }
-        ]
+        ],
+        "education": "University of Kotli and colleges.",
+        "health": "DHQ Kotli.",
+        "culture": "Pahari towns.",
+        "villages": "Sehnsa, Charhoi",
+        "issues": "Hill roads.",
+        "hq": "Kotli",
+        "about_original": "Central-south AJK on the Poonch river system."
       },
       {
         "slug": "poonch",
@@ -24363,7 +25489,14 @@
               "publisher": "AJ&K Bureau of Statistics"
             }
           }
-        ]
+        ],
+        "education": "Poonch Medical College and public university presence.",
+        "health": "DHQ / teaching Rawalakot.",
+        "culture": "Pahari hill culture.",
+        "villages": "Hajira, Abbaspur",
+        "issues": "Winter cloud and slide roads.",
+        "hq": "Rawalakot",
+        "about_original": "Hill town of Rawalakot, often called the Pearl Valley."
       },
       {
         "slug": "bagh",
@@ -24470,7 +25603,14 @@
               "publisher": "AJ&K Bureau of Statistics"
             }
           }
-        ]
+        ],
+        "education": "Colleges in Bagh.",
+        "health": "DHQ Bagh.",
+        "culture": "Pahari hills.",
+        "villages": "Dhirkot, Hari Ghel",
+        "issues": "Quake-safe schools.",
+        "hq": "Bagh",
+        "about_original": "Hill district badly hit in 2005, since rebuilt as a district headquarters."
       },
       {
         "slug": "haveli",
@@ -24577,7 +25717,14 @@
               "publisher": "AJ&K Bureau of Statistics"
             }
           }
-        ]
+        ],
+        "education": "Colleges in Forward Kahuta.",
+        "health": "DHQ Haveli.",
+        "culture": "High border valleys.",
+        "villages": "Forward Kahuta villages",
+        "issues": "Access.",
+        "hq": "Forward Kahuta",
+        "about_original": "Eastern district toward the Line of Control."
       },
       {
         "slug": "sudhanoti",
@@ -24684,7 +25831,14 @@
               "publisher": "AJ&K Bureau of Statistics"
             }
           }
-        ]
+        ],
+        "education": "Cadet College Palandri and public colleges.",
+        "health": "DHQ Sudhanoti.",
+        "culture": "Pahari towns.",
+        "villages": "Trarkhel, Baloch villages of the district",
+        "issues": "Steep road to the capital.",
+        "hq": "Pallandri",
+        "about_original": "Hill district of Pallandri."
       }
     ],
     "district_count": {
