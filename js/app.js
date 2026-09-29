@@ -1,7 +1,7 @@
 const NAV = [
-  ["index.html", "Home"],
-  ["provinces-of-pakistan.html", "Provinces"],
-  ["districts-of-pakistan.html", "Districts"],
+  ["/", "Home"],
+  ["provinces.html", "Provinces"],
+  ["districts.html", "Districts"],
   ["culture.html", "Culture"],
   ["literature.html", "Literature"],
   ["geography.html", "Geography"],
@@ -14,8 +14,8 @@ const NAV = [
 const SITE = "https://mybook.pk";
 
 function currentPage() {
-  const p = location.pathname.split("/").pop() || "index.html";
-  return p === "" ? "index.html" : p;
+  const p = location.pathname.split("/").pop() || "/";
+  return p === "" || p === "index.html" ? "/" : p;
 }
 
 function enhanceHead() {
@@ -153,7 +153,9 @@ function renderChrome() {
   const header = document.getElementById("site-header");
   const footer = document.getElementById("site-footer");
   const page = currentPage();
-  if (header) {
+  // The header, breadcrumbs and footer are rendered as static HTML by scripts/build-site.js.
+  // Only fill them in here if a page was served without the static markup.
+  if (header && !header.children.length) {
     header.innerHTML = `
       <div class="topbar">
         <div class="container">
@@ -163,7 +165,7 @@ function renderChrome() {
       </div>
       <header class="site">
         <div class="container nav-wrap">
-          <a class="logo" href="index.html">
+          <a class="logo" href="/">
             <div class="logo-mark">★</div>
             <div>MyBook.Pk<small>Every province · every district</small></div>
           </a>
@@ -178,11 +180,13 @@ function renderChrome() {
           </nav>
         </div>
       </header>`;
+  }
+  if (header) {
     const btn = document.getElementById("menuBtn");
     const nav = document.getElementById("mainNav");
     if (btn && nav) setupMenu(btn, nav);
   }
-  if (footer) {
+  if (footer && !footer.children.length) {
     footer.innerHTML = `
       <footer>
         <div class="container foot-grid">
@@ -192,7 +196,7 @@ function renderChrome() {
           </div>
           <div>
             <strong>Explore</strong>
-            <p><a href="provinces-of-pakistan.html">Provinces</a><br><a href="districts-of-pakistan.html">Districts</a><br><a href="culture.html">Culture</a><br><a href="literature.html">Literature</a><br><a href="geography.html">Geography</a></p>
+            <p><a href="provinces.html">Provinces</a><br><a href="districts.html">Districts</a><br><a href="culture.html">Culture</a><br><a href="literature.html">Literature</a><br><a href="geography.html">Geography</a></p>
           </div>
           <div>
             <strong>Learn</strong>
@@ -204,8 +208,8 @@ function renderChrome() {
           </div>
         </div>
         <div class="container foot-bottom">
-          <span>© ${new Date().getFullYear()} MyBook.Pk · Built for young readers</span>
-          <span><a href="index.html">Home</a></span>
+          <span>© MyBook.Pk · Built for young readers</span>
+          <span><a href="/">Home</a></span>
         </div>
       </footer>`;
   }

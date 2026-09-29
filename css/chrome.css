@@ -1,0 +1,78 @@
+/* Static site chrome (header, navigation, breadcrumbs, footer) rendered by scripts/build-site.js.
+   Scoped to #site-header / #site-footer so it looks the same on pages that use css/style.css and on
+   standalone pages that only have their own inline styles (their generic header/nav/footer/ul/a rules
+   are overridden here). Values mirror css/style.css. */
+#site-header, #site-footer { --mb-green: #01411c; --mb-green-mid: #0b6b32; --mb-gold: #c9a227; --mb-ink: #1a1a1a; --mb-muted: #5c5c5c;
+  font-family: "Source Sans 3", system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.5; text-align: left; }
+#site-header *, #site-footer * { box-sizing: border-box; }
+#site-header .container, #site-footer .container { width: min(1280px, 94%); max-width: none; margin: 0 auto; padding: 0; background: none; box-shadow: none; border: 0; border-radius: 0; }
+#site-header ul, #site-header ol, #site-footer ul { list-style: none; margin: 0; padding: 0; }
+#site-header li, #site-footer li { margin: 0; padding: 0; }
+#site-header a, #site-footer a { text-decoration: none; }
+#site-header .topbar { background: var(--mb-green); color: #fff; font-size: 0.85rem; padding: 0.4rem 0; margin: 0; }
+#site-header .topbar .container { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+#site-header header.site { position: relative; display: block; background: #fff; color: var(--mb-ink); box-shadow: 0 2px 16px rgba(0,0,0,.06); padding: 0; margin: 0; min-height: 0; text-align: left; border: 0; }
+#site-header header.site::before, #site-header header.site::after { content: none; display: none; }
+#site-header .nav-wrap { display: flex; align-items: center; justify-content: space-between; padding: 0.7rem 0; gap: 1rem; }
+#site-header .logo { display: flex; align-items: center; gap: 0.7rem; color: var(--mb-green); font-weight: 700; min-width: 0; font-size: 1.25rem; line-height: 1.1; font-family: "Playfair Display", Georgia, serif; }
+#site-header .logo small { display: block; font-family: "Source Sans 3", system-ui, sans-serif; font-weight: 400; font-size: 0.72rem; color: var(--mb-muted); letter-spacing: .04em; }
+#site-header .logo-mark { width: 42px; height: 42px; border-radius: 50%; background: var(--mb-green); display: grid; place-items: center; color: #fff; font-size: 1.3rem; border: 2px solid var(--mb-gold); flex: none; }
+#site-header nav#mainNav { display: block; position: static; background: none; padding: 0; margin: 0; border: 0; box-shadow: none; }
+#site-header nav#mainNav ul { display: flex; gap: 1.1rem; flex-wrap: wrap; }
+#site-header nav#mainNav a { font-weight: 600; font-size: 0.95rem; color: var(--mb-ink); position: relative; background: none; padding: 0; }
+#site-header nav#mainNav a.active, #site-header nav#mainNav a:hover { color: var(--mb-green); }
+#site-header nav#mainNav a.active::after { content: ""; display: block; width: 1.35rem; height: 2px; margin-top: 0.22rem; background: var(--mb-gold); border-radius: 2px; }
+#site-header .nav-search { display: inline-flex; align-items: center; justify-content: center; }
+#site-header .nav-search svg { width: 18px; height: 18px; display: block; }
+#site-header .menu-btn { display: none; background: none; border: 0; font-size: 1.45rem; cursor: pointer; width: 44px; height: 44px; color: var(--mb-green); border-radius: 8px; }
+#site-header nav a:focus-visible, #site-header .logo:focus-visible, #site-header .menu-btn:focus-visible { outline: 2px solid var(--mb-gold); outline-offset: 3px; }
+#site-header nav.mb-breadcrumbs { display: block; position: static; background: #f7f4ee; border-bottom: 1px solid #ebe5d8; padding: 0.45rem 0; margin: 0; font-size: 0.88rem; box-shadow: none; }
+#site-header nav.mb-breadcrumbs ol { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+#site-header nav.mb-breadcrumbs li { color: var(--mb-muted); }
+#site-header nav.mb-breadcrumbs li + li::before { content: "›"; margin-right: 0.35rem; color: var(--mb-muted); }
+#site-header nav.mb-breadcrumbs a { color: var(--mb-green); font-weight: 600; font-size: inherit; }
+#site-header nav.mb-breadcrumbs a:hover { text-decoration: underline; }
+#site-footer footer { display: block; background: #012411; color: #d7e6db; padding: 2.6rem 0 1.2rem; margin: 2rem 0 0; text-align: left; font-size: 1rem; border: 0; }
+#site-footer footer::before, #site-footer footer::after { content: none; display: none; }
+#site-footer footer strong { color: #fff; font-size: 1rem; }
+#site-footer footer p { margin: 0.55rem 0 0; color: #d7e6db; font-size: 0.95rem; line-height: 1.7; }
+#site-footer footer a { color: #fff; }
+#site-footer footer a:hover { color: var(--mb-gold); }
+#site-footer .foot-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 1.5rem; }
+#site-footer .foot-bottom { border-top: 1px solid #1c4a2d; margin-top: 1.6rem; padding-top: 1rem; font-size: 0.85rem; display: flex; justify-content: space-between; flex-wrap: wrap; gap: .5rem; }
+.skip-link { display: none !important; }
+.back-to-top { position: fixed; right: 0.9rem; bottom: 0.9rem; width: 44px; height: 44px; border: 0; border-radius: 999px; background: #01411c; color: #fff; font-size: 1.2rem; cursor: pointer; z-index: 40; display: none; place-items: center; }
+.back-to-top.show { display: grid; }
+.census-table { width: 100%; border-collapse: collapse; margin: 1rem 0 0.4rem; font-size: 0.95rem; }
+.census-table caption { text-align: left; font-weight: 700; padding: 0 0 0.4rem; }
+.census-table th, .census-table td { border-bottom: 1px solid #e3e8e4; padding: 0.45rem 0.6rem; text-align: left; }
+.census-table td:nth-child(n+3) { text-align: right; font-variant-numeric: tabular-nums; }
+.district-group { margin-top: 1.6rem; }
+.district-group h2 { margin-bottom: 0.8rem; }
+.district-result[hidden], .district-group[hidden] { display: none; }
+@media (max-width: 900px) {
+  #site-footer .foot-grid { grid-template-columns: 1fr 1fr; }
+  #site-header .menu-btn { display: grid; place-items: center; }
+  #site-header nav#mainNav { display: none; }
+  #site-header nav#mainNav.open { display: block; position: absolute; left: 0; right: 0; top: 100%; background: #fff; padding: 0.4rem 1rem 0.9rem; box-shadow: 0 12px 40px rgba(1,65,28,.08); z-index: 80; border-top: 1px solid #edf1ee; }
+  #site-header nav#mainNav.open ul { flex-direction: column; gap: 0; }
+  #site-header nav#mainNav.open a { display: flex; align-items: center; min-height: 44px; padding: 0.25rem 0.1rem; border-bottom: 1px solid #f0f3f1; }
+  #site-header .topbar { font-size: 0.78rem; }
+}
+@media (max-width: 560px) {
+  #site-footer .foot-grid { grid-template-columns: 1fr; }
+  #site-header .container, #site-footer .container { width: calc(100% - 1.3rem); }
+  .census-table { font-size: 0.85rem; }
+  .census-table th, .census-table td { padding: 0.4rem 0.35rem; }
+}
+/* Quick Answers and related-links blocks written by scripts/enhance-district-seo.js */
+.prose > .district-search-answers, .prose > .seo-related-reading { padding: 0 0 1.4rem; }
+.district-search-answers dl { display: grid; grid-template-columns: minmax(8rem, max-content) 1fr; gap: 0.4rem 1.2rem; margin: 0.8rem 0 0; }
+.district-search-answers dt { font-weight: 700; }
+.district-search-answers dd { margin: 0; }
+.seo-related-reading ul { display: flex; flex-wrap: wrap; gap: 0.4rem 1.2rem; list-style: none; padding: 0; margin: 0.6rem 0 1rem; }
+.seo-related-reading h3 { margin-top: 0.6rem; }
+@media (max-width: 560px) {
+  .district-search-answers dl { grid-template-columns: 1fr; gap: 0.1rem; }
+  .district-search-answers dd { margin-bottom: 0.5rem; }
+}
