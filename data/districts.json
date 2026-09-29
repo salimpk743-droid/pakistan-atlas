@@ -16338,12 +16338,8 @@
         "name": "Chagai",
         "hq": "Dalbandin",
         "pop": "269,192 (2023 census)",
-        "about": "Huge western desert district, including Taftan border logic.",
-        "education": "Colleges in Dalbandin.",
-        "health": "DHQ Dalbandin.",
-        "culture": "Desert Baloch and Brahui towns.",
+        "about": "Largest district of Pakistan by area (44,748 km²), in north-west Balochistan; home of the Saindak and Reko Diq copper-gold projects.",
         "issues": "Water and extreme distances.",
-        "villages": "Nok Kundi belt",
         "division": "Rakhshan Division",
         "division_source": "Balochistan Revenue Department notification of 8 July 2026",
         "population_2023": 269192,
@@ -16456,7 +16452,148 @@
             "tehsil": "Dalbandin",
             "population_2023": 20054
           }
-        ]
+        ],
+        "profile_checked": "2026-09-30",
+        "sources": [
+          {
+            "url": "https://bhc.gov.pk/district-judiciary/chaghi/introduction/history",
+            "publisher": "High Court of Balochistan",
+            "title": "History of District (Chaghi)",
+            "date": ""
+          },
+          {
+            "url": "https://saindak.com.pk/history-of-sml/",
+            "publisher": "Saindak Metals Limited",
+            "title": "History of SML",
+            "date": ""
+          },
+          {
+            "url": "https://www.barrick.com/English/news/news-details/2022/barrick-pakistan-and-balochistan-agree-in-principle-to-restart-reko-diq-project/default.aspx",
+            "publisher": "Barrick",
+            "title": "Barrick, Pakistan and Balochistan Agree in Principle to Restart Reko Diq Project",
+            "date": "20 March 2022"
+          },
+          {
+            "url": "https://s25.q4cdn.com/322814910/files/doc_downloads/reko_diq/Barrick_RekoDiq_TechnicalReport_20241231.pdf",
+            "publisher": "Barrick",
+            "title": "Technical Report on the Reko Diq Project",
+            "date": "31 December 2024"
+          },
+          {
+            "url": "https://nuke.fas.org/guide/pakistan/facility/kharan.htm",
+            "publisher": "Federation of American Scientists",
+            "title": "Wazir Khan Khosa – Kharan Desert",
+            "date": ""
+          },
+          {
+            "url": "https://isis-online.org/isis-reports/pakistans-may-30-1998-nuclear-test-site-preliminary-findings",
+            "publisher": "Institute for Science and International Security",
+            "title": "Pakistan’s May 30, 1998 Nuclear Test Site: Preliminary Findings",
+            "date": ""
+          }
+        ],
+        "faq_extra": [
+          {
+            "q": "Which is the largest district of Pakistan by area?",
+            "a": "Chagai, at 44,748 km² in the 2023 census.",
+            "source": {
+              "url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_1_balochistan_districts.pdf",
+              "publisher": "Pakistan Bureau of Statistics"
+            }
+          },
+          {
+            "q": "Where were Pakistan’s 1998 nuclear tests held?",
+            "a": "The 28 May 1998 tests were at Ras Koh in Chagai; the 30 May test was in the Kharan Desert, about 100 km away.",
+            "source": {
+              "url": "https://nuke.fas.org/guide/pakistan/facility/kharan.htm",
+              "publisher": "Federation of American Scientists"
+            }
+          },
+          {
+            "q": "Who owns Reko Diq?",
+            "a": "Barrick holds 50%. The government of Balochistan holds 25% (10% free-carried plus 15% through a company it owns), and federal state-owned enterprises hold 25%.",
+            "source": {
+              "url": "https://www.barrick.com/English/news/news-details/2022/barrick-pakistan-and-balochistan-agree-in-principle-to-restart-reko-diq-project/default.aspx",
+              "publisher": "Barrick"
+            }
+          },
+          {
+            "q": "When was copper discovered at Saindak?",
+            "a": "In 1961, by the Geological Survey of Pakistan.",
+            "source": {
+              "url": "https://saindak.com.pk/history-of-sml/",
+              "publisher": "Saindak Metals Limited"
+            }
+          }
+        ],
+        "urdu": {
+          "name": "چاغی",
+          "hq": "دالبندین",
+          "units": {
+            "Chagai": "چاغی",
+            "Dalbandin": "دالبندین",
+            "Nokundi": "نوکنڈی",
+            "Taftan": "تفتان",
+            "Yak Machh": "یک مچھ"
+          },
+          "towns": {
+            "Dalbandin": "دالبندین"
+          },
+          "blocks": [
+            {
+              "h": "پاکستان کا سب سے بڑا ضلع",
+              "p": [
+                "ضلع چاغی رقبے کے لحاظ سے پاکستان کا سب سے بڑا ضلع ہے اور بلوچستان کے شمال مغربی کونے میں واقع ہے (<a href=\"https://bhc.gov.pk/district-judiciary/chaghi/introduction/history\" rel=\"noopener\">بلوچستان ہائی کورٹ</a>)۔ 2023 کی مردم شماری میں اس کا رقبہ 44,748 مربع کلومیٹر تھا، جو کسی بھی دوسرے ضلع سے زیادہ ہے۔"
+              ]
+            },
+            {
+              "h": "سیندک کاپر گولڈ منصوبہ",
+              "p": [
+                "جیولوجیکل سروے آف پاکستان نے 1961 میں سیندک میں تانبے کے ذخائر دریافت کیے، اور 1972–73 میں امریکی جیولوجیکل سروے کے ساتھ ڈرلنگ کے ذریعے ان کی تصدیق ہوئی۔ ریسورس ڈویلپمنٹ کارپوریشن (اب سیندک میٹلز لمیٹڈ) اپریل 1974 میں قائم ہوئی۔ 1995 کی آزمائشی پیداوار میں 1,500 ٹن بلسٹر کاپر حاصل ہوا (<a href=\"https://saindak.com.pk/history-of-sml/\" rel=\"noopener\">سیندک میٹلز لمیٹڈ</a>)۔"
+              ]
+            },
+            {
+              "h": "ریکو ڈک",
+              "p": [
+                "ریکو ڈک ضلع چاغی میں نوکنڈی کے قریب واقع ہے؛ افغان سرحد تقریباً 35 کلومیٹر شمال اور ایرانی سرحد تقریباً 55 کلومیٹر مغرب میں ہے (<a href=\"https://s25.q4cdn.com/322814910/files/doc_downloads/reko_diq/Barrick_RekoDiq_TechnicalReport_20241231.pdf\" rel=\"noopener\">بیرک تکنیکی رپورٹ</a>)۔ یہ منصوبہ 2011 میں لائسنس کے تنازع کی وجہ سے معطل ہوا۔ 20 مارچ 2022 کے فریم ورک کے تحت 50 فیصد حصہ بیرک کا ہے؛ باقی 50 فیصد میں حکومت بلوچستان کا 10 فیصد مفت حصہ، اس کی ملکیتی کمپنی کا 15 فیصد اور وفاقی سرکاری اداروں کا 25 فیصد شامل ہے (<a href=\"https://www.barrick.com/English/news/news-details/2022/barrick-pakistan-and-balochistan-agree-in-principle-to-restart-reko-diq-project/default.aspx\" rel=\"noopener\">بیرک</a>)۔"
+              ]
+            },
+            {
+              "h": "1998 کے ایٹمی تجربات",
+              "p": [
+                "پاکستان نے 28 مئی 1998 کو ضلع چاغی کے راس کوہ کے علاقے میں ایٹمی تجربات کیے۔ 30 مئی 1998 کا تجربہ تقریباً 100 کلومیٹر دور خاران کے صحرا میں کیا گیا، چاغی کے پہاڑوں میں نہیں (<a href=\"https://nuke.fas.org/guide/pakistan/facility/kharan.htm\" rel=\"noopener\">فیڈریشن آف امریکن سائنٹسٹس</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://bhc.gov.pk/district-judiciary/chaghi/introduction/history",
+              "publisher": "High Court of Balochistan",
+              "title": "History of District (Chaghi)"
+            },
+            {
+              "url": "https://saindak.com.pk/history-of-sml/",
+              "publisher": "Saindak Metals Limited",
+              "title": "History of SML"
+            },
+            {
+              "url": "https://s25.q4cdn.com/322814910/files/doc_downloads/reko_diq/Barrick_RekoDiq_TechnicalReport_20241231.pdf",
+              "publisher": "Barrick",
+              "title": "Technical Report on the Reko Diq Project"
+            },
+            {
+              "url": "https://www.barrick.com/English/news/news-details/2022/barrick-pakistan-and-balochistan-agree-in-principle-to-restart-reko-diq-project/default.aspx",
+              "publisher": "Barrick",
+              "title": "Barrick, Pakistan and Balochistan Agree in Principle to Restart Reko Diq Project"
+            },
+            {
+              "url": "https://nuke.fas.org/guide/pakistan/facility/kharan.htm",
+              "publisher": "Federation of American Scientists",
+              "title": "Wazir Khan Khosa – Kharan Desert"
+            }
+          ]
+        }
       },
       {
         "slug": "chaman",
