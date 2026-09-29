@@ -73,14 +73,22 @@ async function main() {
   let failed = false;
   for (let i = 0; i < urls.length; i += 10000) {
     const urlList = urls.slice(i, i + 10000);
-    const r = await fetch(ENDPOINT, {
-      method: "POST",
-      headers: { "content-type": "application/json; charset=utf-8" },
-      body: JSON.stringify({ host: HOST, key: KEY, keyLocation: KEY_LOCATION, urlList }),
-    });
-    console.log(`IndexNow responded ${r.status} for ${urlList.length} URLs.`);
-    // 200 = accepted, 202 = accepted, key validation pending. 429 = too many requests (not an error in our setup).
-    if (![200, 202, 429].includes(r.status)) { failed = true; console.error(await r.text()); }
+    const body = JSON.stringify({ host: HOST, key: KEY, keyLocation: KEY_LOCATION, urlList });
+    // 200 = accepted, 202 = accepted, key validation pending, 429 = too many requests (not an error here).
+    // 403 SiteVerificationNotCompleted is returned while IndexNow is still checking a new key file: retry a few
+    // times, then only warn - the next push submits its own changes once verification has completed.
+    for (let attempt = 1; ; attempt++) {
+      const r = await fetch(ENDPOINT, { method: "POST", headers: { "content-type": "application/json; charset=utf-8" }, body });
+      const text = await r.text();
+      console.log(`IndexNow responded ${r.status} for ${urlList.length} URLs (attempt ${attempt}).`);
+      if ([200, 202, 429].includes(r.status)) break;
+      if (r.status === 403 && /SiteVerificationNotCompleted/.test(text)) {
+        if (attempt < 4) { await new Promise((res) => setTimeout(res, 60000)); continue; }
+        console.warn(`::warning::IndexNow key verification is still pending; these URLs were not accepted: ${text}`);
+        break;
+      }
+      failed = true; console.error(text); break;
+    }
   }
   urls.forEach((u) => console.log(`  ${u}`));
   if (failed) process.exit(1);
