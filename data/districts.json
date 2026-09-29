@@ -5620,121 +5620,443 @@
         "slug": "murree",
         "name": "Murree",
         "hq": "Murree",
-        "pop": "Newer district — confirm latest PBS row",
-        "about": "Hill district separated from Rawalpindi. Colonial hill station and the road to Kashmir.",
-        "education": "Colleges in Murree and Kotli Sattian.",
-        "health": "DHQ / THQ hill hospitals; serious cases often go to Rawalpindi.",
-        "culture": "Hill towns, tourism and Pahari speech.",
-        "issues": "Landslides, unplanned hotels, winter access.",
-        "villages": "Galiyat, Kotli Sattian villages",
-        "census_2023_row": {
+        "about": "Hill district of Rawalpindi Division formed from Murree and Kotli Sattian tehsils of Rawalpindi; confirmed in the December 2024 notification.",
+        "profile_checked": "2026-09-29",
+        "sources": [
+          {
+            "url": "https://en.wikisource.org/wiki/Page:The_Imperial_Gazetteer_of_India_-_Volume_10_(2nd_edition).pdf/31",
+            "publisher": "Imperial Gazetteer of India (1908), via Wikisource",
+            "title": "Murree (vol. 10)",
+            "date": ""
+          },
+          {
+            "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Murree",
+            "publisher": "Encyclopaedia Britannica (1911), via Wikisource",
+            "title": "Murree",
+            "date": ""
+          },
+          {
+            "url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_12_punjab_districts.pdf",
+            "publisher": "Pakistan Bureau of Statistics",
+            "title": "Census 2023, Table 12: literacy and out-of-school children (Punjab)",
+            "date": ""
+          }
+        ],
+        "faq_extra": [
+          {
+            "q": "When did Murree become a district?",
+            "a": "Murree was approved as a district on 14 October 2022. The notification was withdrawn in February 2023, and Murree was made a full district again in the Punjab notification of December 2024.",
+            "source": {
+              "url": "https://propakistani.pk/2024/12/20/punjab-gets-new-divisions-districts-and-tehsils/",
+              "publisher": "ProPakistani"
+            }
+          },
+          {
+            "q": "Which tehsils are in Murree District?",
+            "a": "Two: Murree and Kotli Sattian, both formerly part of Rawalpindi District.",
+            "source": {
+              "url": "https://www.dawn.com/news/1715244",
+              "publisher": "Dawn"
+            }
+          },
+          {
+            "q": "What is the population of Murree District?",
+            "a": "The 2023 census counted 372,947 people in the Murree (252,526) and Kotli Sattian (120,421) tehsil rows, then part of Rawalpindi District. PBS published no separate district total.",
+            "source": {
+              "url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_1_punjab_districts.pdf",
+              "publisher": "Pakistan Bureau of Statistics"
+            }
+          }
+        ],
+        "created": "Approved 14 October 2022; withdrawn February 2023; restored by the Punjab notification of December 2024",
+        "predecessor": "rawalpindi",
+        "division": "Rawalpindi Division",
+        "tehsils_notified": [
+          "Murree",
+          "Kotli Sattian"
+        ],
+        "census_2023_rows": {
           "parent": "rawalpindi",
-          "name": "Murree",
-          "type": "tehsil",
-          "population_2023": 252526,
-          "area_km2": 434,
-          "density_2023": 581.86,
-          "urban_proportion_2023": 9.97,
-          "growth_rate_2017_2023": 1.35,
-          "literacy_2023": 84.79,
-          "source_url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_1_punjab_districts.pdf"
-        }
+          "units": [
+            {
+              "name": "Murree",
+              "type": "tehsil",
+              "population_2023": 252526,
+              "area_km2": 434,
+              "literacy_2023": 84.79
+            },
+            {
+              "name": "Kotli Sattian",
+              "type": "tehsil",
+              "population_2023": 120421,
+              "area_km2": 304,
+              "literacy_2023": 88.2
+            }
+          ],
+          "source_url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_1_punjab_districts.pdf",
+          "note": "The census was taken before the district was restored, so PBS gives no district total; the two rows add up to 372,947 people on 738 km²."
+        },
+        "admin_sources": [
+          {
+            "url": "https://www.dawn.com/news/1715039",
+            "publisher": "Dawn",
+            "title": "Punjab to have five new districts",
+            "date": "15 October 2022"
+          },
+          {
+            "url": "https://www.dawn.com/news/1715244",
+            "publisher": "Dawn",
+            "title": "Murree district to get 31 new departments, 3,600 staffers",
+            "date": "16 October 2022"
+          },
+          {
+            "url": "https://www.dawn.com/news/1737525",
+            "publisher": "Dawn",
+            "title": "Notification declaring Murree a district withdrawn",
+            "date": "17 February 2023"
+          },
+          {
+            "url": "https://propakistani.pk/2024/12/20/punjab-gets-new-divisions-districts-and-tehsils/",
+            "publisher": "ProPakistani",
+            "title": "Punjab Gets New Divisions, Districts and Tehsils",
+            "date": "20 December 2024"
+          },
+          {
+            "url": "https://dailypakistan.com.pk/21-Dec-2024/1786990",
+            "publisher": "Daily Pakistan (Urdu)",
+            "title": "Punjab districts and tehsils notified; Kot Addu and Chowk Sarwar Shaheed included",
+            "date": "21 December 2024"
+          }
+        ],
+        "created_year": "2022"
       },
       {
         "slug": "talagang",
         "name": "Talagang",
         "hq": "Talagang",
-        "pop": "Newer district — confirm latest PBS row",
-        "about": "Created from Chakwal. Dry Potohar and salt-range west.",
-        "education": "Government colleges in Talagang.",
-        "health": "DHQ Talagang.",
-        "culture": "Potohari plateau villages.",
-        "issues": "New district still building offices and specialist wards.",
-        "villages": "Lawer, Talagang rural unions",
-        "census_2023_row": {
+        "about": "Rawalpindi Division district formed from Talagang and Lawa tehsils of Chakwal; approved in October 2022 and confirmed in December 2024.",
+        "profile_checked": "2026-09-29",
+        "sources": [
+          {
+            "url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_12_punjab_districts.pdf",
+            "publisher": "Pakistan Bureau of Statistics",
+            "title": "Census 2023, Table 12: literacy and out-of-school children (Punjab)",
+            "date": ""
+          }
+        ],
+        "faq_extra": [
+          {
+            "q": "When did Talagang become a district?",
+            "a": "Talagang was approved as a district on 14 October 2022 and is listed as a district of Rawalpindi Division in the Punjab notification of December 2024.",
+            "source": {
+              "url": "https://propakistani.pk/2024/12/20/punjab-gets-new-divisions-districts-and-tehsils/",
+              "publisher": "ProPakistani"
+            }
+          },
+          {
+            "q": "Which tehsils are in Talagang District?",
+            "a": "Two: Talagang and Lawa, both formerly in Chakwal District.",
+            "source": {
+              "url": "https://tribune.com.pk/story/2381771",
+              "publisher": "The Express Tribune"
+            }
+          }
+        ],
+        "created": "Approved 14 October 2022; confirmed in the Punjab notification of December 2024",
+        "predecessor": "chakwal",
+        "division": "Rawalpindi Division",
+        "tehsils_notified": [
+          "Talagang",
+          "Lawa"
+        ],
+        "census_2023_rows": {
           "parent": "chakwal",
-          "name": "Talagang",
-          "type": "tehsil",
-          "population_2023": 457635,
-          "area_km2": 2022,
-          "density_2023": 226.33,
-          "urban_proportion_2023": 17.36,
-          "growth_rate_2017_2023": 1.86,
-          "literacy_2023": 75.63,
-          "source_url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_1_punjab_districts.pdf"
-        }
+          "units": [
+            {
+              "name": "Talagang",
+              "type": "tehsil",
+              "population_2023": 457635,
+              "area_km2": 2022,
+              "literacy_2023": 75.63
+            },
+            {
+              "name": "Lawa",
+              "type": "tehsil",
+              "population_2023": 144611,
+              "area_km2": 910,
+              "literacy_2023": 71.37
+            }
+          ],
+          "source_url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_1_punjab_districts.pdf",
+          "note": "PBS gives no district total; the two rows add up to 602,246 people on 2,932 km²."
+        },
+        "admin_sources": [
+          {
+            "url": "https://www.dawn.com/news/1715039",
+            "publisher": "Dawn",
+            "title": "Punjab to have five new districts",
+            "date": "15 October 2022"
+          },
+          {
+            "url": "https://tribune.com.pk/story/2381771",
+            "publisher": "The Express Tribune",
+            "title": "Two new districts carved out of Pindi Division",
+            "date": "16 October 2022"
+          },
+          {
+            "url": "https://propakistani.pk/2024/12/20/punjab-gets-new-divisions-districts-and-tehsils/",
+            "publisher": "ProPakistani",
+            "title": "Punjab Gets New Divisions, Districts and Tehsils",
+            "date": "20 December 2024"
+          },
+          {
+            "url": "https://dailypakistan.com.pk/21-Dec-2024/1786990",
+            "publisher": "Daily Pakistan (Urdu)",
+            "title": "Punjab districts and tehsils notified; Kot Addu and Chowk Sarwar Shaheed included",
+            "date": "21 December 2024"
+          }
+        ],
+        "created_year": "2022"
       },
       {
         "slug": "wazirabad",
         "name": "Wazirabad",
         "hq": "Wazirabad",
-        "pop": "Newer district — confirm latest PBS row",
-        "about": "Chenab industrial town, cut out of Gujranwala. Known for cutlery.",
-        "education": "Colleges in Wazirabad.",
-        "health": "DHQ / THQ Wazirabad.",
-        "culture": "Workshop and river-town Punjabi life.",
-        "issues": "Industry safety and the paperwork of a new district.",
-        "villages": "Ghakhar belt villages",
-        "census_2023_row": {
+        "about": "Gujrat Division district formed from Wazirabad tehsil of Gujranwala in October 2022, with Wazirabad and Alipur Chatha tehsils.",
+        "profile_checked": "2026-09-29",
+        "sources": [
+          {
+            "url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_12_punjab_districts.pdf",
+            "publisher": "Pakistan Bureau of Statistics",
+            "title": "Census 2023, Table 12: literacy and out-of-school children (Punjab)",
+            "date": ""
+          }
+        ],
+        "faq_extra": [
+          {
+            "q": "Which division is Wazirabad in?",
+            "a": "Gujrat Division. The Punjab notification of 18 December 2024 kept Wazirabad District and confirmed Gujrat as the province’s 10th division.",
+            "source": {
+              "url": "https://www.dawn.com/news/1880708",
+              "publisher": "Dawn"
+            }
+          },
+          {
+            "q": "Which tehsils are in Wazirabad District?",
+            "a": "Two: Wazirabad and Alipur Chatha. Alipur Chatha was carved out of the old Wazirabad tehsil in October 2022.",
+            "source": {
+              "url": "https://www.dawn.com/news/1715607",
+              "publisher": "Dawn"
+            }
+          }
+        ],
+        "created": "Notified October 2022; kept in the Punjab notification of 18 December 2024",
+        "predecessor": "gujranwala",
+        "division": "Gujrat Division",
+        "tehsils_notified": [
+          "Wazirabad",
+          "Alipur Chatha"
+        ],
+        "census_2023_rows": {
           "parent": "gujranwala",
-          "name": "Wazirabad",
-          "type": "tehsil",
-          "population_2023": 993412,
-          "area_km2": 1196,
-          "density_2023": 830.61,
-          "urban_proportion_2023": 37.15,
-          "growth_rate_2017_2023": 3.04,
-          "literacy_2023": 77.39,
-          "source_url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_1_punjab_districts.pdf"
-        }
+          "units": [
+            {
+              "name": "Wazirabad",
+              "type": "tehsil",
+              "population_2023": 993412,
+              "area_km2": 1196,
+              "literacy_2023": 77.39
+            }
+          ],
+          "source_url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_1_punjab_districts.pdf",
+          "note": "This single row covers the whole of the present district, including Alipur Chatha."
+        },
+        "admin_sources": [
+          {
+            "url": "https://www.dawn.com/news/1715607",
+            "publisher": "Dawn",
+            "title": "No popular demand for Wazirabad upgrade, inclusion in Gujrat",
+            "date": "18 October 2022"
+          },
+          {
+            "url": "https://www.dawn.com/news/1738383",
+            "publisher": "Dawn",
+            "title": "Suspension of Gujrat division status stayed",
+            "date": "22 February 2023"
+          },
+          {
+            "url": "https://www.dawn.com/news/1880708",
+            "publisher": "Dawn",
+            "title": "Notification confirms Gujrat as 10th division of Punjab",
+            "date": "24 December 2024"
+          }
+        ],
+        "created_year": "2022"
       },
       {
         "slug": "kotaddu",
         "name": "Kot Addu",
         "hq": "Kot Addu",
-        "pop": "Newer district — confirm latest PBS row",
-        "about": "Separated from Muzaffargarh on the Indus plain.",
-        "education": "Public colleges in Kot Addu.",
-        "health": "DHQ Kot Addu.",
-        "culture": "Saraiki riverine towns.",
-        "issues": "Floods and new-district staffing.",
-        "villages": "Indus-belt union councils",
-        "census_2023_row": {
+        "about": "Dera Ghazi Khan Division district formed from Kot Addu and Chowk Sarwar Shaheed tehsils of Muzaffargarh; notified in December 2024.",
+        "profile_checked": "2026-09-29",
+        "sources": [
+          {
+            "url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_12_punjab_districts.pdf",
+            "publisher": "Pakistan Bureau of Statistics",
+            "title": "Census 2023, Table 12: literacy and out-of-school children (Punjab)",
+            "date": ""
+          }
+        ],
+        "faq_extra": [
+          {
+            "q": "When did Kot Addu become a district?",
+            "a": "Kot Addu was approved as a district on 14 October 2022 and notified as a district of Dera Ghazi Khan Division in December 2024.",
+            "source": {
+              "url": "https://www.nation.com.pk/21-Dec-2024/kot-addu-taunsa-notified-as-districts-in-dg-khan-division",
+              "publisher": "The Nation"
+            }
+          },
+          {
+            "q": "Which tehsils are in Kot Addu District?",
+            "a": "Two: Kot Addu and Chowk Sarwar Shaheed, both formerly in Muzaffargarh District.",
+            "source": {
+              "url": "https://www.nation.com.pk/21-Dec-2024/kot-addu-taunsa-notified-as-districts-in-dg-khan-division",
+              "publisher": "The Nation"
+            }
+          }
+        ],
+        "created": "Approved 14 October 2022; notified December 2024",
+        "predecessor": "muzaffargarh",
+        "division": "Dera Ghazi Khan Division",
+        "tehsils_notified": [
+          "Kot Addu",
+          "Chowk Sarwar Shaheed"
+        ],
+        "census_2023_rows": {
           "parent": "muzaffargarh",
-          "name": "Kot Addu",
-          "type": "tehsil",
-          "population_2023": 1072180,
-          "area_km2": 1686,
-          "density_2023": 635.93,
-          "urban_proportion_2023": 20.56,
-          "growth_rate_2017_2023": 1.48,
-          "literacy_2023": 58.19,
-          "source_url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_1_punjab_districts.pdf"
-        }
+          "units": [
+            {
+              "name": "Kot Addu",
+              "type": "tehsil",
+              "population_2023": 1072180,
+              "area_km2": 1686,
+              "literacy_2023": 58.19
+            },
+            {
+              "name": "Chowk Sarwar Shaheed",
+              "type": "tehsil",
+              "population_2023": 414578,
+              "area_km2": 1785,
+              "literacy_2023": 55.5
+            }
+          ],
+          "source_url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_1_punjab_districts.pdf",
+          "note": "PBS gives no district total; the two rows add up to 1,486,758 people on 3,471 km²."
+        },
+        "admin_sources": [
+          {
+            "url": "https://www.dawn.com/news/1715039",
+            "publisher": "Dawn",
+            "title": "Punjab to have five new districts",
+            "date": "15 October 2022"
+          },
+          {
+            "url": "https://www.nation.com.pk/21-Dec-2024/kot-addu-taunsa-notified-as-districts-in-dg-khan-division",
+            "publisher": "The Nation",
+            "title": "Kot Addu, Taunsa notified as districts in DG Khan Division",
+            "date": "21 December 2024"
+          },
+          {
+            "url": "https://dailypakistan.com.pk/21-Dec-2024/1786990",
+            "publisher": "Daily Pakistan (Urdu)",
+            "title": "Punjab districts and tehsils notified; Kot Addu and Chowk Sarwar Shaheed included",
+            "date": "21 December 2024"
+          }
+        ],
+        "created_year": "2024"
       },
       {
         "slug": "taunsa",
         "name": "Taunsa",
         "hq": "Taunsa Sharif",
-        "pop": "Newer district — confirm latest PBS row",
-        "about": "Separated from D.G. Khan. Shrine town and the road toward Fort Munro.",
-        "education": "Colleges in Taunsa.",
-        "health": "DHQ Taunsa.",
-        "culture": "Saraiki shrine town.",
-        "issues": "Hill-torrent floods and mountain-road access.",
-        "villages": "Vehoa, Koh-e-Suleman foothill villages",
-        "census_2023_row": {
+        "about": "Dera Ghazi Khan Division district with Taunsa, Wehova and Koh-e-Suleman tehsils, formed from Dera Ghazi Khan; notified in December 2024.",
+        "profile_checked": "2026-09-29",
+        "sources": [
+          {
+            "url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_12_punjab_districts.pdf",
+            "publisher": "Pakistan Bureau of Statistics",
+            "title": "Census 2023, Table 12: literacy and out-of-school children (Punjab)",
+            "date": ""
+          }
+        ],
+        "faq_extra": [
+          {
+            "q": "When did Taunsa become a district?",
+            "a": "Taunsa was approved as a district on 14 October 2022 and notified as a district of Dera Ghazi Khan Division in December 2024.",
+            "source": {
+              "url": "https://www.nation.com.pk/21-Dec-2024/kot-addu-taunsa-notified-as-districts-in-dg-khan-division",
+              "publisher": "The Nation"
+            }
+          },
+          {
+            "q": "Which tehsils are in Taunsa District?",
+            "a": "Three: Taunsa, Wehova and Koh-e-Suleman.",
+            "source": {
+              "url": "https://www.nation.com.pk/21-Dec-2024/kot-addu-taunsa-notified-as-districts-in-dg-khan-division",
+              "publisher": "The Nation"
+            }
+          }
+        ],
+        "created": "Approved 14 October 2022; notified December 2024",
+        "predecessor": "dera-ghazi-khan",
+        "division": "Dera Ghazi Khan Division",
+        "tehsils_notified": [
+          "Taunsa",
+          "Wehova",
+          "Koh-e-Suleman"
+        ],
+        "census_2023_rows": {
           "parent": "dera-ghazi-khan",
-          "name": "Taunsa",
-          "type": "tehsil",
-          "population_2023": 796777,
-          "area_km2": 2769,
-          "density_2023": 287.75,
-          "urban_proportion_2023": 19.85,
-          "growth_rate_2017_2023": 2.74,
-          "literacy_2023": 57.96,
-          "source_url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_1_punjab_districts.pdf"
-        }
+          "units": [
+            {
+              "name": "Taunsa",
+              "type": "tehsil",
+              "population_2023": 796777,
+              "area_km2": 2769,
+              "literacy_2023": 57.96
+            },
+            {
+              "name": "Koh-e-Suleman",
+              "type": "tehsil",
+              "population_2023": 248683,
+              "area_km2": 5339,
+              "literacy_2023": 36.04
+            }
+          ],
+          "source_url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_1_punjab_districts.pdf",
+          "note": "Wehova has no separate census row. PBS gives no district total; the two rows add up to 1,045,460 people on 8,108 km²."
+        },
+        "admin_sources": [
+          {
+            "url": "https://www.dawn.com/news/1715039",
+            "publisher": "Dawn",
+            "title": "Punjab to have five new districts",
+            "date": "15 October 2022"
+          },
+          {
+            "url": "https://www.nation.com.pk/21-Dec-2024/kot-addu-taunsa-notified-as-districts-in-dg-khan-division",
+            "publisher": "The Nation",
+            "title": "Kot Addu, Taunsa notified as districts in DG Khan Division",
+            "date": "21 December 2024"
+          },
+          {
+            "url": "https://dailypakistan.com.pk/21-Dec-2024/1786990",
+            "publisher": "Daily Pakistan (Urdu)",
+            "title": "Punjab districts and tehsils notified; Kot Addu and Chowk Sarwar Shaheed included",
+            "date": "21 December 2024"
+          }
+        ],
+        "created_year": "2024"
       }
     ],
     "district_count": {
@@ -8720,7 +9042,28 @@
           }
         ],
         "tehsil_count": 3,
-        "tehsil_count_source": "PBS 2023 census, Table 1"
+        "tehsil_count_source": "PBS 2023 census, Table 1",
+        "profile_checked": "2026-09-30",
+        "sources": [
+          {
+            "url": "https://www.app.com.pk/national/paf-academy-risalpur-named-after-air-marshal-r-asghar-khan/",
+            "publisher": "APP",
+            "title": "PAF Academy Risalpur named after Air Marshal (R) Asghar Khan",
+            "date": ""
+          },
+          {
+            "url": "https://www.dawn.com/news/1894991",
+            "publisher": "Dawn",
+            "title": "Darul Uloom Haqqania, Akora Khattak; Qazi Hussain Ahmad Medical Complex",
+            "date": "1 March 2025"
+          },
+          {
+            "url": "https://www.aljazeera.com/features/2010/8/2/swat-is-bent-and-broken",
+            "publisher": "Al Jazeera",
+            "title": "Nowshera inundated by the Kabul River",
+            "date": "2 August 2010"
+          }
+        ]
       },
       {
         "slug": "north-waziristan",
@@ -8999,7 +9342,22 @@
           "table12": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_12_kp_districts.pdf"
         },
         "tehsil_count": 4,
-        "tehsil_count_source": "PBS 2023 census, Table 1"
+        "tehsil_count_source": "PBS 2023 census, Table 1",
+        "profile_checked": "2026-09-30",
+        "sources": [
+          {
+            "url": "https://asiapacific.unwomen.org/sites/default/files/Field%20Office%20ESEAsia/Docs/Publications/2020/11/pk-Status-of-Women-and-Girls-in-Orakzai-District.pdf",
+            "publisher": "UN Women Pakistan",
+            "title": "Status of Women and Girls in Orakzai District",
+            "date": "2020"
+          },
+          {
+            "url": "https://www.districtcourtsorakzai.gov.pk/about/",
+            "publisher": "District Courts Orakzai",
+            "title": "About the district",
+            "date": ""
+          }
+        ]
       },
       {
         "slug": "peshawar",
@@ -9635,25 +9993,218 @@
         "slug": "swa-upper",
         "name": "South Waziristan Upper",
         "hq": "Spinkai Raghazai",
-        "pop": "About 367,000 (2017 census)",
-        "about": "South Waziristan Upper was created in April 2022, when the former South Waziristan district was divided in two, with Spinkai Raghazai as its headquarters.",
-        "education": "Colleges are being rebuilt and expanded across the district after years of conflict-related disruption.",
-        "health": "A district headquarters hospital serves Spinkai Raghazai and the surrounding tehsils.",
-        "culture": "The district is home to Mahsud tribes across valleys such as Ladha, Makin and Shawal.",
-        "issues": "Rebuilding markets, schools and roads after years of displacement remains an ongoing task.",
-        "villages": "Ladha, Makin, Sararogha and Shawal."
+        "about": "Mehsud-majority district formed in October 2022 from South Waziristan; headquarters Spinkai Raghazai, seven tehsils.",
+        "profile_checked": "2026-09-29",
+        "sources": [
+          {
+            "url": "https://www.dawn.com/news/1684725",
+            "publisher": "Dawn",
+            "title": "KP Cabinet approves South Waziristan’s bifurcation for effective management",
+            "date": "13 April 2022"
+          },
+          {
+            "url": "https://www.app.com.pk/domestic/kp-assembly-unanimously-passes-three-resolutions/",
+            "publisher": "APP",
+            "title": "KP assembly unanimously passes three resolutions",
+            "date": "30 September 2024"
+          },
+          {
+            "url": "https://www.thenews.com.pk/print/1278261-upper-south-waziristan-renamed-as-mahsud-waziristan",
+            "publisher": "The News",
+            "title": "Upper South Waziristan renamed as Mahsud Waziristan",
+            "date": "1 February 2025"
+          },
+          {
+            "url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_12_kp_districts.pdf",
+            "publisher": "Pakistan Bureau of Statistics",
+            "title": "Census 2023, Table 12: literacy (KP)",
+            "date": ""
+          }
+        ],
+        "faq_extra": [
+          {
+            "q": "When was South Waziristan divided?",
+            "a": "The KP cabinet approved the division on 12 April 2022; the notification creating South Waziristan Upper and Lower came in October 2022.",
+            "source": {
+              "url": "https://www.dawn.com/news/1714876",
+              "publisher": "Dawn"
+            }
+          },
+          {
+            "q": "What is the headquarters of South Waziristan Upper?",
+            "a": "Spinkai Raghazai.",
+            "source": {
+              "url": "https://www.dawn.com/news/1714876",
+              "publisher": "Dawn"
+            }
+          },
+          {
+            "q": "Has South Waziristan Upper been renamed Mahsud Waziristan?",
+            "a": "The chief minister announced the name Mahsud Waziristan on 31 January 2025, after an assembly resolution in September 2024. We have not found a renaming notification.",
+            "source": {
+              "url": "https://www.thenews.com.pk/print/1278261-upper-south-waziristan-renamed-as-mahsud-waziristan",
+              "publisher": "The News"
+            }
+          }
+        ],
+        "created": "Notified October 2022 under the Land Revenue Act 1967",
+        "subdivisions": [
+          "Sarwakai",
+          "Ladha"
+        ],
+        "tehsils_notified": [
+          "Tiarza",
+          "Serwakai",
+          "Shawal",
+          "Ladha",
+          "Makin",
+          "Shaktui",
+          "Sararogha"
+        ],
+        "census_2023_rows": {
+          "parent": "south-waziristan",
+          "units": [
+            {
+              "name": "Sararogha",
+              "type": "tehsil",
+              "population_2023": 145118,
+              "area_km2": 813,
+              "literacy_2023": 35.07
+            },
+            {
+              "name": "Ladha",
+              "type": "tehsil",
+              "population_2023": 108344,
+              "area_km2": 289,
+              "literacy_2023": 47.95
+            },
+            {
+              "name": "Makin",
+              "type": "tehsil",
+              "population_2023": 66042,
+              "area_km2": 404,
+              "literacy_2023": 48.71
+            },
+            {
+              "name": "Tiarza",
+              "type": "tehsil",
+              "population_2023": 65798,
+              "area_km2": 734,
+              "literacy_2023": 27.31
+            },
+            {
+              "name": "Serwekai",
+              "type": "tehsil",
+              "population_2023": 58804,
+              "area_km2": 398,
+              "literacy_2023": 37.67
+            },
+            {
+              "name": "Shaktoi",
+              "type": "tehsil",
+              "population_2023": 44332,
+              "area_km2": 177,
+              "literacy_2023": 32.93
+            }
+          ],
+          "source_url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_1_kp_districts.pdf",
+          "note": "Shawal has no separate row. PBS gives no district total; the six rows add up to 488,438 people on 2,815 km².",
+          "parent_label": "South Waziristan (census district)"
+        },
+        "admin_sources": [
+          {
+            "url": "https://www.dawn.com/news/1714876",
+            "publisher": "Dawn",
+            "title": "South Waziristan divided into two districts",
+            "date": "14 October 2022"
+          }
+        ]
       },
       {
         "slug": "swa-lower",
         "name": "South Waziristan Lower",
         "hq": "Wana",
-        "pop": "About 308,000 (2017 census)",
-        "about": "South Waziristan Lower was created alongside South Waziristan Upper in April 2022, with Wana as its headquarters.",
-        "education": "Government colleges in and around Wana serve the district, with more courses added since the 2022 split.",
-        "health": "DHQ facilities in Wana handle most public healthcare needs.",
-        "culture": "The district is dominated by the Ahmadzai Wazir tribe, with Pashto spoken throughout.",
-        "issues": "Road security and rebuilding local markets remain priorities.",
-        "villages": "Wana, Shakai, Toi Khwla and Birmal."
+        "about": "Ahmadzai Wazir-majority district formed in October 2022 from South Waziristan; headquarters Wana, four tehsils.",
+        "profile_checked": "2026-09-29",
+        "sources": [
+          {
+            "url": "https://www.dawn.com/news/1684725",
+            "publisher": "Dawn",
+            "title": "KP Cabinet approves South Waziristan’s bifurcation for effective management",
+            "date": "13 April 2022"
+          },
+          {
+            "url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_12_kp_districts.pdf",
+            "publisher": "Pakistan Bureau of Statistics",
+            "title": "Census 2023, Table 12: literacy (KP)",
+            "date": ""
+          }
+        ],
+        "faq_extra": [
+          {
+            "q": "When was South Waziristan divided?",
+            "a": "The KP cabinet approved the division on 12 April 2022; the notification creating South Waziristan Upper and Lower came in October 2022.",
+            "source": {
+              "url": "https://www.dawn.com/news/1714876",
+              "publisher": "Dawn"
+            }
+          },
+          {
+            "q": "What is the headquarters of South Waziristan Lower?",
+            "a": "Wana.",
+            "source": {
+              "url": "https://www.dawn.com/news/1714876",
+              "publisher": "Dawn"
+            }
+          }
+        ],
+        "created": "Notified October 2022 under the Land Revenue Act 1967",
+        "subdivisions": [
+          "Wana"
+        ],
+        "tehsils_notified": [
+          "Wana",
+          "Shakai",
+          "Tolkhela",
+          "Birmal"
+        ],
+        "census_2023_rows": {
+          "parent": "south-waziristan",
+          "units": [
+            {
+              "name": "Wana",
+              "type": "tehsil",
+              "population_2023": 184645,
+              "area_km2": 2315,
+              "literacy_2023": 31.29
+            },
+            {
+              "name": "Birmil",
+              "type": "tehsil",
+              "population_2023": 112757,
+              "area_km2": 923,
+              "literacy_2023": 23.06
+            },
+            {
+              "name": "Toi Khulla",
+              "type": "tehsil",
+              "population_2023": 102835,
+              "area_km2": 567,
+              "literacy_2023": 7.81
+            }
+          ],
+          "source_url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_1_kp_districts.pdf",
+          "note": "Shakai has no separate row. PBS gives no district total; the three rows add up to 400,237 people on 3,805 km².",
+          "parent_label": "South Waziristan (census district)"
+        },
+        "admin_sources": [
+          {
+            "url": "https://www.dawn.com/news/1714876",
+            "publisher": "Dawn",
+            "title": "South Waziristan divided into two districts",
+            "date": "14 October 2022"
+          }
+        ]
       },
       {
         "slug": "tank",
@@ -15690,7 +16241,7 @@
         "name": "Barkhan",
         "hq": "Barkhan",
         "pop": "210,249 (2023 census)",
-        "about": "Barkhan District, Balochistan: 210,249 people in the 2023 census, 1 tehsils, headquarters Barkhan.",
+        "about": "Single-tehsil district of Koh-i-Suleman Division, separated from Loralai on 31 December 1991; 210,249 people in the 2023 census.",
         "issues": "Road distance to Quetta.",
         "division": "Koh-i-Suleman Division",
         "division_source": "Balochistan Revenue Department notification of 8 July 2026",
