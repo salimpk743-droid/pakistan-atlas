@@ -96,7 +96,7 @@ function districtMeta({ district: d, provinceId: pid, province }) {
   const Noun = n ? cap(L.unitNoun(d, n)) : "";
   const provShort = L.shortProvince[pid];
   let title;
-  const year = (String(d.created || "").match(/20\d\d/g) || []).pop();
+  const year = d.created_year || (String(d.created || "").match(/20\d\d/g) || []).pop();
   if (pid === "ict") {
     title = "Islamabad District (ICT): Population, Area & Guide (2023)";
   } else if (d.status === "former") {
@@ -137,11 +137,12 @@ function districtMeta({ district: d, provinceId: pid, province }) {
     cands.push(`${d.name} is a tehsil of Battagram District, Khyber Pakhtunkhwa; district status has been announced but not notified. 2023 census population ${fmtInt(r.population_2023)} on ${fmtInt(r.area_km2)} km².`,
       `${d.name}, Khyber Pakhtunkhwa: tehsil of Battagram with district status announced, not yet notified. 2023 census population ${fmtInt(r.population_2023)}.`);
   } else if (d.subdivisions && d.created) {
-    const date = (String(d.created).match(/\d{1,2} [A-Z][a-z]+ 20\d\d/) || [year])[0];
+    const date = (String(d.created).match(/(\d{1,2} )?(January|February|March|April|May|June|July|August|September|October|November|December) 20\d\d/) || [year])[0];
+    const on = /^\d/.test(date) ? "on" : "in";
     const subs = `${L.listText(d.subdivisions)} sub-division${d.subdivisions.length === 1 ? "" : "s"}`;
-    cands.push(`${where}: new district created on ${date}, covering the ${subs}.${hqPart} 2023 census rows and sources.`,
-      `${where}: new district created on ${date}, covering the ${subs}. 2023 census rows and sources.`,
-      `${label}: new district created on ${date}, covering the ${subs}.${hqPart}`);
+    cands.push(`${where}: new district created ${on} ${date}, covering the ${subs}.${hqPart} 2023 census rows and sources.`,
+      `${where}: new district created ${on} ${date}, covering the ${subs}. 2023 census rows and sources.`,
+      `${label}: new district created ${on} ${date}, covering the ${subs}.${hqPart}`);
   }
   if (pid === "ict") {
     const u = L.provinceById.ict;
@@ -187,7 +188,8 @@ function districtMeta({ district: d, provinceId: pid, province }) {
   }
   // Factual fallback for districts without census rows or a checked summary (mainly Gilgit-Baltistan and AJK).
   const div = d.division || d.division_2023 || "";
-  cands.push(`${where}${div ? `, ${div}` : ""}: district guide with headquarters, administrative units, official figures where published, and sources.${hqPart}`,
+  const specific = cands.flat().filter((c) => c && c.length >= 140 && c.length <= 160);
+  if (!specific.length) cands.push(`${where}${div ? `, ${div}` : ""}: district guide with headquarters, administrative units, official figures where published, and sources.${hqPart}`,
     `${where}${div ? `, ${div}` : ""}: district guide with headquarters, administrative units, official figures where published, and sources.`,
     `${label}: district guide with headquarters, administrative units, official figures where published, and sources.`);
   let description = fitDescription(cands);
@@ -253,7 +255,7 @@ function southWaziristanMeta() {
   return {
     title: "South Waziristan: Upper & Lower Districts, Population 2023",
     description: fitDescription([
-      `South Waziristan was split into Upper and Lower districts in April 2022. The 2023 census counted ${fmtInt(r.population_2023)} people on ${fmtInt(r.area_km2)} km² in its ${r.units.length} tehsils.`,
+      `South Waziristan was divided into Upper and Lower districts in October 2022. The 2023 census counted ${fmtInt(r.population_2023)} people on ${fmtInt(r.area_km2)} km² in its ${r.units.length} tehsils.`,
       `South Waziristan was split into Upper and Lower districts in 2022. 2023 census: ${fmtInt(r.population_2023)} people, ${fmtInt(r.area_km2)} km², ${r.units.length} tehsils.`
     ])
   };

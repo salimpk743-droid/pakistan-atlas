@@ -130,7 +130,7 @@ function sourcesBlock(info) {
     <ol>
       ${items.map(([u, t]) => `<li><a href="${L.esc(u)}" rel="noopener">${L.esc(t)}</a></li>`).join("\n      ")}
     </ol>
-    <p class="meta">Census figures checked against the PBS tables on ${L.esc(d.last_verified || "")}.</p>
+    ${d.last_verified || d.profile_checked ? `<p class="meta">Census figures checked against the PBS tables on ${L.esc(d.last_verified || d.profile_checked)}.</p>` : ""}
   </div></section>
   ${SRC_END}`;
 }
@@ -148,6 +148,7 @@ function quickAnswers(info, wrap) {
     add("Created", `${L.esc(d.created)}${parent ? `, from <a href="${parent.slug}.html">${L.esc(L.districtLabel(parent))}</a>` : ""}`);
   }
   if (d.subdivisions) add("Sub-divisions (as notified)", L.esc(L.listText(d.subdivisions)));
+  if (d.tehsils_notified) add("Tehsils (as notified)", L.esc(L.listText(d.tehsils_notified)));
   if (d.population_2023 != null) {
     const parts = [`${L.fmtInt(d.population_2023)} (2023 census)`];
     add("Population", parts.join(""));
@@ -173,7 +174,7 @@ function quickAnswers(info, wrap) {
     const r = d.census_2023_rows;
     const parent = L.districtIndex.get(r.parent)?.district;
     const list = r.units.map((u) => `${L.esc(u.name)} ${L.esc((L.unitWord[u.type] || u.type).toLowerCase())} ${L.fmtInt(u.population_2023)}`).join("; ");
-    add("2023 census", `The census counted the units now in ${L.esc(d.name)} under ${parent ? `<a href="${L.esc(r.parent)}.html">${L.esc(L.districtLabel(parent))}</a>` : L.esc(r.parent)}: ${list}. Boundaries were redrawn in 2026 (and new sub-divisions created), so no district total is given.`);
+    add("2023 census", `The census counted the units now in ${L.esc(d.name)} under ${parent ? `<a href="${L.esc(r.parent)}.html">${L.esc(L.districtLabel(parent))}</a>` : r.parent_label ? `<a href="${L.esc(r.parent)}.html">${L.esc(r.parent_label)}</a>` : L.esc(r.parent)}: ${list}. ${r.note ? L.esc(r.note) : "Boundaries were redrawn in 2026 (and new sub-divisions created), so no district total is given."}`);
   }
   if (units.length && d.tehsil_count) {
     add(`${L.unitNoun(d, 2)[0].toUpperCase()}${L.unitNoun(d, 2).slice(1)}`, `${d.tehsil_count} – ${L.esc(L.listText(units.map((u) => u.name)))}`);
