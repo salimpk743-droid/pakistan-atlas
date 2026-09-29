@@ -34,7 +34,8 @@ const unitNameFix = {
   "NORTH NAZIMABAD SUB-": "NORTH NAZIMABAD SUB-DIVISION",
   "BEHRAIN TEHSIL": "BAHRAIN TEHSIL",       // PBS spelling "Behrain"; Bahrain in the KP notification coverage
   "KHAWAZAKHELA TEHSIL": "KHWAZAKHELA TEHSIL", // PBS spelling "Khawazakhela"
-  "AI TEHSIL": "ALLAI TEHSIL",           // Battagram: 218,149 = Allai tehsil (Battagram 554,133 - Battagram tehsil 335,984)
+  "AI TEHSIL": "ALLAI TEHSIL",
+  "KAG SUB-TEHSIL": "KALLAG SUB-TEHSIL",   // Panjgur: Table 1 drops the ligature; Tables 11 and 12 print KALLAG           // Battagram: 218,149 = Allai tehsil (Battagram 554,133 - Battagram tehsil 335,984)
   "TALA GANG TEHSIL": "TALAGANG TEHSIL",
   "SUB-DIVISION CITY": "CITY SUB-DIVISION",
   "SUB-DIVISION KUCHLAK": "KUCHLAK SUB-DIVISION",
@@ -43,6 +44,54 @@ const unitNameFix = {
   "SUB-TEHSIL PANJPAI": "PANJPAI SUB-TEHSIL",
   "DE-EXCLUDED AREA": "DE-EXCLUDED AREA AREA"
 };
+// Tables 11 (mother tongue) and 12 (literacy), parsed by scripts/tools/parse-pbs-social.py. Their rows are in
+// exactly the same order as Table 1 (checked below), so they are matched to Table 1 rows by position.
+const social = JSON.parse(fs.readFileSync(path.join(ROOT, "data", "sources", "pbs-2023-social-districts.json"), "utf8"));
+const TABLE_URL = (n, p) => `https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_${n}_${p}_districts.pdf`;
+const LANGUAGE = { urdu: "Urdu", punjabi: "Punjabi", sindhi: "Sindhi", pashto: "Pashto", balochi: "Balochi", kashmiri: "Kashmiri",
+  saraiki: "Saraiki", hindko: "Hindko", brahvi: "Brahui", shina: "Shina", balti: "Balti", mewati: "Mewati", kalasha: "Kalasha",
+  kohistani: "Kohistani", others: "Other languages" };
+const round2 = (x) => Math.round(x * 100) / 100;
+const baseGaps = [];
+for (const [prov, list] of Object.entries(pbs)) {
+  const lit = social[prov].literacy, mt = social[prov].mother_tongue.slice(1); // mother_tongue[0] is the province row
+  let i = 0;
+  for (const row of list) {
+    for (const r of [row, ...row.units]) {
+      const L = lit[i], M = mt[i]; i++;
+      const w = (n) => n.split(/\s+/)[0].slice(0, 2);
+      if (!L || !M || (w(L.name) !== w(r.name) && w(L.name) !== w(unitNameFix[r.name] || r.name))) throw new Error(`${prov}: Table 12/11 row ${L && L.name} does not line up with Table 1 row ${r.name}`);
+      // Table 11/12 bases differ from Table 1 by a few percent in most rows (PBS publishes them that way);
+      // report the large gaps so they can be checked by hand.
+      if (Math.abs(M.total - r.population_2023) / r.population_2023 > 0.1) baseGaps.push(`${r.name} (Table 11 ${M.total} vs Table 1 ${r.population_2023})`);
+      r.lit = L; r.mt = M;
+    }
+  }
+  if (i !== lit.length) throw new Error(`${prov}: ${lit.length - i} unmatched Table 12 rows`);
+}
+// Table 2 (urban localities), parsed by scripts/tools/parse-pbs-table2.py. A district's list is only used when
+// its localities add up to the district's urban population (Table 1), i.e. nothing was lost in parsing.
+const table2 = JSON.parse(fs.readFileSync(path.join(ROOT, "data", "sources", "pbs-2023-table2-urban-localities.json"), "utf8"));
+const LOCALITY_TYPE = [[/ MC$/, "municipal committee"], [/ TC$/, "town committee"], [/ CANTONMENT$/, "cantonment"],
+  [/ METROPOLITAN CORPORATION$/, "metropolitan corporation"], [/ MUNICIPAL CORPORATION$/, "municipal corporation"]];
+function localitiesOf(prov, row) {
+  const list = table2[prov][row.name] || [];
+  const urban = row.population_2023 * (row.urban_pct || 0) / 100;
+  const sum = list.reduce((a, x) => a + x.population_2023, 0);
+  if (!list.length || Math.abs(sum - urban) > row.population_2023 * 0.00006 + 3) return null;
+  return list.map((x) => {
+    let name = x.name, type = "";
+    for (const [re, t] of LOCALITY_TYPE) if (re.test(name)) { type = t; name = name.replace(re, ""); break; }
+    if (type === "cantonment") name += " Cantonment";
+    return { name: titleCase(name), type, tehsil: unitOf({ name: x.tehsil }).name, population_2023: x.population_2023 };
+  }).sort((a, b) => b.population_2023 - a.population_2023);
+}
+const LOCALITY_SOURCE = (p) => TABLE_URL(2, p);
+function mainTongues(M) {
+  return Object.entries(M.tongues).filter(([k, n]) => k !== "others" && n / M.total >= 0.01)
+    .sort((a, b) => b[1] - a[1]).slice(0, 4)
+    .map(([k, n]) => ({ language: LANGUAGE[k], speakers: n, pct: round2((n / M.total) * 100) }));
+}
 const SMALL = new Set(["e", "i", "o", "ul", "al", "ki", "ka", "and"]);
 function titleCase(s) {
   return s.toLowerCase().replace(/[a-z]+/g, (w, i, all) => {
@@ -64,7 +113,8 @@ function unitOf(raw) {
     area_km2: raw.area_km2,
     density_2023: raw.density,
     urban_proportion_2023: raw.urban_pct,
-    growth_rate_2017_2023: raw.growth
+    growth_rate_2017_2023: raw.growth,
+    ...(raw.lit && raw.lit.literacy_pct != null ? { literacy_2023: raw.lit.literacy_pct } : {})
   };
 }
 
@@ -118,7 +168,8 @@ for (const [pid, data] of Object.entries(districts)) for (const d of data.distri
 
 const OWNED = ["population_2023", "area_km2", "density_2023", "urban_proportion_2023", "avg_household_size_2023",
   "growth_rate_2017_2023", "population_source", "population_source_url", "last_verified", "tehsils_2023",
-  "census_units_2023", "census_boundary_note", "census_2023_row", "census_2023_rows", "tehsil_count", "tehsil_count_source", "administrative_source"];
+  "census_units_2023", "census_boundary_note", "census_2023_row", "census_2023_rows", "tehsil_count", "tehsil_count_source", "administrative_source",
+  "sex_ratio_2023", "population_2017", "literacy_2023", "out_of_school_5_16_2023", "mother_tongue_2023", "census_tables_2023", "urban_localities_2023"];
 
 const pbsBySlug = new Map();
 const unmatched = [];
@@ -147,8 +198,17 @@ for (const d of all.values()) {
       population_source: SOURCE,
       population_source_url: PBS_URL(prov),
       last_verified: VERIFIED,
-      census_units_2023: units
+      census_units_2023: units,
+      sex_ratio_2023: row.sex_ratio,
+      ...(row.population_2017 ? { population_2017: row.population_2017 } : {}),
+      literacy_2023: { total: row.lit.literacy_pct, male: row.lit.literacy_male_pct, female: row.lit.literacy_female_pct,
+        rural: row.lit.literacy_rural_pct, urban: row.lit.literacy_urban_pct, population_10plus: row.lit.population_10plus, literate_10plus: row.lit.literate_10plus },
+      out_of_school_5_16_2023: { total: row.lit.out_of_school_5_16, male: row.lit.out_of_school_5_16_male, female: row.lit.out_of_school_5_16_female },
+      mother_tongue_2023: { counted: row.mt.total, main: mainTongues(row.mt) },
+      census_tables_2023: { table1: PBS_URL(prov), table2: LOCALITY_SOURCE(prov), table11: TABLE_URL(11, prov), table12: TABLE_URL(12, prov) }
     });
+    const loc = localitiesOf(prov, row);
+    if (loc) d.urban_localities_2023 = loc;
     const types = new Set(units.map((u) => u.type));
     if (!laterSplits[d.slug] && !d.boundary_change_2026 && !d.status && types.size === 1 && ["tehsil", "taluka", "sub-division"].includes([...types][0]) && prov !== "balochistan") {
       d.tehsil_count = units.length;
@@ -179,6 +239,7 @@ for (const d of all.values()) {
   }
 }
 
+for (const split of SPLITS) Object.defineProperty(all.get(split.parent), "urban_localities_2023_all", { value: all.get(split.parent).urban_localities_2023, enumerable: false });
 for (const split of SPLITS) {
   const parentUnits = pbsBySlug.get(split.parent).units;
   const covered = [];
@@ -209,6 +270,15 @@ for (const split of SPLITS) {
     delete d.census_2023_row;
     // Urban share, household size and growth are published for the undivided district only.
     delete d.urban_proportion_2023; delete d.avg_household_size_2023; delete d.growth_rate_2017_2023;
+    delete d.sex_ratio_2023; delete d.population_2017; delete d.out_of_school_5_16_2023; delete d.mother_tongue_2023;
+    const rawUnits = pbs[split.prov].find((r) => all.get(slugOverride[r.name.replace(/ DISTRICT$/, "")] || slugify(r.name.replace(/ DISTRICT$/, ""))) === all.get(split.parent)).units
+      .filter((r) => spec.units.includes(unitOf(r).name));
+    const p10 = rawUnits.reduce((a, r) => a + r.lit.population_10plus, 0), l10 = rawUnits.reduce((a, r) => a + r.lit.literate_10plus, 0);
+    d.literacy_2023 = { total: round2((l10 / p10) * 100), population_10plus: p10, literate_10plus: l10,
+      note: `Computed from the 2023 Table 12 rows of its ${units.length} ${split.tehsilCount ? "tehsils" : "units"} (literate persons aged 10+ ÷ population aged 10+).` };
+    d.census_tables_2023 = { table1: PBS_URL(split.prov), table12: TABLE_URL(12, split.prov) };
+    const parentLoc = all.get(split.parent).urban_localities_2023_all;
+    if (parentLoc) { d.urban_localities_2023 = parentLoc.filter((x) => spec.units.includes(x.tehsil)); d.census_tables_2023.table2 = LOCALITY_SOURCE(split.prov); }
   }
   const missing = parentUnits.filter((u) => !covered.includes(u.name)).map((u) => u.name);
   if (missing.length) throw new Error(`${split.parent}: PBS units not assigned to a successor: ${missing.join(", ")}`);
@@ -232,5 +302,6 @@ for (const d of all.values()) {
 }
 
 fs.writeFileSync(DATA, JSON.stringify(districts, null, 2) + "\n");
+console.log(`Rows where Tables 11/12 cover >10% fewer people than Table 1: ${baseGaps.join("; ") || "none"}`);
 console.log(`PBS rows matched: ${pbsBySlug.size}; unmatched PBS rows: ${unmatched.join("; ") || "none"}`);
 console.log(`Districts without a PBS district total: ${[...all.values()].filter((d) => d.population_2023 == null).map((d) => d.slug).join(", ")}`);

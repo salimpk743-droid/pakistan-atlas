@@ -53,7 +53,7 @@ function districtCard(d, pid) {
             <h3><a href="${esc(d.slug)}.html">${esc(L.districtLabel(d))}</a></h3>
             ${pop ? `<p><strong>Population:</strong> ${esc(pop)}</p>` : ""}
             ${d.tehsil_count ? `<p><strong>${d.tehsil_count} ${esc(L.unitNoun(d, d.tehsil_count))}:</strong> ${esc(L.listText(units.map((u) => u.name)))}</p>` : ""}
-            ${d.about ? `<p>${esc(d.about)}</p>` : ""}
+            ${d.about && (d.profile_checked || d.created || d.status) ? `<p>${esc(d.about)}</p>` : ""}
           </div>
         </article>`;
 }

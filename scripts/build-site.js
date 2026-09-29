@@ -178,12 +178,18 @@ function districtMeta({ district: d, provinceId: pid, province }) {
     const lead = `${where}: new district${year ? ` (${year})` : ""}. In the 2023 census, ${r.name} ${(L.unitWord[r.type] || r.type).toLowerCase()} of ${parent ? L.districtLabel(parent) : r.parent} had ${fmtInt(r.population_2023)} people.`;
     cands.push(lead + hqPart, lead);
   }
-  const about = String(d.about || "").trim();
+  // Unchecked legacy "about" text is not used in descriptions (see enhance-district-seo.js, profile_checked).
+  const about = d.profile_checked || d.created || d.status ? String(d.about || "").trim() : "";
   if (about) {
     for (const lead of [`${where}: ${about}`, `${label}: ${about}`]) {
       cands.push(lead + hqPart, lead);
     }
   }
+  // Factual fallback for districts without census rows or a checked summary (mainly Gilgit-Baltistan and AJK).
+  const div = d.division || d.division_2023 || "";
+  cands.push(`${where}${div ? `, ${div}` : ""}: district guide with headquarters, administrative units, official figures where published, and sources.${hqPart}`,
+    `${where}${div ? `, ${div}` : ""}: district guide with headquarters, administrative units, official figures where published, and sources.`,
+    `${label}: district guide with headquarters, administrative units, official figures where published, and sources.`);
   let description = fitDescription(cands);
   description = pad(description, [" Facts, places and sources.", " With sources.", " Facts and sources."]);
   return { title, description };
