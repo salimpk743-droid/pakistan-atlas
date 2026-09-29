@@ -352,13 +352,13 @@ function upsertMetadata(fileName, html) {
 
 // Generated pages are later decorated by build-site.js (head block, header, footer). Compare against that
 // finished form so an up-to-date page is not rewritten on every run (keeps each step idempotent).
-const { build } = require("./build-site");
+const { build, normaliseDates } = require("./build-site");
 function write(file, content) {
   const full = path.join(ROOT, file);
   if (!fs.existsSync(full)) return fs.writeFileSync(full, content);
   const current = fs.readFileSync(full, "utf8");
   if (current === content) return;
-  if (build(file, content).out === current) return;
+  if (normaliseDates(build(file, content).out) === normaliseDates(current)) return;
   fs.writeFileSync(full, content);
 }
 
