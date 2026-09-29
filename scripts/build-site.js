@@ -408,10 +408,10 @@ function graphFor(file, cls, meta, crumbs, html) {
   const website = { "@type": "WebSite", "@id": `${SITE}/#website`, name: "MyBook.Pk", url: `${SITE}/`, inLanguage: ["en", "ur"] };
   // districts.html reads ?q= and filters the district list, so the SearchAction target works as a URL.
   if (cls.type === "home") website.potentialAction = { "@type": "SearchAction", target: `${SITE}/districts.html?q={search_term_string}`, "query-input": "required name=search_term_string" };
-  const organization = { "@type": "Organization", "@id": `${SITE}/#organization`, name: "MyBook.Pk", url: `${SITE}/`, email: "salimpk743@gmail.com",
+  const organization = { "@type": "Organization", "@id": `${SITE}/#organization`, name: "MyBook.Pk", url: `${SITE}/`, email: "zainkhanpk742@gmail.com",
     description: "Independent educational website about Pakistan's provinces, districts, history and culture.",
     publishingPrinciples: `${SITE}/sources-methodology.html`, correctionsPolicy: `${SITE}/sources-methodology.html#corrections`,
-    contactPoint: { "@type": "ContactPoint", contactType: "editorial corrections", email: "salimpk743@gmail.com", url: `${SITE}/contact.html` } };
+    contactPoint: { "@type": "ContactPoint", contactType: "editorial corrections", email: "zainkhanpk742@gmail.com", url: `${SITE}/contact.html` } };
   if (cls.type === "home") website.publisher = { "@id": `${SITE}/#organization` };
   const isCollection = ["hub", "districts", "provinces"].includes(cls.type);
   const page = { "@type": isCollection ? "CollectionPage" : "WebPage", "@id": `${pageUrl}#webpage`, url: pageUrl, name: meta.title, isPartOf: { "@id": `${SITE}/#website` }, inLanguage: "en" };
