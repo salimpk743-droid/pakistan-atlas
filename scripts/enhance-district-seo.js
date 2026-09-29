@@ -391,3 +391,6 @@ for (const [slug, info] of L.districtIndex) {
   if (updated !== original) { fs.writeFileSync(file, updated, "utf8"); changed++; }
 }
 console.log(`Quick Answers and related links refreshed on ${changed} district pages (unchanged: ${L.districtIndex.size - changed - skipped}, missing files: ${skipped}).`);
+
+// Keyword-rich headings on the hand-written content (idempotent; see scripts/seo-headings.js).
+require("./seo-headings").run();

@@ -422,9 +422,11 @@ function districtPage(info) {
 ${tail()}`;
 }
 
+// Near-identical restored pages stay live but point rel=canonical at the main page (data/canonical.json).
+const CANONICAL_OVERRIDES = JSON.parse(fs.readFileSync(path.join(ROOT, "data", "canonical.json"), "utf8")).pages;
 function upsertMetadata(fileName, html) {
   if (L.isVerificationFile(fileName)) return html;
-  const canonical = SITE + "/" + (fileName === "index.html" ? "" : fileName);
+  const canonical = SITE + "/" + (CANONICAL_OVERRIDES[fileName] || (fileName === "index.html" ? "" : fileName));
   let result = html;
 
   // AdSense tags are written by build-site.js (setAdsense).
