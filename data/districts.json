@@ -48,12 +48,8 @@
         "name": "Attock",
         "hq": "Attock",
         "pop": "2,170,423 (2023 census)",
-        "about": "North-western Punjab on the Indus. Attock Fort looks over the river crossing toward KP.",
-        "education": "Public degree colleges in Attock, Fateh Jang and Pindi Gheb; campuses linked to University of the Punjab and AIOU.",
-        "health": "DHQ Attock and THQ hospitals in tehsils.",
-        "culture": "Potohari and Punjabi speech, river-side shrines and wheat-oilseed farms.",
+        "about": "Attock District, Punjab: 2,170,423 people in the 2023 census, 6 tehsils, headquarters Attock.",
         "issues": "River erosion in places and the need to expand technical training.",
-        "villages": "Hassanabdal, Fateh Jang rural union councils",
         "population_2023": 2170423,
         "area_km2": 6857,
         "density_2023": 316.53,
@@ -241,7 +237,9 @@
           }
         ],
         "tehsil_count": 6,
-        "tehsil_count_source": "PBS 2023 census, Table 1"
+        "tehsil_count_source": "PBS 2023 census, Table 1",
+        "profile_checked": "2026-09-29",
+        "sources": []
       },
       {
         "slug": "bahawalnagar",
@@ -663,12 +661,8 @@
         "name": "Bhakkar",
         "hq": "Bhakkar",
         "pop": "1,957,470 (2023 census)",
-        "about": "Thal desert district on the left bank of the Indus.",
-        "education": "Government postgraduate college and degree colleges in tehsils.",
-        "health": "DHQ Bhakkar.",
-        "culture": "Thal pastoral life and Saraiki speech.",
+        "about": "Bhakkar District, Punjab: 1,957,470 people in the 2023 census, 4 tehsils, headquarters Bhakkar.",
         "issues": "Sand-soil farming and longer travel to specialist hospitals.",
-        "villages": "Mankera, Darya Khan villages",
         "population_2023": 1957470,
         "area_km2": 8153,
         "density_2023": 240.09,
@@ -818,19 +812,17 @@
           }
         ],
         "tehsil_count": 4,
-        "tehsil_count_source": "PBS 2023 census, Table 1"
+        "tehsil_count_source": "PBS 2023 census, Table 1",
+        "profile_checked": "2026-09-29",
+        "sources": []
       },
       {
         "slug": "chakwal",
         "name": "Chakwal",
         "hq": "Chakwal",
         "pop": "1,734,854 (2023 census, pre-split boundaries)",
-        "about": "Salt Range and Potohar plateau. Many families have a long military tradition.",
-        "education": "Public colleges; campuses serving Choa Saidan Shah and Talagang used to sit in this belt.",
-        "health": "DHQ Chakwal.",
-        "culture": "Potohari folk and limestone landscape.",
+        "about": "Chakwal District, Punjab: 1,734,854 people in the 2023 census, 5 tehsils, headquarters Chakwal.",
         "issues": "Water table and youth employment beyond army recruitment.",
-        "villages": "Kallar Kahar countryside, Choa Saidan Shah",
         "population_2023": 1734854,
         "area_km2": 6525,
         "density_2023": 265.88,
@@ -978,7 +970,9 @@
             "population_2023": 20619
           }
         ],
-        "census_boundary_note": "These figures are for Chakwal District as enumerated in the 2023 census, before Talagang District was created from part of it, so the current district total is lower."
+        "census_boundary_note": "These figures are for Chakwal District as enumerated in the 2023 census, before Talagang District was created from part of it, so the current district total is lower.",
+        "profile_checked": "2026-09-29",
+        "sources": []
       },
       {
         "slug": "chiniot",
@@ -1578,12 +1572,8 @@
         "name": "Gujrat",
         "hq": "Gujrat",
         "pop": "3,219,375 (2023 census)",
-        "about": "Chenab district known for furniture, ceramics and overseas workers.",
-        "education": "University of Gujrat and a dense college belt.",
-        "health": "Aziz Bhatti Shaheed Teaching Hospital / DHQ.",
-        "culture": "Punjabi towns of Jalalpur Jattan and Kunjah.",
+        "about": "Punjab district between the Chenab and Jhelum rivers; Gujrat city grew around a fort built by Akbar in 1580.",
         "issues": "Need to keep local industry after overseas remittances.",
-        "villages": "Kharian rural, Sarai Alamgir villages",
         "population_2023": 3219375,
         "area_km2": 3192,
         "density_2023": 1008.58,
@@ -1668,19 +1658,24 @@
           "table12": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_12_punjab_districts.pdf"
         },
         "tehsil_count": 3,
-        "tehsil_count_source": "PBS 2023 census, Table 1"
+        "tehsil_count_source": "PBS 2023 census, Table 1",
+        "profile_checked": "2026-09-29",
+        "sources": [
+          {
+            "url": "https://www.britannica.com/place/Gujrat",
+            "publisher": "Encyclopaedia Britannica",
+            "title": "Gujrat",
+            "date": ""
+          }
+        ]
       },
       {
         "slug": "hafizabad",
         "name": "Hafizabad",
         "hq": "Hafizabad",
         "pop": "1,319,909 (2023 census)",
-        "about": "Rice belt of central Punjab.",
-        "education": "Government colleges in Hafizabad and Pindi Bhattian.",
-        "health": "DHQ Hafizabad.",
-        "culture": "Rural Punjabi harvest calendar.",
+        "about": "Hafizabad District, Punjab: 1,319,909 people in the 2023 census, 2 tehsils, headquarters Hafizabad.",
         "issues": "Rice-market prices and school quality in villages.",
-        "villages": "Pindi Bhattian countryside",
         "population_2023": 1319909,
         "area_km2": 2367,
         "density_2023": 557.63,
@@ -1782,7 +1777,9 @@
           }
         ],
         "tehsil_count": 2,
-        "tehsil_count_source": "PBS 2023 census, Table 1"
+        "tehsil_count_source": "PBS 2023 census, Table 1",
+        "profile_checked": "2026-09-29",
+        "sources": []
       },
       {
         "slug": "jhang",
@@ -2053,12 +2050,8 @@
         "name": "Kasur",
         "hq": "Kasur",
         "pop": "4,084,286 (2023 census)",
-        "about": "South of Lahore, shrine of Baba Bullhe Shah and a busy border district.",
-        "education": "Public colleges; many students travel to Lahore universities.",
-        "health": "DHQ Kasur.",
-        "culture": "Punjabi kafis and leather / farm economy.",
+        "about": "Punjab district on the Indian border about 50 km south of Lahore; Kasur city grew from 26 fortified hamlets.",
         "issues": "Industrial effluent and pressure from the Lahore mega-city.",
-        "villages": "Pattoki, Chunian countryside",
         "population_2023": 4084286,
         "area_km2": 3995,
         "density_2023": 1022.35,
@@ -2215,7 +2208,16 @@
           }
         ],
         "tehsil_count": 4,
-        "tehsil_count_source": "PBS 2023 census, Table 1"
+        "tehsil_count_source": "PBS 2023 census, Table 1",
+        "profile_checked": "2026-09-29",
+        "sources": [
+          {
+            "url": "https://www.britannica.com/place/Kasur",
+            "publisher": "Encyclopaedia Britannica",
+            "title": "Kasur",
+            "date": ""
+          }
+        ]
       },
       {
         "slug": "khanewal",
@@ -2944,12 +2946,8 @@
         "name": "Mandi Bahauddin",
         "hq": "Mandi Bahauddin",
         "pop": "1,829,486 (2023 census)",
-        "about": "Between Jhelum and Chenab, known as a clean planned mandi town.",
-        "education": "Government colleges in Mandi Bahauddin, Phalia and Malakwal.",
-        "health": "DHQ Mandi Bahauddin.",
-        "culture": "Punjabi small-town life and river-side villages.",
+        "about": "Mandi Bahauddin District, Punjab: 1,829,486 people in the 2023 census, 3 tehsils, headquarters Mandi Bahauddin.",
         "issues": "Youth want technical institutes next to general colleges.",
-        "villages": "Phalia, Malakwal villages",
         "population_2023": 1829486,
         "area_km2": 2673,
         "density_2023": 684.43,
@@ -3054,19 +3052,17 @@
           }
         ],
         "tehsil_count": 3,
-        "tehsil_count_source": "PBS 2023 census, Table 1"
+        "tehsil_count_source": "PBS 2023 census, Table 1",
+        "profile_checked": "2026-09-29",
+        "sources": []
       },
       {
         "slug": "mianwali",
         "name": "Mianwali",
         "hq": "Mianwali",
         "pop": "1,798,268 (2023 census)",
-        "about": "Western Punjab on the Salt Range and Indus. Lakes and namak-era geology.",
-        "education": "Public colleges; medical college initiative in the region.",
-        "health": "DHQ Mianwali.",
-        "culture": "A mix of Punjabi, Saraiki and Pashto on the western edge.",
+        "about": "Punjab district whose headquarters, founded in 1868, lies just east of the Indus River.",
         "issues": "Distance to large teaching hospitals.",
-        "villages": "Isa Khel, Piplan villages",
         "population_2023": 1798268,
         "area_km2": 5840,
         "density_2023": 307.92,
@@ -3206,7 +3202,16 @@
           }
         ],
         "tehsil_count": 3,
-        "tehsil_count_source": "PBS 2023 census, Table 1"
+        "tehsil_count_source": "PBS 2023 census, Table 1",
+        "profile_checked": "2026-09-29",
+        "sources": [
+          {
+            "url": "https://www.britannica.com/place/Mianwali",
+            "publisher": "Encyclopaedia Britannica",
+            "title": "Mianwali",
+            "date": ""
+          }
+        ]
       },
       {
         "slug": "multan",
@@ -3680,12 +3685,8 @@
         "name": "Narowal",
         "hq": "Narowal",
         "pop": "1,950,954 (2023 census)",
-        "about": "North-east Punjab on the Indian border, including the town of Shakargarh.",
-        "education": "University of Narowal and government colleges.",
-        "health": "DHQ Narowal.",
-        "culture": "Punjabi border villages.",
+        "about": "Narowal District, Punjab: 1,950,954 people in the 2023 census, 3 tehsils, headquarters Narowal.",
         "issues": "Border-area roads and keeping campuses staffed.",
-        "villages": "Shakargarh, Zafarwal villages",
         "population_2023": 1950954,
         "area_km2": 2337,
         "density_2023": 834.81,
@@ -3802,7 +3803,9 @@
           }
         ],
         "tehsil_count": 3,
-        "tehsil_count_source": "PBS 2023 census, Table 1"
+        "tehsil_count_source": "PBS 2023 census, Table 1",
+        "profile_checked": "2026-09-29",
+        "sources": []
       },
       {
         "slug": "okara",
@@ -4403,12 +4406,8 @@
         "name": "Rawalpindi",
         "hq": "Rawalpindi",
         "pop": "6,118,911 (2023 census, pre-split boundaries)",
-        "about": "Twin city of Islamabad. Old bazaars, cantonment, and the road to Murree.",
-        "education": "Rawalpindi Medical University, Arid Agriculture University, many colleges.",
-        "health": "Holy Family, Benazir Bhutto Hospital, CMH and DHQ.",
-        "culture": "Potohari-Punjabi city culture next to the federal capital.",
+        "about": "Punjab district whose headquarters, Rawalpindi, was the capital of Pakistan from 1959 to 1969 and is the army headquarters.",
         "issues": "Congestion and the split of Murree / Talagang as newer districts.",
-        "villages": "Kahuta, Kallar Syedan, Gujar Khan villages",
         "division_2023": "Rawalpindi Division",
         "population_2023": 6118911,
         "area_km2": 5285,
@@ -4618,7 +4617,26 @@
             "population_2023": 8869
           }
         ],
-        "census_boundary_note": "These figures are for Rawalpindi District as enumerated in the 2023 census, before Murree District was created from part of it, so the current district total is lower."
+        "census_boundary_note": "These figures are for Rawalpindi District as enumerated in the 2023 census, before Murree District was created from part of it, so the current district total is lower.",
+        "profile_checked": "2026-09-29",
+        "sources": [
+          {
+            "url": "https://www.britannica.com/place/Rawalpindi",
+            "publisher": "Encyclopaedia Britannica",
+            "title": "Rawalpindi",
+            "date": ""
+          }
+        ],
+        "faq_extra": [
+          {
+            "q": "When was Rawalpindi the capital of Pakistan?",
+            "a": "From 1959 to 1969.",
+            "source": {
+              "url": "https://www.britannica.com/place/Rawalpindi",
+              "publisher": "Encyclopaedia Britannica"
+            }
+          }
+        ]
       },
       {
         "slug": "sahiwal",
@@ -4722,12 +4740,8 @@
         "name": "Sargodha",
         "hq": "Sargodha",
         "pop": "4,334,448 (2023 census)",
-        "about": "Citrus capital of Pakistan and a large air-base city.",
-        "education": "University of Sargodha and medical college.",
-        "health": "DHQ / teaching hospital Sargodha.",
-        "culture": "Punjabi orchard economy.",
+        "about": "Punjab district whose headquarters was founded in 1903 as the headquarters of the Lower Jhelum Canal colony.",
         "issues": "Orchard water and urban growth.",
-        "villages": "Bhalwal, Shahpur, Sahiwal (Sargodha) villages",
         "population_2023": 4334448,
         "area_km2": 5856,
         "density_2023": 740.17,
@@ -4950,7 +4964,16 @@
           }
         ],
         "tehsil_count": 7,
-        "tehsil_count_source": "PBS 2023 census, Table 1"
+        "tehsil_count_source": "PBS 2023 census, Table 1",
+        "profile_checked": "2026-09-29",
+        "sources": [
+          {
+            "url": "https://www.britannica.com/place/Sargodha",
+            "publisher": "Encyclopaedia Britannica",
+            "title": "Sargodha",
+            "date": ""
+          }
+        ]
       },
       {
         "slug": "sheikhupura",
@@ -5300,12 +5323,8 @@
         "name": "Toba Tek Singh",
         "hq": "Toba Tek Singh",
         "pop": "2,524,044 (2023 census)",
-        "about": "Canal-colony district made famous in literature, now a farm and small-industry belt.",
-        "education": "Government colleges in TTS, Gojra and Kamalia.",
-        "health": "DHQ Toba Tek Singh.",
-        "culture": "Punjabi Christian and Muslim towns together in Gojra and Kamalia.",
+        "about": "Toba Tek Singh District, Punjab: 2,524,044 people in the 2023 census, 4 tehsils, headquarters Toba Tek Singh.",
         "issues": "College seats versus student numbers.",
-        "villages": "Gojra, Kamalia villages",
         "population_2023": 2524044,
         "area_km2": 3252,
         "density_2023": 776.15,
@@ -5395,7 +5414,9 @@
           "table12": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_12_punjab_districts.pdf"
         },
         "tehsil_count": 4,
-        "tehsil_count_source": "PBS 2023 census, Table 1"
+        "tehsil_count_source": "PBS 2023 census, Table 1",
+        "profile_checked": "2026-09-29",
+        "sources": []
       },
       {
         "slug": "vehari",
@@ -7254,12 +7275,8 @@
         "name": "Khyber",
         "hq": "Landi Kotal / Jamrud",
         "pop": "1,146,267 (2023 census)",
-        "about": "Khyber district takes its name from the historic Khyber Pass and was a tribal agency until the 2018 FATA merger.",
-        "education": "Colleges are expanding steadily as the district's education system is folded into the provincial one.",
-        "health": "DHQ Khyber serves the district.",
-        "culture": "The Afridi tribe is dominant across the pass towns.",
+        "about": "Former FATA agency on the Khyber Pass, a district of Khyber Pakhtunkhwa (Peshawar Division) since the 2018 merger.",
         "issues": "Merging former agency services fully into the provincial administrative system is an ongoing process.",
-        "villages": "Bara, Jamrud and Landi Kotal.",
         "population_2023": 1146267,
         "area_km2": 2576,
         "density_2023": 444.98,
@@ -7358,7 +7375,44 @@
           }
         ],
         "tehsil_count": 4,
-        "tehsil_count_source": "PBS 2023 census, Table 1"
+        "tehsil_count_source": "PBS 2023 census, Table 1",
+        "profile_checked": "2026-09-29",
+        "sources": [
+          {
+            "url": "https://www.xinhuanet.com/english/2018-06/01/c_137221245.htm",
+            "publisher": "Xinhua",
+            "title": "Pakistani president signs bill to merge tribal areas with KP province",
+            "date": "31 May 2018"
+          },
+          {
+            "url": "https://www.dawn.com/news/1411156",
+            "publisher": "Dawn",
+            "title": "President signs KP-Fata merger bill into law",
+            "date": "31 May 2018"
+          },
+          {
+            "url": "https://www.dawn.com/news/1421236",
+            "publisher": "Dawn",
+            "title": "BoR notifies merger of tribal agencies, FRs with KP areas",
+            "date": "2018"
+          },
+          {
+            "url": "https://www.britannica.com/place/Khyber-Pass",
+            "publisher": "Encyclopaedia Britannica",
+            "title": "Khyber Pass",
+            "date": ""
+          }
+        ],
+        "faq_extra": [
+          {
+            "q": "When did Khyber Agency become a district?",
+            "a": "Khyber was a FATA agency until the 25th Constitutional Amendment, signed on 31 May 2018, merged FATA into Khyber Pakhtunkhwa. It is now a district of Peshawar Division.",
+            "source": {
+              "url": "https://www.dawn.com/news/1411156",
+              "publisher": "Dawn"
+            }
+          }
+        ]
       },
       {
         "slug": "kohat",
@@ -9509,12 +9563,8 @@
         "name": "Tank",
         "hq": "Tank",
         "pop": "470,293 (2023 census)",
-        "about": "Tank is a small southern district sitting at the edge of Waziristan.",
-        "education": "Government colleges serve the district's students.",
-        "health": "DHQ Tank is the main hospital.",
-        "culture": "The district shares the plains culture of southern KP.",
+        "about": "Tank District, Khyber Pakhtunkhwa: 470,293 people in the 2023 census, 2 administrative units, headquarters Tank.",
         "issues": "Extreme summer heat and a small public-sector workforce limit service delivery.",
-        "villages": "Villages along the Jandola road.",
         "population_2023": 470293,
         "area_km2": 2900,
         "density_2023": 162.17,
@@ -9589,6 +9639,15 @@
             "type": "municipal committee",
             "tehsil": "Tank",
             "population_2023": 49172
+          }
+        ],
+        "profile_checked": "2026-09-29",
+        "sources": [
+          {
+            "url": "https://www.dawn.com/news/1421236",
+            "publisher": "Dawn",
+            "title": "BoR notifies merger of tribal agencies, FRs with KP areas",
+            "date": "2018"
           }
         ]
       },
@@ -9687,12 +9746,8 @@
         "name": "Upper Dir",
         "hq": "Dir",
         "pop": "1,083,566 (2023 census)",
-        "about": "Upper Dir covers the high country toward the Lowari Pass and the Kumrat valley.",
-        "education": "Shaheed Benazir Bhutto University in Sheringal serves the district.",
-        "health": "DHQ Dir is the main hospital.",
-        "culture": "The Kumrat forests and Dir Kohistan region are central to the district's identity.",
+        "about": "Khyber Pakhtunkhwa district in the upper Panjkora valley, part of the former princely state of Dir; its headquarters is Dir town.",
         "issues": "Tourism road development and forest protection sometimes pull in opposite directions.",
-        "villages": "Kumrat and Barawal villages.",
         "population_2023": 1083566,
         "area_km2": 3699,
         "density_2023": 292.93,
@@ -9790,7 +9845,16 @@
           }
         ],
         "tehsil_count": 4,
-        "tehsil_count_source": "PBS 2023 census, Table 1"
+        "tehsil_count_source": "PBS 2023 census, Table 1",
+        "profile_checked": "2026-09-29",
+        "sources": [
+          {
+            "url": "https://www.britannica.com/place/Dir-Pakistan",
+            "publisher": "Encyclopaedia Britannica",
+            "title": "Dir Pakistan",
+            "date": ""
+          }
+        ]
       },
       {
         "slug": "upper-kohistan",
@@ -10526,12 +10590,8 @@
         "name": "Hyderabad",
         "hq": "Hyderabad",
         "pop": "2,432,540 (2023 census)",
-        "about": "Second city of Sindh. Historic capital on the Indus.",
-        "education": "University of Sindh is in nearby Jamshoro; city colleges and LUMHS linkage.",
-        "health": "Liaquat University Hospital.",
-        "culture": "Sindhi-Urdu city, ralli and badshahi bazaar.",
+        "about": "Sindh district whose headquarters, founded in 1768 by Ghulam Shah Kalhoro, was the capital of Sindh until 1843.",
         "issues": "Congestion and drainage.",
-        "villages": "Qasimabad rural edge",
         "population_2023": 2432540,
         "area_km2": 993,
         "density_2023": 2449.69,
@@ -10631,7 +10691,26 @@
           "table12": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_12_sindh_districts.pdf"
         },
         "tehsil_count": 4,
-        "tehsil_count_source": "PBS 2023 census, Table 1"
+        "tehsil_count_source": "PBS 2023 census, Table 1",
+        "profile_checked": "2026-09-29",
+        "sources": [
+          {
+            "url": "https://www.britannica.com/place/Hyderabad-Pakistan",
+            "publisher": "Encyclopaedia Britannica",
+            "title": "Hyderabad Pakistan",
+            "date": ""
+          }
+        ],
+        "faq_extra": [
+          {
+            "q": "Who founded Hyderabad, Sindh?",
+            "a": "Ghulam Shah Kalhoro, in 1768, on the site of the ancient town of Nirun Kot.",
+            "source": {
+              "url": "https://www.britannica.com/place/Hyderabad-Pakistan",
+              "publisher": "Encyclopaedia Britannica"
+            }
+          }
+        ]
       },
       {
         "slug": "jacobabad",
@@ -10932,12 +11011,8 @@
         "name": "Qambar Shahdadkot",
         "hq": "Qambar",
         "pop": "1,514,869 (2023 census)",
-        "about": "North-west Sindh district created from Larkana.",
-        "education": "Colleges in Qambar and Shahdadkot.",
-        "health": "DHQ Qambar.",
-        "culture": "Sindhi interior near the Balochistan edge.",
+        "about": "Qambar Shahdadkot District, Sindh: 1,514,869 people in the 2023 census, 7 talukas, headquarters Qambar.",
         "issues": "Drainage and school access.",
-        "villages": "Warah, Miro Khan villages",
         "population_2023": 1514869,
         "area_km2": 5475,
         "density_2023": 276.69,
@@ -11113,7 +11188,9 @@
           }
         ],
         "tehsil_count": 7,
-        "tehsil_count_source": "PBS 2023 census, Table 1"
+        "tehsil_count_source": "PBS 2023 census, Table 1",
+        "profile_checked": "2026-09-29",
+        "sources": []
       },
       {
         "slug": "karachi-central",
@@ -11934,12 +12011,8 @@
         "name": "Kashmore",
         "hq": "Kashmore",
         "pop": "1,233,957 (2023 census)",
-        "about": "Upper Sindh on the Punjab-Balochistan corner, including Kandhkot.",
-        "education": "Colleges in Kashmore and Kandhkot.",
-        "health": "DHQ Kashmore.",
-        "culture": "Katcha riverine belt.",
+        "about": "Kashmore District, Sindh: 1,233,957 people in the 2023 census, 3 talukas, headquarters Kashmore.",
         "issues": "Floods and riverine schools.",
-        "villages": "Kandhkot, Tangwani villages",
         "population_2023": 1233957,
         "area_km2": 2580,
         "density_2023": 478.28,
@@ -12063,19 +12136,17 @@
           }
         ],
         "tehsil_count": 3,
-        "tehsil_count_source": "PBS 2023 census, Table 1"
+        "tehsil_count_source": "PBS 2023 census, Table 1",
+        "profile_checked": "2026-09-29",
+        "sources": []
       },
       {
         "slug": "khairpur",
         "name": "Khairpur",
         "hq": "Khairpur",
         "pop": "2,597,535 (2023 census)",
-        "about": "Former princely state. Date-palm district of upper Sindh.",
-        "education": "Shah Abdul Latif University.",
-        "health": "DHQ / teaching setup Khairpur.",
-        "culture": "Faiz Mahal, dates, and Sindhi scholarship.",
+        "about": "Sindh district, formerly the princely state of Khairpur, which acceded to Pakistan in October 1955; Kot Diji lies to its south.",
         "issues": "Date-market and barrage-command water.",
-        "villages": "Kot Diji, Sobho Dero villages",
         "population_2023": 2597535,
         "area_km2": 15910,
         "density_2023": 163.26,
@@ -12340,19 +12411,34 @@
           }
         ],
         "tehsil_count": 8,
-        "tehsil_count_source": "PBS 2023 census, Table 1"
+        "tehsil_count_source": "PBS 2023 census, Table 1",
+        "profile_checked": "2026-09-29",
+        "sources": [
+          {
+            "url": "https://www.britannica.com/place/Khairpur",
+            "publisher": "Encyclopaedia Britannica",
+            "title": "Khairpur",
+            "date": ""
+          }
+        ],
+        "faq_extra": [
+          {
+            "q": "When did Khairpur State join Pakistan?",
+            "a": "Khairpur State acceded to Pakistan in October 1955.",
+            "source": {
+              "url": "https://www.britannica.com/place/Khairpur",
+              "publisher": "Encyclopaedia Britannica"
+            }
+          }
+        ]
       },
       {
         "slug": "larkana",
         "name": "Larkana",
         "hq": "Larkana",
         "pop": "1,784,453 (2023 census)",
-        "about": "North Sindh political and rice city, near Mohenjo-daro.",
-        "education": "Chandka / SMBB Medical University and public colleges.",
-        "health": "Chandka Medical College Hospital.",
-        "culture": "Sindhi north, rice and the Indus civilisation site nearby.",
+        "about": "Sindh district home to the ruins of Moenjodaro, 28 km from Larkana city, a UNESCO World Heritage Site since 1980.",
         "issues": "Drainage after floods.",
-        "villages": "Ratodero, Dokri villages",
         "population_2023": 1784453,
         "area_km2": 1948,
         "density_2023": 916.04,
@@ -12481,7 +12567,32 @@
           }
         ],
         "tehsil_count": 4,
-        "tehsil_count_source": "PBS 2023 census, Table 1"
+        "tehsil_count_source": "PBS 2023 census, Table 1",
+        "profile_checked": "2026-09-29",
+        "sources": [
+          {
+            "url": "https://whc.unesco.org/en/list/138/",
+            "publisher": "UNESCO World Heritage Centre",
+            "title": "Archaeological Ruins at Moenjodaro",
+            "date": ""
+          },
+          {
+            "url": "https://www.britannica.com/place/Mohenjo-daro",
+            "publisher": "Encyclopaedia Britannica",
+            "title": "Mohenjo daro",
+            "date": ""
+          }
+        ],
+        "faq_extra": [
+          {
+            "q": "In which district is Moenjodaro?",
+            "a": "Larkana District, Sindh. The ruins are on the right bank of the Indus, 28 km from Larkana city.",
+            "source": {
+              "url": "https://whc.unesco.org/en/list/138/",
+              "publisher": "UNESCO World Heritage Centre"
+            }
+          }
+        ]
       },
       {
         "slug": "matiari",
@@ -12632,12 +12743,8 @@
         "name": "Mirpurkhas",
         "hq": "Mirpurkhas",
         "pop": "1,681,386 (2023 census)",
-        "about": "Mango district of lower Sindh.",
-        "education": "Public colleges and a university campus presence.",
-        "health": "DHQ / Muhammad Medical College linkage.",
-        "culture": "Sindhi town plus a historic Hindu community.",
+        "about": "Mirpurkhas District, Sindh: 1,681,386 people in the 2023 census, 7 talukas, headquarters Mirpurkhas.",
         "issues": "Farm-to-market roads for orchards.",
-        "villages": "Sindhri, Digri villages",
         "population_2023": 1681386,
         "area_km2": 2925,
         "density_2023": 574.83,
@@ -12817,7 +12924,9 @@
           }
         ],
         "tehsil_count": 7,
-        "tehsil_count_source": "PBS 2023 census, Table 1"
+        "tehsil_count_source": "PBS 2023 census, Table 1",
+        "profile_checked": "2026-09-29",
+        "sources": []
       },
       {
         "slug": "naushahro",
@@ -14386,12 +14495,8 @@
         "name": "Umerkot",
         "hq": "Umerkot",
         "pop": "1,159,831 (2023 census)",
-        "about": "Birthplace associated with Emperor Akbar; desert-edge district.",
-        "education": "Colleges in Umerkot and Kunri.",
-        "health": "DHQ Umerkot.",
-        "culture": "Sindhi-Rajasthani border culture.",
+        "about": "Umerkot District, Sindh: 1,159,831 people in the 2023 census, 4 talukas, headquarters Umerkot.",
         "issues": "Water in rain-fed years.",
-        "villages": "Kunri, Pithoro villages",
         "population_2023": 1159831,
         "area_km2": 5608,
         "density_2023": 206.82,
@@ -14536,7 +14641,9 @@
           }
         ],
         "tehsil_count": 4,
-        "tehsil_count_source": "PBS 2023 census, Table 1"
+        "tehsil_count_source": "PBS 2023 census, Table 1",
+        "profile_checked": "2026-09-29",
+        "sources": []
       }
     ],
     "district_count": {
@@ -14690,12 +14797,8 @@
         "name": "Barkhan",
         "hq": "Barkhan",
         "pop": "210,249 (2023 census)",
-        "about": "Eastern Balochistan toward the Punjab border.",
-        "education": "Colleges in Barkhan.",
-        "health": "DHQ Barkhan.",
-        "culture": "Baloch highlands.",
+        "about": "Barkhan District, Balochistan: 210,249 people in the 2023 census, 1 tehsils, headquarters Barkhan.",
         "issues": "Road distance to Quetta.",
-        "villages": "Rakhni belt",
         "division": "Koh-i-Suleman Division",
         "division_source": "Balochistan Revenue Department notification of 8 July 2026",
         "population_2023": 210249,
@@ -14758,7 +14861,9 @@
             "tehsil": "Barkhan",
             "population_2023": 14425
           }
-        ]
+        ],
+        "profile_checked": "2026-09-29",
+        "sources": []
       },
       {
         "slug": "chagai",
@@ -14890,12 +14995,8 @@
         "name": "Chaman",
         "hq": "Chaman",
         "pop": "466,218 (2023 census)",
-        "about": "Busy border city district toward Spin Boldak.",
-        "education": "Colleges in Chaman.",
-        "health": "DHQ Chaman.",
-        "culture": "Pashtun border bazaar.",
+        "about": "Balochistan border district created in June 2021 from Qilla Abdullah, made up of Chaman city and Saddar Chaman.",
         "issues": "Border commerce and city services.",
-        "villages": "Nearby karez villages",
         "division": "Pishin Division",
         "division_source": "Balochistan Revenue Department notification of 8 July 2026",
         "population_2023": 466218,
@@ -14967,6 +15068,25 @@
             "type": "municipal corporation",
             "tehsil": "Chaman City",
             "population_2023": 130139
+          }
+        ],
+        "profile_checked": "2026-09-29",
+        "sources": [
+          {
+            "url": "https://www.dawn.com/news/1632216",
+            "publisher": "Dawn",
+            "title": "New division, two districts created in Balochistan",
+            "date": "30 June 2021"
+          }
+        ],
+        "faq_extra": [
+          {
+            "q": "When did Chaman become a district?",
+            "a": "In June 2021, when the Balochistan Board of Revenue split Qilla Abdullah District and created Chaman District from Chaman city and Saddar Chaman.",
+            "source": {
+              "url": "https://www.dawn.com/news/1632216",
+              "publisher": "Dawn"
+            }
           }
         ]
       },
@@ -15296,12 +15416,8 @@
         "name": "Gwadar",
         "hq": "Gwadar",
         "pop": "305,160 (2023 census)",
-        "about": "Deep-sea port on the Makran coast. Fast-changing town with a very old fishing history.",
-        "education": "University of Gwadar and colleges.",
-        "health": "DHQ Gwadar.",
-        "culture": "Makran coastal Baloch, fish harbours of Jiwani and Pishukan.",
+        "about": "Balochistan coastal district; Gwadar town, on the Arabian Sea, was part of the Sultanate of Muscat and Oman from 1797 until 1958.",
         "issues": "Making port growth serve local water, schools and housing.",
-        "villages": "Jiwani, Pasni is a neighbouring district town — Pishukan, Sur Bandar",
         "division": "Makuran Division",
         "division_source": "Balochistan Revenue Department notification of 8 July 2026",
         "population_2023": 305160,
@@ -15428,6 +15544,25 @@
             "tehsil": "Ormara",
             "population_2023": 2784
           }
+        ],
+        "profile_checked": "2026-09-29",
+        "sources": [
+          {
+            "url": "https://www.britannica.com/place/Gwadar",
+            "publisher": "Encyclopaedia Britannica",
+            "title": "Gwadar",
+            "date": ""
+          }
+        ],
+        "faq_extra": [
+          {
+            "q": "When did Gwadar become part of Pakistan?",
+            "a": "In 1958, when Oman gave up the town and its hinterland to Pakistan. Gwadar had been part of the Sultanate of Muscat and Oman since 1797.",
+            "source": {
+              "url": "https://www.britannica.com/place/Gwadar",
+              "publisher": "Encyclopaedia Britannica"
+            }
+          }
         ]
       },
       {
@@ -15435,12 +15570,8 @@
         "name": "Harnai",
         "hq": "Harnai",
         "pop": "127,571 (2023 census)",
-        "about": "Railway-pass district in north-east Balochistan.",
-        "education": "Colleges in Harnai.",
-        "health": "DHQ Harnai.",
-        "culture": "Pass towns.",
+        "about": "Harnai District, Balochistan: 127,571 people in the 2023 census, 3 administrative units, headquarters Harnai.",
         "issues": "Small population, long winters.",
-        "villages": "Sharigh belt",
         "division": "Loralai Division",
         "division_source": "Balochistan Revenue Department notification of 8 July 2026",
         "population_2023": 127571,
@@ -15534,7 +15665,9 @@
             "tehsil": "Harnai",
             "population_2023": 14277
           }
-        ]
+        ],
+        "profile_checked": "2026-09-29",
+        "sources": []
       },
       {
         "slug": "hub",
@@ -16462,12 +16595,8 @@
         "name": "Lasbela",
         "hq": "Uthal",
         "pop": "680,977 (2023 census, pre-split boundaries)",
-        "about": "Coastal-plain district toward Hub and the Sindh border, including Sonmiani.",
-        "education": "Lasbela University of Agriculture, Water and Marine Sciences at Uthal.",
-        "health": "DHQ Uthal.",
-        "culture": "Lasi and coastal Baloch.",
+        "about": "Lasbela District, Balochistan: 680,977 people in the 2023 census, 9 administrative units, headquarters Uthal.",
         "issues": "Coastal industry versus fishing villages.",
-        "villages": "Bela, Sonmiani, Hub was split away",
         "boundary_change_2026": "The Shahnoorani and Kalghalo union councils of Khuzdar were added to Lasbela's Kanraj sub-division on 8 July 2026.",
         "division": "Lasbela Division",
         "division_source": "Balochistan Revenue Department notification of 8 July 2026",
@@ -16657,7 +16786,9 @@
             "population_2023": 15688
           }
         ],
-        "census_boundary_note": "These figures are for Lasbela District as enumerated in the 2023 census, before Hub District was created from part of it, so the current district total is lower. The Shahnoorani and Kalghalo union councils of Khuzdar were added to Lasbela's Kanraj sub-division on 8 July 2026."
+        "census_boundary_note": "These figures are for Lasbela District as enumerated in the 2023 census, before Hub District was created from part of it, so the current district total is lower. The Shahnoorani and Kalghalo union councils of Khuzdar were added to Lasbela's Kanraj sub-division on 8 July 2026.",
+        "profile_checked": "2026-09-29",
+        "sources": []
       },
       {
         "slug": "loralai",
@@ -16886,12 +17017,8 @@
         "name": "Musakhel",
         "hq": "Musakhel",
         "pop": "182,275 (2023 census)",
-        "about": "North-eastern district toward Punjab.",
-        "education": "Colleges in Musakhel.",
-        "health": "DHQ Musakhel.",
-        "culture": "Pashtun-Baloch edge.",
+        "about": "Musakhel District, Balochistan: 182,275 people in the 2023 census, 6 administrative units, headquarters Musakhel.",
         "issues": "Staff posting.",
-        "villages": "Kingri belt",
         "division": "Loralai Division",
         "division_source": "Balochistan Revenue Department notification of 8 July 2026",
         "population_2023": 182275,
@@ -17009,7 +17136,9 @@
             "tehsil": "Musakhel",
             "population_2023": 15805
           }
-        ]
+        ],
+        "profile_checked": "2026-09-29",
+        "sources": []
       },
       {
         "slug": "nasirabad",
