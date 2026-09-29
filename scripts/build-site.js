@@ -95,8 +95,16 @@ function districtMeta({ district: d, provinceId: pid, province }) {
   const Noun = n ? cap(L.unitNoun(d, n)) : "";
   const provShort = L.shortProvince[pid];
   let title;
+  const year = (String(d.created || "").match(/20\d\d/g) || []).pop();
   if (pid === "ict") {
     title = "Islamabad District (ICT): Population, Area & Guide (2023)";
+  } else if (d.status === "former") {
+    const succ = joinNames((d.successors || []).map((s) => L.districtIndex.get(s)?.district.name || s));
+    title = firstFit([`${label}: Split into ${succ} (2026)`, `${d.name}: Split into ${succ} (2026)`, `${d.name}: Now ${succ}`], 60);
+  } else if (d.status === "announced") {
+    title = firstFit([`${d.name} Tehsil: Population & Proposed District Status`, `${d.name}: Population & Proposed District Status`], 60);
+  } else if (d.created && d.population_2023 == null) {
+    title = firstFit([`${label}, ${province.name}: New District (${year})`, `${label}: New District (${year}), ${provShort}`, `${label}: New District (${year})`], 60);
   } else if (n >= 2) {
     title = firstFit([`${label}: ${n} ${Noun}, Population & Area (2023)`, `${label}: ${n} ${Noun}, Population & Area`, `${d.name}: ${n} ${Noun}, Population & Area`], 60);
   } else if (d.population_2023 != null) {
@@ -109,12 +117,31 @@ function districtMeta({ district: d, provinceId: pid, province }) {
   const where = `${label}, ${province.name}`;
   const hq = L.cleanHq(d.hq);
   const cands = [];
-  const preSplit = d.census_boundary_note && !/Swat/.test(d.name) ? " (pre-split boundaries)" : "";
+  const q = L.popQualifier(d);
+  const preSplit = q ? ` (${q})` : "";
   const popPart = d.population_2023 != null
     ? ` 2023 census population ${fmtInt(d.population_2023)}${d.area_km2 != null ? `, area ${fmtInt(d.area_km2)} km²` : ""}${preSplit}.`
     : "";
   const popShort = d.population_2023 != null ? ` 2023 census population ${fmtInt(d.population_2023)}${preSplit}.` : "";
   const hqPart = hq ? ` Headquarters: ${hq}.` : "";
+  const statusLead = String(d.status_note || "").replace(/ This page covers.*$/, "").replace(/ MyBook\.Pk does not count.*$/, "");
+  if (d.status === "former" && statusLead) {
+    const succNames = (d.successors || []).map((x) => L.districtIndex.get(x)?.district.name || x);
+    if (d.population_2023 != null) {
+      cands.push(`${label} was divided in 2026 into ${L.listText(succNames)}. 2023 census of the undivided district: ${fmtInt(d.population_2023)} people on ${fmtInt(d.area_km2)} km².`);
+    }
+    cands.push(`${statusLead}${popPart ? ` Undivided district:${popPart.replace(/ \(undivided district\)/, "")}` : ""}`, `${statusLead}${popShort ? ` Undivided district:${popShort.replace(/ \(undivided district\)/, "")}` : ""}`, statusLead);
+  } else if (d.status === "announced" && d.census_2023_row) {
+    const r = d.census_2023_row;
+    cands.push(`${d.name} is a tehsil of Battagram District, Khyber Pakhtunkhwa; district status has been announced but not notified. 2023 census population ${fmtInt(r.population_2023)} on ${fmtInt(r.area_km2)} km².`,
+      `${d.name}, Khyber Pakhtunkhwa: tehsil of Battagram with district status announced, not yet notified. 2023 census population ${fmtInt(r.population_2023)}.`);
+  } else if (d.subdivisions && d.created) {
+    const date = (String(d.created).match(/\d{1,2} [A-Z][a-z]+ 20\d\d/) || [year])[0];
+    const subs = `${L.listText(d.subdivisions)} sub-division${d.subdivisions.length === 1 ? "" : "s"}`;
+    cands.push(`${where}: new district created on ${date}, covering the ${subs}.${hqPart} 2023 census rows and sources.`,
+      `${where}: new district created on ${date}, covering the ${subs}. 2023 census rows and sources.`,
+      `${label}: new district created on ${date}, covering the ${subs}.${hqPart}`);
+  }
   if (pid === "ict") {
     const u = L.provinceById.ict;
     cands.push(`Islamabad Capital Territory: the federal capital district. 2023 census population ${fmtInt(u.population_2023)}, area ${fmtInt(u.area_km2)} km². Universities, hospitals, history and places.`);
@@ -144,10 +171,11 @@ function districtMeta({ district: d, provinceId: pid, province }) {
       }
       cands.push(tier);
     }
-  } else if (d.census_2023_row) {
+  } else if (d.census_2023_row && d.status !== "announced") {
     const r = d.census_2023_row;
     const parent = L.districtIndex.get(r.parent)?.district;
-    cands.push(`${where}: new district. In the 2023 census, ${r.name} ${(L.unitWord[r.type] || r.type).toLowerCase()} of ${parent ? L.districtLabel(parent) : r.parent} had ${fmtInt(r.population_2023)} people.${hqPart}`);
+    const lead = `${where}: new district${year ? ` (${year})` : ""}. In the 2023 census, ${r.name} ${(L.unitWord[r.type] || r.type).toLowerCase()} of ${parent ? L.districtLabel(parent) : r.parent} had ${fmtInt(r.population_2023)} people.`;
+    cands.push(lead + hqPart, lead);
   }
   const about = String(d.about || "").trim();
   if (about) {
@@ -160,14 +188,22 @@ function districtMeta({ district: d, provinceId: pid, province }) {
   return { title, description };
 }
 
+function joinNames(names) {
+  if (names.length !== 2) return names.join(" & ");
+  const [a, b] = names.map((x) => x.split(" "));
+  if (a.length > 1 && a[0] === b[0]) return `${a.join(" ")} & ${b.slice(1).join(" ")}`;
+  if (a.length > 1 && a.slice(1).join(" ") === b.slice(1).join(" ")) return `${a[0]} & ${b.join(" ")}`;
+  return names.join(" & ");
+}
+
 function provinceMeta(pid) {
   const u = L.provinceById[pid];
-  const n = L.districtsOf(pid).length;
+  const n = L.districtCount(pid).count;
   const title = pid === "ict" ? "Islamabad Capital Territory: Population & Area (2023)"
     : firstFit([`${u.name}: Districts, Population & Area (2023)`, `${u.name}: Districts, Population & Area`], 60);
   const description = fitDescription([
-    `${u.name}, Pakistan: capital ${u.capital}, 2023 census population ${fmtInt(u.population_2023)} and area ${fmtInt(u.area_km2)} km². Profiles of ${n} district${n === 1 ? "" : "s"}, culture and services.`,
-    `${u.name}: capital ${u.capital}, 2023 census population ${fmtInt(u.population_2023)}, area ${fmtInt(u.area_km2)} km². Profiles of ${n} district${n === 1 ? "" : "s"}, culture and services.`,
+    `${u.name}, Pakistan: capital ${u.capital}, 2023 census population ${fmtInt(u.population_2023)} and area ${fmtInt(u.area_km2)} km². Guide to its ${n} district${n === 1 ? "" : "s"}, culture and services.`,
+    `${u.name}: capital ${u.capital}, 2023 census population ${fmtInt(u.population_2023)}, area ${fmtInt(u.area_km2)} km². Guide to its ${n} district${n === 1 ? "" : "s"}, culture and services.`,
     `${u.name}: capital ${u.capital}, population ${fmtInt(u.population_2023)} (2023), area ${fmtInt(u.area_km2)} km², ${n} district profile${n === 1 ? "" : "s"}.`
   ]);
   return { title, description };
@@ -176,11 +212,12 @@ function provinceMeta(pid) {
 function hubMeta(pid) {
   const u = L.provinceById[pid];
   const list = L.sortedDistrictsOf(pid);
+  const n = L.districtCount(pid).count;
   const title = firstFit([`Districts of ${u.name}: List with Population (2023)`, `Districts of ${u.name}: Full List (2023)`, `Districts of ${u.name}: List (2023)`], 60);
   const names = list.map((d) => d.name);
   const cands = [];
   for (let k = Math.min(names.length, 8); k >= 1; k--) {
-    cands.push(`A–Z list of ${list.length} district page${list.length === 1 ? "" : "s"} for ${u.name}: ${names.slice(0, k).join(", ")}${k < names.length ? " and more" : ""}, with HQ, 2023 census population and tehsils.`);
+    cands.push(`${u.name} has ${n} district${n === 1 ? "" : "s"}. A–Z list: ${names.slice(0, k).join(", ")}${k < names.length ? " and more" : ""}, with HQ, 2023 census population and tehsils.`);
   }
   return { title, description: pad(fitDescription(cands), [" Sources: PBS 2023."]) };
 }
@@ -481,7 +518,7 @@ function build(file, html) {
   else if (cls.type === "place-extra") meta = southWaziristanMeta();
   else meta = otherMeta(out, file);
   if (cls.type === "districts") {
-    meta.description = `All ${L.districtIndex.size} district pages of Pakistan by province and territory: Punjab, Sindh, KP, Balochistan, GB, AJK and ICT, with HQ and 2023 census population.`;
+    meta.description = `Pakistan has ${L.totalDistricts()} districts: ${L.provinceOrder.map((pid) => `${L.shortProvince[pid]} ${L.districtCount(pid).count}`).join(", ")}. Full list by province with HQ and 2023 census population.`;
   }
   if (cls.type === "provinces") {
     meta.description = "Pakistan's four provinces (Punjab, Sindh, Khyber Pakhtunkhwa, Balochistan) and three territories (ICT, Gilgit-Baltistan, AJK): capitals, 2023 population, area.";

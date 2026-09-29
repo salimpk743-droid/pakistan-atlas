@@ -39,7 +39,8 @@ function tail(extraScript = "") {
 }
 function censusLine(d) {
   if (d.population_2023 == null) return "";
-  return `${fmtInt(d.population_2023)} (2023 census${d.census_boundary_note ? ", pre-split" : ""})`;
+  const q = L.popQualifier(d);
+  return `${fmtInt(d.population_2023)} (2023 census${q ? `, ${q.replace(" boundaries", "")}` : ""})`;
 }
 function districtCard(d, pid) {
   const hq = L.cleanHq(d.hq);
@@ -57,11 +58,53 @@ function districtCard(d, pid) {
         </article>`;
 }
 
+function monthYear(iso) {
+  const [y, m] = String(iso || "").split("-");
+  const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  return m ? `${months[Number(m) - 1]} ${y}` : y || "";
+}
+function sourceLinks(list) {
+  return list.map((x) => `<a href="${esc(x.url)}" rel="noopener">${esc(x.publisher)}${x.date ? `, ${esc(x.date)}` : ""}</a>`).join("; ");
+}
+// "Balochistan has 41 districts (September 2026)" line with the basis and sources for that count.
+function countBox(pid) {
+  const c = L.districtCount(pid);
+  const unit = L.provinceById[pid];
+  return `<section class="source-box" aria-labelledby="${pid}-count">
+      <h2 id="${pid}-count">How many districts does ${esc(unit.name)} have?</h2>
+      <p><strong>${c.count} district${c.count === 1 ? "" : "s"}</strong>${c.divisions ? ` in ${c.divisions} divisions` : ""}, as of ${esc(monthYear(c.as_of))}. ${esc(c.basis)}</p>${c.note ? `
+      <p class="meta">${esc(c.note)}</p>` : ""}
+      <p class="meta">Sources: ${sourceLinks(c.sources)}.</p>
+    </section>`;
+}
+function otherCard(d) {
+  const succ = (d.successors || []).map((s) => L.districtIndex.get(s)?.district).filter(Boolean);
+  return `
+        <article class="card">
+          <div class="card-body">
+            <span class="badge">${esc(L.statusLabel(d))}</span>
+            <h3><a href="${esc(d.slug)}.html">${esc(L.districtLabel(d))}</a></h3>
+            ${succ.length ? `<p>Now ${succ.map((x) => `<a href="${esc(x.slug)}.html">${esc(L.districtLabel(x))}</a>`).join(" and ")}.</p>` : ""}
+            ${d.status_note ? `<p>${esc(d.status_note)}</p>` : ""}
+          </div>
+        </article>`;
+}
+function otherSection(pid) {
+  const others = L.otherDistrictsOf(pid);
+  if (!others.length) return "";
+  return `
+    <h2>Former and announced districts</h2>
+    <p>These pages are kept for reference and are not included in the count above.</p>
+    <div class="grid-3">${others.map(otherCard).join("")}
+    </div>`;
+}
+
 function provincePage(unit) {
   const route = provinceRoutes[unit.id];
   const list = L.sortedDistrictsOf(unit.id);
   const withCensus = list.filter((d) => d.population_2023 != null && !d.census_boundary_note);
-  const description = `${unit.name}: capital ${unit.capital}, 2023 census population and area, and ${list.length} district pages.`;
+  const count = L.districtCount(unit.id).count;
+  const description = `${unit.name}: capital ${unit.capital}, 2023 census population and area, and its ${count} districts.`;
   return `${head(`${unit.name}, Pakistan`, description, route)}
 <body>
   <div id="site-header"></div>
@@ -71,7 +114,7 @@ function provincePage(unit) {
   </div></div>
   <section><div class="container prose">
     <h2>${esc(unit.name)} facts</h2>
-    <p><strong>Capital:</strong> ${esc(unit.capital)} · <strong>Population:</strong> ${fmtInt(unit.population_2023)} (2023 census) · <strong>Area:</strong> ${fmtInt(unit.area_km2)} km² · <strong>District pages on MyBook.Pk:</strong> ${list.length}.</p>
+    <p><strong>Capital:</strong> ${esc(unit.capital)} · <strong>Population:</strong> ${fmtInt(unit.population_2023)} (2023 census) · <strong>Area:</strong> ${fmtInt(unit.area_km2)} km² · <strong>Districts:</strong> ${count}.</p>
     <p><a href="${hubRoutes[unit.id]}">Full list: districts of ${esc(unit.name)} →</a> · <a href="${L.PROVINCES_HUB}">All provinces and territories →</a></p>
     <div class="grid-2">
       <div><h3>Culture and geography</h3><p>${esc(unit.culture)}</p></div>
@@ -81,6 +124,7 @@ function provincePage(unit) {
     <p>Every district page below has its headquarters, population and local information${withCensus.length ? "; population figures are from the Pakistan Bureau of Statistics 2023 census, Table 1" : ""}.</p>
     <div class="grid-3">${list.map((d) => districtCard(d, unit.id)).join("")}
     </div>
+    ${countBox(unit.id)}${otherSection(unit.id)}
     <h2>Public issues</h2><p>${esc(unit.issues)}</p>
     <p class="meta"><strong>Sources:</strong> Pakistan Bureau of Statistics 2023 census and provincial or district sources noted on individual pages.</p>
   </div></section>
@@ -90,7 +134,8 @@ ${tail()}`;
 function provinceHub(unit) {
   const route = hubRoutes[unit.id];
   const list = L.sortedDistrictsOf(unit.id);
-  const intro = `An alphabetical list of the ${list.length} district pages for ${unit.name} on MyBook.Pk, with headquarters, 2023 census population and tehsils where the census publishes them.`;
+  const c = L.districtCount(unit.id);
+  const intro = `${unit.name} has ${c.count} district${c.count === 1 ? "" : "s"} (${monthYear(c.as_of)}). An alphabetical list with headquarters, 2023 census population and tehsils where the census publishes them.`;
   return `${head(`Districts of ${unit.name}`, intro, route)}
 <body>
   <div id="site-header"></div>
@@ -100,8 +145,10 @@ function provinceHub(unit) {
   </div></div>
   <main class="container prose">
     <p><a href="${provinceRoutes[unit.id]}">${esc(unit.name)} province guide →</a> · <a href="${L.DISTRICTS_HUB}">All districts of Pakistan →</a></p>
+    <h2>${esc(unit.name)} districts, A–Z</h2>
     <div class="grid-3">${list.map((d) => districtCard(d, unit.id)).join("")}
     </div>
+    ${countBox(unit.id)}${otherSection(unit.id)}
     <section>
       <h2>Sources and editorial method</h2>
       <p>Population, area and tehsil figures are taken from the Pakistan Bureau of Statistics 2023 census, Table 1. Districts created after the census are marked, and no figure is shown where no official number exists.</p>
@@ -116,17 +163,29 @@ function districtsHub() {
     const list = L.sortedDistrictsOf(pid);
     return `
       <section class="district-group" aria-labelledby="${pid}-heading">
-        <h2 id="${pid}-heading"><a href="${hubRoutes[pid]}">${esc(unit.name)} districts</a> <span class="meta">(${list.length})</span></h2>
+        <h2 id="${pid}-heading"><a href="${hubRoutes[pid]}">${esc(unit.name)} districts</a> <span class="meta">(${L.districtCount(pid).count})</span></h2>
         <div class="district-results">${list.map((d) => {
           const hq = L.cleanHq(d.hq);
           const hay = `${d.name} ${d.hq || ""} ${unit.name} ${unit.short || ""}`.toLowerCase();
           return `
-          <a class="district-result" href="${esc(d.slug)}.html" data-hay="${esc(hay)}"><strong>${esc(d.name)}</strong><span>${esc(unit.name)}${hq ? ` · HQ ${esc(hq)}` : ""}${d.population_2023 != null && !d.census_boundary_note ? ` · ${fmtInt(d.population_2023)} (2023)` : ""}</span></a>`;
+          <a class="district-result" href="${esc(d.slug)}.html" data-hay="${esc(hay)}"><strong>${esc(d.name)}</strong><span>${esc(unit.name)}${hq ? ` · HQ ${esc(hq)}` : ""}${d.population_2023 != null && !L.popQualifier(d) ? ` · ${fmtInt(d.population_2023)} (2023)` : ""}</span></a>`;
         }).join("")}
         </div>
       </section>`;
   }).join("");
-  const total = L.districtIndex.size;
+  const others = L.provinceOrder.flatMap((pid) => L.otherDistrictsOf(pid).map((d) => [pid, d]));
+  const otherGroup = others.length ? `
+      <section class="district-group" aria-labelledby="other-heading">
+        <h2 id="other-heading">Former and announced districts <span class="meta">(not counted)</span></h2>
+        <div class="district-results">${others.map(([pid, d]) => {
+          const unit = L.provinceById[pid];
+          const hay = `${d.name} ${d.hq || ""} ${unit.name} ${unit.short || ""}`.toLowerCase();
+          return `
+          <a class="district-result" data-other="1" href="${esc(d.slug)}.html" data-hay="${esc(hay)}"><strong>${esc(d.name)}</strong><span>${esc(unit.name)} · ${esc(L.statusLabel(d))}</span></a>`;
+        }).join("")}
+        </div>
+      </section>` : "";
+  const total = L.totalDistricts();
   const script = `
   <script>
     (function () {
@@ -137,7 +196,7 @@ function districtsHub() {
       function apply(q) {
         q = (q || "").trim().toLowerCase();
         var shown = 0;
-        links.forEach(function (a) { var hit = !q || a.getAttribute("data-hay").indexOf(q) !== -1; a.hidden = !hit; if (hit) shown++; });
+        links.forEach(function (a) { var hit = !q || a.getAttribute("data-hay").indexOf(q) !== -1; a.hidden = !hit; if (hit && !a.hasAttribute("data-other")) shown++; });
         groups.forEach(function (g) { g.hidden = !g.querySelector(".district-result:not([hidden])"); });
         count.textContent = shown ? shown + " district" + (shown === 1 ? "" : "s") : "No districts match that search.";
       }
@@ -147,12 +206,12 @@ function districtsHub() {
       input.addEventListener("input", function () { apply(input.value); });
     })();
   </script>`;
-  return `${head("Districts of Pakistan", `Every district of Pakistan by province and territory (${total} district pages), with headquarters and 2023 census population.`, L.DISTRICTS_HUB)}
+  return `${head("Districts of Pakistan", `All ${total} districts of Pakistan by province and territory, with headquarters and 2023 census population.`, L.DISTRICTS_HUB)}
 <body>
   <div id="site-header"></div>
   <div class="page-hero"><div class="container">
     <h1>Districts of Pakistan</h1>
-    <p>All ${total} district pages on MyBook.Pk, grouped by province and territory. Search by district, headquarters or province.</p>
+    <p>Pakistan has ${total} districts (${monthYear(L.districtCount("punjab").as_of)}): ${L.provinceOrder.map((pid) => `${L.shortProvince[pid]} ${L.districtCount(pid).count}`).join(", ")}. Grouped by province and territory; search by district, headquarters or province. Each province page lists the notifications behind its count.</p>
   </div></div>
   <section>
     <div class="container">
@@ -160,7 +219,7 @@ function districtsHub() {
         <label class="visually-hidden" for="q">Search districts</label>
         <input id="q" type="search" placeholder="Try Lahore, Swat, Gwadar, Peshawar…" autocomplete="off" enterkeyhint="search" />
       </div>
-      <p class="search-count" id="count">${total} districts</p>${sections}
+      <p class="search-count" id="count">${total} districts</p>${sections}${otherGroup}
     </div>
   </section>
 ${tail(script)}`;
@@ -169,7 +228,7 @@ ${tail(script)}`;
 function provincesHub() {
   const cards = L.provinceOrder.map((pid) => {
     const u = L.provinceById[pid];
-    const n = L.districtsOf(pid).length;
+    const n = L.districtCount(pid).count;
     return `
       <article class="prose" style="margin-bottom:1.2rem" id="${u.id}">
         <h2><a href="${provinceRoutes[pid]}">${esc(u.name)}</a> <span class="urdu">${esc(u.urdu)}</span></h2>
@@ -180,7 +239,7 @@ function provincesHub() {
           <div><h3>Universities &amp; colleges</h3><p>${esc(u.education_note)}</p></div>
           <div><h3>Hospitals</h3><p>${esc(u.health_note)}</p></div>
         </div>
-        <p class="meta"><a href="${hubRoutes[pid]}">All ${n} ${esc(u.name)} district pages →</a></p>
+        <p class="meta"><a href="${hubRoutes[pid]}">All ${n} district${n === 1 ? "" : "s"} of ${esc(u.name)} →</a></p>
       </article>`;
   }).join("");
   return `${head("Provinces and Territories of Pakistan", "Pakistan's four provinces and three territories with capitals, 2023 census population and area.", L.PROVINCES_HUB)}
@@ -235,19 +294,30 @@ function tehsilPage(info) {
 ${tail()}`;
 }
 
+// Template for a district page that does not exist yet. Only sourced facts from data/districts.json are
+// used; the Quick Answers block (census rows, HQ, division) is added by enhance-district-seo.js.
 function districtPage(info) {
   const { district: d, province } = info;
   const description = `${L.districtLabel(d)}, ${province.name}.`;
+  const parent = d.predecessor && L.districtIndex.get(d.predecessor)?.district;
+  const division = d.division || d.division_2023 || "";
+  const sources = (d.admin_sources || []).map((x) => `<li><a href="${esc(x.url)}" rel="noopener">${esc(x.title)}</a> – ${esc(x.publisher)}${x.date ? `, ${esc(x.date)}` : ""}</li>`).join("\n      ");
   return `${head(L.districtLabel(d), description, `${d.slug}.html`)}
 <body>
   <div id="site-header"></div>
   <div class="page-hero"><div class="container">
     <h1>${esc(L.districtLabel(d))}</h1>
-    <p>${esc(province.name)}</p>
+    <p>${division ? `${esc(division)} · ` : ""}${esc(province.name)}</p>
   </div></div>
   <section><div class="container prose">
     ${d.about ? `<p>${esc(d.about)}</p>` : ""}
+    ${d.created || parent ? `<h2>How the district was created</h2>
+    <p>${d.created ? `${/^(Created|Renamed)/.test(d.created) ? "" : "Created by the "}${esc(d.created)}.` : ""}${parent ? ` It was formed from <a href="${esc(parent.slug)}.html">${esc(L.districtLabel(parent))}</a>.` : ""}</p>` : ""}
     ${d.issues ? `<h2>Public issues</h2><p>${esc(d.issues)}</p>` : ""}
+    ${sources ? `<h2>Sources</h2>
+    <ul>
+      ${sources}
+    </ul>` : ""}
   </div></section>
 ${tail()}`;
 }

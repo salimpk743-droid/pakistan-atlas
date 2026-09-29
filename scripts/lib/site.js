@@ -55,8 +55,30 @@ for (const pid of provinceOrder) {
     districtIndex.set(d.slug, { district: d, provinceId: pid, province: provinceById[pid] });
   }
 }
-function districtsOf(pid) { return (districts[pid]?.districts || []).slice(); }
-function sortedDistrictsOf(pid) { return districtsOf(pid).sort((a, b) => a.name.localeCompare(b.name, "en")); }
+// A district counts towards a province's total unless it has been split ("former") or only announced.
+function isCurrent(d) { return !d.status; }
+const byName = (a, b) => a.name.localeCompare(b.name, "en");
+function districtsOf(pid) { return (districts[pid]?.districts || []).filter(isCurrent); }
+function sortedDistrictsOf(pid) { return districtsOf(pid).sort(byName); }
+// Former (split) and announced-but-not-notified districts that still have a page.
+function otherDistrictsOf(pid) { return (districts[pid]?.districts || []).filter((d) => !isCurrent(d)).sort(byName); }
+// Sourced official count; generators fail if the data list disagrees with it.
+function districtCount(pid) {
+  const c = districts[pid]?.district_count;
+  const n = districtsOf(pid).length;
+  if (!c || c.count !== n) throw new Error(`${pid}: district_count ${c && c.count} does not match ${n} current districts in data/districts.json`);
+  return c;
+}
+function totalDistricts() { return provinceOrder.reduce((a, pid) => a + districtCount(pid).count, 0); }
+// How a district's PBS 2023 total relates to its current boundaries.
+function popQualifier(d) {
+  if (d.population_2023 == null || !d.census_boundary_note) return "";
+  if (/is the sum of/.test(d.population_source || "")) return ""; // total of the successor's own 2023 rows
+  if (d.status === "former") return "undivided district";
+  if (d.boundary_change_2026 && !/before .* was created/.test(d.census_boundary_note)) return "2023 boundaries";
+  return "pre-split boundaries";
+}
+function statusLabel(d) { return d.status === "former" ? "former district" : d.status === "announced" ? "announced, not yet notified" : ""; }
 function exists(file) { return fs.existsSync(path.join(ROOT, file)); }
 function htmlFiles() { return fs.readdirSync(ROOT).filter((n) => n.endsWith(".html")).sort(); }
 
@@ -65,7 +87,10 @@ const relatedPairs = [
   ["rawalpindi", "murree"], ["chakwal", "talagang"], ["gujranwala", "wazirabad"], ["muzaffargarh", "kotaddu"],
   ["dera-ghazi-khan", "taunsa"], ["dera-ismail-khan", "paharpur"], ["battagram", "allai"], ["lasbela", "hub"],
   ["jafarabad", "usta-muhammad"], ["swat", "bar-swat"], ["chitral-lower", "chitral-upper"], ["swa-upper", "swa-lower"],
-  ["upper-kohistan", "lower-kohistan"], ["upper-kohistan", "kolai-palas"], ["lower-dir", "upper-dir"]
+  ["upper-kohistan", "lower-kohistan"], ["upper-kohistan", "kolai-palas"], ["lower-dir", "upper-dir"],
+  ["quetta", "quetta-east"], ["quetta", "quetta-west"], ["quetta-east", "quetta-west"], ["dera-bugti", "north-dera-bugti"],
+  ["dera-bugti", "south-dera-bugti"], ["north-dera-bugti", "south-dera-bugti"], ["khuzdar", "wadh"], ["khuzdar", "surab"],
+  ["kech", "tump"], ["pishin", "barshore"]
 ];
 const extraRelated = { "swa-upper": ["south-waziristan.html"], "swa-lower": ["south-waziristan.html"] };
 
@@ -112,6 +137,7 @@ module.exports = {
   ADSENSE_META,
   ROOT, SITE, OG_IMAGE, provinceRoutes, hubRoutes, PROVINCES_HUB, DISTRICTS_HUB, provinceOrder, shortProvince,
   isVerificationFile, NOINDEX_PAGES, provinces, districts, provinceById, districtIndex, districtsOf, sortedDistrictsOf,
+  isCurrent, otherDistrictsOf, districtCount, totalDistricts, statusLabel, popQualifier,
   exists, htmlFiles, relatedPairs, extraRelated, esc, stripTags, decodeEntities, fmtInt, fmtNum, unitWord, unitsOf,
   unitType, unitNoun, cleanHq, listText, districtLabel
 };

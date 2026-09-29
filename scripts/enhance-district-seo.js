@@ -38,6 +38,14 @@ function quickAnswers(info, wrap) {
   const rows = [];
   const add = (dt, dd) => { if (dd) rows.push(`<dt>${dt}</dt><dd>${dd}</dd>`); };
   const units = L.unitsOf(d);
+  if (d.status_note) add("Status", L.esc(d.status_note));
+  const successors = (d.successors || []).map((s) => L.districtIndex.get(s)?.district).filter(Boolean);
+  if (successors.length) add("Now", successors.map((x) => `<a href="${x.slug}.html">${L.esc(L.districtLabel(x))}</a>`).join(" and "));
+  if (d.created) {
+    const parent = d.predecessor && L.districtIndex.get(d.predecessor)?.district;
+    add("Created", `${L.esc(d.created)}${parent ? `, from <a href="${parent.slug}.html">${L.esc(L.districtLabel(parent))}</a>` : ""}`);
+  }
+  if (d.subdivisions) add("Sub-divisions (as notified)", L.esc(L.listText(d.subdivisions)));
   if (d.population_2023 != null) {
     const parts = [`${L.fmtInt(d.population_2023)} (2023 census)`];
     add("Population", parts.join(""));
@@ -51,15 +59,22 @@ function quickAnswers(info, wrap) {
     const parent = L.districtIndex.get(r.parent)?.district;
     add("2023 census", `The census counted ${L.esc(r.name)} ${L.esc((L.unitWord[r.type] || r.type).toLowerCase())} under ${parent ? `<a href="${L.esc(r.parent)}.html">${L.esc(L.districtLabel(parent))}</a>` : L.esc(r.parent)}: ${L.fmtInt(r.population_2023)} people on ${L.fmtInt(r.area_km2)} km². No separate district total was published.`);
   }
+  if (d.census_2023_rows) {
+    const r = d.census_2023_rows;
+    const parent = L.districtIndex.get(r.parent)?.district;
+    const list = r.units.map((u) => `${L.esc(u.name)} ${L.esc((L.unitWord[u.type] || u.type).toLowerCase())} ${L.fmtInt(u.population_2023)}`).join("; ");
+    add("2023 census", `The census counted the units now in ${L.esc(d.name)} under ${parent ? `<a href="${L.esc(r.parent)}.html">${L.esc(L.districtLabel(parent))}</a>` : L.esc(r.parent)}: ${list}. Boundaries were redrawn in 2026 (and new sub-divisions created), so no district total is given.`);
+  }
   if (units.length && d.tehsil_count) {
     add(`${L.unitNoun(d, 2)[0].toUpperCase()}${L.unitNoun(d, 2).slice(1)}`, `${d.tehsil_count} – ${L.esc(L.listText(units.map((u) => u.name)))}`);
   } else if (units.length) {
     add("Census units (2023)", L.esc(units.map((u) => `${u.name} (${(L.unitWord[u.type] || u.type).toLowerCase()})`).join(", ")));
   }
   add("Headquarters", L.esc(L.cleanHq(d.hq)));
-  add("Division", L.esc(d.division_2023 || ""));
+  add("Division", L.esc(d.division || d.division_2023 || ""));
   add("Province / territory", `<a href="${L.provinceRoutes[provinceId]}">${L.esc(province.name)}</a>`);
-  add("Known for", L.esc(d.about || ""));
+  // For districts created or split in 2026 "about" is the administrative summary shown on the page itself.
+  add("Known for", d.created || d.status ? "" : L.esc(d.about || ""));
   add("Culture", L.esc(d.culture || ""));
   add("Education", L.esc(d.education || ""));
   add("Healthcare", L.esc(d.health || ""));
@@ -82,13 +97,15 @@ function quickAnswers(info, wrap) {
   }
   const source = d.population_source_url
     ? `\n      <p class="meta">Source: <a href="${L.esc(d.population_source_url)}" rel="noopener">Pakistan Bureau of Statistics, Census 2023, Table 1</a>. Checked ${L.esc(d.last_verified || "")}.</p>`
-    : d.census_2023_row?.source_url
-      ? `\n      <p class="meta">Source: <a href="${L.esc(d.census_2023_row.source_url)}" rel="noopener">Pakistan Bureau of Statistics, Census 2023, Table 1</a>.</p>`
+    : (d.census_2023_row || d.census_2023_rows)?.source_url
+      ? `\n      <p class="meta">Source: <a href="${L.esc((d.census_2023_row || d.census_2023_rows).source_url)}" rel="noopener">Pakistan Bureau of Statistics, Census 2023, Table 1</a>.</p>`
       : "";
+  const admin = (d.admin_sources || []).map((x) => `<a href="${L.esc(x.url)}" rel="noopener">${L.esc(x.publisher)}${x.date ? `, ${L.esc(x.date)}` : ""}</a>`).join("; ");
+  const adminLine = admin ? `\n      <p class="meta">Administrative status: ${admin}.</p>` : "";
   const inner = `<h2 id="district-search-answers">${L.esc(name)}: Quick Answers</h2>
       <dl>
         ${rows.join("\n        ")}
-      </dl>${table}${source}`;
+      </dl>${table}${source}${adminLine}`;
   const body = wrap
     ? `<section class="district-search-answers" aria-labelledby="district-search-answers"><div class="container">
       ${inner}
@@ -114,7 +131,7 @@ function relatedLinks(info) {
   for (const href of L.extraRelated[d.slug] || []) push(href, href === "south-waziristan.html" ? "South Waziristan (before the 2022 split)" : href);
   const list = L.sortedDistrictsOf(provinceId).filter((x) => L.exists(`${x.slug}.html`));
   const i = list.findIndex((x) => x.slug === d.slug);
-  const capital = { punjab: "lahore", sindh: "karachi-south", kpk: "peshawar", balochistan: "quetta", gb: "gilgit", ajk: "muzaffarabad" }[provinceId];
+  const capital = { punjab: "lahore", sindh: "karachi-south", kpk: "peshawar", balochistan: "quetta-east", gb: "gilgit", ajk: "muzaffarabad" }[provinceId];
   const others = [];
   if (list.length > 1) {
     for (const off of [-2, -1, 1, 2]) {
@@ -158,7 +175,7 @@ function enhance(html, info, hasCensusUse) {
   const proseOpen = PROSE_OPEN;
   const isTemplate = out.includes(proseOpen);
   const d = info.district;
-  const wantQa = isTemplate || stripped.hadQuickAnswers || d.population_2023 != null || L.unitsOf(d).length || d.census_2023_row;
+  const wantQa = isTemplate || stripped.hadQuickAnswers || d.population_2023 != null || L.unitsOf(d).length || d.census_2023_row || d.census_2023_rows || d.status_note || d.created;
   if (wantQa) {
     if (isTemplate) {
       const i = out.indexOf(proseOpen) + proseOpen.length;
