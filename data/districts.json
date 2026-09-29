@@ -6631,11 +6631,6 @@
         "hq": "Banna",
         "pop": "218,149 (2023 census)",
         "about": "Allai is the mountain valley north of Battagram, historically ruled by its own Nawabs until 1971. It is a tehsil of Battagram District; district status has been announced but not yet notified.",
-        "education": "Education infrastructure is still catching up after the 2023 split; many students continue to travel to Battagram or Mansehra for higher study.",
-        "health": "A district headquarters hospital is being developed at Banna; patients previously relied on Battagram's DHQ.",
-        "culture": "The area was historically the princely state of Allai, ruled by its own Nawabs until 1971, and both Pashto and Hindko are spoken across its mountain villages.",
-        "issues": "Steep terrain and limited road access remain the main barrier to services reaching outlying villages.",
-        "villages": "Banna, Batila, Batkul, Biari, Jumbera, Pashto, Rushing and Shakargah union councils.",
         "status": "announced",
         "status_note": "Allai is a tehsil of Battagram District. A January 2023 notification giving it district status was not implemented; KP chief ministers announced district status again in May 2025 and February 2026, and in August 2026 it was still described as a tehsil to be upgraded. MyBook.Pk does not count it as a district until a notification is issued.",
         "admin_sources": [
@@ -6675,7 +6670,8 @@
           "growth_rate_2017_2023": 3.22,
           "literacy_2023": 35.71,
           "source_url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_1_kp_districts.pdf"
-        }
+        },
+        "profile_checked": "2026-09-30"
       },
       {
         "slug": "buner",
@@ -12034,7 +12030,6 @@
       {
         "slug": "karachi-central",
         "name": "Karachi Central",
-        "hq": "North Nazimabad belt",
         "pop": "3,822,325 (2023 census)",
         "about": "Karachi Central District, Sindh: 3,822,325 people in the 2023 census, 5 administrative units, headquarters North Nazimabad belt.",
         "issues": "Density and municipal services.",
@@ -12167,14 +12162,7 @@
       {
         "slug": "karachi-east",
         "name": "Karachi East",
-        "hq": "Gulshan / Faisal Cantonment belt",
-        "pop": "3,921,742 (2023 census)",
-        "about": "Large urban district including Gulshan-e-Iqbal side.",
-        "education": "University of Karachi sits on this side of the city map.",
-        "health": "Several large private and public hospitals.",
-        "culture": "Mixed middle-class Karachi.",
-        "issues": "Traffic and water.",
-        "villages": "Urban",
+        "about": "Karachi Division district; the 2023 census counted 3,921,742 people on 139 km².",
         "population_2023": 3921742,
         "area_km2": 139,
         "density_2023": 28213.97,
@@ -12274,19 +12262,41 @@
           "table12": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_12_sindh_districts.pdf"
         },
         "tehsil_count": 4,
-        "tehsil_count_source": "PBS 2023 census, Table 1"
+        "tehsil_count_source": "PBS 2023 census, Table 1",
+        "profile_checked": "2026-09-30",
+        "sources": [
+          {
+            "url": "https://www.britannica.com/place/Karachi",
+            "publisher": "Encyclopaedia Britannica",
+            "title": "Karachi",
+            "date": ""
+          }
+        ],
+        "urdu": {
+          "name": "کراچی ایسٹ",
+          "blocks": [
+            {
+              "h": "کراچی",
+              "p": [
+                "کراچی صوبہ سندھ کا دارالحکومت، پاکستان کا سب سے بڑا شہر اور سب سے بڑی بندرگاہ ہے (<a href=\"https://www.britannica.com/place/Karachi\" rel=\"noopener\">انسائیکلوپیڈیا بریٹانیکا</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://www.britannica.com/place/Karachi",
+              "publisher": "Encyclopaedia Britannica",
+              "title": "Karachi"
+            }
+          ]
+        },
+        "division": "Karachi Division"
       },
       {
         "slug": "karachi-south",
         "name": "Karachi South",
-        "hq": "Saddar / Clifton belt",
-        "pop": "2,329,764 (2023 census)",
-        "about": "Historic core: Saddar, Empress Market, Clifton, old port neighbourhoods.",
-        "education": "DJ Sindh Govt Science College and historic schools; IBA nearby.",
-        "health": "Civil Hospital / Dow cluster and Jinnah Postgraduate Medical Centre.",
-        "culture": "The oldest public face of Karachi.",
-        "issues": "Heritage, congestion, sea-level planning.",
-        "villages": "Urban",
+        "about": "Karachi Division district; the 2023 census counted 2,329,764 people on 122 km².",
         "population_2023": 2329764,
         "area_km2": 122,
         "density_2023": 19096.43,
@@ -12396,19 +12406,41 @@
           "table12": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_12_sindh_districts.pdf"
         },
         "tehsil_count": 5,
-        "tehsil_count_source": "PBS 2023 census, Table 1"
+        "tehsil_count_source": "PBS 2023 census, Table 1",
+        "profile_checked": "2026-09-30",
+        "sources": [
+          {
+            "url": "https://www.britannica.com/place/Karachi",
+            "publisher": "Encyclopaedia Britannica",
+            "title": "Karachi",
+            "date": ""
+          }
+        ],
+        "urdu": {
+          "name": "کراچی ساؤتھ",
+          "blocks": [
+            {
+              "h": "کراچی",
+              "p": [
+                "کراچی صوبہ سندھ کا دارالحکومت، پاکستان کا سب سے بڑا شہر اور سب سے بڑی بندرگاہ ہے (<a href=\"https://www.britannica.com/place/Karachi\" rel=\"noopener\">انسائیکلوپیڈیا بریٹانیکا</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://www.britannica.com/place/Karachi",
+              "publisher": "Encyclopaedia Britannica",
+              "title": "Karachi"
+            }
+          ]
+        },
+        "division": "Karachi Division"
       },
       {
         "slug": "karachi-west",
         "name": "Karachi West",
-        "hq": "Orangi / SITE belt",
-        "pop": "2,679,380 (2023 census)",
-        "about": "Industrial SITE area and large planned / unplanned neighbourhoods.",
-        "education": "Public colleges across Orangi and SITE.",
-        "health": "District hospitals and Korangi-West edge facilities.",
-        "culture": "Working-class Karachi.",
-        "issues": "Katchi abadis upgrading.",
-        "villages": "Urban / Baldia edge",
+        "about": "Karachi Division district; the 2023 census counted 2,679,380 people on 370 km².",
         "population_2023": 2679380,
         "area_km2": 370,
         "density_2023": 7241.57,
@@ -12498,19 +12530,42 @@
           "table12": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_12_sindh_districts.pdf"
         },
         "tehsil_count": 3,
-        "tehsil_count_source": "PBS 2023 census, Table 1"
+        "tehsil_count_source": "PBS 2023 census, Table 1",
+        "profile_checked": "2026-09-30",
+        "sources": [
+          {
+            "url": "https://www.britannica.com/place/Karachi",
+            "publisher": "Encyclopaedia Britannica",
+            "title": "Karachi",
+            "date": ""
+          }
+        ],
+        "urdu": {
+          "name": "کراچی ویسٹ",
+          "blocks": [
+            {
+              "h": "کراچی",
+              "p": [
+                "کراچی صوبہ سندھ کا دارالحکومت، پاکستان کا سب سے بڑا شہر اور سب سے بڑی بندرگاہ ہے (<a href=\"https://www.britannica.com/place/Karachi\" rel=\"noopener\">انسائیکلوپیڈیا بریٹانیکا</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://www.britannica.com/place/Karachi",
+              "publisher": "Encyclopaedia Britannica",
+              "title": "Karachi"
+            }
+          ]
+        },
+        "division": "Karachi Division"
       },
       {
         "slug": "keamari",
         "name": "Keamari",
         "hq": "Keamari",
-        "pop": "2,068,451 (2023 census)",
-        "about": "Port district split from Karachi West. Harbour and island settlements.",
-        "education": "Colleges near the port towns.",
-        "health": "District hospitals.",
-        "culture": "Port and fishing communities.",
-        "issues": "Port traffic and coastal settlements.",
-        "villages": "Mauripur, harbour islands",
+        "about": "Karachi Division district; the 2023 census counted 2,068,451 people on 559 km².",
         "population_2023": 2068451,
         "area_km2": 559,
         "density_2023": 3700.27,
@@ -12610,19 +12665,42 @@
           "table12": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_12_sindh_districts.pdf"
         },
         "tehsil_count": 4,
-        "tehsil_count_source": "PBS 2023 census, Table 1"
+        "tehsil_count_source": "PBS 2023 census, Table 1",
+        "profile_checked": "2026-09-30",
+        "sources": [
+          {
+            "url": "https://www.britannica.com/place/Karachi",
+            "publisher": "Encyclopaedia Britannica",
+            "title": "Karachi",
+            "date": ""
+          }
+        ],
+        "urdu": {
+          "name": "کیماڑی",
+          "blocks": [
+            {
+              "h": "کراچی",
+              "p": [
+                "کراچی صوبہ سندھ کا دارالحکومت، پاکستان کا سب سے بڑا شہر اور سب سے بڑی بندرگاہ ہے (<a href=\"https://www.britannica.com/place/Karachi\" rel=\"noopener\">انسائیکلوپیڈیا بریٹانیکا</a>)۔ کراچی کی بندرگاہ کو مغرب کی طرف سے کیماڑی جزیرہ، منوڑا جزیرہ اور اویسٹر راکس طوفانوں سے بچاتے ہیں۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://www.britannica.com/place/Karachi",
+              "publisher": "Encyclopaedia Britannica",
+              "title": "Karachi"
+            }
+          ]
+        },
+        "division": "Karachi Division"
       },
       {
         "slug": "korangi",
         "name": "Korangi",
         "hq": "Korangi",
-        "pop": "3,128,971 (2023 census)",
-        "about": "Industrial-residential district of eastern Karachi.",
-        "education": "Public colleges in Korangi and Landhi.",
-        "health": "Creek-side and industrial-area hospitals.",
-        "culture": "Planned townships of the 1960s plus new density.",
-        "issues": "Industry and housing together.",
-        "villages": "Urban",
+        "about": "Karachi Division district; the 2023 census counted 3,128,971 people on 108 km².",
         "population_2023": 3128971,
         "area_km2": 108,
         "density_2023": 28971.95,
@@ -12722,7 +12800,36 @@
           "table12": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_12_sindh_districts.pdf"
         },
         "tehsil_count": 4,
-        "tehsil_count_source": "PBS 2023 census, Table 1"
+        "tehsil_count_source": "PBS 2023 census, Table 1",
+        "profile_checked": "2026-09-30",
+        "sources": [
+          {
+            "url": "https://www.britannica.com/place/Karachi",
+            "publisher": "Encyclopaedia Britannica",
+            "title": "Karachi",
+            "date": ""
+          }
+        ],
+        "urdu": {
+          "name": "کورنگی",
+          "blocks": [
+            {
+              "h": "کراچی",
+              "p": [
+                "کراچی صوبہ سندھ کا دارالحکومت، پاکستان کا سب سے بڑا شہر اور سب سے بڑی بندرگاہ ہے (<a href=\"https://www.britannica.com/place/Karachi\" rel=\"noopener\">انسائیکلوپیڈیا بریٹانیکا</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://www.britannica.com/place/Karachi",
+              "publisher": "Encyclopaedia Britannica",
+              "title": "Karachi"
+            }
+          ]
+        },
+        "division": "Karachi Division"
       },
       {
         "slug": "malir",
@@ -16738,13 +16845,7 @@
         "slug": "dera-bugti",
         "name": "Dera Bugti",
         "hq": "Dera Bugti",
-        "pop": "355,274 (2023 census, pre-split boundaries)",
-        "about": "Eastern gas-field district.",
-        "education": "Colleges in Dera Bugti and Sui.",
-        "health": "DHQ Dera Bugti.",
-        "culture": "Bugti country.",
-        "issues": "Service delivery next to energy infrastructure.",
-        "villages": "Sui, Phelawagh",
+        "about": "Former district of the Sui gas field, divided into North and South Dera Bugti in 2026.",
         "status": "former",
         "successors": [
           "north-dera-bugti",
@@ -16910,7 +17011,46 @@
             "population_2023": 28880
           }
         ],
-        "census_boundary_note": "These figures are for the undivided Dera Bugti District as enumerated in the 2023 census, before it was divided into North Dera Bugti and South Dera Bugti."
+        "census_boundary_note": "These figures are for the undivided Dera Bugti District as enumerated in the 2023 census, before it was divided into North Dera Bugti and South Dera Bugti.",
+        "profile_checked": "2026-09-30",
+        "sources": [
+          {
+            "url": "https://www.britannica.com/place/Sui",
+            "publisher": "Encyclopaedia Britannica",
+            "title": "Sui",
+            "date": ""
+          }
+        ],
+        "faq_extra": [
+          {
+            "q": "When was gas discovered at Sui?",
+            "a": "In 1950–51. Operations began in 1955.",
+            "source": {
+              "url": "https://www.britannica.com/place/Sui",
+              "publisher": "Encyclopaedia Britannica"
+            }
+          }
+        ],
+        "urdu": {
+          "name": "ڈیرہ بگٹی",
+          "hq": "ڈیرہ بگٹی",
+          "blocks": [
+            {
+              "h": "سوئی گیس",
+              "p": [
+                "سوئی میں 1950–51 میں دنیا کے بڑے قدرتی گیس ذخائر میں سے ایک دریافت ہوا، اور 1955 میں پائپ لائنوں کے ذریعے حیدرآباد، کراچی اور سکھر کو گیس کی فراہمی شروع ہوئی (<a href=\"https://www.britannica.com/place/Sui\" rel=\"noopener\">انسائیکلوپیڈیا بریٹانیکا</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://www.britannica.com/place/Sui",
+              "publisher": "Encyclopaedia Britannica",
+              "title": "Sui"
+            }
+          ]
+        }
       },
       {
         "slug": "duki",
@@ -17091,7 +17231,7 @@
           "sources": [
             {
               "url": "https://dailyazadiquetta.com/2017/07/18/httpwp-mep3wa3i-gdg/",
-              "publisher": "dailyazadiquetta.com",
+              "publisher": "Daily Azadi",
               "title": ""
             },
             {
@@ -17449,26 +17589,96 @@
         "slug": "hub",
         "name": "Hub",
         "hq": "Hub",
-        "pop": "Newer district",
-        "about": "Industrial town district on the Sindh border, created from Lasbela.",
-        "education": "Colleges in Hub.",
-        "health": "DHQ Hub.",
-        "culture": "Industrial Makran-Sindh edge.",
-        "issues": "Factory town services.",
-        "villages": "Sakran belt",
+        "about": "Lasbela Division district notified in September 2022 from Lasbela, with Hub, Dureji and Sonmiani (Winder) sub-divisions.",
         "division": "Lasbela Division",
         "division_source": "Balochistan Revenue Department notification of 8 July 2026",
-        "census_2023_row": {
+        "profile_checked": "2026-09-30",
+        "sources": [
+          {
+            "url": "https://quettavoice.com/2022/06/06/balochistan-districts-hub-karezat-and-usta-muhammad-made-new-districts/",
+            "publisher": "Quetta Voice",
+            "title": "Hub, Karezat and Usta Muhammad made new districts",
+            "date": "6 June 2022"
+          }
+        ],
+        "faq_extra": [
+          {
+            "q": "When did Hub become a district?",
+            "a": "Hub was notified as Balochistan’s 35th district in September 2022, carved out of Lasbela.",
+            "source": {
+              "url": "https://www.dawn.com/news/1708293",
+              "publisher": "Dawn"
+            }
+          },
+          {
+            "q": "Which sub-divisions are in Hub District?",
+            "a": "Hub, Dureji and Sonmiani (Winder).",
+            "source": {
+              "url": "https://www.dawn.com/news/1708293",
+              "publisher": "Dawn"
+            }
+          }
+        ],
+        "created": "Notified September 2022",
+        "predecessor": "lasbela",
+        "subdivisions": [
+          "Hub",
+          "Dureji",
+          "Sonmiani (Winder)"
+        ],
+        "admin_sources": [
+          {
+            "url": "https://www.dawn.com/news/1708293",
+            "publisher": "Dawn",
+            "title": "Hub notified as Balochistan’s 35th district",
+            "date": "4 September 2022"
+          }
+        ],
+        "census_2023_rows": {
           "parent": "lasbela",
-          "name": "Hub",
-          "type": "sub-division",
-          "population_2023": 233443,
-          "area_km2": 868,
-          "density_2023": 268.94,
-          "urban_proportion_2023": 83.82,
-          "growth_rate_2017_2023": 2.15,
-          "literacy_2023": 44.35,
-          "source_url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_1_balochistan_districts.pdf"
+          "units": [
+            {
+              "name": "Hub",
+              "type": "sub-division",
+              "population_2023": 233443,
+              "area_km2": 868
+            },
+            {
+              "name": "Dureji",
+              "type": "sub-division",
+              "population_2023": 52236,
+              "area_km2": 2813
+            },
+            {
+              "name": "Sonmiani/Winder",
+              "type": "tehsil",
+              "population_2023": 67991,
+              "area_km2": 2616
+            }
+          ],
+          "source_url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_1_balochistan_districts.pdf",
+          "note": "The Gaddani, Lakhra and Liari rows are not assigned in the sources used, so no district total is given."
+        },
+        "urdu": {
+          "name": "حب",
+          "hq": "حب",
+          "blocks": [
+            {
+              "h": "ضلع کا قیام",
+              "p": [
+                "ستمبر 2022 میں حب کو لسبیلہ سے الگ کر کے بلوچستان کا 35واں ضلع بنایا گیا، جس میں حب، دریجی اور سونمیانی (وندر) سب ڈویژن شامل ہیں (<a href=\"https://www.dawn.com/news/1708293\" rel=\"noopener\">ڈان</a>)۔",
+                "2023 کی مردم شماری میں حب سب ڈویژن کی آبادی 233,443، دریجی کی 52,236 اور سونمیانی/وندر تحصیل کی 67,991 تھی (ضلع لسبیلہ کے تحت)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://www.dawn.com/news/1708293",
+              "publisher": "Dawn",
+              "title": ""
+            }
+          ]
         }
       },
       {
@@ -17611,7 +17821,7 @@
           "sources": [
             {
               "url": "https://quettavoice.com/2022/06/06/balochistan-districts-hub-karezat-and-usta-muhammad-made-new-districts/",
-              "publisher": "quettavoice.com",
+              "publisher": "Quetta Voice",
               "title": ""
             }
           ]
@@ -20173,13 +20383,7 @@
         "slug": "qilla-saifullah",
         "name": "Qilla Saifullah",
         "hq": "Qilla Saifullah",
-        "pop": "380,200 (2023 census)",
-        "about": "Apple country of north-east Balochistan.",
-        "education": "Colleges in Qilla Saifullah Muslim Bagh.",
-        "health": "DHQ Qilla Saifullah.",
-        "culture": "Pashtun orchards of Muslim Bagh.",
-        "issues": "Cold-chain for fruit.",
-        "villages": "Muslim Bagh, Loiband",
+        "about": "Zhob Division district with headquarters at Qilla Saifullah; the 2023 census counted 380,200 people on 6,831 km².",
         "division": "Zhob Division",
         "division_source": "Balochistan Revenue Department notification of 8 July 2026",
         "population_2023": 380200,
@@ -20298,19 +20502,22 @@
             "tehsil": "Muslim Bagh",
             "population_2023": 29132
           }
-        ]
+        ],
+        "profile_checked": "2026-09-30",
+        "sources": [],
+        "urdu": {
+          "name": "قلعہ سیف اللہ",
+          "hq": "قلعہ سیف اللہ",
+          "blocks": [],
+          "checked": "2026-09-30",
+          "sources": []
+        }
       },
       {
         "slug": "quetta",
         "name": "Quetta",
         "hq": "Quetta",
-        "pop": "2,595,492 (2023 census, pre-split boundaries)",
-        "about": "Provincial capital in a high dry bowl: fruit markets, cantonment and university city.",
-        "education": "University of Balochistan, BUITEMS, Bolan Medical College.",
-        "health": "Sandeman / BMC teaching hospitals.",
-        "culture": "Pashto, Brahui and Balochi together; winter dry fruit.",
-        "issues": "Water, quake-safe housing, smog in still winter air.",
-        "villages": "Hanna, Sariab rural",
+        "about": "Former district of the Balochistan capital, divided into Quetta East and Quetta West by the 8 July 2026 notification.",
         "division_2023": "Quetta Division",
         "status": "former",
         "successors": [
@@ -20449,19 +20656,60 @@
           "table11": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_11_balochistan_districts.pdf",
           "table12": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_12_balochistan_districts.pdf"
         },
-        "census_boundary_note": "These figures are for the undivided Quetta District as enumerated in the 2023 census, before it was divided into Quetta East and Quetta West."
+        "census_boundary_note": "These figures are for the undivided Quetta District as enumerated in the 2023 census, before it was divided into Quetta East and Quetta West.",
+        "profile_checked": "2026-09-30",
+        "sources": [
+          {
+            "url": "https://www.britannica.com/place/Quetta-Pakistan",
+            "publisher": "Encyclopaedia Britannica",
+            "title": "Quetta",
+            "date": ""
+          }
+        ],
+        "faq_extra": [
+          {
+            "q": "What does the name Quetta mean?",
+            "a": "It is a variation of kwatkot, a Pashto word meaning fort; the city is also known locally as Shal or Shalkot.",
+            "source": {
+              "url": "https://www.britannica.com/place/Quetta-Pakistan",
+              "publisher": "Encyclopaedia Britannica"
+            }
+          },
+          {
+            "q": "When was the Quetta earthquake?",
+            "a": "In May 1935. It partly destroyed the city and killed about 20,000 people.",
+            "source": {
+              "url": "https://www.britannica.com/place/Quetta-Pakistan",
+              "publisher": "Encyclopaedia Britannica"
+            }
+          }
+        ],
+        "urdu": {
+          "name": "کوئٹہ",
+          "hq": "کوئٹہ",
+          "blocks": [
+            {
+              "h": "کوئٹہ شہر",
+              "p": [
+                "کوئٹہ کا نام پشتو لفظ \"کواٹ کوٹ\" (یعنی قلعہ) سے نکلا ہے، اور مقامی طور پر اسے شال یا شال کوٹ بھی کہا جاتا ہے۔ انگریزوں نے 1876 میں کوئٹہ پر قبضہ کیا، 1896 میں یہ میونسپلٹی بنا اور 1907 میں آرمی کمانڈ اینڈ اسٹاف کالج قائم ہوا۔ مئی 1935 کے زلزلے میں شہر کا بڑا حصہ تباہ ہوا اور تقریباً 20 ہزار افراد جاں بحق ہوئے۔ جامعہ بلوچستان 1970 میں قائم ہوئی (<a href=\"https://www.britannica.com/place/Quetta-Pakistan\" rel=\"noopener\">انسائیکلوپیڈیا بریٹانیکا</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://www.britannica.com/place/Quetta-Pakistan",
+              "publisher": "Encyclopaedia Britannica",
+              "title": "Quetta Pakistan"
+            }
+          ]
+        }
       },
       {
         "slug": "sherani",
         "name": "Sherani",
         "hq": "Sherani",
-        "pop": "191,687 (2023 census)",
-        "about": "Sulaiman mountain district created from Zhob.",
-        "education": "Colleges limited.",
-        "health": "DHQ Sherani.",
-        "culture": "Sulaiman highlands.",
-        "issues": "Forest and road access.",
-        "villages": "Stano Raaghah belt",
+        "about": "Zhob Division district with headquarters at Sherani; the 2023 census counted 191,687 people on 4,310 km².",
         "division": "Zhob Division",
         "division_source": "Balochistan Revenue Department notification of 8 July 2026",
         "population_2023": 191687,
@@ -20516,19 +20764,22 @@
           "table2": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_2_balochistan_districts.pdf",
           "table11": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_11_balochistan_districts.pdf",
           "table12": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_12_balochistan_districts.pdf"
+        },
+        "profile_checked": "2026-09-30",
+        "sources": [],
+        "urdu": {
+          "name": "شیرانی",
+          "hq": "شیرانی",
+          "blocks": [],
+          "checked": "2026-09-30",
+          "sources": []
         }
       },
       {
         "slug": "sibi",
         "name": "Sibi",
         "hq": "Sibi",
-        "pop": "224,148 (2023 census)",
-        "about": "Famous for Sibi Mela and a winter heat record reputation.",
-        "education": "Colleges in Sibi.",
-        "health": "DHQ Sibi.",
-        "culture": "Baloch-Pashtun junction and the historic mela.",
-        "issues": "Heat and the long summer.",
-        "villages": "Talli belt",
+        "about": "Sevi Division district with headquarters at Sibi; the 2023 census counted 224,148 people on 7,121 km².",
         "division": "Sevi Division",
         "division_source": "Balochistan Revenue Department notification of 8 July 2026",
         "population_2023": 224148,
@@ -20636,19 +20887,22 @@
             "tehsil": "Sibi",
             "population_2023": 69300
           }
-        ]
+        ],
+        "profile_checked": "2026-09-30",
+        "sources": [],
+        "urdu": {
+          "name": "سبی",
+          "hq": "سبی",
+          "blocks": [],
+          "checked": "2026-09-30",
+          "sources": []
+        }
       },
       {
         "slug": "sohbatpur",
         "name": "Sohbatpur",
         "hq": "Sohbatpur",
-        "pop": "240,106 (2023 census)",
-        "about": "Plains district created from Jafarabad.",
-        "education": "Colleges in Sohbatpur.",
-        "health": "DHQ Sohbatpur.",
-        "culture": "Canal plains.",
-        "issues": "New-district offices.",
-        "villages": "Hairdin belt",
+        "about": "Naseerabad Division district with headquarters at Sohbatpur; the 2023 census counted 240,106 people on 802 km².",
         "division": "Naseerabad Division",
         "division_source": "Balochistan Revenue Department notification of 8 July 2026",
         "population_2023": 240106,
@@ -20776,19 +21030,22 @@
             "tehsil": "Sohbatpur",
             "population_2023": 14728
           }
-        ]
+        ],
+        "profile_checked": "2026-09-30",
+        "sources": [],
+        "urdu": {
+          "name": "صحبت پور",
+          "hq": "صحبت پور",
+          "blocks": [],
+          "checked": "2026-09-30",
+          "sources": []
+        }
       },
       {
         "slug": "surab",
         "name": "Surab",
         "hq": "Surab",
-        "pop": "279,038 (2023 census, pre-split boundaries)",
-        "about": "Created from Kalat highlands.",
-        "education": "Colleges in Surab.",
-        "health": "DHQ Surab.",
-        "culture": "Brahui highlands.",
-        "issues": "Winter closure of side roads.",
-        "villages": "Surab valleys",
+        "about": "Khuzdar Division district, made a district with effect from 1 August 2017.",
         "boundary_change_2026": "Surab (renamed from Shaheed Sikandarabad) received the Zehri sub-division and tehsil from Khuzdar under the notification of 8 July 2026.",
         "division": "Khuzdar Division",
         "division_source": "Balochistan Revenue Department notification of 8 July 2026",
@@ -20888,19 +21145,52 @@
             "population_2023": 36468
           }
         ],
-        "census_boundary_note": "These figures are for Surab District as enumerated in the 2023 census. Surab (renamed from Shaheed Sikandarabad) received the Zehri sub-division and tehsil from Khuzdar under the notification of 8 July 2026. The current district total therefore differs."
+        "census_boundary_note": "These figures are for Surab District as enumerated in the 2023 census. Surab (renamed from Shaheed Sikandarabad) received the Zehri sub-division and tehsil from Khuzdar under the notification of 8 July 2026. The current district total therefore differs.",
+        "profile_checked": "2026-09-30",
+        "sources": [
+          {
+            "url": "https://dailyazadiquetta.com/2017/07/18/httpwp-mep3wa3i-gdg/",
+            "publisher": "Daily Azadi",
+            "title": "Duki and Surab notified as districts",
+            "date": "18 July 2017"
+          }
+        ],
+        "faq_extra": [
+          {
+            "q": "When did Surab become a district?",
+            "a": "It was notified as a district, named Shaheed Sikandarabad, effective 1 August 2017.",
+            "source": {
+              "url": "https://dailyazadiquetta.com/2017/07/18/httpwp-mep3wa3i-gdg/",
+              "publisher": "Daily Azadi"
+            }
+          }
+        ],
+        "urdu": {
+          "name": "سوراب",
+          "hq": "سوراب",
+          "blocks": [
+            {
+              "h": "ضلع کا درجہ",
+              "p": [
+                "حکومت بلوچستان نے سوراب (شہید سکندرآباد) اور دکی کو یکم اگست 2017 سے نئے اضلاع کا درجہ دیا (<a href=\"https://dailyazadiquetta.com/2017/07/18/httpwp-mep3wa3i-gdg/\" rel=\"noopener\">روزنامہ آزادی</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://dailyazadiquetta.com/2017/07/18/httpwp-mep3wa3i-gdg/",
+              "publisher": "Daily Azadi",
+              "title": ""
+            }
+          ]
+        }
       },
       {
         "slug": "usta-muhammad",
         "name": "Usta Muhammad",
         "hq": "Usta Muhammad",
-        "pop": "Newer district",
-        "about": "Plains town district near the Sindh border.",
-        "education": "Colleges in Usta Muhammad.",
-        "health": "DHQ Usta Muhammad.",
-        "culture": "Irrigated plains.",
-        "issues": "Waterlogging.",
-        "villages": "Plain union councils",
+        "about": "Naseerabad Division district formed from Jafarabad; the Balochistan cabinet approved it in June 2022.",
         "division": "Naseerabad Division",
         "division_source": "Balochistan Revenue Department notification of 8 July 2026",
         "census_2023_row": {
@@ -20914,19 +21204,55 @@
           "growth_rate_2017_2023": 2.12,
           "literacy_2023": 38.17,
           "source_url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_1_balochistan_districts.pdf"
+        },
+        "profile_checked": "2026-09-30",
+        "sources": [],
+        "faq_extra": [
+          {
+            "q": "When did Usta Muhammad become a district?",
+            "a": "The Balochistan cabinet approved it as a district in June 2022, together with Hub and Karezat.",
+            "source": {
+              "url": "https://quettavoice.com/2022/06/06/balochistan-districts-hub-karezat-and-usta-muhammad-made-new-districts/",
+              "publisher": "Quetta Voice"
+            }
+          }
+        ],
+        "created": "Approved by the Balochistan cabinet in June 2022",
+        "predecessor": "jafarabad",
+        "admin_sources": [
+          {
+            "url": "https://quettavoice.com/2022/06/06/balochistan-districts-hub-karezat-and-usta-muhammad-made-new-districts/",
+            "publisher": "Quetta Voice",
+            "title": "Hub, Karezat and Usta Muhammad made new districts",
+            "date": "6 June 2022"
+          }
+        ],
+        "urdu": {
+          "name": "استا محمد",
+          "hq": "استا محمد",
+          "blocks": [
+            {
+              "h": "ضلع کا قیام",
+              "p": [
+                "جون 2022 میں بلوچستان کابینہ نے حب اور کاریزات کے ساتھ استا محمد کو نیا ضلع بنانے کی منظوری دی (<a href=\"https://quettavoice.com/2022/06/06/balochistan-districts-hub-karezat-and-usta-muhammad-made-new-districts/\" rel=\"noopener\">کوئٹہ وائس</a>)۔ 2023 کی مردم شماری میں استا محمد سب ڈویژن (ضلع جعفرآباد) کی آبادی 210,870 تھی۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://quettavoice.com/2022/06/06/balochistan-districts-hub-karezat-and-usta-muhammad-made-new-districts/",
+              "publisher": "Quetta Voice",
+              "title": ""
+            }
+          ]
         }
       },
       {
         "slug": "washuk",
         "name": "Washuk",
         "hq": "Washuk",
-        "pop": "302,623 (2023 census)",
-        "about": "Vast western district split from Kharan.",
-        "education": "Colleges in Washuk / Basima.",
-        "health": "DHQ Washuk.",
-        "culture": "Desert and high dry valleys.",
-        "issues": "Distance.",
-        "villages": "Basima, Mashkhel belt",
+        "about": "Rakhshan Division district with headquarters at Washuk; the 2023 census counted 302,623 people on 33,093 km².",
         "division": "Rakhshan Division",
         "division_source": "Balochistan Revenue Department notification of 8 July 2026",
         "population_2023": 302623,
@@ -21034,19 +21360,22 @@
             "tehsil": "Washuk",
             "population_2023": 41107
           }
-        ]
+        ],
+        "profile_checked": "2026-09-30",
+        "sources": [],
+        "urdu": {
+          "name": "واشک",
+          "hq": "واشک",
+          "blocks": [],
+          "checked": "2026-09-30",
+          "sources": []
+        }
       },
       {
         "slug": "zhob",
         "name": "Zhob",
         "hq": "Zhob",
-        "pop": "355,692 (2023 census)",
-        "about": "Northern gateway toward D.I. Khan.",
-        "education": "Colleges in Zhob.",
-        "health": "DHQ Zhob.",
-        "culture": "Pashtun north.",
-        "issues": "Long highway distances.",
-        "villages": "Qamar Din Karez belt",
+        "about": "Zhob Division district on the Zhob River; its headquarters, originally Apozai, was called Fort Sandeman from 1889 until the 1970s.",
         "division": "Zhob Division",
         "division_source": "Balochistan Revenue Department notification of 8 July 2026",
         "population_2023": 355692,
@@ -21160,19 +21489,52 @@
             "tehsil": "Zhob",
             "population_2023": 2725
           }
-        ]
+        ],
+        "profile_checked": "2026-09-30",
+        "sources": [
+          {
+            "url": "https://www.britannica.com/place/Zhob",
+            "publisher": "Encyclopaedia Britannica",
+            "title": "Zhob",
+            "date": ""
+          }
+        ],
+        "faq_extra": [
+          {
+            "q": "What was the old name of Zhob?",
+            "a": "Fort Sandeman, after Sir Robert Sandeman, from 1889 until the 1970s; the original local name is Apozai.",
+            "source": {
+              "url": "https://www.britannica.com/place/Zhob",
+              "publisher": "Encyclopaedia Britannica"
+            }
+          }
+        ],
+        "urdu": {
+          "name": "ژوب",
+          "hq": "ژوب",
+          "blocks": [
+            {
+              "h": "ژوب شہر",
+              "p": [
+                "ژوب دریائے ژوب کے مشرق میں ایک کھلے میدان میں واقع ہے۔ اس کا اصل نام اپوزئی تھا؛ 1889 میں سر رابرٹ سینڈیمن کے نام پر اسے فورٹ سینڈیمن کہا گیا اور 1970 کی دہائی تک یہی نام رہا (<a href=\"https://www.britannica.com/place/Zhob\" rel=\"noopener\">انسائیکلوپیڈیا بریٹانیکا</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://www.britannica.com/place/Zhob",
+              "publisher": "Encyclopaedia Britannica",
+              "title": "Zhob"
+            }
+          ]
+        }
       },
       {
         "slug": "ziarat",
         "name": "Ziarat",
         "hq": "Ziarat",
-        "pop": "189,535 (2023 census)",
-        "about": "Juniper forest hill station and Quaid-e-Azam Residency.",
-        "education": "Colleges in Ziarat.",
-        "health": "DHQ Ziarat.",
-        "culture": "Juniper highlands.",
-        "issues": "Forest protection and winter tourism load.",
-        "villages": "Koshak, Sanjawi (Sanjawi sometimes listed in Loralai / Ziarat discussions)",
+        "about": "Loralai Division district with headquarters at Ziarat; the 2023 census counted 189,535 people on 3,301 km².",
         "division": "Loralai Division",
         "division_source": "Balochistan Revenue Department notification of 8 July 2026",
         "population_2023": 189535,
@@ -21251,7 +21613,16 @@
             "tehsil": "Ziarat",
             "population_2023": 3863
           }
-        ]
+        ],
+        "profile_checked": "2026-09-30",
+        "sources": [],
+        "urdu": {
+          "name": "زیارت",
+          "hq": "زیارت",
+          "blocks": [],
+          "checked": "2026-09-30",
+          "sources": []
+        }
       },
       {
         "slug": "kachhi",
@@ -21486,7 +21857,8 @@
             }
           ],
           "source_url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_1_balochistan_districts.pdf"
-        }
+        },
+        "profile_checked": "2026-09-30"
       },
       {
         "slug": "quetta-west",
@@ -21548,7 +21920,8 @@
             }
           ],
           "source_url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_1_balochistan_districts.pdf"
-        }
+        },
+        "profile_checked": "2026-09-30"
       },
       {
         "slug": "wadh",
@@ -21628,7 +22001,8 @@
             }
           ],
           "source_url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_1_balochistan_districts.pdf"
-        }
+        },
+        "profile_checked": "2026-09-30"
       },
       {
         "slug": "tump",
@@ -21714,7 +22088,8 @@
             "tehsil": "Tump",
             "population_2023": 49269
           }
-        ]
+        ],
+        "profile_checked": "2026-09-30"
       },
       {
         "slug": "barshore",
@@ -21758,7 +22133,8 @@
           "growth_rate_2017_2023": 5.8,
           "literacy_2023": 47.61,
           "source_url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_1_balochistan_districts.pdf"
-        }
+        },
+        "profile_checked": "2026-09-30"
       },
       {
         "slug": "north-dera-bugti",
@@ -21801,7 +22177,8 @@
           "growth_rate_2017_2023": 9.42,
           "literacy_2023": 15.62,
           "source_url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_1_balochistan_districts.pdf"
-        }
+        },
+        "profile_checked": "2026-09-30"
       },
       {
         "slug": "south-dera-bugti",
@@ -21843,7 +22220,8 @@
           "growth_rate_2017_2023": 0.85,
           "literacy_2023": 33.75,
           "source_url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_1_balochistan_districts.pdf"
-        }
+        },
+        "profile_checked": "2026-09-30"
       }
     ],
     "district_count": {
