@@ -15,14 +15,11 @@ const excluded = new Set([
   "privacy.html",
   "terms.html",
   "disclaimer.html",
-  "bajur.html",
-  "dgkhan.html",
-  "dikhan.html",
-  "rykhan.html",
-  "nankana.html",
-  "tts.html",
-  "lakki.html",
 ]);
+// Every path redirected in vercel.json is not a 200 URL and must stay out of the sitemap.
+for (const r of JSON.parse(fs.readFileSync(path.join(ROOT, "vercel.json"), "utf8")).redirects || []) {
+  if (!r.has && /^\/[a-z0-9-]+\.html$/i.test(r.source)) excluded.add(r.source.slice(1));
+}
 
 function getTag(html, tagName, predicate) {
   const tags = html.match(new RegExp(`<${tagName}\\b[^>]*>`, "gi")) || [];
@@ -41,20 +38,30 @@ function getCanonical(html) {
 
 function hasNoindex(html) {
   const tags = html.match(/<meta\b[^>]*>/gi) || [];
-  return tags.some((tag) => /\bname\s*=\s*["']robots["']/i.test(tag) && /\bcontent\s*=\\s*["'][^"']*noindex/i.test(tag));
+  return tags.some((tag) => /\bname\s*=\s*["']robots["']/i.test(tag) && /\bcontent\s*=\s*["'][^"']*noindex/i.test(tag));
 }
 
+// Last commit date of the file itself (needs full history: actions/checkout with fetch-depth: 0),
+// as a UTC calendar date. Files with uncommitted changes get today's UTC date, which is the date the
+// workflow's commit will carry, so re-running after that commit produces the same sitemap.
+const dirty = new Set();
+try {
+  const status = execFileSync("git", ["status", "--porcelain", "--untracked-files=all", "--", "*.html"], { cwd: ROOT, encoding: "utf8" });
+  for (const line of status.split("\n")) if (line.trim()) dirty.add(line.slice(3).trim().replace(/^"|"$/g, ""));
+} catch (_) {}
+const todayUtc = new Date().toISOString().slice(0, 10);
 function getLastModified(name) {
+  if (dirty.has(name)) return todayUtc;
   try {
-    const value = execFileSync("git", ["log", "-1", "--format=%cs", "--", name], { cwd: ROOT, encoding: "utf8" }).trim();
-    if (/^\d{4}-\d{2}-\d{2}$/.test(value)) return value;
+    const value = execFileSync("git", ["log", "-1", "--format=%ct", "--", name], { cwd: ROOT, encoding: "utf8" }).trim();
+    if (/^\d+$/.test(value)) return new Date(Number(value) * 1000).toISOString().slice(0, 10);
   } catch (_) {}
   return "";
 }
 
 const candidates = fs.readdirSync(ROOT)
   .filter((name) => name.endsWith(".html"))
-  .filter((name) => !excluded.has(name))
+  .filter((name) => !excluded.has(name) && !/^google[0-9a-f]+\.html$/i.test(name))
   .sort();
 
 const urls = [];

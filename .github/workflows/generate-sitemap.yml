@@ -14,10 +14,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Rebrand site text and canonical host
-        run: |
-          find . -type f \( -name "*.html" -o -name "*.js" -o -name "*.xml" -o -name "*.txt" -o -name "*.md" -o -name "*.json" \) -not -path "./.git/*" -print0 | xargs -0 sed -i -e "s/Pakistan Atlas/MyBook.Pk/g" -e "s/pakistan-atlas.vercel.app/mybook.pk/g"
+        with:
+          # Full history so generate-sitemap.js can read each file's real last-commit date.
+          fetch-depth: 0
 
       - name: Apply known SEO fixes
         run: node scripts/fix-known-seo.js
@@ -28,32 +27,24 @@ jobs:
       - name: Enhance district SEO and internal links
         run: node scripts/enhance-district-seo.js
 
+      - name: Build static header, breadcrumbs, footer, titles and structured data
+        run: node scripts/build-site.js
+
       - name: Generate sitemap
         run: node scripts/generate-sitemap.js
 
       - name: Add AdSense meta tag to all HTML pages
-        shell: bash
-        run: |
-          python3 - <<'PY'
-          from pathlib import Path
-          import re
+        run: python3 scripts/add-adsense-meta.py
 
-          tag = '<meta name="google-adsense-account" content="ca-pub-3672700167787763">'
+      # Audit before committing so broken output is never pushed.
+      - name: Audit generated SEO files
+        run: node scripts/audit-html.js
 
-          for path in Path('.').rglob('*.html'):
-              if any(part.startswith('.') for part in path.parts):
-                  continue
-              text = path.read_text(encoding='utf-8')
-              pattern = r'<meta\s+[^>]*google-adsense-account[^>]*>'
-              if re.search(pattern, text, re.I):
-                  new = re.sub(pattern, tag, text, count=1, flags=re.I)
-              elif re.search(r'</head\s*>', text, re.I):
-                  new = re.sub(r'</head\s*>', f'  {tag}\n</head>', text, count=1, flags=re.I)
-              else:
-                  continue
-              if new != text:
-                  path.write_text(new, encoding='utf-8')
-          PY
+      - name: Audit internal links
+        run: node scripts/audit-internal-links.js
+
+      - name: Audit sitemap
+        run: node scripts/audit-sitemap.js
 
       - name: Commit SEO fixes and sitemap
         run: |
@@ -67,11 +58,14 @@ jobs:
             git push
           fi
 
-      - name: Audit generated SEO files
-        run: node scripts/audit-html.js
-
-      - name: Audit internal links
-        run: node scripts/audit-internal-links.js
-
-      - name: Audit sitemap
-        run: node scripts/audit-sitemap.js
+      # Every step above must be idempotent: a second run on the committed output must change nothing.
+      - name: Check the pipeline is idempotent
+        run: |
+          node scripts/fix-known-seo.js
+          node scripts/generate-seo.js
+          node scripts/enhance-district-seo.js
+          node scripts/build-site.js
+          node scripts/generate-sitemap.js
+          python3 scripts/add-adsense-meta.py
+          git status --porcelain
+          git diff --exit-code

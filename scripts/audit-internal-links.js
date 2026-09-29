@@ -14,6 +14,10 @@ const redirectSources = new Set([
   "lakki.html",
   "news.html"
 ]);
+// Every simple path redirect in vercel.json is also a redirect source.
+for (const r of JSON.parse(fs.readFileSync(path.join(ROOT, "vercel.json"), "utf8")).redirects || []) {
+  if (!r.has && r.source !== "/index.html" && /^\/[a-z0-9-]+\.html$/i.test(r.source)) redirectSources.add(r.source.slice(1));
+}
 const majorSections = [
   "culture.html",
   "literature.html",

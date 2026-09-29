@@ -6,6 +6,8 @@ const SITE = "https://mybook.pk";
 const sitemap = fs.readFileSync(path.join(ROOT, "sitemap.xml"), "utf8");
 const htmlFiles = new Set(fs.readdirSync(ROOT).filter((name) => name.endsWith(".html")));
 const errors = [];
+const redirected = new Set((JSON.parse(fs.readFileSync(path.join(ROOT, "vercel.json"), "utf8")).redirects || [])
+  .filter((r) => !r.has && /^\/[a-z0-9-]+\.html$/i.test(r.source)).map((r) => r.source.slice(1)));
 
 function report(issue, detail = "") {
   errors.push(`${issue}${detail ? ` — ${detail}` : ""}`);
@@ -24,6 +26,10 @@ function noindex(file) {
     || /<meta\b[^>]*content\s*=\s*["'][^"']*noindex[^"']*["'][^>]*name\s*=\s*["']robots["']/i.test(html);
 }
 
+for (const m of sitemap.matchAll(/<url>([\s\S]*?)<\/url>/gi)) {
+  const lastmod = (m[1].match(/<lastmod>([^<]*)<\/lastmod>/) || [])[1];
+  if (!lastmod || !/^\d{4}-\d{2}-\d{2}$/.test(lastmod)) report("sitemap URL has no valid <lastmod>", m[1].replace(/\s+/g, " ").trim());
+}
 const locs = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/gi)].map((m) => m[1].trim());
 const seen = new Set();
 
@@ -38,6 +44,10 @@ for (const url of locs) {
 
   const relative = url.slice(`${SITE}/`.length);
   const file = relative === "" ? "index.html" : relative;
+  if (redirected.has(file)) {
+    report("sitemap URL is redirected in vercel.json", url);
+    continue;
+  }
   if (!htmlFiles.has(file)) {
     report("sitemap URL does not map to an existing HTML file", url);
     continue;
