@@ -8,7 +8,9 @@ const ALLOWED_NOINDEX = new Set([
   "province.html",
   "district.html",
   "google316eb4b51e11f5de.html",
-  "news.html"
+  "news.html",
+  // Thin pages deliberately kept out of the index until they are sourced (see data/noindex.json).
+  ...Object.keys(JSON.parse(fs.readFileSync(path.join(ROOT, "data", "noindex.json"), "utf8")).pages)
 ]);
 const UTILITY = new Set(["google316eb4b51e11f5de.html"]);
 const VERIFICATION = { "google316eb4b51e11f5de.html": "google-site-verification: google316eb4b51e11f5de.html\n" };

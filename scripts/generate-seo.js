@@ -329,7 +329,7 @@ function upsertMetadata(fileName, html) {
 
   // AdSense tags are written by build-site.js (setAdsense).
 
-  const robots = L.NOINDEX_PAGES.has(fileName) ? "noindex,follow" : "index,follow,max-image-preview:large";
+  const robots = L.isNoindex(fileName) ? "noindex,follow" : "index,follow,max-image-preview:large";
   const robotsTag = `<meta name="robots" content="${robots}" />`;
   if (/<meta\s+name="robots"[^>]*>/i.test(result)) {
     result = result.replace(/<meta\s+name="robots"[^>]*>/i, robotsTag);
