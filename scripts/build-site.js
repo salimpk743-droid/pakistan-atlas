@@ -456,9 +456,18 @@ function injectChrome(html, header, footer, needsScript) {
   return out;
 }
 
+// Exactly one AdSense loader script and one google-adsense-account meta, directly after <head>, with the
+// owner-confirmed publisher ID. Any other copy (such as an old tag with a different publisher ID) is removed.
+function setAdsense(html) {
+  let out = html
+    .replace(/\n?[ \t]*<script\b[^>]*adsbygoogle\.js[^>]*>\s*<\/script>/gi, "")
+    .replace(/\n?[ \t]*<meta\b[^>]*name\s*=\s*["']google-adsense-account["'][^>]*>/gi, "");
+  return out.replace(/<head\b[^>]*>/i, (m) => `${m}\n  ${L.ADSENSE_SCRIPT}\n  ${L.ADSENSE_META}`);
+}
+
 function build(file, html) {
   const cls = classify(file);
-  let out = stripFences(html);
+  let out = setAdsense(stripFences(html));
   out = relink(out);
   const existingImage = getMeta(out, "og:image");
   const existingType = getMeta(out, "og:type");

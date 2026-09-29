@@ -7,10 +7,7 @@ const fs = require("fs");
 const path = require("path");
 const L = require("./lib/site");
 
-const { ROOT, SITE, provinceRoutes, hubRoutes, esc, fmtInt } = L;
-const ADSENSE_PUBLISHER = "ca-pub-8924686927214586";
-const ADSENSE_SCRIPT = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_PUBLISHER}" crossorigin="anonymous"></script>`;
-const ADSENSE_META = `<meta name="google-adsense-account" content="${ADSENSE_PUBLISHER}" />`;
+const { ROOT, SITE, provinceRoutes, hubRoutes, esc, fmtInt, ADSENSE_SCRIPT, ADSENSE_META } = L;
 const FONTS = `<link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600&family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />`;
@@ -260,11 +257,7 @@ function upsertMetadata(fileName, html) {
   const canonical = SITE + "/" + (fileName === "index.html" ? "" : fileName);
   let result = html;
 
-  if (!/adsbygoogle\.js\?client=ca-pub-8924686927214586/i.test(result)) {
-    result = result.replace(/<head>/i, "<head>\n  " + ADSENSE_SCRIPT + "\n  " + ADSENSE_META);
-  } else if (!/name="google-adsense-account"/i.test(result)) {
-    result = result.replace(/<head>/i, "<head>\n  " + ADSENSE_META);
-  }
+  // AdSense tags are written by build-site.js (setAdsense).
 
   const robots = L.NOINDEX_PAGES.has(fileName) ? "noindex,follow" : "index,follow,max-image-preview:large";
   const robotsTag = `<meta name="robots" content="${robots}" />`;
@@ -295,8 +288,7 @@ function write(file, content) {
   if (!fs.existsSync(full)) return fs.writeFileSync(full, content);
   const current = fs.readFileSync(full, "utf8");
   if (current === content) return;
-  const normalise = (html) => html.replace(/<meta\s+[^>]*google-adsense-account[^>]*>/gi, "");
-  if (normalise(build(file, content).out) === normalise(current)) return;
+  if (build(file, content).out === current) return;
   fs.writeFileSync(full, content);
 }
 

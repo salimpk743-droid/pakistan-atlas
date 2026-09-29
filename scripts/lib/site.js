@@ -6,6 +6,11 @@ const path = require("path");
 
 const ROOT = path.resolve(__dirname, "..", "..");
 const SITE = "https://mybook.pk";
+// Google AdSense publisher confirmed by the site owner (matches ads.txt). build-site.js writes these two
+// tags, exactly once, directly after <head> on every page except search-engine verification files.
+const ADSENSE_CLIENT = "ca-pub-3672700167787763";
+const ADSENSE_SCRIPT = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}" crossorigin="anonymous"></script>`;
+const ADSENSE_META = `<meta name="google-adsense-account" content="${ADSENSE_CLIENT}">`;
 const OG_IMAGE = `${SITE}/images/og/mybook-pk-1200x630.png`;
 
 const provinceRoutes = {
@@ -102,6 +107,9 @@ function listText(items, max = items.length) {
 function districtLabel(d) { return /district/i.test(d.name) ? d.name : `${d.name} District`; }
 
 module.exports = {
+  ADSENSE_CLIENT,
+  ADSENSE_SCRIPT,
+  ADSENSE_META,
   ROOT, SITE, OG_IMAGE, provinceRoutes, hubRoutes, PROVINCES_HUB, DISTRICTS_HUB, provinceOrder, shortProvince,
   isVerificationFile, NOINDEX_PAGES, provinces, districts, provinceById, districtIndex, districtsOf, sortedDistrictsOf,
   exists, htmlFiles, relatedPairs, extraRelated, esc, stripTags, decodeEntities, fmtInt, fmtNum, unitWord, unitsOf,

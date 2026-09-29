@@ -27,14 +27,11 @@ jobs:
       - name: Enhance district SEO and internal links
         run: node scripts/enhance-district-seo.js
 
-      - name: Build static header, breadcrumbs, footer, titles and structured data
+      - name: Build static header, breadcrumbs, footer, AdSense tags, titles and structured data
         run: node scripts/build-site.js
 
       - name: Generate sitemap
         run: node scripts/generate-sitemap.js
-
-      - name: Add AdSense meta tag to all HTML pages
-        run: python3 scripts/add-adsense-meta.py
 
       # Audit before committing so broken output is never pushed.
       - name: Audit generated SEO files
@@ -66,6 +63,5 @@ jobs:
           node scripts/enhance-district-seo.js
           node scripts/build-site.js
           node scripts/generate-sitemap.js
-          python3 scripts/add-adsense-meta.py
           git status --porcelain
           git diff --exit-code

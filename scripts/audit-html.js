@@ -96,6 +96,12 @@ for (const [file, expected] of Object.entries(VERIFICATION)) {
   else if (fs.readFileSync(full, "utf8") !== expected) report(file, "search-engine verification file was modified", "it must contain exactly the token line Google issued");
 }
 
+{
+  const adsTxt = fs.existsSync(path.join(ROOT, "ads.txt")) ? fs.readFileSync(path.join(ROOT, "ads.txt"), "utf8") : "";
+  if (!/^google\.com,\s*pub-3672700167787763,\s*DIRECT/m.test(adsTxt)) report("ads.txt", "must list google.com, pub-3672700167787763, DIRECT");
+  if (/pub-(?!3672700167787763)\d+/.test(adsTxt)) report("ads.txt", "lists an unexpected publisher ID");
+}
+
 // Structural guards: these catch the failure modes seen in 2026 (a generator that appended the same
 // block up to 17 times, markdown fences pasted into pages, and pages cut off mid-element).
 function structuralChecks(file, html) {
@@ -112,6 +118,13 @@ function structuralChecks(file, html) {
     .replace(/<[^>]+>/g, "")
     .trim();
   if (headText) report(file, "stray text inside <head> (pasted code or broken markup)", JSON.stringify(headText.slice(0, 80)));
+  // AdSense: exactly one loader with the owner-confirmed publisher (ads.txt), inside <head>.
+  const adsScript = '<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3672700167787763" crossorigin="anonymous"></script>';
+  const loaders = html.match(/<script\b[^>]*adsbygoogle\.js[^>]*>/gi) || [];
+  if (loaders.length !== 1 || head.split(adsScript).length !== 2) report(file, "AdSense loader must appear exactly once in <head> in the confirmed form", `${loaders.length} loader(s)`);
+  const pubIds = [...new Set((html.match(/ca-pub-\d+/g) || []))].filter((id) => id !== "ca-pub-3672700167787763");
+  if (pubIds.length) report(file, "unexpected AdSense publisher ID", pubIds.join(", "));
+  if ((head.match(/<meta\b[^>]*google-adsense-account[^>]*>/gi) || []).length !== 1) report(file, "google-adsense-account meta must appear exactly once in <head>");
   if (!/<\/html>\s*$/i.test(html)) report(file, "page is truncated or has content after </html>", JSON.stringify(html.trimEnd().slice(-60)));
   if (counts(/<head[\s>]/gi) !== 1 || counts(/<\/head>/gi) !== 1) report(file, "expected exactly one <head> … </head>");
   for (const cls of ["district-search-answers", "seo-related-reading"]) {
