@@ -11,6 +11,13 @@ const ALLOWED_NOINDEX = new Set([
   "news.html"
 ]);
 const UTILITY = new Set(["google316eb4b51e11f5de.html"]);
+const VERIFICATION = { "google316eb4b51e11f5de.html": "google-site-verification: google316eb4b51e11f5de.html\n" };
+const SITE = "https://mybook.pk";
+// Sources of permanent redirects in vercel.json: internal links must point at the destination instead.
+const vercel = JSON.parse(fs.readFileSync(path.join(ROOT, "vercel.json"), "utf8"));
+const redirectedFiles = new Set((vercel.redirects || [])
+  .filter(r => !r.has && r.source !== "/index.html" && /^\/[a-z0-9-]+\.html$/i.test(r.source))
+  .map(r => r.source.slice(1)));
 const htmlFiles = fs.readdirSync(ROOT).filter(f => f.toLowerCase().endsWith(".html"));
 const errors = [];
 const warnings = [];
@@ -67,7 +74,7 @@ if (!navMatch) {
   }
 
   const expectedLabels = new Map([
-    ["index.html", "Home"],
+    ["/", "Home"],
     ["culture.html", "Culture"],
     ["literature.html", "Literature"],
     ["geography.html", "Geography"],
@@ -83,9 +90,72 @@ if (!navMatch) {
   }
 }
 
+for (const [file, expected] of Object.entries(VERIFICATION)) {
+  const full = path.join(ROOT, file);
+  if (!fs.existsSync(full)) report(file, "search-engine verification file missing");
+  else if (fs.readFileSync(full, "utf8") !== expected) report(file, "search-engine verification file was modified", "it must contain exactly the token line Google issued");
+}
+
+{
+  const adsTxt = fs.existsSync(path.join(ROOT, "ads.txt")) ? fs.readFileSync(path.join(ROOT, "ads.txt"), "utf8") : "";
+  if (!/^google\.com,\s*pub-3672700167787763,\s*DIRECT/m.test(adsTxt)) report("ads.txt", "must list google.com, pub-3672700167787763, DIRECT");
+  if (/pub-(?!3672700167787763)\d+/.test(adsTxt)) report("ads.txt", "lists an unexpected publisher ID");
+}
+
+// Structural guards: these catch the failure modes seen in 2026 (a generator that appended the same
+// block up to 17 times, markdown fences pasted into pages, and pages cut off mid-element).
+function structuralChecks(file, html) {
+  const withoutPre = html.replace(/<(pre|code|script|style)\b[\s\S]*?<\/\1>/gi, "");
+  if (/```/.test(withoutPre)) report(file, "stray markdown code fence (```) in page");
+  // Chat-assistant paste residue: citation tokens, private-use citation markers, raw markdown links, tracking tags.
+  if (/:contentReference\[oaicite:\d+\]|\uE200|\uE201|\uE202|\bciteturn\d/.test(withoutPre)) report(file, "chat-assistant citation artifact in page text");
+  if (/\]\(https?:\/\/[^)\s]+\)/.test(withoutPre)) report(file, "raw markdown link in page text");
+  if (/utm_source=chatgpt\.com/.test(html)) report(file, "utm_source=chatgpt.com tracking parameter in a link");
+  if (!/^\s*<!DOCTYPE html>/i.test(html)) report(file, "page does not start with <!DOCTYPE html>");
+  const counts = (re) => (html.match(re) || []).length;
+  if (counts(/<html[\s>]/gi) !== 1) report(file, "expected exactly one <html> element", `${counts(/<html[\s>]/gi)} found`);
+  if (counts(/<body[\s>]/gi) !== 1 || counts(/<\/body>/gi) !== 1) report(file, "expected exactly one <body> … </body>");
+  const head = (html.match(/<head\b[^>]*>([\s\S]*?)<\/head>/i) || [])[1] || "";
+  const headText = head
+    .replace(/<!--[\s\S]*?-->/g, "")
+    .replace(/<(script|style|title|noscript)\b[^>]*>[\s\S]*?<\/\1>/gi, "")
+    .replace(/<[^>]+>/g, "")
+    .trim();
+  if (headText) report(file, "stray text inside <head> (pasted code or broken markup)", JSON.stringify(headText.slice(0, 80)));
+  // AdSense: exactly one loader with the owner-confirmed publisher (ads.txt), inside <head>.
+  const adsScript = '<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3672700167787763" crossorigin="anonymous"></script>';
+  const loaders = html.match(/<script\b[^>]*adsbygoogle\.js[^>]*>/gi) || [];
+  if (loaders.length !== 1 || head.split(adsScript).length !== 2) report(file, "AdSense loader must appear exactly once in <head> in the confirmed form", `${loaders.length} loader(s)`);
+  const pubIds = [...new Set((html.match(/ca-pub-\d+/g) || []))].filter((id) => id !== "ca-pub-3672700167787763");
+  if (pubIds.length) report(file, "unexpected AdSense publisher ID", pubIds.join(", "));
+  if ((head.match(/<meta\b[^>]*google-adsense-account[^>]*>/gi) || []).length !== 1) report(file, "google-adsense-account meta must appear exactly once in <head>");
+  if (!/<\/html>\s*$/i.test(html)) report(file, "page is truncated or has content after </html>", JSON.stringify(html.trimEnd().slice(-60)));
+  if (counts(/<head[\s>]/gi) !== 1 || counts(/<\/head>/gi) !== 1) report(file, "expected exactly one <head> … </head>");
+  for (const cls of ["district-search-answers", "seo-related-reading"]) {
+    const n = counts(new RegExp(`<section class="${cls}"`, "g"));
+    if (n > 1) report(file, "repeated generated block", `${cls} appears ${n} times`);
+  }
+  for (const marker of ["quick-answers", "related", "head", "header", "footer"]) {
+    const n = counts(new RegExp(`<!-- mb:${marker}:start -->`, "g"));
+    if (n > 1) report(file, "repeated managed block", `mb:${marker} appears ${n} times`);
+  }
+  // Any sizeable <section> repeated verbatim is a duplication bug.
+  const seen = new Map();
+  for (const m of html.matchAll(/<section\b[^>]*>[\s\S]*?<\/section>/gi)) {
+    const body = m[0].replace(/\s+/g, " ");
+    if (body.length < 300) continue;
+    seen.set(body, (seen.get(body) || 0) + 1);
+  }
+  for (const [body, n] of seen) if (n > 1) report(file, "identical section repeated", `${n}× "${body.slice(0, 70)}…"`);
+  for (const m of html.matchAll(/<script[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)) {
+    try { JSON.parse(m[1]); } catch (e) { report(file, "invalid JSON-LD", e.message); }
+  }
+}
+
 for (const file of htmlFiles) {
   if (UTILITY.has(file)) continue;
   const html = fs.readFileSync(path.join(ROOT, file), "utf8");
+  structuralChecks(file, html);
   const titles = [...html.matchAll(/<title\b[^>]*>([\s\S]*?)<\/title>/gi)].map(m => decode(m[1].replace(/<[^>]+>/g, "")));
   const descriptions = tags(html, "meta")
     .filter(tag => /\bname\s*=\s*(["'])description\1/i.test(tag))
@@ -103,6 +173,9 @@ for (const file of htmlFiles) {
   if (descriptions.length === 0 || !descriptions[0]) report(file, "missing meta description");
   if (descriptions.length > 1) report(file, "duplicate meta descriptions", `${descriptions.length} found`);
   if (canonicals.length === 0) report(file, "missing canonical URL");
+  const selfUrl = file === "index.html" ? `${SITE}/` : `${SITE}/${file}`;
+  if (canonicals.length && canonicals[0] !== selfUrl) report(file, "canonical does not point to the page itself", canonicals[0]);
+  if (!noindex && (!html.includes("<!-- mb:header:start -->") || !html.includes("<!-- mb:footer:start -->"))) report(file, "static header/footer missing (run scripts/build-site.js)");
   if (canonicals.length > 1) report(file, "duplicate canonical tags", `${canonicals.length} found`);
   if (h1s.length === 0) report(file, "missing H1");
   if (noindex && !ALLOWED_NOINDEX.has(file)) report(file, "unexpected noindex");
@@ -133,7 +206,8 @@ for (const file of htmlFiles) {
   for (const href of links) {
     const target = normalizeUrl(href, file);
     if (!target || !target.toLowerCase().endsWith(".html")) continue;
-    if (!fs.existsSync(path.join(ROOT, target))) report(file, "broken internal link", href);
+    if (redirectedFiles.has(target)) report(file, "internal link to a redirected URL", href);
+    else if (!fs.existsSync(path.join(ROOT, target))) report(file, "broken internal link", href);
   }
 }
 

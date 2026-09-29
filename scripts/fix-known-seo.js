@@ -29,6 +29,9 @@ function fixDescription(file, description) {
   const full = path.join(ROOT, file);
   let html = fs.readFileSync(full, "utf8");
   const tagRe = /<meta\b[^>]*name\s*=\s*["']description["'][^>]*>/gi;
+  const tags = html.match(tagRe) || [];
+  // Idempotent: leave the page alone when its single description already has this content.
+  if (tags.length === 1 && (tags[0].match(/content\s*=\s*"([^"]*)"/i) || [])[1] === description) return false;
   let count = 0;
   const fixed = html.replace(tagRe, () => {
     count += 1;
