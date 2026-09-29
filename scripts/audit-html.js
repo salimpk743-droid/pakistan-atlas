@@ -107,6 +107,10 @@ for (const [file, expected] of Object.entries(VERIFICATION)) {
 function structuralChecks(file, html) {
   const withoutPre = html.replace(/<(pre|code|script|style)\b[\s\S]*?<\/\1>/gi, "");
   if (/```/.test(withoutPre)) report(file, "stray markdown code fence (```) in page");
+  // Chat-assistant paste residue: citation tokens, private-use citation markers, raw markdown links, tracking tags.
+  if (/:contentReference\[oaicite:\d+\]|\uE200|\uE201|\uE202|\bciteturn\d/.test(withoutPre)) report(file, "chat-assistant citation artifact in page text");
+  if (/\]\(https?:\/\/[^)\s]+\)/.test(withoutPre)) report(file, "raw markdown link in page text");
+  if (/utm_source=chatgpt\.com/.test(html)) report(file, "utm_source=chatgpt.com tracking parameter in a link");
   if (!/^\s*<!DOCTYPE html>/i.test(html)) report(file, "page does not start with <!DOCTYPE html>");
   const counts = (re) => (html.match(re) || []).length;
   if (counts(/<html[\s>]/gi) !== 1) report(file, "expected exactly one <html> element", `${counts(/<html[\s>]/gi)} found`);
