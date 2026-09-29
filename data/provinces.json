@@ -5,7 +5,10 @@
     "capital": "Islamabad",
     "population_2023": 241499431,
     "area_km2": 796096,
-    "official_languages": ["Urdu", "English"],
+    "official_languages": [
+      "Urdu",
+      "English"
+    ],
     "note": "2023 census figures exclude some adjustments in newly created districts. Always cite Pakistan Bureau of Statistics for official numbers."
   },
   "units": [
@@ -16,14 +19,119 @@
       "type": "Province",
       "capital": "Lahore",
       "population_2023": 127688922,
-      "area_km2": 205344,
+      "area_km2": 205345,
       "districts": 41,
       "divisions": 10,
-      "culture": "Punjab is the cultural heartland of Sufi poetry, Qawwali, Bhangra and harvest festivals such as Basant. Major languages are Punjabi and Saraiki. Historic cities include Lahore, Multan and Taxila.",
-      "issues": "Urban crowding in Lahore and Faisalabad, smog, groundwater stress, and the need to expand technical education in southern districts.",
-      "education_note": "Highest number of universities and colleges in the country, including University of the Punjab, UET Lahore and UVAS.",
-      "health_note": "Dense public hospital network in northern and central districts; southern Punjab still needs more specialists.",
-      "sample_places": ["Lahore", "Multan", "Faisalabad", "Rawalpindi", "Bahawalpur"]
+      "pop_label": "2023 census",
+      "lead": "Punjab is a province of Pakistan with its capital at Lahore. The 2023 census counted 127,688,922 people (52.87% of Pakistan) on 205,345 km², and 66.25% of residents aged 10 and over were literate.",
+      "stats": [
+        [
+          "Population (2023 census)",
+          "127,688,922"
+        ],
+        [
+          "Share of Pakistan",
+          "52.87% of 241,499,431"
+        ],
+        [
+          "Area",
+          "205,345 km²"
+        ],
+        [
+          "Density",
+          "621.83 people per km²"
+        ],
+        [
+          "Urban population",
+          "40.71%"
+        ],
+        [
+          "Population in 2017",
+          "109,989,655"
+        ],
+        [
+          "Annual growth 2017–2023",
+          "2.53%"
+        ],
+        [
+          "Average household size",
+          "6.4"
+        ],
+        [
+          "Sex ratio",
+          "105.18 males per 100 females"
+        ],
+        [
+          "Literacy rate (age 10+)",
+          "66.25% · male 71.98% · female 60.19%"
+        ]
+      ],
+      "about_html": [
+        "Punjab is Pakistan's second-largest and most densely populated province; Lahore, the provincial capital, lies near the Indian border. The present provincial boundaries were established in 1970 (<a href=\"https://www.britannica.com/place/Punjab-province-Pakistan\" rel=\"noopener\">Britannica</a>)."
+      ],
+      "sources": [
+        {
+          "url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_1_punjab_districts.pdf",
+          "publisher": "Pakistan Bureau of Statistics",
+          "title": "Census 2023, Table 1: area, population, density, urban share, household size and growth",
+          "date": "2023"
+        },
+        {
+          "url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_12_punjab_districts.pdf",
+          "publisher": "Pakistan Bureau of Statistics",
+          "title": "Census 2023, Table 12: literacy (provincial rate computed from the district rows)",
+          "date": "2023"
+        },
+        {
+          "url": "https://www.britannica.com/place/Punjab-province-Pakistan",
+          "publisher": "Encyclopaedia Britannica",
+          "title": "Punjab",
+          "date": ""
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is the capital of Punjab?",
+          "a": "Lahore.",
+          "source": {
+            "url": "https://www.britannica.com/place/Punjab-province-Pakistan",
+            "publisher": "Encyclopaedia Britannica"
+          }
+        },
+        {
+          "q": "What is the population of Punjab?",
+          "a": "The 2023 census counted 127,688,922 people, up from 109,989,655 in 2017 (annual growth 2.53%).",
+          "source": {
+            "url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_1_punjab_districts.pdf",
+            "publisher": "Pakistan Bureau of Statistics"
+          }
+        },
+        {
+          "q": "What is the area of Punjab?",
+          "a": "205,345 km², with 621.83 people per km² in 2023.",
+          "source": {
+            "url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_1_punjab_districts.pdf",
+            "publisher": "Pakistan Bureau of Statistics"
+          }
+        },
+        {
+          "q": "What is the literacy rate of Punjab?",
+          "a": "66.25% of people aged 10 and over were literate in the 2023 census (male 71.98%, female 60.19%).",
+          "source": {
+            "url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_12_punjab_districts.pdf",
+            "publisher": "Pakistan Bureau of Statistics"
+          }
+        }
+      ],
+      "urdu_blocks": [
+        {
+          "h": "پنجاب: بنیادی معلومات",
+          "p": [
+            "پنجاب کا دارالحکومت لاہور ہے۔ 2023 کی مردم شماری کے مطابق آبادی 127,688,922 اور رقبہ 205,345 مربع کلومیٹر ہے۔ 10 سال اور زائد عمر کے افراد میں شرح خواندگی 66.25 فیصد ہے (<a href=\"https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_1_punjab_districts.pdf\" rel=\"noopener\">پاکستان ادارۂ شماریات</a>)۔"
+          ]
+        }
+      ],
+      "checked": "2026-09-30"
     },
     {
       "id": "sindh",
@@ -35,11 +143,116 @@
       "area_km2": 140914,
       "districts": 30,
       "divisions": 6,
-      "culture": "Sindh is the land of Shah Abdul Latif Bhittai, the Indus civilisation sites of Mohenjo-daro, Ajrak, Sindhi topi and the annual urs at Sehwan and Bhit Shah.",
-      "issues": "Karachi municipal services, rural waterlogging, coastal erosion and flood recovery after 2022.",
-      "education_note": "University of Karachi, NED, IBA and Sindh Agriculture University Tandojam are major institutions.",
-      "health_note": "Karachi hosts many teaching hospitals; interior Sindh needs stronger primary care.",
-      "sample_places": ["Karachi", "Hyderabad", "Sukkur", "Larkana", "Thatta"]
+      "pop_label": "2023 census",
+      "lead": "Sindh is a province of Pakistan with its capital at Karachi. The 2023 census counted 55,696,147 people (23.06% of Pakistan) on 140,914 km², and 57.54% of residents aged 10 and over were literate.",
+      "stats": [
+        [
+          "Population (2023 census)",
+          "55,696,147"
+        ],
+        [
+          "Share of Pakistan",
+          "23.06% of 241,499,431"
+        ],
+        [
+          "Area",
+          "140,914 km²"
+        ],
+        [
+          "Density",
+          "395.25 people per km²"
+        ],
+        [
+          "Urban population",
+          "53.97%"
+        ],
+        [
+          "Population in 2017",
+          "47,854,510"
+        ],
+        [
+          "Annual growth 2017–2023",
+          "2.57%"
+        ],
+        [
+          "Average household size",
+          "5.6"
+        ],
+        [
+          "Sex ratio",
+          "108.76 males per 100 females"
+        ],
+        [
+          "Literacy rate (age 10+)",
+          "57.54% · male 64.23% · female 50.21%"
+        ]
+      ],
+      "about_html": [
+        "Sindh is essentially part of the Indus River delta, from which it takes its name. The province was established in 1970, and its capital is Karachi (<a href=\"https://www.britannica.com/place/Sindh-province-Pakistan\" rel=\"noopener\">Britannica</a>)."
+      ],
+      "sources": [
+        {
+          "url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_1_sindh_districts.pdf",
+          "publisher": "Pakistan Bureau of Statistics",
+          "title": "Census 2023, Table 1: area, population, density, urban share, household size and growth",
+          "date": "2023"
+        },
+        {
+          "url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_12_sindh_districts.pdf",
+          "publisher": "Pakistan Bureau of Statistics",
+          "title": "Census 2023, Table 12: literacy (provincial rate computed from the district rows)",
+          "date": "2023"
+        },
+        {
+          "url": "https://www.britannica.com/place/Sindh-province-Pakistan",
+          "publisher": "Encyclopaedia Britannica",
+          "title": "Sindh",
+          "date": ""
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is the capital of Sindh?",
+          "a": "Karachi.",
+          "source": {
+            "url": "https://www.britannica.com/place/Sindh-province-Pakistan",
+            "publisher": "Encyclopaedia Britannica"
+          }
+        },
+        {
+          "q": "What is the population of Sindh?",
+          "a": "The 2023 census counted 55,696,147 people, up from 47,854,510 in 2017 (annual growth 2.57%).",
+          "source": {
+            "url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_1_sindh_districts.pdf",
+            "publisher": "Pakistan Bureau of Statistics"
+          }
+        },
+        {
+          "q": "What is the area of Sindh?",
+          "a": "140,914 km², with 395.25 people per km² in 2023.",
+          "source": {
+            "url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_1_sindh_districts.pdf",
+            "publisher": "Pakistan Bureau of Statistics"
+          }
+        },
+        {
+          "q": "What is the literacy rate of Sindh?",
+          "a": "57.54% of people aged 10 and over were literate in the 2023 census (male 64.23%, female 50.21%).",
+          "source": {
+            "url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_12_sindh_districts.pdf",
+            "publisher": "Pakistan Bureau of Statistics"
+          }
+        }
+      ],
+      "urdu_blocks": [
+        {
+          "h": "سندھ: بنیادی معلومات",
+          "p": [
+            "سندھ کا دارالحکومت کراچی ہے۔ 2023 کی مردم شماری کے مطابق آبادی 55,696,147 اور رقبہ 140,914 مربع کلومیٹر ہے۔ 10 سال اور زائد عمر کے افراد میں شرح خواندگی 57.54 فیصد ہے (<a href=\"https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_1_sindh_districts.pdf\" rel=\"noopener\">پاکستان ادارۂ شماریات</a>)۔"
+          ]
+        }
+      ],
+      "checked": "2026-09-30"
     },
     {
       "id": "kpk",
@@ -51,11 +264,122 @@
       "area_km2": 101741,
       "districts": 38,
       "divisions": 7,
-      "culture": "Pashtunwali hospitality, Attan dance, rabab music and historic passes of Khyber and Malakand. Former FATA agencies are now districts of KP.",
-      "issues": "Mountain access, climate shocks, and integrating newly merged districts into the provincial service system.",
-      "education_note": "University of Peshawar, UET Peshawar, AWKUM and Gomal University.",
-      "health_note": "Lady Reading Hospital Peshawar is a major referral centre; remote districts rely on DHQ hospitals.",
-      "sample_places": ["Peshawar", "Abbottabad", "Swat", "Mardan", "Dera Ismail Khan"]
+      "pop_label": "2023 census",
+      "lead": "Khyber Pakhtunkhwa is a province of Pakistan with its capital at Peshawar. The 2023 census counted 40,856,097 people (16.92% of Pakistan) on 101,741 km², and 51.09% of residents aged 10 and over were literate.",
+      "stats": [
+        [
+          "Population (2023 census)",
+          "40,856,097"
+        ],
+        [
+          "Share of Pakistan",
+          "16.92% of 241,499,431"
+        ],
+        [
+          "Area",
+          "101,741 km²"
+        ],
+        [
+          "Density",
+          "401.57 people per km²"
+        ],
+        [
+          "Urban population",
+          "15.01%"
+        ],
+        [
+          "Population in 2017",
+          "35,501,964"
+        ],
+        [
+          "Annual growth 2017–2023",
+          "2.38%"
+        ],
+        [
+          "Average household size",
+          "6.9"
+        ],
+        [
+          "Sex ratio",
+          "104.18 males per 100 females"
+        ],
+        [
+          "Literacy rate (age 10+)",
+          "51.09% · male 64.57% · female 37.15%"
+        ]
+      ],
+      "about_html": [
+        "Khyber Pakhtunkhwa, formerly the North-West Frontier Province, has Peshawar as its capital and is divided by the Kabul River, which runs east to west (<a href=\"https://www.britannica.com/place/Khyber-Pakhtunkhwa\" rel=\"noopener\">Britannica</a>). The Federally Administered Tribal Areas were merged into the province when the 25th Constitutional Amendment was signed on 31 May 2018 (<a href=\"https://www.dawn.com/news/1411156\" rel=\"noopener\">Dawn</a>)."
+      ],
+      "sources": [
+        {
+          "url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_1_kp_districts.pdf",
+          "publisher": "Pakistan Bureau of Statistics",
+          "title": "Census 2023, Table 1: area, population, density, urban share, household size and growth",
+          "date": "2023"
+        },
+        {
+          "url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_12_kp_districts.pdf",
+          "publisher": "Pakistan Bureau of Statistics",
+          "title": "Census 2023, Table 12: literacy (provincial rate computed from the district rows)",
+          "date": "2023"
+        },
+        {
+          "url": "https://www.britannica.com/place/Khyber-Pakhtunkhwa",
+          "publisher": "Encyclopaedia Britannica",
+          "title": "Khyber Pakhtunkhwa",
+          "date": ""
+        },
+        {
+          "url": "https://www.dawn.com/news/1411156",
+          "publisher": "Dawn",
+          "title": "President signs KP-Fata merger bill into law",
+          "date": "31 May 2018"
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is the capital of Khyber Pakhtunkhwa?",
+          "a": "Peshawar.",
+          "source": {
+            "url": "https://www.britannica.com/place/Khyber-Pakhtunkhwa",
+            "publisher": "Encyclopaedia Britannica"
+          }
+        },
+        {
+          "q": "What is the population of Khyber Pakhtunkhwa?",
+          "a": "The 2023 census counted 40,856,097 people, up from 35,501,964 in 2017 (annual growth 2.38%).",
+          "source": {
+            "url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_1_kp_districts.pdf",
+            "publisher": "Pakistan Bureau of Statistics"
+          }
+        },
+        {
+          "q": "What is the area of Khyber Pakhtunkhwa?",
+          "a": "101,741 km², with 401.57 people per km² in 2023.",
+          "source": {
+            "url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_1_kp_districts.pdf",
+            "publisher": "Pakistan Bureau of Statistics"
+          }
+        },
+        {
+          "q": "What is the literacy rate of Khyber Pakhtunkhwa?",
+          "a": "51.09% of people aged 10 and over were literate in the 2023 census (male 64.57%, female 37.15%).",
+          "source": {
+            "url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_12_kp_districts.pdf",
+            "publisher": "Pakistan Bureau of Statistics"
+          }
+        }
+      ],
+      "urdu_blocks": [
+        {
+          "h": "خیبر پختونخوا: بنیادی معلومات",
+          "p": [
+            "خیبر پختونخوا کا دارالحکومت پشاور ہے۔ 2023 کی مردم شماری کے مطابق آبادی 40,856,097 اور رقبہ 101,741 مربع کلومیٹر ہے۔ 10 سال اور زائد عمر کے افراد میں شرح خواندگی 51.09 فیصد ہے (<a href=\"https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_1_kp_districts.pdf\" rel=\"noopener\">پاکستان ادارۂ شماریات</a>)۔"
+          ]
+        }
+      ],
+      "checked": "2026-09-30"
     },
     {
       "id": "balochistan",
@@ -67,11 +391,116 @@
       "area_km2": 347190,
       "districts": 41,
       "divisions": 11,
-      "culture": "Largest province by area. Baloch and Brahui traditions, juniper forests of Ziarat, Makran coast and the historic Quetta valley.",
-      "issues": "Low population density, water scarcity, school access for girls in remote tehsils, and long travel times to hospitals.",
-      "education_note": "University of Balochistan and BUITEMS in Quetta are the main campuses; more district colleges are being added.",
-      "health_note": "BMC Quetta is the main teaching hospital. Many districts still have limited specialist cover.",
-      "sample_places": ["Quetta", "Gwadar", "Turbat", "Khuzdar", "Ziarat"]
+      "pop_label": "2023 census",
+      "lead": "Balochistan is a province of Pakistan with its capital at Quetta. The 2023 census counted 14,894,402 people (6.17% of Pakistan) on 347,190 km², and 42.01% of residents aged 10 and over were literate.",
+      "stats": [
+        [
+          "Population (2023 census)",
+          "14,894,402"
+        ],
+        [
+          "Share of Pakistan",
+          "6.17% of 241,499,431"
+        ],
+        [
+          "Area",
+          "347,190 km²"
+        ],
+        [
+          "Density",
+          "42.90 people per km²"
+        ],
+        [
+          "Urban population",
+          "30.96%"
+        ],
+        [
+          "Population in 2017",
+          "12,335,129"
+        ],
+        [
+          "Annual growth 2017–2023",
+          "3.20%"
+        ],
+        [
+          "Average household size",
+          "6.4"
+        ],
+        [
+          "Sex ratio",
+          "109.02 males per 100 females"
+        ],
+        [
+          "Literacy rate (age 10+)",
+          "42.01% · male 50.50% · female 32.80%"
+        ]
+      ],
+      "about_html": [
+        "Balochistan became a separate province in its present form in 1970. It is the largest and most sparsely populated province of Pakistan, and its capital is Quetta (<a href=\"https://www.britannica.com/place/Balochistan\" rel=\"noopener\">Britannica</a>)."
+      ],
+      "sources": [
+        {
+          "url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_1_balochistan_districts.pdf",
+          "publisher": "Pakistan Bureau of Statistics",
+          "title": "Census 2023, Table 1: area, population, density, urban share, household size and growth",
+          "date": "2023"
+        },
+        {
+          "url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_12_balochistan_districts.pdf",
+          "publisher": "Pakistan Bureau of Statistics",
+          "title": "Census 2023, Table 12: literacy (provincial rate computed from the district rows)",
+          "date": "2023"
+        },
+        {
+          "url": "https://www.britannica.com/place/Balochistan",
+          "publisher": "Encyclopaedia Britannica",
+          "title": "Balochistan",
+          "date": ""
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is the capital of Balochistan?",
+          "a": "Quetta.",
+          "source": {
+            "url": "https://www.britannica.com/place/Balochistan",
+            "publisher": "Encyclopaedia Britannica"
+          }
+        },
+        {
+          "q": "What is the population of Balochistan?",
+          "a": "The 2023 census counted 14,894,402 people, up from 12,335,129 in 2017 (annual growth 3.20%).",
+          "source": {
+            "url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_1_balochistan_districts.pdf",
+            "publisher": "Pakistan Bureau of Statistics"
+          }
+        },
+        {
+          "q": "What is the area of Balochistan?",
+          "a": "347,190 km², with 42.90 people per km² in 2023.",
+          "source": {
+            "url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_1_balochistan_districts.pdf",
+            "publisher": "Pakistan Bureau of Statistics"
+          }
+        },
+        {
+          "q": "What is the literacy rate of Balochistan?",
+          "a": "42.01% of people aged 10 and over were literate in the 2023 census (male 50.50%, female 32.80%).",
+          "source": {
+            "url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_12_balochistan_districts.pdf",
+            "publisher": "Pakistan Bureau of Statistics"
+          }
+        }
+      ],
+      "urdu_blocks": [
+        {
+          "h": "بلوچستان: بنیادی معلومات",
+          "p": [
+            "بلوچستان کا دارالحکومت کوئٹہ ہے۔ 2023 کی مردم شماری کے مطابق آبادی 14,894,402 اور رقبہ 347,190 مربع کلومیٹر ہے۔ 10 سال اور زائد عمر کے افراد میں شرح خواندگی 42.01 فیصد ہے (<a href=\"https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_1_balochistan_districts.pdf\" rel=\"noopener\">پاکستان ادارۂ شماریات</a>)۔"
+          ]
+        }
+      ],
+      "checked": "2026-09-30"
     },
     {
       "id": "ict",
@@ -83,11 +512,116 @@
       "area_km2": 906,
       "districts": 1,
       "divisions": 0,
-      "culture": "Planned capital designed by Constantinos Doxiadis. Faisal Mosque, Margalla Hills and a mix of communities from every province.",
-      "issues": "Rapid housing growth, traffic and pressure on the Margalla ecosystem.",
-      "education_note": "QAU, NUST, COMSATS, IIUI and many federal colleges.",
-      "health_note": "PIMS, Polyclinic and private teaching hospitals serve the capital and northern Punjab.",
-      "sample_places": ["Islamabad", "Bari Imam", "Saidpur Village"]
+      "pop_label": "2023 census",
+      "lead": "Islamabad Capital Territory is the federal capital territory of Pakistan with its capital at Islamabad. The 2023 census counted 2,363,863 people (0.98% of Pakistan) on 906 km², and 83.97% of residents aged 10 and over were literate.",
+      "stats": [
+        [
+          "Population (2023 census)",
+          "2,363,863"
+        ],
+        [
+          "Share of Pakistan",
+          "0.98% of 241,499,431"
+        ],
+        [
+          "Area",
+          "906 km²"
+        ],
+        [
+          "Density",
+          "2609.12 people per km²"
+        ],
+        [
+          "Urban population",
+          "46.91%"
+        ],
+        [
+          "Population in 2017",
+          "2,003,368"
+        ],
+        [
+          "Annual growth 2017–2023",
+          "2.80%"
+        ],
+        [
+          "Average household size",
+          "5.7"
+        ],
+        [
+          "Sex ratio",
+          "111.81 males per 100 females"
+        ],
+        [
+          "Literacy rate (age 10+)",
+          "83.97% · male 88.23% · female 79.13%"
+        ]
+      ],
+      "about_html": [
+        "Islamabad is the capital of Pakistan, on the Potwar Plateau 14 km north-east of Rawalpindi. A commission chose the site in 1959 and construction began in 1961; the planned capital area covers 906 km² (<a href=\"https://www.britannica.com/place/Islamabad\" rel=\"noopener\">Britannica</a>)."
+      ],
+      "sources": [
+        {
+          "url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_1_islamabad.pdf",
+          "publisher": "Pakistan Bureau of Statistics",
+          "title": "Census 2023, Table 1: area, population, density, urban share, household size and growth",
+          "date": "2023"
+        },
+        {
+          "url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_12_islamabad.pdf",
+          "publisher": "Pakistan Bureau of Statistics",
+          "title": "Census 2023, Table 12: literacy (provincial rate computed from the district rows)",
+          "date": "2023"
+        },
+        {
+          "url": "https://www.britannica.com/place/Islamabad",
+          "publisher": "Encyclopaedia Britannica",
+          "title": "Islamabad",
+          "date": ""
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is the capital of Islamabad Capital Territory?",
+          "a": "Islamabad is the capital of Pakistan; the territory covers the city and its surroundings.",
+          "source": {
+            "url": "https://www.britannica.com/place/Islamabad",
+            "publisher": "Encyclopaedia Britannica"
+          }
+        },
+        {
+          "q": "What is the population of Islamabad Capital Territory?",
+          "a": "The 2023 census counted 2,363,863 people, up from 2,003,368 in 2017 (annual growth 2.80%).",
+          "source": {
+            "url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_1_islamabad.pdf",
+            "publisher": "Pakistan Bureau of Statistics"
+          }
+        },
+        {
+          "q": "What is the area of Islamabad Capital Territory?",
+          "a": "906 km², with 2609.12 people per km² in 2023.",
+          "source": {
+            "url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_1_islamabad.pdf",
+            "publisher": "Pakistan Bureau of Statistics"
+          }
+        },
+        {
+          "q": "What is the literacy rate of Islamabad Capital Territory?",
+          "a": "83.97% of people aged 10 and over were literate in the 2023 census (male 88.23%, female 79.13%).",
+          "source": {
+            "url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_12_islamabad.pdf",
+            "publisher": "Pakistan Bureau of Statistics"
+          }
+        }
+      ],
+      "urdu_blocks": [
+        {
+          "h": "اسلام آباد: بنیادی معلومات",
+          "p": [
+            "اسلام آباد پاکستان کا دارالحکومت ہے۔ 2023 کی مردم شماری کے مطابق آبادی 2,363,863 اور رقبہ 906 مربع کلومیٹر ہے۔ 10 سال اور زائد عمر کے افراد میں شرح خواندگی 83.97 فیصد ہے (<a href=\"https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_1_islamabad.pdf\" rel=\"noopener\">پاکستان ادارۂ شماریات</a>)۔"
+          ]
+        }
+      ],
+      "checked": "2026-09-30"
     },
     {
       "id": "ajk",
@@ -95,43 +629,285 @@
       "urdu": "آزاد جموں و کشمیر",
       "type": "Administrative Territory",
       "capital": "Muzaffarabad",
-      "population_2023": 4045366,
+      "population_2023": null,
       "area_km2": 13297,
       "districts": 10,
       "divisions": 3,
-      "culture": "Kashmiri, Pahari and Gojri heritage. Neelum and Jhelum valleys, traditional wooden architecture and mountain crafts.",
-      "issues": "Terrain, winter access, and earthquake-resilient construction after 2005.",
-      "education_note": "University of AJK and several public colleges in each district.",
-      "health_note": "CMH and DHQ hospitals in Muzaffarabad, Mirpur and Rawalakot.",
-      "sample_places": ["Muzaffarabad", "Mirpur", "Neelum", "Rawalakot"]
+      "population_2017": 4032363,
+      "population_projected_2023": 4460971,
+      "pop_label": "2017 census",
+      "lead": "Azad Jammu and Kashmir is administered from Muzaffarabad and has 10 districts in 3 divisions. The 2017 census counted 4,032,363 people on 13,297 km²; the AJ&K Bureau of Statistics projects 4,460,971 for 2023.",
+      "stats": [
+        [
+          "Population (2017 census)",
+          "4,032,363"
+        ],
+        [
+          "Projected population 2023",
+          "4,460,971 (AJ&K Bureau of Statistics projection)"
+        ],
+        [
+          "Area",
+          "13,297 km²"
+        ],
+        [
+          "Density (2017)",
+          "303 people per km²"
+        ],
+        [
+          "Urban population (2017)",
+          "17.43%"
+        ],
+        [
+          "Average household size (2017)",
+          "6.27"
+        ],
+        [
+          "Annual growth 1998–2017",
+          "1.61%"
+        ],
+        [
+          "Divisions · districts · tehsils (2023)",
+          "3 · 10 · 32"
+        ],
+        [
+          "Union councils (2023)",
+          "278"
+        ],
+        [
+          "Line of Control",
+          "528 km (approx.)"
+        ]
+      ],
+      "about_html": [
+        "The administration of Azad Kashmir is headquartered at Muzaffarabad; Mirpur is the major town in the south of the territory. In 2005 a strong earthquake devastated Muzaffarabad and the surrounding region (<a href=\"https://www.britannica.com/place/Azad-Kashmir\" rel=\"noopener\">Britannica</a>)."
+      ],
+      "sources": [
+        {
+          "url": "https://pndajk.gov.pk/uploadfiles/downloads/AJK%20At%20A%20Glance-2024.pdf",
+          "publisher": "AJ&K Bureau of Statistics, P&DD",
+          "title": "AJK at a Glance 2024",
+          "date": "2024"
+        },
+        {
+          "url": "https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf",
+          "publisher": "AJ&K Bureau of Statistics, P&DD",
+          "title": "Azad Jammu & Kashmir Statistical Year Book 2023",
+          "date": "2023"
+        },
+        {
+          "url": "https://www.britannica.com/place/Azad-Kashmir",
+          "publisher": "Encyclopaedia Britannica",
+          "title": "Azad Kashmir",
+          "date": ""
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is the capital of Azad Jammu and Kashmir?",
+          "a": "The administration of Azad Kashmir is headquartered at Muzaffarabad.",
+          "source": {
+            "url": "https://www.britannica.com/place/Azad-Kashmir",
+            "publisher": "Encyclopaedia Britannica"
+          }
+        },
+        {
+          "q": "What is the population of Azad Kashmir?",
+          "a": "The 2017 census counted 4,032,363 people. The AJ&K Bureau of Statistics projects 4,460,971 for 2023; this is a projection, not a census count.",
+          "source": {
+            "url": "https://pndajk.gov.pk/uploadfiles/downloads/AJK%20At%20A%20Glance-2024.pdf",
+            "publisher": "AJ&K Bureau of Statistics"
+          }
+        },
+        {
+          "q": "What is the area of Azad Kashmir?",
+          "a": "13,297 km².",
+          "source": {
+            "url": "https://pndajk.gov.pk/uploadfiles/downloads/AJK%20At%20A%20Glance-2024.pdf",
+            "publisher": "AJ&K Bureau of Statistics"
+          }
+        },
+        {
+          "q": "How many tehsils does Azad Kashmir have?",
+          "a": "32 sub-divisions (tehsils) in 2023, with 278 union councils, in 10 districts and 3 divisions.",
+          "source": {
+            "url": "https://pndajk.gov.pk/uploadfiles/downloads/AJK%20At%20A%20Glance-2024.pdf",
+            "publisher": "AJ&K Bureau of Statistics"
+          }
+        }
+      ],
+      "urdu_blocks": [
+        {
+          "h": "آزاد جموں و کشمیر: بنیادی معلومات",
+          "p": [
+            "آزاد کشمیر کی انتظامیہ کا صدر مقام مظفرآباد ہے۔ 2017 کی مردم شماری کے مطابق آبادی 4,032,363 اور رقبہ 13,297 مربع کلومیٹر ہے؛ 2023 کے لیے تخمینہ شدہ آبادی 4,460,971 ہے (<a href=\"https://pndajk.gov.pk/uploadfiles/downloads/AJK%20At%20A%20Glance-2024.pdf\" rel=\"noopener\">آزاد کشمیر ایک نظر میں 2024</a>)۔"
+          ]
+        }
+      ],
+      "checked": "2026-09-30"
     },
     {
       "id": "gb",
       "name": "Gilgit-Baltistan",
       "urdu": "گلگت بلتستان",
       "type": "Administrative Territory",
-      "capital": "Gilgit",
-      "population_2023": 1492924,
-      "area_km2": 72971,
+      "capital": null,
+      "population_2023": 1709049,
+      "area_km2": 72496,
       "districts": 14,
       "divisions": 3,
-      "culture": "Meeting point of Karakoram, Himalaya and Hindu Kush. Shina, Balti, Burushaski and Wakhi languages. Polo at Shandur and apricot culture of Hunza.",
-      "issues": "Glacial lake floods, road closures in winter, and tourism carrying capacity.",
-      "education_note": "Karakoram International University Gilgit and growing college network.",
-      "health_note": "DHQ Gilgit and Skardu; specialist care often requires travel to Islamabad.",
-      "sample_places": ["Gilgit", "Skardu", "Hunza", "Chilas"]
+      "pop_label": "2023 census",
+      "lead": "Gilgit-Baltistan, formerly the Northern Areas, had 1,709,049 people in the 2023 census, up from 1,492,924 in 2017, on 72,496 km². Its government notified 14 districts in 2019; official statistics are still published for 10.",
+      "stats": [
+        [
+          "Population (2023 census)",
+          "1,709,049"
+        ],
+        [
+          "Population in 2017",
+          "1,492,924"
+        ],
+        [
+          "Annual growth 2017–2023",
+          "2.28%"
+        ],
+        [
+          "Area",
+          "72,496 km² (GB P&DD; the GB government portal gives 72,971 km²)"
+        ],
+        [
+          "Sex ratio (2023)",
+          "109 males per 100 females"
+        ],
+        [
+          "Households (2023)",
+          "233,015"
+        ],
+        [
+          "District councils",
+          "10"
+        ]
+      ],
+      "about_html": [
+        "Gilgit-Baltistan, formerly known as the Northern Areas, is administered by Pakistan and forms the northern part of the larger Kashmir region (<a href=\"https://gilgitbaltistan.gov.pk/\" rel=\"noopener\">Government of Gilgit-Baltistan</a>)."
+      ],
+      "sources": [
+        {
+          "url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+          "publisher": "Planning & Development Department, Government of Gilgit-Baltistan",
+          "title": "Gilgit-Baltistan at a Glance 2025",
+          "date": "2025"
+        },
+        {
+          "url": "https://gilgitbaltistan.gov.pk/",
+          "publisher": "Government of Gilgit-Baltistan",
+          "title": "About Gilgit-Baltistan",
+          "date": ""
+        },
+        {
+          "url": "https://www.dawn.com/news/1488851",
+          "publisher": "Dawn",
+          "title": "Four new districts set up in GB",
+          "date": "June 2019"
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is the population of Gilgit-Baltistan?",
+          "a": "The 2023 census counted 1,709,049 people, up from 1,492,924 in 2017 (annual growth 2.28%).",
+          "source": {
+            "url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+            "publisher": "P&DD Gilgit-Baltistan"
+          }
+        },
+        {
+          "q": "What is the area of Gilgit-Baltistan?",
+          "a": "72,496 km² according to the GB Planning & Development Department; the GB government portal gives 72,971 km².",
+          "source": {
+            "url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+            "publisher": "P&DD Gilgit-Baltistan"
+          }
+        },
+        {
+          "q": "How many districts does Gilgit-Baltistan have?",
+          "a": "14 since the June 2019 notification of Gupis-Yasin, Rondu, Darel and Tangir; the official 2023 statistics still report 10.",
+          "source": {
+            "url": "https://www.dawn.com/news/1488851",
+            "publisher": "Dawn"
+          }
+        }
+      ],
+      "urdu_blocks": [
+        {
+          "h": "گلگت بلتستان: بنیادی معلومات",
+          "p": [
+            "گلگت بلتستان کو پہلے شمالی علاقہ جات کہا جاتا تھا۔ 2023 کی مردم شماری کے مطابق آبادی 1,709,049 (2017 میں 1,492,924) اور رقبہ 72,496 مربع کلومیٹر ہے (<a href=\"https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf\" rel=\"noopener\">گلگت بلتستان ایک نظر میں 2025</a>)۔"
+          ]
+        }
+      ],
+      "checked": "2026-09-30"
     }
   ],
   "district_samples": [
-    {"province": "Punjab", "name": "Rawalpindi", "pop": 5724000, "note": "Twin city with Islamabad. Military cantonment, Murree tehsil nearby, many colleges."},
-    {"province": "Punjab", "name": "Lahore", "pop": 13004135, "note": "Provincial capital. Walled City, Badshahi Mosque, University of the Punjab."},
-    {"province": "Punjab", "name": "Faisalabad", "pop": 7882000, "note": "Textile hub. Agriculture University and large industrial estate."},
-    {"province": "Sindh", "name": "Karachi East / Central cluster", "pop": null, "note": "Karachi is split into several districts. Economic engine of Pakistan."},
-    {"province": "Khyber Pakhtunkhwa", "name": "Peshawar", "pop": 4333000, "note": "Historic Qissa Khwani Bazaar, University of Peshawar, LRH."},
-    {"province": "Khyber Pakhtunkhwa", "name": "Swat", "pop": 2687000, "note": "Former princely state. Tourism, orchards and archaeological sites."},
-    {"province": "Balochistan", "name": "Quetta", "pop": 2275000, "note": "Provincial capital at high altitude. Fruit markets and university city."},
-    {"province": "Balochistan", "name": "Gwadar", "pop": 300000, "note": "Deep-sea port on the Makran coast. Rapid infrastructure change."},
-    {"province": "Azad Jammu and Kashmir", "name": "Muzaffarabad", "pop": 650000, "note": "Capital at the meeting of Neelum and Jhelum rivers."},
-    {"province": "Gilgit-Baltistan", "name": "Hunza", "pop": 53000, "note": "High literacy, tourism and terraced villages under Rakaposhi."}
+    {
+      "province": "Punjab",
+      "name": "Rawalpindi",
+      "pop": 5724000,
+      "note": "Twin city with Islamabad. Military cantonment, Murree tehsil nearby, many colleges."
+    },
+    {
+      "province": "Punjab",
+      "name": "Lahore",
+      "pop": 13004135,
+      "note": "Provincial capital. Walled City, Badshahi Mosque, University of the Punjab."
+    },
+    {
+      "province": "Punjab",
+      "name": "Faisalabad",
+      "pop": 7882000,
+      "note": "Textile hub. Agriculture University and large industrial estate."
+    },
+    {
+      "province": "Sindh",
+      "name": "Karachi East / Central cluster",
+      "pop": null,
+      "note": "Karachi is split into several districts. Economic engine of Pakistan."
+    },
+    {
+      "province": "Khyber Pakhtunkhwa",
+      "name": "Peshawar",
+      "pop": 4333000,
+      "note": "Historic Qissa Khwani Bazaar, University of Peshawar, LRH."
+    },
+    {
+      "province": "Khyber Pakhtunkhwa",
+      "name": "Swat",
+      "pop": 2687000,
+      "note": "Former princely state. Tourism, orchards and archaeological sites."
+    },
+    {
+      "province": "Balochistan",
+      "name": "Quetta",
+      "pop": 2275000,
+      "note": "Provincial capital at high altitude. Fruit markets and university city."
+    },
+    {
+      "province": "Balochistan",
+      "name": "Gwadar",
+      "pop": 300000,
+      "note": "Deep-sea port on the Makran coast. Rapid infrastructure change."
+    },
+    {
+      "province": "Azad Jammu and Kashmir",
+      "name": "Muzaffarabad",
+      "pop": 650000,
+      "note": "Capital at the meeting of Neelum and Jhelum rivers."
+    },
+    {
+      "province": "Gilgit-Baltistan",
+      "name": "Hunza",
+      "pop": 53000,
+      "note": "High literacy, tourism and terraced villages under Rakaposhi."
+    }
   ]
 }

@@ -219,11 +219,15 @@ function provinceMeta(pid) {
   const u = L.provinceById[pid];
   const n = L.districtCount(pid).count;
   const title = pid === "ict" ? "Islamabad Capital Territory: Population & Area (2023)"
+    : pid === "ajk" ? "Azad Jammu and Kashmir: Districts, Population & Area"
     : firstFit([`${u.name}: Districts, Population & Area (2023)`, `${u.name}: Districts, Population & Area`], 60);
+  const pop = u.population_2023 != null ? `${u.pop_label || "2023 census"} population ${fmtInt(u.population_2023)}` : `2017 census population ${fmtInt(u.population_2017)}`;
+  const cap = pid === "ajk" ? `administered from ${u.capital}, ` : u.capital ? `capital ${u.capital}, ` : "";
+  const sents = String(u.lead || "").split(/(?<=\.) /);
   const description = fitDescription([
-    `${u.name}, Pakistan: capital ${u.capital}, 2023 census population ${fmtInt(u.population_2023)} and area ${fmtInt(u.area_km2)} km². Guide to its ${n} district${n === 1 ? "" : "s"}, culture and services.`,
-    `${u.name}: capital ${u.capital}, 2023 census population ${fmtInt(u.population_2023)}, area ${fmtInt(u.area_km2)} km². Guide to its ${n} district${n === 1 ? "" : "s"}, culture and services.`,
-    `${u.name}: capital ${u.capital}, population ${fmtInt(u.population_2023)} (2023), area ${fmtInt(u.area_km2)} km², ${n} district profile${n === 1 ? "" : "s"}.`
+    ...sents.map((_, i) => sents.slice(0, sents.length - i).join(" ")),
+    `${u.name}, Pakistan: ${cap}${pop} and area ${fmtInt(u.area_km2)} km². Its ${n} district${n === 1 ? "" : "s"}, largest districts, FAQs and sources.`,
+    `${u.name}: ${cap}${pop}, area ${fmtInt(u.area_km2)} km², ${n} district${n === 1 ? "" : "s"}, with sources.`
   ]);
   return { title, description };
 }
