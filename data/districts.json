@@ -11,13 +11,130 @@
         "slug": "islamabad",
         "name": "Islamabad",
         "hq": "Islamabad",
-        "pop": "2,363,863 (2023 census)",
-        "about": "Islamabad was designed in the 1960s as a planned garden capital at the foot of the Margalla Hills. The Faisal Mosque, Daman-e-Koh viewpoint, Saidpur Village and Bari Imam shrine sit alongside the government sector belt and a ring of fast-growing housing societies.",
-        "education": "Quaid-i-Azam University, NUST, COMSATS, IIUI and NUML anchor the city's large federal college and school network.",
-        "health": "The Pakistan Institute of Medical Sciences (PIMS) and Polyclinic are the main public hospitals, backed by several private teaching hospitals.",
-        "culture": "People from every province live here, and hiking the Margalla trails or browsing the weekly bazaars are part of everyday life.",
-        "issues": "Traffic congestion, unplanned housing at the city's edges, and pressure on the Margalla Hills National Park are the main ongoing concerns.",
-        "villages": "Saidpur, Bari Imam, Shah Allah Ditta, Golra Sharif"
+        "about": "Planned federal capital on the Potwar Plateau; the site was chosen in 1959 and construction began in 1961.",
+        "population_2023": 2363863,
+        "area_km2": 906,
+        "density_2023": 2609.12,
+        "urban_proportion_2023": 46.91,
+        "avg_household_size_2023": 5.7,
+        "growth_rate_2017_2023": 2.8,
+        "population_source": "Pakistan Bureau of Statistics, 7th Population and Housing Census 2023, Table 1 (area, population, density, urban proportion, household size and growth rate by administrative unit)",
+        "population_source_url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_1_islamabad.pdf",
+        "last_verified": "2026-09-30",
+        "sex_ratio_2023": 111.81,
+        "population_2017": 2003368,
+        "census_units_2023": [
+          {
+            "name": "Islamabad",
+            "type": "tehsil",
+            "population_2023": 2363863,
+            "area_km2": 906,
+            "density_2023": 2609.12,
+            "urban_proportion_2023": 46.91,
+            "growth_rate_2017_2023": 2.8,
+            "literacy_2023": 83.97
+          }
+        ],
+        "literacy_2023": {
+          "total": 83.97,
+          "male": 88.23,
+          "female": 79.13,
+          "rural": 84.88,
+          "urban": 82.91,
+          "population_10plus": 1797000,
+          "literate_10plus": 1508916
+        },
+        "out_of_school_5_16_2023": {
+          "total": 89127,
+          "male": 47849,
+          "female": 41275
+        },
+        "mother_tongue_2023": {
+          "counted": 2283244,
+          "main": [
+            {
+              "language": "Punjabi",
+              "speakers": 1154540,
+              "pct": 50.57
+            },
+            {
+              "language": "Pashto",
+              "speakers": 415838,
+              "pct": 18.21
+            },
+            {
+              "language": "Urdu",
+              "speakers": 358922,
+              "pct": 15.72
+            },
+            {
+              "language": "Hindko",
+              "speakers": 140780,
+              "pct": 6.17
+            }
+          ]
+        },
+        "census_tables_2023": {
+          "table1": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_1_islamabad.pdf",
+          "table2": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_2_islamabad.pdf",
+          "table11": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_11_islamabad.pdf",
+          "table12": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_12_islamabad.pdf"
+        },
+        "urban_localities_2023": [
+          {
+            "name": "Islamabad Metropolitan Corporation",
+            "type": "metropolitan corporation",
+            "tehsil": "Islamabad",
+            "population_2023": 1108872
+          }
+        ],
+        "urdu": {
+          "name": "اسلام آباد",
+          "hq": "اسلام آباد",
+          "blocks": [
+            {
+              "h": "منصوبہ بند دارالحکومت",
+              "p": [
+                "1959 میں ایک کمیشن نے کراچی کو دارالحکومت کے لیے موزوں نہ پانے کے بعد اسلام آباد کا مقام منتخب کیا، اور 1961 میں تعمیر شروع ہوئی۔ اسلام آباد کا مطلب ہے \"اسلام کا شہر\" یا \"امن کا شہر\"۔ یہ شہر راولپنڈی سے 14 کلومیٹر شمال مشرق میں سطح مرتفع پوٹھوہار پر واقع ہے (<a href=\"https://www.britannica.com/place/Islamabad\" rel=\"noopener\">انسائیکلوپیڈیا بریٹانیکا</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://www.britannica.com/place/Islamabad",
+              "publisher": "Encyclopaedia Britannica",
+              "title": "Islamabad"
+            }
+          ]
+        },
+        "profile_checked": "2026-09-30",
+        "sources": [
+          {
+            "url": "https://www.britannica.com/place/Islamabad",
+            "publisher": "Encyclopaedia Britannica",
+            "title": "Islamabad",
+            "date": ""
+          }
+        ],
+        "faq_extra": [
+          {
+            "q": "When was Islamabad built?",
+            "a": "A commission chose the site in 1959 after Karachi was found unsuitable as the capital, and construction began in 1961.",
+            "source": {
+              "url": "https://www.britannica.com/place/Islamabad",
+              "publisher": "Encyclopaedia Britannica"
+            }
+          },
+          {
+            "q": "What does the name Islamabad mean?",
+            "a": "City of Islam, or City of Peace.",
+            "source": {
+              "url": "https://www.britannica.com/place/Islamabad",
+              "publisher": "Encyclopaedia Britannica"
+            }
+          }
+        ]
       }
     ],
     "district_count": {
@@ -22292,170 +22409,1187 @@
       {
         "slug": "astore",
         "name": "Astore",
-        "hq": "Eidghah / Astore",
-        "pop": "Census 2023 GB tables",
-        "about": "High district toward Nanga Parbat’s Rupal side and Deosai approach.",
-        "education": "Colleges in Astore.",
-        "health": "DHQ Astore.",
-        "culture": "Shina mountain villages.",
-        "issues": "Snow isolation.",
-        "villages": "Gurikot, Rama"
+        "about": "Gilgit-Baltistan district; the 2023 census counted 111,573 people on 5,411 km², with literacy of 66.4%.",
+        "official_stats": {
+          "lead": "Astore District is one of the 10 districts for which Gilgit-Baltistan's Planning & Development Department publishes statistics. The 2023 census counted 111,573 people on 5,411 km², and 66.4% of residents were literate.",
+          "rows": [
+            [
+              "Population (2023 census)",
+              "111,573"
+            ],
+            [
+              "Population in 2017",
+              "95,416"
+            ],
+            [
+              "Annual growth 2017–2023",
+              "2.64%"
+            ],
+            [
+              "Area",
+              "5,411 km²"
+            ],
+            [
+              "Literacy rate (2023)",
+              "66.4%"
+            ],
+            [
+              "Sex ratio (2023)",
+              "112 males per 100 females"
+            ],
+            [
+              "Households (2023)",
+              "13,713 · average size 8"
+            ]
+          ],
+          "source_url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+          "source_label": "P&DD Gilgit-Baltistan, GB at a Glance 2025 (Census 2017 and 2023, PBS)",
+          "sources": []
+        },
+        "urdu": {
+          "name": "استور",
+          "blocks": [
+            {
+              "h": "سرکاری اعداد و شمار",
+              "p": [
+                "گلگت بلتستان کے محکمہ منصوبہ بندی و ترقیات کے مطابق 2023 کی مردم شماری میں ضلع استور کی آبادی 111,573 تھی (2017 میں 95,416)۔ ضلع کا رقبہ 5,411 مربع کلومیٹر اور شرح خواندگی 66.4 فیصد ہے (<a href=\"https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf\" rel=\"noopener\">گلگت بلتستان ایک نظر میں 2025</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+              "publisher": "pnd.gog.pk",
+              "title": ""
+            }
+          ]
+        },
+        "profile_checked": "2026-09-30",
+        "sources": [],
+        "faq_extra": [
+          {
+            "q": "What is the population of Astore District?",
+            "a": "The 2023 census counted 111,573 people, up from 95,416 in 2017.",
+            "source": {
+              "url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+              "publisher": "P&DD Gilgit-Baltistan"
+            }
+          },
+          {
+            "q": "What is the literacy rate of Astore District?",
+            "a": "66.4% in the 2023 census.",
+            "source": {
+              "url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+              "publisher": "P&DD Gilgit-Baltistan"
+            }
+          },
+          {
+            "q": "What is the area of Astore District?",
+            "a": "5,411 km².",
+            "source": {
+              "url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+              "publisher": "P&DD Gilgit-Baltistan"
+            }
+          }
+        ]
       },
       {
         "slug": "diamer",
         "name": "Diamer",
-        "hq": "Chilas",
-        "pop": "Census 2023 GB tables",
-        "about": "Indus gorge at Chilas, under Nanga Parbat.",
-        "education": "Colleges in Chilas.",
-        "health": "DHQ Chilas.",
-        "culture": "Shina gorge villages.",
-        "issues": "KKH slides and summer heat in the gorge.",
-        "villages": "Chilas side valleys"
+        "about": "Gilgit-Baltistan district; the 2023 census counted 337,329 people on 7,234 km², with literacy of 30.95%.",
+        "official_stats": {
+          "lead": "Diamer District is one of the 10 districts for which Gilgit-Baltistan's Planning & Development Department publishes statistics. The 2023 census counted 337,329 people on 7,234 km², and 30.95% of residents were literate.",
+          "rows": [
+            [
+              "Population (2023 census)",
+              "337,329"
+            ],
+            [
+              "Population in 2017",
+              "269,772"
+            ],
+            [
+              "Annual growth 2017–2023",
+              "3.79%"
+            ],
+            [
+              "Area",
+              "7,234 km²"
+            ],
+            [
+              "Literacy rate (2023)",
+              "30.95%"
+            ],
+            [
+              "Sex ratio (2023)",
+              "107 males per 100 females"
+            ],
+            [
+              "Households (2023)",
+              "41,536 · average size 8"
+            ]
+          ],
+          "source_url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+          "source_label": "P&DD Gilgit-Baltistan, GB at a Glance 2025 (Census 2017 and 2023, PBS)",
+          "sources": [
+            {
+              "url": "https://www.dawn.com/news/1488851",
+              "publisher": "Dawn",
+              "title": "Four new districts set up in GB",
+              "date": "June 2019"
+            }
+          ]
+        },
+        "urdu": {
+          "name": "دیامر",
+          "blocks": [
+            {
+              "h": "سرکاری اعداد و شمار",
+              "p": [
+                "گلگت بلتستان کے محکمہ منصوبہ بندی و ترقیات کے مطابق 2023 کی مردم شماری میں ضلع دیامر کی آبادی 337,329 تھی (2017 میں 269,772)۔ ضلع کا رقبہ 7,234 مربع کلومیٹر اور شرح خواندگی 30.95 فیصد ہے (<a href=\"https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf\" rel=\"noopener\">گلگت بلتستان ایک نظر میں 2025</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+              "publisher": "pnd.gog.pk",
+              "title": ""
+            }
+          ]
+        },
+        "profile_checked": "2026-09-30",
+        "sources": [],
+        "faq_extra": [
+          {
+            "q": "What is the population of Diamer District?",
+            "a": "The 2023 census counted 337,329 people, up from 269,772 in 2017.",
+            "source": {
+              "url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+              "publisher": "P&DD Gilgit-Baltistan"
+            }
+          },
+          {
+            "q": "What is the literacy rate of Diamer District?",
+            "a": "30.95% in the 2023 census.",
+            "source": {
+              "url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+              "publisher": "P&DD Gilgit-Baltistan"
+            }
+          },
+          {
+            "q": "What is the area of Diamer District?",
+            "a": "7,234 km².",
+            "source": {
+              "url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+              "publisher": "P&DD Gilgit-Baltistan"
+            }
+          }
+        ]
       },
       {
         "slug": "ghanche",
         "name": "Ghanche",
-        "hq": "Khaplu",
-        "pop": "Census 2023 GB tables",
-        "about": "Eastern Baltistan toward the Siachen approach valleys. Khaplu palace country.",
-        "education": "Colleges in Khaplu.",
-        "health": "DHQ Ghanche.",
-        "culture": "Balti culture and apricot terraces.",
-        "issues": "Winter closure.",
-        "villages": "Khaplu, Mashabrum belt"
+        "about": "Gilgit-Baltistan district; the 2023 census counted 157,822 people on 8,531 km², with literacy of 69.57%.",
+        "official_stats": {
+          "lead": "Ghanche District is one of the 10 districts for which Gilgit-Baltistan's Planning & Development Department publishes statistics. The 2023 census counted 157,822 people on 8,531 km², and 69.57% of residents were literate.",
+          "rows": [
+            [
+              "Population (2023 census)",
+              "157,822"
+            ],
+            [
+              "Population in 2017",
+              "156,697"
+            ],
+            [
+              "Annual growth 2017–2023",
+              "0.12%"
+            ],
+            [
+              "Area",
+              "8,531 km²"
+            ],
+            [
+              "Literacy rate (2023)",
+              "69.57%"
+            ],
+            [
+              "Sex ratio (2023)",
+              "112 males per 100 females"
+            ],
+            [
+              "Households (2023)",
+              "21,174 · average size 7"
+            ]
+          ],
+          "source_url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+          "source_label": "P&DD Gilgit-Baltistan, GB at a Glance 2025 (Census 2017 and 2023, PBS)",
+          "sources": []
+        },
+        "urdu": {
+          "name": "گانچھے",
+          "blocks": [
+            {
+              "h": "سرکاری اعداد و شمار",
+              "p": [
+                "گلگت بلتستان کے محکمہ منصوبہ بندی و ترقیات کے مطابق 2023 کی مردم شماری میں ضلع گانچھے کی آبادی 157,822 تھی (2017 میں 156,697)۔ ضلع کا رقبہ 8,531 مربع کلومیٹر اور شرح خواندگی 69.57 فیصد ہے (<a href=\"https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf\" rel=\"noopener\">گلگت بلتستان ایک نظر میں 2025</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+              "publisher": "pnd.gog.pk",
+              "title": ""
+            }
+          ]
+        },
+        "profile_checked": "2026-09-30",
+        "sources": [],
+        "faq_extra": [
+          {
+            "q": "What is the population of Ghanche District?",
+            "a": "The 2023 census counted 157,822 people, up from 156,697 in 2017.",
+            "source": {
+              "url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+              "publisher": "P&DD Gilgit-Baltistan"
+            }
+          },
+          {
+            "q": "What is the literacy rate of Ghanche District?",
+            "a": "69.57% in the 2023 census.",
+            "source": {
+              "url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+              "publisher": "P&DD Gilgit-Baltistan"
+            }
+          },
+          {
+            "q": "What is the area of Ghanche District?",
+            "a": "8,531 km².",
+            "source": {
+              "url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+              "publisher": "P&DD Gilgit-Baltistan"
+            }
+          }
+        ]
       },
       {
         "slug": "ghizer",
         "name": "Ghizer",
-        "hq": "Gahkuch",
-        "pop": "Census 2023 GB tables",
-        "about": "Western district toward Shandur and Yasin (Yasin / Gupis later split in some notifications).",
-        "education": "Colleges in Gahkuch.",
-        "health": "DHQ Ghizer.",
-        "culture": "Shina and Burushaski / Wakhi edges.",
-        "issues": "River floods.",
-        "villages": "Punial, Phander"
+        "about": "Gilgit-Baltistan district; the 2023 census counted 200,069 people on 12,381 km², with literacy of 70.28%.",
+        "official_stats": {
+          "lead": "Ghizer District is one of the 10 districts for which Gilgit-Baltistan's Planning & Development Department publishes statistics. The 2023 census counted 200,069 people on 12,381 km², and 70.28% of residents were literate.",
+          "rows": [
+            [
+              "Population (2023 census)",
+              "200,069"
+            ],
+            [
+              "Population in 2017",
+              "172,696"
+            ],
+            [
+              "Annual growth 2017–2023",
+              "2.48%"
+            ],
+            [
+              "Area",
+              "12,381 km²"
+            ],
+            [
+              "Literacy rate (2023)",
+              "70.28%"
+            ],
+            [
+              "Sex ratio (2023)",
+              "101 males per 100 females"
+            ],
+            [
+              "Households (2023)",
+              "27,862 · average size 7"
+            ]
+          ],
+          "source_url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+          "source_label": "P&DD Gilgit-Baltistan, GB at a Glance 2025 (Census 2017 and 2023, PBS)",
+          "sources": [
+            {
+              "url": "https://www.dawn.com/news/1488851",
+              "publisher": "Dawn",
+              "title": "Four new districts set up in GB",
+              "date": "June 2019"
+            }
+          ]
+        },
+        "urdu": {
+          "name": "غذر",
+          "blocks": [
+            {
+              "h": "سرکاری اعداد و شمار",
+              "p": [
+                "گلگت بلتستان کے محکمہ منصوبہ بندی و ترقیات کے مطابق 2023 کی مردم شماری میں ضلع غذر کی آبادی 200,069 تھی (2017 میں 172,696)۔ ضلع کا رقبہ 12,381 مربع کلومیٹر اور شرح خواندگی 70.28 فیصد ہے (<a href=\"https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf\" rel=\"noopener\">گلگت بلتستان ایک نظر میں 2025</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+              "publisher": "pnd.gog.pk",
+              "title": ""
+            }
+          ]
+        },
+        "profile_checked": "2026-09-30",
+        "sources": [],
+        "faq_extra": [
+          {
+            "q": "What is the population of Ghizer District?",
+            "a": "The 2023 census counted 200,069 people, up from 172,696 in 2017.",
+            "source": {
+              "url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+              "publisher": "P&DD Gilgit-Baltistan"
+            }
+          },
+          {
+            "q": "What is the literacy rate of Ghizer District?",
+            "a": "70.28% in the 2023 census.",
+            "source": {
+              "url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+              "publisher": "P&DD Gilgit-Baltistan"
+            }
+          },
+          {
+            "q": "What is the area of Ghizer District?",
+            "a": "12,381 km².",
+            "source": {
+              "url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+              "publisher": "P&DD Gilgit-Baltistan"
+            }
+          }
+        ]
       },
       {
         "slug": "gilgit",
         "name": "Gilgit",
-        "hq": "Gilgit",
-        "pop": "Census 2023 GB tables",
-        "about": "Capital district at the meeting of rivers.",
-        "education": "Karakoram International University.",
-        "health": "DHQ Gilgit.",
-        "culture": "A bazaar of many mountain languages.",
-        "issues": "City growth on a narrow valley floor.",
-        "villages": "Danyor, Jutial rural"
+        "about": "Gilgit-Baltistan district; the 2023 census counted 324,552 people on 4,208 km², with literacy of 73.13%.",
+        "official_stats": {
+          "lead": "Gilgit District is one of the 10 districts for which Gilgit-Baltistan's Planning & Development Department publishes statistics. The 2023 census counted 324,552 people on 4,208 km², and 73.13% of residents were literate.",
+          "rows": [
+            [
+              "Population (2023 census)",
+              "324,552"
+            ],
+            [
+              "Population in 2017",
+              "285,236"
+            ],
+            [
+              "Annual growth 2017–2023",
+              "2.18%"
+            ],
+            [
+              "Area",
+              "4,208 km²"
+            ],
+            [
+              "Literacy rate (2023)",
+              "73.13%"
+            ],
+            [
+              "Sex ratio (2023)",
+              "117 males per 100 females"
+            ],
+            [
+              "Households (2023)",
+              "47,496 · average size 7"
+            ]
+          ],
+          "source_url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+          "source_label": "P&DD Gilgit-Baltistan, GB at a Glance 2025 (Census 2017 and 2023, PBS)",
+          "sources": []
+        },
+        "urdu": {
+          "name": "گلگت",
+          "blocks": [
+            {
+              "h": "سرکاری اعداد و شمار",
+              "p": [
+                "گلگت بلتستان کے محکمہ منصوبہ بندی و ترقیات کے مطابق 2023 کی مردم شماری میں ضلع گلگت کی آبادی 324,552 تھی (2017 میں 285,236)۔ ضلع کا رقبہ 4,208 مربع کلومیٹر اور شرح خواندگی 73.13 فیصد ہے (<a href=\"https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf\" rel=\"noopener\">گلگت بلتستان ایک نظر میں 2025</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+              "publisher": "pnd.gog.pk",
+              "title": ""
+            }
+          ]
+        },
+        "profile_checked": "2026-09-30",
+        "sources": [],
+        "faq_extra": [
+          {
+            "q": "What is the population of Gilgit District?",
+            "a": "The 2023 census counted 324,552 people, up from 285,236 in 2017.",
+            "source": {
+              "url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+              "publisher": "P&DD Gilgit-Baltistan"
+            }
+          },
+          {
+            "q": "What is the literacy rate of Gilgit District?",
+            "a": "73.13% in the 2023 census.",
+            "source": {
+              "url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+              "publisher": "P&DD Gilgit-Baltistan"
+            }
+          },
+          {
+            "q": "What is the area of Gilgit District?",
+            "a": "4,208 km².",
+            "source": {
+              "url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+              "publisher": "P&DD Gilgit-Baltistan"
+            }
+          }
+        ]
       },
       {
         "slug": "hunza",
         "name": "Hunza",
-        "hq": "Aliabad / Karimabad",
-        "pop": "Census 2023 GB tables",
-        "about": "High literacy, terraces and tourism under Rakaposhi and Ladyfinger.",
-        "education": "Colleges in Aliabad and Karimabad.",
-        "health": "DHQ / civil hospital Hunza.",
-        "culture": "Burushaski and Wakhi, apricot and music.",
-        "issues": "Tourism load and Attabad-style lake risk.",
-        "villages": "Karimabad, Gulmit, Passu, Hussaini"
+        "about": "Gilgit-Baltistan district; the 2023 census counted 65,497 people on 10,109 km², with literacy of 86.62%.",
+        "official_stats": {
+          "lead": "Hunza District is one of the 10 districts for which Gilgit-Baltistan's Planning & Development Department publishes statistics. The 2023 census counted 65,497 people on 10,109 km², and 86.62% of residents were literate.",
+          "rows": [
+            [
+              "Population (2023 census)",
+              "65,497"
+            ],
+            [
+              "Population in 2017",
+              "51,372"
+            ],
+            [
+              "Annual growth 2017–2023",
+              "4.13%"
+            ],
+            [
+              "Area",
+              "10,109 km²"
+            ],
+            [
+              "Literacy rate (2023)",
+              "86.62%"
+            ],
+            [
+              "Sex ratio (2023)",
+              "106 males per 100 females"
+            ],
+            [
+              "Households (2023)",
+              "11,186 · average size 6"
+            ]
+          ],
+          "source_url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+          "source_label": "P&DD Gilgit-Baltistan, GB at a Glance 2025 (Census 2017 and 2023, PBS)",
+          "sources": []
+        },
+        "urdu": {
+          "name": "ہنزہ",
+          "blocks": [
+            {
+              "h": "سرکاری اعداد و شمار",
+              "p": [
+                "گلگت بلتستان کے محکمہ منصوبہ بندی و ترقیات کے مطابق 2023 کی مردم شماری میں ضلع ہنزہ کی آبادی 65,497 تھی (2017 میں 51,372)۔ ضلع کا رقبہ 10,109 مربع کلومیٹر اور شرح خواندگی 86.62 فیصد ہے (<a href=\"https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf\" rel=\"noopener\">گلگت بلتستان ایک نظر میں 2025</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+              "publisher": "pnd.gog.pk",
+              "title": ""
+            }
+          ]
+        },
+        "profile_checked": "2026-09-30",
+        "sources": [],
+        "faq_extra": [
+          {
+            "q": "What is the population of Hunza District?",
+            "a": "The 2023 census counted 65,497 people, up from 51,372 in 2017.",
+            "source": {
+              "url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+              "publisher": "P&DD Gilgit-Baltistan"
+            }
+          },
+          {
+            "q": "What is the literacy rate of Hunza District?",
+            "a": "86.62% in the 2023 census.",
+            "source": {
+              "url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+              "publisher": "P&DD Gilgit-Baltistan"
+            }
+          },
+          {
+            "q": "What is the area of Hunza District?",
+            "a": "10,109 km².",
+            "source": {
+              "url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+              "publisher": "P&DD Gilgit-Baltistan"
+            }
+          }
+        ]
       },
       {
         "slug": "kharmang",
         "name": "Kharmang",
-        "hq": "Tolti",
-        "pop": "Census 2023 GB tables",
-        "about": "Baltistan district on the Indus toward the Line of Control.",
-        "education": "Colleges in Tolti.",
-        "health": "DHQ Kharmang.",
-        "culture": "Balti river villages.",
-        "issues": "Narrow road.",
-        "villages": "Tolti, Mehdiabad"
+        "about": "Gilgit-Baltistan district; the 2023 census counted 61,304 people on 6,144 km², with literacy of 71.09%.",
+        "official_stats": {
+          "lead": "Kharmang District is one of the 10 districts for which Gilgit-Baltistan's Planning & Development Department publishes statistics. The 2023 census counted 61,304 people on 6,144 km², and 71.09% of residents were literate.",
+          "rows": [
+            [
+              "Population (2023 census)",
+              "61,304"
+            ],
+            [
+              "Population in 2017",
+              "54,613"
+            ],
+            [
+              "Annual growth 2017–2023",
+              "1.94%"
+            ],
+            [
+              "Area",
+              "6,144 km²"
+            ],
+            [
+              "Literacy rate (2023)",
+              "71.09%"
+            ],
+            [
+              "Sex ratio (2023)",
+              "115 males per 100 females"
+            ],
+            [
+              "Households (2023)",
+              "8,819 · average size 7"
+            ]
+          ],
+          "source_url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+          "source_label": "P&DD Gilgit-Baltistan, GB at a Glance 2025 (Census 2017 and 2023, PBS)",
+          "sources": []
+        },
+        "urdu": {
+          "name": "کھرمنگ",
+          "blocks": [
+            {
+              "h": "سرکاری اعداد و شمار",
+              "p": [
+                "گلگت بلتستان کے محکمہ منصوبہ بندی و ترقیات کے مطابق 2023 کی مردم شماری میں ضلع کھرمنگ کی آبادی 61,304 تھی (2017 میں 54,613)۔ ضلع کا رقبہ 6,144 مربع کلومیٹر اور شرح خواندگی 71.09 فیصد ہے (<a href=\"https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf\" rel=\"noopener\">گلگت بلتستان ایک نظر میں 2025</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+              "publisher": "pnd.gog.pk",
+              "title": ""
+            }
+          ]
+        },
+        "profile_checked": "2026-09-30",
+        "sources": [],
+        "faq_extra": [
+          {
+            "q": "What is the population of Kharmang District?",
+            "a": "The 2023 census counted 61,304 people, up from 54,613 in 2017.",
+            "source": {
+              "url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+              "publisher": "P&DD Gilgit-Baltistan"
+            }
+          },
+          {
+            "q": "What is the literacy rate of Kharmang District?",
+            "a": "71.09% in the 2023 census.",
+            "source": {
+              "url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+              "publisher": "P&DD Gilgit-Baltistan"
+            }
+          },
+          {
+            "q": "What is the area of Kharmang District?",
+            "a": "6,144 km².",
+            "source": {
+              "url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+              "publisher": "P&DD Gilgit-Baltistan"
+            }
+          }
+        ]
       },
       {
         "slug": "nagar",
         "name": "Nagar",
-        "hq": "Nagar",
-        "pop": "Census 2023 GB tables",
-        "about": "Across the river from Hunza, under Hopper and Hispar glaciers.",
-        "education": "Colleges in Nagar.",
-        "health": "DHQ Nagar.",
-        "culture": "Burushaski Nagar villages.",
-        "issues": "Glacier roads.",
-        "villages": "Hopper, Hispar"
+        "about": "Gilgit-Baltistan district; the 2023 census counted 87,410 people on 4,137 km², with literacy of 77.62%.",
+        "official_stats": {
+          "lead": "Nagar District is one of the 10 districts for which Gilgit-Baltistan's Planning & Development Department publishes statistics. The 2023 census counted 87,410 people on 4,137 km², and 77.62% of residents were literate.",
+          "rows": [
+            [
+              "Population (2023 census)",
+              "87,410"
+            ],
+            [
+              "Population in 2017",
+              "71,746"
+            ],
+            [
+              "Annual growth 2017–2023",
+              "3.35%"
+            ],
+            [
+              "Area",
+              "4,137 km²"
+            ],
+            [
+              "Literacy rate (2023)",
+              "77.62%"
+            ],
+            [
+              "Sex ratio (2023)",
+              "105 males per 100 females"
+            ],
+            [
+              "Households (2023)",
+              "13,162 · average size 7"
+            ]
+          ],
+          "source_url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+          "source_label": "P&DD Gilgit-Baltistan, GB at a Glance 2025 (Census 2017 and 2023, PBS)",
+          "sources": []
+        },
+        "urdu": {
+          "name": "نگر",
+          "blocks": [
+            {
+              "h": "سرکاری اعداد و شمار",
+              "p": [
+                "گلگت بلتستان کے محکمہ منصوبہ بندی و ترقیات کے مطابق 2023 کی مردم شماری میں ضلع نگر کی آبادی 87,410 تھی (2017 میں 71,746)۔ ضلع کا رقبہ 4,137 مربع کلومیٹر اور شرح خواندگی 77.62 فیصد ہے (<a href=\"https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf\" rel=\"noopener\">گلگت بلتستان ایک نظر میں 2025</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+              "publisher": "pnd.gog.pk",
+              "title": ""
+            }
+          ]
+        },
+        "profile_checked": "2026-09-30",
+        "sources": [],
+        "faq_extra": [
+          {
+            "q": "What is the population of Nagar District?",
+            "a": "The 2023 census counted 87,410 people, up from 71,746 in 2017.",
+            "source": {
+              "url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+              "publisher": "P&DD Gilgit-Baltistan"
+            }
+          },
+          {
+            "q": "What is the literacy rate of Nagar District?",
+            "a": "77.62% in the 2023 census.",
+            "source": {
+              "url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+              "publisher": "P&DD Gilgit-Baltistan"
+            }
+          },
+          {
+            "q": "What is the area of Nagar District?",
+            "a": "4,137 km².",
+            "source": {
+              "url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+              "publisher": "P&DD Gilgit-Baltistan"
+            }
+          }
+        ]
       },
       {
         "slug": "shigar",
         "name": "Shigar",
-        "hq": "Shigar",
-        "pop": "Census 2023 GB tables",
-        "about": "Valley of the Shigar River and the road toward Concordia / Baltoro.",
-        "education": "Colleges in Shigar.",
-        "health": "DHQ Shigar.",
-        "culture": "Balti wooden mosques and polo.",
-        "issues": "Expedition traffic versus village needs.",
-        "villages": "Shigar, Askole approach"
+        "about": "Gilgit-Baltistan district; the 2023 census counted 84,608 people on 4,173 km², with literacy of 62.14%.",
+        "official_stats": {
+          "lead": "Shigar District is one of the 10 districts for which Gilgit-Baltistan's Planning & Development Department publishes statistics. The 2023 census counted 84,608 people on 4,173 km², and 62.14% of residents were literate.",
+          "rows": [
+            [
+              "Population (2023 census)",
+              "84,608"
+            ],
+            [
+              "Population in 2017",
+              "74,540"
+            ],
+            [
+              "Annual growth 2017–2023",
+              "2.13%"
+            ],
+            [
+              "Area",
+              "4,173 km²"
+            ],
+            [
+              "Literacy rate (2023)",
+              "62.14%"
+            ],
+            [
+              "Sex ratio (2023)",
+              "107 males per 100 females"
+            ],
+            [
+              "Households (2023)",
+              "10,368 · average size 8"
+            ]
+          ],
+          "source_url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+          "source_label": "P&DD Gilgit-Baltistan, GB at a Glance 2025 (Census 2017 and 2023, PBS)",
+          "sources": []
+        },
+        "urdu": {
+          "name": "شگر",
+          "blocks": [
+            {
+              "h": "سرکاری اعداد و شمار",
+              "p": [
+                "گلگت بلتستان کے محکمہ منصوبہ بندی و ترقیات کے مطابق 2023 کی مردم شماری میں ضلع شگر کی آبادی 84,608 تھی (2017 میں 74,540)۔ ضلع کا رقبہ 4,173 مربع کلومیٹر اور شرح خواندگی 62.14 فیصد ہے (<a href=\"https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf\" rel=\"noopener\">گلگت بلتستان ایک نظر میں 2025</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+              "publisher": "pnd.gog.pk",
+              "title": ""
+            }
+          ]
+        },
+        "profile_checked": "2026-09-30",
+        "sources": [],
+        "faq_extra": [
+          {
+            "q": "What is the population of Shigar District?",
+            "a": "The 2023 census counted 84,608 people, up from 74,540 in 2017.",
+            "source": {
+              "url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+              "publisher": "P&DD Gilgit-Baltistan"
+            }
+          },
+          {
+            "q": "What is the literacy rate of Shigar District?",
+            "a": "62.14% in the 2023 census.",
+            "source": {
+              "url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+              "publisher": "P&DD Gilgit-Baltistan"
+            }
+          },
+          {
+            "q": "What is the area of Shigar District?",
+            "a": "4,173 km².",
+            "source": {
+              "url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+              "publisher": "P&DD Gilgit-Baltistan"
+            }
+          }
+        ]
       },
       {
         "slug": "skardu",
         "name": "Skardu",
-        "hq": "Skardu",
-        "pop": "Census 2023 GB tables",
-        "about": "Main town of Baltistan on the Indus, gateway to Deosai and the high peaks.",
-        "education": "University of Baltistan and colleges.",
-        "health": "DHQ Skardu.",
-        "culture": "Balti city culture.",
-        "issues": "Airport weather and specialist care.",
-        "villages": "Satpara, Gamba"
+        "about": "Gilgit-Baltistan district; the 2023 census counted 278,885 people on 10,168 km², with literacy of 70.62%.",
+        "official_stats": {
+          "lead": "Skardu District is one of the 10 districts for which Gilgit-Baltistan's Planning & Development Department publishes statistics. The 2023 census counted 278,885 people on 10,168 km², and 70.62% of residents were literate.",
+          "rows": [
+            [
+              "Population (2023 census)",
+              "278,885"
+            ],
+            [
+              "Population in 2017",
+              "260,836"
+            ],
+            [
+              "Annual growth 2017–2023",
+              "1.12%"
+            ],
+            [
+              "Area",
+              "10,168 km²"
+            ],
+            [
+              "Literacy rate (2023)",
+              "70.62%"
+            ],
+            [
+              "Sex ratio (2023)",
+              "107 males per 100 females"
+            ],
+            [
+              "Households (2023)",
+              "37,699 · average size 7"
+            ]
+          ],
+          "source_url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+          "source_label": "P&DD Gilgit-Baltistan, GB at a Glance 2025 (Census 2017 and 2023, PBS)",
+          "sources": [
+            {
+              "url": "https://www.dawn.com/news/1488851",
+              "publisher": "Dawn",
+              "title": "Four new districts set up in GB",
+              "date": "June 2019"
+            }
+          ]
+        },
+        "urdu": {
+          "name": "سکردو",
+          "blocks": [
+            {
+              "h": "سرکاری اعداد و شمار",
+              "p": [
+                "گلگت بلتستان کے محکمہ منصوبہ بندی و ترقیات کے مطابق 2023 کی مردم شماری میں ضلع سکردو کی آبادی 278,885 تھی (2017 میں 260,836)۔ ضلع کا رقبہ 10,168 مربع کلومیٹر اور شرح خواندگی 70.62 فیصد ہے (<a href=\"https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf\" rel=\"noopener\">گلگت بلتستان ایک نظر میں 2025</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+              "publisher": "pnd.gog.pk",
+              "title": ""
+            }
+          ]
+        },
+        "profile_checked": "2026-09-30",
+        "sources": [],
+        "faq_extra": [
+          {
+            "q": "What is the population of Skardu District?",
+            "a": "The 2023 census counted 278,885 people, up from 260,836 in 2017.",
+            "source": {
+              "url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+              "publisher": "P&DD Gilgit-Baltistan"
+            }
+          },
+          {
+            "q": "What is the literacy rate of Skardu District?",
+            "a": "70.62% in the 2023 census.",
+            "source": {
+              "url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+              "publisher": "P&DD Gilgit-Baltistan"
+            }
+          },
+          {
+            "q": "What is the area of Skardu District?",
+            "a": "10,168 km².",
+            "source": {
+              "url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+              "publisher": "P&DD Gilgit-Baltistan"
+            }
+          }
+        ]
       },
       {
         "slug": "roundu",
         "name": "Roundu",
-        "hq": "Dambudas / notified HQ",
-        "pop": "Newer GB district",
-        "about": "Created from Skardu belt on the Indus.",
-        "education": "Colleges being listed in local notices.",
-        "health": "DHQ Roundu.",
-        "culture": "Balti Indus villages.",
-        "issues": "New offices.",
-        "villages": "Roundu valley"
+        "about": "Baltistan division district notified in June 2019 from the Rondu sub-division, with unchanged boundaries.",
+        "created": "Notified June 2019",
+        "division": "Baltistan division",
+        "official_stats": {
+          "lead": "Roundu District is one of four sub-divisions that the Gilgit-Baltistan government notified as separate districts in June 2019. The official 2023 statistics still report 10 districts, with no separate figures for Roundu.",
+          "rows": [
+            [
+              "Official statistics",
+              "Not published separately; the GB statistics for 2023 report 10 districts"
+            ]
+          ],
+          "source_url": "https://www.dawn.com/news/1488851",
+          "source_label": "Dawn: Four new districts set up in GB (June 2019)",
+          "sources": [
+            {
+              "url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+              "publisher": "Planning & Development Department, Government of Gilgit-Baltistan",
+              "title": "Gilgit-Baltistan at a Glance 2025 (district population and area, Census 2017 and 2023)",
+              "date": "2025"
+            }
+          ]
+        },
+        "urdu": {
+          "name": "روندو",
+          "division": "بلتستان ڈویژن",
+          "blocks": [
+            {
+              "h": "ضلع کا درجہ",
+              "p": [
+                "جون 2019 میں حکومت گلگت بلتستان نے روندو سب ڈویژن کو انہی حدود کے ساتھ الگ ضلع کا درجہ دیا (<a href=\"https://www.dawn.com/news/1488851\" rel=\"noopener\">ڈان</a>)۔ 2023 کی مردم شماری کے سرکاری اعداد و شمار میں ابھی 10 اضلاع درج ہیں، اس لیے اس ضلع کے الگ اعداد و شمار دستیاب نہیں (<a href=\"https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf\" rel=\"noopener\">گلگت بلتستان ایک نظر میں 2025</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://www.dawn.com/news/1488851",
+              "publisher": "Dawn",
+              "title": ""
+            },
+            {
+              "url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+              "publisher": "pnd.gog.pk",
+              "title": ""
+            }
+          ]
+        },
+        "profile_checked": "2026-09-30",
+        "sources": [],
+        "faq_extra": [
+          {
+            "q": "When did Roundu become a district?",
+            "a": "The Gilgit-Baltistan government notified Rondu sub-division as a separate district in June 2019, with unchanged boundaries.",
+            "source": {
+              "url": "https://www.dawn.com/news/1488851",
+              "publisher": "Dawn"
+            }
+          },
+          {
+            "q": "What is the population of Roundu District?",
+            "a": "No official figure has been published: the GB statistics for the 2023 census still report 10 districts, without Roundu.",
+            "source": {
+              "url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+              "publisher": "P&DD Gilgit-Baltistan"
+            }
+          }
+        ]
       },
       {
         "slug": "gupis-yasin",
         "name": "Gupis-Yasin",
-        "hq": "Gupis / Yasin",
-        "pop": "Newer GB district",
-        "about": "Split from Ghizer toward Shandur.",
-        "education": "Colleges in Yasin and Gupis.",
-        "health": "DHQ Gupis-Yasin.",
-        "culture": "Yasin valley languages.",
-        "issues": "Snow on Shandur side.",
-        "villages": "Yasin, Gupis, Phander edge"
+        "about": "Gilgit division district notified in June 2019 from the Gupis-Yasin sub-division, with unchanged boundaries.",
+        "created": "Notified June 2019",
+        "division": "Gilgit division",
+        "official_stats": {
+          "lead": "Gupis-Yasin District is one of four sub-divisions that the Gilgit-Baltistan government notified as separate districts in June 2019. The official 2023 statistics still report 10 districts, with no separate figures for Gupis-Yasin.",
+          "rows": [
+            [
+              "Official statistics",
+              "Not published separately; the GB statistics for 2023 report 10 districts"
+            ]
+          ],
+          "source_url": "https://www.dawn.com/news/1488851",
+          "source_label": "Dawn: Four new districts set up in GB (June 2019)",
+          "sources": [
+            {
+              "url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+              "publisher": "Planning & Development Department, Government of Gilgit-Baltistan",
+              "title": "Gilgit-Baltistan at a Glance 2025 (district population and area, Census 2017 and 2023)",
+              "date": "2025"
+            }
+          ]
+        },
+        "urdu": {
+          "name": "گوپس یاسین",
+          "division": "گلگت ڈویژن",
+          "blocks": [
+            {
+              "h": "ضلع کا درجہ",
+              "p": [
+                "جون 2019 میں حکومت گلگت بلتستان نے گوپس یاسین سب ڈویژن کو انہی حدود کے ساتھ الگ ضلع کا درجہ دیا (<a href=\"https://www.dawn.com/news/1488851\" rel=\"noopener\">ڈان</a>)۔ 2023 کی مردم شماری کے سرکاری اعداد و شمار میں ابھی 10 اضلاع درج ہیں، اس لیے اس ضلع کے الگ اعداد و شمار دستیاب نہیں (<a href=\"https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf\" rel=\"noopener\">گلگت بلتستان ایک نظر میں 2025</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://www.dawn.com/news/1488851",
+              "publisher": "Dawn",
+              "title": ""
+            },
+            {
+              "url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+              "publisher": "pnd.gog.pk",
+              "title": ""
+            }
+          ]
+        },
+        "profile_checked": "2026-09-30",
+        "sources": [],
+        "faq_extra": [
+          {
+            "q": "When did Gupis-Yasin become a district?",
+            "a": "The Gilgit-Baltistan government notified Gupis-Yasin sub-division as a separate district in June 2019, with unchanged boundaries.",
+            "source": {
+              "url": "https://www.dawn.com/news/1488851",
+              "publisher": "Dawn"
+            }
+          },
+          {
+            "q": "What is the population of Gupis-Yasin District?",
+            "a": "No official figure has been published: the GB statistics for the 2023 census still report 10 districts, without Gupis-Yasin.",
+            "source": {
+              "url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+              "publisher": "P&DD Gilgit-Baltistan"
+            }
+          }
+        ]
       },
       {
         "slug": "darel",
         "name": "Darel",
-        "hq": "Darel",
-        "pop": "Newer GB district",
-        "about": "Indus-right valley district created in the Diamer belt.",
-        "education": "Local colleges.",
-        "health": "DHQ Darel.",
-        "culture": "Darel valley.",
-        "issues": "Road access.",
-        "villages": "Darel villages"
+        "about": "Diamer division district notified in June 2019 from the Darel sub-division, with unchanged boundaries.",
+        "created": "Notified June 2019",
+        "division": "Diamer division",
+        "official_stats": {
+          "lead": "Darel District is one of four sub-divisions that the Gilgit-Baltistan government notified as separate districts in June 2019. The official 2023 statistics still report 10 districts, with no separate figures for Darel.",
+          "rows": [
+            [
+              "Official statistics",
+              "Not published separately; the GB statistics for 2023 report 10 districts"
+            ]
+          ],
+          "source_url": "https://www.dawn.com/news/1488851",
+          "source_label": "Dawn: Four new districts set up in GB (June 2019)",
+          "sources": [
+            {
+              "url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+              "publisher": "Planning & Development Department, Government of Gilgit-Baltistan",
+              "title": "Gilgit-Baltistan at a Glance 2025 (district population and area, Census 2017 and 2023)",
+              "date": "2025"
+            }
+          ]
+        },
+        "urdu": {
+          "name": "داریل",
+          "division": "دیامر ڈویژن",
+          "blocks": [
+            {
+              "h": "ضلع کا درجہ",
+              "p": [
+                "جون 2019 میں حکومت گلگت بلتستان نے داریل سب ڈویژن کو انہی حدود کے ساتھ الگ ضلع کا درجہ دیا (<a href=\"https://www.dawn.com/news/1488851\" rel=\"noopener\">ڈان</a>)۔ 2023 کی مردم شماری کے سرکاری اعداد و شمار میں ابھی 10 اضلاع درج ہیں، اس لیے اس ضلع کے الگ اعداد و شمار دستیاب نہیں (<a href=\"https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf\" rel=\"noopener\">گلگت بلتستان ایک نظر میں 2025</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://www.dawn.com/news/1488851",
+              "publisher": "Dawn",
+              "title": ""
+            },
+            {
+              "url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+              "publisher": "pnd.gog.pk",
+              "title": ""
+            }
+          ]
+        },
+        "profile_checked": "2026-09-30",
+        "sources": [],
+        "faq_extra": [
+          {
+            "q": "When did Darel become a district?",
+            "a": "The Gilgit-Baltistan government notified Darel sub-division as a separate district in June 2019, with unchanged boundaries.",
+            "source": {
+              "url": "https://www.dawn.com/news/1488851",
+              "publisher": "Dawn"
+            }
+          },
+          {
+            "q": "What is the population of Darel District?",
+            "a": "No official figure has been published: the GB statistics for the 2023 census still report 10 districts, without Darel.",
+            "source": {
+              "url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+              "publisher": "P&DD Gilgit-Baltistan"
+            }
+          }
+        ]
       },
       {
         "slug": "tangir",
         "name": "Tangir",
-        "hq": "Tangir",
-        "pop": "Newer GB district",
-        "about": "Sister valley of Darel in the Diamer highlands.",
-        "education": "Local colleges.",
-        "health": "DHQ Tangir.",
-        "culture": "Tangir valley.",
-        "issues": "Road access.",
-        "villages": "Tangir villages"
+        "about": "Diamer division district notified in June 2019 from the Tangir sub-division, with unchanged boundaries.",
+        "created": "Notified June 2019",
+        "division": "Diamer division",
+        "official_stats": {
+          "lead": "Tangir District is one of four sub-divisions that the Gilgit-Baltistan government notified as separate districts in June 2019. The official 2023 statistics still report 10 districts, with no separate figures for Tangir.",
+          "rows": [
+            [
+              "Official statistics",
+              "Not published separately; the GB statistics for 2023 report 10 districts"
+            ]
+          ],
+          "source_url": "https://www.dawn.com/news/1488851",
+          "source_label": "Dawn: Four new districts set up in GB (June 2019)",
+          "sources": [
+            {
+              "url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+              "publisher": "Planning & Development Department, Government of Gilgit-Baltistan",
+              "title": "Gilgit-Baltistan at a Glance 2025 (district population and area, Census 2017 and 2023)",
+              "date": "2025"
+            }
+          ]
+        },
+        "urdu": {
+          "name": "تانگیر",
+          "division": "دیامر ڈویژن",
+          "blocks": [
+            {
+              "h": "ضلع کا درجہ",
+              "p": [
+                "جون 2019 میں حکومت گلگت بلتستان نے تانگیر سب ڈویژن کو انہی حدود کے ساتھ الگ ضلع کا درجہ دیا (<a href=\"https://www.dawn.com/news/1488851\" rel=\"noopener\">ڈان</a>)۔ 2023 کی مردم شماری کے سرکاری اعداد و شمار میں ابھی 10 اضلاع درج ہیں، اس لیے اس ضلع کے الگ اعداد و شمار دستیاب نہیں (<a href=\"https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf\" rel=\"noopener\">گلگت بلتستان ایک نظر میں 2025</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://www.dawn.com/news/1488851",
+              "publisher": "Dawn",
+              "title": ""
+            },
+            {
+              "url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+              "publisher": "pnd.gog.pk",
+              "title": ""
+            }
+          ]
+        },
+        "profile_checked": "2026-09-30",
+        "sources": [],
+        "faq_extra": [
+          {
+            "q": "When did Tangir become a district?",
+            "a": "The Gilgit-Baltistan government notified Tangir sub-division as a separate district in June 2019, with unchanged boundaries.",
+            "source": {
+              "url": "https://www.dawn.com/news/1488851",
+              "publisher": "Dawn"
+            }
+          },
+          {
+            "q": "What is the population of Tangir District?",
+            "a": "No official figure has been published: the GB statistics for the 2023 census still report 10 districts, without Tangir.",
+            "source": {
+              "url": "https://pnd.gog.pk/storage/downloads/AiRIlDEcscWPC1s58oXIgpjlVAS7jd-metaR0IgQVQgR2xhbmNlIDIwMjUuMS5wZGY=-.pdf",
+              "publisher": "P&DD Gilgit-Baltistan"
+            }
+          }
+        ]
       }
     ],
     "district_count": {
@@ -22485,122 +23619,1072 @@
       {
         "slug": "muzaffarabad",
         "name": "Muzaffarabad",
-        "hq": "Muzaffarabad",
-        "pop": "AJK 2017/2023 local tables",
-        "about": "Capital at the meeting of Neelum and Jhelum. Rebuilt after the 2005 earthquake.",
-        "education": "University of AJK and colleges.",
-        "health": "Combined Military / DHQ hospitals.",
-        "culture": "Pahari and Kashmiri city culture.",
-        "issues": "Hill-city traffic and quake-safe building.",
-        "villages": "Garhi Dupatta, Rahim Kot"
+        "about": "Muzaffarabad Division district of Azad Kashmir with 2 tehsils (Muzaffarabad and Naseerabad); the 2017 census counted 651,154 people on 1,642 km².",
+        "division": "Muzaffarabad Division",
+        "official_stats": {
+          "desc": [
+            "Muzaffarabad District, Azad Kashmir (Muzaffarabad Division): 2 tehsils – Muzaffarabad and Naseerabad. 2017 census population 651,154, area 1,642 km².",
+            "Muzaffarabad District, Azad Kashmir: 2 tehsils – Muzaffarabad and Naseerabad. 2017 census population 651,154, area 1,642 km².",
+            "Muzaffarabad District, Azad Kashmir (Muzaffarabad Division): 2 tehsils. 2017 census population 651,154 on 1,642 km²; projected 0.733 million in 2023."
+          ],
+          "lead": "Muzaffarabad District is one of the 10 districts of Azad Jammu and Kashmir, in Muzaffarabad Division. The 2017 census counted 651,154 people on 1,642 km², in 2 tehsils: Muzaffarabad and Naseerabad.",
+          "rows": [
+            [
+              "Area",
+              "1,642 km²"
+            ],
+            [
+              "Population (2017 census)",
+              "651,154"
+            ],
+            [
+              "Projected population 2023",
+              "0.733 million (AJ&K Bureau of Statistics projection)"
+            ],
+            [
+              "Urban population (2017)",
+              "26.49%"
+            ],
+            [
+              "Average household size (2017)",
+              "6.01"
+            ],
+            [
+              "Annual growth 1998–2017",
+              "1.91%"
+            ],
+            [
+              "Tehsils (2017 census tables)",
+              "2 – Muzaffarabad and Naseerabad"
+            ]
+          ],
+          "source_url": "https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf",
+          "source_label": "AJ&K Bureau of Statistics, Statistical Year Book 2023 (Census 2017 tables)",
+          "sources": [
+            {
+              "url": "https://pndajk.gov.pk/uploadfiles/downloads/AJK%20At%20A%20Glance-2024.pdf",
+              "publisher": "AJ&K Bureau of Statistics, P&DD",
+              "title": "AJK at a Glance 2024 (projected population 2023; administrative set-up)",
+              "date": "2024"
+            }
+          ]
+        },
+        "urdu": {
+          "name": "مظفرآباد",
+          "division": "مظفرآباد ڈویژن",
+          "blocks": [
+            {
+              "h": "سرکاری اعداد و شمار",
+              "p": [
+                "آزاد جموں و کشمیر کے ادارۂ شماریات کے مطابق 2017 کی مردم شماری میں ضلع مظفرآباد کی آبادی 651,154 اور رقبہ 1,642 مربع کلومیٹر تھا؛ ضلع میں 2 تحصیلیں شامل تھیں۔ 2023 کے لیے تخمینہ شدہ آبادی تقریباً 0.733 ملین ہے (<a href=\"https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf\" rel=\"noopener\">شماریاتی سالنامہ 2023</a>، <a href=\"https://pndajk.gov.pk/uploadfiles/downloads/AJK%20At%20A%20Glance-2024.pdf\" rel=\"noopener\">آزاد کشمیر ایک نظر میں 2024</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf",
+              "publisher": "www.pndajk.gov.pk",
+              "title": ""
+            },
+            {
+              "url": "https://pndajk.gov.pk/uploadfiles/downloads/AJK%20At%20A%20Glance-2024.pdf",
+              "publisher": "pndajk.gov.pk",
+              "title": ""
+            }
+          ]
+        },
+        "profile_checked": "2026-09-30",
+        "sources": [],
+        "faq_extra": [
+          {
+            "q": "What is the population of Muzaffarabad District?",
+            "a": "The 2017 census counted 651,154 people. The AJ&K Bureau of Statistics projects about 0.733 million for 2023.",
+            "source": {
+              "url": "https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf",
+              "publisher": "AJ&K Bureau of Statistics"
+            }
+          },
+          {
+            "q": "How many tehsils are in Muzaffarabad District?",
+            "a": "The 2017 census tables list 2: Muzaffarabad and Naseerabad.",
+            "source": {
+              "url": "https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf",
+              "publisher": "AJ&K Bureau of Statistics"
+            }
+          },
+          {
+            "q": "Which division is Muzaffarabad District in?",
+            "a": "Muzaffarabad Division. AJK has three divisions (Muzaffarabad, Poonch and Mirpur) and 10 districts.",
+            "source": {
+              "url": "https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf",
+              "publisher": "AJ&K Bureau of Statistics"
+            }
+          }
+        ]
       },
       {
         "slug": "hattian",
-        "name": "Hattian Bala",
-        "hq": "Hattian Bala",
-        "pop": "AJK tables",
-        "about": "Jhelum valley district created after 2005.",
-        "education": "Colleges in Hattian.",
-        "health": "DHQ Hattian Bala.",
-        "culture": "Jhelum valley villages.",
-        "issues": "Slide-prone roads.",
-        "villages": "Leepa approach from this belt"
+        "name": "Jhelum Valley",
+        "about": "Muzaffarabad Division district of Azad Kashmir with 3 tehsils (Hattian, Chikar and Leepa); the 2017 census counted 226,496 people on 854 km².",
+        "division": "Muzaffarabad Division",
+        "official_stats": {
+          "desc": [
+            "Jhelum Valley District, Azad Kashmir (Muzaffarabad Division): 3 tehsils – Hattian, Chikar and Leepa. 2017 census population 226,496, area 854 km².",
+            "Jhelum Valley District, Azad Kashmir: 3 tehsils – Hattian, Chikar and Leepa. 2017 census population 226,496, area 854 km².",
+            "Jhelum Valley District, Azad Kashmir (Muzaffarabad Division): 3 tehsils. 2017 census population 226,496 on 854 km²; projected 0.250 million in 2023."
+          ],
+          "lead": "Jhelum Valley District is one of the 10 districts of Azad Jammu and Kashmir, in Muzaffarabad Division. The 2017 census counted 226,496 people on 854 km², in 3 tehsils: Hattian, Chikar and Leepa.",
+          "rows": [
+            [
+              "Area",
+              "854 km²"
+            ],
+            [
+              "Population (2017 census)",
+              "226,496"
+            ],
+            [
+              "Projected population 2023",
+              "0.250 million (AJ&K Bureau of Statistics projection)"
+            ],
+            [
+              "Urban population (2017)",
+              "7.53%"
+            ],
+            [
+              "Average household size (2017)",
+              "6.08"
+            ],
+            [
+              "Annual growth 1998–2017",
+              "1.64%"
+            ],
+            [
+              "Tehsils (2017 census tables)",
+              "3 – Hattian, Chikar and Leepa"
+            ]
+          ],
+          "source_url": "https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf",
+          "source_label": "AJ&K Bureau of Statistics, Statistical Year Book 2023 (Census 2017 tables)",
+          "sources": [
+            {
+              "url": "https://pndajk.gov.pk/uploadfiles/downloads/AJK%20At%20A%20Glance-2024.pdf",
+              "publisher": "AJ&K Bureau of Statistics, P&DD",
+              "title": "AJK at a Glance 2024 (projected population 2023; administrative set-up)",
+              "date": "2024"
+            }
+          ]
+        },
+        "urdu": {
+          "name": "جہلم ویلی",
+          "division": "مظفرآباد ڈویژن",
+          "blocks": [
+            {
+              "h": "سرکاری اعداد و شمار",
+              "p": [
+                "آزاد جموں و کشمیر کے ادارۂ شماریات کے مطابق 2017 کی مردم شماری میں ضلع جہلم ویلی کی آبادی 226,496 اور رقبہ 854 مربع کلومیٹر تھا؛ ضلع میں 3 تحصیلیں شامل تھیں۔ 2023 کے لیے تخمینہ شدہ آبادی تقریباً 0.250 ملین ہے (<a href=\"https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf\" rel=\"noopener\">شماریاتی سالنامہ 2023</a>، <a href=\"https://pndajk.gov.pk/uploadfiles/downloads/AJK%20At%20A%20Glance-2024.pdf\" rel=\"noopener\">آزاد کشمیر ایک نظر میں 2024</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf",
+              "publisher": "www.pndajk.gov.pk",
+              "title": ""
+            },
+            {
+              "url": "https://pndajk.gov.pk/uploadfiles/downloads/AJK%20At%20A%20Glance-2024.pdf",
+              "publisher": "pndajk.gov.pk",
+              "title": ""
+            }
+          ]
+        },
+        "profile_checked": "2026-09-30",
+        "sources": [],
+        "faq_extra": [
+          {
+            "q": "What is the population of Jhelum Valley District?",
+            "a": "The 2017 census counted 226,496 people. The AJ&K Bureau of Statistics projects about 0.250 million for 2023.",
+            "source": {
+              "url": "https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf",
+              "publisher": "AJ&K Bureau of Statistics"
+            }
+          },
+          {
+            "q": "How many tehsils are in Jhelum Valley District?",
+            "a": "The 2017 census tables list 3: Hattian, Chikar and Leepa.",
+            "source": {
+              "url": "https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf",
+              "publisher": "AJ&K Bureau of Statistics"
+            }
+          },
+          {
+            "q": "Which division is Jhelum Valley District in?",
+            "a": "Muzaffarabad Division. AJK has three divisions (Muzaffarabad, Poonch and Mirpur) and 10 districts.",
+            "source": {
+              "url": "https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf",
+              "publisher": "AJ&K Bureau of Statistics"
+            }
+          }
+        ]
       },
       {
         "slug": "neelum",
         "name": "Neelum",
-        "hq": "Athmuqam",
-        "pop": "AJK tables",
-        "about": "Long north-east valley along the Neelum River.",
-        "education": "Colleges in Athmuqam and Sharda.",
-        "health": "DHQ Neelum.",
-        "culture": "Kashmiri valley, Sharda heritage.",
-        "issues": "Single-road access in winter and monsoon.",
-        "villages": "Sharda, Kel, Dowarian"
+        "about": "Muzaffarabad Division district of Azad Kashmir with 2 tehsils (Athmuqam and Sharda); the 2017 census counted 189,785 people on 3,621 km².",
+        "division": "Muzaffarabad Division",
+        "official_stats": {
+          "desc": [
+            "Neelum District, Azad Kashmir (Muzaffarabad Division): 2 tehsils – Athmuqam and Sharda. 2017 census population 189,785, area 3,621 km².",
+            "Neelum District, Azad Kashmir: 2 tehsils – Athmuqam and Sharda. 2017 census population 189,785, area 3,621 km².",
+            "Neelum District, Azad Kashmir (Muzaffarabad Division): 2 tehsils. 2017 census population 189,785 on 3,621 km²; projected 0.216 million in 2023."
+          ],
+          "lead": "Neelum District is one of the 10 districts of Azad Jammu and Kashmir, in Muzaffarabad Division. The 2017 census counted 189,785 people on 3,621 km², in 2 tehsils: Athmuqam and Sharda.",
+          "rows": [
+            [
+              "Area",
+              "3,621 km²"
+            ],
+            [
+              "Population (2017 census)",
+              "189,785"
+            ],
+            [
+              "Projected population 2023",
+              "0.216 million (AJ&K Bureau of Statistics projection)"
+            ],
+            [
+              "Urban population (2017)",
+              "4.12%"
+            ],
+            [
+              "Average household size (2017)",
+              "7.01"
+            ],
+            [
+              "Annual growth 1998–2017",
+              "2.19%"
+            ],
+            [
+              "Tehsils (2017 census tables)",
+              "2 – Athmuqam and Sharda"
+            ]
+          ],
+          "source_url": "https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf",
+          "source_label": "AJ&K Bureau of Statistics, Statistical Year Book 2023 (Census 2017 tables)",
+          "sources": [
+            {
+              "url": "https://pndajk.gov.pk/uploadfiles/downloads/AJK%20At%20A%20Glance-2024.pdf",
+              "publisher": "AJ&K Bureau of Statistics, P&DD",
+              "title": "AJK at a Glance 2024 (projected population 2023; administrative set-up)",
+              "date": "2024"
+            }
+          ]
+        },
+        "urdu": {
+          "name": "نیلم",
+          "division": "مظفرآباد ڈویژن",
+          "blocks": [
+            {
+              "h": "سرکاری اعداد و شمار",
+              "p": [
+                "آزاد جموں و کشمیر کے ادارۂ شماریات کے مطابق 2017 کی مردم شماری میں ضلع نیلم کی آبادی 189,785 اور رقبہ 3,621 مربع کلومیٹر تھا؛ ضلع میں 2 تحصیلیں شامل تھیں۔ 2023 کے لیے تخمینہ شدہ آبادی تقریباً 0.216 ملین ہے (<a href=\"https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf\" rel=\"noopener\">شماریاتی سالنامہ 2023</a>، <a href=\"https://pndajk.gov.pk/uploadfiles/downloads/AJK%20At%20A%20Glance-2024.pdf\" rel=\"noopener\">آزاد کشمیر ایک نظر میں 2024</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf",
+              "publisher": "www.pndajk.gov.pk",
+              "title": ""
+            },
+            {
+              "url": "https://pndajk.gov.pk/uploadfiles/downloads/AJK%20At%20A%20Glance-2024.pdf",
+              "publisher": "pndajk.gov.pk",
+              "title": ""
+            }
+          ]
+        },
+        "profile_checked": "2026-09-30",
+        "sources": [],
+        "faq_extra": [
+          {
+            "q": "What is the population of Neelum District?",
+            "a": "The 2017 census counted 189,785 people. The AJ&K Bureau of Statistics projects about 0.216 million for 2023.",
+            "source": {
+              "url": "https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf",
+              "publisher": "AJ&K Bureau of Statistics"
+            }
+          },
+          {
+            "q": "How many tehsils are in Neelum District?",
+            "a": "The 2017 census tables list 2: Athmuqam and Sharda.",
+            "source": {
+              "url": "https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf",
+              "publisher": "AJ&K Bureau of Statistics"
+            }
+          },
+          {
+            "q": "Which division is Neelum District in?",
+            "a": "Muzaffarabad Division. AJK has three divisions (Muzaffarabad, Poonch and Mirpur) and 10 districts.",
+            "source": {
+              "url": "https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf",
+              "publisher": "AJ&K Bureau of Statistics"
+            }
+          }
+        ]
       },
       {
         "slug": "mirpur",
         "name": "Mirpur",
-        "hq": "Mirpur",
-        "pop": "AJK tables",
-        "about": "Mangla lake city with a large overseas Kashmiri link to Britain.",
-        "education": "MUST and colleges.",
-        "health": "DHQ / New City hospitals.",
-        "culture": "Pothwari-Pahari town culture.",
-        "issues": "Lake-shore planning.",
-        "villages": "Dadyal (now often its own discussion), Islamgarh"
+        "about": "Mirpur Division district of Azad Kashmir with 2 tehsils (Mirpur and Dudyal); the 2017 census counted 456,541 people on 1,010 km².",
+        "division": "Mirpur Division",
+        "official_stats": {
+          "desc": [
+            "Mirpur District, Azad Kashmir (Mirpur Division): 2 tehsils – Mirpur and Dudyal. 2017 census population 456,541, area 1,010 km².",
+            "Mirpur District, Azad Kashmir: 2 tehsils – Mirpur and Dudyal. 2017 census population 456,541, area 1,010 km².",
+            "Mirpur District, Azad Kashmir (Mirpur Division): 2 tehsils. 2017 census population 456,541 on 1,010 km²; projected 0.505 million in 2023."
+          ],
+          "lead": "Mirpur District is one of the 10 districts of Azad Jammu and Kashmir, in Mirpur Division. The 2017 census counted 456,541 people on 1,010 km², in 2 tehsils: Mirpur and Dudyal.",
+          "rows": [
+            [
+              "Area",
+              "1,010 km²"
+            ],
+            [
+              "Population (2017 census)",
+              "456,541"
+            ],
+            [
+              "Projected population 2023",
+              "0.505 million (AJ&K Bureau of Statistics projection)"
+            ],
+            [
+              "Urban population (2017)",
+              "39.78%"
+            ],
+            [
+              "Average household size (2017)",
+              "6.27"
+            ],
+            [
+              "Annual growth 1998–2017",
+              "1.66%"
+            ],
+            [
+              "Tehsils (2017 census tables)",
+              "2 – Mirpur and Dudyal"
+            ]
+          ],
+          "source_url": "https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf",
+          "source_label": "AJ&K Bureau of Statistics, Statistical Year Book 2023 (Census 2017 tables)",
+          "sources": [
+            {
+              "url": "https://pndajk.gov.pk/uploadfiles/downloads/AJK%20At%20A%20Glance-2024.pdf",
+              "publisher": "AJ&K Bureau of Statistics, P&DD",
+              "title": "AJK at a Glance 2024 (projected population 2023; administrative set-up)",
+              "date": "2024"
+            }
+          ]
+        },
+        "urdu": {
+          "name": "میرپور",
+          "division": "میرپور ڈویژن",
+          "blocks": [
+            {
+              "h": "سرکاری اعداد و شمار",
+              "p": [
+                "آزاد جموں و کشمیر کے ادارۂ شماریات کے مطابق 2017 کی مردم شماری میں ضلع میرپور کی آبادی 456,541 اور رقبہ 1,010 مربع کلومیٹر تھا؛ ضلع میں 2 تحصیلیں شامل تھیں۔ 2023 کے لیے تخمینہ شدہ آبادی تقریباً 0.505 ملین ہے (<a href=\"https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf\" rel=\"noopener\">شماریاتی سالنامہ 2023</a>، <a href=\"https://pndajk.gov.pk/uploadfiles/downloads/AJK%20At%20A%20Glance-2024.pdf\" rel=\"noopener\">آزاد کشمیر ایک نظر میں 2024</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf",
+              "publisher": "www.pndajk.gov.pk",
+              "title": ""
+            },
+            {
+              "url": "https://pndajk.gov.pk/uploadfiles/downloads/AJK%20At%20A%20Glance-2024.pdf",
+              "publisher": "pndajk.gov.pk",
+              "title": ""
+            }
+          ]
+        },
+        "profile_checked": "2026-09-30",
+        "sources": [],
+        "faq_extra": [
+          {
+            "q": "What is the population of Mirpur District?",
+            "a": "The 2017 census counted 456,541 people. The AJ&K Bureau of Statistics projects about 0.505 million for 2023.",
+            "source": {
+              "url": "https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf",
+              "publisher": "AJ&K Bureau of Statistics"
+            }
+          },
+          {
+            "q": "How many tehsils are in Mirpur District?",
+            "a": "The 2017 census tables list 2: Mirpur and Dudyal.",
+            "source": {
+              "url": "https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf",
+              "publisher": "AJ&K Bureau of Statistics"
+            }
+          },
+          {
+            "q": "Which division is Mirpur District in?",
+            "a": "Mirpur Division. AJK has three divisions (Muzaffarabad, Poonch and Mirpur) and 10 districts.",
+            "source": {
+              "url": "https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf",
+              "publisher": "AJ&K Bureau of Statistics"
+            }
+          }
+        ]
       },
       {
         "slug": "bhimber",
         "name": "Bhimber",
-        "hq": "Bhimber",
-        "pop": "AJK tables",
-        "about": "Southern-most AJK district toward the Punjab plain.",
-        "education": "Colleges in Bhimber and Samahni.",
-        "health": "DHQ Bhimber.",
-        "culture": "Chibhal towns.",
-        "issues": "Heat compared with the northern valleys.",
-        "villages": "Samahni, Barnala"
+        "about": "Mirpur Division district of Azad Kashmir with 3 tehsils (Bhimber, Barnala and Samahni); the 2017 census counted 418,543 people on 1,516 km².",
+        "division": "Mirpur Division",
+        "official_stats": {
+          "desc": [
+            "Bhimber District, Azad Kashmir (Mirpur Division): 3 tehsils – Bhimber, Barnala and Samahni. 2017 census population 418,543, area 1,516 km².",
+            "Bhimber District, Azad Kashmir: 3 tehsils – Bhimber, Barnala and Samahni. 2017 census population 418,543, area 1,516 km².",
+            "Bhimber District, Azad Kashmir (Mirpur Division): 3 tehsils. 2017 census population 418,543 on 1,516 km²; projected 0.465 million in 2023."
+          ],
+          "lead": "Bhimber District is one of the 10 districts of Azad Jammu and Kashmir, in Mirpur Division. The 2017 census counted 418,543 people on 1,516 km², in 3 tehsils: Bhimber, Barnala and Samahni.",
+          "rows": [
+            [
+              "Area",
+              "1,516 km²"
+            ],
+            [
+              "Population (2017 census)",
+              "418,543"
+            ],
+            [
+              "Projected population 2023",
+              "0.465 million (AJ&K Bureau of Statistics projection)"
+            ],
+            [
+              "Urban population (2017)",
+              "7.66%"
+            ],
+            [
+              "Average household size (2017)",
+              "6.49"
+            ],
+            [
+              "Annual growth 1998–2017",
+              "1.74%"
+            ],
+            [
+              "Tehsils (2017 census tables)",
+              "3 – Bhimber, Barnala and Samahni"
+            ]
+          ],
+          "source_url": "https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf",
+          "source_label": "AJ&K Bureau of Statistics, Statistical Year Book 2023 (Census 2017 tables)",
+          "sources": [
+            {
+              "url": "https://pndajk.gov.pk/uploadfiles/downloads/AJK%20At%20A%20Glance-2024.pdf",
+              "publisher": "AJ&K Bureau of Statistics, P&DD",
+              "title": "AJK at a Glance 2024 (projected population 2023; administrative set-up)",
+              "date": "2024"
+            }
+          ]
+        },
+        "urdu": {
+          "name": "بھمبر",
+          "division": "میرپور ڈویژن",
+          "blocks": [
+            {
+              "h": "سرکاری اعداد و شمار",
+              "p": [
+                "آزاد جموں و کشمیر کے ادارۂ شماریات کے مطابق 2017 کی مردم شماری میں ضلع بھمبر کی آبادی 418,543 اور رقبہ 1,516 مربع کلومیٹر تھا؛ ضلع میں 3 تحصیلیں شامل تھیں۔ 2023 کے لیے تخمینہ شدہ آبادی تقریباً 0.465 ملین ہے (<a href=\"https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf\" rel=\"noopener\">شماریاتی سالنامہ 2023</a>، <a href=\"https://pndajk.gov.pk/uploadfiles/downloads/AJK%20At%20A%20Glance-2024.pdf\" rel=\"noopener\">آزاد کشمیر ایک نظر میں 2024</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf",
+              "publisher": "www.pndajk.gov.pk",
+              "title": ""
+            },
+            {
+              "url": "https://pndajk.gov.pk/uploadfiles/downloads/AJK%20At%20A%20Glance-2024.pdf",
+              "publisher": "pndajk.gov.pk",
+              "title": ""
+            }
+          ]
+        },
+        "profile_checked": "2026-09-30",
+        "sources": [],
+        "faq_extra": [
+          {
+            "q": "What is the population of Bhimber District?",
+            "a": "The 2017 census counted 418,543 people. The AJ&K Bureau of Statistics projects about 0.465 million for 2023.",
+            "source": {
+              "url": "https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf",
+              "publisher": "AJ&K Bureau of Statistics"
+            }
+          },
+          {
+            "q": "How many tehsils are in Bhimber District?",
+            "a": "The 2017 census tables list 3: Bhimber, Barnala and Samahni.",
+            "source": {
+              "url": "https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf",
+              "publisher": "AJ&K Bureau of Statistics"
+            }
+          },
+          {
+            "q": "Which division is Bhimber District in?",
+            "a": "Mirpur Division. AJK has three divisions (Muzaffarabad, Poonch and Mirpur) and 10 districts.",
+            "source": {
+              "url": "https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf",
+              "publisher": "AJ&K Bureau of Statistics"
+            }
+          }
+        ]
       },
       {
         "slug": "kotli",
         "name": "Kotli",
-        "hq": "Kotli",
-        "pop": "AJK tables",
-        "about": "Central-south AJK on the Poonch river system.",
-        "education": "University of Kotli and colleges.",
-        "health": "DHQ Kotli.",
-        "culture": "Pahari towns.",
-        "issues": "Hill roads.",
-        "villages": "Sehnsa, Charhoi"
+        "about": "Mirpur Division district of Azad Kashmir with 5 tehsils (Kotli, Khuiratta, Charhoi/Darlia Jattan, Sehnsa and Fatehpur Thakyala); the 2017 census counted 774,017 people on 1,862 km².",
+        "division": "Mirpur Division",
+        "official_stats": {
+          "desc": [
+            "Kotli District, Azad Kashmir (Mirpur Division): 5 tehsils – Kotli, Khuiratta, Charhoi/Darlia Jattan, Sehnsa and Fatehpur Thakyala. 2017 census population 774,017, area 1,862 km².",
+            "Kotli District, Azad Kashmir: 5 tehsils – Kotli, Khuiratta, Charhoi/Darlia Jattan, Sehnsa and Fatehpur Thakyala. 2017 census population 774,017, area 1,862 km².",
+            "Kotli District, Azad Kashmir (Mirpur Division): 5 tehsils. 2017 census population 774,017 on 1,862 km²; projected 0.856 million in 2023."
+          ],
+          "lead": "Kotli District is one of the 10 districts of Azad Jammu and Kashmir, in Mirpur Division. The 2017 census counted 774,017 people on 1,862 km², in 5 tehsils: Kotli, Khuiratta, Charhoi/Darlia Jattan, Sehnsa and Fatehpur Thakyala.",
+          "rows": [
+            [
+              "Area",
+              "1,862 km²"
+            ],
+            [
+              "Population (2017 census)",
+              "774,017"
+            ],
+            [
+              "Projected population 2023",
+              "0.856 million (AJ&K Bureau of Statistics projection)"
+            ],
+            [
+              "Urban population (2017)",
+              "10.25%"
+            ],
+            [
+              "Average household size (2017)",
+              "6.65"
+            ],
+            [
+              "Annual growth 1998–2017",
+              "1.69%"
+            ],
+            [
+              "Tehsils (2017 census tables)",
+              "5 – Kotli, Khuiratta, Charhoi/Darlia Jattan, Sehnsa and Fatehpur Thakyala"
+            ]
+          ],
+          "source_url": "https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf",
+          "source_label": "AJ&K Bureau of Statistics, Statistical Year Book 2023 (Census 2017 tables)",
+          "sources": [
+            {
+              "url": "https://pndajk.gov.pk/uploadfiles/downloads/AJK%20At%20A%20Glance-2024.pdf",
+              "publisher": "AJ&K Bureau of Statistics, P&DD",
+              "title": "AJK at a Glance 2024 (projected population 2023; administrative set-up)",
+              "date": "2024"
+            }
+          ]
+        },
+        "urdu": {
+          "name": "کوٹلی",
+          "division": "میرپور ڈویژن",
+          "blocks": [
+            {
+              "h": "سرکاری اعداد و شمار",
+              "p": [
+                "آزاد جموں و کشمیر کے ادارۂ شماریات کے مطابق 2017 کی مردم شماری میں ضلع کوٹلی کی آبادی 774,017 اور رقبہ 1,862 مربع کلومیٹر تھا؛ ضلع میں 5 تحصیلیں شامل تھیں۔ 2023 کے لیے تخمینہ شدہ آبادی تقریباً 0.856 ملین ہے (<a href=\"https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf\" rel=\"noopener\">شماریاتی سالنامہ 2023</a>، <a href=\"https://pndajk.gov.pk/uploadfiles/downloads/AJK%20At%20A%20Glance-2024.pdf\" rel=\"noopener\">آزاد کشمیر ایک نظر میں 2024</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf",
+              "publisher": "www.pndajk.gov.pk",
+              "title": ""
+            },
+            {
+              "url": "https://pndajk.gov.pk/uploadfiles/downloads/AJK%20At%20A%20Glance-2024.pdf",
+              "publisher": "pndajk.gov.pk",
+              "title": ""
+            }
+          ]
+        },
+        "profile_checked": "2026-09-30",
+        "sources": [],
+        "faq_extra": [
+          {
+            "q": "What is the population of Kotli District?",
+            "a": "The 2017 census counted 774,017 people. The AJ&K Bureau of Statistics projects about 0.856 million for 2023.",
+            "source": {
+              "url": "https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf",
+              "publisher": "AJ&K Bureau of Statistics"
+            }
+          },
+          {
+            "q": "How many tehsils are in Kotli District?",
+            "a": "The 2017 census tables list 5: Kotli, Khuiratta, Charhoi/Darlia Jattan, Sehnsa and Fatehpur Thakyala.",
+            "source": {
+              "url": "https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf",
+              "publisher": "AJ&K Bureau of Statistics"
+            }
+          },
+          {
+            "q": "Which division is Kotli District in?",
+            "a": "Mirpur Division. AJK has three divisions (Muzaffarabad, Poonch and Mirpur) and 10 districts.",
+            "source": {
+              "url": "https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf",
+              "publisher": "AJ&K Bureau of Statistics"
+            }
+          }
+        ]
       },
       {
         "slug": "poonch",
         "name": "Poonch (Rawalakot)",
-        "hq": "Rawalakot",
-        "pop": "AJK tables",
-        "about": "Hill town of Rawalakot, often called the Pearl Valley.",
-        "education": "Poonch Medical College and public university presence.",
-        "health": "DHQ / teaching Rawalakot.",
-        "culture": "Pahari hill culture.",
-        "issues": "Winter cloud and slide roads.",
-        "villages": "Hajira, Abbaspur"
+        "about": "Poonch Division district of Azad Kashmir with 4 tehsils (Rawalakot, Hajira, Abbaspur and Thorar); the 2017 census counted 499,826 people on 855 km².",
+        "division": "Poonch Division",
+        "official_stats": {
+          "desc": [
+            "Poonch District, Azad Kashmir (Poonch Division): 4 tehsils – Rawalakot, Hajira, Abbaspur and Thorar. 2017 census population 499,826, area 855 km².",
+            "Poonch District, Azad Kashmir: 4 tehsils – Rawalakot, Hajira, Abbaspur and Thorar. 2017 census population 499,826, area 855 km².",
+            "Poonch District, Azad Kashmir (Poonch Division): 4 tehsils. 2017 census population 499,826 on 855 km²; projected 0.536 million in 2023."
+          ],
+          "lead": "Poonch District is one of the 10 districts of Azad Jammu and Kashmir, in Poonch Division. The 2017 census counted 499,826 people on 855 km², in 4 tehsils: Rawalakot, Hajira, Abbaspur and Thorar.",
+          "rows": [
+            [
+              "Area",
+              "855 km²"
+            ],
+            [
+              "Population (2017 census)",
+              "499,826"
+            ],
+            [
+              "Projected population 2023",
+              "0.536 million (AJ&K Bureau of Statistics projection)"
+            ],
+            [
+              "Urban population (2017)",
+              "22.88%"
+            ],
+            [
+              "Average household size (2017)",
+              "5.86"
+            ],
+            [
+              "Annual growth 1998–2017",
+              "1.03%"
+            ],
+            [
+              "Tehsils (2017 census tables)",
+              "4 – Rawalakot, Hajira, Abbaspur and Thorar"
+            ]
+          ],
+          "source_url": "https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf",
+          "source_label": "AJ&K Bureau of Statistics, Statistical Year Book 2023 (Census 2017 tables)",
+          "sources": [
+            {
+              "url": "https://pndajk.gov.pk/uploadfiles/downloads/AJK%20At%20A%20Glance-2024.pdf",
+              "publisher": "AJ&K Bureau of Statistics, P&DD",
+              "title": "AJK at a Glance 2024 (projected population 2023; administrative set-up)",
+              "date": "2024"
+            }
+          ]
+        },
+        "urdu": {
+          "name": "پونچھ",
+          "division": "پونچھ ڈویژن",
+          "blocks": [
+            {
+              "h": "سرکاری اعداد و شمار",
+              "p": [
+                "آزاد جموں و کشمیر کے ادارۂ شماریات کے مطابق 2017 کی مردم شماری میں ضلع پونچھ کی آبادی 499,826 اور رقبہ 855 مربع کلومیٹر تھا؛ ضلع میں 4 تحصیلیں شامل تھیں۔ 2023 کے لیے تخمینہ شدہ آبادی تقریباً 0.536 ملین ہے (<a href=\"https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf\" rel=\"noopener\">شماریاتی سالنامہ 2023</a>، <a href=\"https://pndajk.gov.pk/uploadfiles/downloads/AJK%20At%20A%20Glance-2024.pdf\" rel=\"noopener\">آزاد کشمیر ایک نظر میں 2024</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf",
+              "publisher": "www.pndajk.gov.pk",
+              "title": ""
+            },
+            {
+              "url": "https://pndajk.gov.pk/uploadfiles/downloads/AJK%20At%20A%20Glance-2024.pdf",
+              "publisher": "pndajk.gov.pk",
+              "title": ""
+            }
+          ]
+        },
+        "profile_checked": "2026-09-30",
+        "sources": [],
+        "faq_extra": [
+          {
+            "q": "What is the population of Poonch District?",
+            "a": "The 2017 census counted 499,826 people. The AJ&K Bureau of Statistics projects about 0.536 million for 2023.",
+            "source": {
+              "url": "https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf",
+              "publisher": "AJ&K Bureau of Statistics"
+            }
+          },
+          {
+            "q": "How many tehsils are in Poonch District?",
+            "a": "The 2017 census tables list 4: Rawalakot, Hajira, Abbaspur and Thorar.",
+            "source": {
+              "url": "https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf",
+              "publisher": "AJ&K Bureau of Statistics"
+            }
+          },
+          {
+            "q": "Which division is Poonch District in?",
+            "a": "Poonch Division. AJK has three divisions (Muzaffarabad, Poonch and Mirpur) and 10 districts.",
+            "source": {
+              "url": "https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf",
+              "publisher": "AJ&K Bureau of Statistics"
+            }
+          }
+        ]
       },
       {
         "slug": "bagh",
         "name": "Bagh",
-        "hq": "Bagh",
-        "pop": "AJK tables",
-        "about": "Hill district badly hit in 2005, since rebuilt as a district headquarters.",
-        "education": "Colleges in Bagh.",
-        "health": "DHQ Bagh.",
-        "culture": "Pahari hills.",
-        "issues": "Quake-safe schools.",
-        "villages": "Dhirkot, Hari Ghel"
+        "about": "Poonch Division district of Azad Kashmir with 3 tehsils (Bagh, Dhirkot and Harighel); the 2017 census counted 371,901 people on 770 km².",
+        "division": "Poonch Division",
+        "official_stats": {
+          "desc": [
+            "Bagh District, Azad Kashmir (Poonch Division): 3 tehsils – Bagh, Dhirkot and Harighel. 2017 census population 371,901, area 770 km².",
+            "Bagh District, Azad Kashmir: 3 tehsils – Bagh, Dhirkot and Harighel. 2017 census population 371,901, area 770 km².",
+            "Bagh District, Azad Kashmir (Poonch Division): 3 tehsils. 2017 census population 371,901 on 770 km²; projected 0.415 million in 2023."
+          ],
+          "lead": "Bagh District is one of the 10 districts of Azad Jammu and Kashmir, in Poonch Division. The 2017 census counted 371,901 people on 770 km², in 3 tehsils: Bagh, Dhirkot and Harighel.",
+          "rows": [
+            [
+              "Area",
+              "770 km²"
+            ],
+            [
+              "Population (2017 census)",
+              "371,901"
+            ],
+            [
+              "Projected population 2023",
+              "0.415 million (AJ&K Bureau of Statistics projection)"
+            ],
+            [
+              "Urban population (2017)",
+              "18.79%"
+            ],
+            [
+              "Average household size (2017)",
+              "5.91"
+            ],
+            [
+              "Annual growth 1998–2017",
+              "1.47%"
+            ],
+            [
+              "Tehsils (2017 census tables)",
+              "3 – Bagh, Dhirkot and Harighel"
+            ]
+          ],
+          "source_url": "https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf",
+          "source_label": "AJ&K Bureau of Statistics, Statistical Year Book 2023 (Census 2017 tables)",
+          "sources": [
+            {
+              "url": "https://pndajk.gov.pk/uploadfiles/downloads/AJK%20At%20A%20Glance-2024.pdf",
+              "publisher": "AJ&K Bureau of Statistics, P&DD",
+              "title": "AJK at a Glance 2024 (projected population 2023; administrative set-up)",
+              "date": "2024"
+            }
+          ]
+        },
+        "urdu": {
+          "name": "باغ",
+          "division": "پونچھ ڈویژن",
+          "blocks": [
+            {
+              "h": "سرکاری اعداد و شمار",
+              "p": [
+                "آزاد جموں و کشمیر کے ادارۂ شماریات کے مطابق 2017 کی مردم شماری میں ضلع باغ کی آبادی 371,901 اور رقبہ 770 مربع کلومیٹر تھا؛ ضلع میں 3 تحصیلیں شامل تھیں۔ 2023 کے لیے تخمینہ شدہ آبادی تقریباً 0.415 ملین ہے (<a href=\"https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf\" rel=\"noopener\">شماریاتی سالنامہ 2023</a>، <a href=\"https://pndajk.gov.pk/uploadfiles/downloads/AJK%20At%20A%20Glance-2024.pdf\" rel=\"noopener\">آزاد کشمیر ایک نظر میں 2024</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf",
+              "publisher": "www.pndajk.gov.pk",
+              "title": ""
+            },
+            {
+              "url": "https://pndajk.gov.pk/uploadfiles/downloads/AJK%20At%20A%20Glance-2024.pdf",
+              "publisher": "pndajk.gov.pk",
+              "title": ""
+            }
+          ]
+        },
+        "profile_checked": "2026-09-30",
+        "sources": [],
+        "faq_extra": [
+          {
+            "q": "What is the population of Bagh District?",
+            "a": "The 2017 census counted 371,901 people. The AJ&K Bureau of Statistics projects about 0.415 million for 2023.",
+            "source": {
+              "url": "https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf",
+              "publisher": "AJ&K Bureau of Statistics"
+            }
+          },
+          {
+            "q": "How many tehsils are in Bagh District?",
+            "a": "The 2017 census tables list 3: Bagh, Dhirkot and Harighel.",
+            "source": {
+              "url": "https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf",
+              "publisher": "AJ&K Bureau of Statistics"
+            }
+          },
+          {
+            "q": "Which division is Bagh District in?",
+            "a": "Poonch Division. AJK has three divisions (Muzaffarabad, Poonch and Mirpur) and 10 districts.",
+            "source": {
+              "url": "https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf",
+              "publisher": "AJ&K Bureau of Statistics"
+            }
+          }
+        ]
       },
       {
         "slug": "haveli",
         "name": "Haveli",
-        "hq": "Forward Kahuta",
-        "pop": "AJK tables",
-        "about": "Eastern district toward the Line of Control.",
-        "education": "Colleges in Forward Kahuta.",
-        "health": "DHQ Haveli.",
-        "culture": "High border valleys.",
-        "issues": "Access.",
-        "villages": "Forward Kahuta villages"
+        "about": "Poonch Division district of Azad Kashmir with 2 tehsils (Haveli/Mumtazabad and Khurshidabad); the 2017 census counted 146,220 people on 598 km².",
+        "division": "Poonch Division",
+        "official_stats": {
+          "desc": [
+            "Haveli District, Azad Kashmir (Poonch Division): 2 tehsils – Haveli/Mumtazabad and Khurshidabad. 2017 census population 146,220, area 598 km².",
+            "Haveli District, Azad Kashmir: 2 tehsils – Haveli/Mumtazabad and Khurshidabad. 2017 census population 146,220, area 598 km².",
+            "Haveli District, Azad Kashmir (Poonch Division): 2 tehsils. 2017 census population 146,220 on 598 km²; projected 0.159 million in 2023."
+          ],
+          "lead": "Haveli District is one of the 10 districts of Azad Jammu and Kashmir, in Poonch Division. The 2017 census counted 146,220 people on 598 km², in 2 tehsils: Haveli/Mumtazabad and Khurshidabad.",
+          "rows": [
+            [
+              "Area",
+              "598 km²"
+            ],
+            [
+              "Population (2017 census)",
+              "146,220"
+            ],
+            [
+              "Projected population 2023",
+              "0.159 million (AJ&K Bureau of Statistics projection)"
+            ],
+            [
+              "Urban population (2017)",
+              "3.49%"
+            ],
+            [
+              "Average household size (2017)",
+              "6.78"
+            ],
+            [
+              "Annual growth 1998–2017",
+              "1.43%"
+            ],
+            [
+              "Tehsils (2017 census tables)",
+              "2 – Haveli/Mumtazabad and Khurshidabad"
+            ]
+          ],
+          "source_url": "https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf",
+          "source_label": "AJ&K Bureau of Statistics, Statistical Year Book 2023 (Census 2017 tables)",
+          "sources": [
+            {
+              "url": "https://pndajk.gov.pk/uploadfiles/downloads/AJK%20At%20A%20Glance-2024.pdf",
+              "publisher": "AJ&K Bureau of Statistics, P&DD",
+              "title": "AJK at a Glance 2024 (projected population 2023; administrative set-up)",
+              "date": "2024"
+            }
+          ]
+        },
+        "urdu": {
+          "name": "حویلی",
+          "division": "پونچھ ڈویژن",
+          "blocks": [
+            {
+              "h": "سرکاری اعداد و شمار",
+              "p": [
+                "آزاد جموں و کشمیر کے ادارۂ شماریات کے مطابق 2017 کی مردم شماری میں ضلع حویلی کی آبادی 146,220 اور رقبہ 598 مربع کلومیٹر تھا؛ ضلع میں 2 تحصیلیں شامل تھیں۔ 2023 کے لیے تخمینہ شدہ آبادی تقریباً 0.159 ملین ہے (<a href=\"https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf\" rel=\"noopener\">شماریاتی سالنامہ 2023</a>، <a href=\"https://pndajk.gov.pk/uploadfiles/downloads/AJK%20At%20A%20Glance-2024.pdf\" rel=\"noopener\">آزاد کشمیر ایک نظر میں 2024</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf",
+              "publisher": "www.pndajk.gov.pk",
+              "title": ""
+            },
+            {
+              "url": "https://pndajk.gov.pk/uploadfiles/downloads/AJK%20At%20A%20Glance-2024.pdf",
+              "publisher": "pndajk.gov.pk",
+              "title": ""
+            }
+          ]
+        },
+        "profile_checked": "2026-09-30",
+        "sources": [],
+        "faq_extra": [
+          {
+            "q": "What is the population of Haveli District?",
+            "a": "The 2017 census counted 146,220 people. The AJ&K Bureau of Statistics projects about 0.159 million for 2023.",
+            "source": {
+              "url": "https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf",
+              "publisher": "AJ&K Bureau of Statistics"
+            }
+          },
+          {
+            "q": "How many tehsils are in Haveli District?",
+            "a": "The 2017 census tables list 2: Haveli/Mumtazabad and Khurshidabad.",
+            "source": {
+              "url": "https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf",
+              "publisher": "AJ&K Bureau of Statistics"
+            }
+          },
+          {
+            "q": "Which division is Haveli District in?",
+            "a": "Poonch Division. AJK has three divisions (Muzaffarabad, Poonch and Mirpur) and 10 districts.",
+            "source": {
+              "url": "https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf",
+              "publisher": "AJ&K Bureau of Statistics"
+            }
+          }
+        ]
       },
       {
         "slug": "sudhanoti",
         "name": "Sudhanoti",
-        "hq": "Pallandri",
-        "pop": "AJK tables",
-        "about": "Hill district of Pallandri.",
-        "education": "Cadet College Palandri and public colleges.",
-        "health": "DHQ Sudhanoti.",
-        "culture": "Pahari towns.",
-        "issues": "Steep road to the capital.",
-        "villages": "Trarkhel, Baloch villages of the district"
+        "about": "Poonch Division district of Azad Kashmir with 4 tehsils (Sudhnoti, Mong, Tararkhal and Baloch); the 2017 census counted 297,880 people on 569 km².",
+        "division": "Poonch Division",
+        "official_stats": {
+          "desc": [
+            "Sudhanoti District, Azad Kashmir (Poonch Division): 4 tehsils – Sudhnoti, Mong, Tararkhal and Baloch. 2017 census population 297,880, area 569 km².",
+            "Sudhanoti District, Azad Kashmir: 4 tehsils – Sudhnoti, Mong, Tararkhal and Baloch. 2017 census population 297,880, area 569 km².",
+            "Sudhanoti District, Azad Kashmir (Poonch Division): 4 tehsils. 2017 census population 297,880 on 569 km²; projected 0.326 million in 2023."
+          ],
+          "lead": "Sudhanoti District is one of the 10 districts of Azad Jammu and Kashmir, in Poonch Division. The 2017 census counted 297,880 people on 569 km², in 4 tehsils: Sudhnoti, Mong, Tararkhal and Baloch.",
+          "rows": [
+            [
+              "Area",
+              "569 km²"
+            ],
+            [
+              "Population (2017 census)",
+              "297,880"
+            ],
+            [
+              "Projected population 2023",
+              "0.326 million (AJ&K Bureau of Statistics projection)"
+            ],
+            [
+              "Urban population (2017)",
+              "7.81%"
+            ],
+            [
+              "Average household size (2017)",
+              "6.41"
+            ],
+            [
+              "Annual growth 1998–2017",
+              "1.51%"
+            ],
+            [
+              "Tehsils (2017 census tables)",
+              "4 – Sudhnoti, Mong, Tararkhal and Baloch"
+            ]
+          ],
+          "source_url": "https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf",
+          "source_label": "AJ&K Bureau of Statistics, Statistical Year Book 2023 (Census 2017 tables)",
+          "sources": [
+            {
+              "url": "https://pndajk.gov.pk/uploadfiles/downloads/AJK%20At%20A%20Glance-2024.pdf",
+              "publisher": "AJ&K Bureau of Statistics, P&DD",
+              "title": "AJK at a Glance 2024 (projected population 2023; administrative set-up)",
+              "date": "2024"
+            }
+          ]
+        },
+        "urdu": {
+          "name": "سدھنوتی",
+          "division": "پونچھ ڈویژن",
+          "blocks": [
+            {
+              "h": "سرکاری اعداد و شمار",
+              "p": [
+                "آزاد جموں و کشمیر کے ادارۂ شماریات کے مطابق 2017 کی مردم شماری میں ضلع سدھنوتی کی آبادی 297,880 اور رقبہ 569 مربع کلومیٹر تھا؛ ضلع میں 4 تحصیلیں شامل تھیں۔ 2023 کے لیے تخمینہ شدہ آبادی تقریباً 0.326 ملین ہے (<a href=\"https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf\" rel=\"noopener\">شماریاتی سالنامہ 2023</a>، <a href=\"https://pndajk.gov.pk/uploadfiles/downloads/AJK%20At%20A%20Glance-2024.pdf\" rel=\"noopener\">آزاد کشمیر ایک نظر میں 2024</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf",
+              "publisher": "www.pndajk.gov.pk",
+              "title": ""
+            },
+            {
+              "url": "https://pndajk.gov.pk/uploadfiles/downloads/AJK%20At%20A%20Glance-2024.pdf",
+              "publisher": "pndajk.gov.pk",
+              "title": ""
+            }
+          ]
+        },
+        "profile_checked": "2026-09-30",
+        "sources": [],
+        "faq_extra": [
+          {
+            "q": "What is the population of Sudhanoti District?",
+            "a": "The 2017 census counted 297,880 people. The AJ&K Bureau of Statistics projects about 0.326 million for 2023.",
+            "source": {
+              "url": "https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf",
+              "publisher": "AJ&K Bureau of Statistics"
+            }
+          },
+          {
+            "q": "How many tehsils are in Sudhanoti District?",
+            "a": "The 2017 census tables list 4: Sudhnoti, Mong, Tararkhal and Baloch.",
+            "source": {
+              "url": "https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf",
+              "publisher": "AJ&K Bureau of Statistics"
+            }
+          },
+          {
+            "q": "Which division is Sudhanoti District in?",
+            "a": "Poonch Division. AJK has three divisions (Muzaffarabad, Poonch and Mirpur) and 10 districts.",
+            "source": {
+              "url": "https://www.pndajk.gov.pk/uploadfiles/downloads/AJ&K%20Statistical%20Year%20Book%202023(1).pdf",
+              "publisher": "AJ&K Bureau of Statistics"
+            }
+          }
+        ]
       }
     ],
     "district_count": {
