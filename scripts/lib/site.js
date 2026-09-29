@@ -43,6 +43,9 @@ function isVerificationFile(name) {
 }
 // JavaScript shells / utility pages: kept out of the index.
 const NOINDEX_PAGES = new Set(["district.html", "province.html", "404.html"]);
+// Thin pages kept out of the index until they have sourced content (data/noindex.json lists the reason for each).
+const THIN_NOINDEX = new Set(Object.keys(JSON.parse(fs.readFileSync(path.join(ROOT, "data", "noindex.json"), "utf8")).pages));
+const isNoindex = (file) => NOINDEX_PAGES.has(file) || THIN_NOINDEX.has(file);
 
 function readJson(rel) { return JSON.parse(fs.readFileSync(path.join(ROOT, rel), "utf8")); }
 const provinces = readJson("data/provinces.json");
@@ -136,7 +139,7 @@ module.exports = {
   ADSENSE_SCRIPT,
   ADSENSE_META,
   ROOT, SITE, OG_IMAGE, provinceRoutes, hubRoutes, PROVINCES_HUB, DISTRICTS_HUB, provinceOrder, shortProvince,
-  isVerificationFile, NOINDEX_PAGES, provinces, districts, provinceById, districtIndex, districtsOf, sortedDistrictsOf,
+  isVerificationFile, NOINDEX_PAGES, isNoindex, provinces, districts, provinceById, districtIndex, districtsOf, sortedDistrictsOf,
   isCurrent, otherDistrictsOf, districtCount, totalDistricts, statusLabel, popQualifier,
   exists, htmlFiles, relatedPairs, extraRelated, esc, stripTags, decodeEntities, fmtInt, fmtNum, unitWord, unitsOf,
   unitType, unitNoun, cleanHq, listText, districtLabel
