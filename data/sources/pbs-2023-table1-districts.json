@@ -1,0 +1,7075 @@
+{
+ "punjab": [
+  {
+   "name": "ATTOCK DISTRICT",
+   "area_km2": 6857.0,
+   "population_2023": 2170423,
+   "density": 316.53,
+   "urban_pct": 28.75,
+   "hh_size": 6.1,
+   "growth": 2.37,
+   "units": [
+    {
+     "name": "ATTOCK TEHSIL",
+     "area_km2": 1002.0,
+     "population_2023": 516277,
+     "density": 515.25,
+     "urban_pct": 56.19,
+     "hh_size": 6.3,
+     "growth": 2.9
+    },
+    {
+     "name": "FATEH JANG TEHSIL",
+     "area_km2": 1249.0,
+     "population_2023": 374726,
+     "density": 300.02,
+     "urban_pct": 21.7,
+     "hh_size": 6.2,
+     "growth": 2.33
+    },
+    {
+     "name": "HASAN ABDAL TEHSIL",
+     "area_km2": 350.0,
+     "population_2023": 253670,
+     "density": 724.77,
+     "urban_pct": 27.41,
+     "hh_size": 6.3,
+     "growth": 2.64
+    },
+    {
+     "name": "HAZRO TEHSIL",
+     "area_km2": 348.0,
+     "population_2023": 386544,
+     "density": 1110.76,
+     "urban_pct": 16.29,
+     "hh_size": 6.2,
+     "growth": 2.16
+    },
+    {
+     "name": "JAND TEHSIL",
+     "area_km2": 2043.0,
+     "population_2023": 330328,
+     "density": 161.69,
+     "urban_pct": 17.03,
+     "hh_size": 5.7,
+     "growth": 1.88
+    },
+    {
+     "name": "PINDI GHEB TEHSIL",
+     "area_km2": 1865.0,
+     "population_2023": 308878,
+     "density": 165.62,
+     "urban_pct": 20.66,
+     "hh_size": 5.7,
+     "growth": 2.15
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "BAHAWALNAGAR DISTRICT",
+   "area_km2": 8878.0,
+   "population_2023": 3550342,
+   "density": 399.9,
+   "urban_pct": 27.44,
+   "hh_size": 6.3,
+   "growth": 3.0,
+   "units": [
+    {
+     "name": "BAHAWALNAGAR TEHSIL",
+     "area_km2": 1729.0,
+     "population_2023": 976049,
+     "density": 564.52,
+     "urban_pct": 28.79,
+     "hh_size": 6.3,
+     "growth": 3.09
+    },
+    {
+     "name": "CHISHTIAN TEHSIL",
+     "area_km2": 1500.0,
+     "population_2023": 845439,
+     "density": 563.63,
+     "urban_pct": 27.15,
+     "hh_size": 6.3,
+     "growth": 3.28
+    },
+    {
+     "name": "FORT ABBAS TEHSIL",
+     "area_km2": 2536.0,
+     "population_2023": 510253,
+     "density": 201.2,
+     "urban_pct": 26.27,
+     "hh_size": 6.7,
+     "growth": 3.19
+    },
+    {
+     "name": "HAROONABAD TEHSIL",
+     "area_km2": 1295.0,
+     "population_2023": 615476,
+     "density": 475.27,
+     "urban_pct": 34.33,
+     "hh_size": 6.3,
+     "growth": 2.94
+    },
+    {
+     "name": "MINCHINABAD TEHSIL",
+     "area_km2": 1818.0,
+     "population_2023": 603125,
+     "density": 331.75,
+     "urban_pct": 19.6,
+     "hh_size": 6.1,
+     "growth": 2.34
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "BAHAWALPUR DISTRICT",
+   "area_km2": 24830.0,
+   "population_2023": 4284964,
+   "density": 172.57,
+   "urban_pct": 37.79,
+   "hh_size": 6.3,
+   "growth": 2.63,
+   "units": [
+    {
+     "name": "AHMADPUR EAST TEHSIL",
+     "area_km2": 1738.0,
+     "population_2023": 1307578,
+     "density": 752.35,
+     "urban_pct": 26.67,
+     "hh_size": 6.7,
+     "growth": 3.27
+    },
+    {
+     "name": "BAHAWALPUR CITY TEHSIL",
+     "area_km2": 1490.0,
+     "population_2023": 815202,
+     "density": 547.12,
+     "urban_pct": 100.0,
+     "hh_size": 6.1,
+     "growth": 3.02
+    },
+    {
+     "name": "BAHAWALPUR SADDAR TEHSIL",
+     "area_km2": 745.0,
+     "population_2023": 675950,
+     "density": 907.32,
+     "urban_pct": 22.33,
+     "hh_size": 6.4,
+     "growth": 2.71
+    },
+    {
+     "name": "HASILPUR TEHSIL",
+     "area_km2": 1490.0,
+     "population_2023": 508415,
+     "density": 341.22,
+     "urban_pct": 38.64,
+     "hh_size": 6.0,
+     "growth": 1.82
+    },
+    {
+     "name": "KHAIRPUR TAMEWALI TEHSIL",
+     "area_km2": 993.0,
+     "population_2023": 290582,
+     "density": 292.63,
+     "urban_pct": 16.27,
+     "hh_size": 6.0,
+     "growth": 1.69
+    },
+    {
+     "name": "YAZMAN TEHSIL",
+     "area_km2": 18374.0,
+     "population_2023": 687237,
+     "density": 37.4,
+     "urban_pct": 8.84,
+     "hh_size": 6.3,
+     "growth": 1.92
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "BHAKKAR DISTRICT",
+   "area_km2": 8153.0,
+   "population_2023": 1957470,
+   "density": 240.09,
+   "urban_pct": 18.0,
+   "hh_size": 6.2,
+   "growth": 2.92,
+   "units": [
+    {
+     "name": "BHAKKAR TEHSIL",
+     "area_km2": 2427.0,
+     "population_2023": 809789,
+     "density": 333.66,
+     "urban_pct": 19.68,
+     "hh_size": 6.5,
+     "growth": 2.86
+    },
+    {
+     "name": "DARYA KHAN TEHSIL",
+     "area_km2": 1719.0,
+     "population_2023": 421309,
+     "density": 245.09,
+     "urban_pct": 22.29,
+     "hh_size": 5.9,
+     "growth": 2.64
+    },
+    {
+     "name": "KALUR KOT TEHSIL",
+     "area_km2": 2239.0,
+     "population_2023": 415708,
+     "density": 185.67,
+     "urban_pct": 13.37,
+     "hh_size": 6.3,
+     "growth": 3.09
+    },
+    {
+     "name": "MANKERA TEHSIL",
+     "area_km2": 1768.0,
+     "population_2023": 310664,
+     "density": 175.71,
+     "urban_pct": 14.02,
+     "hh_size": 5.8,
+     "growth": 3.23
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "CHAKWAL DISTRICT",
+   "area_km2": 6525.0,
+   "population_2023": 1734854,
+   "density": 265.88,
+   "urban_pct": 25.06,
+   "hh_size": 6.0,
+   "growth": 2.51,
+   "units": [
+    {
+     "name": "CHAKWAL TEHSIL",
+     "area_km2": 2167.0,
+     "population_2023": 768622,
+     "density": 354.69,
+     "urban_pct": 31.75,
+     "hh_size": 6.0,
+     "growth": 2.67
+    },
+    {
+     "name": "CHOA SAIDAN SHAH TEHSIL",
+     "area_km2": 473.0,
+     "population_2023": 167537,
+     "density": 354.2,
+     "urban_pct": 24.52,
+     "hh_size": 6.2,
+     "growth": 2.81
+    },
+    {
+     "name": "KAR KAHAR TEHSIL",
+     "area_km2": 953.0,
+     "population_2023": 196449,
+     "density": 206.14,
+     "urban_pct": 25.27,
+     "hh_size": 5.8,
+     "growth": 2.52
+    },
+    {
+     "name": "LAWA TEHSIL",
+     "area_km2": 910.0,
+     "population_2023": 144611,
+     "density": 158.91,
+     "urban_pct": 14.26,
+     "hh_size": 6.5,
+     "growth": 3.47
+    },
+    {
+     "name": "TALA GANG TEHSIL",
+     "area_km2": 2022.0,
+     "population_2023": 457635,
+     "density": 226.33,
+     "urban_pct": 17.36,
+     "hh_size": 5.7,
+     "growth": 1.86
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "CHINIOT DISTRICT",
+   "area_km2": 2643.0,
+   "population_2023": 1563024,
+   "density": 591.38,
+   "urban_pct": 31.46,
+   "hh_size": 6.0,
+   "growth": 2.24,
+   "units": [
+    {
+     "name": "BHAWANA TEHSIL",
+     "area_km2": 879.0,
+     "population_2023": 428617,
+     "density": 487.62,
+     "urban_pct": 9.16,
+     "hh_size": 6.1,
+     "growth": 2.31
+    },
+    {
+     "name": "CHINIOT TEHSIL",
+     "area_km2": 709.0,
+     "population_2023": 633621,
+     "density": 893.68,
+     "urban_pct": 50.21,
+     "hh_size": 6.1,
+     "growth": 2.21
+    },
+    {
+     "name": "LALIAN TEHSIL",
+     "area_km2": 1055.0,
+     "population_2023": 500786,
+     "density": 474.68,
+     "urban_pct": 26.81,
+     "hh_size": 6.0,
+     "growth": 2.22
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "DERA GHAZI KHAN DISTRICT",
+   "area_km2": 11922.0,
+   "population_2023": 3393705,
+   "density": 284.66,
+   "urban_pct": 23.79,
+   "hh_size": 7.4,
+   "growth": 2.83,
+   "units": [
+    {
+     "name": "DERA GHAZI KHAN TEHSIL",
+     "area_km2": 2012.0,
+     "population_2023": 1443409,
+     "density": 717.4,
+     "urban_pct": 36.44,
+     "hh_size": 8.1,
+     "growth": 2.78
+    },
+    {
+     "name": "KOH-E-SULEMAN TEHSIL",
+     "area_km2": 5339.0,
+     "population_2023": 248683,
+     "density": 46.58,
+     "urban_pct": null,
+     "hh_size": 6.0,
+     "growth": 2.65
+    },
+    {
+     "name": "KOT CHHUTTA TEHSIL",
+     "area_km2": 1802.0,
+     "population_2023": 904836,
+     "density": 502.13,
+     "urban_pct": 13.63,
+     "hh_size": 7.8,
+     "growth": 3.02
+    },
+    {
+     "name": "TAUNSA TEHSIL",
+     "area_km2": 2769.0,
+     "population_2023": 796777,
+     "density": 287.75,
+     "urban_pct": 19.85,
+     "hh_size": 6.6,
+     "growth": 2.74
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "FAISALABAD DISTRICT",
+   "area_km2": 5857.0,
+   "population_2023": 9075819,
+   "density": 1549.57,
+   "urban_pct": 48.4,
+   "hh_size": 6.5,
+   "growth": 2.38,
+   "units": [
+    {
+     "name": "CHAK JHUMRA TEHSIL",
+     "area_km2": 654.0,
+     "population_2023": 385169,
+     "density": 588.94,
+     "urban_pct": 15.61,
+     "hh_size": 6.8,
+     "growth": 2.46
+    },
+    {
+     "name": "FAISALABAD CITY TEHSIL",
+     "area_km2": 168.0,
+     "population_2023": 3691999,
+     "density": 21976.18,
+     "urban_pct": 100.0,
+     "hh_size": 6.6,
+     "growth": 2.18
+    },
+    {
+     "name": "FAISALABAD SADAR TEHSIL",
+     "area_km2": 1186.0,
+     "population_2023": 1742958,
+     "density": 1469.61,
+     "urban_pct": 5.56,
+     "hh_size": 6.4,
+     "growth": 2.95
+    },
+    {
+     "name": "JARANWALA TEHSIL",
+     "area_km2": 1811.0,
+     "population_2023": 1731148,
+     "density": 955.91,
+     "urban_pct": 15.46,
+     "hh_size": 6.5,
+     "growth": 2.49
+    },
+    {
+     "name": "SAMMUNDRI TEHSIL",
+     "area_km2": 754.0,
+     "population_2023": 729672,
+     "density": 967.73,
+     "urban_pct": 25.54,
+     "hh_size": 6.5,
+     "growth": 2.13
+    },
+    {
+     "name": "TANDLIAN WALA TEHSIL",
+     "area_km2": 1284.0,
+     "population_2023": 794873,
+     "density": 619.06,
+     "urban_pct": 11.31,
+     "hh_size": 6.3,
+     "growth": 2.07
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "GUJRANWALA DISTRICT",
+   "area_km2": 3622.0,
+   "population_2023": 5959750,
+   "density": 1645.43,
+   "urban_pct": 60.3,
+   "hh_size": 7.0,
+   "growth": 2.94,
+   "units": [
+    {
+     "name": "GUJRANWALA CITY TEHSIL",
+     "area_km2": 131.0,
+     "population_2023": 2511118,
+     "density": 19168.84,
+     "urban_pct": 100.0,
+     "hh_size": 7.0,
+     "growth": 3.01
+    },
+    {
+     "name": "GUJRANWALA SADDAR TEHSIL",
+     "area_km2": 783.0,
+     "population_2023": 1133101,
+     "density": 1447.13,
+     "urban_pct": 31.96,
+     "hh_size": 6.7,
+     "growth": 2.74
+    },
+    {
+     "name": "KAMOKE TEHSIL",
+     "area_km2": 834.0,
+     "population_2023": 681339,
+     "density": 816.95,
+     "urban_pct": 42.86,
+     "hh_size": 7.2,
+     "growth": 2.74
+    },
+    {
+     "name": "NOWSHERA VIRKAN TEHSIL",
+     "area_km2": 678.0,
+     "population_2023": 640780,
+     "density": 945.1,
+     "urban_pct": 9.31,
+     "hh_size": 7.3,
+     "growth": 3.07
+    },
+    {
+     "name": "WAZIRABAD TEHSIL",
+     "area_km2": 1196.0,
+     "population_2023": 993412,
+     "density": 830.61,
+     "urban_pct": 37.15,
+     "hh_size": 6.9,
+     "growth": 3.04
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "GUJRAT DISTRICT",
+   "area_km2": 3192.0,
+   "population_2023": 3219375,
+   "density": 1008.58,
+   "urban_pct": 41.13,
+   "hh_size": 6.5,
+   "growth": 2.63,
+   "units": [
+    {
+     "name": "GUJRAT TEHSIL",
+     "area_km2": 1463.0,
+     "population_2023": 1746173,
+     "density": 1193.56,
+     "urban_pct": 53.37,
+     "hh_size": 6.5,
+     "growth": 2.6
+    },
+    {
+     "name": "KHARIAN TEHSIL",
+     "area_km2": 1154.0,
+     "population_2023": 1174935,
+     "density": 1018.14,
+     "urban_pct": 27.09,
+     "hh_size": 6.5,
+     "growth": 2.54
+    },
+    {
+     "name": "SARAI ALAMGIR TEHSIL",
+     "area_km2": 575.0,
+     "population_2023": 298267,
+     "density": 518.73,
+     "urban_pct": 24.8,
+     "hh_size": 6.7,
+     "growth": 3.18
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "HAFIZABAD DISTRICT",
+   "area_km2": 2367.0,
+   "population_2023": 1319909,
+   "density": 557.63,
+   "urban_pct": 38.21,
+   "hh_size": 6.6,
+   "growth": 2.23,
+   "units": [
+    {
+     "name": "HAFIZABAD TEHSIL",
+     "area_km2": 1189.0,
+     "population_2023": 761156,
+     "density": 640.16,
+     "urban_pct": 45.06,
+     "hh_size": 6.7,
+     "growth": 2.31
+    },
+    {
+     "name": "PINDI BHATTIAN TEHSIL",
+     "area_km2": 1178.0,
+     "population_2023": 558753,
+     "density": 474.32,
+     "urban_pct": 28.88,
+     "hh_size": 6.5,
+     "growth": 2.11
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "JHANG DISTRICT",
+   "area_km2": 6166.0,
+   "population_2023": 3065639,
+   "density": 497.18,
+   "urban_pct": 26.13,
+   "hh_size": 6.2,
+   "growth": 1.87,
+   "units": [
+    {
+     "name": "18-HAZARI TEHSIL",
+     "area_km2": 1566.0,
+     "population_2023": 332295,
+     "density": 212.19,
+     "urban_pct": 9.07,
+     "hh_size": 5.8,
+     "growth": 1.97
+    },
+    {
+     "name": "AHMADPUR SIAL TEHSIL",
+     "area_km2": 851.0,
+     "population_2023": 487905,
+     "density": 573.33,
+     "urban_pct": 16.44,
+     "hh_size": 6.3,
+     "growth": 1.99
+    },
+    {
+     "name": "JHANG TEHSIL",
+     "area_km2": 2591.0,
+     "population_2023": 1640676,
+     "density": 633.22,
+     "urban_pct": 37.98,
+     "hh_size": 6.2,
+     "growth": 1.91
+    },
+    {
+     "name": "SHORKOT TEHSIL",
+     "area_km2": 1158.0,
+     "population_2023": 604763,
+     "density": 522.25,
+     "urban_pct": 11.16,
+     "hh_size": 6.4,
+     "growth": 1.62
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "JHELUM DISTRICT",
+   "area_km2": 3587.0,
+   "population_2023": 1382308,
+   "density": 385.37,
+   "urban_pct": 39.16,
+   "hh_size": 6.0,
+   "growth": 2.08,
+   "units": [
+    {
+     "name": "DINA TEHSIL",
+     "area_km2": 678.0,
+     "population_2023": 277182,
+     "density": 408.82,
+     "urban_pct": 37.43,
+     "hh_size": 6.2,
+     "growth": 2.55
+    },
+    {
+     "name": "JHELUM TEHSIL",
+     "area_km2": 586.0,
+     "population_2023": 507788,
+     "density": 866.53,
+     "urban_pct": 61.53,
+     "hh_size": 6.1,
+     "growth": 2.22
+    },
+    {
+     "name": "PIND DADAN KHAN TEHSIL",
+     "area_km2": 1176.0,
+     "population_2023": 371971,
+     "density": 316.3,
+     "urban_pct": 17.41,
+     "hh_size": 5.8,
+     "growth": 1.67
+    },
+    {
+     "name": "SOHAWA TEHSIL",
+     "area_km2": 1147.0,
+     "population_2023": 225367,
+     "density": 196.48,
+     "urban_pct": 26.79,
+     "hh_size": 5.9,
+     "growth": 1.86
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "KASUR DISTRICT",
+   "area_km2": 3995.0,
+   "population_2023": 4084286,
+   "density": 1022.35,
+   "urban_pct": 30.46,
+   "hh_size": 6.3,
+   "growth": 2.84,
+   "units": [
+    {
+     "name": "CHUNIAN TEHSIL",
+     "area_km2": 1212.0,
+     "population_2023": 979746,
+     "density": 808.37,
+     "urban_pct": 21.05,
+     "hh_size": 6.1,
+     "growth": 2.89
+    },
+    {
+     "name": "KASUR TEHSIL",
+     "area_km2": 1493.0,
+     "population_2023": 1603658,
+     "density": 1074.12,
+     "urban_pct": 44.11,
+     "hh_size": 6.3,
+     "growth": 3.13
+    },
+    {
+     "name": "KOT RADHA KISHAN TEHSIL",
+     "area_km2": 398.0,
+     "population_2023": 424875,
+     "density": 1067.53,
+     "urban_pct": 24.02,
+     "hh_size": 6.9,
+     "growth": 2.78
+    },
+    {
+     "name": "PATTOKI TEHSIL",
+     "area_km2": 892.0,
+     "population_2023": 1076007,
+     "density": 1206.29,
+     "urban_pct": 21.21,
+     "hh_size": 6.2,
+     "growth": 2.39
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "KHANEWAL DISTRICT",
+   "area_km2": 4349.0,
+   "population_2023": 3364077,
+   "density": 773.53,
+   "urban_pct": 21.31,
+   "hh_size": 6.3,
+   "growth": 2.39,
+   "units": [
+    {
+     "name": "JAHANIAN TEHSIL",
+     "area_km2": 549.0,
+     "population_2023": 384822,
+     "density": 700.95,
+     "urban_pct": 13.08,
+     "hh_size": 6.2,
+     "growth": 1.92
+    },
+    {
+     "name": "KABIRWALA TEHSIL",
+     "area_km2": 1804.0,
+     "population_2023": 1119229,
+     "density": 620.42,
+     "urban_pct": 16.11,
+     "hh_size": 6.6,
+     "growth": 2.62
+    },
+    {
+     "name": "KHANEWAL TEHSIL",
+     "area_km2": 784.0,
+     "population_2023": 987445,
+     "density": 1259.5,
+     "urban_pct": 31.49,
+     "hh_size": 6.4,
+     "growth": 2.41
+    },
+    {
+     "name": "MIAN CHANNU TEHSIL",
+     "area_km2": 1212.0,
+     "population_2023": 872581,
+     "density": 719.95,
+     "urban_pct": 20.08,
+     "hh_size": 6.0,
+     "growth": 2.29
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "KHUSHAB DISTRICT",
+   "area_km2": 6511.0,
+   "population_2023": 1501089,
+   "density": 230.55,
+   "urban_pct": 27.9,
+   "hh_size": 6.0,
+   "growth": 2.69,
+   "units": [
+    {
+     "name": "KHUSHAB TEHSIL",
+     "area_km2": 2115.0,
+     "population_2023": 816682,
+     "density": 386.14,
+     "urban_pct": 43.54,
+     "hh_size": 6.1,
+     "growth": 2.85
+    },
+    {
+     "name": "NOOR PUR TEHSIL",
+     "area_km2": 2500.0,
+     "population_2023": 264597,
+     "density": 105.84,
+     "urban_pct": 7.6,
+     "hh_size": 5.1,
+     "growth": 1.44
+    },
+    {
+     "name": "NOWSHERA TEHSIL",
+     "area_km2": 816.0,
+     "population_2023": 144851,
+     "density": 177.51,
+     "urban_pct": 12.82,
+     "hh_size": 6.5,
+     "growth": 3.58
+    },
+    {
+     "name": "QUAIDABAD TEHSIL",
+     "area_km2": 1080.0,
+     "population_2023": 274959,
+     "density": 254.59,
+     "urban_pct": 8.92,
+     "hh_size": 6.4,
+     "growth": 3.03
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "LAHORE DISTRICT",
+   "area_km2": 1772.0,
+   "population_2023": 13004135,
+   "density": 7338.68,
+   "urban_pct": 100.0,
+   "hh_size": 6.4,
+   "growth": 2.65,
+   "units": [
+    {
+     "name": "LAHORE CANTT TEHSIL",
+     "area_km2": 466.0,
+     "population_2023": 1885098,
+     "density": 4045.27,
+     "urban_pct": 100.0,
+     "hh_size": 6.3,
+     "growth": 2.43
+    },
+    {
+     "name": "LAHORE CITY TEHSIL",
+     "area_km2": 214.0,
+     "population_2023": 4123354,
+     "density": 19268.01,
+     "urban_pct": 100.0,
+     "hh_size": 6.5,
+     "growth": 2.08
+    },
+    {
+     "name": "MODEL TOWN TEHSIL",
+     "area_km2": 353.0,
+     "population_2023": 3244906,
+     "density": 9192.37,
+     "urban_pct": 100.0,
+     "hh_size": 6.5,
+     "growth": 3.04
+    },
+    {
+     "name": "RAIWIND TEHSIL",
+     "area_km2": 467.0,
+     "population_2023": 1080637,
+     "density": 2314.0,
+     "urban_pct": 100.0,
+     "hh_size": 6.3,
+     "growth": 4.12
+    },
+    {
+     "name": "SHALIMAR TEHSIL",
+     "area_km2": 272.0,
+     "population_2023": 2670140,
+     "density": 9816.69,
+     "urban_pct": 100.0,
+     "hh_size": 6.3,
+     "growth": 2.66
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "LAYYAH DISTRICT",
+   "area_km2": 6289.0,
+   "population_2023": 2102386,
+   "density": 334.3,
+   "urban_pct": 18.37,
+   "hh_size": 6.1,
+   "growth": 2.4,
+   "units": [
+    {
+     "name": "CHOUBARA TEHSIL",
+     "area_km2": 2754.0,
+     "population_2023": 299082,
+     "density": 108.6,
+     "urban_pct": 19.06,
+     "hh_size": 6.7,
+     "growth": 2.87
+    },
+    {
+     "name": "KAROR LAL ESAN TEHSIL",
+     "area_km2": 1823.0,
+     "population_2023": 684729,
+     "density": 375.61,
+     "urban_pct": 13.24,
+     "hh_size": 6.2,
+     "growth": 2.39
+    },
+    {
+     "name": "LAYYAH TEHSIL",
+     "area_km2": 1712.0,
+     "population_2023": 1118575,
+     "density": 653.37,
+     "urban_pct": 21.34,
+     "hh_size": 5.9,
+     "growth": 2.29
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "LODHRAN DISTRICT",
+   "area_km2": 2778.0,
+   "population_2023": 1928299,
+   "density": 694.13,
+   "urban_pct": 16.86,
+   "hh_size": 5.9,
+   "growth": 2.13,
+   "units": [
+    {
+     "name": "DUNYAPUR TEHSIL",
+     "area_km2": 889.0,
+     "population_2023": 571333,
+     "density": 642.67,
+     "urban_pct": 9.08,
+     "hh_size": 6.2,
+     "growth": 2.42
+    },
+    {
+     "name": "KAHROR PACCA TEHSIL",
+     "area_km2": 778.0,
+     "population_2023": 547761,
+     "density": 704.06,
+     "urban_pct": 23.49,
+     "hh_size": 5.2,
+     "growth": 1.5
+    },
+    {
+     "name": "LODHRAN TEHSIL",
+     "area_km2": 1111.0,
+     "population_2023": 809205,
+     "density": 728.36,
+     "urban_pct": 17.86,
+     "hh_size": 6.3,
+     "growth": 2.37
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "MANDI BAHAUDDIN DISTRICT",
+   "area_km2": 2673.0,
+   "population_2023": 1829486,
+   "density": 684.43,
+   "urban_pct": 18.92,
+   "hh_size": 6.3,
+   "growth": 2.33,
+   "units": [
+    {
+     "name": "MALAKWAL TEHSIL",
+     "area_km2": 759.0,
+     "population_2023": 429303,
+     "density": 565.62,
+     "urban_pct": 11.96,
+     "hh_size": 6.2,
+     "growth": 2.42
+    },
+    {
+     "name": "MANDI BAHAUDDIN TEHSIL",
+     "area_km2": 759.0,
+     "population_2023": 764532,
+     "density": 1007.29,
+     "urban_pct": 30.39,
+     "hh_size": 6.4,
+     "growth": 2.27
+    },
+    {
+     "name": "PHALIA TEHSIL",
+     "area_km2": 1155.0,
+     "population_2023": 635651,
+     "density": 550.35,
+     "urban_pct": 9.83,
+     "hh_size": 6.4,
+     "growth": 2.34
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "MIANWALI DISTRICT",
+   "area_km2": 5840.0,
+   "population_2023": 1798268,
+   "density": 307.92,
+   "urban_pct": 20.21,
+   "hh_size": 6.0,
+   "growth": 2.6,
+   "units": [
+    {
+     "name": "ISAKHEL TEHSIL",
+     "area_km2": 1863.0,
+     "population_2023": 414100,
+     "density": 222.28,
+     "urban_pct": 22.83,
+     "hh_size": 6.2,
+     "growth": 1.71
+    },
+    {
+     "name": "MIANWALI TEHSIL",
+     "area_km2": 2689.0,
+     "population_2023": 908405,
+     "density": 337.82,
+     "urban_pct": 17.9,
+     "hh_size": 5.8,
+     "growth": 2.88
+    },
+    {
+     "name": "PIPLAN TEHSIL",
+     "area_km2": 1288.0,
+     "population_2023": 475763,
+     "density": 369.38,
+     "urban_pct": 22.34,
+     "hh_size": 6.2,
+     "growth": 2.85
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "MULTAN DISTRICT",
+   "area_km2": 3720.0,
+   "population_2023": 5362305,
+   "density": 1441.48,
+   "urban_pct": 46.62,
+   "hh_size": 6.0,
+   "growth": 2.06,
+   "units": [
+    {
+     "name": "JALALPUR PIRWALA TEHSIL",
+     "area_km2": 978.0,
+     "population_2023": 608488,
+     "density": 622.18,
+     "urban_pct": 14.74,
+     "hh_size": 5.8,
+     "growth": 1.55
+    },
+    {
+     "name": "MULTAN CITY TEHSIL",
+     "area_km2": 304.0,
+     "population_2023": 2555486,
+     "density": 8406.2,
+     "urban_pct": 84.91,
+     "hh_size": 6.1,
+     "growth": 2.08
+    },
+    {
+     "name": "MULTAN SADDAR TEHSIL",
+     "area_km2": 1632.0,
+     "population_2023": 1516004,
+     "density": 928.92,
+     "urban_pct": 5.88,
+     "hh_size": 6.0,
+     "growth": 2.3
+    },
+    {
+     "name": "SHUJABAD TEHSIL",
+     "area_km2": 806.0,
+     "population_2023": 682327,
+     "density": 846.56,
+     "urban_pct": 22.15,
+     "hh_size": 5.9,
+     "growth": 1.92
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "MUZAFFARGARH DISTRICT",
+   "area_km2": 8249.0,
+   "population_2023": 5015325,
+   "density": 607.99,
+   "urban_pct": 18.88,
+   "hh_size": 6.2,
+   "growth": 2.49,
+   "units": [
+    {
+     "name": "ALIPUR TEHSIL",
+     "area_km2": 1391.0,
+     "population_2023": 760526,
+     "density": 546.75,
+     "urban_pct": 23.39,
+     "hh_size": 6.9,
+     "growth": 2.92
+    },
+    {
+     "name": "CHOWK SARWAR",
+     "area_km2": 1785.0,
+     "population_2023": 414578,
+     "density": 232.26,
+     "urban_pct": 15.3,
+     "hh_size": 6.2,
+     "growth": 2.12
+    },
+    {
+     "name": "JATOI TEHSIL",
+     "area_km2": 1010.0,
+     "population_2023": 862046,
+     "density": 853.51,
+     "urban_pct": 25.22,
+     "hh_size": 6.2,
+     "growth": 3.17
+    },
+    {
+     "name": "KOT ADDU TEHSIL",
+     "area_km2": 1686.0,
+     "population_2023": 1072180,
+     "density": 635.93,
+     "urban_pct": 20.56,
+     "hh_size": 5.7,
+     "growth": 1.48
+    },
+    {
+     "name": "MUZAFFARGARH TEHSIL",
+     "area_km2": 2377.0,
+     "population_2023": 1905995,
+     "density": 801.85,
+     "urban_pct": 14.05,
+     "hh_size": 6.2,
+     "growth": 2.7
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "NANKANA SAHIB DISTRICT",
+   "area_km2": 2216.0,
+   "population_2023": 1634871,
+   "density": 737.76,
+   "urban_pct": 19.78,
+   "hh_size": 6.6,
+   "growth": 3.19,
+   "units": [
+    {
+     "name": "NANKANA SAHIB TEHSIL",
+     "area_km2": 1662.0,
+     "population_2023": 1065063,
+     "density": 640.83,
+     "urban_pct": 12.21,
+     "hh_size": 6.6,
+     "growth": 3.16
+    },
+    {
+     "name": "SANGLA HILL TEHSIL",
+     "area_km2": 223.0,
+     "population_2023": 269993,
+     "density": 1210.73,
+     "urban_pct": 38.41,
+     "hh_size": 6.5,
+     "growth": 2.9
+    },
+    {
+     "name": "SHAH KOT TEHSIL",
+     "area_km2": 331.0,
+     "population_2023": 299815,
+     "density": 905.79,
+     "urban_pct": 29.9,
+     "hh_size": 6.6,
+     "growth": 3.55
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "NAROWAL DISTRICT",
+   "area_km2": 2337.0,
+   "population_2023": 1950954,
+   "density": 834.81,
+   "urban_pct": 17.89,
+   "hh_size": 6.9,
+   "growth": 2.25,
+   "units": [
+    {
+     "name": "NAROWAL TEHSIL",
+     "area_km2": 1065.0,
+     "population_2023": 680402,
+     "density": 638.88,
+     "urban_pct": 24.94,
+     "hh_size": 6.7,
+     "growth": 2.22
+    },
+    {
+     "name": "SHAKARGARH TEHSIL",
+     "area_km2": 835.0,
+     "population_2023": 769339,
+     "density": 921.36,
+     "urban_pct": 16.47,
+     "hh_size": 7.0,
+     "growth": 2.29
+    },
+    {
+     "name": "ZAFARWAL TEHSIL",
+     "area_km2": 437.0,
+     "population_2023": 501213,
+     "density": 1146.94,
+     "urban_pct": 10.5,
+     "hh_size": 6.9,
+     "growth": 2.24
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "OKARA DISTRICT",
+   "area_km2": 4377.0,
+   "population_2023": 3515490,
+   "density": 803.17,
+   "urban_pct": 33.78,
+   "hh_size": 6.3,
+   "growth": 2.45,
+   "units": [
+    {
+     "name": "DEPALPUR TEHSIL",
+     "area_km2": 2502.0,
+     "population_2023": 1592201,
+     "density": 636.37,
+     "urban_pct": 28.98,
+     "hh_size": 6.2,
+     "growth": 2.47
+    },
+    {
+     "name": "OKARA TEHSIL",
+     "area_km2": 1241.0,
+     "population_2023": 1393746,
+     "density": 1123.08,
+     "urban_pct": 44.91,
+     "hh_size": 6.4,
+     "growth": 2.44
+    },
+    {
+     "name": "RENALA KHURD TEHSIL",
+     "area_km2": 634.0,
+     "population_2023": 529543,
+     "density": 835.24,
+     "urban_pct": 18.89,
+     "hh_size": 6.6,
+     "growth": 2.43
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "PAKPATTAN DISTRICT",
+   "area_km2": 2724.0,
+   "population_2023": 2136170,
+   "density": 784.2,
+   "urban_pct": 22.12,
+   "hh_size": 6.1,
+   "growth": 2.67,
+   "units": [
+    {
+     "name": "ARIF WALA TEHSIL",
+     "area_km2": 1241.0,
+     "population_2023": 999278,
+     "density": 805.22,
+     "urban_pct": 20.97,
+     "hh_size": 6.2,
+     "growth": 2.64
+    },
+    {
+     "name": "PAKPATTAN TEHSIL",
+     "area_km2": 1483.0,
+     "population_2023": 1136892,
+     "density": 766.62,
+     "urban_pct": 23.13,
+     "hh_size": 6.1,
+     "growth": 2.7
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "RAHIM YAR KHAN DISTRICT",
+   "area_km2": 11880.0,
+   "population_2023": 5564703,
+   "density": 468.41,
+   "urban_pct": 24.12,
+   "hh_size": 6.7,
+   "growth": 2.47,
+   "units": [
+    {
+     "name": "KHANPUR TEHSIL",
+     "area_km2": 3190.0,
+     "population_2023": 1169138,
+     "density": 366.5,
+     "urban_pct": 27.73,
+     "hh_size": 6.8,
+     "growth": 2.96
+    },
+    {
+     "name": "LIAQUAT PUR TEHSIL",
+     "area_km2": 3262.0,
+     "population_2023": 1235264,
+     "density": 378.68,
+     "urban_pct": 8.31,
+     "hh_size": 6.9,
+     "growth": 3.02
+    },
+    {
+     "name": "RAHIM YAR KHAN TEHSIL",
+     "area_km2": 2464.0,
+     "population_2023": 1778542,
+     "density": 721.81,
+     "urban_pct": 33.25,
+     "hh_size": 6.6,
+     "growth": 2.55
+    },
+    {
+     "name": "SADIQABAD TEHSIL",
+     "area_km2": 2964.0,
+     "population_2023": 1381759,
+     "density": 466.18,
+     "urban_pct": 23.45,
+     "hh_size": 6.5,
+     "growth": 1.53
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "RAJANPUR DISTRICT",
+   "area_km2": 12318.0,
+   "population_2023": 2381049,
+   "density": 193.3,
+   "urban_pct": 26.51,
+   "hh_size": 6.7,
+   "growth": 2.99,
+   "units": [
+    {
+     "name": "DE-EXCLUDED AREA",
+     "area_km2": 5013.0,
+     "population_2023": 41741,
+     "density": 8.33,
+     "urban_pct": null,
+     "hh_size": 6.4,
+     "growth": 3.39
+    },
+    {
+     "name": "JAMPUR TEHSIL",
+     "area_km2": 2322.0,
+     "population_2023": 1012039,
+     "density": 435.85,
+     "urban_pct": 30.11,
+     "hh_size": 6.7,
+     "growth": 2.97
+    },
+    {
+     "name": "RAJANPUR TEHSIL",
+     "area_km2": 2078.0,
+     "population_2023": 853192,
+     "density": 410.58,
+     "urban_pct": 36.41,
+     "hh_size": 6.5,
+     "growth": 3.2
+    },
+    {
+     "name": "ROJHAN TEHSIL",
+     "area_km2": 2905.0,
+     "population_2023": 474077,
+     "density": 163.19,
+     "urban_pct": 3.35,
+     "hh_size": 7.0,
+     "growth": 2.64
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "RAWALPINDI DISTRICT",
+   "area_km2": 5285.0,
+   "population_2023": 6118911,
+   "density": 1157.79,
+   "urban_pct": 68.82,
+   "hh_size": 6.1,
+   "growth": 2.1,
+   "units": [
+    {
+     "name": "GUJAR KHAN TEHSIL",
+     "area_km2": 1457.0,
+     "population_2023": 781578,
+     "density": 536.43,
+     "urban_pct": 16.7,
+     "hh_size": 5.9,
+     "growth": 2.4
+    },
+    {
+     "name": "KAHUTA TEHSIL",
+     "area_km2": 637.0,
+     "population_2023": 237843,
+     "density": 373.38,
+     "urban_pct": 31.68,
+     "hh_size": 5.4,
+     "growth": 1.25
+    },
+    {
+     "name": "KAR SAYADDAN TEHSIL",
+     "area_km2": 459.0,
+     "population_2023": 242709,
+     "density": 528.78,
+     "urban_pct": 25.11,
+     "hh_size": 5.8,
+     "growth": 1.88
+    },
+    {
+     "name": "KOTLI SATTIAN TEHSIL",
+     "area_km2": 304.0,
+     "population_2023": 120421,
+     "density": 396.12,
+     "urban_pct": 19.55,
+     "hh_size": 5.7,
+     "growth": 0.17
+    },
+    {
+     "name": "MURREE TEHSIL",
+     "area_km2": 434.0,
+     "population_2023": 252526,
+     "density": 581.86,
+     "urban_pct": 9.97,
+     "hh_size": 5.5,
+     "growth": 1.35
+    },
+    {
+     "name": "RAWALPINDI TEHSIL",
+     "area_km2": 1682.0,
+     "population_2023": 3744590,
+     "density": 2226.27,
+     "urban_pct": 89.67,
+     "hh_size": 6.3,
+     "growth": 2.36
+    },
+    {
+     "name": "TAXILA TEHSIL",
+     "area_km2": 312.0,
+     "population_2023": 739244,
+     "density": 2369.37,
+     "urban_pct": 72.73,
+     "hh_size": 5.8,
+     "growth": 1.47
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "SAHIWAL DISTRICT",
+   "area_km2": 3201.0,
+   "population_2023": 2881811,
+   "density": 900.28,
+   "urban_pct": 26.29,
+   "hh_size": 6.4,
+   "growth": 2.31,
+   "units": [
+    {
+     "name": "CHICHAWATNI TEHSIL",
+     "area_km2": 1591.0,
+     "population_2023": 1155978,
+     "density": 726.57,
+     "urban_pct": 9.71,
+     "hh_size": 6.5,
+     "growth": 2.04
+    },
+    {
+     "name": "SAHIWAL TEHSIL",
+     "area_km2": 1610.0,
+     "population_2023": 1725833,
+     "density": 1071.95,
+     "urban_pct": 37.4,
+     "hh_size": 6.3,
+     "growth": 2.5
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "SARGODHA DISTRICT",
+   "area_km2": 5856.0,
+   "population_2023": 4334448,
+   "density": 740.17,
+   "urban_pct": 37.13,
+   "hh_size": 6.3,
+   "growth": 2.7,
+   "units": [
+    {
+     "name": "BHALWAL TEHSIL",
+     "area_km2": 663.0,
+     "population_2023": 387262,
+     "density": 584.11,
+     "urban_pct": 37.11,
+     "hh_size": 5.7,
+     "growth": 1.41
+    },
+    {
+     "name": "BHERA TEHSIL",
+     "area_km2": 504.0,
+     "population_2023": 384403,
+     "density": 762.7,
+     "urban_pct": 29.06,
+     "hh_size": 5.9,
+     "growth": 3.42
+    },
+    {
+     "name": "KOT MOMIN TEHSIL",
+     "area_km2": 948.0,
+     "population_2023": 544208,
+     "density": 574.06,
+     "urban_pct": 11.65,
+     "hh_size": 6.8,
+     "growth": 3.15
+    },
+    {
+     "name": "SAHIWAL TEHSIL",
+     "area_km2": 829.0,
+     "population_2023": 407487,
+     "density": 491.54,
+     "urban_pct": 23.09,
+     "hh_size": 6.4,
+     "growth": 3.04
+    },
+    {
+     "name": "SARGODHA TEHSIL",
+     "area_km2": 1536.0,
+     "population_2023": 1800455,
+     "density": 1172.17,
+     "urban_pct": 58.63,
+     "hh_size": 6.4,
+     "growth": 2.7
+    },
+    {
+     "name": "SHAHPUR TEHSIL",
+     "area_km2": 769.0,
+     "population_2023": 424746,
+     "density": 552.34,
+     "urban_pct": 21.62,
+     "hh_size": 6.0,
+     "growth": 3.12
+    },
+    {
+     "name": "SILLANWALI TEHSIL",
+     "area_km2": 607.0,
+     "population_2023": 385887,
+     "density": 635.73,
+     "urban_pct": 12.78,
+     "hh_size": 6.5,
+     "growth": 1.91
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "SHEIKHUPURA DISTRICT",
+   "area_km2": 3744.0,
+   "population_2023": 4049418,
+   "density": 1081.58,
+   "urban_pct": 38.3,
+   "hh_size": 6.8,
+   "growth": 2.66,
+   "units": [
+    {
+     "name": "FEROZEWALA TEHSIL",
+     "area_km2": 511.0,
+     "population_2023": 997246,
+     "density": 1951.56,
+     "urban_pct": 34.02,
+     "hh_size": 6.9,
+     "growth": 3.35
+    },
+    {
+     "name": "MURIDKE TEHSIL",
+     "area_km2": 1028.0,
+     "population_2023": 721192,
+     "density": 701.55,
+     "urban_pct": 44.57,
+     "hh_size": 7.0,
+     "growth": 2.69
+    },
+    {
+     "name": "SAFDARABAD TEHSIL",
+     "area_km2": 461.0,
+     "population_2023": 320851,
+     "density": 695.99,
+     "urban_pct": 27.8,
+     "hh_size": 7.0,
+     "growth": 2.75
+    },
+    {
+     "name": "SHARAK PUR TEHSIL",
+     "area_km2": 375.0,
+     "population_2023": 229292,
+     "density": 611.45,
+     "urban_pct": 20.94,
+     "hh_size": 6.4,
+     "growth": 2.53
+    },
+    {
+     "name": "SHEIKHUPURA TEHSIL",
+     "area_km2": 1369.0,
+     "population_2023": 1780837,
+     "density": 1300.83,
+     "urban_pct": 42.28,
+     "hh_size": 6.7,
+     "growth": 2.28
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "SIALKOT DISTRICT",
+   "area_km2": 3016.0,
+   "population_2023": 4499394,
+   "density": 1491.84,
+   "urban_pct": 32.94,
+   "hh_size": 6.7,
+   "growth": 2.44,
+   "units": [
+    {
+     "name": "DASKA TEHSIL",
+     "area_km2": 690.0,
+     "population_2023": 980547,
+     "density": 1421.08,
+     "urban_pct": 26.45,
+     "hh_size": 6.8,
+     "growth": 2.47
+    },
+    {
+     "name": "PASRUR TEHSIL",
+     "area_km2": 975.0,
+     "population_2023": 970366,
+     "density": 995.25,
+     "urban_pct": 13.59,
+     "hh_size": 6.9,
+     "growth": 2.42
+    },
+    {
+     "name": "SAMBRIAL TEHSIL",
+     "area_km2": 450.0,
+     "population_2023": 460280,
+     "density": 1022.84,
+     "urban_pct": 30.83,
+     "hh_size": 6.4,
+     "growth": 1.92
+    },
+    {
+     "name": "SIALKOT TEHSIL",
+     "area_km2": 901.0,
+     "population_2023": 2088201,
+     "density": 2317.65,
+     "urban_pct": 45.44,
+     "hh_size": 6.5,
+     "growth": 2.55
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "TOBA TEK SINGH DISTRICT",
+   "area_km2": 3252.0,
+   "population_2023": 2524044,
+   "density": 776.15,
+   "urban_pct": 22.33,
+   "hh_size": 6.4,
+   "growth": 2.4,
+   "units": [
+    {
+     "name": "GOJRA TEHSIL",
+     "area_km2": 851.0,
+     "population_2023": 755579,
+     "density": 887.87,
+     "urban_pct": 28.37,
+     "hh_size": 6.5,
+     "growth": 2.36
+    },
+    {
+     "name": "KAMALIA TEHSIL",
+     "area_km2": 486.0,
+     "population_2023": 422477,
+     "density": 869.29,
+     "urban_pct": 39.44,
+     "hh_size": 6.2,
+     "growth": 2.15
+    },
+    {
+     "name": "PIRMAHAL TEHSIL",
+     "area_km2": 774.0,
+     "population_2023": 496636,
+     "density": 641.65,
+     "urban_pct": 11.97,
+     "hh_size": 6.3,
+     "growth": 2.79
+    },
+    {
+     "name": "TOBA TEK SINGH TEHSIL",
+     "area_km2": 1141.0,
+     "population_2023": 849352,
+     "density": 744.39,
+     "urban_pct": 14.49,
+     "hh_size": 6.3,
+     "growth": 2.33
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "VEHARI DISTRICT",
+   "area_km2": 4364.0,
+   "population_2023": 3430421,
+   "density": 786.07,
+   "urban_pct": 22.82,
+   "hh_size": 6.3,
+   "growth": 2.83,
+   "units": [
+    {
+     "name": "BUREWALA TEHSIL",
+     "area_km2": 1295.0,
+     "population_2023": 1204255,
+     "density": 929.93,
+     "urban_pct": 30.03,
+     "hh_size": 6.3,
+     "growth": 2.82
+    },
+    {
+     "name": "MAILSI TEHSIL",
+     "area_km2": 1639.0,
+     "population_2023": 1120407,
+     "density": 683.59,
+     "urban_pct": 18.83,
+     "hh_size": 6.2,
+     "growth": 2.73
+    },
+    {
+     "name": "VEHARI TEHSIL",
+     "area_km2": 1430.0,
+     "population_2023": 1105759,
+     "density": 773.26,
+     "urban_pct": 19.02,
+     "hh_size": 6.3,
+     "growth": 2.96
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  }
+ ],
+ "sindh": [
+  {
+   "name": "BADIN DISTRICT",
+   "area_km2": 6858.0,
+   "population_2023": 1947081,
+   "density": 283.91,
+   "urban_pct": 22.08,
+   "hh_size": 4.8,
+   "growth": 1.27,
+   "units": [
+    {
+     "name": "BADIN TALUKA",
+     "area_km2": 1816.0,
+     "population_2023": 490386,
+     "density": 270.04,
+     "urban_pct": 29.07,
+     "hh_size": 4.8,
+     "growth": 1.28
+    },
+    {
+     "name": "GOLARCHI (S.F.RAHU) TALUKA",
+     "area_km2": 1642.0,
+     "population_2023": 374854,
+     "density": 228.29,
+     "urban_pct": 15.23,
+     "hh_size": 5.1,
+     "growth": 1.92
+    },
+    {
+     "name": "MATLI TALUKA",
+     "area_km2": 1143.0,
+     "population_2023": 471100,
+     "density": 412.16,
+     "urban_pct": 23.64,
+     "hh_size": 4.9,
+     "growth": 0.97
+    },
+    {
+     "name": "TALHAR TALUKA",
+     "area_km2": 569.0,
+     "population_2023": 184206,
+     "density": 323.74,
+     "urban_pct": 26.46,
+     "hh_size": 4.6,
+     "growth": 1.15
+    },
+    {
+     "name": "TANDO BAGO TALUKA",
+     "area_km2": 1688.0,
+     "population_2023": 426535,
+     "density": 252.69,
+     "urban_pct": 16.43,
+     "hh_size": 4.7,
+     "growth": 1.11
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "DADU DISTRICT",
+   "area_km2": 7866.0,
+   "population_2023": 1742320,
+   "density": 221.5,
+   "urban_pct": 25.2,
+   "hh_size": 5.1,
+   "growth": 1.97,
+   "units": [
+    {
+     "name": "DADU TALUKA",
+     "area_km2": 846.0,
+     "population_2023": 508607,
+     "density": 601.19,
+     "urban_pct": 39.52,
+     "hh_size": 5.2,
+     "growth": 1.63
+    },
+    {
+     "name": "JOHI TALUKA",
+     "area_km2": 3509.0,
+     "population_2023": 333179,
+     "density": 94.95,
+     "urban_pct": 12.03,
+     "hh_size": 5.0,
+     "growth": 2.09
+    },
+    {
+     "name": "KHAIRPUR NATHAN SHAH TALUKA",
+     "area_km2": 2583.0,
+     "population_2023": 379975,
+     "density": 147.11,
+     "urban_pct": 21.99,
+     "hh_size": 4.9,
+     "growth": 2.15
+    },
+    {
+     "name": "MEHAR TALUKA",
+     "area_km2": 928.0,
+     "population_2023": 520559,
+     "density": 560.95,
+     "urban_pct": 21.97,
+     "hh_size": 5.1,
+     "growth": 2.09
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "GHOTKI DISTRICT",
+   "area_km2": 6083.0,
+   "population_2023": 1772609,
+   "density": 291.4,
+   "urban_pct": 21.4,
+   "hh_size": 5.3,
+   "growth": 1.22,
+   "units": [
+    {
+     "name": "DAHARKI TALUKA",
+     "area_km2": 2088.0,
+     "population_2023": 335145,
+     "density": 160.51,
+     "urban_pct": 26.91,
+     "hh_size": 5.4,
+     "growth": 1.27
+    },
+    {
+     "name": "GHOTKI TALUKA",
+     "area_km2": 763.0,
+     "population_2023": 540939,
+     "density": 708.96,
+     "urban_pct": 24.2,
+     "hh_size": 5.3,
+     "growth": 1.09
+    },
+    {
+     "name": "KHANGARH TALUKA",
+     "area_km2": 1986.0,
+     "population_2023": 162318,
+     "density": 81.73,
+     "urban_pct": 20.11,
+     "hh_size": 5.0,
+     "growth": 1.37
+    },
+    {
+     "name": "MIRPUR MATHELO TALUKA",
+     "area_km2": 593.0,
+     "population_2023": 350647,
+     "density": 591.31,
+     "urban_pct": 21.29,
+     "hh_size": 5.1,
+     "growth": 1.13
+    },
+    {
+     "name": "UBAURO TALUKA",
+     "area_km2": 653.0,
+     "population_2023": 383560,
+     "density": 587.38,
+     "urban_pct": 13.29,
+     "hh_size": 5.6,
+     "growth": 1.38
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "HYDERABAD DISTRICT",
+   "area_km2": 993.0,
+   "population_2023": 2432540,
+   "density": 2449.69,
+   "urban_pct": 83.14,
+   "hh_size": 5.4,
+   "growth": 1.69,
+   "units": [
+    {
+     "name": "HYDERABAD CITY TALUKA",
+     "area_km2": 43.0,
+     "population_2023": 778132,
+     "density": 18096.09,
+     "urban_pct": 100.0,
+     "hh_size": 5.6,
+     "growth": 1.19
+    },
+    {
+     "name": "HYDERABAD TALUKA",
+     "area_km2": 711.0,
+     "population_2023": 511265,
+     "density": 719.08,
+     "urban_pct": 19.78,
+     "hh_size": 5.4,
+     "growth": 1.55
+    },
+    {
+     "name": "LATIFABAD TALUKA",
+     "area_km2": 204.0,
+     "population_2023": 800983,
+     "density": 3926.39,
+     "urban_pct": 100.0,
+     "hh_size": 5.2,
+     "growth": 2.19
+    },
+    {
+     "name": "QASIMABAD TALUKA",
+     "area_km2": 35.0,
+     "population_2023": 342160,
+     "density": 9776.0,
+     "urban_pct": 100.0,
+     "hh_size": 5.4,
+     "growth": 1.95
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "JACOBABAD DISTRICT",
+   "area_km2": 2698.0,
+   "population_2023": 1174097,
+   "density": 435.17,
+   "urban_pct": 30.83,
+   "hh_size": 6.0,
+   "growth": 2.6,
+   "units": [
+    {
+     "name": "GARHI KHAIRO TALUKA",
+     "area_km2": 733.0,
+     "population_2023": 193297,
+     "density": 263.71,
+     "urban_pct": 10.35,
+     "hh_size": 6.3,
+     "growth": 3.32
+    },
+    {
+     "name": "JACOBABAD TALUKA",
+     "area_km2": 664.0,
+     "population_2023": 447647,
+     "density": 674.17,
+     "urban_pct": 48.99,
+     "hh_size": 6.5,
+     "growth": 2.66
+    },
+    {
+     "name": "THUL TALUKA",
+     "area_km2": 1301.0,
+     "population_2023": 533153,
+     "density": 409.8,
+     "urban_pct": 22.99,
+     "hh_size": 5.5,
+     "growth": 2.3
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "JAMSHORO DISTRICT",
+   "area_km2": 11204.0,
+   "population_2023": 1117308,
+   "density": 99.72,
+   "urban_pct": 46.7,
+   "hh_size": 5.2,
+   "growth": 1.98,
+   "units": [
+    {
+     "name": "KOTRI TALUKA",
+     "area_km2": 1051.0,
+     "population_2023": 472003,
+     "density": 449.1,
+     "urban_pct": 77.21,
+     "hh_size": 5.4,
+     "growth": 1.25
+    },
+    {
+     "name": "MANJHAND TALUKA",
+     "area_km2": 2303.0,
+     "population_2023": 161794,
+     "density": 70.25,
+     "urban_pct": 13.34,
+     "hh_size": 5.1,
+     "growth": 2.35
+    },
+    {
+     "name": "SEHWAN TALUKA",
+     "area_km2": 2160.0,
+     "population_2023": 322011,
+     "density": 149.08,
+     "urban_pct": 36.73,
+     "hh_size": 5.1,
+     "growth": 3.0
+    },
+    {
+     "name": "THANO BULA KHAN TALUKA",
+     "area_km2": 5690.0,
+     "population_2023": 161500,
+     "density": 28.38,
+     "urban_pct": 10.81,
+     "hh_size": 4.8,
+     "growth": 1.79
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "KAMBAR SHAHDAD KOT DISTRICT",
+   "area_km2": 5475.0,
+   "population_2023": 1514869,
+   "density": 276.69,
+   "urban_pct": 27.85,
+   "hh_size": 5.6,
+   "growth": 2.1,
+   "units": [
+    {
+     "name": "KAMBAR ALI KHAN TALUKA",
+     "area_km2": 2260.0,
+     "population_2023": 448990,
+     "density": 198.67,
+     "urban_pct": 25.01,
+     "hh_size": 5.7,
+     "growth": 2.23
+    },
+    {
+     "name": "MIRO KHAN TALUKA",
+     "area_km2": 374.0,
+     "population_2023": 182461,
+     "density": 487.86,
+     "urban_pct": 25.82,
+     "hh_size": 6.2,
+     "growth": 2.44
+    },
+    {
+     "name": "NASIRABAD TALUKA",
+     "area_km2": 309.0,
+     "population_2023": 174708,
+     "density": 565.4,
+     "urban_pct": 21.81,
+     "hh_size": 5.8,
+     "growth": 2.42
+    },
+    {
+     "name": "QUBO SAEED KHAN TALUKA",
+     "area_km2": 1033.0,
+     "population_2023": 99308,
+     "density": 96.14,
+     "urban_pct": 30.86,
+     "hh_size": 5.3,
+     "growth": 2.48
+    },
+    {
+     "name": "SHAHDAD KOT TALUKA",
+     "area_km2": 419.0,
+     "population_2023": 225086,
+     "density": 537.2,
+     "urban_pct": 53.62,
+     "hh_size": 5.5,
+     "growth": 1.78
+    },
+    {
+     "name": "SUJAWAL JUNEJO TALUKA",
+     "area_km2": 385.0,
+     "population_2023": 130635,
+     "density": 339.31,
+     "urban_pct": null,
+     "hh_size": 5.6,
+     "growth": 1.79
+    },
+    {
+     "name": "WARAH TALUKA",
+     "area_km2": 695.0,
+     "population_2023": 253681,
+     "density": 365.01,
+     "urban_pct": 28.78,
+     "hh_size": 5.2,
+     "growth": 1.69
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "KARACHI CENTRAL DISTRICT",
+   "area_km2": 69.0,
+   "population_2023": 3822325,
+   "density": 55396.01,
+   "urban_pct": 100.0,
+   "hh_size": 5.8,
+   "growth": 4.3,
+   "units": [
+    {
+     "name": "GULBERG SUB-DIVISION",
+     "area_km2": 14.0,
+     "population_2023": 613724,
+     "density": 43837.43,
+     "urban_pct": 100.0,
+     "hh_size": 5.7,
+     "growth": 3.62
+    },
+    {
+     "name": "LIAQUATABAD SUB-DIVISION",
+     "area_km2": 6.0,
+     "population_2023": 547706,
+     "density": 91284.33,
+     "urban_pct": 100.0,
+     "hh_size": 5.6,
+     "growth": 3.37
+    },
+    {
+     "name": "NAZIMABAD SUB-DIVISION",
+     "area_km2": 8.0,
+     "population_2023": 572740,
+     "density": 71592.5,
+     "urban_pct": 100.0,
+     "hh_size": 5.9,
+     "growth": 4.26
+    },
+    {
+     "name": "NEW KARACHI SUB-DIVISION",
+     "area_km2": 18.0,
+     "population_2023": 1165742,
+     "density": 64763.44,
+     "urban_pct": 100.0,
+     "hh_size": 5.9,
+     "growth": 4.99
+    },
+    {
+     "name": "NORTH NAZIMABAD SUB-",
+     "area_km2": 23.0,
+     "population_2023": 922413,
+     "density": 40104.91,
+     "urban_pct": 100.0,
+     "hh_size": 5.9,
+     "growth": 4.51
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "KARACHI EAST DISTRICT",
+   "area_km2": 139.0,
+   "population_2023": 3921742,
+   "density": 28213.97,
+   "urban_pct": 100.0,
+   "hh_size": 5.9,
+   "growth": 5.32,
+   "units": [
+    {
+     "name": "FEROZABAD SUB-DIVISION",
+     "area_km2": 20.0,
+     "population_2023": 1167692,
+     "density": 58384.6,
+     "urban_pct": 100.0,
+     "hh_size": 6.4,
+     "growth": 7.4
+    },
+    {
+     "name": "GULSHAN-E-IQBAL SUB-DIVISION",
+     "area_km2": 29.0,
+     "population_2023": 979502,
+     "density": 33775.93,
+     "urban_pct": 100.0,
+     "hh_size": 5.4,
+     "growth": 2.56
+    },
+    {
+     "name": "GULZAR-E-HIJRI SUB-DIVISION",
+     "area_km2": 79.0,
+     "population_2023": 1118534,
+     "density": 14158.66,
+     "urban_pct": 100.0,
+     "hh_size": 5.7,
+     "growth": 5.93
+    },
+    {
+     "name": "JAMSHED QUARTERS SUB-DIVISION",
+     "area_km2": 11.0,
+     "population_2023": 656014,
+     "density": 59637.64,
+     "urban_pct": 100.0,
+     "hh_size": 6.2,
+     "growth": 5.38
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "KARACHI SOUTH DISTRICT",
+   "area_km2": 122.0,
+   "population_2023": 2329764,
+   "density": 19096.43,
+   "urban_pct": 100.0,
+   "hh_size": 5.4,
+   "growth": 4.71,
+   "units": [
+    {
+     "name": "ARAM BAGH SUB-DIVISION",
+     "area_km2": 4.0,
+     "population_2023": 237224,
+     "density": 59306.0,
+     "urban_pct": 100.0,
+     "hh_size": 5.3,
+     "growth": 10.82
+    },
+    {
+     "name": "CIVIL LINES SUB-DIVISION",
+     "area_km2": 73.0,
+     "population_2023": 480480,
+     "density": 6581.92,
+     "urban_pct": 100.0,
+     "hh_size": 5.0,
+     "growth": 0.26
+    },
+    {
+     "name": "GARDEN SUB-DIVISION",
+     "area_km2": 4.0,
+     "population_2023": 502819,
+     "density": 125704.75,
+     "urban_pct": 100.0,
+     "hh_size": 5.6,
+     "growth": 5.55
+    },
+    {
+     "name": "LYARI SUB-DIVISION",
+     "area_km2": 6.0,
+     "population_2023": 949878,
+     "density": 158313.0,
+     "urban_pct": 100.0,
+     "hh_size": 5.6,
+     "growth": 6.22
+    },
+    {
+     "name": "SADDAR SUB-DIVISION",
+     "area_km2": 35.0,
+     "population_2023": 159363,
+     "density": 4553.23,
+     "urban_pct": 100.0,
+     "hh_size": 5.5,
+     "growth": 1.96
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "KARACHI WEST DISTRICT",
+   "area_km2": 370.0,
+   "population_2023": 2679380,
+   "density": 7241.57,
+   "urban_pct": 90.71,
+   "hh_size": 5.7,
+   "growth": 4.35,
+   "units": [
+    {
+     "name": "MANGHOPIR SUB-DIVISION",
+     "area_km2": 342.0,
+     "population_2023": 1081753,
+     "density": 3163.02,
+     "urban_pct": 76.99,
+     "hh_size": 5.5,
+     "growth": 7.26
+    },
+    {
+     "name": "MOMINABAD SUB-DIVISION",
+     "area_km2": 19.0,
+     "population_2023": 1000708,
+     "density": 52668.84,
+     "urban_pct": 100.0,
+     "hh_size": 5.7,
+     "growth": 2.85
+    },
+    {
+     "name": "ORANGI SUB-DIVISION",
+     "area_km2": 9.0,
+     "population_2023": 596919,
+     "density": 66324.33,
+     "urban_pct": 100.0,
+     "hh_size": 6.2,
+     "growth": 2.33
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "KASHMORE DISTRICT",
+   "area_km2": 2580.0,
+   "population_2023": 1233957,
+   "density": 478.28,
+   "urban_pct": 22.03,
+   "hh_size": 5.9,
+   "growth": 2.09,
+   "units": [
+    {
+     "name": "KANDHKOT TALUKA",
+     "area_km2": 654.0,
+     "population_2023": 407592,
+     "density": 623.23,
+     "urban_pct": 34.99,
+     "hh_size": 5.8,
+     "growth": 1.81
+    },
+    {
+     "name": "KASHMORE TALUKA",
+     "area_km2": 1262.0,
+     "population_2023": 487601,
+     "density": 386.37,
+     "urban_pct": 19.91,
+     "hh_size": 5.9,
+     "growth": 1.93
+    },
+    {
+     "name": "TANGWANI TALUKA",
+     "area_km2": 664.0,
+     "population_2023": 338764,
+     "density": 510.19,
+     "urban_pct": 9.47,
+     "hh_size": 5.8,
+     "growth": 2.68
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "KEAMARI DISTRICT",
+   "area_km2": 559.0,
+   "population_2023": 2068451,
+   "density": 3700.27,
+   "urban_pct": 100.0,
+   "hh_size": 6.4,
+   "growth": 2.07,
+   "units": [
+    {
+     "name": "BALDIA SUB-DIVISION",
+     "area_km2": 34.0,
+     "population_2023": 948597,
+     "density": 27899.91,
+     "urban_pct": 100.0,
+     "hh_size": 6.4,
+     "growth": 2.2
+    },
+    {
+     "name": "KEAMARI SUB-DIVISION",
+     "area_km2": 50.0,
+     "population_2023": 451801,
+     "density": 9036.02,
+     "urban_pct": 100.0,
+     "hh_size": 6.5,
+     "growth": 2.01
+    },
+    {
+     "name": "MAURIPUR SUB-DIVISION",
+     "area_km2": 450.0,
+     "population_2023": 218933,
+     "density": 486.52,
+     "urban_pct": 100.0,
+     "hh_size": 5.8,
+     "growth": 2.17
+    },
+    {
+     "name": "SITE SUB-DIVISION",
+     "area_km2": 25.0,
+     "population_2023": 449120,
+     "density": 17964.8,
+     "urban_pct": 100.0,
+     "hh_size": 6.9,
+     "growth": 1.8
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "KHAIRPUR DISTRICT",
+   "area_km2": 15910.0,
+   "population_2023": 2597535,
+   "density": 163.26,
+   "urban_pct": 32.5,
+   "hh_size": 5.7,
+   "growth": 1.29,
+   "units": [
+    {
+     "name": "FAIZ GANJ TALUKA",
+     "area_km2": 946.0,
+     "population_2023": 243254,
+     "density": 257.14,
+     "urban_pct": 20.03,
+     "hh_size": 5.1,
+     "growth": 1.38
+    },
+    {
+     "name": "GAMBAT TALUKA",
+     "area_km2": 582.0,
+     "population_2023": 286129,
+     "density": 491.63,
+     "urban_pct": 36.47,
+     "hh_size": 6.0,
+     "growth": 1.4
+    },
+    {
+     "name": "KHAIRPUR TALUKA",
+     "area_km2": 585.0,
+     "population_2023": 465233,
+     "density": 795.27,
+     "urban_pct": 53.14,
+     "hh_size": 5.3,
+     "growth": 0.92
+    },
+    {
+     "name": "KINGRI TALUKA",
+     "area_km2": 531.0,
+     "population_2023": 370304,
+     "density": 697.37,
+     "urban_pct": 28.73,
+     "hh_size": 6.2,
+     "growth": 1.42
+    },
+    {
+     "name": "KOT DIJI TALUKA",
+     "area_km2": 520.0,
+     "population_2023": 385872,
+     "density": 742.06,
+     "urban_pct": 24.46,
+     "hh_size": 6.1,
+     "growth": 1.71
+    },
+    {
+     "name": "MIRWAH TALUKA",
+     "area_km2": 631.0,
+     "population_2023": 379615,
+     "density": 601.61,
+     "urban_pct": 26.76,
+     "hh_size": 5.6,
+     "growth": 1.23
+    },
+    {
+     "name": "NARA TALUKA",
+     "area_km2": 11611.0,
+     "population_2023": 173968,
+     "density": 14.98,
+     "urban_pct": 23.17,
+     "hh_size": 5.2,
+     "growth": 1.34
+    },
+    {
+     "name": "SOBHO DERO TALUKA",
+     "area_km2": 504.0,
+     "population_2023": 293160,
+     "density": 581.67,
+     "urban_pct": 34.56,
+     "hh_size": 6.1,
+     "growth": 1.06
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "KORANGI DISTRICT",
+   "area_km2": 108.0,
+   "population_2023": 3128971,
+   "density": 28971.95,
+   "urban_pct": 100.0,
+   "hh_size": 6.3,
+   "growth": 3.29,
+   "units": [
+    {
+     "name": "KORANGI SUB-DIVISION",
+     "area_km2": 59.0,
+     "population_2023": 1363992,
+     "density": 23118.51,
+     "urban_pct": 100.0,
+     "hh_size": 6.5,
+     "growth": 3.25
+    },
+    {
+     "name": "LANDHI SUB-DIVISION",
+     "area_km2": 19.0,
+     "population_2023": 681294,
+     "density": 35857.58,
+     "urban_pct": 100.0,
+     "hh_size": 5.8,
+     "growth": 3.76
+    },
+    {
+     "name": "MODEL COLONY SUB-DIVISION",
+     "area_km2": 9.0,
+     "population_2023": 441791,
+     "density": 49087.89,
+     "urban_pct": 100.0,
+     "hh_size": 5.7,
+     "growth": 2.35
+    },
+    {
+     "name": "SHAH FAISAL SUB-DIVISION",
+     "area_km2": 21.0,
+     "population_2023": 641894,
+     "density": 30566.38,
+     "urban_pct": 100.0,
+     "hh_size": 6.8,
+     "growth": 3.55
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "LARKANA DISTRICT",
+   "area_km2": 1948.0,
+   "population_2023": 1784453,
+   "density": 916.04,
+   "urban_pct": 44.73,
+   "hh_size": 5.5,
+   "growth": 2.7,
+   "units": [
+    {
+     "name": "BAKRANI TALUKA",
+     "area_km2": 425.0,
+     "population_2023": 275268,
+     "density": 647.69,
+     "urban_pct": 14.81,
+     "hh_size": 5.6,
+     "growth": 3.11
+    },
+    {
+     "name": "DOKRI TALUKA",
+     "area_km2": 412.0,
+     "population_2023": 257394,
+     "density": 624.74,
+     "urban_pct": 27.54,
+     "hh_size": 5.7,
+     "growth": 2.28
+    },
+    {
+     "name": "LARKANA TALUKA",
+     "area_km2": 549.0,
+     "population_2023": 873868,
+     "density": 1591.74,
+     "urban_pct": 63.13,
+     "hh_size": 5.5,
+     "growth": 2.93
+    },
+    {
+     "name": "RATODERO TALUKA",
+     "area_km2": 562.0,
+     "population_2023": 377923,
+     "density": 672.46,
+     "urban_pct": 35.66,
+     "hh_size": 5.3,
+     "growth": 2.17
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "MALIR DISTRICT",
+   "area_km2": 2160.0,
+   "population_2023": 2432248,
+   "density": 1126.04,
+   "urban_pct": 47.95,
+   "hh_size": 5.7,
+   "growth": 3.99,
+   "units": [
+    {
+     "name": "AIRPORT SUB-DIVISION",
+     "area_km2": 41.0,
+     "population_2023": 254370,
+     "density": 6204.15,
+     "urban_pct": 100.0,
+     "hh_size": 5.9,
+     "growth": 4.53
+    },
+    {
+     "name": "BIN QASIM SUB-DIVISION",
+     "area_km2": 447.0,
+     "population_2023": 322915,
+     "density": 722.4,
+     "urban_pct": null,
+     "hh_size": 5.5,
+     "growth": 4.5
+    },
+    {
+     "name": "GADAP SUB-DIVISION",
+     "area_km2": 1104.0,
+     "population_2023": 100351,
+     "density": 90.9,
+     "urban_pct": null,
+     "hh_size": 4.5,
+     "growth": 7.76
+    },
+    {
+     "name": "IBRAHIM HYDRI SUB-DIVISION",
+     "area_km2": 97.0,
+     "population_2023": 1341638,
+     "density": 13831.32,
+     "urban_pct": 51.11,
+     "hh_size": 6.2,
+     "growth": 4.09
+    },
+    {
+     "name": "MURAD MEMON SUB-DIVISION",
+     "area_km2": 195.0,
+     "population_2023": 376987,
+     "density": 1933.27,
+     "urban_pct": 60.02,
+     "hh_size": 5.0,
+     "growth": 2.18
+    },
+    {
+     "name": "SHAH MUREED SUB-DIVISION",
+     "area_km2": 276.0,
+     "population_2023": 35987,
+     "density": 130.39,
+     "urban_pct": null,
+     "hh_size": 4.3,
+     "growth": 3.18
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "MATIARI DISTRICT",
+   "area_km2": 1417.0,
+   "population_2023": 849383,
+   "density": 599.42,
+   "urban_pct": 23.86,
+   "hh_size": 5.3,
+   "growth": 1.65,
+   "units": [
+    {
+     "name": "HALA TALUKA",
+     "area_km2": 488.0,
+     "population_2023": 286155,
+     "density": 586.38,
+     "urban_pct": 45.58,
+     "hh_size": 5.4,
+     "growth": 1.44
+    },
+    {
+     "name": "MATIARI TALUKA",
+     "area_km2": 568.0,
+     "population_2023": 377945,
+     "density": 665.4,
+     "urban_pct": 12.74,
+     "hh_size": 5.3,
+     "growth": 1.73
+    },
+    {
+     "name": "SAEEDABAD TALUKA",
+     "area_km2": 361.0,
+     "population_2023": 185283,
+     "density": 513.25,
+     "urban_pct": 13.0,
+     "hh_size": 5.2,
+     "growth": 1.82
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "MIRPUR KHAS DISTRICT",
+   "area_km2": 2925.0,
+   "population_2023": 1681386,
+   "density": 574.83,
+   "urban_pct": 29.27,
+   "hh_size": 5.3,
+   "growth": 1.88,
+   "units": [
+    {
+     "name": "DIGRI TALUKA",
+     "area_km2": 572.0,
+     "population_2023": 234578,
+     "density": 410.1,
+     "urban_pct": 35.37,
+     "hh_size": 5.3,
+     "growth": 1.54
+    },
+    {
+     "name": "HUSSAIN BUX MARI TALUKA",
+     "area_km2": 209.0,
+     "population_2023": 172143,
+     "density": 823.65,
+     "urban_pct": null,
+     "hh_size": 5.2,
+     "growth": 2.3
+    },
+    {
+     "name": "JHUDO TALUKA",
+     "area_km2": 363.0,
+     "population_2023": 230285,
+     "density": 634.39,
+     "urban_pct": 29.39,
+     "hh_size": 5.5,
+     "growth": 2.23
+    },
+    {
+     "name": "KOT GHULAM MUHAMMAD TALUKA",
+     "area_km2": 762.0,
+     "population_2023": 310142,
+     "density": 407.01,
+     "urban_pct": 9.7,
+     "hh_size": 5.2,
+     "growth": 2.15
+    },
+    {
+     "name": "MIRPUR KHAS TALUKA",
+     "area_km2": 24.0,
+     "population_2023": 287802,
+     "density": 11991.75,
+     "urban_pct": 93.06,
+     "hh_size": 5.8,
+     "growth": 1.69
+    },
+    {
+     "name": "SHUJAABAD TALUKA",
+     "area_km2": 396.0,
+     "population_2023": 185654,
+     "density": 468.82,
+     "urban_pct": 12.41,
+     "hh_size": 5.2,
+     "growth": 1.61
+    },
+    {
+     "name": "SINDHRI TALUKA",
+     "area_km2": 599.0,
+     "population_2023": 260782,
+     "density": 435.36,
+     "urban_pct": 7.89,
+     "hh_size": 5.1,
+     "growth": 1.67
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "NAUSHAHRO FEROZE DISTRICT",
+   "area_km2": 2946.0,
+   "population_2023": 1777082,
+   "density": 603.22,
+   "urban_pct": 28.54,
+   "hh_size": 5.5,
+   "growth": 1.64,
+   "units": [
+    {
+     "name": "BHIRIA TALUKA",
+     "area_km2": 488.0,
+     "population_2023": 330308,
+     "density": 676.86,
+     "urban_pct": 21.96,
+     "hh_size": 5.5,
+     "growth": 1.53
+    },
+    {
+     "name": "KANDIARO TALUKA",
+     "area_km2": 771.0,
+     "population_2023": 356506,
+     "density": 462.39,
+     "urban_pct": 12.45,
+     "hh_size": 5.7,
+     "growth": 1.7
+    },
+    {
+     "name": "MEHRABPUR TALUKA",
+     "area_km2": 361.0,
+     "population_2023": 273764,
+     "density": 758.35,
+     "urban_pct": 30.43,
+     "hh_size": 5.6,
+     "growth": 1.76
+    },
+    {
+     "name": "MORO TALUKA",
+     "area_km2": 609.0,
+     "population_2023": 408148,
+     "density": 670.19,
+     "urban_pct": 34.96,
+     "hh_size": 5.3,
+     "growth": 1.72
+    },
+    {
+     "name": "NAUSHAHRO FEROZE TALUKA",
+     "area_km2": 717.0,
+     "population_2023": 408356,
+     "density": 569.53,
+     "urban_pct": 40.24,
+     "hh_size": 5.5,
+     "growth": 1.53
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "SANGHAR DISTRICT",
+   "area_km2": 10728.0,
+   "population_2023": 2308465,
+   "density": 215.18,
+   "urban_pct": 27.32,
+   "hh_size": 5.6,
+   "growth": 2.01,
+   "units": [
+    {
+     "name": "JAM NAWAZ ALI TALUKA",
+     "area_km2": 440.0,
+     "population_2023": 171598,
+     "density": 390.0,
+     "urban_pct": 15.88,
+     "hh_size": 5.4,
+     "growth": 1.91
+    },
+    {
+     "name": "KHIPRO TALUKA",
+     "area_km2": 5933.0,
+     "population_2023": 366748,
+     "density": 61.81,
+     "urban_pct": 15.9,
+     "hh_size": 5.3,
+     "growth": 1.63
+    },
+    {
+     "name": "SANGHAR TALUKA",
+     "area_km2": 2118.0,
+     "population_2023": 482560,
+     "density": 227.84,
+     "urban_pct": 19.7,
+     "hh_size": 5.6,
+     "growth": 1.84
+    },
+    {
+     "name": "SHAHDADPUR TALUKA",
+     "area_km2": 890.0,
+     "population_2023": 525164,
+     "density": 590.07,
+     "urban_pct": 41.14,
+     "hh_size": 5.8,
+     "growth": 2.35
+    },
+    {
+     "name": "SINJHORO TALUKA",
+     "area_km2": 907.0,
+     "population_2023": 354709,
+     "density": 391.08,
+     "urban_pct": 16.87,
+     "hh_size": 5.7,
+     "growth": 1.9
+    },
+    {
+     "name": "TANDO ADAM TALUKA",
+     "area_km2": 440.0,
+     "population_2023": 407686,
+     "density": 926.56,
+     "urban_pct": 42.75,
+     "hh_size": 5.7,
+     "growth": 2.24
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "SHAHEED BENAZIRABAD DISTRICT",
+   "area_km2": 4502.0,
+   "population_2023": 1845102,
+   "density": 409.84,
+   "urban_pct": 32.42,
+   "hh_size": 5.5,
+   "growth": 2.27,
+   "units": [
+    {
+     "name": "DAUR TALUKA",
+     "area_km2": 2210.0,
+     "population_2023": 532621,
+     "density": 241.0,
+     "urban_pct": 20.69,
+     "hh_size": 5.4,
+     "growth": 1.82
+    },
+    {
+     "name": "KAZI AHMED TALUKA",
+     "area_km2": 972.0,
+     "population_2023": 402834,
+     "density": 414.44,
+     "urban_pct": 13.1,
+     "hh_size": 5.5,
+     "growth": 2.43
+    },
+    {
+     "name": "NAWABSHAH TALUKA",
+     "area_km2": 435.0,
+     "population_2023": 481978,
+     "density": 1108.0,
+     "urban_pct": 75.34,
+     "hh_size": 5.8,
+     "growth": 2.6
+    },
+    {
+     "name": "SAKRAND TALUKA",
+     "area_km2": 885.0,
+     "population_2023": 427669,
+     "density": 483.24,
+     "urban_pct": 16.84,
+     "hh_size": 5.2,
+     "growth": 2.3
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "SHIKARPUR DISTRICT",
+   "area_km2": 2512.0,
+   "population_2023": 1386330,
+   "density": 551.88,
+   "urban_pct": 22.99,
+   "hh_size": 6.4,
+   "growth": 1.97,
+   "units": [
+    {
+     "name": "GARHI YASIN TALUKA",
+     "area_km2": 971.0,
+     "population_2023": 333289,
+     "density": 343.24,
+     "urban_pct": 11.01,
+     "hh_size": 5.6,
+     "growth": 0.86
+    },
+    {
+     "name": "KHANPUR TALUKA",
+     "area_km2": 629.0,
+     "population_2023": 331219,
+     "density": 526.58,
+     "urban_pct": 5.45,
+     "hh_size": 7.6,
+     "growth": 3.09
+    },
+    {
+     "name": "LAKHI TALUKA",
+     "area_km2": 351.0,
+     "population_2023": 300490,
+     "density": 856.1,
+     "urban_pct": 19.66,
+     "hh_size": 6.9,
+     "growth": 3.21
+    },
+    {
+     "name": "SHIKARPUR TALUKA",
+     "area_km2": 561.0,
+     "population_2023": 421332,
+     "density": 751.04,
+     "urban_pct": 48.64,
+     "hh_size": 6.1,
+     "growth": 1.2
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "SUJAWAL DISTRICT",
+   "area_km2": 8785.0,
+   "population_2023": 839292,
+   "density": 95.54,
+   "urban_pct": 10.59,
+   "hh_size": 5.2,
+   "growth": 1.25,
+   "units": [
+    {
+     "name": "JATI TALUKA",
+     "area_km2": 3489.0,
+     "population_2023": 214710,
+     "density": 61.54,
+     "urban_pct": 4.87,
+     "hh_size": 4.9,
+     "growth": 1.04
+    },
+    {
+     "name": "KHARO CHAN TALUKA",
+     "area_km2": 778.0,
+     "population_2023": 11403,
+     "density": 14.66,
+     "urban_pct": null,
+     "hh_size": 5.2,
+     "growth": 1.82
+    },
+    {
+     "name": "MIRPUR BATHORO TALUKA",
+     "area_km2": 698.0,
+     "population_2023": 231735,
+     "density": 332.0,
+     "urban_pct": 9.2,
+     "hh_size": 5.6,
+     "growth": 1.59
+    },
+    {
+     "name": "SHAH BUNDER TALUKA",
+     "area_km2": 3074.0,
+     "population_2023": 168911,
+     "density": 54.95,
+     "urban_pct": 10.87,
+     "hh_size": 5.1,
+     "growth": 0.94
+    },
+    {
+     "name": "SUJAWAL TALUKA",
+     "area_km2": 746.0,
+     "population_2023": 212533,
+     "density": 284.9,
+     "urban_pct": 18.23,
+     "hh_size": 5.3,
+     "growth": 1.33
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "SUKKUR DISTRICT",
+   "area_km2": 5165.0,
+   "population_2023": 1639897,
+   "density": 317.5,
+   "urban_pct": 49.7,
+   "hh_size": 6.1,
+   "growth": 1.63,
+   "units": [
+    {
+     "name": "NEW SUKKUR TALUKA",
+     "area_km2": 109.0,
+     "population_2023": 356473,
+     "density": 3270.39,
+     "urban_pct": 84.87,
+     "hh_size": 6.8,
+     "growth": 1.81
+    },
+    {
+     "name": "PANO AQIL TALUKA",
+     "area_km2": 1042.0,
+     "population_2023": 457078,
+     "density": 438.65,
+     "urban_pct": 22.47,
+     "hh_size": 5.2,
+     "growth": 0.78
+    },
+    {
+     "name": "ROHRI TALUKA",
+     "area_km2": 807.0,
+     "population_2023": 421500,
+     "density": 522.3,
+     "urban_pct": 26.95,
+     "hh_size": 6.7,
+     "growth": 2.17
+    },
+    {
+     "name": "SALEHPAT TALUKA",
+     "area_km2": 2957.0,
+     "population_2023": 137738,
+     "density": 46.58,
+     "urban_pct": 21.1,
+     "hh_size": 5.2,
+     "growth": 1.01
+    },
+    {
+     "name": "SUKKUR CITY TALUKA",
+     "area_km2": 250.0,
+     "population_2023": 267108,
+     "density": 1068.43,
+     "urban_pct": 100.0,
+     "hh_size": 6.7,
+     "growth": 2.42
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "TANDO AHYAR DISTRICT",
+   "area_km2": 1554.0,
+   "population_2023": 922012,
+   "density": 593.32,
+   "urban_pct": 30.99,
+   "hh_size": 5.1,
+   "growth": 1.6,
+   "units": [
+    {
+     "name": "CHAMBER TALUKA",
+     "area_km2": 483.0,
+     "population_2023": 233424,
+     "density": 483.28,
+     "urban_pct": 16.15,
+     "hh_size": 4.9,
+     "growth": 1.77
+    },
+    {
+     "name": "JHANDO MARI TALUKA",
+     "area_km2": 626.0,
+     "population_2023": 266665,
+     "density": 425.98,
+     "urban_pct": 8.04,
+     "hh_size": 5.2,
+     "growth": 1.69
+    },
+    {
+     "name": "TANDO AHYAR TALUKA",
+     "area_km2": 445.0,
+     "population_2023": 421923,
+     "density": 948.14,
+     "urban_pct": 53.7,
+     "hh_size": 5.2,
+     "growth": 1.45
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "TANDO MUHAMMAD KHAN DISTRICT",
+   "area_km2": 1423.0,
+   "population_2023": 726119,
+   "density": 510.27,
+   "urban_pct": 22.33,
+   "hh_size": 5.0,
+   "growth": 1.18,
+   "units": [
+    {
+     "name": "BULRI SHAH KARIM TALUKA",
+     "area_km2": 770.0,
+     "population_2023": 247027,
+     "density": 320.81,
+     "urban_pct": 2.61,
+     "hh_size": 5.0,
+     "growth": 0.69
+    },
+    {
+     "name": "TANDO GHULAM HYDER TALUKA",
+     "area_km2": 390.0,
+     "population_2023": 206665,
+     "density": 529.91,
+     "urban_pct": 19.97,
+     "hh_size": 5.1,
+     "growth": 1.9
+    },
+    {
+     "name": "TANDO MUHAMMAD KHAN TALUKA",
+     "area_km2": 263.0,
+     "population_2023": 272427,
+     "density": 1035.84,
+     "urban_pct": 42.0,
+     "hh_size": 4.9,
+     "growth": 1.08
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "THARPARKAR DISTRICT",
+   "area_km2": 19637.0,
+   "population_2023": 1778407,
+   "density": 90.56,
+   "urban_pct": 8.12,
+   "hh_size": 5.4,
+   "growth": 1.29,
+   "units": [
+    {
+     "name": "CHACHRO TALUKA",
+     "area_km2": 3386.0,
+     "population_2023": 371769,
+     "density": 109.8,
+     "urban_pct": 6.81,
+     "hh_size": 5.8,
+     "growth": 0.97
+    },
+    {
+     "name": "DAHLI TALUKA",
+     "area_km2": 2126.0,
+     "population_2023": 326034,
+     "density": 153.36,
+     "urban_pct": 2.97,
+     "hh_size": 6.1,
+     "growth": 1.09
+    },
+    {
+     "name": "DIPLO TALUKA",
+     "area_km2": 2872.0,
+     "population_2023": 163119,
+     "density": 56.8,
+     "urban_pct": 8.13,
+     "hh_size": 5.0,
+     "growth": 1.54
+    },
+    {
+     "name": "ISLAMKOT TALUKA",
+     "area_km2": 3515.0,
+     "population_2023": 265643,
+     "density": 75.57,
+     "urban_pct": 7.18,
+     "hh_size": 5.0,
+     "growth": 1.4
+    },
+    {
+     "name": "KALOI TALUKA",
+     "area_km2": 922.0,
+     "population_2023": 129677,
+     "density": 140.65,
+     "urban_pct": null,
+     "hh_size": 5.2,
+     "growth": 1.65
+    },
+    {
+     "name": "MITHI TALUKA",
+     "area_km2": 2954.0,
+     "population_2023": 239091,
+     "density": 80.94,
+     "urban_pct": 27.13,
+     "hh_size": 5.1,
+     "growth": 1.41
+    },
+    {
+     "name": "NAGAR PARKAR TALUKA",
+     "area_km2": 3862.0,
+     "population_2023": 283074,
+     "density": 73.3,
+     "urban_pct": 4.32,
+     "hh_size": 5.1,
+     "growth": 1.44
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "THATTA DISTRICT",
+   "area_km2": 8570.0,
+   "population_2023": 1083191,
+   "density": 126.39,
+   "urban_pct": 17.88,
+   "hh_size": 5.2,
+   "growth": 1.65,
+   "units": [
+    {
+     "name": "GHORABARI TALUKA",
+     "area_km2": 1018.0,
+     "population_2023": 198920,
+     "density": 195.4,
+     "urban_pct": 17.67,
+     "hh_size": 5.0,
+     "growth": 2.26
+    },
+    {
+     "name": "KETI BUNDER TALUKA",
+     "area_km2": 771.0,
+     "population_2023": 63217,
+     "density": 81.99,
+     "urban_pct": null,
+     "hh_size": 4.8,
+     "growth": 0.96
+    },
+    {
+     "name": "MIRPUR SAKRO TALUKA",
+     "area_km2": 2958.0,
+     "population_2023": 376078,
+     "density": 127.14,
+     "urban_pct": 14.01,
+     "hh_size": 5.4,
+     "growth": 1.62
+    },
+    {
+     "name": "THATTA TALUKA",
+     "area_km2": 3823.0,
+     "population_2023": 444976,
+     "density": 116.39,
+     "urban_pct": 23.79,
+     "hh_size": 5.2,
+     "growth": 1.51
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "UMER KOT DISTRICT",
+   "area_km2": 5608.0,
+   "population_2023": 1159831,
+   "density": 206.82,
+   "urban_pct": 22.32,
+   "hh_size": 5.2,
+   "growth": 1.3,
+   "units": [
+    {
+     "name": "KUNRI TALUKA",
+     "area_km2": 585.0,
+     "population_2023": 237063,
+     "density": 405.24,
+     "urban_pct": 17.16,
+     "hh_size": 5.4,
+     "growth": 1.38
+    },
+    {
+     "name": "PITHORO TALUKA",
+     "area_km2": 855.0,
+     "population_2023": 130383,
+     "density": 152.49,
+     "urban_pct": 10.22,
+     "hh_size": 5.1,
+     "growth": 1.4
+    },
+    {
+     "name": "SAMARO TALUKA",
+     "area_km2": 959.0,
+     "population_2023": 184051,
+     "density": 191.92,
+     "urban_pct": 5.22,
+     "hh_size": 5.4,
+     "growth": 1.31
+    },
+    {
+     "name": "UMER KOT TALUKA",
+     "area_km2": 3209.0,
+     "population_2023": 608334,
+     "density": 189.57,
+     "urban_pct": 32.09,
+     "hh_size": 5.0,
+     "growth": 1.25
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  }
+ ],
+ "kp": [
+  {
+   "name": "ABBOTTABAD DISTRICT",
+   "area_km2": 1967.0,
+   "population_2023": 1419072,
+   "density": 721.44,
+   "urban_pct": 23.42,
+   "hh_size": 5.9,
+   "growth": 1.05,
+   "units": [
+    {
+     "name": "ABBOTTABAD TEHSIL",
+     "area_km2": 1285.0,
+     "population_2023": 1003339,
+     "density": 780.81,
+     "urban_pct": 27.5,
+     "hh_size": 6.0,
+     "growth": 1.1
+    },
+    {
+     "name": "HAVELIAN TEHSIL",
+     "area_km2": 342.0,
+     "population_2023": 256754,
+     "density": 750.74,
+     "urban_pct": 21.98,
+     "hh_size": 6.0,
+     "growth": 1.44
+    },
+    {
+     "name": "LORA TEHSIL",
+     "area_km2": 187.0,
+     "population_2023": 98717,
+     "density": 527.9,
+     "urban_pct": null,
+     "hh_size": 5.7,
+     "growth": 0.14
+    },
+    {
+     "name": "LOWER TANAWAL TEHSIL",
+     "area_km2": 153.0,
+     "population_2023": 60262,
+     "density": 393.87,
+     "urban_pct": null,
+     "hh_size": 5.6,
+     "growth": 0.1
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "BAJAUR DISTRICT",
+   "area_km2": 1290.0,
+   "population_2023": 1287960,
+   "density": 998.42,
+   "urban_pct": 0.0,
+   "hh_size": 7.0,
+   "growth": 2.81,
+   "units": [
+    {
+     "name": "BAR CHAMER KAND TEHSIL",
+     "area_km2": 13.0,
+     "population_2023": 3574,
+     "density": 274.92,
+     "urban_pct": null,
+     "hh_size": 4.7,
+     "growth": 3.75
+    },
+    {
+     "name": "BARANG TEHSIL",
+     "area_km2": 159.0,
+     "population_2023": 90082,
+     "density": 566.55,
+     "urban_pct": null,
+     "hh_size": 6.4,
+     "growth": 2.77
+    },
+    {
+     "name": "KHAR BAJAUR TEHSIL",
+     "area_km2": 238.0,
+     "population_2023": 301778,
+     "density": 1267.97,
+     "urban_pct": null,
+     "hh_size": 7.2,
+     "growth": 3.41
+    },
+    {
+     "name": "MAMUND TEHSIL",
+     "area_km2": 250.0,
+     "population_2023": 358190,
+     "density": 1432.76,
+     "urban_pct": null,
+     "hh_size": 7.3,
+     "growth": 2.37
+    },
+    {
+     "name": "NAWAGAI TEHSIL",
+     "area_km2": 216.0,
+     "population_2023": 93850,
+     "density": 434.49,
+     "urban_pct": null,
+     "hh_size": 7.1,
+     "growth": 3.03
+    },
+    {
+     "name": "SALARZAI TEHSIL",
+     "area_km2": 220.0,
+     "population_2023": 316767,
+     "density": 1439.85,
+     "urban_pct": null,
+     "hh_size": 6.6,
+     "growth": 2.86
+    },
+    {
+     "name": "UTMAN KHEL TEHSIL",
+     "area_km2": 194.0,
+     "population_2023": 123719,
+     "density": 637.73,
+     "urban_pct": null,
+     "hh_size": 7.8,
+     "growth": 2.42
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "BANNU DISTRICT",
+   "area_km2": 1972.0,
+   "population_2023": 1357890,
+   "density": 688.59,
+   "urban_pct": 3.56,
+   "hh_size": 7.4,
+   "growth": 1.94,
+   "units": [
+    {
+     "name": "BAKKA KHEL TEHSIL",
+     "area_km2": 367.0,
+     "population_2023": 192797,
+     "density": 525.33,
+     "urban_pct": null,
+     "hh_size": 6.5,
+     "growth": 2.3
+    },
+    {
+     "name": "BANNU TEHSIL",
+     "area_km2": 228.0,
+     "population_2023": 644909,
+     "density": 2828.55,
+     "urban_pct": 7.5,
+     "hh_size": 7.2,
+     "growth": 2.28
+    },
+    {
+     "name": "DOMEL TEHSIL",
+     "area_km2": 425.0,
+     "population_2023": 224428,
+     "density": 528.07,
+     "urban_pct": null,
+     "hh_size": 9.3,
+     "growth": 1.2
+    },
+    {
+     "name": "KAKKI TEHSIL",
+     "area_km2": 66.0,
+     "population_2023": 92021,
+     "density": 1394.26,
+     "urban_pct": null,
+     "hh_size": 6.8,
+     "growth": 1.89
+    },
+    {
+     "name": "MERYAN TEHSIL",
+     "area_km2": 141.0,
+     "population_2023": 166473,
+     "density": 1180.66,
+     "urban_pct": null,
+     "hh_size": 7.6,
+     "growth": 2.43
+    },
+    {
+     "name": "WAZIR SUB-DIVISION",
+     "area_km2": 745.0,
+     "population_2023": 37262,
+     "density": 50.02,
+     "urban_pct": null,
+     "hh_size": 6.9,
+     "growth": -2.41
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "BATAGRAM DISTRICT",
+   "area_km2": 1301.0,
+   "population_2023": 554133,
+   "density": 425.93,
+   "urban_pct": 0.0,
+   "hh_size": 6.4,
+   "growth": 2.55,
+   "units": [
+    {
+     "name": "AI TEHSIL",
+     "area_km2": 804.0,
+     "population_2023": 218149,
+     "density": 271.33,
+     "urban_pct": null,
+     "hh_size": 6.2,
+     "growth": 3.22
+    },
+    {
+     "name": "BATAGRAM TEHSIL",
+     "area_km2": 497.0,
+     "population_2023": 335984,
+     "density": 676.02,
+     "urban_pct": null,
+     "hh_size": 6.5,
+     "growth": 2.13
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "BUNER DISTRICT",
+   "area_km2": 1865.0,
+   "population_2023": 1016869,
+   "density": 545.24,
+   "urban_pct": 0.0,
+   "hh_size": 8.5,
+   "growth": 2.15,
+   "units": [
+    {
+     "name": "CHAGHARZAI TEHSIL",
+     "area_km2": 218.0,
+     "population_2023": 125949,
+     "density": 577.75,
+     "urban_pct": null,
+     "hh_size": 8.7,
+     "growth": 2.4
+    },
+    {
+     "name": "DAGGAR TEHSIL",
+     "area_km2": 290.0,
+     "population_2023": 192776,
+     "density": 664.74,
+     "urban_pct": null,
+     "hh_size": 9.0,
+     "growth": 1.53
+    },
+    {
+     "name": "GADEZAI TEHSIL",
+     "area_km2": 472.0,
+     "population_2023": 197466,
+     "density": 418.36,
+     "urban_pct": null,
+     "hh_size": 9.2,
+     "growth": 1.68
+    },
+    {
+     "name": "GAGRA TEHSIL",
+     "area_km2": 217.0,
+     "population_2023": 179087,
+     "density": 825.29,
+     "urban_pct": null,
+     "hh_size": 9.2,
+     "growth": 1.83
+    },
+    {
+     "name": "KHADO KHEL TEHSIL",
+     "area_km2": 343.0,
+     "population_2023": 136560,
+     "density": 398.13,
+     "urban_pct": null,
+     "hh_size": 7.6,
+     "growth": 2.46
+    },
+    {
+     "name": "MANDANR TEHSIL",
+     "area_km2": 325.0,
+     "population_2023": 185031,
+     "density": 569.33,
+     "urban_pct": null,
+     "hh_size": 7.6,
+     "growth": 3.27
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "CHARSADDA DISTRICT",
+   "area_km2": 996.0,
+   "population_2023": 1835504,
+   "density": 1842.88,
+   "urban_pct": 15.93,
+   "hh_size": 6.9,
+   "growth": 2.2,
+   "units": [
+    {
+     "name": "CHARSADDA TEHSIL",
+     "area_km2": 445.0,
+     "population_2023": 909438,
+     "density": 2043.68,
+     "urban_pct": 16.98,
+     "hh_size": 7.0,
+     "growth": 1.96
+    },
+    {
+     "name": "SHABQADAR TEHSIL",
+     "area_km2": 204.0,
+     "population_2023": 440524,
+     "density": 2159.43,
+     "urban_pct": 23.23,
+     "hh_size": 6.9,
+     "growth": 2.5
+    },
+    {
+     "name": "TANGI TEHSIL",
+     "area_km2": 347.0,
+     "population_2023": 485542,
+     "density": 1399.26,
+     "urban_pct": 7.34,
+     "hh_size": 6.8,
+     "growth": 2.4
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "DERA ISMAIL KHAN DISTRICT",
+   "area_km2": 9334.0,
+   "population_2023": 1829811,
+   "density": 196.04,
+   "urban_pct": 20.48,
+   "hh_size": 6.7,
+   "growth": 1.3,
+   "units": [
+    {
+     "name": "DARABAN TEHSIL",
+     "area_km2": 1540.0,
+     "population_2023": 149447,
+     "density": 97.04,
+     "urban_pct": null,
+     "hh_size": 7.7,
+     "growth": 3.12
+    },
+    {
+     "name": "DERA ISMAIL KHAN TEHSIL",
+     "area_km2": 1167.0,
+     "population_2023": 767979,
+     "density": 658.08,
+     "urban_pct": 28.72,
+     "hh_size": 6.5,
+     "growth": 0.84
+    },
+    {
+     "name": "DRAZANDA SUB-DIVISION",
+     "area_km2": 2008.0,
+     "population_2023": 82386,
+     "density": 41.03,
+     "urban_pct": null,
+     "hh_size": 8.4,
+     "growth": 3.13
+    },
+    {
+     "name": "KULACHI TEHSIL",
+     "area_km2": 1229.0,
+     "population_2023": 102595,
+     "density": 83.48,
+     "urban_pct": 23.86,
+     "hh_size": 6.3,
+     "growth": 0.11
+    },
+    {
+     "name": "PAHARPUR TEHSIL",
+     "area_km2": 1657.0,
+     "population_2023": 406467,
+     "density": 245.3,
+     "urban_pct": 21.58,
+     "hh_size": 6.8,
+     "growth": 1.93
+    },
+    {
+     "name": "PAROA TEHSIL",
+     "area_km2": 1733.0,
+     "population_2023": 320937,
+     "density": 185.19,
+     "urban_pct": 13.09,
+     "hh_size": 6.5,
+     "growth": 0.82
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "HANGU DISTRICT",
+   "area_km2": 1097.0,
+   "population_2023": 528902,
+   "density": 482.13,
+   "urban_pct": 16.21,
+   "hh_size": 8.6,
+   "growth": 0.32,
+   "units": [
+    {
+     "name": "HANGU TEHSIL",
+     "area_km2": 669.0,
+     "population_2023": 280883,
+     "density": 419.86,
+     "urban_pct": 15.54,
+     "hh_size": 8.4,
+     "growth": 0.64
+    },
+    {
+     "name": "TALL TEHSIL",
+     "area_km2": 428.0,
+     "population_2023": 248019,
+     "density": 579.48,
+     "urban_pct": 16.97,
+     "hh_size": 8.9,
+     "growth": -0.03
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "HARIPUR DISTRICT",
+   "area_km2": 1725.0,
+   "population_2023": 1174783,
+   "density": 681.03,
+   "urban_pct": 12.58,
+   "hh_size": 6.1,
+   "growth": 2.7,
+   "units": [
+    {
+     "name": "GHAZI TEHSIL",
+     "area_km2": 595.0,
+     "population_2023": 151839,
+     "density": 255.19,
+     "urban_pct": null,
+     "hh_size": 5.7,
+     "growth": 0.78
+    },
+    {
+     "name": "HARIPUR TEHSIL",
+     "area_km2": 834.0,
+     "population_2023": 836058,
+     "density": 1002.47,
+     "urban_pct": 17.67,
+     "hh_size": 6.1,
+     "growth": 3.43
+    },
+    {
+     "name": "KHANPUR TEHSIL",
+     "area_km2": 296.0,
+     "population_2023": 186886,
+     "density": 631.37,
+     "urban_pct": null,
+     "hh_size": 6.0,
+     "growth": 1.28
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "KARAK DISTRICT",
+   "area_km2": 3371.0,
+   "population_2023": 815878,
+   "density": 242.03,
+   "urban_pct": 7.12,
+   "hh_size": 8.4,
+   "growth": 2.46,
+   "units": [
+    {
+     "name": "BANDA DAUD SHAH TEHSIL",
+     "area_km2": 1465.0,
+     "population_2023": 177744,
+     "density": 121.33,
+     "urban_pct": null,
+     "hh_size": 7.9,
+     "growth": 2.26
+    },
+    {
+     "name": "KARAK TEHSIL",
+     "area_km2": 1299.0,
+     "population_2023": 339983,
+     "density": 261.73,
+     "urban_pct": 17.08,
+     "hh_size": 8.5,
+     "growth": 2.53
+    },
+    {
+     "name": "TAKHT-E-NASRATI TEHSIL",
+     "area_km2": 607.0,
+     "population_2023": 298151,
+     "density": 491.19,
+     "urban_pct": null,
+     "hh_size": 8.8,
+     "growth": 2.51
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "KHYBER DISTRICT",
+   "area_km2": 2576.0,
+   "population_2023": 1146267,
+   "density": 444.98,
+   "urban_pct": 8.26,
+   "hh_size": 6.8,
+   "growth": 2.58,
+   "units": [
+    {
+     "name": "BARA TEHSIL",
+     "area_km2": 1430.0,
+     "population_2023": 548084,
+     "density": 383.28,
+     "urban_pct": null,
+     "hh_size": 7.1,
+     "growth": 3.6
+    },
+    {
+     "name": "JAMRUD TEHSIL",
+     "area_km2": 311.0,
+     "population_2023": 243290,
+     "density": 782.28,
+     "urban_pct": 23.28,
+     "hh_size": 6.5,
+     "growth": 1.12
+    },
+    {
+     "name": "LANDI KOTAL TEHSIL",
+     "area_km2": 679.0,
+     "population_2023": 312313,
+     "density": 459.96,
+     "urban_pct": 12.19,
+     "hh_size": 6.5,
+     "growth": 2.27
+    },
+    {
+     "name": "MULLA GORI TEHSIL",
+     "area_km2": 156.0,
+     "population_2023": 42580,
+     "density": 272.95,
+     "urban_pct": null,
+     "hh_size": 7.1,
+     "growth": 0.97
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "KOHAT DISTRICT",
+   "area_km2": 2991.0,
+   "population_2023": 1234661,
+   "density": 412.79,
+   "urban_pct": 22.58,
+   "hh_size": 7.2,
+   "growth": 1.78,
+   "units": [
+    {
+     "name": "DARRA ADAM KHEL SUB-DIVISION",
+     "area_km2": 446.0,
+     "population_2023": 139839,
+     "density": 313.54,
+     "urban_pct": null,
+     "hh_size": 7.7,
+     "growth": 2.76
+    },
+    {
+     "name": "GUMBAT TEHSIL",
+     "area_km2": 503.0,
+     "population_2023": 124530,
+     "density": 247.57,
+     "urban_pct": null,
+     "hh_size": 6.7,
+     "growth": 1.74
+    },
+    {
+     "name": "KOHAT TEHSIL",
+     "area_km2": 911.0,
+     "population_2023": 817610,
+     "density": 897.49,
+     "urban_pct": 28.85,
+     "hh_size": 7.3,
+     "growth": 1.76
+    },
+    {
+     "name": "LACHI TEHSIL",
+     "area_km2": 1131.0,
+     "population_2023": 152682,
+     "density": 135.0,
+     "urban_pct": 28.07,
+     "hh_size": 7.0,
+     "growth": 1.05
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "KOLAI PALAS KOHISTAN DISTRICT",
+   "area_km2": 1410.0,
+   "population_2023": 280162,
+   "density": 198.7,
+   "urban_pct": 0.0,
+   "hh_size": 6.9,
+   "growth": 0.32,
+   "units": [
+    {
+     "name": "BATTAIRA SUB-DIVISION",
+     "area_km2": 170.0,
+     "population_2023": 142660,
+     "density": 839.18,
+     "urban_pct": null,
+     "hh_size": 7.2,
+     "growth": 7.24
+    },
+    {
+     "name": "PALAS SUB-DIVISION",
+     "area_km2": 1240.0,
+     "population_2023": 137502,
+     "density": 110.89,
+     "urban_pct": null,
+     "hh_size": 6.6,
+     "growth": -4.49
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "KURRAM DISTRICT",
+   "area_km2": 3380.0,
+   "population_2023": 785434,
+   "density": 232.38,
+   "urban_pct": 5.79,
+   "hh_size": 8.3,
+   "growth": 4.16,
+   "units": [
+    {
+     "name": "CENTRAL KURRAM F.R TEHSIL",
+     "area_km2": 1470.0,
+     "population_2023": 358670,
+     "density": 243.99,
+     "urban_pct": null,
+     "hh_size": 8.7,
+     "growth": 7.79
+    },
+    {
+     "name": "LOWER KURRAM TEHSIL",
+     "area_km2": 940.0,
+     "population_2023": 150945,
+     "density": 160.58,
+     "urban_pct": 26.43,
+     "hh_size": 7.8,
+     "growth": 2.02
+    },
+    {
+     "name": "UPPER KURRAM TEHSIL",
+     "area_km2": 970.0,
+     "population_2023": 275819,
+     "density": 284.35,
+     "urban_pct": 2.02,
+     "hh_size": 8.0,
+     "growth": 1.49
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "LAKKI MARWAT DISTRICT",
+   "area_km2": 3296.0,
+   "population_2023": 1040856,
+   "density": 315.79,
+   "urban_pct": 9.9,
+   "hh_size": 7.8,
+   "growth": 2.42,
+   "units": [
+    {
+     "name": "BETTANI SUB-DIVISION",
+     "area_km2": 132.0,
+     "population_2023": 35571,
+     "density": 269.48,
+     "urban_pct": null,
+     "hh_size": 7.0,
+     "growth": 5.11
+    },
+    {
+     "name": "GHAZNI KHEL TEHSIL",
+     "area_km2": 1153.0,
+     "population_2023": 329775,
+     "density": 286.01,
+     "urban_pct": null,
+     "hh_size": 7.5,
+     "growth": 1.82
+    },
+    {
+     "name": "LAKKI MARWAT TEHSIL",
+     "area_km2": 1388.0,
+     "population_2023": 341693,
+     "density": 246.18,
+     "urban_pct": 20.71,
+     "hh_size": 7.5,
+     "growth": 3.21
+    },
+    {
+     "name": "SARAI NAURANG TEHSIL",
+     "area_km2": 623.0,
+     "population_2023": 333817,
+     "density": 535.82,
+     "urban_pct": 9.68,
+     "hh_size": 8.7,
+     "growth": 1.98
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "LOWER CHITRAL DISTRICT",
+   "area_km2": 6458.0,
+   "population_2023": 320407,
+   "density": 49.61,
+   "urban_pct": 17.84,
+   "hh_size": 6.9,
+   "growth": 2.38,
+   "units": [
+    {
+     "name": "CHITRAL SUB-DIVISION",
+     "area_km2": 6127.0,
+     "population_2023": 211374,
+     "density": 34.5,
+     "urban_pct": 27.04,
+     "hh_size": 6.9,
+     "growth": 2.42
+    },
+    {
+     "name": "DROSH SUB-DIVISION",
+     "area_km2": 331.0,
+     "population_2023": 109033,
+     "density": 329.4,
+     "urban_pct": null,
+     "hh_size": 6.9,
+     "growth": 2.3
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "LOWER DIR DISTRICT",
+   "area_km2": 1583.0,
+   "population_2023": 1650183,
+   "density": 1042.44,
+   "urban_pct": 2.9,
+   "hh_size": 8.1,
+   "growth": 2.35,
+   "units": [
+    {
+     "name": "ADENZAI SUB-DIVISION",
+     "area_km2": 372.0,
+     "population_2023": 378915,
+     "density": 1018.59,
+     "urban_pct": null,
+     "hh_size": 7.7,
+     "growth": 3.0
+    },
+    {
+     "name": "LAL QILA SUB-DIVISION",
+     "area_km2": 216.0,
+     "population_2023": 247381,
+     "density": 1145.28,
+     "urban_pct": null,
+     "hh_size": 8.5,
+     "growth": 2.01
+    },
+    {
+     "name": "SAMARBAGH SUB-DIVISION",
+     "area_km2": 419.0,
+     "population_2023": 427714,
+     "density": 1020.8,
+     "urban_pct": null,
+     "hh_size": 8.0,
+     "growth": 2.09
+    },
+    {
+     "name": "TEMERGARA SUB-DIVISION",
+     "area_km2": 576.0,
+     "population_2023": 596173,
+     "density": 1035.02,
+     "urban_pct": 8.03,
+     "hh_size": 8.3,
+     "growth": 2.28
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "LOWER KOHISTAN DISTRICT",
+   "area_km2": 642.0,
+   "population_2023": 340017,
+   "density": 529.62,
+   "urban_pct": 0.0,
+   "hh_size": 6.4,
+   "growth": 9.05,
+   "units": [
+    {
+     "name": "BANKAND RANOLIA TEHSIL",
+     "area_km2": 331.0,
+     "population_2023": 205851,
+     "density": 621.91,
+     "urban_pct": null,
+     "hh_size": 7.4,
+     "growth": 24.17
+    },
+    {
+     "name": "PATTAN SUB-DIVISION",
+     "area_km2": 311.0,
+     "population_2023": 134166,
+     "density": 431.4,
+     "urban_pct": null,
+     "hh_size": 5.4,
+     "growth": -1.42
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "MALAKAND DISTRICT",
+   "area_km2": 952.0,
+   "population_2023": 826250,
+   "density": 867.91,
+   "urban_pct": 8.9,
+   "hh_size": 7.3,
+   "growth": 2.38,
+   "units": [
+    {
+     "name": "SAM RANI ZAI SUB-DIVISION",
+     "area_km2": 280.0,
+     "population_2023": 353291,
+     "density": 1261.75,
+     "urban_pct": null,
+     "hh_size": 7.2,
+     "growth": 2.56
+    },
+    {
+     "name": "SWAT RANI ZAI SUB-DIVISION",
+     "area_km2": 672.0,
+     "population_2023": 472959,
+     "density": 703.81,
+     "urban_pct": 15.55,
+     "hh_size": 7.3,
+     "growth": 2.24
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "MANSEHRA DISTRICT",
+   "area_km2": 4125.0,
+   "population_2023": 1797177,
+   "density": 435.68,
+   "urban_pct": 8.62,
+   "hh_size": 6.1,
+   "growth": 2.44,
+   "units": [
+    {
+     "name": "BAFFA PAKHAL TEHSIL",
+     "area_km2": 640.0,
+     "population_2023": 460090,
+     "density": 718.89,
+     "urban_pct": 3.82,
+     "hh_size": 6.0,
+     "growth": 2.1
+    },
+    {
+     "name": "BALAKOT TEHSIL",
+     "area_km2": 2376.0,
+     "population_2023": 310339,
+     "density": 130.61,
+     "urban_pct": null,
+     "hh_size": 5.7,
+     "growth": 2.15
+    },
+    {
+     "name": "DARBAND TEHSIL",
+     "area_km2": 102.0,
+     "population_2023": 51702,
+     "density": 506.88,
+     "urban_pct": null,
+     "hh_size": 6.7,
+     "growth": 0.73
+    },
+    {
+     "name": "MANSEHRA TEHSIL",
+     "area_km2": 700.0,
+     "population_2023": 723325,
+     "density": 1033.32,
+     "urban_pct": 18.98,
+     "hh_size": 6.0,
+     "growth": 2.85
+    },
+    {
+     "name": "OGHI TEHSIL",
+     "area_km2": 307.0,
+     "population_2023": 251721,
+     "density": 819.94,
+     "urban_pct": null,
+     "hh_size": 6.7,
+     "growth": 2.63
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "MARDAN DISTRICT",
+   "area_km2": 1632.0,
+   "population_2023": 2744898,
+   "density": 1681.92,
+   "urban_pct": 16.52,
+   "hh_size": 6.8,
+   "growth": 2.46,
+   "units": [
+    {
+     "name": "GHARI KAPOORA TEHSIL",
+     "area_km2": 143.0,
+     "population_2023": 319465,
+     "density": 2234.02,
+     "urban_pct": null,
+     "hh_size": 6.5,
+     "growth": 3.09
+    },
+    {
+     "name": "KATLANG TEHSIL",
+     "area_km2": 422.0,
+     "population_2023": 377535,
+     "density": 894.63,
+     "urban_pct": null,
+     "hh_size": 7.4,
+     "growth": 2.99
+    },
+    {
+     "name": "MARDAN TEHSIL",
+     "area_km2": 335.0,
+     "population_2023": 1040893,
+     "density": 3107.14,
+     "urban_pct": 35.38,
+     "hh_size": 6.8,
+     "growth": 2.06
+    },
+    {
+     "name": "RUSTAM TEHSIL",
+     "area_km2": 379.0,
+     "population_2023": 279527,
+     "density": 737.54,
+     "urban_pct": null,
+     "hh_size": 6.8,
+     "growth": 2.45
+    },
+    {
+     "name": "TAKHT BHAI TEHSIL",
+     "area_km2": 353.0,
+     "population_2023": 727478,
+     "density": 2060.84,
+     "urban_pct": 11.69,
+     "hh_size": 6.7,
+     "growth": 2.51
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "MOHMAND DISTRICT",
+   "area_km2": 2296.0,
+   "population_2023": 553933,
+   "density": 241.26,
+   "urban_pct": 0.0,
+   "hh_size": 8.6,
+   "growth": 2.63,
+   "units": [
+    {
+     "name": "AMBAR UTMAN KHEL TEHSIL",
+     "area_km2": 273.0,
+     "population_2023": 79455,
+     "density": 291.04,
+     "urban_pct": null,
+     "hh_size": 7.9,
+     "growth": 4.25
+    },
+    {
+     "name": "HALIM ZAI TEHSIL",
+     "area_km2": 211.0,
+     "population_2023": 89149,
+     "density": 422.51,
+     "urban_pct": null,
+     "hh_size": 8.7,
+     "growth": 2.1
+    },
+    {
+     "name": "PINDIALI TEHSIL",
+     "area_km2": 454.0,
+     "population_2023": 112247,
+     "density": 247.24,
+     "urban_pct": null,
+     "hh_size": 8.4,
+     "growth": 3.82
+    },
+    {
+     "name": "PRANG GHAR TEHSIL",
+     "area_km2": 257.0,
+     "population_2023": 36046,
+     "density": 140.26,
+     "urban_pct": null,
+     "hh_size": 8.4,
+     "growth": -0.24
+    },
+    {
+     "name": "SAFI TEHSIL",
+     "area_km2": 322.0,
+     "population_2023": 109620,
+     "density": 340.43,
+     "urban_pct": null,
+     "hh_size": 10.4,
+     "growth": 1.8
+    },
+    {
+     "name": "UPPER MOHMAND TEHSIL",
+     "area_km2": 513.0,
+     "population_2023": 63659,
+     "density": 124.09,
+     "urban_pct": null,
+     "hh_size": 8.7,
+     "growth": 3.72
+    },
+    {
+     "name": "YAKE GHUND TEHSIL",
+     "area_km2": 266.0,
+     "population_2023": 63757,
+     "density": 239.69,
+     "urban_pct": null,
+     "hh_size": 7.6,
+     "growth": 1.67
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "NORTH WAZIRISTAN DISTRICT",
+   "area_km2": 4707.0,
+   "population_2023": 693332,
+   "density": 147.3,
+   "urban_pct": 0.6,
+   "hh_size": 6.9,
+   "growth": 4.25,
+   "units": [
+    {
+     "name": "DATTA KHEL TEHSIL",
+     "area_km2": 1807.0,
+     "population_2023": 92196,
+     "density": 51.02,
+     "urban_pct": null,
+     "hh_size": 6.2,
+     "growth": 3.51
+    },
+    {
+     "name": "DOSSALI TEHSIL",
+     "area_km2": 250.0,
+     "population_2023": 50524,
+     "density": 202.1,
+     "urban_pct": null,
+     "hh_size": 6.6,
+     "growth": 4.0
+    },
+    {
+     "name": "GHARYUM TEHSIL",
+     "area_km2": 320.0,
+     "population_2023": 18931,
+     "density": 59.16,
+     "urban_pct": null,
+     "hh_size": 9.5,
+     "growth": 8.2
+    },
+    {
+     "name": "GHULAM KHAN TEHSIL",
+     "area_km2": 191.0,
+     "population_2023": 31015,
+     "density": 162.38,
+     "urban_pct": null,
+     "hh_size": 9.8,
+     "growth": 2.33
+    },
+    {
+     "name": "MIR ALI TEHSIL",
+     "area_km2": 605.0,
+     "population_2023": 229647,
+     "density": 379.58,
+     "urban_pct": null,
+     "hh_size": 6.6,
+     "growth": 3.68
+    },
+    {
+     "name": "MIRAN SHAH TEHSIL",
+     "area_km2": 402.0,
+     "population_2023": 123317,
+     "density": 306.76,
+     "urban_pct": 3.35,
+     "hh_size": 6.4,
+     "growth": 3.45
+    },
+    {
+     "name": "RAZMAK TEHSIL",
+     "area_km2": 191.0,
+     "population_2023": 49367,
+     "density": 258.47,
+     "urban_pct": null,
+     "hh_size": 14.1,
+     "growth": 21.13
+    },
+    {
+     "name": "SHEWA TEHSIL",
+     "area_km2": 393.0,
+     "population_2023": 44126,
+     "density": 112.28,
+     "urban_pct": null,
+     "hh_size": 5.7,
+     "growth": 1.96
+    },
+    {
+     "name": "SPINWAM TEHSIL",
+     "area_km2": 548.0,
+     "population_2023": 54209,
+     "density": 98.92,
+     "urban_pct": null,
+     "hh_size": 7.1,
+     "growth": 2.72
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "NOWSHERA DISTRICT",
+   "area_km2": 1748.0,
+   "population_2023": 1740705,
+   "density": 995.83,
+   "urban_pct": 19.64,
+   "hh_size": 6.7,
+   "growth": 2.28,
+   "units": [
+    {
+     "name": "JEHANGIRA TEHSIL",
+     "area_km2": 718.0,
+     "population_2023": 434984,
+     "density": 605.83,
+     "urban_pct": 19.95,
+     "hh_size": 6.5,
+     "growth": 3.51
+    },
+    {
+     "name": "NOWSHERA TEHSIL",
+     "area_km2": 679.0,
+     "population_2023": 796226,
+     "density": 1172.65,
+     "urban_pct": 25.43,
+     "hh_size": 6.8,
+     "growth": 1.49
+    },
+    {
+     "name": "PABBI TEHSIL",
+     "area_km2": 351.0,
+     "population_2023": 509495,
+     "density": 1451.55,
+     "urban_pct": 10.34,
+     "hh_size": 6.5,
+     "growth": 2.54
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "ORAKZAI DISTRICT",
+   "area_km2": 1538.0,
+   "population_2023": 387561,
+   "density": 251.99,
+   "urban_pct": 0.0,
+   "hh_size": 7.4,
+   "growth": 7.3,
+   "units": [
+    {
+     "name": "CENTRAL TEHSIL",
+     "area_km2": 399.0,
+     "population_2023": 92819,
+     "density": 232.63,
+     "urban_pct": null,
+     "hh_size": 7.8,
+     "growth": 7.83
+    },
+    {
+     "name": "ISMAIL ZAI TEHSIL",
+     "area_km2": 275.0,
+     "population_2023": 39328,
+     "density": 143.01,
+     "urban_pct": null,
+     "hh_size": 7.0,
+     "growth": 8.63
+    },
+    {
+     "name": "LOWER TEHSIL",
+     "area_km2": 565.0,
+     "population_2023": 125944,
+     "density": 222.91,
+     "urban_pct": null,
+     "hh_size": 7.4,
+     "growth": 2.71
+    },
+    {
+     "name": "UPPER TEHSIL",
+     "area_km2": 299.0,
+     "population_2023": 129470,
+     "density": 433.01,
+     "urban_pct": null,
+     "hh_size": 7.2,
+     "growth": 12.53
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "PESHAWAR DISTRICT",
+   "area_km2": 1518.0,
+   "population_2023": 4758762,
+   "density": 3134.89,
+   "urban_pct": 40.05,
+   "hh_size": 6.8,
+   "growth": 1.58,
+   "units": [
+    {
+     "name": "BADHBER TEHSIL",
+     "area_km2": 357.0,
+     "population_2023": 439912,
+     "density": 1232.25,
+     "urban_pct": null,
+     "hh_size": 7.2,
+     "growth": 2.26
+    },
+    {
+     "name": "CHAM KANI TEHSIL",
+     "area_km2": 226.0,
+     "population_2023": 624354,
+     "density": 2762.63,
+     "urban_pct": null,
+     "hh_size": 6.3,
+     "growth": 5.19
+    },
+    {
+     "name": "HASSAN KHEL SUB-DIVISION",
+     "area_km2": 261.0,
+     "population_2023": 72557,
+     "density": 278.0,
+     "urban_pct": null,
+     "hh_size": 7.4,
+     "growth": 1.92
+    },
+    {
+     "name": "MATHRA TEHSIL",
+     "area_km2": 218.0,
+     "population_2023": 495059,
+     "density": 2270.91,
+     "urban_pct": null,
+     "hh_size": 7.2,
+     "growth": 3.28
+    },
+    {
+     "name": "PESHAWAR TEHSIL",
+     "area_km2": 176.0,
+     "population_2023": 2113596,
+     "density": 12009.07,
+     "urban_pct": 90.18,
+     "hh_size": 6.9,
+     "growth": -0.54
+    },
+    {
+     "name": "PISHTA KHARA TEHSIL",
+     "area_km2": 135.0,
+     "population_2023": 480436,
+     "density": 3558.79,
+     "urban_pct": null,
+     "hh_size": 6.7,
+     "growth": 2.81
+    },
+    {
+     "name": "SHAH ALAM TEHSIL",
+     "area_km2": 145.0,
+     "population_2023": 532848,
+     "density": 3674.81,
+     "urban_pct": null,
+     "hh_size": 6.8,
+     "growth": 3.97
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "SHANGLA DISTRICT",
+   "area_km2": 1586.0,
+   "population_2023": 891252,
+   "density": 561.95,
+   "urban_pct": 0.0,
+   "hh_size": 7.0,
+   "growth": 2.71,
+   "units": [
+    {
+     "name": "ALPURI TEHSIL",
+     "area_km2": 582.0,
+     "population_2023": 366772,
+     "density": 630.19,
+     "urban_pct": null,
+     "hh_size": 7.0,
+     "growth": 3.0
+    },
+    {
+     "name": "BISHAM TEHSIL",
+     "area_km2": 184.0,
+     "population_2023": 121279,
+     "density": 659.13,
+     "urban_pct": null,
+     "hh_size": 6.6,
+     "growth": 2.28
+    },
+    {
+     "name": "CHAKISAR TEHSIL",
+     "area_km2": 335.0,
+     "population_2023": 128238,
+     "density": 382.8,
+     "urban_pct": null,
+     "hh_size": 7.3,
+     "growth": 2.48
+    },
+    {
+     "name": "MARTUNG TEHSIL",
+     "area_km2": 188.0,
+     "population_2023": 103205,
+     "density": 548.96,
+     "urban_pct": null,
+     "hh_size": 8.5,
+     "growth": 2.27
+    },
+    {
+     "name": "PURAN TEHSIL",
+     "area_km2": 297.0,
+     "population_2023": 171758,
+     "density": 578.31,
+     "urban_pct": null,
+     "hh_size": 6.7,
+     "growth": 2.84
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "SOUTH WAZIRISTAN DISTRICT",
+   "area_km2": 6620.0,
+   "population_2023": 888675,
+   "density": 134.24,
+   "urban_pct": 0.0,
+   "hh_size": 4.9,
+   "growth": 4.7,
+   "units": [
+    {
+     "name": "BIRMIL TEHSIL",
+     "area_km2": 923.0,
+     "population_2023": 112757,
+     "density": 122.16,
+     "urban_pct": null,
+     "hh_size": 5.7,
+     "growth": 1.31
+    },
+    {
+     "name": "LADHA TEHSIL",
+     "area_km2": 289.0,
+     "population_2023": 108344,
+     "density": 374.89,
+     "urban_pct": null,
+     "hh_size": 4.5,
+     "growth": 5.67
+    },
+    {
+     "name": "MAKIN TEHSIL",
+     "area_km2": 404.0,
+     "population_2023": 66042,
+     "density": 163.47,
+     "urban_pct": null,
+     "hh_size": 4.9,
+     "growth": 2.0
+    },
+    {
+     "name": "SARAROGHA TEHSIL",
+     "area_km2": 813.0,
+     "population_2023": 145118,
+     "density": 178.5,
+     "urban_pct": null,
+     "hh_size": 4.5,
+     "growth": 6.75
+    },
+    {
+     "name": "SERWEKAI TEHSIL",
+     "area_km2": 398.0,
+     "population_2023": 58804,
+     "density": 147.75,
+     "urban_pct": null,
+     "hh_size": 4.7,
+     "growth": 1.27
+    },
+    {
+     "name": "SHAKTOI TEHSIL",
+     "area_km2": 177.0,
+     "population_2023": 44332,
+     "density": 250.46,
+     "urban_pct": null,
+     "hh_size": 5.0,
+     "growth": 5.08
+    },
+    {
+     "name": "TIARZA TEHSIL",
+     "area_km2": 734.0,
+     "population_2023": 65798,
+     "density": 89.64,
+     "urban_pct": null,
+     "hh_size": 4.4,
+     "growth": 6.49
+    },
+    {
+     "name": "TOI KHULLA TEHSIL",
+     "area_km2": 567.0,
+     "population_2023": 102835,
+     "density": 181.37,
+     "urban_pct": null,
+     "hh_size": 5.0,
+     "growth": 12.65
+    },
+    {
+     "name": "WANA TEHSIL",
+     "area_km2": 2315.0,
+     "population_2023": 184645,
+     "density": 79.76,
+     "urban_pct": null,
+     "hh_size": 5.5,
+     "growth": 3.17
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "SWABI DISTRICT",
+   "area_km2": 1543.0,
+   "population_2023": 1894600,
+   "density": 1227.87,
+   "urban_pct": 17.93,
+   "hh_size": 6.7,
+   "growth": 2.59,
+   "units": [
+    {
+     "name": "LAHOR TEHSIL",
+     "area_km2": 318.0,
+     "population_2023": 354383,
+     "density": 1114.41,
+     "urban_pct": 13.07,
+     "hh_size": 6.6,
+     "growth": 2.5
+    },
+    {
+     "name": "RAZAR TEHSIL",
+     "area_km2": 418.0,
+     "population_2023": 682303,
+     "density": 1632.3,
+     "urban_pct": 4.07,
+     "hh_size": 6.9,
+     "growth": 2.61
+    },
+    {
+     "name": "SWABI TEHSIL",
+     "area_km2": 389.0,
+     "population_2023": 475352,
+     "density": 1221.98,
+     "urban_pct": 40.12,
+     "hh_size": 7.0,
+     "growth": 2.66
+    },
+    {
+     "name": "TOPI TEHSIL",
+     "area_km2": 418.0,
+     "population_2023": 382562,
+     "density": 915.22,
+     "urban_pct": 19.57,
+     "hh_size": 6.4,
+     "growth": 2.58
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "SWAT DISTRICT",
+   "area_km2": 5337.0,
+   "population_2023": 2687384,
+   "density": 503.54,
+   "urban_pct": 29.56,
+   "hh_size": 7.0,
+   "growth": 2.57,
+   "units": [
+    {
+     "name": "BABUZAI TEHSIL",
+     "area_km2": 297.0,
+     "population_2023": 696697,
+     "density": 2345.78,
+     "urban_pct": 51.83,
+     "hh_size": 6.6,
+     "growth": 2.55
+    },
+    {
+     "name": "BARIKOT TEHSIL",
+     "area_km2": 419.0,
+     "population_2023": 220148,
+     "density": 525.41,
+     "urban_pct": 52.26,
+     "hh_size": 7.0,
+     "growth": 3.06
+    },
+    {
+     "name": "BEHRAIN TEHSIL",
+     "area_km2": 2899.0,
+     "population_2023": 270623,
+     "density": 93.35,
+     "urban_pct": 28.35,
+     "hh_size": 7.1,
+     "growth": 1.44
+    },
+    {
+     "name": "CHARBAGH TEHSIL",
+     "area_km2": 161.0,
+     "population_2023": 159358,
+     "density": 989.8,
+     "urban_pct": null,
+     "hh_size": 7.1,
+     "growth": 4.0
+    },
+    {
+     "name": "KABAL TEHSIL",
+     "area_km2": 485.0,
+     "population_2023": 480827,
+     "density": 991.4,
+     "urban_pct": 27.57,
+     "hh_size": 6.9,
+     "growth": 2.29
+    },
+    {
+     "name": "KHAWAZAKHELA TEHSIL",
+     "area_km2": 392.0,
+     "population_2023": 307300,
+     "density": 783.93,
+     "urban_pct": 18.59,
+     "hh_size": 7.2,
+     "growth": 2.47
+    },
+    {
+     "name": "MATTA TEHSIL",
+     "area_km2": 684.0,
+     "population_2023": 552431,
+     "density": 807.65,
+     "urban_pct": 9.38,
+     "hh_size": 7.5,
+     "growth": 2.9
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "TANK DISTRICT",
+   "area_km2": 2900.0,
+   "population_2023": 470293,
+   "density": 162.17,
+   "urban_pct": 10.46,
+   "hh_size": 6.6,
+   "growth": 1.63,
+   "units": [
+    {
+     "name": "JANDOLA SUB-DIVISION",
+     "area_km2": 1221.0,
+     "population_2023": 44794,
+     "density": 36.69,
+     "urban_pct": null,
+     "hh_size": 6.3,
+     "growth": 3.52
+    },
+    {
+     "name": "TANK TEHSIL",
+     "area_km2": 1679.0,
+     "population_2023": 425499,
+     "density": 253.42,
+     "urban_pct": 11.56,
+     "hh_size": 6.7,
+     "growth": 1.44
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "TORGHAR DISTRICT",
+   "area_km2": 454.0,
+   "population_2023": 200445,
+   "density": 441.51,
+   "urban_pct": 0.0,
+   "hh_size": 6.8,
+   "growth": 2.66,
+   "units": [
+    {
+     "name": "DAUR MERA TEHSIL",
+     "area_km2": 86.0,
+     "population_2023": 50503,
+     "density": 587.24,
+     "urban_pct": null,
+     "hh_size": 6.8,
+     "growth": 3.27
+    },
+    {
+     "name": "JUDBA TEHSIL",
+     "area_km2": 63.0,
+     "population_2023": 63083,
+     "density": 1001.32,
+     "urban_pct": null,
+     "hh_size": 7.4,
+     "growth": 1.49
+    },
+    {
+     "name": "KHANDER TEHSIL",
+     "area_km2": 305.0,
+     "population_2023": 86859,
+     "density": 284.78,
+     "urban_pct": null,
+     "hh_size": 6.4,
+     "growth": 3.2
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "UPPER CHITRAL DISTRICT",
+   "area_km2": 8392.0,
+   "population_2023": 195528,
+   "density": 23.3,
+   "urban_pct": 0.0,
+   "hh_size": 7.4,
+   "growth": 2.44,
+   "units": [
+    {
+     "name": "MASTUJ SUB-DIVISION",
+     "area_km2": 8392.0,
+     "population_2023": 195528,
+     "density": 23.3,
+     "urban_pct": null,
+     "hh_size": 7.4,
+     "growth": 2.44
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "UPPER DIR DISTRICT",
+   "area_km2": 3699.0,
+   "population_2023": 1083566,
+   "density": 292.93,
+   "urban_pct": 4.42,
+   "hh_size": 7.2,
+   "growth": 2.27,
+   "units": [
+    {
+     "name": "DIR SUB-DIVISION",
+     "area_km2": 1012.0,
+     "population_2023": 384667,
+     "density": 380.11,
+     "urban_pct": 12.44,
+     "hh_size": 7.5,
+     "growth": 2.34
+    },
+    {
+     "name": "LARJUM SUB-DIVISION",
+     "area_km2": 1039.0,
+     "population_2023": 119396,
+     "density": 114.91,
+     "urban_pct": null,
+     "hh_size": 7.2,
+     "growth": 2.25
+    },
+    {
+     "name": "SHARINGAL SUB-DIVISION",
+     "area_km2": 1140.0,
+     "population_2023": 210356,
+     "density": 184.52,
+     "urban_pct": null,
+     "hh_size": 6.8,
+     "growth": 2.16
+    },
+    {
+     "name": "WARI SUB-DIVISION",
+     "area_km2": 508.0,
+     "population_2023": 369147,
+     "density": 726.67,
+     "urban_pct": null,
+     "hh_size": 7.1,
+     "growth": 2.27
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "UPPER KOHISTAN DISTRICT",
+   "area_km2": 5440.0,
+   "population_2023": 422947,
+   "density": 77.75,
+   "urban_pct": 0.0,
+   "hh_size": 5.9,
+   "growth": 5.48,
+   "units": [
+    {
+     "name": "DASSU SUB-DIVISION",
+     "area_km2": 1958.0,
+     "population_2023": 148914,
+     "density": 76.05,
+     "urban_pct": null,
+     "hh_size": 5.8,
+     "growth": 3.06
+    },
+    {
+     "name": "HARBAN BHASHA TEHSIL",
+     "area_km2": 1298.0,
+     "population_2023": 49244,
+     "density": 37.94,
+     "urban_pct": null,
+     "hh_size": 6.8,
+     "growth": 7.19
+    },
+    {
+     "name": "KANDIA SUB-DIVISION",
+     "area_km2": 1926.0,
+     "population_2023": 165232,
+     "density": 85.79,
+     "urban_pct": null,
+     "hh_size": 5.9,
+     "growth": 12.0
+    },
+    {
+     "name": "SEO SUB-DIVISION",
+     "area_km2": 258.0,
+     "population_2023": 59557,
+     "density": 230.84,
+     "urban_pct": null,
+     "hh_size": 5.4,
+     "growth": -1.84
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  }
+ ],
+ "balochistan": [
+  {
+   "name": "AWARAN DISTRICT",
+   "area_km2": 29510.0,
+   "population_2023": 178958,
+   "density": 6.06,
+   "urban_pct": 26.17,
+   "hh_size": 6.4,
+   "growth": 6.64,
+   "units": [
+    {
+     "name": "AWARAN SUB-DIVISION",
+     "area_km2": 13075.0,
+     "population_2023": 45774,
+     "density": 3.5,
+     "urban_pct": 62.87,
+     "hh_size": 7.0,
+     "growth": 7.11
+    },
+    {
+     "name": "GISHKORE TEHSIL",
+     "area_km2": 4578.0,
+     "population_2023": 31462,
+     "density": 6.87,
+     "urban_pct": null,
+     "hh_size": 5.0,
+     "growth": 9.39
+    },
+    {
+     "name": "JHAL JAO TEHSIL",
+     "area_km2": 6381.0,
+     "population_2023": 28132,
+     "density": 4.41,
+     "urban_pct": null,
+     "hh_size": 7.0,
+     "growth": 4.6
+    },
+    {
+     "name": "KORAK JHAO TEHSIL",
+     "area_km2": 3058.0,
+     "population_2023": 27652,
+     "density": 9.04,
+     "urban_pct": null,
+     "hh_size": 6.5,
+     "growth": 6.93
+    },
+    {
+     "name": "MASHKAI TEHSIL",
+     "area_km2": 2418.0,
+     "population_2023": 45938,
+     "density": 19.0,
+     "urban_pct": 39.31,
+     "hh_size": 6.6,
+     "growth": 5.64
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "BARKHAN DISTRICT",
+   "area_km2": 3514.0,
+   "population_2023": 210249,
+   "density": 59.83,
+   "urban_pct": 6.86,
+   "hh_size": 9.1,
+   "growth": 3.51,
+   "units": [
+    {
+     "name": "BARKHAN TEHSIL",
+     "area_km2": 3514.0,
+     "population_2023": 210249,
+     "density": 59.83,
+     "urban_pct": 6.86,
+     "hh_size": 9.1,
+     "growth": 3.51
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "CHAGAI DISTRICT",
+   "area_km2": 44748.0,
+   "population_2023": 269192,
+   "density": 6.02,
+   "urban_pct": 7.45,
+   "hh_size": 7.0,
+   "growth": 2.93,
+   "units": [
+    {
+     "name": "CHAGAI TEHSIL",
+     "area_km2": 3975.0,
+     "population_2023": 73482,
+     "density": 18.49,
+     "urban_pct": null,
+     "hh_size": 6.6,
+     "growth": 3.96
+    },
+    {
+     "name": "DALBANDIN SUB-DIVISION",
+     "area_km2": 7791.0,
+     "population_2023": 122918,
+     "density": 15.78,
+     "urban_pct": 16.31,
+     "hh_size": 6.9,
+     "growth": 2.4
+    },
+    {
+     "name": "NOKUNDI TEHSIL",
+     "area_km2": 16092.0,
+     "population_2023": 30625,
+     "density": 1.9,
+     "urban_pct": null,
+     "hh_size": 9.7,
+     "growth": 5.46
+    },
+    {
+     "name": "TAFTAN SUB-DIVISION",
+     "area_km2": 9318.0,
+     "population_2023": 19259,
+     "density": 2.07,
+     "urban_pct": null,
+     "hh_size": 7.1,
+     "growth": 0.67
+    },
+    {
+     "name": "YAK MACHH SUB-TEHSIL",
+     "area_km2": 7572.0,
+     "population_2023": 22908,
+     "density": 3.03,
+     "urban_pct": null,
+     "hh_size": 6.2,
+     "growth": 1.61
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": false
+  },
+  {
+   "name": "CHAMAN DISTRICT",
+   "area_km2": 1341.0,
+   "population_2023": 466218,
+   "density": 347.66,
+   "urban_pct": 27.91,
+   "hh_size": 7.5,
+   "growth": 1.18,
+   "units": [
+    {
+     "name": "CHAMAN CITY SUB-DIVISION",
+     "area_km2": 22.0,
+     "population_2023": 130139,
+     "density": 5915.41,
+     "urban_pct": 100.0,
+     "hh_size": 6.8,
+     "growth": 0.92
+    },
+    {
+     "name": "CHAMAN SADDAR SUB-DIVISION",
+     "area_km2": 1319.0,
+     "population_2023": 336079,
+     "density": 254.8,
+     "urban_pct": null,
+     "hh_size": 7.8,
+     "growth": 1.29
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "DERA BUGTI DISTRICT",
+   "area_km2": 10160.0,
+   "population_2023": 355274,
+   "density": 34.97,
+   "urban_pct": 30.52,
+   "hh_size": 5.7,
+   "growth": 2.13,
+   "units": [
+    {
+     "name": "BAIKER SUB-TEHSIL",
+     "area_km2": 258.0,
+     "population_2023": 33410,
+     "density": 129.5,
+     "urban_pct": null,
+     "hh_size": 6.9,
+     "growth": 9.42
+    },
+    {
+     "name": "DERA BUGTI SUB-DIVISION",
+     "area_km2": 927.0,
+     "population_2023": 50943,
+     "density": 54.95,
+     "urban_pct": 56.69,
+     "hh_size": 5.3,
+     "growth": 0.85
+    },
+    {
+     "name": "LOTI SUB-TEHSIL",
+     "area_km2": 803.0,
+     "population_2023": 21711,
+     "density": 27.04,
+     "urban_pct": null,
+     "hh_size": 4.7,
+     "growth": 3.13
+    },
+    {
+     "name": "MALAM SUB-TEHSIL",
+     "area_km2": 957.0,
+     "population_2023": 33340,
+     "density": 34.84,
+     "urban_pct": null,
+     "hh_size": 7.5,
+     "growth": 3.42
+    },
+    {
+     "name": "PIR KOH SUB-TEHSIL",
+     "area_km2": 1619.0,
+     "population_2023": 44396,
+     "density": 27.42,
+     "urban_pct": null,
+     "hh_size": 5.2,
+     "growth": 1.49
+    },
+    {
+     "name": "QADIRABAD SUB-DIVISION",
+     "area_km2": 205.0,
+     "population_2023": 32226,
+     "density": 157.2,
+     "urban_pct": null,
+     "hh_size": 8.3,
+     "growth": 2.34
+    },
+    {
+     "name": "SANGSILLAH SUB-TEHSIL",
+     "area_km2": 1533.0,
+     "population_2023": 12523,
+     "density": 8.17,
+     "urban_pct": null,
+     "hh_size": 5.0,
+     "growth": 3.46
+    },
+    {
+     "name": "SUI SUB-DIVISION",
+     "area_km2": 3858.0,
+     "population_2023": 126725,
+     "density": 32.85,
+     "urban_pct": 62.79,
+     "hh_size": 5.2,
+     "growth": 0.78
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": false
+  },
+  {
+   "name": "DUKI DISTRICT",
+   "area_km2": 4233.0,
+   "population_2023": 205044,
+   "density": 48.44,
+   "urban_pct": 4.77,
+   "hh_size": 4.7,
+   "growth": 5.02,
+   "units": [
+    {
+     "name": "DUKI SUB-DIVISION",
+     "area_km2": 938.0,
+     "population_2023": 137294,
+     "density": 146.37,
+     "urban_pct": 7.13,
+     "hh_size": 5.1,
+     "growth": 5.33
+    },
+    {
+     "name": "LUNI SUB-DIVISION",
+     "area_km2": 553.0,
+     "population_2023": 13615,
+     "density": 24.62,
+     "urban_pct": null,
+     "hh_size": 4.6,
+     "growth": 4.88
+    },
+    {
+     "name": "TALAO SUB-TEHSIL",
+     "area_km2": 1697.0,
+     "population_2023": 21930,
+     "density": 12.92,
+     "urban_pct": null,
+     "hh_size": 4.1,
+     "growth": 3.21
+    },
+    {
+     "name": "THAL CHUTYALI SUB-DIVISION",
+     "area_km2": 1045.0,
+     "population_2023": 32205,
+     "density": 30.82,
+     "urban_pct": null,
+     "hh_size": 3.8,
+     "growth": 5.05
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": false
+  },
+  {
+   "name": "GWADAR DISTRICT",
+   "area_km2": 12637.0,
+   "population_2023": 305160,
+   "density": 24.15,
+   "urban_pct": 52.12,
+   "hh_size": 6.0,
+   "growth": 2.56,
+   "units": [
+    {
+     "name": "GWADAR SUB-DIVISION",
+     "area_km2": 2590.0,
+     "population_2023": 147673,
+     "density": 57.02,
+     "urban_pct": 47.98,
+     "hh_size": 6.0,
+     "growth": 1.18
+    },
+    {
+     "name": "JIWANI TEHSIL",
+     "area_km2": 454.0,
+     "population_2023": 35004,
+     "density": 77.1,
+     "urban_pct": 72.37,
+     "hh_size": 7.9,
+     "growth": 4.64
+    },
+    {
+     "name": "ORMARA TEHSIL",
+     "area_km2": 2796.0,
+     "population_2023": 27832,
+     "density": 9.95,
+     "urban_pct": 69.55,
+     "hh_size": 5.1,
+     "growth": 1.38
+    },
+    {
+     "name": "PASNI SUB-DIVISION",
+     "area_km2": 4822.0,
+     "population_2023": 74128,
+     "density": 15.37,
+     "urban_pct": 58.67,
+     "hh_size": 5.4,
+     "growth": 3.21
+    },
+    {
+     "name": "SUNTSER SUB-TEHSIL",
+     "area_km2": 1975.0,
+     "population_2023": 20523,
+     "density": 10.39,
+     "urban_pct": null,
+     "hh_size": 9.0,
+     "growth": 11.18
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": false
+  },
+  {
+   "name": "HARNAI DISTRICT",
+   "area_km2": 2492.0,
+   "population_2023": 127571,
+   "density": 51.19,
+   "urban_pct": 26.21,
+   "hh_size": 7.7,
+   "growth": 4.68,
+   "units": [
+    {
+     "name": "HARNAI SUB-DIVISION",
+     "area_km2": 259.0,
+     "population_2023": 82001,
+     "density": 316.61,
+     "urban_pct": 17.41,
+     "hh_size": 8.0,
+     "growth": 4.21
+    },
+    {
+     "name": "KHOAST SUB-DIVISION",
+     "area_km2": 1619.0,
+     "population_2023": 16565,
+     "density": 10.23,
+     "urban_pct": null,
+     "hh_size": 7.4,
+     "growth": 5.13
+    },
+    {
+     "name": "SHAHRIG TEHSIL",
+     "area_km2": 614.0,
+     "population_2023": 29005,
+     "density": 47.24,
+     "urban_pct": 66.04,
+     "hh_size": 7.2,
+     "growth": 5.79
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "JAFFARABAD DISTRICT",
+   "area_km2": 1643.0,
+   "population_2023": 594558,
+   "density": 361.87,
+   "urban_pct": 27.48,
+   "hh_size": 7.2,
+   "growth": 2.46,
+   "units": [
+    {
+     "name": "GANDAKHA TEHSIL",
+     "area_km2": 554.0,
+     "population_2023": 81190,
+     "density": 146.55,
+     "urban_pct": null,
+     "hh_size": 5.6,
+     "growth": 1.36
+    },
+    {
+     "name": "JHAT PAT SUB-DIVISION",
+     "area_km2": 690.0,
+     "population_2023": 302498,
+     "density": 438.4,
+     "urban_pct": 32.65,
+     "hh_size": 8.0,
+     "growth": 3.02
+    },
+    {
+     "name": "USTA MUHAMMAD SUB-DIVISION",
+     "area_km2": 399.0,
+     "population_2023": 210870,
+     "density": 528.5,
+     "urban_pct": 30.65,
+     "hh_size": 7.1,
+     "growth": 2.12
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "JHAL MAGSI DISTRICT",
+   "area_km2": 3615.0,
+   "population_2023": 203368,
+   "density": 56.26,
+   "urban_pct": 11.87,
+   "hh_size": 6.5,
+   "growth": 5.35,
+   "units": [
+    {
+     "name": "GANDAWA TEHSIL",
+     "area_km2": 1344.0,
+     "population_2023": 71230,
+     "density": 53.0,
+     "urban_pct": 33.88,
+     "hh_size": 6.4,
+     "growth": 5.68
+    },
+    {
+     "name": "JHAL MAGSI TEHSIL",
+     "area_km2": 1679.0,
+     "population_2023": 116528,
+     "density": 69.4,
+     "urban_pct": null,
+     "hh_size": 6.7,
+     "growth": 4.75
+    },
+    {
+     "name": "MIRPUR SUB-TEHSIL",
+     "area_km2": 592.0,
+     "population_2023": 15610,
+     "density": 26.37,
+     "urban_pct": null,
+     "hh_size": 5.8,
+     "growth": 8.77
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": false
+  },
+  {
+   "name": "KACHHI DISTRICT",
+   "area_km2": 5682.0,
+   "population_2023": 442674,
+   "density": 77.91,
+   "urban_pct": 18.17,
+   "hh_size": 8.8,
+   "growth": 6.25,
+   "units": [
+    {
+     "name": "BALANARI SUB-TEHSIL",
+     "area_km2": 402.0,
+     "population_2023": 60158,
+     "density": 149.65,
+     "urban_pct": null,
+     "hh_size": 9.2,
+     "growth": 5.63
+    },
+    {
+     "name": "BHAG SUB-DIVISION",
+     "area_km2": 1308.0,
+     "population_2023": 83687,
+     "density": 63.98,
+     "urban_pct": 22.27,
+     "hh_size": 5.1,
+     "growth": 2.66
+    },
+    {
+     "name": "DHADAR SUB-DIVISION",
+     "area_km2": 976.0,
+     "population_2023": 49836,
+     "density": 51.06,
+     "urban_pct": 34.67,
+     "hh_size": 6.9,
+     "growth": 2.74
+    },
+    {
+     "name": "KHATTAN SUB-TEHSIL",
+     "area_km2": 277.0,
+     "population_2023": 22900,
+     "density": 82.67,
+     "urban_pct": null,
+     "hh_size": 8.4,
+     "growth": 8.3
+    },
+    {
+     "name": "MACH SUB-DIVISION",
+     "area_km2": 708.0,
+     "population_2023": 75272,
+     "density": 106.32,
+     "urban_pct": 59.17,
+     "hh_size": 13.2,
+     "growth": 11.32
+    },
+    {
+     "name": "SANNI SUB-DIVISION",
+     "area_km2": 2011.0,
+     "population_2023": 150821,
+     "density": 75.0,
+     "urban_pct": null,
+     "hh_size": 13.0,
+     "growth": 7.67
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": false
+  },
+  {
+   "name": "KALAT DISTRICT",
+   "area_km2": 7654.0,
+   "population_2023": 271560,
+   "density": 35.48,
+   "urban_pct": 16.36,
+   "hh_size": 8.2,
+   "growth": 4.93,
+   "units": [
+    {
+     "name": "GAZG SUB-TEHSIL",
+     "area_km2": 1390.0,
+     "population_2023": 8286,
+     "density": 5.96,
+     "urban_pct": null,
+     "hh_size": 6.5,
+     "growth": 6.39
+    },
+    {
+     "name": "JOHAN SUB-TEHSIL",
+     "area_km2": 1328.0,
+     "population_2023": 15731,
+     "density": 11.85,
+     "urban_pct": null,
+     "hh_size": 6.3,
+     "growth": 6.64
+    },
+    {
+     "name": "KALAT SUB-DIVISION",
+     "area_km2": 3788.0,
+     "population_2023": 167405,
+     "density": 44.19,
+     "urban_pct": 26.55,
+     "hh_size": 8.3,
+     "growth": 5.51
+    },
+    {
+     "name": "MANGOCHAR SUB-DIVISION",
+     "area_km2": 1148.0,
+     "population_2023": 80138,
+     "density": 69.81,
+     "urban_pct": null,
+     "hh_size": 8.6,
+     "growth": 3.38
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": false
+  },
+  {
+   "name": "KECH DISTRICT",
+   "area_km2": 22539.0,
+   "population_2023": 1060931,
+   "density": 47.07,
+   "urban_pct": 36.44,
+   "hh_size": 4.1,
+   "growth": 2.65,
+   "units": [
+    {
+     "name": "BALNIGORE SUB-TEHSIL",
+     "area_km2": 1238.0,
+     "population_2023": 50404,
+     "density": 40.71,
+     "urban_pct": null,
+     "hh_size": 3.5,
+     "growth": 2.07
+    },
+    {
+     "name": "BULAIDA SUB-DIVISION",
+     "area_km2": 1997.0,
+     "population_2023": 107847,
+     "density": 54.0,
+     "urban_pct": 63.75,
+     "hh_size": 4.4,
+     "growth": 5.76
+    },
+    {
+     "name": "DASHT SUB-DIVISION",
+     "area_km2": 2486.0,
+     "population_2023": 90080,
+     "density": 36.23,
+     "urban_pct": null,
+     "hh_size": 4.2,
+     "growth": 2.78
+    },
+    {
+     "name": "HOSHAB SUB-TEHSIL",
+     "area_km2": 2213.0,
+     "population_2023": 66566,
+     "density": 30.08,
+     "urban_pct": null,
+     "hh_size": 3.9,
+     "growth": 3.9
+    },
+    {
+     "name": "MAND TEHSIL",
+     "area_km2": 1456.0,
+     "population_2023": 56772,
+     "density": 38.99,
+     "urban_pct": null,
+     "hh_size": 3.4,
+     "growth": 1.81
+    },
+    {
+     "name": "TUMP SUB-DIVISION",
+     "area_km2": 1945.0,
+     "population_2023": 147041,
+     "density": 75.6,
+     "urban_pct": 33.51,
+     "hh_size": 3.7,
+     "growth": 0.12
+    },
+    {
+     "name": "TURBAT SUB-DIVISION",
+     "area_km2": 9742.0,
+     "population_2023": 470605,
+     "density": 48.31,
+     "urban_pct": 57.08,
+     "hh_size": 4.6,
+     "growth": 2.06
+    },
+    {
+     "name": "ZAMORAN SUB-TEHSIL",
+     "area_km2": 1462.0,
+     "population_2023": 71616,
+     "density": 48.98,
+     "urban_pct": null,
+     "hh_size": 3.4,
+     "growth": 9.15
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": false
+  },
+  {
+   "name": "KHARAN DISTRICT",
+   "area_km2": 14958.0,
+   "population_2023": 260352,
+   "density": 17.41,
+   "urban_pct": 31.04,
+   "hh_size": 7.2,
+   "growth": 8.17,
+   "units": [
+    {
+     "name": "KHARAN SUB-DIVISION",
+     "area_km2": 2941.0,
+     "population_2023": 104035,
+     "density": 35.37,
+     "urban_pct": 77.67,
+     "hh_size": 7.4,
+     "growth": 7.78
+    },
+    {
+     "name": "PATKAIN SUB-TEHSIL",
+     "area_km2": 2131.0,
+     "population_2023": 20499,
+     "density": 9.62,
+     "urban_pct": null,
+     "hh_size": 5.7,
+     "growth": 3.7
+    },
+    {
+     "name": "SAR KHARAN SUB-DIVISION",
+     "area_km2": 3539.0,
+     "population_2023": 86015,
+     "density": 24.3,
+     "urban_pct": null,
+     "hh_size": 7.5,
+     "growth": 9.71
+    },
+    {
+     "name": "TOHMULK SUB-TEHSIL",
+     "area_km2": 6347.0,
+     "population_2023": 49803,
+     "density": 7.85,
+     "urban_pct": null,
+     "hh_size": 7.3,
+     "growth": 8.57
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": false
+  },
+  {
+   "name": "KHUZDAR DISTRICT",
+   "area_km2": 35380.0,
+   "population_2023": 997214,
+   "density": 28.19,
+   "urban_pct": 36.54,
+   "hh_size": 6.1,
+   "growth": 3.78,
+   "units": [
+    {
+     "name": "ARANJI SUB-TEHSIL",
+     "area_km2": 7456.0,
+     "population_2023": 50533,
+     "density": 6.78,
+     "urban_pct": null,
+     "hh_size": 5.0,
+     "growth": 3.01
+    },
+    {
+     "name": "GRESHA SUB-TEHSIL",
+     "area_km2": 2622.0,
+     "population_2023": 69665,
+     "density": 26.57,
+     "urban_pct": null,
+     "hh_size": 7.0,
+     "growth": 7.32
+    },
+    {
+     "name": "KARAKH SUB-DIVISION",
+     "area_km2": 1352.0,
+     "population_2023": 35990,
+     "density": 26.62,
+     "urban_pct": null,
+     "hh_size": 5.3,
+     "growth": 2.52
+    },
+    {
+     "name": "KHUZDAR SUB-DIVISION",
+     "area_km2": 6112.0,
+     "population_2023": 359358,
+     "density": 58.8,
+     "urban_pct": 60.69,
+     "hh_size": 6.6,
+     "growth": 3.09
+    },
+    {
+     "name": "MOOLA SUB-TEHSIL",
+     "area_km2": 3283.0,
+     "population_2023": 32689,
+     "density": 9.96,
+     "urban_pct": null,
+     "hh_size": 8.0,
+     "growth": 5.76
+    },
+    {
+     "name": "NAL SUB-DIVISION",
+     "area_km2": 1791.0,
+     "population_2023": 103631,
+     "density": 57.86,
+     "urban_pct": 46.78,
+     "hh_size": 6.7,
+     "growth": 3.32
+    },
+    {
+     "name": "ORNACH SUB-DIVISION",
+     "area_km2": 3368.0,
+     "population_2023": 41811,
+     "density": 12.41,
+     "urban_pct": null,
+     "hh_size": 3.2,
+     "growth": 1.8
+    },
+    {
+     "name": "SAROONA SUB-TEHSIL",
+     "area_km2": 3257.0,
+     "population_2023": 36380,
+     "density": 11.17,
+     "urban_pct": null,
+     "hh_size": 5.6,
+     "growth": 2.1
+    },
+    {
+     "name": "WADH SUB-DIVISION",
+     "area_km2": 2118.0,
+     "population_2023": 116229,
+     "density": 54.88,
+     "urban_pct": 23.12,
+     "hh_size": 5.3,
+     "growth": 2.53
+    },
+    {
+     "name": "ZEHRI SUB-DIVISION",
+     "area_km2": 4021.0,
+     "population_2023": 150928,
+     "density": 37.53,
+     "urban_pct": 46.98,
+     "hh_size": 7.6,
+     "growth": 6.77
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": false
+  },
+  {
+   "name": "KILLA ABDULLAH DISTRICT",
+   "area_km2": 3553.0,
+   "population_2023": 361971,
+   "density": 101.88,
+   "urban_pct": 9.78,
+   "hh_size": 5.3,
+   "growth": 1.88,
+   "units": [
+    {
+     "name": "DOBANDI SUB-TEHSIL",
+     "area_km2": 1604.0,
+     "population_2023": 69759,
+     "density": 43.49,
+     "urban_pct": null,
+     "hh_size": 5.3,
+     "growth": 2.06
+    },
+    {
+     "name": "GULISTAN SUB-DIVISION",
+     "area_km2": 1536.0,
+     "population_2023": 126474,
+     "density": 82.34,
+     "urban_pct": null,
+     "hh_size": 5.3,
+     "growth": 1.6
+    },
+    {
+     "name": "KILLA ABDULLAH SUB-DIVISION",
+     "area_km2": 413.0,
+     "population_2023": 165738,
+     "density": 401.3,
+     "urban_pct": 21.35,
+     "hh_size": 5.4,
+     "growth": 2.02
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": false
+  },
+  {
+   "name": "KILLA SAIFULLAH DISTRICT",
+   "area_km2": 6831.0,
+   "population_2023": 380200,
+   "density": 55.66,
+   "urban_pct": 16.88,
+   "hh_size": 5.4,
+   "growth": 1.74,
+   "units": [
+    {
+     "name": "BADINI SUB-TEHSIL",
+     "area_km2": 985.0,
+     "population_2023": 20640,
+     "density": 20.95,
+     "urban_pct": null,
+     "hh_size": 7.4,
+     "growth": 5.08
+    },
+    {
+     "name": "KAN MEHTARZAI SUB-TEHSIL",
+     "area_km2": 383.0,
+     "population_2023": 34298,
+     "density": 89.55,
+     "urban_pct": null,
+     "hh_size": 4.6,
+     "growth": 0.52
+    },
+    {
+     "name": "KILLA SAIFULLAH SUB-DIVISION",
+     "area_km2": 1103.0,
+     "population_2023": 152516,
+     "density": 138.27,
+     "urban_pct": 22.98,
+     "hh_size": 5.2,
+     "growth": 2.4
+    },
+    {
+     "name": "LOIBAND TEHSIL",
+     "area_km2": 972.0,
+     "population_2023": 29693,
+     "density": 30.55,
+     "urban_pct": null,
+     "hh_size": 5.8,
+     "growth": 1.01
+    },
+    {
+     "name": "MUSLIM BAGH TEHSIL",
+     "area_km2": 943.0,
+     "population_2023": 83795,
+     "density": 88.86,
+     "urban_pct": 34.77,
+     "hh_size": 5.9,
+     "growth": 1.05
+    },
+    {
+     "name": "SHINKI SUB-TEHSIL",
+     "area_km2": 2445.0,
+     "population_2023": 59258,
+     "density": 24.24,
+     "urban_pct": null,
+     "hh_size": 5.2,
+     "growth": 1.15
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": false
+  },
+  {
+   "name": "KOHLU DISTRICT",
+   "area_km2": 7610.0,
+   "population_2023": 260220,
+   "density": 34.19,
+   "urban_pct": 7.29,
+   "hh_size": 6.8,
+   "growth": 3.33,
+   "units": [
+    {
+     "name": "GRISANI SUB-TEHSIL",
+     "area_km2": 174.0,
+     "population_2023": 15246,
+     "density": 87.62,
+     "urban_pct": null,
+     "hh_size": 6.3,
+     "growth": -1.83
+    },
+    {
+     "name": "KAHAN SUB-DIVISION",
+     "area_km2": 3754.0,
+     "population_2023": 107840,
+     "density": 28.73,
+     "urban_pct": null,
+     "hh_size": 9.1,
+     "growth": 6.54
+    },
+    {
+     "name": "KOHLU SUB-DIVISION",
+     "area_km2": 231.0,
+     "population_2023": 48050,
+     "density": 208.01,
+     "urban_pct": 39.5,
+     "hh_size": 5.6,
+     "growth": 1.05
+    },
+    {
+     "name": "MAWAND SUB-DIVISION",
+     "area_km2": 2915.0,
+     "population_2023": 51635,
+     "density": 17.71,
+     "urban_pct": null,
+     "hh_size": 6.6,
+     "growth": 3.71
+    },
+    {
+     "name": "TAMBOO SUB-TEHSIL",
+     "area_km2": 536.0,
+     "population_2023": 37449,
+     "density": 69.87,
+     "urban_pct": null,
+     "hh_size": 4.9,
+     "growth": 0.47
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": false
+  },
+  {
+   "name": "LASBELA DISTRICT",
+   "area_km2": 15153.0,
+   "population_2023": 680977,
+   "density": 44.94,
+   "urban_pct": 48.55,
+   "hh_size": 5.8,
+   "growth": 2.83,
+   "units": [
+    {
+     "name": "BELA SUB-DIVISION",
+     "area_km2": 1527.0,
+     "population_2023": 129264,
+     "density": 84.65,
+     "urban_pct": 22.73,
+     "hh_size": 6.5,
+     "growth": 3.58
+    },
+    {
+     "name": "DUREJI SUB-DIVISION",
+     "area_km2": 2813.0,
+     "population_2023": 52236,
+     "density": 18.57,
+     "urban_pct": 30.03,
+     "hh_size": 5.2,
+     "growth": 2.32
+    },
+    {
+     "name": "GADDANI TEHSIL",
+     "area_km2": 419.0,
+     "population_2023": 29215,
+     "density": 69.73,
+     "urban_pct": 60.04,
+     "hh_size": 4.4,
+     "growth": 2.92
+    },
+    {
+     "name": "HUB SUB-DIVISION",
+     "area_km2": 868.0,
+     "population_2023": 233443,
+     "density": 268.94,
+     "urban_pct": 83.82,
+     "hh_size": 6.1,
+     "growth": 2.15
+    },
+    {
+     "name": "KANRAJ SUB-DIVISION",
+     "area_km2": 1190.0,
+     "population_2023": 15996,
+     "density": 13.44,
+     "urban_pct": null,
+     "hh_size": 5.8,
+     "growth": 4.36
+    },
+    {
+     "name": "LAKHRA TEHSIL",
+     "area_km2": 1954.0,
+     "population_2023": 46744,
+     "density": 23.92,
+     "urban_pct": null,
+     "hh_size": 6.3,
+     "growth": 4.71
+    },
+    {
+     "name": "LIARI SUB-TEHSIL",
+     "area_km2": 2010.0,
+     "population_2023": 17155,
+     "density": 8.53,
+     "urban_pct": null,
+     "hh_size": 6.6,
+     "growth": 6.56
+    },
+    {
+     "name": "SONMIANI/WINDER TEHSIL",
+     "area_km2": 2616.0,
+     "population_2023": 67991,
+     "density": 25.99,
+     "urban_pct": 51.84,
+     "hh_size": 4.7,
+     "growth": 1.01
+    },
+    {
+     "name": "UTHAL SUB-DIVISION",
+     "area_km2": 1756.0,
+     "population_2023": 88933,
+     "density": 50.65,
+     "urban_pct": 41.68,
+     "hh_size": 6.2,
+     "growth": 3.52
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": false
+  },
+  {
+   "name": "LORALAI DISTRICT",
+   "area_km2": 3785.0,
+   "population_2023": 272432,
+   "density": 71.98,
+   "urban_pct": 21.88,
+   "hh_size": 7.1,
+   "growth": 1.83,
+   "units": [
+    {
+     "name": "BORI SUB-DIVISION",
+     "area_km2": 2203.0,
+     "population_2023": 225642,
+     "density": 102.42,
+     "urban_pct": 26.41,
+     "hh_size": 7.2,
+     "growth": 1.73
+    },
+    {
+     "name": "MEKHTAR SUB-DIVISION",
+     "area_km2": 1582.0,
+     "population_2023": 46790,
+     "density": 29.58,
+     "urban_pct": null,
+     "hh_size": 6.6,
+     "growth": 2.29
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "MASTUNG DISTRICT",
+   "area_km2": 3308.0,
+   "population_2023": 313271,
+   "density": 94.7,
+   "urban_pct": 12.89,
+   "hh_size": 7.1,
+   "growth": 2.79,
+   "units": [
+    {
+     "name": "DASHT SUB-DIVISION",
+     "area_km2": 1047.0,
+     "population_2023": 67935,
+     "density": 64.89,
+     "urban_pct": null,
+     "hh_size": 6.6,
+     "growth": 0.8
+    },
+    {
+     "name": "KHAD KOCHA SUB-TEHSIL",
+     "area_km2": 640.0,
+     "population_2023": 46316,
+     "density": 72.37,
+     "urban_pct": null,
+     "hh_size": 7.7,
+     "growth": 2.98
+    },
+    {
+     "name": "KIRDGAP SUB-DIVISION",
+     "area_km2": 929.0,
+     "population_2023": 36701,
+     "density": 39.51,
+     "urban_pct": null,
+     "hh_size": 7.3,
+     "growth": 4.24
+    },
+    {
+     "name": "MASTUNG SUB-DIVISION",
+     "area_km2": 692.0,
+     "population_2023": 162319,
+     "density": 234.57,
+     "urban_pct": 24.87,
+     "hh_size": 7.2,
+     "growth": 3.33
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": false
+  },
+  {
+   "name": "MUSAKHEL DISTRICT",
+   "area_km2": 5728.0,
+   "population_2023": 182275,
+   "density": 31.82,
+   "urban_pct": 8.67,
+   "hh_size": 5.8,
+   "growth": 1.45,
+   "units": [
+    {
+     "name": "DRUG TEHSIL",
+     "area_km2": 301.0,
+     "population_2023": 21792,
+     "density": 72.4,
+     "urban_pct": null,
+     "hh_size": 4.5,
+     "growth": 0.44
+    },
+    {
+     "name": "KINGRI TEHSIL",
+     "area_km2": 3683.0,
+     "population_2023": 33618,
+     "density": 9.13,
+     "urban_pct": null,
+     "hh_size": 5.1,
+     "growth": 1.18
+    },
+    {
+     "name": "MUSAKHEL TEHSIL",
+     "area_km2": 658.0,
+     "population_2023": 49809,
+     "density": 75.7,
+     "urban_pct": 31.73,
+     "hh_size": 6.5,
+     "growth": 1.52
+    },
+    {
+     "name": "TIYAR ESSOT SUB-TEHSIL",
+     "area_km2": 299.0,
+     "population_2023": 10568,
+     "density": 35.34,
+     "urban_pct": null,
+     "hh_size": 6.1,
+     "growth": 2.49
+    },
+    {
+     "name": "TOISAR TEHSIL",
+     "area_km2": 539.0,
+     "population_2023": 56818,
+     "density": 105.41,
+     "urban_pct": null,
+     "hh_size": 6.7,
+     "growth": 1.87
+    },
+    {
+     "name": "ZIMRI PLASEEN SUB-TEHSIL",
+     "area_km2": 248.0,
+     "population_2023": 9670,
+     "density": 38.99,
+     "urban_pct": null,
+     "hh_size": 4.4,
+     "growth": 0.84
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": false
+  },
+  {
+   "name": "NASIRABAD DISTRICT",
+   "area_km2": 3387.0,
+   "population_2023": 563315,
+   "density": 166.32,
+   "urban_pct": 18.99,
+   "hh_size": 6.4,
+   "growth": 2.37,
+   "units": [
+    {
+     "name": "BABA KOT TEHSIL",
+     "area_km2": 967.0,
+     "population_2023": 53661,
+     "density": 55.49,
+     "urban_pct": null,
+     "hh_size": 6.1,
+     "growth": 2.82
+    },
+    {
+     "name": "CHATTAR SUB-DIVISION",
+     "area_km2": 961.0,
+     "population_2023": 32276,
+     "density": 33.59,
+     "urban_pct": null,
+     "hh_size": 5.4,
+     "growth": 3.73
+    },
+    {
+     "name": "DERA MURAD JAMALI SUB-DIVISION",
+     "area_km2": 281.0,
+     "population_2023": 265822,
+     "density": 945.99,
+     "urban_pct": 40.23,
+     "hh_size": 6.7,
+     "growth": 2.39
+    },
+    {
+     "name": "LANDHI TEHSIL",
+     "area_km2": 266.0,
+     "population_2023": 8638,
+     "density": 32.47,
+     "urban_pct": null,
+     "hh_size": 5.7,
+     "growth": 6.09
+    },
+    {
+     "name": "MIR HASSAN KHOSA TEHSIL",
+     "area_km2": 229.0,
+     "population_2023": 53400,
+     "density": 233.19,
+     "urban_pct": null,
+     "hh_size": 6.4,
+     "growth": 0.9
+    },
+    {
+     "name": "TAMBOO TEHSIL",
+     "area_km2": 683.0,
+     "population_2023": 149518,
+     "density": 218.91,
+     "urban_pct": null,
+     "hh_size": 6.3,
+     "growth": 2.24
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "NUSHKI DISTRICT",
+   "area_km2": 5797.0,
+   "population_2023": 207834,
+   "density": 35.85,
+   "urban_pct": 23.37,
+   "hh_size": 6.6,
+   "growth": 2.53,
+   "units": [
+    {
+     "name": "DAK SUB-TEHSIL",
+     "area_km2": 2066.0,
+     "population_2023": 16929,
+     "density": 8.19,
+     "urban_pct": null,
+     "hh_size": 6.0,
+     "growth": 0.81
+    },
+    {
+     "name": "NUSHKI SUB-DIVISION",
+     "area_km2": 3731.0,
+     "population_2023": 190905,
+     "density": 51.17,
+     "urban_pct": 25.44,
+     "hh_size": 6.7,
+     "growth": 2.7
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": false
+  },
+  {
+   "name": "PANJGUR DISTRICT",
+   "area_km2": 16891.0,
+   "population_2023": 509781,
+   "density": 30.18,
+   "urban_pct": 30.93,
+   "hh_size": 4.3,
+   "growth": 8.36,
+   "units": [
+    {
+     "name": "GICHK SUB-TEHSIL",
+     "area_km2": 8387.0,
+     "population_2023": 33578,
+     "density": 4.0,
+     "urban_pct": null,
+     "hh_size": 2.1,
+     "growth": 12.44
+    },
+    {
+     "name": "GOWARGO SUB-DIVISION",
+     "area_km2": 1471.0,
+     "population_2023": 31718,
+     "density": 21.56,
+     "urban_pct": null,
+     "hh_size": 3.5,
+     "growth": 11.74
+    },
+    {
+     "name": "JAHEEN PAROME TEHSIL",
+     "area_km2": 3378.0,
+     "population_2023": 31113,
+     "density": 9.21,
+     "urban_pct": null,
+     "hh_size": 4.7,
+     "growth": 5.02
+    },
+    {
+     "name": "KAG SUB-TEHSIL",
+     "area_km2": 710.0,
+     "population_2023": 21095,
+     "density": 29.71,
+     "urban_pct": null,
+     "hh_size": 2.9,
+     "growth": 9.16
+    },
+    {
+     "name": "PANJGUR SUB-DIVISION",
+     "area_km2": 2945.0,
+     "population_2023": 392277,
+     "density": 133.2,
+     "urban_pct": 40.2,
+     "hh_size": 4.9,
+     "growth": 8.06
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": false
+  },
+  {
+   "name": "PISHIN DISTRICT",
+   "area_km2": 6218.0,
+   "population_2023": 835482,
+   "density": 134.37,
+   "urban_pct": 29.18,
+   "hh_size": 5.6,
+   "growth": 2.12,
+   "units": [
+    {
+     "name": "BARSHORE TEHSIL",
+     "area_km2": 2288.0,
+     "population_2023": 141994,
+     "density": 62.06,
+     "urban_pct": null,
+     "hh_size": 7.0,
+     "growth": 5.8
+    },
+    {
+     "name": "BOSTAN TEHSIL",
+     "area_km2": 186.0,
+     "population_2023": 49721,
+     "density": 267.32,
+     "urban_pct": null,
+     "hh_size": 5.3,
+     "growth": 0.96
+    },
+    {
+     "name": "HURRAM ZAI SUB-DIVISION",
+     "area_km2": 418.0,
+     "population_2023": 147844,
+     "density": 353.69,
+     "urban_pct": 29.05,
+     "hh_size": 5.9,
+     "growth": 1.9
+    },
+    {
+     "name": "KAREZAT SUB-DIVISION",
+     "area_km2": 1240.0,
+     "population_2023": 59756,
+     "density": 48.19,
+     "urban_pct": 78.12,
+     "hh_size": 6.5,
+     "growth": -1.16
+    },
+    {
+     "name": "NANA SAHIB TEHSIL",
+     "area_km2": 804.0,
+     "population_2023": 45369,
+     "density": 56.43,
+     "urban_pct": null,
+     "hh_size": 5.9,
+     "growth": 8.08
+    },
+    {
+     "name": "PISHIN SUB-DIVISION",
+     "area_km2": 1199.0,
+     "population_2023": 325641,
+     "density": 271.59,
+     "urban_pct": 33.06,
+     "hh_size": 5.0,
+     "growth": 0.96
+    },
+    {
+     "name": "SARANAN TEHSIL",
+     "area_km2": 83.0,
+     "population_2023": 65157,
+     "density": 785.02,
+     "urban_pct": 71.38,
+     "hh_size": 5.6,
+     "growth": 2.47
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "QUETTA DISTRICT",
+   "area_km2": 3447.0,
+   "population_2023": 2595492,
+   "density": 752.97,
+   "urban_pct": 60.32,
+   "hh_size": 8.9,
+   "growth": 2.27,
+   "units": [
+    {
+     "name": "SUB-DIVISION CITY",
+     "area_km2": 558.0,
+     "population_2023": 1360600,
+     "density": 2438.35,
+     "urban_pct": 91.24,
+     "hh_size": 9.4,
+     "growth": 2.06
+    },
+    {
+     "name": "SUB-DIVISION KUCHLAK",
+     "area_km2": 180.0,
+     "population_2023": 310246,
+     "density": 1723.59,
+     "urban_pct": 16.38,
+     "hh_size": 8.3,
+     "growth": 2.92
+    },
+    {
+     "name": "SUB-DIVISION SADDAR TEHSIL",
+     "area_km2": 1283.0,
+     "population_2023": 330421,
+     "density": 257.54,
+     "urban_pct": 62.48,
+     "hh_size": 9.5,
+     "growth": 3.58
+    },
+    {
+     "name": "SUB-DIVISION SARIAB",
+     "area_km2": 221.0,
+     "population_2023": 572854,
+     "density": 2592.1,
+     "urban_pct": 11.68,
+     "hh_size": 8.2,
+     "growth": 1.72
+    },
+    {
+     "name": "SUB-TEHSIL PANJPAI",
+     "area_km2": 1205.0,
+     "population_2023": 21371,
+     "density": 17.74,
+     "urban_pct": null,
+     "hh_size": 6.2,
+     "growth": 1.97
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": false
+  },
+  {
+   "name": "SHERANI DISTRICT",
+   "area_km2": 4310.0,
+   "population_2023": 191687,
+   "density": 44.47,
+   "urban_pct": 0.0,
+   "hh_size": 5.3,
+   "growth": 3.84,
+   "units": [
+    {
+     "name": "SHERANI SUB-DIVISION",
+     "area_km2": 4310.0,
+     "population_2023": 191687,
+     "density": 44.47,
+     "urban_pct": null,
+     "hh_size": 5.3,
+     "growth": 3.84
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "SIBI DISTRICT",
+   "area_km2": 7121.0,
+   "population_2023": 224148,
+   "density": 31.48,
+   "urban_pct": 30.92,
+   "hh_size": 7.1,
+   "growth": 3.76,
+   "units": [
+    {
+     "name": "KOT MANDAI SUB-TEHSIL",
+     "area_km2": 1977.0,
+     "population_2023": 9748,
+     "density": 4.93,
+     "urban_pct": null,
+     "hh_size": 7.6,
+     "growth": 4.29
+    },
+    {
+     "name": "LEHRI SUB-DIVISION",
+     "area_km2": 1817.0,
+     "population_2023": 53999,
+     "density": 29.72,
+     "urban_pct": null,
+     "hh_size": 7.1,
+     "growth": 3.29
+    },
+    {
+     "name": "SANGAN SUB-TEHSIL",
+     "area_km2": 1378.0,
+     "population_2023": 5431,
+     "density": 3.94,
+     "urban_pct": null,
+     "hh_size": 14.2,
+     "growth": 12.63
+    },
+    {
+     "name": "SIBI SUB-DIVISION",
+     "area_km2": 1949.0,
+     "population_2023": 154970,
+     "density": 79.51,
+     "urban_pct": 44.72,
+     "hh_size": 7.0,
+     "growth": 3.66
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": false
+  },
+  {
+   "name": "SOHBATPUR DISTRICT",
+   "area_km2": 802.0,
+   "population_2023": 240106,
+   "density": 299.38,
+   "urban_pct": 6.13,
+   "hh_size": 7.1,
+   "growth": 3.06,
+   "units": [
+    {
+     "name": "FARIDABAD TEHSIL",
+     "area_km2": 137.0,
+     "population_2023": 68948,
+     "density": 503.27,
+     "urban_pct": null,
+     "hh_size": 7.4,
+     "growth": 2.87
+    },
+    {
+     "name": "HAIR DIN TEHSIL",
+     "area_km2": 73.0,
+     "population_2023": 16891,
+     "density": 231.38,
+     "urban_pct": null,
+     "hh_size": 6.6,
+     "growth": 3.25
+    },
+    {
+     "name": "MANJHIPUR TEHSIL",
+     "area_km2": 82.0,
+     "population_2023": 23624,
+     "density": 288.1,
+     "urban_pct": null,
+     "hh_size": 7.1,
+     "growth": 2.57
+    },
+    {
+     "name": "PANHWAR TEHSIL",
+     "area_km2": 99.0,
+     "population_2023": 47624,
+     "density": 481.05,
+     "urban_pct": null,
+     "hh_size": 6.1,
+     "growth": 3.22
+    },
+    {
+     "name": "SAEED MUHAMMAD KANRANI TEHSIL",
+     "area_km2": 77.0,
+     "population_2023": 18175,
+     "density": 236.04,
+     "urban_pct": null,
+     "hh_size": 7.3,
+     "growth": 3.08
+    },
+    {
+     "name": "SOHBATPUR SUB-DIVISION",
+     "area_km2": 334.0,
+     "population_2023": 64844,
+     "density": 194.14,
+     "urban_pct": 22.71,
+     "hh_size": 7.7,
+     "growth": 3.29
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "SURAB DISTRICT",
+   "area_km2": 762.0,
+   "population_2023": 279038,
+   "density": 366.19,
+   "urban_pct": 13.07,
+   "hh_size": 5.4,
+   "growth": 4.99,
+   "units": [
+    {
+     "name": "DASHT E GORAN SUB-DIVISION",
+     "area_km2": 215.0,
+     "population_2023": 27503,
+     "density": 127.92,
+     "urban_pct": null,
+     "hh_size": 8.3,
+     "growth": 23.88
+    },
+    {
+     "name": "GIDDER SUB-DIVISION",
+     "area_km2": 205.0,
+     "population_2023": 89631,
+     "density": 437.22,
+     "urban_pct": null,
+     "hh_size": 4.6,
+     "growth": 4.43
+    },
+    {
+     "name": "SHAHEED MEHARABAD ZEHRI SUB-DIVISION",
+     "area_km2": 109.0,
+     "population_2023": 66435,
+     "density": 609.5,
+     "urban_pct": null,
+     "hh_size": 5.0,
+     "growth": 4.94
+    },
+    {
+     "name": "SURAB SUB-DIVISION",
+     "area_km2": 233.0,
+     "population_2023": 95469,
+     "density": 409.74,
+     "urban_pct": 38.2,
+     "hh_size": 6.2,
+     "growth": 2.59
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  },
+  {
+   "name": "WASHUK DISTRICT",
+   "area_km2": 33093.0,
+   "population_2023": 302623,
+   "density": 9.14,
+   "urban_pct": 13.58,
+   "hh_size": 6.1,
+   "growth": 9.51,
+   "units": [
+    {
+     "name": "BESIMA SUB-DIVISION",
+     "area_km2": 6014.0,
+     "population_2023": 63368,
+     "density": 10.54,
+     "urban_pct": null,
+     "hh_size": 6.0,
+     "growth": 7.87
+    },
+    {
+     "name": "MASHKHEL SUB-DIVISION",
+     "area_km2": 11663.0,
+     "population_2023": 67142,
+     "density": 5.76,
+     "urban_pct": null,
+     "hh_size": 5.2,
+     "growth": 9.68
+    },
+    {
+     "name": "NAG SUB-TEHSIL",
+     "area_km2": 4338.0,
+     "population_2023": 57467,
+     "density": 13.25,
+     "urban_pct": null,
+     "hh_size": 5.9,
+     "growth": 8.91
+    },
+    {
+     "name": "SHAHOO GARHI SUB-TEHSIL",
+     "area_km2": 3584.0,
+     "population_2023": 59061,
+     "density": 16.48,
+     "urban_pct": null,
+     "hh_size": 9.5,
+     "growth": 13.59
+    },
+    {
+     "name": "WASHUK SUB-DIVISION",
+     "area_km2": 7494.0,
+     "population_2023": 55585,
+     "density": 7.42,
+     "urban_pct": 73.95,
+     "hh_size": 5.7,
+     "growth": 8.15
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": false
+  },
+  {
+   "name": "ZHOB DISTRICT",
+   "area_km2": 15987.0,
+   "population_2023": 355692,
+   "density": 22.25,
+   "urban_pct": 13.21,
+   "hh_size": 7.4,
+   "growth": 2.3,
+   "units": [
+    {
+     "name": "ASHWAT SUB-TEHSIL",
+     "area_km2": 901.0,
+     "population_2023": 25094,
+     "density": 27.85,
+     "urban_pct": null,
+     "hh_size": 8.4,
+     "growth": 3.21
+    },
+    {
+     "name": "KAKAR KHURASAN SUB-DIVISION",
+     "area_km2": 1286.0,
+     "population_2023": 15018,
+     "density": 11.68,
+     "urban_pct": null,
+     "hh_size": 5.4,
+     "growth": 1.39
+    },
+    {
+     "name": "KASHATOO SUB-TEHSIL",
+     "area_km2": 1590.0,
+     "population_2023": 5810,
+     "density": 3.65,
+     "urban_pct": null,
+     "hh_size": 7.4,
+     "growth": 1.92
+    },
+    {
+     "name": "SAMBAZA SUB-TEHSIL",
+     "area_km2": 2888.0,
+     "population_2023": 25150,
+     "density": 8.71,
+     "urban_pct": null,
+     "hh_size": 9.9,
+     "growth": 6.28
+    },
+    {
+     "name": "ZHOB SUB-DIVISION",
+     "area_km2": 9322.0,
+     "population_2023": 284620,
+     "density": 30.53,
+     "urban_pct": 16.5,
+     "hh_size": 7.3,
+     "growth": 1.98
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": false
+  },
+  {
+   "name": "ZIARAT DISTRICT",
+   "area_km2": 3301.0,
+   "population_2023": 189535,
+   "density": 57.42,
+   "urban_pct": 26.06,
+   "hh_size": 8.2,
+   "growth": 2.86,
+   "units": [
+    {
+     "name": "SINJAWI SUB-DIVISION",
+     "area_km2": 1812.0,
+     "population_2023": 110623,
+     "density": 61.05,
+     "urban_pct": 41.17,
+     "hh_size": 9.1,
+     "growth": 3.04
+    },
+    {
+     "name": "ZIARAT SUB-DIVISION",
+     "area_km2": 1489.0,
+     "population_2023": 78912,
+     "density": 53.0,
+     "urban_pct": 4.9,
+     "hh_size": 7.2,
+     "growth": 2.62
+    }
+   ],
+   "check_all": true,
+   "check_tehsil_only": true
+  }
+ ]
+}
