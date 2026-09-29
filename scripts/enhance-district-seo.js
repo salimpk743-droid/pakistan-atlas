@@ -114,6 +114,8 @@ function sourcesBlock(info) {
   const items = [];
   const push = (url, label) => { if (url && !items.some((x) => x[0] === url)) items.push([url, label]); };
   const t = d.census_tables_2023 || {};
+  const os = d.official_stats;
+  if (os) { push(os.source_url, os.source_label); for (const x of os.sources || []) push(x.url, `${x.publisher}${x.title ? `: ${x.title}` : ""}${x.date ? ` (${x.date})` : ""}`); }
   push(t.table1 || d.population_source_url || (d.census_2023_row || d.census_2023_rows)?.source_url, "Pakistan Bureau of Statistics, Census 2023, Table 1: area, population, density, urban share, household size and growth by district and tehsil");
   if (d.urban_localities_2023) push(t.table2, "Pakistan Bureau of Statistics, Census 2023, Table 2: urban localities by population size");
   push(t.table11, "Pakistan Bureau of Statistics, Census 2023, Table 11: population by mother tongue");
@@ -130,7 +132,7 @@ function sourcesBlock(info) {
     <ol>
       ${items.map(([u, t]) => `<li><a href="${L.esc(u)}" rel="noopener">${L.esc(t)}</a></li>`).join("\n      ")}
     </ol>
-    ${d.last_verified || d.profile_checked ? `<p class="meta">Census figures checked against the PBS tables on ${L.esc(d.last_verified || d.profile_checked)}.</p>` : ""}
+    ${os && d.profile_checked ? `<p class="meta">Figures checked against the official sources listed above on ${L.esc(d.profile_checked)}.</p>` : d.last_verified || d.profile_checked ? `<p class="meta">Census figures checked against the PBS tables on ${L.esc(d.last_verified || d.profile_checked)}.</p>` : ""}
   </div></section>
   ${SRC_END}`;
 }
@@ -138,6 +140,7 @@ function quickAnswers(info, wrap) {
   const { district: d, provinceId, province } = info;
   const name = L.districtLabel(d);
   const rows = [];
+  const os = d.official_stats;
   const add = (dt, dd) => { if (dd) rows.push(`<dt>${dt}</dt><dd>${dd}</dd>`); };
   const units = L.unitsOf(d);
   if (d.status_note) add("Status", L.esc(d.status_note));
@@ -165,6 +168,8 @@ function quickAnswers(info, wrap) {
     const tongues = mainTongues(d);
     if (tongues) add("Main mother tongues", tongues);
   }
+  // Areas outside the PBS district tables (AJK, Gilgit-Baltistan): figures from the official statistics named in official_stats.
+  if (os) for (const [dt, dd] of os.rows || []) add(L.esc(dt), L.esc(dd));
   if (d.census_2023_row) {
     const r = d.census_2023_row;
     const parent = L.districtIndex.get(r.parent)?.district;
@@ -214,10 +219,12 @@ function quickAnswers(info, wrap) {
     ? `\n      <p class="meta">Source: <a href="${L.esc(d.population_source_url)}" rel="noopener">Pakistan Bureau of Statistics, Census 2023, Table 1</a>. Checked ${L.esc(d.last_verified || "")}.</p>`
     : (d.census_2023_row || d.census_2023_rows)?.source_url
       ? `\n      <p class="meta">Source: <a href="${L.esc((d.census_2023_row || d.census_2023_rows).source_url)}" rel="noopener">Pakistan Bureau of Statistics, Census 2023, Table 1</a>.</p>`
-      : "";
+      : os && os.source_url
+        ? `\n      <p class="meta">Source: <a href="${L.esc(os.source_url)}" rel="noopener">${L.esc(os.source_label)}</a>.</p>`
+        : "";
   const admin = (d.admin_sources || []).map((x) => `<a href="${L.esc(x.url)}" rel="noopener">${L.esc(x.publisher)}${x.date ? `, ${L.esc(x.date)}` : ""}</a>`).join("; ");
   const adminLine = admin ? `\n      <p class="meta">Administrative status: ${admin}.</p>` : "";
-  const leadText = lead(info);
+  const leadText = lead(info) || (os && os.lead ? L.esc(os.lead) : "");
   const inner = `<h2 id="district-search-answers">${L.esc(name)}: Quick Answers</h2>${leadText ? `
       <p class="lead-answer">${leadText}</p>` : ""}
       <dl>
@@ -355,7 +362,7 @@ function enhance(html, info, hasCensusUse) {
   const proseOpen = PROSE_OPEN;
   const isTemplate = out.includes(proseOpen);
   const d = info.district;
-  const wantQa = isTemplate || stripped.hadQuickAnswers || d.population_2023 != null || L.unitsOf(d).length || d.census_2023_row || d.census_2023_rows || d.status_note || d.created;
+  const wantQa = isTemplate || stripped.hadQuickAnswers || d.population_2023 != null || L.unitsOf(d).length || d.census_2023_row || d.census_2023_rows || d.status_note || d.created || d.official_stats;
   if (wantQa) {
     if (isTemplate) {
       const i = out.indexOf(proseOpen) + proseOpen.length;

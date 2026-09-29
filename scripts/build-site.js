@@ -106,6 +106,10 @@ function districtMeta({ district: d, provinceId: pid, province }) {
     title = firstFit([`${d.name} Tehsil: Population & Proposed District Status`, `${d.name}: Population & Proposed District Status`], 60);
   } else if (d.created && d.population_2023 == null) {
     title = firstFit([`${label}, ${province.name}: New District (${year})`, `${label}: New District (${year}), ${provShort}`, `${label}: New District (${year})`], 60);
+  } else if ((pid === "gb" || pid === "ajk") && d.official_stats) {
+    title = firstFit(pid === "ajk"
+      ? [`${label}, ${provShort}: Tehsils, Population & Area`, `${label}: Tehsils, Population & Area`, `${d.name}: Tehsils, Population & Area`]
+      : [`${label}, ${provShort}: Population & Literacy (2023)`, `${label}: Population, Area & Literacy (2023)`, `${label}: Population & Literacy (2023)`], 60);
   } else if (n >= 2) {
     title = firstFit([`${label}: ${n} ${Noun}, Population & Area (2023)`, `${label}: ${n} ${Noun}, Population & Area`, `${d.name}: ${n} ${Noun}, Population & Area`], 60);
   } else if (d.population_2023 != null) {
@@ -178,6 +182,12 @@ function districtMeta({ district: d, provinceId: pid, province }) {
     const parent = L.districtIndex.get(r.parent)?.district;
     const lead = `${where}: new district${year ? ` (${year})` : ""}. In the 2023 census, ${r.name} ${(L.unitWord[r.type] || r.type).toLowerCase()} of ${parent ? L.districtLabel(parent) : r.parent} had ${fmtInt(r.population_2023)} people.`;
     cands.push(lead + hqPart, lead);
+  }
+  // AJK and Gilgit-Baltistan: the answer-first lead built from the official statistics shown on the page.
+  if (d.official_stats && d.official_stats.lead) {
+    for (const x of d.official_stats.desc || []) cands.push(x);
+    const sents = d.official_stats.lead.split(/(?<=\.) /);
+    for (let k = sents.length; k >= 1; k--) cands.push(sents.slice(0, k).join(" "), sents.slice(-k).join(" "));
   }
   // Unchecked legacy "about" text is not used in descriptions (see enhance-district-seo.js, profile_checked).
   const about = d.profile_checked || d.created || d.status ? String(d.about || "").trim() : "";
