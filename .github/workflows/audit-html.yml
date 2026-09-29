@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   audit:
@@ -16,6 +16,48 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Add AdSense meta tag to all HTML pages
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+
+          tag = '<meta name="google-adsense-account" content="ca-pub-3672700167787763">'
+
+          for path in Path('.').rglob('*.html'):
+              if any(part.startswith('.') for part in path.parts):
+                  continue
+              text = path.read_text(encoding='utf-8')
+              if re.search(r'<meta\\s+name=["\\']google-adsense-account["\\'][^>]*>', text, re.I):
+                  new = re.sub(
+                      r'<meta\\s+name=["\\']google-adsense-account["\\'][^>]*>',
+                      tag,
+                      text,
+                      count=1,
+                      flags=re.I,
+                  )
+              elif re.search(r'</head\\s*>', text, re.I):
+                  new = re.sub(r'</head\\s*>', f'  {tag}\\n</head>', text, count=1, flags=re.I)
+              else:
+                  continue
+              if new != text:
+                  path.write_text(new, encoding='utf-8')
+          PY
+
+      - name: Commit AdSense updates
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- '*.html'
+          if git diff --cached --quiet; then
+            echo "No AdSense HTML changes needed."
+          else
+            git commit -m "Add AdSense meta tag to all HTML pages"
+            git push
+          fi
 
       - name: Run HTML audit
         run: node scripts/audit-html.js
