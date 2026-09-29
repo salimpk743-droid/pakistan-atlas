@@ -2,6 +2,8 @@ const fs = require("fs");
 const path = require("path");
 
 const ROOT = path.resolve(__dirname, "..");
+// Alias pages that deliberately point rel=canonical at their main page (data/canonical.json).
+const CANONICAL_OVERRIDES = JSON.parse(fs.readFileSync(path.join(ROOT, "data", "canonical.json"), "utf8")).pages;
 const APP = fs.readFileSync(path.join(ROOT, "js", "app.js"), "utf8");
 const ALLOWED_NOINDEX = new Set([
   "404.html",
@@ -175,7 +177,8 @@ for (const file of htmlFiles) {
   if (descriptions.length === 0 || !descriptions[0]) report(file, "missing meta description");
   if (descriptions.length > 1) report(file, "duplicate meta descriptions", `${descriptions.length} found`);
   if (canonicals.length === 0) report(file, "missing canonical URL");
-  const selfUrl = file === "index.html" ? `${SITE}/` : `${SITE}/${file}`;
+  const override = CANONICAL_OVERRIDES[file];
+  const selfUrl = override ? `${SITE}/${override}` : file === "index.html" ? `${SITE}/` : `${SITE}/${file}`;
   if (canonicals.length && canonicals[0] !== selfUrl) report(file, "canonical does not point to the page itself", canonicals[0]);
   if (!noindex && (!html.includes("<!-- mb:header:start -->") || !html.includes("<!-- mb:footer:start -->"))) report(file, "static header/footer missing (run scripts/build-site.js)");
   if (!noindex) {
@@ -222,7 +225,7 @@ for (const file of htmlFiles) {
 }
 
 for (const [canonical, files] of canonicalGroups) {
-  if (files.length > 1) report(files.join(", "), "duplicate canonical URL", canonical);
+  if (files.filter((f) => !CANONICAL_OVERRIDES[f]).length > 1) report(files.join(", "), "duplicate canonical URL", canonical);
 }
 for (const [title, files] of titleGroups) {
   if (files.length > 1) report(files.join(", "), "duplicate page title", title);

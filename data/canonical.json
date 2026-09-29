@@ -1,0 +1,9 @@
+{
+  "_comment": "Pages kept live with all content whose rel=canonical points to the main page for the same place (near-identical content). scripts/generate-seo.js applies this map.",
+  "pages": {
+    "lower-chitral.html": "chitral-lower.html",
+    "upper-chitral.html": "chitral-upper.html",
+    "bajur.html": "bajaur.html",
+    "dgkhan.html": "dera-ghazi-khan.html"
+  }
+}
