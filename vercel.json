@@ -11,7 +11,7 @@
           "value": "punjab"
         }
       ],
-      "destination": "/punjab.html",
+      "destination": "https://mybook.pk/punjab.html",
       "permanent": true
     },
     {
@@ -23,7 +23,7 @@
           "value": "sindh"
         }
       ],
-      "destination": "/sindh.html",
+      "destination": "https://mybook.pk/sindh.html",
       "permanent": true
     },
     {
@@ -35,7 +35,7 @@
           "value": "kpk"
         }
       ],
-      "destination": "/khyber-pakhtunkhwa.html",
+      "destination": "https://mybook.pk/khyber-pakhtunkhwa.html",
       "permanent": true
     },
     {
@@ -47,7 +47,7 @@
           "value": "balochistan"
         }
       ],
-      "destination": "/balochistan.html",
+      "destination": "https://mybook.pk/balochistan.html",
       "permanent": true
     },
     {
@@ -59,7 +59,7 @@
           "value": "gb"
         }
       ],
-      "destination": "/gilgit-baltistan.html",
+      "destination": "https://mybook.pk/gilgit-baltistan.html",
       "permanent": true
     },
     {
@@ -71,7 +71,7 @@
           "value": "ajk"
         }
       ],
-      "destination": "/azad-kashmir.html",
+      "destination": "https://mybook.pk/azad-kashmir.html",
       "permanent": true
     },
     {
@@ -83,57 +83,133 @@
           "value": "ict"
         }
       ],
-      "destination": "/islamabad-capital-territory.html",
+      "destination": "https://mybook.pk/islamabad-capital-territory.html",
       "permanent": true
     },
     {
       "source": "/index.html",
-      "destination": "/",
+      "destination": "https://mybook.pk/",
       "permanent": true
     },
     {
       "source": "/bajur.html",
-      "destination": "/bajaur.html",
+      "destination": "https://mybook.pk/bajaur.html",
       "permanent": true
     },
     {
       "source": "/dgkhan.html",
-      "destination": "/dera-ghazi-khan.html",
+      "destination": "https://mybook.pk/dera-ghazi-khan.html",
       "permanent": true
     },
     {
       "source": "/dikhan.html",
-      "destination": "/dera-ismail-khan.html",
+      "destination": "https://mybook.pk/dera-ismail-khan.html",
       "permanent": true
     },
     {
       "source": "/rykhan.html",
-      "destination": "/rahim-yar-khan.html",
+      "destination": "https://mybook.pk/rahim-yar-khan.html",
       "permanent": true
     },
     {
       "source": "/nankana.html",
-      "destination": "/nankana-sahib.html",
+      "destination": "https://mybook.pk/nankana-sahib.html",
       "permanent": true
     },
     {
       "source": "/tts.html",
-      "destination": "/toba-tek-singh.html",
+      "destination": "https://mybook.pk/toba-tek-singh.html",
       "permanent": true
     },
     {
       "source": "/lakki.html",
-      "destination": "/lakki-marwat.html",
+      "destination": "https://mybook.pk/lakki-marwat.html",
+      "permanent": true
+    },
+    {
+      "source": "/nwa.html",
+      "destination": "https://mybook.pk/north-waziristan.html",
+      "permanent": true
+    },
+    {
+      "source": "/lower-chitral.html",
+      "destination": "https://mybook.pk/chitral-lower.html",
+      "permanent": true
+    },
+    {
+      "source": "/upper-chitral.html",
+      "destination": "https://mybook.pk/chitral-upper.html",
+      "permanent": true
+    },
+    {
+      "source": "/mandi-bahauddin.html",
+      "destination": "https://mybook.pk/mbdin.html",
+      "permanent": true
+    },
+    {
+      "source": "/districts-azad-kashmir.html",
+      "destination": "https://mybook.pk/districts-of-azad-kashmir.html",
+      "permanent": true
+    },
+    {
+      "source": "/districts-balochistan.html",
+      "destination": "https://mybook.pk/districts-of-balochistan.html",
+      "permanent": true
+    },
+    {
+      "source": "/districts-gilgit-baltistan.html",
+      "destination": "https://mybook.pk/districts-of-gilgit-baltistan.html",
+      "permanent": true
+    },
+    {
+      "source": "/districts-islamabad-capital-territory.html",
+      "destination": "https://mybook.pk/districts-of-islamabad-capital-territory.html",
+      "permanent": true
+    },
+    {
+      "source": "/districts-khyber-pakhtunkhwa.html",
+      "destination": "https://mybook.pk/districts-of-khyber-pakhtunkhwa.html",
+      "permanent": true
+    },
+    {
+      "source": "/districts-punjab.html",
+      "destination": "https://mybook.pk/districts-of-punjab.html",
+      "permanent": true
+    },
+    {
+      "source": "/districts-sindh.html",
+      "destination": "https://mybook.pk/districts-of-sindh.html",
+      "permanent": true
+    },
+    {
+      "source": "/districts-of-pakistan.html",
+      "destination": "https://mybook.pk/districts.html",
+      "permanent": true
+    },
+    {
+      "source": "/provinces-of-pakistan.html",
+      "destination": "https://mybook.pk/provinces.html",
       "permanent": true
     },
     {
       "source": "/current-affairs.html",
-      "destination": "/literature.html",
+      "destination": "https://mybook.pk/literature.html",
       "permanent": true
     },
     {
       "source": "/politics.html",
-      "destination": "/geography.html",
+      "destination": "https://mybook.pk/geography.html",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.mybook.pk"
+        }
+      ],
+      "destination": "https://mybook.pk/:path*",
       "permanent": true
     }
   ],
