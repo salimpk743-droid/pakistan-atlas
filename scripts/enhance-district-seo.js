@@ -15,6 +15,8 @@ const FAQ_END = "<!-- mb:faq:end -->";
 const SRC_START = "<!-- mb:sources:start -->";
 const SRC_END = "<!-- mb:sources:end -->";
 const PROSE_OPEN = '<div class="container prose">';
+const UR_START = "<!-- mb:urdu:start -->";
+const UR_END = "<!-- mb:urdu:end -->";
 
 function stripBlocks(html) {
   let out = html;
@@ -25,7 +27,7 @@ function stripBlocks(html) {
   const form2 = (a, b) => new RegExp(`${a}[\\s\\S]*?${b}\\n[ \\t]*`, "g");
   if (out.includes(QA_START)) hadQuickAnswers = true;
   out = out.replace(form1(QA_START, QA_END), PROSE_OPEN).replace(form2(QA_START, QA_END), "");
-  out = out.replace(form2(REL_START, REL_END), "").replace(form2(FAQ_START, FAQ_END), "").replace(form2(SRC_START, SRC_END), "");
+  out = out.replace(form2(REL_START, REL_END), "").replace(form2(FAQ_START, FAQ_END), "").replace(form2(SRC_START, SRC_END), "").replace(form2(UR_START, UR_END), "");
   // Legacy, unmarked generated blocks.
   out = out.replace(/\s*<section class="district-search-answers"[\s\S]*?<\/section>/g, () => { hadQuickAnswers = true; return ""; });
   out = out.replace(/\s*<section class="seo-related-reading"[\s\S]*?<\/section>/g, "");
@@ -120,6 +122,7 @@ function sourcesBlock(info) {
   const m = (d.tehsil_count_source || d.administrative_source || "").match(/^(.*) \((https?:[^)]+)\)$/);
   if (m) push(m[2], m[1]);
   for (const x of d.sources || []) push(x.url, `${x.publisher}${x.title ? `: ${x.title}` : ""}${x.date ? ` (${x.date})` : ""}`);
+  for (const x of (d.urdu && d.urdu.sources) || []) push(x.url, `${x.publisher}${x.title ? `: ${x.title}` : ""} (cited in the Urdu section)`);
   if (!items.length) return "";
   return `${SRC_START}
   <section class="district-sources" aria-labelledby="district-sources"><div class="container prose">
@@ -229,6 +232,69 @@ function quickAnswers(info, wrap) {
   return `${QA_START}\n    ${body}\n    ${QA_END}`;
 }
 
+
+// Urdu section for readers who do not read English. The census list is generated from the same PBS
+// figures as the English Quick Answers, so the two can never disagree; the hand-written blocks in
+// d.urdu.blocks carry only claims checked against the sources listed on the page (with inline links).
+const UR_PROVINCE = { ict: "اسلام آباد وفاقی دارالحکومتی علاقہ", punjab: "صوبہ پنجاب", kpk: "صوبہ خیبر پختونخوا", sindh: "صوبہ سندھ", balochistan: "صوبہ بلوچستان", gb: "گلگت بلتستان", ajk: "آزاد جموں و کشمیر" };
+const UR_LANG = { Pashto: "پشتو", Urdu: "اردو", Punjabi: "پنجابی", Sindhi: "سندھی", Balochi: "بلوچی", Saraiki: "سرائیکی", Brahui: "براہوی", Hindko: "ہندکو", Kohistani: "کوہستانی", Mewati: "میواتی", Shina: "شینا", Kalasha: "کالاشہ" };
+const UR_UNIT = { tehsil: "تحصیلیں", taluka: "تعلقے", "sub-division": "سب ڈویژن", "sub-tehsil": "سب تحصیلیں" };
+function urduSection(info) {
+  const { district: d, provinceId } = info;
+  const u = d.urdu;
+  if (!u || !u.name) return "";
+  const pct = (x) => `${L.fmtNum(x, 2)} فیصد`;
+  const li = [];
+  const units = L.unitsOf(d);
+  if (d.population_2023 != null) {
+    li.push(`<li><strong>آبادی:</strong> ${L.fmtInt(d.population_2023)}${d.population_2017 != null ? ` (2017 میں ${L.fmtInt(d.population_2017)})` : ""}</li>`);
+    if (d.area_km2 != null) li.push(`<li><strong>رقبہ:</strong> ${L.fmtInt(d.area_km2)} مربع کلومیٹر${d.density_2023 != null ? `، فی مربع کلومیٹر ${L.fmtNum(d.density_2023, 2)} افراد` : ""}</li>`);
+    if (d.urban_proportion_2023 != null) li.push(`<li><strong>شہری آبادی:</strong> ${pct(d.urban_proportion_2023)}</li>`);
+    if (d.growth_rate_2017_2023 != null) li.push(`<li><strong>سالانہ شرح اضافہ (2017 تا 2023):</strong> ${pct(d.growth_rate_2017_2023)}</li>`);
+    if (d.avg_household_size_2023 != null) li.push(`<li><strong>اوسط گھرانہ:</strong> ${L.fmtNum(d.avg_household_size_2023, 1)} افراد</li>`);
+    const lit = d.literacy_2023;
+    if (lit) li.push(`<li><strong>شرح خواندگی (10 سال اور زائد عمر):</strong> ${pct(lit.total)}${lit.male != null ? `؛ مرد ${pct(lit.male)}، خواتین ${pct(lit.female)}` : ""}</li>`);
+    const m = d.mother_tongue_2023;
+    if (m && m.main.length && m.main.every((t) => UR_LANG[t.language])) li.push(`<li><strong>مادری زبانیں:</strong> ${m.main.map((t) => `${UR_LANG[t.language]} ${pct(t.pct)}`).join("، ")}</li>`);
+    if (units.length) {
+      const word = d.tehsil_count ? UR_UNIT[L.unitType(d)] || "انتظامی اکائیاں" : "مردم شماری کی انتظامی اکائیاں";
+      li.push(`<li><strong>${word}:</strong> ${d.tehsil_count || units.length}</li>`);
+    }
+  }
+  const unitNames = u.units ? units.map((x) => u.units[x.name]) : [];
+  const unitList = units.length && unitNames.every(Boolean) ? `
+      <h3>${d.tehsil_count ? `${UR_UNIT[L.unitType(d)] || "انتظامی اکائیاں"} اور ان کی آبادی` : "انتظامی اکائیاں اور ان کی آبادی"} (2023)</h3>
+      <ul>
+        ${units.map((x, i) => `<li><strong>${unitNames[i]}:</strong> ${L.fmtInt(x.population_2023)}${x.literacy_2023 != null ? `؛ شرح خواندگی ${pct(x.literacy_2023)}` : ""}</li>`).join("\n        ")}
+      </ul>` : "";
+  const towns = u.towns ? (d.urban_localities_2023 || []).filter((x) => u.towns[x.name]).slice(0, 10) : [];
+  const townList = towns.length ? `
+      <h3>بڑے شہری مراکز (2023)</h3>
+      <ul>
+        ${towns.map((x) => `<li><strong>${u.towns[x.name]}:</strong> ${L.fmtInt(x.population_2023)}</li>`).join("\n        ")}
+      </ul>` : "";
+  const table1 = (d.census_tables_2023 || {}).table1 || d.population_source_url;
+  const intro = `<p><strong>ضلع ${L.esc(u.name)}</strong> ${UR_PROVINCE[provinceId]} کا ایک ضلع ہے${u.hq ? ` جس کا صدر مقام ${L.esc(u.hq)} ہے` : ""}۔${u.division ? ` یہ ${L.esc(u.division)} میں شامل ہے۔` : ""}</p>`;
+  const census = li.length ? `
+      <h3>2023 کی مردم شماری کے اعداد و شمار</h3>
+      <ul>
+        ${li.join("\n        ")}
+      </ul>${unitList}${townList}${u.census_note ? `
+      <p class="meta">${u.census_note}</p>` : ""}${table1 ? `
+      <p class="meta">ماخذ: <a href="${L.esc(table1)}" rel="noopener">پاکستان ادارۂ شماریات، ساتویں مردم شماری 2023</a> (جدول 1، 2، 11 اور 12)۔</p>` : ""}` : "";
+  const blocks = (u.blocks || []).map((b) => `
+      <h3>${b.h}</h3>${(b.p || []).map((p) => `
+      <p>${p}</p>`).join("")}${b.ul ? `
+      <ul>${b.ul.map((x) => `<li>${x}</li>`).join("")}</ul>` : ""}`).join("");
+  return `${UR_START}
+  <section class="district-urdu" lang="ur" dir="rtl" aria-labelledby="urdu-info"><div class="container prose">
+    <h2 id="urdu-info">اردو میں معلومات: ضلع ${L.esc(u.name)}</h2>
+      ${intro}${census}${blocks}
+      <p class="meta">اس حصے کی ہر بات صفحے پر دیے گئے ذرائع سے جانچی گئی ہے${u.checked ? ` (آخری جانچ: ${L.esc(u.checked)})` : ""}۔</p>
+  </div></section>
+  ${UR_END}`;
+}
+
 function relatedLinks(info) {
   const { district: d, provinceId, province } = info;
   const links = [];
@@ -298,6 +364,8 @@ function enhance(html, info, hasCensusUse) {
     }
   }
   // A hand-written FAQ already on the page wins (only one FAQ, and FAQPage schema reads the first).
+  const ur = urduSection(info);
+  if (ur) out = insertBefore(out, ur);
   const handFaq = /<h2[^>]*>(?:(?!<\/h2>)[\s\S])*?(?:\bFAQ\b|Frequently Asked Questions)/.test(out);
   const faq = handFaq ? "" : faqBlock(info);
   if (faq) out = insertBefore(out, faq);
