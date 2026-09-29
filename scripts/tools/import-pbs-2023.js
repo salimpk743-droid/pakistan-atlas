@@ -71,29 +71,54 @@ function unitOf(raw) {
 // Districts whose 2023 census boundaries have since changed (new districts carved out after the census).
 const laterSplits = {
   rawalpindi: ["murree"], chakwal: ["talagang"], gujranwala: ["wazirabad"], muzaffargarh: ["kotaddu"],
-  "dera-ghazi-khan": ["taunsa"], "dera-ismail-khan": ["paharpur"], battagram: ["allai"],
-  lasbela: ["hub"], jafarabad: ["usta-muhammad"], swat: ["bar-swat"]
+  "dera-ghazi-khan": ["taunsa"], "dera-ismail-khan": ["paharpur"],
+  lasbela: ["hub"], jafarabad: ["usta-muhammad"], swat: ["bar-swat"], pishin: ["barshore"]
 };
+// Allai is not counted as a district (announced, not notified), so Battagram's 2023 total is still current.
 // New districts: the PBS row of the tehsil/sub-division with the same name (a fact, not a district total).
 const successorRow = {
   murree: ["rawalpindi", "Murree"], talagang: ["chakwal", "Talagang"], wazirabad: ["gujranwala", "Wazirabad"],
   kotaddu: ["muzaffargarh", "Kot Addu"], taunsa: ["dera-ghazi-khan", "Taunsa"], paharpur: ["dera-ismail-khan", "Paharpur"],
-  allai: ["battagram", "Allai"], hub: ["lasbela", "Hub"], "usta-muhammad": ["jafarabad", "Usta Muhammad"]
+  allai: ["battagram", "Allai"], hub: ["lasbela", "Hub"], "usta-muhammad": ["jafarabad", "Usta Muhammad"],
+  barshore: ["pishin", "Barshore"], "north-dera-bugti": ["dera-bugti", "Baiker"], "south-dera-bugti": ["dera-bugti", "Dera Bugti"]
 };
-// Swat bifurcation notified 27 Jan 2026 (Dawn, 28 Jan 2026: https://www.dawn.com/news/1969386).
-const SWAT_SPLIT = {
-  source: "Khyber Pakhtunkhwa government notification of 27 January 2026, reported by Dawn on 28 January 2026",
-  url: "https://www.dawn.com/news/1969386",
-  swat: { hq: "Gulkada (Babuzai tehsil)", tehsils: ["Babuzai", "Kabal", "Charbagh", "Barikot"] },
-  "bar-swat": { hq: "Matta", tehsils: ["Matta", "Bahrain", "Khwazakhela"] }
+// New districts whose notified sub-divisions match several PBS 2023 rows, but whose boundaries were redrawn
+// (or include newly created units), so the rows are listed without a district total.
+const successorRows = {
+  "quetta-east": ["quetta", ["City", "Saddar", "Sariab"]],
+  "quetta-west": ["quetta", ["Kuchlak", "Panjpai"]],
+  wadh: ["khuzdar", ["Wadh", "Nal", "Ornach"]]
 };
+// Splits where the notified tehsils/sub-divisions map exactly onto PBS 2023 rows, so each successor's
+// 2023 total is the sum of its rows. Swat: KP notification of 27 Jan 2026 (Dawn, 28 Jan 2026).
+// Kech/Tump: Balochistan Revenue Department notification of 24 Feb 2026 (Baldiyat Times, 27 Feb 2026).
+const SPLITS = [
+  {
+    parent: "swat", prov: "kp", tehsilCount: true,
+    source: "Khyber Pakhtunkhwa government notification of 27 January 2026, reported by Dawn on 28 January 2026",
+    url: "https://www.dawn.com/news/1969386",
+    parts: {
+      swat: { hq: "Gulkada (Babuzai tehsil)", units: ["Babuzai", "Kabal", "Charbagh", "Barikot"] },
+      "bar-swat": { hq: "Matta", units: ["Matta", "Bahrain", "Khwazakhela"] }
+    }
+  },
+  {
+    parent: "kech", prov: "balochistan", tehsilCount: false,
+    source: "Balochistan Revenue Department notification of 24 February 2026, reported by Baldiyat Times on 27 February 2026",
+    url: "https://baldiyattimes.com/?p=61791",
+    parts: {
+      kech: { hq: "Turbat", units: ["Turbat", "Bulaida", "Dasht", "Zamoran", "Balnigore", "Hoshab"] },
+      tump: { hq: "Tump", units: ["Tump", "Mand"] }
+    }
+  }
+];
 
 const all = new Map();
 for (const [pid, data] of Object.entries(districts)) for (const d of data.districts) all.set(d.slug, d);
 
 const OWNED = ["population_2023", "area_km2", "density_2023", "urban_proportion_2023", "avg_household_size_2023",
   "growth_rate_2017_2023", "population_source", "population_source_url", "last_verified", "tehsils_2023",
-  "census_units_2023", "census_boundary_note", "census_2023_row", "tehsil_count", "tehsil_count_source", "administrative_source"];
+  "census_units_2023", "census_boundary_note", "census_2023_row", "census_2023_rows", "tehsil_count", "tehsil_count_source", "administrative_source"];
 
 const pbsBySlug = new Map();
 const unmatched = [];
@@ -125,13 +150,17 @@ for (const d of all.values()) {
       census_units_2023: units
     });
     const types = new Set(units.map((u) => u.type));
-    if (!laterSplits[d.slug] && types.size === 1 && ["tehsil", "taluka", "sub-division"].includes([...types][0]) && prov !== "balochistan") {
+    if (!laterSplits[d.slug] && !d.boundary_change_2026 && !d.status && types.size === 1 && ["tehsil", "taluka", "sub-division"].includes([...types][0]) && prov !== "balochistan") {
       d.tehsil_count = units.length;
       d.tehsil_count_source = "PBS 2023 census, Table 1";
     }
-    if (laterSplits[d.slug]) {
-      const kids = laterSplits[d.slug].map((s) => all.get(s)?.name || s);
-      d.census_boundary_note = `These figures are for ${d.name} District as enumerated in the 2023 census, before ${kids.join(" and ")} District was created from part of it, so the current district total is lower.`;
+    const changed = laterSplits[d.slug] || d.boundary_change_2026 || d.status === "former";
+    if (changed) {
+      d.census_boundary_note = d.status === "former"
+        ? `These figures are for the undivided ${d.name} District as enumerated in the 2023 census, before it was divided into ${d.successors.map((s) => all.get(s)?.name || s).join(" and ")}.`
+        : laterSplits[d.slug]
+          ? `These figures are for ${d.name} District as enumerated in the 2023 census, before ${laterSplits[d.slug].map((s) => all.get(s)?.name || s).join(" and ")} District was created from part of it, so the current district total is lower.${d.boundary_change_2026 && !laterSplits[d.slug].some((s) => d.boundary_change_2026.includes(all.get(s)?.name)) ? ` ${d.boundary_change_2026}` : ""}`
+          : `These figures are for ${d.name} District as enumerated in the 2023 census. ${d.boundary_change_2026} The current district total therefore differs.`;
     }
   }
   if (successorRow[d.slug]) {
@@ -139,47 +168,65 @@ for (const d of all.values()) {
     const unit = pbsBySlug.get(parent)?.units.find((u) => u.name === unitName);
     if (unit) d.census_2023_row = { parent, ...unit, source_url: pbsBySlug.get(parent) ? PBS_URL(pbsBySlug.get(parent).prov) : undefined };
   }
+  if (successorRows[d.slug]) {
+    const [parent, names] = successorRows[d.slug];
+    const units = names.map((n) => {
+      const u = pbsBySlug.get(parent)?.units.find((x) => x.name === n);
+      if (!u) throw new Error(`${d.slug}: PBS unit ${n} not found under ${parent}`);
+      return u;
+    });
+    d.census_2023_rows = { parent, units, source_url: PBS_URL(pbsBySlug.get(parent).prov) };
+  }
 }
 
-// Swat and Bar Swat: rows of the tehsils that form each district after the January 2026 notification.
-const swatUnits = pbsBySlug.get("swat").units;
-for (const slug of ["swat", "bar-swat"]) {
-  const d = all.get(slug);
-  const spec = SWAT_SPLIT[slug];
-  const units = spec.tehsils.map((n) => {
-    const u = swatUnits.find((x) => x.name === n);
-    if (!u) throw new Error(`Swat tehsil ${n} not in PBS rows`);
-    return u;
-  });
-  const pop = units.reduce((s, u) => s + u.population_2023, 0);
-  const area = units.reduce((s, u) => s + u.area_km2, 0);
-  Object.assign(d, {
-    census_units_2023: units,
-    tehsil_count: units.length,
-    tehsil_count_source: `${SWAT_SPLIT.source} (${SWAT_SPLIT.url})`,
-    population_2023: pop,
-    area_km2: area,
-    density_2023: Math.round((pop / area) * 100) / 100,
-    population_source: `${SOURCE}; ${slug === "swat" ? "Swat" : "Bar Swat"} total is the sum of the 2023 rows of its ${units.length} tehsils`,
-    population_source_url: PBS_URL("kp"),
-    last_verified: VERIFIED,
-    census_boundary_note: `The 2023 census counted all seven Swat tehsils as one district. Since the January 2026 notification, ${slug === "swat" ? "Swat District has four tehsils (Babuzai, Kabal, Charbagh and Barikot)" : "Bar Swat District has three tehsils (Matta, Bahrain and Khwazakhela)"}; the population and area shown are the sum of those tehsils' 2023 census rows.`
-  });
-  delete d.census_2023_row;
-  // Urban share, household size and growth are published for the undivided district only.
-  delete d.urban_proportion_2023; delete d.avg_household_size_2023; delete d.growth_rate_2017_2023;
+for (const split of SPLITS) {
+  const parentUnits = pbsBySlug.get(split.parent).units;
+  const covered = [];
+  for (const [slug, spec] of Object.entries(split.parts)) {
+    const d = all.get(slug);
+    const units = spec.units.map((n) => {
+      const u = parentUnits.find((x) => x.name === n);
+      if (!u) throw new Error(`${split.parent}: PBS unit ${n} not found`);
+      covered.push(n);
+      return u;
+    });
+    const pop = units.reduce((a, u) => a + u.population_2023, 0);
+    const area = units.reduce((a, u) => a + u.area_km2, 0);
+    const others = Object.keys(split.parts).filter((s) => s !== slug).map((s) => all.get(s).name);
+    Object.assign(d, {
+      hq: spec.hq,
+      census_units_2023: units,
+      population_2023: pop,
+      area_km2: area,
+      density_2023: Math.round((pop / area) * 100) / 100,
+      population_source: `${SOURCE}; ${d.name} total is the sum of the 2023 rows of its ${units.length} ${split.tehsilCount ? "tehsils" : "units"}`,
+      population_source_url: PBS_URL(split.prov),
+      last_verified: VERIFIED,
+      census_boundary_note: `The 2023 census counted ${d.name} and ${others.join(" and ")} as one district (${all.get(split.parent).name}). Since the ${split.source.replace(/, reported.*$/, "")}, ${d.name} District consists of ${units.map((u) => u.name).join(", ").replace(/, ([^,]*)$/, " and $1")}; the population and area shown are the sum of those units' 2023 census rows.`
+    });
+    if (split.tehsilCount) Object.assign(d, { tehsil_count: units.length, tehsil_count_source: `${split.source} (${split.url})` });
+    else Object.assign(d, { administrative_source: `${split.source} (${split.url})` });
+    delete d.census_2023_row;
+    // Urban share, household size and growth are published for the undivided district only.
+    delete d.urban_proportion_2023; delete d.avg_household_size_2023; delete d.growth_rate_2017_2023;
+  }
+  const missing = parentUnits.filter((u) => !covered.includes(u.name)).map((u) => u.name);
+  if (missing.length) throw new Error(`${split.parent}: PBS units not assigned to a successor: ${missing.join(", ")}`);
 }
 const swat = all.get("swat");
-swat.hq = SWAT_SPLIT.swat.hq;
 swat.pop = `${swat.population_2023.toLocaleString("en-US")} (2023 census, four tehsils)`;
 swat.about = "Swat is the former princely state on the Swat River, known for its Buddhist archaeology and mountain valleys. Since January 2026 it has four tehsils (Babuzai, Kabal, Charbagh and Barikot), with its headquarters at Gulkada in Babuzai.";
 const barSwat = all.get("bar-swat");
 barSwat.pop = `${barSwat.population_2023.toLocaleString("en-US")} (2023 census, three tehsils)`;
 barSwat.about = "Bar Swat (Upper Swat) was notified as a separate district in January 2026, following a provincial cabinet decision of 19 December 2025. Its headquarters is Matta and it has three tehsils: Matta, Bahrain and Khwazakhela.";
+const kech = all.get("kech");
+kech.pop = `${kech.population_2023.toLocaleString("en-US")} (2023 census rows of the units now in Kech)`;
+const tump = all.get("tump");
+tump.pop = `${tump.population_2023.toLocaleString("en-US")} (2023 census rows of Tump and Mand)`;
 
 // Replace the free-text "pop" note with the PBS figure wherever a district-level PBS total exists.
 for (const d of all.values()) {
-  if (pbsBySlug.has(d.slug) && d.slug !== "swat") {
+  if (pbsBySlug.has(d.slug) && !SPLITS.some((sp) => sp.parts[d.slug])) {
     d.pop = `${d.population_2023.toLocaleString("en-US")} (2023 census${d.census_boundary_note ? ", pre-split boundaries" : ""})`;
   }
 }

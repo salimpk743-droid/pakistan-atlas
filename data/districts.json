@@ -19,7 +19,21 @@
         "issues": "Traffic congestion, unplanned housing at the city's edges, and pressure on the Margalla Hills National Park are the main ongoing concerns.",
         "villages": "Saidpur, Bari Imam, Shah Allah Ditta, Golra Sharif"
       }
-    ]
+    ],
+    "district_count": {
+      "count": 1,
+      "divisions": 0,
+      "basis": "Islamabad Capital Territory is a single district.",
+      "sources": [
+        {
+          "title": "Islamabad Capital Territory Administration",
+          "publisher": "ICT Administration",
+          "url": "https://ictadministration.gov.pk/",
+          "note": "The capital territory is administered as a single district."
+        }
+      ],
+      "as_of": "2026-09-29"
+    }
   },
   "punjab": {
     "id": "punjab",
@@ -2358,7 +2372,22 @@
           "source_url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_1_punjab_districts.pdf"
         }
       }
-    ]
+    ],
+    "district_count": {
+      "count": 41,
+      "divisions": 10,
+      "basis": "Punjab government notification of the administrative structure (reported 1 January 2026): 10 divisions, 41 districts, 156 tehsils.",
+      "sources": [
+        {
+          "title": "New administrative map for divisions and tehsils issued by Punjab",
+          "publisher": "SUNO News",
+          "date": "2026-01-01",
+          "url": "https://english.sunonews.tv/pakistan/politics/new-administrative-map-for-divisions-and-tehsils-issued-by-punjab/1767247234-11790",
+          "note": "Punjab government notification: 10 divisions, 41 districts, 156 tehsils, with the district list of each division."
+        }
+      ],
+      "as_of": "2026-09-29"
+    }
   },
   "kpk": {
     "id": "kpk",
@@ -2598,7 +2627,7 @@
         "slug": "battagram",
         "name": "Battagram",
         "hq": "Battagram",
-        "pop": "554,133 (2023 census, pre-split boundaries)",
+        "pop": "554,133 (2023 census)",
         "about": "Battagram sits on the Karakoram Highway in Hazara Division, with a cool hill climate around its market-town headquarters.",
         "education": "The district runs government degree colleges; students looking for more specialised courses usually travel on to Mansehra or Abbottabad.",
         "health": "DHQ Battagram is the main public hospital serving the tehsil.",
@@ -2634,19 +2663,48 @@
             "growth_rate_2017_2023": 2.13
           }
         ],
-        "census_boundary_note": "These figures are for Battagram District as enumerated in the 2023 census, before Allai District was created from part of it, so the current district total is lower."
+        "tehsil_count": 2,
+        "tehsil_count_source": "PBS 2023 census, Table 1"
       },
       {
         "slug": "allai",
         "name": "Allai",
         "hq": "Banna",
         "pop": "218,149 (2023 census)",
-        "about": "Allai became a full KP district in January 2023, when its tehsil was separated from Battagram in Hazara Division.",
+        "about": "Allai is the mountain valley north of Battagram, historically ruled by its own Nawabs until 1971. It is a tehsil of Battagram District; district status has been announced but not yet notified.",
         "education": "Education infrastructure is still catching up after the 2023 split; many students continue to travel to Battagram or Mansehra for higher study.",
         "health": "A district headquarters hospital is being developed at Banna; patients previously relied on Battagram's DHQ.",
         "culture": "The area was historically the princely state of Allai, ruled by its own Nawabs until 1971, and both Pashto and Hindko are spoken across its mountain villages.",
         "issues": "Steep terrain and limited road access remain the main barrier to services reaching outlying villages.",
         "villages": "Banna, Batila, Batkul, Biari, Jumbera, Pashto, Rushing and Shakargah union councils.",
+        "status": "announced",
+        "status_note": "Allai is a tehsil of Battagram District. A January 2023 notification giving it district status was not implemented; KP chief ministers announced district status again in May 2025 and February 2026, and in August 2026 it was still described as a tehsil to be upgraded. MyBook.Pk does not count it as a district until a notification is issued.",
+        "admin_sources": [
+          {
+            "title": "Allai tehsil of Battagram given district status",
+            "publisher": "Dawn",
+            "date": "2023-01",
+            "url": "https://www.dawn.com/news/1732891"
+          },
+          {
+            "title": "Chief Minister KP announces district status for Allai",
+            "publisher": "APP",
+            "date": "2025-05-23",
+            "url": "https://www.app.com.pk/domestic/chief-minister-kp-announces-district-status-for-allai/"
+          },
+          {
+            "title": "KP CM announces Rs200 billion uplift package for Hazara (\"Allai to be notified as district\")",
+            "publisher": "Dawn",
+            "date": "2026-02-25",
+            "url": "https://www.dawn.com/news/1975543"
+          },
+          {
+            "title": "KP CM Sohail Afridi Announces Rs2bn Battagram Package (\"Allai would be upgraded to district status\")",
+            "publisher": "The Public Purview",
+            "date": "2026-08-29",
+            "url": "https://thepublicpurview.com/kp-cm-sohail-afridi-announces-rs2bn-battagram-package/"
+          }
+        ],
         "census_2023_row": {
           "parent": "battagram",
           "name": "Allai",
@@ -3724,12 +3782,12 @@
         "name": "Nowshera",
         "hq": "Nowshera",
         "pop": "1,740,705 (2023 census)",
-        "about": "Nowshera is a cantonment and industrial district on the Kabul River.",
-        "education": "The Pak-Austria Fachhochschule and a number of public colleges serve the district.",
-        "health": "DHQ Nowshera is the main hospital.",
-        "culture": "The river-plain Pashtun towns of the district include Akora Khattak.",
-        "issues": "River flooding, of the kind seen in 2010, remains a standing planning concern.",
-        "villages": "Pabbi and Jehangira villages.",
+        "about": "Nowshera is a Kabul River and Grand Trunk Road district east of Peshawar, with cantonments at Nowshera, Risalpur and Cherat.",
+        "education": "PAF Academy Asghar Khan is at Risalpur, and Darul Uloom Haqqania (founded 1947) is at Akora Khattak.",
+        "health": "Qazi Hussain Ahmad Medical Complex, Nowshera, is the district’s main medical teaching institute.",
+        "culture": "Pashto is the mother tongue of about 95% of residents; Hindko is the largest minority language (PBS 2023).",
+        "issues": "Kabul River flooding: the city of Nowshera was completely inundated in July 2010.",
+        "villages": "Nowshera Kalan, Jehangira, Pabbi, Amangarh and Akora Khattak are the census urban localities.",
         "population_2023": 1740705,
         "area_km2": 1748,
         "density_2023": 995.83,
@@ -3882,12 +3940,12 @@
         "name": "Orakzai",
         "hq": "Kalaya",
         "pop": "387,561 (2023 census)",
-        "about": "Orakzai is a former tribal agency in the hills west of Kohat, now a settled KP district.",
-        "education": "Colleges have opened since the 2018 merger, though the network remains limited.",
-        "health": "DHQ Orakzai serves the district.",
-        "culture": "The Orakzai tribe's valleys form the core of the district.",
-        "issues": "Mountain terrain continues to limit access to services in outlying areas.",
-        "villages": "Villages in the side valleys near Kalaya.",
+        "about": "Orakzai is a hill district in Kohat Division. It was Orakzai Agency from 1973 until the 2018 merger with Khyber Pakhtunkhwa.",
+        "education": "Literacy was 33.57% in 2023: 50.70% for men and 14.97% for women (PBS).",
+        "health": "Serious cases go to the district headquarters hospital at Kalaya, and many families travel to Kohat, Hangu or Peshawar (UN Women, 2020).",
+        "culture": "Pashto is the mother tongue of almost all residents (PBS 2023).",
+        "issues": "Mountain terrain limits access to services, and PBS 2023 counts the whole district as rural.",
+        "villages": "Kalaya, Samana, Feroz Khel, Zaira, Landok, Manawar and Khalwat.",
         "population_2023": 387561,
         "area_km2": 1538,
         "density_2023": 251.99,
@@ -4212,7 +4270,7 @@
             "growth_rate_2017_2023": 3.06
           }
         ],
-        "census_boundary_note": "The 2023 census counted all seven Swat tehsils as one district. Since the January 2026 notification, Swat District has four tehsils (Babuzai, Kabal, Charbagh and Barikot); the population and area shown are the sum of those tehsils' 2023 census rows.",
+        "census_boundary_note": "The 2023 census counted Swat and Bar Swat (Upper Swat) as one district (Swat). Since the Khyber Pakhtunkhwa government notification of 27 January 2026, Swat District consists of Babuzai, Kabal, Charbagh and Barikot; the population and area shown are the sum of those units' 2023 census rows.",
         "tehsil_count": 4,
         "tehsil_count_source": "Khyber Pakhtunkhwa government notification of 27 January 2026, reported by Dawn on 28 January 2026 (https://www.dawn.com/news/1969386)"
       },
@@ -4256,15 +4314,15 @@
             "growth_rate_2017_2023": 2.47
           }
         ],
-        "tehsil_count": 3,
-        "tehsil_count_source": "Khyber Pakhtunkhwa government notification of 27 January 2026, reported by Dawn on 28 January 2026 (https://www.dawn.com/news/1969386)",
         "population_2023": 1130354,
         "area_km2": 3975,
         "density_2023": 284.37,
-        "population_source": "Pakistan Bureau of Statistics, 7th Population and Housing Census 2023, Table 1 (area, population, density, urban proportion, household size and growth rate by administrative unit); Bar Swat total is the sum of the 2023 rows of its 3 tehsils",
+        "population_source": "Pakistan Bureau of Statistics, 7th Population and Housing Census 2023, Table 1 (area, population, density, urban proportion, household size and growth rate by administrative unit); Bar Swat (Upper Swat) total is the sum of the 2023 rows of its 3 tehsils",
         "population_source_url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_1_kp_districts.pdf",
         "last_verified": "2026-09-29",
-        "census_boundary_note": "The 2023 census counted all seven Swat tehsils as one district. Since the January 2026 notification, Bar Swat District has three tehsils (Matta, Bahrain and Khwazakhela); the population and area shown are the sum of those tehsils' 2023 census rows."
+        "census_boundary_note": "The 2023 census counted Bar Swat (Upper Swat) and Swat as one district (Swat). Since the Khyber Pakhtunkhwa government notification of 27 January 2026, Bar Swat (Upper Swat) District consists of Matta, Bahrain and Khwazakhela; the population and area shown are the sum of those units' 2023 census rows.",
+        "tehsil_count": 3,
+        "tehsil_count_source": "Khyber Pakhtunkhwa government notification of 27 January 2026, reported by Dawn on 28 January 2026 (https://www.dawn.com/news/1969386)"
       },
       {
         "slug": "swa-upper",
@@ -4546,7 +4604,52 @@
         "tehsil_count": 2,
         "tehsil_count_source": "PBS 2023 census, Table 1"
       }
-    ]
+    ],
+    "district_count": {
+      "count": 38,
+      "divisions": 7,
+      "basis": "35 districts in the PBS 2023 census tables (South Waziristan counted as one), plus the 2022 split of South Waziristan into Upper and Lower South Waziristan, Paharpur (notified 26 November 2025) and Bar Swat (notified 27 January 2026).",
+      "note": "Press totals disagree (The News: 37 after Bar Swat; MM News: 40). Allai is not counted: a January 2023 notification was never implemented, and KP chief ministers announced district status again in May 2025, February 2026 and August 2026 without a new notification.",
+      "sources": [
+        {
+          "title": "KP Govt notifies creation of new District Paharpur",
+          "publisher": "APP",
+          "date": "2025-11-26",
+          "url": "https://www.app.com.pk/domestic/kp-govt-notifies-creation-of-new-district-paharpur/"
+        },
+        {
+          "title": "Bar Swat notified as separate district",
+          "publisher": "The News",
+          "date": "2026-01-28",
+          "url": "https://www.thenews.pk/print/1395600-bar-swat-notified-as-separate-district"
+        },
+        {
+          "title": "Swat bifurcation notified",
+          "publisher": "Dawn",
+          "date": "2026-01-28",
+          "url": "https://www.dawn.com/news/1969386"
+        },
+        {
+          "title": "Chief Minister KP announces district status for Allai",
+          "publisher": "APP",
+          "date": "2025-05-23",
+          "url": "https://www.app.com.pk/domestic/chief-minister-kp-announces-district-status-for-allai/"
+        },
+        {
+          "title": "KP CM announces Rs200 billion uplift package for Hazara (\"Allai to be notified as district\")",
+          "publisher": "Dawn",
+          "date": "2026-02-25",
+          "url": "https://www.dawn.com/news/1975543"
+        },
+        {
+          "title": "KP CM Sohail Afridi Announces Rs2bn Battagram Package (\"Allai would be upgraded to district status\")",
+          "publisher": "The Public Purview",
+          "date": "2026-08-29",
+          "url": "https://thepublicpurview.com/kp-cm-sohail-afridi-announces-rs2bn-battagram-package/"
+        }
+      ],
+      "as_of": "2026-09-29"
+    }
   },
   "sindh": {
     "id": "sindh",
@@ -6548,7 +6651,20 @@
         "tehsil_count": 4,
         "tehsil_count_source": "PBS 2023 census, Table 1"
       }
-    ]
+    ],
+    "district_count": {
+      "count": 30,
+      "divisions": 6,
+      "basis": "Government of Sindh (Sindh Human Rights Commission district list); no new district has been notified since the 2023 census.",
+      "sources": [
+        {
+          "title": "There are 30 districts in Sindh Province",
+          "publisher": "Sindh Human Rights Commission, Government of Sindh",
+          "url": "https://www.shrc.org.pk/info-districts.php"
+        }
+      ],
+      "as_of": "2026-09-29"
+    }
   },
   "balochistan": {
     "id": "balochistan",
@@ -6569,6 +6685,8 @@
         "culture": "Baloch mountain-coast interior.",
         "issues": "Distance and staff housing for teachers and doctors.",
         "villages": "Jhal Jhao villages",
+        "division": "Lasbela Division",
+        "division_source": "Balochistan Revenue Department notification of 8 July 2026",
         "population_2023": 178958,
         "area_km2": 29510,
         "density_2023": 6.06,
@@ -6637,6 +6755,8 @@
         "culture": "Baloch highlands.",
         "issues": "Road distance to Quetta.",
         "villages": "Rakhni belt",
+        "division": "Koh-i-Suleman Division",
+        "division_source": "Balochistan Revenue Department notification of 8 July 2026",
         "population_2023": 210249,
         "area_km2": 3514,
         "density_2023": 59.83,
@@ -6669,6 +6789,8 @@
         "culture": "Desert Baloch and Brahui towns.",
         "issues": "Water and extreme distances.",
         "villages": "Nok Kundi belt",
+        "division": "Rakhshan Division",
+        "division_source": "Balochistan Revenue Department notification of 8 July 2026",
         "population_2023": 269192,
         "area_km2": 44748,
         "density_2023": 6.02,
@@ -6737,6 +6859,8 @@
         "culture": "Pashtun border bazaar.",
         "issues": "Border commerce and city services.",
         "villages": "Nearby karez villages",
+        "division": "Pishin Division",
+        "division_source": "Balochistan Revenue Department notification of 8 July 2026",
         "population_2023": 466218,
         "area_km2": 1341,
         "density_2023": 347.66,
@@ -6771,13 +6895,41 @@
         "slug": "dera-bugti",
         "name": "Dera Bugti",
         "hq": "Dera Bugti",
-        "pop": "355,274 (2023 census)",
+        "pop": "355,274 (2023 census, pre-split boundaries)",
         "about": "Eastern gas-field district.",
         "education": "Colleges in Dera Bugti and Sui.",
         "health": "DHQ Dera Bugti.",
         "culture": "Bugti country.",
         "issues": "Service delivery next to energy infrastructure.",
         "villages": "Sui, Phelawagh",
+        "status": "former",
+        "successors": [
+          "north-dera-bugti",
+          "south-dera-bugti"
+        ],
+        "ended": "Divided in February 2026; the parts were renamed North and South Dera Bugti on 8 July 2026",
+        "status_note": "Dera Bugti District was divided in February 2026 into Upper and Lower Dera Bugti, renamed North Dera Bugti and South Dera Bugti by the notification of 8 July 2026. This page covers the undivided district; the 2023 census figures below are for the whole of it.",
+        "admin_sources": [
+          {
+            "title": "New Upper Dera Bugti district established with Bekhar as HQ",
+            "publisher": "Balochistan Express",
+            "date": "2026-02-26",
+            "url": "https://bexpress.com.pk/blog/69a08452418f8404bd6e3400"
+          },
+          {
+            "title": "Balochistan undergoes major restructuring",
+            "publisher": "Dawn",
+            "date": "2026-07-12",
+            "url": "https://www.dawn.com/news/2014773",
+            "note": "Reports the Balochistan Revenue Department notification of 8 July 2026 (11 divisions, 41 districts)."
+          },
+          {
+            "title": "Quetta split into two districts as Balochistan undergoes administrative restructuring",
+            "publisher": "Dawn",
+            "date": "2026-07-11",
+            "url": "https://www.dawn.com/news/2014627"
+          }
+        ],
         "population_2023": 355274,
         "area_km2": 10160,
         "density_2023": 34.97,
@@ -6860,7 +7012,8 @@
             "urban_proportion_2023": 62.79,
             "growth_rate_2017_2023": 0.78
           }
-        ]
+        ],
+        "census_boundary_note": "These figures are for the undivided Dera Bugti District as enumerated in the 2023 census, before it was divided into North Dera Bugti and South Dera Bugti."
       },
       {
         "slug": "duki",
@@ -6873,6 +7026,8 @@
         "culture": "Pashtun highlands.",
         "issues": "Mine safety and schools.",
         "villages": "Coal-belt villages",
+        "division": "Loralai Division",
+        "division_source": "Balochistan Revenue Department notification of 8 July 2026",
         "population_2023": 205044,
         "area_km2": 4233,
         "density_2023": 48.44,
@@ -6932,6 +7087,8 @@
         "culture": "Makran coastal Baloch, fish harbours of Jiwani and Pishukan.",
         "issues": "Making port growth serve local water, schools and housing.",
         "villages": "Jiwani, Pasni is a neighbouring district town — Pishukan, Sur Bandar",
+        "division": "Makuran Division",
+        "division_source": "Balochistan Revenue Department notification of 8 July 2026",
         "population_2023": 305160,
         "area_km2": 12637,
         "density_2023": 24.15,
@@ -7000,6 +7157,8 @@
         "culture": "Pass towns.",
         "issues": "Small population, long winters.",
         "villages": "Sharigh belt",
+        "division": "Loralai Division",
+        "division_source": "Balochistan Revenue Department notification of 8 July 2026",
         "population_2023": 127571,
         "area_km2": 2492,
         "density_2023": 51.19,
@@ -7050,6 +7209,8 @@
         "culture": "Industrial Makran-Sindh edge.",
         "issues": "Factory town services.",
         "villages": "Sakran belt",
+        "division": "Lasbela Division",
+        "division_source": "Balochistan Revenue Department notification of 8 July 2026",
         "census_2023_row": {
           "parent": "lasbela",
           "name": "Hub",
@@ -7073,6 +7234,8 @@
         "culture": "Plain Baloch-Sindh mix.",
         "issues": "Waterlogging.",
         "villages": "Usta Muhammad was later separated",
+        "division": "Naseerabad Division",
+        "division_source": "Balochistan Revenue Department notification of 8 July 2026",
         "population_2023": 594558,
         "area_km2": 1643,
         "density_2023": 361.87,
@@ -7124,6 +7287,8 @@
         "culture": "Magsi plain.",
         "issues": "Drought and distance.",
         "villages": "Gandawa villages",
+        "division": "Naseerabad Division",
+        "division_source": "Balochistan Revenue Department notification of 8 July 2026",
         "population_2023": 203368,
         "area_km2": 3615,
         "density_2023": 56.26,
@@ -7174,6 +7339,8 @@
         "culture": "Brahui-Baloch highlands.",
         "issues": "Winter access.",
         "villages": "Mangochar belt",
+        "division": "Khuzdar Division",
+        "division_source": "Balochistan Revenue Department notification of 8 July 2026",
         "population_2023": 271560,
         "area_km2": 7654,
         "density_2023": 35.48,
@@ -7226,31 +7393,31 @@
         "slug": "kech",
         "name": "Kech",
         "hq": "Turbat",
-        "pop": "1,060,931 (2023 census)",
+        "pop": "857,118 (2023 census rows of the units now in Kech)",
         "about": "Kech river oasis; Turbat is the largest city of Makran after the Quetta comparison.",
         "education": "University of Turbat.",
         "health": "DHQ / teaching setup Turbat.",
         "culture": "Makran dates, balochi music.",
         "issues": "Oasis water and road to Gwadar.",
         "villages": "Tump, Mand villages",
-        "population_2023": 1060931,
-        "area_km2": 22539,
-        "density_2023": 47.07,
-        "urban_proportion_2023": 36.44,
-        "avg_household_size_2023": 4.1,
-        "growth_rate_2017_2023": 2.65,
-        "population_source": "Pakistan Bureau of Statistics, 7th Population and Housing Census 2023, Table 1 (area, population, density, urban proportion, household size and growth rate by administrative unit)",
+        "boundary_change_2026": "Tump District (Tump and Mand) was separated from Kech by the notification of 24 February 2026.",
+        "division": "Makuran Division",
+        "division_source": "Balochistan Revenue Department notification of 8 July 2026",
+        "population_2023": 857118,
+        "area_km2": 19138,
+        "density_2023": 44.79,
+        "population_source": "Pakistan Bureau of Statistics, 7th Population and Housing Census 2023, Table 1 (area, population, density, urban proportion, household size and growth rate by administrative unit); Kech total is the sum of the 2023 rows of its 6 units",
         "population_source_url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_1_balochistan_districts.pdf",
         "last_verified": "2026-09-29",
         "census_units_2023": [
           {
-            "name": "Balnigore",
-            "type": "sub-tehsil",
-            "population_2023": 50404,
-            "area_km2": 1238,
-            "density_2023": 40.71,
-            "urban_proportion_2023": null,
-            "growth_rate_2017_2023": 2.07
+            "name": "Turbat",
+            "type": "sub-division",
+            "population_2023": 470605,
+            "area_km2": 9742,
+            "density_2023": 48.31,
+            "urban_proportion_2023": 57.08,
+            "growth_rate_2017_2023": 2.06
           },
           {
             "name": "Bulaida",
@@ -7271,42 +7438,6 @@
             "growth_rate_2017_2023": 2.78
           },
           {
-            "name": "Hoshab",
-            "type": "sub-tehsil",
-            "population_2023": 66566,
-            "area_km2": 2213,
-            "density_2023": 30.08,
-            "urban_proportion_2023": null,
-            "growth_rate_2017_2023": 3.9
-          },
-          {
-            "name": "Mand",
-            "type": "tehsil",
-            "population_2023": 56772,
-            "area_km2": 1456,
-            "density_2023": 38.99,
-            "urban_proportion_2023": null,
-            "growth_rate_2017_2023": 1.81
-          },
-          {
-            "name": "Tump",
-            "type": "sub-division",
-            "population_2023": 147041,
-            "area_km2": 1945,
-            "density_2023": 75.6,
-            "urban_proportion_2023": 33.51,
-            "growth_rate_2017_2023": 0.12
-          },
-          {
-            "name": "Turbat",
-            "type": "sub-division",
-            "population_2023": 470605,
-            "area_km2": 9742,
-            "density_2023": 48.31,
-            "urban_proportion_2023": 57.08,
-            "growth_rate_2017_2023": 2.06
-          },
-          {
             "name": "Zamoran",
             "type": "sub-tehsil",
             "population_2023": 71616,
@@ -7314,8 +7445,28 @@
             "density_2023": 48.98,
             "urban_proportion_2023": null,
             "growth_rate_2017_2023": 9.15
+          },
+          {
+            "name": "Balnigore",
+            "type": "sub-tehsil",
+            "population_2023": 50404,
+            "area_km2": 1238,
+            "density_2023": 40.71,
+            "urban_proportion_2023": null,
+            "growth_rate_2017_2023": 2.07
+          },
+          {
+            "name": "Hoshab",
+            "type": "sub-tehsil",
+            "population_2023": 66566,
+            "area_km2": 2213,
+            "density_2023": 30.08,
+            "urban_proportion_2023": null,
+            "growth_rate_2017_2023": 3.9
           }
-        ]
+        ],
+        "census_boundary_note": "The 2023 census counted Kech and Tump as one district (Kech). Since the Balochistan Revenue Department notification of 24 February 2026, Kech District consists of Turbat, Bulaida, Dasht, Zamoran, Balnigore and Hoshab; the population and area shown are the sum of those units' 2023 census rows.",
+        "administrative_source": "Balochistan Revenue Department notification of 24 February 2026, reported by Baldiyat Times on 27 February 2026 (https://baldiyattimes.com/?p=61791)"
       },
       {
         "slug": "kharan",
@@ -7328,6 +7479,8 @@
         "culture": "Desert Baloch.",
         "issues": "Water.",
         "villages": "Basima was related to Washuk split",
+        "division": "Rakhshan Division",
+        "division_source": "Balochistan Revenue Department notification of 8 July 2026",
         "population_2023": 260352,
         "area_km2": 14958,
         "density_2023": 17.41,
@@ -7380,13 +7533,16 @@
         "slug": "khuzdar",
         "name": "Khuzdar",
         "hq": "Khuzdar",
-        "pop": "997,214 (2023 census)",
+        "pop": "997,214 (2023 census, pre-split boundaries)",
         "about": "Central highland city on the RCD road.",
         "education": "University of Balochistan campus / colleges.",
         "health": "DHQ Khuzdar.",
         "culture": "Brahui-Baloch town.",
         "issues": "Road safety on mountain passes.",
-        "villages": "Wadh, Zehri (some notified separately — confirm)",
+        "villages": "Karkh, Moola, Baghbana",
+        "boundary_change_2026": "Wadh District (Wadh, Ornach and Nal sub-divisions) was separated from Khuzdar and the Zehri sub-division moved to Surab by the notification of 8 July 2026.",
+        "division": "Khuzdar Division",
+        "division_source": "Balochistan Revenue Department notification of 8 July 2026",
         "population_2023": 997214,
         "area_km2": 35380,
         "density_2023": 28.19,
@@ -7487,7 +7643,8 @@
             "urban_proportion_2023": 46.98,
             "growth_rate_2017_2023": 6.77
           }
-        ]
+        ],
+        "census_boundary_note": "These figures are for Khuzdar District as enumerated in the 2023 census. Wadh District (Wadh, Ornach and Nal sub-divisions) was separated from Khuzdar and the Zehri sub-division moved to Surab by the notification of 8 July 2026. The current district total therefore differs."
       },
       {
         "slug": "kohlu",
@@ -7500,6 +7657,8 @@
         "culture": "Marri country highlands.",
         "issues": "Mountain services.",
         "villages": "Mawand belt",
+        "division": "Koh-i-Suleman Division",
+        "division_source": "Balochistan Revenue Department notification of 8 July 2026",
         "population_2023": 260220,
         "area_km2": 7610,
         "density_2023": 34.19,
@@ -7568,6 +7727,9 @@
         "culture": "Lasi and coastal Baloch.",
         "issues": "Coastal industry versus fishing villages.",
         "villages": "Bela, Sonmiani, Hub was split away",
+        "boundary_change_2026": "The Shahnoorani and Kalghalo union councils of Khuzdar were added to Lasbela's Kanraj sub-division on 8 July 2026.",
+        "division": "Lasbela Division",
+        "division_source": "Balochistan Revenue Department notification of 8 July 2026",
         "population_2023": 680977,
         "area_km2": 15153,
         "density_2023": 44.94,
@@ -7660,7 +7822,7 @@
             "growth_rate_2017_2023": 3.52
           }
         ],
-        "census_boundary_note": "These figures are for Lasbela District as enumerated in the 2023 census, before Hub District was created from part of it, so the current district total is lower."
+        "census_boundary_note": "These figures are for Lasbela District as enumerated in the 2023 census, before Hub District was created from part of it, so the current district total is lower. The Shahnoorani and Kalghalo union councils of Khuzdar were added to Lasbela's Kanraj sub-division on 8 July 2026."
       },
       {
         "slug": "loralai",
@@ -7673,6 +7835,8 @@
         "culture": "Pashtun highlands.",
         "issues": "Cold winters, long distances.",
         "villages": "Mekhtar belt",
+        "division": "Loralai Division",
+        "division_source": "Balochistan Revenue Department notification of 8 July 2026",
         "population_2023": 272432,
         "area_km2": 3785,
         "density_2023": 71.98,
@@ -7714,6 +7878,8 @@
         "culture": "Brahui valley.",
         "issues": "Quake-resistant building after past shocks.",
         "villages": "Dasht belt",
+        "division": "Quetta Division",
+        "division_source": "Balochistan Revenue Department notification of 8 July 2026",
         "population_2023": 313271,
         "area_km2": 3308,
         "density_2023": 94.7,
@@ -7773,6 +7939,8 @@
         "culture": "Pashtun-Baloch edge.",
         "issues": "Staff posting.",
         "villages": "Kingri belt",
+        "division": "Loralai Division",
+        "division_source": "Balochistan Revenue Department notification of 8 July 2026",
         "population_2023": 182275,
         "area_km2": 5728,
         "density_2023": 31.82,
@@ -7850,6 +8018,8 @@
         "culture": "Irrigated plains.",
         "issues": "Waterlogging and heat.",
         "villages": "Tamboo belt",
+        "division": "Naseerabad Division",
+        "division_source": "Balochistan Revenue Department notification of 8 July 2026",
         "population_2023": 563315,
         "area_km2": 3387,
         "density_2023": 166.32,
@@ -7927,6 +8097,8 @@
         "culture": "Desert gateway.",
         "issues": "Water.",
         "villages": "Ahmedwal belt",
+        "division": "Rakhshan Division",
+        "division_source": "Balochistan Revenue Department notification of 8 July 2026",
         "population_2023": 207834,
         "area_km2": 5797,
         "density_2023": 35.85,
@@ -7968,6 +8140,8 @@
         "culture": "Makran dates.",
         "issues": "Oasis water.",
         "villages": "Parom belt",
+        "division": "Makuran Division",
+        "division_source": "Balochistan Revenue Department notification of 8 July 2026",
         "population_2023": 509781,
         "area_km2": 16891,
         "density_2023": 30.18,
@@ -8029,13 +8203,16 @@
         "slug": "pishin",
         "name": "Pishin",
         "hq": "Pishin",
-        "pop": "835,482 (2023 census)",
+        "pop": "835,482 (2023 census, pre-split boundaries)",
         "about": "Valley north of Quetta, fruit and karez country.",
         "education": "Colleges in Pishin.",
         "health": "DHQ Pishin.",
         "culture": "Pashtun orchards.",
         "issues": "Karez water and new-division paperwork.",
-        "villages": "Barshore (sometimes separate)",
+        "villages": "Hurram Zai, Karezat, Saranan",
+        "boundary_change_2026": "Barshore District was separated from Pishin in 2026.",
+        "division": "Pishin Division",
+        "division_source": "Balochistan Revenue Department notification of 8 July 2026",
         "population_2023": 835482,
         "area_km2": 6218,
         "density_2023": 134.37,
@@ -8109,7 +8286,8 @@
             "urban_proportion_2023": 71.38,
             "growth_rate_2017_2023": 2.47
           }
-        ]
+        ],
+        "census_boundary_note": "These figures are for Pishin District as enumerated in the 2023 census, before Barshore District was created from part of it, so the current district total is lower."
       },
       {
         "slug": "qilla-abdullah",
@@ -8122,6 +8300,8 @@
         "culture": "Pashtun border highlands.",
         "issues": "Border towns’ municipal load.",
         "villages": "Gulistan, Dobandi",
+        "division": "Pishin Division",
+        "division_source": "Balochistan Revenue Department notification of 8 July 2026",
         "population_2023": 361971,
         "area_km2": 3553,
         "density_2023": 101.88,
@@ -8172,6 +8352,8 @@
         "culture": "Pashtun orchards of Muslim Bagh.",
         "issues": "Cold-chain for fruit.",
         "villages": "Muslim Bagh, Loiband",
+        "division": "Zhob Division",
+        "division_source": "Balochistan Revenue Department notification of 8 July 2026",
         "population_2023": 380200,
         "area_km2": 6831,
         "density_2023": 55.66,
@@ -8242,14 +8424,43 @@
         "slug": "quetta",
         "name": "Quetta",
         "hq": "Quetta",
-        "pop": "2,595,492 (2023 census)",
-        "about": "Provincial capital in a high dry bowl. Fruit markets, cantonment and university city. Some tables now split Quetta East / West — confirm before citing a count.",
+        "pop": "2,595,492 (2023 census, pre-split boundaries)",
+        "about": "Provincial capital in a high dry bowl: fruit markets, cantonment and university city.",
         "education": "University of Balochistan, BUITEMS, Bolan Medical College.",
         "health": "Sandeman / BMC teaching hospitals.",
         "culture": "Pashto, Brahui and Balochi together; winter dry fruit.",
         "issues": "Water, quake-safe housing, smog in still winter air.",
         "villages": "Hanna, Sariab rural",
         "division_2023": "Quetta Division",
+        "status": "former",
+        "successors": [
+          "quetta-east",
+          "quetta-west"
+        ],
+        "ended": "Balochistan Revenue Department notification of 8 July 2026",
+        "status_note": "Quetta District was divided into Quetta East and Quetta West along the railway line by the Balochistan Revenue Department notification of 8 July 2026. This page covers the undivided district; the 2023 census figures below are for the whole of it.",
+        "admin_sources": [
+          {
+            "title": "Balochistan undergoes major restructuring",
+            "publisher": "Dawn",
+            "date": "2026-07-12",
+            "url": "https://www.dawn.com/news/2014773",
+            "note": "Reports the Balochistan Revenue Department notification of 8 July 2026 (11 divisions, 41 districts)."
+          },
+          {
+            "title": "Quetta split into two districts as Balochistan undergoes administrative restructuring",
+            "publisher": "Dawn",
+            "date": "2026-07-11",
+            "url": "https://www.dawn.com/news/2014627"
+          },
+          {
+            "title": "Balochistan Govt Notifies New Divisions and Districts",
+            "publisher": "ProPakistani",
+            "date": "2026-07-12",
+            "url": "https://propakistani.pk/2026/07/12/balochistan-govt-notifies-new-divisions-and-districts/",
+            "note": "8 divisions and 36 districts before, 11 divisions and 41 districts after."
+          }
+        ],
         "population_2023": 2595492,
         "area_km2": 3447,
         "density_2023": 752.97,
@@ -8305,7 +8516,8 @@
             "urban_proportion_2023": null,
             "growth_rate_2017_2023": 1.97
           }
-        ]
+        ],
+        "census_boundary_note": "These figures are for the undivided Quetta District as enumerated in the 2023 census, before it was divided into Quetta East and Quetta West."
       },
       {
         "slug": "sherani",
@@ -8318,6 +8530,8 @@
         "culture": "Sulaiman highlands.",
         "issues": "Forest and road access.",
         "villages": "Stano Raaghah belt",
+        "division": "Zhob Division",
+        "division_source": "Balochistan Revenue Department notification of 8 July 2026",
         "population_2023": 191687,
         "area_km2": 4310,
         "density_2023": 44.47,
@@ -8350,6 +8564,8 @@
         "culture": "Baloch-Pashtun junction and the historic mela.",
         "issues": "Heat and the long summer.",
         "villages": "Talli belt",
+        "division": "Sevi Division",
+        "division_source": "Balochistan Revenue Department notification of 8 July 2026",
         "population_2023": 224148,
         "area_km2": 7121,
         "density_2023": 31.48,
@@ -8409,6 +8625,8 @@
         "culture": "Canal plains.",
         "issues": "New-district offices.",
         "villages": "Hairdin belt",
+        "division": "Naseerabad Division",
+        "division_source": "Balochistan Revenue Department notification of 8 July 2026",
         "population_2023": 240106,
         "area_km2": 802,
         "density_2023": 299.38,
@@ -8479,13 +8697,16 @@
         "slug": "surab",
         "name": "Surab",
         "hq": "Surab",
-        "pop": "279,038 (2023 census)",
+        "pop": "279,038 (2023 census, pre-split boundaries)",
         "about": "Created from Kalat highlands.",
         "education": "Colleges in Surab.",
         "health": "DHQ Surab.",
         "culture": "Brahui highlands.",
         "issues": "Winter closure of side roads.",
         "villages": "Surab valleys",
+        "boundary_change_2026": "Surab (renamed from Shaheed Sikandarabad) received the Zehri sub-division and tehsil from Khuzdar under the notification of 8 July 2026.",
+        "division": "Khuzdar Division",
+        "division_source": "Balochistan Revenue Department notification of 8 July 2026",
         "population_2023": 279038,
         "area_km2": 762,
         "density_2023": 366.19,
@@ -8532,7 +8753,8 @@
             "urban_proportion_2023": 38.2,
             "growth_rate_2017_2023": 2.59
           }
-        ]
+        ],
+        "census_boundary_note": "These figures are for Surab District as enumerated in the 2023 census. Surab (renamed from Shaheed Sikandarabad) received the Zehri sub-division and tehsil from Khuzdar under the notification of 8 July 2026. The current district total therefore differs."
       },
       {
         "slug": "usta-muhammad",
@@ -8545,6 +8767,8 @@
         "culture": "Irrigated plains.",
         "issues": "Waterlogging.",
         "villages": "Plain union councils",
+        "division": "Naseerabad Division",
+        "division_source": "Balochistan Revenue Department notification of 8 July 2026",
         "census_2023_row": {
           "parent": "jafarabad",
           "name": "Usta Muhammad",
@@ -8568,6 +8792,8 @@
         "culture": "Desert and high dry valleys.",
         "issues": "Distance.",
         "villages": "Basima, Mashkhel belt",
+        "division": "Rakhshan Division",
+        "division_source": "Balochistan Revenue Department notification of 8 July 2026",
         "population_2023": 302623,
         "area_km2": 33093,
         "density_2023": 9.14,
@@ -8636,6 +8862,8 @@
         "culture": "Pashtun north.",
         "issues": "Long highway distances.",
         "villages": "Qamar Din Karez belt",
+        "division": "Zhob Division",
+        "division_source": "Balochistan Revenue Department notification of 8 July 2026",
         "population_2023": 355692,
         "area_km2": 15987,
         "density_2023": 22.25,
@@ -8704,6 +8932,8 @@
         "culture": "Juniper highlands.",
         "issues": "Forest protection and winter tourism load.",
         "villages": "Koshak, Sanjawi (Sanjawi sometimes listed in Loralai / Ziarat discussions)",
+        "division": "Loralai Division",
+        "division_source": "Balochistan Revenue Department notification of 8 July 2026",
         "population_2023": 189535,
         "area_km2": 3301,
         "density_2023": 57.42,
@@ -8733,8 +8963,549 @@
             "growth_rate_2017_2023": 2.62
           }
         ]
+      },
+      {
+        "slug": "kachhi",
+        "name": "Kachhi",
+        "hq": "Dhadar",
+        "about": "Kachhi District lies on the Kachhi plain below the Bolan Pass, with its headquarters at Dhadar. The 8 July 2026 notification moved it from Naseerabad Division to Sevi (Sibi) Division; its boundaries were not changed.",
+        "admin_sources": [
+          {
+            "title": "Kachhi at Dhadar: history of district",
+            "publisher": "Balochistan High Court (district judiciary)",
+            "url": "https://bhc.gov.pk/district-judiciary/kachhi/introduction/history"
+          },
+          {
+            "title": "Balochistan undergoes major restructuring",
+            "publisher": "Dawn",
+            "date": "2026-07-12",
+            "url": "https://www.dawn.com/news/2014773",
+            "note": "Reports the Balochistan Revenue Department notification of 8 July 2026 (11 divisions, 41 districts)."
+          }
+        ],
+        "division": "Sevi Division",
+        "division_source": "Balochistan Revenue Department notification of 8 July 2026",
+        "pop": "442,674 (2023 census)",
+        "population_2023": 442674,
+        "area_km2": 5682,
+        "density_2023": 77.91,
+        "urban_proportion_2023": 18.17,
+        "avg_household_size_2023": 8.8,
+        "growth_rate_2017_2023": 6.25,
+        "population_source": "Pakistan Bureau of Statistics, 7th Population and Housing Census 2023, Table 1 (area, population, density, urban proportion, household size and growth rate by administrative unit)",
+        "population_source_url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_1_balochistan_districts.pdf",
+        "last_verified": "2026-09-29",
+        "census_units_2023": [
+          {
+            "name": "Balanari",
+            "type": "sub-tehsil",
+            "population_2023": 60158,
+            "area_km2": 402,
+            "density_2023": 149.65,
+            "urban_proportion_2023": null,
+            "growth_rate_2017_2023": 5.63
+          },
+          {
+            "name": "Bhag",
+            "type": "sub-division",
+            "population_2023": 83687,
+            "area_km2": 1308,
+            "density_2023": 63.98,
+            "urban_proportion_2023": 22.27,
+            "growth_rate_2017_2023": 2.66
+          },
+          {
+            "name": "Dhadar",
+            "type": "sub-division",
+            "population_2023": 49836,
+            "area_km2": 976,
+            "density_2023": 51.06,
+            "urban_proportion_2023": 34.67,
+            "growth_rate_2017_2023": 2.74
+          },
+          {
+            "name": "Khattan",
+            "type": "sub-tehsil",
+            "population_2023": 22900,
+            "area_km2": 277,
+            "density_2023": 82.67,
+            "urban_proportion_2023": null,
+            "growth_rate_2017_2023": 8.3
+          },
+          {
+            "name": "Mach",
+            "type": "sub-division",
+            "population_2023": 75272,
+            "area_km2": 708,
+            "density_2023": 106.32,
+            "urban_proportion_2023": 59.17,
+            "growth_rate_2017_2023": 11.32
+          },
+          {
+            "name": "Sanni",
+            "type": "sub-division",
+            "population_2023": 150821,
+            "area_km2": 2011,
+            "density_2023": 75,
+            "urban_proportion_2023": null,
+            "growth_rate_2017_2023": 7.67
+          }
+        ]
+      },
+      {
+        "slug": "quetta-east",
+        "name": "Quetta East",
+        "predecessor": "quetta",
+        "created": "Balochistan Revenue Department notification of 8 July 2026",
+        "about": "Quetta East is one of the two districts formed when Quetta District was divided along the railway line by the 8 July 2026 notification. It comprises the Saddar, City and Sariab sub-divisions.",
+        "admin_sources": [
+          {
+            "title": "Balochistan undergoes major restructuring",
+            "publisher": "Dawn",
+            "date": "2026-07-12",
+            "url": "https://www.dawn.com/news/2014773",
+            "note": "Reports the Balochistan Revenue Department notification of 8 July 2026 (11 divisions, 41 districts)."
+          },
+          {
+            "title": "Quetta split into two districts as Balochistan undergoes administrative restructuring",
+            "publisher": "Dawn",
+            "date": "2026-07-11",
+            "url": "https://www.dawn.com/news/2014627"
+          },
+          {
+            "title": "Balochistan Govt Notifies New Divisions and Districts",
+            "publisher": "ProPakistani",
+            "date": "2026-07-12",
+            "url": "https://propakistani.pk/2026/07/12/balochistan-govt-notifies-new-divisions-and-districts/",
+            "note": "8 divisions and 36 districts before, 11 divisions and 41 districts after."
+          }
+        ],
+        "division": "Quetta Division",
+        "division_source": "Balochistan Revenue Department notification of 8 July 2026",
+        "subdivisions": [
+          "Saddar",
+          "City",
+          "Sariab"
+        ],
+        "census_2023_rows": {
+          "parent": "quetta",
+          "units": [
+            {
+              "name": "City",
+              "type": "sub-division",
+              "population_2023": 1360600,
+              "area_km2": 558,
+              "density_2023": 2438.35,
+              "urban_proportion_2023": 91.24,
+              "growth_rate_2017_2023": 2.06
+            },
+            {
+              "name": "Saddar",
+              "type": "sub-division",
+              "population_2023": 330421,
+              "area_km2": 1283,
+              "density_2023": 257.54,
+              "urban_proportion_2023": 62.48,
+              "growth_rate_2017_2023": 3.58
+            },
+            {
+              "name": "Sariab",
+              "type": "sub-division",
+              "population_2023": 572854,
+              "area_km2": 221,
+              "density_2023": 2592.1,
+              "urban_proportion_2023": 11.68,
+              "growth_rate_2017_2023": 1.72
+            }
+          ],
+          "source_url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_1_balochistan_districts.pdf"
+        }
+      },
+      {
+        "slug": "quetta-west",
+        "name": "Quetta West",
+        "predecessor": "quetta",
+        "created": "Balochistan Revenue Department notification of 8 July 2026",
+        "about": "Quetta West is one of the two districts formed when Quetta District was divided along the railway line by the 8 July 2026 notification. It comprises the Kuchlak sub-division and the newly created Brewery and Panjpai sub-divisions, with a new Brewery tehsil.",
+        "admin_sources": [
+          {
+            "title": "Balochistan undergoes major restructuring",
+            "publisher": "Dawn",
+            "date": "2026-07-12",
+            "url": "https://www.dawn.com/news/2014773",
+            "note": "Reports the Balochistan Revenue Department notification of 8 July 2026 (11 divisions, 41 districts)."
+          },
+          {
+            "title": "Quetta split into two districts as Balochistan undergoes administrative restructuring",
+            "publisher": "Dawn",
+            "date": "2026-07-11",
+            "url": "https://www.dawn.com/news/2014627"
+          },
+          {
+            "title": "Balochistan Govt Notifies New Divisions and Districts",
+            "publisher": "ProPakistani",
+            "date": "2026-07-12",
+            "url": "https://propakistani.pk/2026/07/12/balochistan-govt-notifies-new-divisions-and-districts/",
+            "note": "8 divisions and 36 districts before, 11 divisions and 41 districts after."
+          }
+        ],
+        "division": "Quetta Division",
+        "division_source": "Balochistan Revenue Department notification of 8 July 2026",
+        "subdivisions": [
+          "Kuchlak",
+          "Brewery",
+          "Panjpai"
+        ],
+        "census_2023_rows": {
+          "parent": "quetta",
+          "units": [
+            {
+              "name": "Kuchlak",
+              "type": "sub-division",
+              "population_2023": 310246,
+              "area_km2": 180,
+              "density_2023": 1723.59,
+              "urban_proportion_2023": 16.38,
+              "growth_rate_2017_2023": 2.92
+            },
+            {
+              "name": "Panjpai",
+              "type": "sub-tehsil",
+              "population_2023": 21371,
+              "area_km2": 1205,
+              "density_2023": 17.74,
+              "urban_proportion_2023": null,
+              "growth_rate_2017_2023": 1.97
+            }
+          ],
+          "source_url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_1_balochistan_districts.pdf"
+        }
+      },
+      {
+        "slug": "wadh",
+        "name": "Wadh",
+        "predecessor": "khuzdar",
+        "created": "Balochistan Revenue Department notification of 8 July 2026",
+        "hq": "Nal",
+        "hq_source": {
+          "title": "Historic administrative reforms in Balochistan, 4 new divisions and 5 new districts established",
+          "publisher": "Daily Pakistan (via The Patriot)",
+          "date": "2026-07-12",
+          "url": "https://dailythepatriot.com/historic-administrative-reforms-in-balochistan/",
+          "note": "Only source seen with the full district list of every division."
+        },
+        "about": "Wadh District was separated from Khuzdar by the 8 July 2026 notification and contains the Wadh, Ornach and Nal sub-divisions. It is part of the new Khuzdar Division.",
+        "admin_sources": [
+          {
+            "title": "Balochistan undergoes major restructuring",
+            "publisher": "Dawn",
+            "date": "2026-07-12",
+            "url": "https://www.dawn.com/news/2014773",
+            "note": "Reports the Balochistan Revenue Department notification of 8 July 2026 (11 divisions, 41 districts)."
+          },
+          {
+            "title": "Quetta split into two districts as Balochistan undergoes administrative restructuring",
+            "publisher": "Dawn",
+            "date": "2026-07-11",
+            "url": "https://www.dawn.com/news/2014627"
+          },
+          {
+            "title": "Historic administrative reforms in Balochistan, 4 new divisions and 5 new districts established",
+            "publisher": "Daily Pakistan (via The Patriot)",
+            "date": "2026-07-12",
+            "url": "https://dailythepatriot.com/historic-administrative-reforms-in-balochistan/",
+            "note": "Only source seen with the full district list of every division."
+          }
+        ],
+        "division": "Khuzdar Division",
+        "division_source": "Balochistan Revenue Department notification of 8 July 2026",
+        "subdivisions": [
+          "Wadh",
+          "Ornach",
+          "Nal"
+        ],
+        "census_2023_rows": {
+          "parent": "khuzdar",
+          "units": [
+            {
+              "name": "Wadh",
+              "type": "sub-division",
+              "population_2023": 116229,
+              "area_km2": 2118,
+              "density_2023": 54.88,
+              "urban_proportion_2023": 23.12,
+              "growth_rate_2017_2023": 2.53
+            },
+            {
+              "name": "Nal",
+              "type": "sub-division",
+              "population_2023": 103631,
+              "area_km2": 1791,
+              "density_2023": 57.86,
+              "urban_proportion_2023": 46.78,
+              "growth_rate_2017_2023": 3.32
+            },
+            {
+              "name": "Ornach",
+              "type": "sub-division",
+              "population_2023": 41811,
+              "area_km2": 3368,
+              "density_2023": 12.41,
+              "urban_proportion_2023": null,
+              "growth_rate_2017_2023": 1.8
+            }
+          ],
+          "source_url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_1_balochistan_districts.pdf"
+        }
+      },
+      {
+        "slug": "tump",
+        "name": "Tump",
+        "predecessor": "kech",
+        "created": "Balochistan Revenue Department notification of 24 February 2026",
+        "hq": "Tump",
+        "about": "Tump District was carved out of Kech by a Revenue Department notification of 24 February 2026, with its headquarters at Tump. It consists of the Tump and Mand sub-divisions and tehsils, in Makuran (Makran) Division.",
+        "admin_sources": [
+          {
+            "title": "Kech divided; new district Tump created (Revenue Department notification of 24 February 2026)",
+            "publisher": "Baldiyat Times",
+            "date": "2026-02-27",
+            "url": "https://baldiyattimes.com/?p=61791",
+            "note": "Tump: Tump and Mand sub-divisions/tehsils. Kech: Turbat, Buleda, Dasht (with Zamoran, Dasht and Balnigor sub-tehsils) and Hoshab."
+          },
+          {
+            "title": "Tump enters new era of development after becoming district",
+            "publisher": "Radio Pakistan",
+            "date": "2026-05-12",
+            "url": "https://www.radio.gov.pk/12-05-2026/tump-enters-new-era-of-development-after-becoming-district"
+          },
+          {
+            "title": "Historic administrative reforms in Balochistan, 4 new divisions and 5 new districts established",
+            "publisher": "Daily Pakistan (via The Patriot)",
+            "date": "2026-07-12",
+            "url": "https://dailythepatriot.com/historic-administrative-reforms-in-balochistan/",
+            "note": "Only source seen with the full district list of every division."
+          }
+        ],
+        "division": "Makuran Division",
+        "division_source": "Balochistan Revenue Department notification of 8 July 2026",
+        "pop": "203,813 (2023 census rows of Tump and Mand)",
+        "subdivisions": [
+          "Tump",
+          "Mand"
+        ],
+        "census_units_2023": [
+          {
+            "name": "Tump",
+            "type": "sub-division",
+            "population_2023": 147041,
+            "area_km2": 1945,
+            "density_2023": 75.6,
+            "urban_proportion_2023": 33.51,
+            "growth_rate_2017_2023": 0.12
+          },
+          {
+            "name": "Mand",
+            "type": "tehsil",
+            "population_2023": 56772,
+            "area_km2": 1456,
+            "density_2023": 38.99,
+            "urban_proportion_2023": null,
+            "growth_rate_2017_2023": 1.81
+          }
+        ],
+        "population_2023": 203813,
+        "area_km2": 3401,
+        "density_2023": 59.93,
+        "population_source": "Pakistan Bureau of Statistics, 7th Population and Housing Census 2023, Table 1 (area, population, density, urban proportion, household size and growth rate by administrative unit); Tump total is the sum of the 2023 rows of its 2 units",
+        "population_source_url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_1_balochistan_districts.pdf",
+        "last_verified": "2026-09-29",
+        "census_boundary_note": "The 2023 census counted Tump and Kech as one district (Kech). Since the Balochistan Revenue Department notification of 24 February 2026, Tump District consists of Tump and Mand; the population and area shown are the sum of those units' 2023 census rows.",
+        "administrative_source": "Balochistan Revenue Department notification of 24 February 2026, reported by Baldiyat Times on 27 February 2026 (https://baldiyattimes.com/?p=61791)"
+      },
+      {
+        "slug": "barshore",
+        "name": "Barshore",
+        "predecessor": "pishin",
+        "created": "Balochistan Revenue Department notification of 8 July 2026",
+        "hq": "Barshore",
+        "about": "Barshore (Barshor) District was approved by the Balochistan cabinet in early 2026 and is part of the new Pishin Division. The 8 July 2026 notification upgraded Barshore to a tehsil and created the Toba Kakari sub-division and tehsil in the district.",
+        "admin_sources": [
+          {
+            "title": "Balochistan Approves New Divisions and Districts",
+            "publisher": "ProPakistani",
+            "date": "2026-02-25",
+            "url": "https://propakistani.pk/2026/02/25/balochistan-approves-new-divisions-and-districts/",
+            "note": "Cabinet decisions of 19 January 2026: Barshor district, Pishin and Koh-e-Suleman divisions, Quetta to be split."
+          },
+          {
+            "title": "Balochistan undergoes major restructuring",
+            "publisher": "Dawn",
+            "date": "2026-07-12",
+            "url": "https://www.dawn.com/news/2014773",
+            "note": "Reports the Balochistan Revenue Department notification of 8 July 2026 (11 divisions, 41 districts)."
+          },
+          {
+            "title": "Quetta split into two districts as Balochistan undergoes administrative restructuring",
+            "publisher": "Dawn",
+            "date": "2026-07-11",
+            "url": "https://www.dawn.com/news/2014627"
+          }
+        ],
+        "division": "Pishin Division",
+        "division_source": "Balochistan Revenue Department notification of 8 July 2026",
+        "census_2023_row": {
+          "parent": "pishin",
+          "name": "Barshore",
+          "type": "tehsil",
+          "population_2023": 141994,
+          "area_km2": 2288,
+          "density_2023": 62.06,
+          "urban_proportion_2023": null,
+          "growth_rate_2017_2023": 5.8,
+          "source_url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_1_balochistan_districts.pdf"
+        }
+      },
+      {
+        "slug": "north-dera-bugti",
+        "name": "North Dera Bugti",
+        "predecessor": "dera-bugti",
+        "created": "Created as Upper Dera Bugti in February 2026; renamed North Dera Bugti by the 8 July 2026 notification",
+        "hq": "Baiker (Bekhar)",
+        "about": "North Dera Bugti was created as Upper Dera Bugti when Dera Bugti District was divided in February 2026, with its headquarters at Baiker (Bekhar), and was renamed North Dera Bugti by the 8 July 2026 notification. It is part of the new Koh-i-Suleman Division.",
+        "admin_sources": [
+          {
+            "title": "New Upper Dera Bugti district established with Bekhar as HQ",
+            "publisher": "Balochistan Express",
+            "date": "2026-02-26",
+            "url": "https://bexpress.com.pk/blog/69a08452418f8404bd6e3400"
+          },
+          {
+            "title": "Balochistan undergoes major restructuring",
+            "publisher": "Dawn",
+            "date": "2026-07-12",
+            "url": "https://www.dawn.com/news/2014773",
+            "note": "Reports the Balochistan Revenue Department notification of 8 July 2026 (11 divisions, 41 districts)."
+          },
+          {
+            "title": "Quetta split into two districts as Balochistan undergoes administrative restructuring",
+            "publisher": "Dawn",
+            "date": "2026-07-11",
+            "url": "https://www.dawn.com/news/2014627"
+          }
+        ],
+        "division": "Koh-i-Suleman Division",
+        "division_source": "Balochistan Revenue Department notification of 8 July 2026",
+        "census_2023_row": {
+          "parent": "dera-bugti",
+          "name": "Baiker",
+          "type": "sub-tehsil",
+          "population_2023": 33410,
+          "area_km2": 258,
+          "density_2023": 129.5,
+          "urban_proportion_2023": null,
+          "growth_rate_2017_2023": 9.42,
+          "source_url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_1_balochistan_districts.pdf"
+        }
+      },
+      {
+        "slug": "south-dera-bugti",
+        "name": "South Dera Bugti",
+        "predecessor": "dera-bugti",
+        "created": "Renamed from Lower Dera Bugti by the 8 July 2026 notification",
+        "about": "South Dera Bugti is the remainder of the former Dera Bugti District after Upper (now North) Dera Bugti was separated in 2026. The 8 July 2026 notification renamed it from Lower Dera Bugti and placed it in Sevi (Sibi) Division.",
+        "admin_sources": [
+          {
+            "title": "Balochistan undergoes major restructuring",
+            "publisher": "Dawn",
+            "date": "2026-07-12",
+            "url": "https://www.dawn.com/news/2014773",
+            "note": "Reports the Balochistan Revenue Department notification of 8 July 2026 (11 divisions, 41 districts)."
+          },
+          {
+            "title": "Quetta split into two districts as Balochistan undergoes administrative restructuring",
+            "publisher": "Dawn",
+            "date": "2026-07-11",
+            "url": "https://www.dawn.com/news/2014627"
+          },
+          {
+            "title": "Balochistan divided in 11 divisions and 41 districts",
+            "publisher": "ARY News",
+            "date": "2026-07",
+            "url": "https://arynews.tv/balochistan-divided-11-divisions-41-districts"
+          }
+        ],
+        "division": "Sevi Division",
+        "division_source": "Balochistan Revenue Department notification of 8 July 2026",
+        "census_2023_row": {
+          "parent": "dera-bugti",
+          "name": "Dera Bugti",
+          "type": "sub-division",
+          "population_2023": 50943,
+          "area_km2": 927,
+          "density_2023": 54.95,
+          "urban_proportion_2023": 56.69,
+          "growth_rate_2017_2023": 0.85,
+          "source_url": "https://www.pbs.gov.pk/wp-content/uploads/census_tables/tables/table_1_balochistan_districts.pdf"
+        }
       }
-    ]
+    ],
+    "district_count": {
+      "count": 41,
+      "divisions": 11,
+      "basis": "Balochistan Revenue Department notification of 8 July 2026: 11 divisions and 41 districts (up from 8 divisions and 36 districts).",
+      "note": "The five added districts are Quetta West (Quetta split into Quetta East and Quetta West), Wadh (from Khuzdar), Tump (from Kech, notified 24 February 2026), Barshore (from Pishin) and North Dera Bugti (Dera Bugti split into North and South Dera Bugti). The division of each district follows the only published full list (Daily Pakistan); Musakhel appears under both Zhob and Loralai in the February 2026 cabinet summary.",
+      "sources": [
+        {
+          "title": "Balochistan undergoes major restructuring",
+          "publisher": "Dawn",
+          "date": "2026-07-12",
+          "url": "https://www.dawn.com/news/2014773",
+          "note": "Reports the Balochistan Revenue Department notification of 8 July 2026 (11 divisions, 41 districts)."
+        },
+        {
+          "title": "Quetta split into two districts as Balochistan undergoes administrative restructuring",
+          "publisher": "Dawn",
+          "date": "2026-07-11",
+          "url": "https://www.dawn.com/news/2014627"
+        },
+        {
+          "title": "Balochistan Govt Notifies New Divisions and Districts",
+          "publisher": "ProPakistani",
+          "date": "2026-07-12",
+          "url": "https://propakistani.pk/2026/07/12/balochistan-govt-notifies-new-divisions-and-districts/",
+          "note": "8 divisions and 36 districts before, 11 divisions and 41 districts after."
+        },
+        {
+          "title": "Balochistan divided in 11 divisions and 41 districts",
+          "publisher": "ARY News",
+          "date": "2026-07",
+          "url": "https://arynews.tv/balochistan-divided-11-divisions-41-districts"
+        },
+        {
+          "title": "Historic administrative reforms in Balochistan, 4 new divisions and 5 new districts established",
+          "publisher": "Daily Pakistan (via The Patriot)",
+          "date": "2026-07-12",
+          "url": "https://dailythepatriot.com/historic-administrative-reforms-in-balochistan/",
+          "note": "Only source seen with the full district list of every division."
+        },
+        {
+          "title": "Balochistan Approves New Divisions and Districts",
+          "publisher": "ProPakistani",
+          "date": "2026-02-25",
+          "url": "https://propakistani.pk/2026/02/25/balochistan-approves-new-divisions-and-districts/",
+          "note": "Cabinet decisions of 19 January 2026: Barshor district, Pishin and Koh-e-Suleman divisions, Quetta to be split."
+        },
+        {
+          "title": "Kech divided; new district Tump created (Revenue Department notification of 24 February 2026)",
+          "publisher": "Baldiyat Times",
+          "date": "2026-02-27",
+          "url": "https://baldiyattimes.com/?p=61791",
+          "note": "Tump: Tump and Mand sub-divisions/tehsils. Kech: Turbat, Buleda, Dasht (with Zamoran, Dasht and Balnigor sub-tehsils) and Hoshab."
+        }
+      ],
+      "as_of": "2026-09-29"
+    }
   },
   "gb": {
     "id": "gb",
@@ -8912,7 +9683,22 @@
         "issues": "Road access.",
         "villages": "Tangir villages"
       }
-    ]
+    ],
+    "district_count": {
+      "count": 14,
+      "divisions": 3,
+      "basis": "Gilgit-Baltistan government notification of June 2019 (four new districts, 14 in total).",
+      "sources": [
+        {
+          "title": "Four new districts set up in GB",
+          "publisher": "Dawn",
+          "date": "2019-06",
+          "url": "https://www.dawn.com/news/1488851",
+          "note": "GB government notification of four new districts (Darel, Tangir, Roundu, Gupis-Yasin); 14 districts in total."
+        }
+      ],
+      "as_of": "2026-09-29"
+    }
   },
   "ajk": {
     "id": "ajk",
@@ -9042,6 +9828,21 @@
         "issues": "Steep road to the capital.",
         "villages": "Trarkhel, Baloch villages of the district"
       }
-    ]
+    ],
+    "district_count": {
+      "count": 10,
+      "divisions": 3,
+      "basis": "AJK Planning & Development Department, AJK at a Glance 2024.",
+      "sources": [
+        {
+          "title": "AJK at a Glance 2024",
+          "publisher": "Planning & Development Department, Government of AJK",
+          "date": "2024",
+          "url": "https://pndajk.gov.pk/uploadfiles/downloads/AJK%20At%20A%20Glance-2024.pdf",
+          "note": "Districts: 10."
+        }
+      ],
+      "as_of": "2026-09-29"
+    }
   }
 }
