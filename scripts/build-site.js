@@ -18,17 +18,12 @@ const HDR_END = "<!-- mb:header:end -->";
 const FTR_START = "<!-- mb:footer:start -->";
 const FTR_END = "<!-- mb:footer:end -->";
 const MANAGED_TYPES = new Set(["Organization", "BreadcrumbList", "AdministrativeArea", "Place", "City", "WebPage", "CollectionPage", "WebSite", "ItemList", "FAQPage"]);
+// Retired URLs whose links are rewritten to the live page. The pages consolidated in PR #6 were restored
+// (owner request, 30 Sep 2026) and are live again, so they are no longer listed here.
 const LEGACY_LINKS = {
-  "bajur.html": "bajaur.html", "dgkhan.html": "dera-ghazi-khan.html", "dikhan.html": "dera-ismail-khan.html",
-  "rykhan.html": "rahim-yar-khan.html", "nankana.html": "nankana-sahib.html", "tts.html": "toba-tek-singh.html",
-  "lakki.html": "lakki-marwat.html", "nwa.html": "north-waziristan.html", "lower-chitral.html": "chitral-lower.html",
-  "upper-chitral.html": "chitral-upper.html", "mandi-bahauddin.html": "mbdin.html",
-  "districts-of-pakistan.html": "districts.html", "provinces-of-pakistan.html": "provinces.html",
   "current-affairs.html": "literature.html", "politics.html": "geography.html"
 };
-for (const p of ["azad-kashmir", "balochistan", "gilgit-baltistan", "islamabad-capital-territory", "khyber-pakhtunkhwa", "punjab", "sindh"]) {
-  LEGACY_LINKS[`districts-${p}.html`] = `districts-of-${p}.html`;
-}
+
 const NAV = [["/", "Home"], ["provinces.html", "Provinces"], ["districts.html", "Districts"], ["culture.html", "Culture"],
   ["literature.html", "Literature"], ["geography.html", "Geography"], ["sports.html", "Sports"], ["history.html", "History"],
   ["showbiz.html", "Showbiz"], ["about.html", "About"]];
