@@ -10392,7 +10392,43 @@
             "title": "Badin",
             "date": ""
           }
-        ]
+        ],
+        "urdu": {
+          "name": "بدین",
+          "hq": "بدین",
+          "units": {
+            "Badin": "بدین",
+            "Golarchi (S.F.Rahu)": "گولارچی (شہید فاضل راہو)",
+            "Matli": "ماتلی",
+            "Talhar": "تلہار",
+            "Tando Bago": "ٹنڈو باگو"
+          },
+          "towns": {
+            "Badin": "بدین",
+            "Matli": "ماتلی",
+            "Tando Ghulam Ali": "ٹنڈو غلام علی",
+            "Shaheed Fazal Rahu": "شہید فاضل راہو",
+            "Khoski": "کھوسکی",
+            "Talhar": "تلہار",
+            "Tando Bago": "ٹنڈو باگو"
+          },
+          "blocks": [
+            {
+              "h": "بدین شہر",
+              "p": [
+                "بدین 1750 میں آباد ہوا اور دریائے سندھ کے مشرق میں دلدلی ڈیلٹائی زمین پر واقع ہے۔ چاول علاقے کی بڑی فصل ہے؛ شہر میں شوگر مل اور چاول کی ملیں ہیں اور یہ حیدرآباد–بدین ریلوے لائن کا آخری اسٹیشن ہے۔ علاقے میں تیل اور گیس کی پیداوار 1990 کی دہائی کے وسط میں شروع ہوئی (<a href=\"https://www.britannica.com/place/Badin\" rel=\"noopener\">بریٹانیکا</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://www.britannica.com/place/Badin",
+              "publisher": "Encyclopaedia Britannica",
+              "title": "Badin"
+            }
+          ]
+        }
       },
       {
         "slug": "dadu",
@@ -10685,7 +10721,29 @@
         "tehsil_count": 5,
         "tehsil_count_source": "PBS 2023 census, Table 1",
         "profile_checked": "2026-09-29",
-        "sources": []
+        "sources": [],
+        "urdu": {
+          "name": "گھوٹکی",
+          "hq": "میرپور ماتھیلو",
+          "units": {
+            "Daharki": "ڈہرکی",
+            "Ghotki": "گھوٹکی",
+            "Khangarh": "خان گڑھ",
+            "Mirpur Mathelo": "میرپور ماتھیلو",
+            "Ubauro": "اوباڑو"
+          },
+          "towns": {
+            "Ghotki": "گھوٹکی",
+            "Daharki": "ڈہرکی",
+            "Mirpur Mathelo": "میرپور ماتھیلو",
+            "Ubauro": "اوباڑو",
+            "Khangarh": "خان گڑھ",
+            "Adilpur": "عادل پور"
+          },
+          "blocks": [],
+          "checked": "2026-09-30",
+          "sources": []
+        }
       },
       {
         "slug": "hyderabad",
@@ -10812,7 +10870,33 @@
               "publisher": "Encyclopaedia Britannica"
             }
           }
-        ]
+        ],
+        "urdu": {
+          "name": "حیدرآباد",
+          "hq": "حیدرآباد",
+          "units": {
+            "Hyderabad City": "حیدرآباد سٹی",
+            "Hyderabad": "حیدرآباد تعلقہ",
+            "Latifabad": "لطیف آباد",
+            "Qasimabad": "قاسم آباد"
+          },
+          "blocks": [
+            {
+              "h": "حیدرآباد شہر کی تاریخ",
+              "p": [
+                "حیدرآباد دریائے سندھ کے مشرق میں گنجو ٹکر پہاڑی سلسلے کی سب سے شمالی پہاڑی پر آباد ہے۔ اسے 1768 میں غلام شاہ کلہوڑو نے قدیم قصبے نیرون کوٹ کی جگہ آباد کیا اور حضرت علی (حیدر) کے نام پر اس کا نام رکھا۔ تالپوروں کے دور میں یہ 1843 تک سندھ کا دارالحکومت رہا، جب میانی اور دبو کی لڑائیوں کے بعد شہر انگریزوں کے حوالے ہوا اور دارالحکومت کراچی منتقل ہو گیا۔ حیدرآباد کو 1853 میں میونسپلٹی کا درجہ ملا۔ یہاں کلہوڑا اور تالپور حکمرانوں کے مقبرے اور 1782 میں بنا قلعہ ہیں، اور شہر چھتوں پر بنے ہوا دان (بادگیر) کے لیے مشہور ہے (<a href=\"https://www.britannica.com/place/Hyderabad-Pakistan\" rel=\"noopener\">بریٹانیکا</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://www.britannica.com/place/Hyderabad-Pakistan",
+              "publisher": "Encyclopaedia Britannica",
+              "title": "Hyderabad Pakistan"
+            }
+          ]
+        }
       },
       {
         "slug": "jacobabad",
@@ -10946,7 +11030,51 @@
             "title": "Jacobabad",
             "date": ""
           }
-        ]
+        ],
+        "urdu": {
+          "name": "جیکب آباد",
+          "hq": "جیکب آباد",
+          "units": {
+            "Garhi Khairo": "گڑھی خیرو",
+            "Jacobabad": "جیکب آباد",
+            "Thul": "ٹھل"
+          },
+          "towns": {
+            "Jacobabad": "جیکب آباد",
+            "Thul": "ٹھل",
+            "Garhi Khairo": "گڑھی خیرو",
+            "Sohrab Khan Sarki": "سہراب خان سرکی",
+            "Mirpur Buriro": "میرپور بریرو"
+          },
+          "blocks": [
+            {
+              "h": "جیکب آباد شہر",
+              "p": [
+                "جیکب آباد 1847 میں خان گڑھ گاؤں کی جگہ جنرل جان جیکب نے آباد کیا، جو ضلع کے پہلے ڈپٹی کمشنر تھے اور جدید شہر کا نقشہ انہی نے بنایا۔ شہر کو 1875 میں میونسپلٹی کا درجہ ملا۔ یہ سندھ سے گزرنے والی ریلوے اور بڑی شاہراہوں کے سنگم پر ہے اور چاول اور اناج کی کاشت والے علاقے کا مرکز ہے۔ شہر میں وکٹوریہ کلاک ٹاور (1887) بھی ہے (<a href=\"https://www.britannica.com/place/Jacobabad\" rel=\"noopener\">بریٹانیکا</a>)۔"
+              ]
+            },
+            {
+              "h": "شدید گرمی",
+              "p": [
+                "جیکب آباد مسلسل بلند درجہ حرارت کے لیے مشہور ہے۔ بریٹانیکا کے مطابق پاکستان میں سائے میں ریکارڈ ہونے والا سب سے زیادہ درجہ حرارت، 52 ڈگری سینٹی گریڈ، اسی شہر میں ریکارڈ ہوا (<a href=\"https://www.britannica.com/place/Jacobabad\" rel=\"noopener\">بریٹانیکا</a>)۔"
+              ]
+            },
+            {
+              "h": "دستکاری",
+              "p": [
+                "یہاں سوتی قالین (غالیچہ)، روغنی لکڑی کے کھلونے اور لیمپ اور کڑھائی کا کام تیار ہوتا ہے (<a href=\"https://www.britannica.com/place/Jacobabad\" rel=\"noopener\">بریٹانیکا</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://www.britannica.com/place/Jacobabad",
+              "publisher": "Encyclopaedia Britannica",
+              "title": "Jacobabad"
+            }
+          ]
+        }
       },
       {
         "slug": "jamshoro",
@@ -11106,7 +11234,41 @@
         "tehsil_count": 4,
         "tehsil_count_source": "PBS 2023 census, Table 1",
         "profile_checked": "2026-09-29",
-        "sources": []
+        "sources": [],
+        "urdu": {
+          "name": "جامشورو",
+          "hq": "جامشورو",
+          "units": {
+            "Kotri": "کوٹری",
+            "Manjhand": "مانجھند",
+            "Sehwan": "سیہون",
+            "Thano Bula Khan": "تھانو بولا خان"
+          },
+          "towns": {
+            "Kotri": "کوٹری",
+            "Jamshoro": "جامشورو",
+            "Sehwan": "سیہون",
+            "Bhan": "بھان",
+            "Thano Bula Khan": "تھانو بولا خان",
+            "Manjhand": "مانجھند"
+          },
+          "blocks": [
+            {
+              "h": "کوٹری اور کوٹری بیراج",
+              "p": [
+                "کوٹری دریائے سندھ کے مغربی کنارے پر ایک اہم ریلوے جنکشن ہے اور پل کے ذریعے دریا کے دوسرے کنارے پر حیدرآباد سے ملا ہوا ہے۔ اسے 1854 میں میونسپلٹی کا درجہ ملا۔ کوٹری سے تقریباً 7 کلومیٹر اوپر غلام محمد (کوٹری) بیراج (1955) دریائے سندھ کے سیلاب کو قابو میں رکھتا ہے، بجلی پیدا کرتا ہے اور علاقے کی تقریباً 11 لاکھ ہیکٹر زمین سیراب کرتا ہے (<a href=\"https://www.britannica.com/place/Kotri\" rel=\"noopener\">بریٹانیکا</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://www.britannica.com/place/Kotri",
+              "publisher": "Encyclopaedia Britannica",
+              "title": "Kotri"
+            }
+          ]
+        }
       },
       {
         "slug": "kamber",
@@ -11292,7 +11454,31 @@
         "tehsil_count": 7,
         "tehsil_count_source": "PBS 2023 census, Table 1",
         "profile_checked": "2026-09-29",
-        "sources": []
+        "sources": [],
+        "urdu": {
+          "name": "قمبر شہدادکوٹ",
+          "hq": "قمبر",
+          "units": {
+            "Kambar Ali Khan": "قمبر علی خان",
+            "Miro Khan": "میرو خان",
+            "Nasirabad": "نصیرآباد",
+            "Qubo Saeed Khan": "قبو سعید خان",
+            "Shahdad Kot": "شہدادکوٹ",
+            "Sujawal Junejo": "سجاول جونیجو",
+            "Warah": "وارہ"
+          },
+          "towns": {
+            "Shahdad Kot": "شہدادکوٹ",
+            "Kambar": "قمبر",
+            "Warah": "وارہ",
+            "Nasirabad": "نصیرآباد",
+            "Qubo Saeed Khan": "قبو سعید خان",
+            "Miro Khan": "میرو خان"
+          },
+          "blocks": [],
+          "checked": "2026-09-30",
+          "sources": []
+        }
       },
       {
         "slug": "karachi-central",
@@ -11412,7 +11598,20 @@
         "tehsil_count": 5,
         "tehsil_count_source": "PBS 2023 census, Table 1",
         "profile_checked": "2026-09-29",
-        "sources": []
+        "sources": [],
+        "urdu": {
+          "name": "کراچی وسطی",
+          "units": {
+            "Gulberg": "گلبرگ",
+            "Liaquatabad": "لیاقت آباد",
+            "Nazimabad": "ناظم آباد",
+            "New Karachi": "نیو کراچی",
+            "North Nazimabad": "نارتھ ناظم آباد"
+          },
+          "blocks": [],
+          "checked": "2026-09-30",
+          "sources": []
+        }
       },
       {
         "slug": "karachi-east",
@@ -12102,7 +12301,22 @@
         "tehsil_count": 6,
         "tehsil_count_source": "PBS 2023 census, Table 1",
         "profile_checked": "2026-09-29",
-        "sources": []
+        "sources": [],
+        "urdu": {
+          "name": "ملیر",
+          "hq": "ملیر",
+          "units": {
+            "Airport": "ایئرپورٹ",
+            "Bin Qasim": "بن قاسم",
+            "Gadap": "گڈاپ",
+            "Ibrahim Hydri": "ابراہیم حیدری",
+            "Murad Memon": "مراد میمن",
+            "Shah Mureed": "شاہ مرید"
+          },
+          "blocks": [],
+          "checked": "2026-09-30",
+          "sources": []
+        }
       },
       {
         "slug": "kashmore",
@@ -12236,7 +12450,27 @@
         "tehsil_count": 3,
         "tehsil_count_source": "PBS 2023 census, Table 1",
         "profile_checked": "2026-09-29",
-        "sources": []
+        "sources": [],
+        "urdu": {
+          "name": "کشمور",
+          "hq": "کندھ کوٹ",
+          "units": {
+            "Kandhkot": "کندھ کوٹ",
+            "Kashmore": "کشمور",
+            "Tangwani": "ٹنگوانی"
+          },
+          "towns": {
+            "Kandhkot": "کندھ کوٹ",
+            "Kashmore": "کشمور",
+            "Ghouspur": "غوث پور",
+            "Guddu": "گڈو",
+            "Karampur": "کرم پور",
+            "Tangwani": "ٹنگوانی"
+          },
+          "blocks": [],
+          "checked": "2026-09-30",
+          "sources": []
+        }
       },
       {
         "slug": "khairpur",
@@ -12528,7 +12762,55 @@
               "publisher": "Encyclopaedia Britannica"
             }
           }
-        ]
+        ],
+        "urdu": {
+          "name": "خیرپور",
+          "hq": "خیرپور",
+          "units": {
+            "Faiz Ganj": "فیض گنج",
+            "Gambat": "گمبٹ",
+            "Khairpur": "خیرپور",
+            "Kingri": "کنگری",
+            "Kot Diji": "کوٹ ڈیجی",
+            "Mirwah": "میرواہ",
+            "Nara": "نارا",
+            "Sobho Dero": "سوبھو ڈیرو"
+          },
+          "towns": {
+            "Khairpur": "خیرپور",
+            "Gambat": "گمبٹ",
+            "Kot Diji": "کوٹ ڈیجی",
+            "Sobho Dero": "سوبھو ڈیرو",
+            "Ranipur": "رانی پور"
+          },
+          "blocks": [
+            {
+              "h": "خیرپور کی تاریخ",
+              "p": [
+                "خیرپور شہر 1783 میں میر سہراب خان نے آباد کیا، جنہوں نے تالپور خاندان کی خیرپور شاخ کی بنیاد رکھی، اور یہ شہر شمالی سندھ کے میروں کا مرکز بنا۔ انگریزوں نے 1832 میں ریاست خیرپور کو تسلیم کیا اور 1843 میں سندھ پر قبضے کے بعد بھی اس کی سیاسی حیثیت برقرار رہنے دی۔ ریاست خیرپور اکتوبر 1955 میں پاکستان میں ضم ہوئی۔ شاہ عبداللطیف یونیورسٹی 1975 میں سندھ یونیورسٹی کے کیمپس کے طور پر شروع ہوئی اور 1987 میں یونیورسٹی بنی (<a href=\"https://www.britannica.com/place/Khairpur\" rel=\"noopener\">بریٹانیکا</a>)۔"
+              ]
+            },
+            {
+              "h": "کوٹ ڈیجی",
+              "p": [
+                "کوٹ ڈیجی کا آثارِ قدیمہ کا مقام خیرپور شہر سے تقریباً 25 کلومیٹر جنوب میں دریائے سندھ کی ایک قدیم گزرگاہ کے قریب ہے۔ یہاں تقریباً 3000 قبل مسیح کی پتھر کی ایک دیوار ایک قلعہ بند حصے اور متعدد رہائشی عمارتوں کو گھیرے ہوئے ہے، جن کی پہلی کھدائی 1950 کی دہائی میں ہوئی۔ اس بستی کا آغاز ابتدائی ہڑپہ دور (تقریباً 3500 قبل مسیح) سے مانا جاتا ہے (<a href=\"https://www.britannica.com/place/Kot-Diji\" rel=\"noopener\">بریٹانیکا</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://www.britannica.com/place/Khairpur",
+              "publisher": "Encyclopaedia Britannica",
+              "title": "Khairpur"
+            },
+            {
+              "url": "https://www.britannica.com/place/Kot-Diji",
+              "publisher": "Encyclopaedia Britannica",
+              "title": "Kot Diji"
+            }
+          ]
+        }
       },
       {
         "slug": "larkana",
@@ -12690,7 +12972,46 @@
               "publisher": "UNESCO World Heritage Centre"
             }
           }
-        ]
+        ],
+        "urdu": {
+          "name": "لاڑکانہ",
+          "hq": "لاڑکانہ",
+          "units": {
+            "Bakrani": "باقرانی",
+            "Dokri": "ڈوکری",
+            "Larkana": "لاڑکانہ",
+            "Ratodero": "رتوڈیرو"
+          },
+          "towns": {
+            "Larkana": "لاڑکانہ",
+            "Ratodero": "رتوڈیرو",
+            "Naudero": "نوڈیرو",
+            "Badah": "باڈہ",
+            "Dokri": "ڈوکری",
+            "Arija": "اریجا"
+          },
+          "blocks": [
+            {
+              "h": "موئن جو دڑو",
+              "p": [
+                "موئن جو دڑو کے کھنڈرات ضلع لاڑکانہ میں دریائے سندھ کے دائیں کنارے پر لاڑکانہ شہر سے 28 کلومیٹر دور ہیں۔ یہ وادیٔ سندھ کی تہذیب کا بڑا شہر تھا اور 1980 میں اسے یونیسکو کے عالمی ورثے میں شامل کیا گیا (<a href=\"https://whc.unesco.org/en/list/138\" rel=\"noopener\">یونیسکو</a>)۔ اس کی آثارِ قدیمہ کی اہمیت پہلی بار 1922 میں، ہڑپہ کی دریافت کے ایک سال بعد، سامنے آئی، اور بعد کی کھدائیوں سے پتا چلا کہ یہ وادیٔ سندھ کی تہذیب کا سب سے بڑا شہر تھا (<a href=\"https://www.britannica.com/place/Mohenjo-daro\" rel=\"noopener\">بریٹانیکا</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://whc.unesco.org/en/list/138",
+              "publisher": "UNESCO World Heritage Centre",
+              "title": ""
+            },
+            {
+              "url": "https://www.britannica.com/place/Mohenjo-daro",
+              "publisher": "Encyclopaedia Britannica",
+              "title": "Mohenjo daro"
+            }
+          ]
+        }
       },
       {
         "slug": "matiari",
@@ -12834,7 +13155,38 @@
         "tehsil_count": 3,
         "tehsil_count_source": "PBS 2023 census, Table 1",
         "profile_checked": "2026-09-29",
-        "sources": []
+        "sources": [],
+        "urdu": {
+          "name": "مٹیاری",
+          "hq": "مٹیاری",
+          "units": {
+            "Hala": "ہالا",
+            "Matiari": "مٹیاری",
+            "Saeedabad": "سعیدآباد"
+          },
+          "towns": {
+            "Hala": "ہالا",
+            "Bhit Shah": "بھٹ شاہ",
+            "New Saeedabad": "نیو سعیدآباد",
+            "Matiari": "مٹیاری"
+          },
+          "blocks": [
+            {
+              "h": "بھٹ شاہ اور شاہ عبداللطیف",
+              "p": [
+                "بھٹ شاہ، جو 2023 کی مردم شماری میں ضلع مٹیاری کا ایک شہری مرکز ہے، سندھی زبان کے عظیم ترین شاعر شاہ عبداللطیف بھٹائی (1690–1752) سے منسوب ہے۔ ان کی شاعری کا مجموعہ \"رسالو\" کہلاتا ہے؛ انہوں نے ہر طرح کی مذہبی تنگ نظری پر تنقید کی اور صوفیانہ انداز میں خدا کی وحدانیت اور انسانی بھائی چارے کا پیغام دیا (<a href=\"https://www.britannica.com/topic/Sindhi-literature\" rel=\"noopener\">بریٹانیکا، سندھی ادب</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://www.britannica.com/topic/Sindhi-literature",
+              "publisher": "Encyclopaedia Britannica",
+              "title": "Sindhi literature"
+            }
+          ]
+        }
       },
       {
         "slug": "mirpurkhas",
@@ -13024,7 +13376,45 @@
         "tehsil_count": 7,
         "tehsil_count_source": "PBS 2023 census, Table 1",
         "profile_checked": "2026-09-29",
-        "sources": []
+        "sources": [],
+        "urdu": {
+          "name": "میرپورخاص",
+          "hq": "میرپورخاص",
+          "units": {
+            "Digri": "ڈگری",
+            "Hussain Bux Mari": "حسین بخش مری",
+            "Jhudo": "جھڈو",
+            "Kot Ghulam Muhammad": "کوٹ غلام محمد",
+            "Mirpur Khas": "میرپورخاص",
+            "Shujaabad": "شجاع آباد",
+            "Sindhri": "سندھڑی"
+          },
+          "towns": {
+            "Mirpur Khas": "میرپورخاص",
+            "Digri": "ڈگری",
+            "Tando Jan Muhammad": "ٹنڈو جان محمد",
+            "Jhudo": "جھڈو",
+            "Naukot": "نوکوٹ",
+            "Kot Ghulam Muhammad": "کوٹ غلام محمد",
+            "Mirwah": "میرواہ"
+          },
+          "blocks": [
+            {
+              "h": "میرپورخاص شہر",
+              "p": [
+                "میرپورخاص لیٹ واہ نہر پر واقع ہے اور ریل اور سڑک کے ذریعے حیدرآباد (تقریباً 65 کلومیٹر مغرب جنوب مغرب) اور سڑک کے ذریعے عمرکوٹ سے ملا ہوا ہے۔ اسے 1806 میں میر علی مراد تالپور نے آباد کیا، اور 1843 میں سر چارلس نیپیئر کی قیادت میں برطانوی فوج کے ہاتھوں شکست تک یہ تالپور حکمرانوں کا دارالحکومت رہا۔ 1900 میں جمڑاؤ نہر کھلنے کے بعد شہر کی اہمیت بڑھی، اور اسے 1901 میں میونسپلٹی کا درجہ ملا۔ آج یہ اناج، کپڑے اور سوتی مصنوعات کی تجارت کا مرکز ہے (<a href=\"https://www.britannica.com/place/Mirpur-Khas\" rel=\"noopener\">بریٹانیکا</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://www.britannica.com/place/Mirpur-Khas",
+              "publisher": "Encyclopaedia Britannica",
+              "title": "Mirpur Khas"
+            }
+          ]
+        }
       },
       {
         "slug": "naushahro",
@@ -13207,7 +13597,44 @@
         "tehsil_count": 5,
         "tehsil_count_source": "PBS 2023 census, Table 1",
         "profile_checked": "2026-09-29",
-        "sources": []
+        "sources": [],
+        "urdu": {
+          "name": "نوشہرو فیروز",
+          "hq": "نوشہرو فیروز",
+          "units": {
+            "Bhiria": "بھریا",
+            "Kandiaro": "کنڈیارو",
+            "Mehrabpur": "محراب پور",
+            "Moro": "مورو",
+            "Naushahro Feroze": "نوشہرو فیروز"
+          },
+          "towns": {
+            "Moro": "مورو",
+            "Naushahro Feroze": "نوشہرو فیروز",
+            "Mehrabpur": "محراب پور",
+            "Kandiaro": "کنڈیارو",
+            "Mithiani": "مٹھیانی",
+            "Bhiria Road": "بھریا روڈ",
+            "Padidan": "پڈعیدن",
+            "Halani": "ہالانی"
+          },
+          "blocks": [
+            {
+              "h": "انتظامی پس منظر",
+              "p": [
+                "1912 میں جب ضلع نوابشاہ بنا تو نوشہرو فیروز، کنڈیارو اور مورو اس کے سات تعلقوں میں شامل تھے (<a href=\"https://web.archive.org/web/20121120024313/http:/shaheedbenazirabad.gov.pk/shaheedbenazirabad/Admin/AboutDistrict.aspx\" rel=\"noopener\">ضلع شہید بینظیرآباد کی ویب سائٹ، محفوظ شدہ نقل</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://web.archive.org/web/20121120024313/http:/shaheedbenazirabad.gov.pk/shaheedbenazirabad/Admin/AboutDistrict.aspx",
+              "publisher": "web.archive.org",
+              "title": ""
+            }
+          ]
+        }
       },
       {
         "slug": "sanghar",
@@ -13436,7 +13863,43 @@
             "title": "Sanghar",
             "date": ""
           }
-        ]
+        ],
+        "urdu": {
+          "name": "سانگھڑ",
+          "hq": "سانگھڑ",
+          "units": {
+            "Jam Nawaz Ali": "جام نواز علی",
+            "Khipro": "کھپرو",
+            "Sanghar": "سانگھڑ",
+            "Shahdadpur": "شہدادپور",
+            "Sinjhoro": "سنجھورو",
+            "Tando Adam": "ٹنڈو آدم"
+          },
+          "towns": {
+            "Tando Adam": "ٹنڈو آدم",
+            "Shahdadpur": "شہدادپور",
+            "Sanghar": "سانگھڑ",
+            "Khipro": "کھپرو",
+            "Shahpur Chakar": "شاہ پور چاکر",
+            "Sinjhoro": "سنجھورو"
+          },
+          "blocks": [
+            {
+              "h": "سانگھڑ شہر",
+              "p": [
+                "سانگھڑ ایک تجارتی شہر ہے جو سڑک کے ذریعے حیدرآباد، کراچی اور سکھر سے ملا ہوا ہے۔ اردگرد کی زمین زیادہ تر نیم خشک اور صحرائے تھر کا حصہ ہے؛ کاشت والے علاقے مِٹھراؤ نہری نظام سے سیراب ہوتے ہیں، اور چاول، گندم اور کپاس بڑی فصلیں ہیں (<a href=\"https://www.britannica.com/place/Sanghar\" rel=\"noopener\">بریٹانیکا</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://www.britannica.com/place/Sanghar",
+              "publisher": "Encyclopaedia Britannica",
+              "title": "Sanghar"
+            }
+          ]
+        }
       },
       {
         "slug": "sba",
@@ -13625,7 +14088,52 @@
               "publisher": "District Government Shaheed Benazirabad (archived)"
             }
           }
-        ]
+        ],
+        "urdu": {
+          "name": "شہید بینظیرآباد",
+          "hq": "نوابشاہ",
+          "units": {
+            "Daur": "دوڑ",
+            "Kazi Ahmed": "قاضی احمد",
+            "Nawabshah": "نوابشاہ",
+            "Sakrand": "سکرنڈ"
+          },
+          "towns": {
+            "Nawabshah": "نوابشاہ",
+            "Sakrand": "سکرنڈ",
+            "Bandhi": "بندھی",
+            "Daur": "دوڑ",
+            "Kazi Ahmed": "قاضی احمد"
+          },
+          "blocks": [
+            {
+              "h": "نوابشاہ سے شہید بینظیرآباد تک",
+              "p": [
+                "نوابشاہ تعلقہ 1907 میں قائم ہوا اور 1912 میں اسے ضلع نوابشاہ بنا دیا گیا۔ یہ نام سید نواب شاہ کے نام پر رکھا گیا جو 1881 میں اس علاقے میں آباد ہوئے تھے۔ قیام کے وقت ضلع کے سات تعلقے تھے: کنڈیارو، نوشہرو فیروز، مورو، سکرنڈ، نوابشاہ، سنجھورو اور شہدادپور (<a href=\"https://web.archive.org/web/20121120024313/http:/shaheedbenazirabad.gov.pk/shaheedbenazirabad/Admin/AboutDistrict.aspx\" rel=\"noopener\">ضلعی حکومت کی ویب سائٹ، محفوظ شدہ نقل</a>)۔",
+                "2008 میں سندھ اسمبلی نے متفقہ قرارداد کے ذریعے بینظیر بھٹو کے اعزاز میں ضلع کا نام شہید بینظیرآباد رکھا (<a href=\"https://web.archive.org/web/20121120024313/http:/shaheedbenazirabad.gov.pk/shaheedbenazirabad/Admin/AboutDistrict.aspx\" rel=\"noopener\">ضلعی حکومت کی ویب سائٹ، محفوظ شدہ نقل</a>)۔ ضلعی صدر مقام کا نام بدستور نوابشاہ ہے۔"
+              ]
+            },
+            {
+              "h": "نوابشاہ شہر",
+              "p": [
+                "نوابشاہ شہر کا اصل نام نصرت تھا۔ یہ سڑک اور ریل کے ذریعے کراچی، حیدرآباد اور سکھر سے ملا ہوا ہے۔ شہر ایک بڑھتا ہوا صنعتی مرکز ہے جہاں چھوٹی کشتیاں، چینی، صابن اور سوتی و ریشمی کپڑا تیار ہوتا ہے۔ اردگرد کے علاقے کی بڑی فصلیں کپاس، باجرہ، گنا اور پھل ہیں (<a href=\"https://www.britannica.com/place/Nawabshah\" rel=\"noopener\">بریٹانیکا</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://web.archive.org/web/20121120024313/http:/shaheedbenazirabad.gov.pk/shaheedbenazirabad/Admin/AboutDistrict.aspx",
+              "publisher": "web.archive.org",
+              "title": ""
+            },
+            {
+              "url": "https://www.britannica.com/place/Nawabshah",
+              "publisher": "Encyclopaedia Britannica",
+              "title": "Nawabshah"
+            }
+          ]
+        }
       },
       {
         "slug": "shikarpur",
@@ -13776,7 +14284,40 @@
             "title": "Shikarpur",
             "date": ""
           }
-        ]
+        ],
+        "urdu": {
+          "name": "شکارپور",
+          "hq": "شکارپور",
+          "units": {
+            "Garhi Yasin": "گڑھی یاسین",
+            "Khanpur": "خانپور",
+            "Lakhi": "لکھی",
+            "Shikarpur": "شکارپور"
+          },
+          "towns": {
+            "Shikarpur": "شکارپور",
+            "Lakhi": "لکھی",
+            "Madeji": "مدیجی",
+            "Khanpur": "خانپور",
+            "Garhi Yasin": "گڑھی یاسین"
+          },
+          "blocks": [
+            {
+              "h": "شکارپور شہر",
+              "p": [
+                "شکارپور دریائے سندھ سے 29 کلومیٹر مغرب میں ہے اور سڑک اور ریل کے ذریعے سکھر، جیکب آباد اور لاڑکانہ سے ملا ہوا ہے۔ یہ 1617 میں درۂ بولان سے افغانستان جانے والے قافلوں کے راستے پر آباد ہوا اور 1855 میں اسے میونسپلٹی بنایا گیا۔ اس کا بڑا ڈھکا ہوا بازار وسطی اور جنوبی ایشیا میں مشہور تھا۔ اردگرد کا میدانی علاقہ چاول کی کاشت اور بھیڑ بکریاں پالنے کا بڑا مرکز ہے (<a href=\"https://www.britannica.com/place/Shikarpur\" rel=\"noopener\">بریٹانیکا</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://www.britannica.com/place/Shikarpur",
+              "publisher": "Encyclopaedia Britannica",
+              "title": "Shikarpur"
+            }
+          ]
+        }
       },
       {
         "slug": "sujawal",
@@ -13913,7 +14454,28 @@
         "tehsil_count": 5,
         "tehsil_count_source": "PBS 2023 census, Table 1",
         "profile_checked": "2026-09-29",
-        "sources": []
+        "sources": [],
+        "urdu": {
+          "name": "سجاول",
+          "hq": "سجاول",
+          "units": {
+            "Jati": "جاتی",
+            "Kharo Chan": "کھارو چھان",
+            "Mirpur Bathoro": "میرپور بٹھورو",
+            "Shah Bunder": "شاہ بندر",
+            "Sujawal": "سجاول"
+          },
+          "towns": {
+            "Sujawal": "سجاول",
+            "Chuhar Jamali": "چوہڑ جمالی",
+            "Daro": "دڑو",
+            "Mirpur Bathoro": "میرپور بٹھورو",
+            "Jati": "جاتی"
+          },
+          "blocks": [],
+          "checked": "2026-09-30",
+          "sources": []
+        }
       },
       {
         "slug": "sukkur",
@@ -14035,7 +14597,58 @@
             "title": "Sukkur",
             "date": ""
           }
-        ]
+        ],
+        "urdu": {
+          "name": "سکھر",
+          "hq": "سکھر",
+          "units": {
+            "New Sukkur": "نیو سکھر",
+            "Pano Aqil": "پنو عاقل",
+            "Rohri": "روہڑی",
+            "Salehpat": "صالح پٹ",
+            "Sukkur City": "سکھر سٹی"
+          },
+          "blocks": [
+            {
+              "h": "سکھر شہر، روہڑی اور بکھر",
+              "p": [
+                "سکھر شہر دریائے سندھ کے مغربی کنارے پر آباد ہے، اور ایک کینٹی لیور پل اسے دریا کے مشرقی کنارے پر واقع روہڑی سے ملاتا ہے۔ دونوں شہروں کے درمیان دریا کے بیچ بکھر کا جزیرہ نما قلعہ ہے۔ پرانے شہر میں کئی تاریخی مقبرے اور مساجد ہیں جن میں میر معصوم شاہ کا مینار (تقریباً 1607) نمایاں ہے۔ سکھر کو 1862 میں میونسپلٹی کا درجہ ملا، اور یہ ریل اور بڑی شاہراہوں کے ذریعے کوئٹہ، ملتان اور کراچی سے جڑا ہوا ہے (<a href=\"https://www.britannica.com/place/Sukkur\" rel=\"noopener\">بریٹانیکا</a>)۔"
+              ]
+            },
+            {
+              "h": "سکھر بیراج",
+              "p": [
+                "سکھر بیراج 1932 میں مکمل ہوا۔ تقریباً 1.6 کلومیٹر لمبا یہ بیراج سکھر گھاٹی سے 4.8 کلومیٹر نیچے دریائے سندھ پر بنا ہے اور آبپاشی کی نہروں کو پانی دیتا ہے۔ اس نظام سے سیراب ہونے والے علاقے میں گندم، کپاس، چاول، تیل دار بیج اور پھل کاشت ہوتے ہیں (<a href=\"https://www.britannica.com/place/Sukkur\" rel=\"noopener\">بریٹانیکا</a>)۔"
+              ]
+            },
+            {
+              "h": "اروڑ",
+              "p": [
+                "سکھر کے مشرق میں اروڑ کے مقام پر اس ہندو برہمن خاندان کا دارالحکومت تھا جو تقریباً 712 عیسوی میں مسلمانوں کی آمد سے پہلے یہاں حکمران تھا (<a href=\"https://www.britannica.com/place/Sukkur\" rel=\"noopener\">بریٹانیکا</a>)۔"
+              ]
+            },
+            {
+              "h": "صنعت، تجارت اور دستکاری",
+              "p": [
+                "سکھر صنعتی اور تجارتی مرکز ہے۔ 1950 کی دہائی میں سکھر انڈسٹریل ٹریڈنگ اسٹیٹ قائم ہوئی جہاں اون، تیل دار بیجوں اور کھالوں جیسی مقامی پیداوار کی پروسیسنگ ہوتی ہے۔ کشتی سازی بھی اہم ہے، جبکہ چمڑے، مٹی اور دھات کی اشیا اور سوتی و ریشمی کپڑے کا کام عام دستکاریاں ہیں (<a href=\"https://www.britannica.com/place/Sukkur\" rel=\"noopener\">بریٹانیکا</a>)۔"
+              ]
+            },
+            {
+              "h": "2010 کا سیلاب",
+              "p": [
+                "2010 کی گرمیوں میں دریائے سندھ کے غیر معمولی سیلاب سے سکھر شدید متاثر ہوا؛ اگست کے وسط تک اندازہ تھا کہ شہر کے تقریباً 80 فیصد باشندے بے گھر ہو چکے تھے (<a href=\"https://www.britannica.com/place/Sukkur\" rel=\"noopener\">بریٹانیکا</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://www.britannica.com/place/Sukkur",
+              "publisher": "Encyclopaedia Britannica",
+              "title": "Sukkur"
+            }
+          ]
+        }
       },
       {
         "slug": "tando-allahyar",
@@ -14135,7 +14748,19 @@
         "tehsil_count": 3,
         "tehsil_count_source": "PBS 2023 census, Table 1",
         "profile_checked": "2026-09-29",
-        "sources": []
+        "sources": [],
+        "urdu": {
+          "name": "ٹنڈو اللہ یار",
+          "hq": "ٹنڈو اللہ یار",
+          "units": {
+            "Chamber": "چمبڑ",
+            "Jhando Mari": "جھنڈو ماری",
+            "Tando Allahyar": "ٹنڈو اللہ یار"
+          },
+          "blocks": [],
+          "checked": "2026-09-30",
+          "sources": []
+        }
       },
       {
         "slug": "tando-mk",
@@ -14250,7 +14875,24 @@
         "tehsil_count": 3,
         "tehsil_count_source": "PBS 2023 census, Table 1",
         "profile_checked": "2026-09-29",
-        "sources": []
+        "sources": [],
+        "urdu": {
+          "name": "ٹنڈو محمد خان",
+          "hq": "ٹنڈو محمد خان",
+          "units": {
+            "Bulri Shah Karim": "بلڑی شاہ کریم",
+            "Tando Ghulam Hyder": "ٹنڈو غلام حیدر",
+            "Tando Muhammad Khan": "ٹنڈو محمد خان"
+          },
+          "towns": {
+            "Tando Muhammad Khan": "ٹنڈو محمد خان",
+            "Tando Ghulam Hyder": "ٹنڈو غلام حیدر",
+            "Bulri Shah Karim": "بلڑی شاہ کریم"
+          },
+          "blocks": [],
+          "checked": "2026-09-30",
+          "sources": []
+        }
       },
       {
         "slug": "tharparkar",
@@ -14419,7 +15061,44 @@
         "tehsil_count": 7,
         "tehsil_count_source": "PBS 2023 census, Table 1",
         "profile_checked": "2026-09-29",
-        "sources": []
+        "sources": [],
+        "urdu": {
+          "name": "تھرپارکر",
+          "hq": "مٹھی",
+          "units": {
+            "Chachro": "چھاچھرو",
+            "Dahli": "ڈاہلی",
+            "Diplo": "ڈیپلو",
+            "Islamkot": "اسلام کوٹ",
+            "Kaloi": "کلوئی",
+            "Mithi": "مٹھی",
+            "Nagar Parkar": "ننگرپارکر"
+          },
+          "towns": {
+            "Mithi": "مٹھی",
+            "Chachro": "چھاچھرو",
+            "Islamkot": "اسلام کوٹ",
+            "Diplo": "ڈیپلو",
+            "Chelhar": "چیلھار",
+            "Nagar Parkar": "ننگرپارکر"
+          },
+          "blocks": [
+            {
+              "h": "صحرائے تھر",
+              "p": [
+                "صحرائے تھر ریت کے ٹیلوں کا ایک خشک خطہ ہے جو جزوی طور پر بھارت کی ریاست راجستھان اور جزوی طور پر پاکستان کے صوبوں پنجاب اور سندھ میں پھیلا ہوا ہے۔ اس کا رقبہ تقریباً 2 لاکھ مربع کلومیٹر ہے۔ اس کے مغرب میں دریائے سندھ کا سیراب میدان اور جنوب میں رن آف کچھ ہے (<a href=\"https://www.britannica.com/place/Thar-Desert\" rel=\"noopener\">بریٹانیکا</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://www.britannica.com/place/Thar-Desert",
+              "publisher": "Encyclopaedia Britannica",
+              "title": "Thar Desert"
+            }
+          ]
+        }
       },
       {
         "slug": "thatta",
@@ -14585,7 +15264,45 @@
               "publisher": "UNESCO World Heritage Centre"
             }
           }
-        ]
+        ],
+        "urdu": {
+          "name": "ٹھٹھہ",
+          "hq": "ٹھٹھہ",
+          "units": {
+            "Ghorabari": "گھوڑا باری",
+            "Keti Bunder": "کیٹی بندر",
+            "Mirpur Sakro": "میرپور ساکرو",
+            "Thatta": "ٹھٹھہ"
+          },
+          "towns": {
+            "Makli": "مکلی",
+            "Thatta": "ٹھٹھہ",
+            "Gharo": "گھارو",
+            "Ghorabari": "گھوڑا باری",
+            "Mirpur Sakro": "میرپور ساکرو"
+          },
+          "blocks": [
+            {
+              "h": "ٹھٹھہ اور مکلی",
+              "p": [
+                "ٹھٹھہ دریائے سندھ کے ذرا مغرب میں کراچی سے اندرونِ ملک واقع ہے۔ یہ زیریں سندھ کے سمہ خاندان کا دارالحکومت تھا۔ جامع مسجد (1647–49) مغل بادشاہ شاہ جہاں نے تعمیر کروائی، اور قریب کی مکلی کی پہاڑیاں ہزاروں قبروں پر مشتمل ایک وسیع قبرستان ہیں۔ شہر کو 1854 میں میونسپلٹی کا درجہ ملا (<a href=\"https://www.britannica.com/place/Thatta\" rel=\"noopener\">بریٹانیکا</a>)۔ مکلی، ٹھٹھہ کی تاریخی یادگاروں کو 1981 میں یونیسکو کے عالمی ورثے میں شامل کیا گیا (<a href=\"https://whc.unesco.org/en/list/143\" rel=\"noopener\">یونیسکو</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://www.britannica.com/place/Thatta",
+              "publisher": "Encyclopaedia Britannica",
+              "title": "Thatta"
+            },
+            {
+              "url": "https://whc.unesco.org/en/list/143",
+              "publisher": "UNESCO World Heritage Centre",
+              "title": ""
+            }
+          ]
+        }
       },
       {
         "slug": "umerkot",
@@ -14740,7 +15457,39 @@
         "tehsil_count": 4,
         "tehsil_count_source": "PBS 2023 census, Table 1",
         "profile_checked": "2026-09-29",
-        "sources": []
+        "sources": [],
+        "urdu": {
+          "name": "عمرکوٹ",
+          "hq": "عمرکوٹ",
+          "units": {
+            "Kunri": "کنری",
+            "Pithoro": "پتھورو",
+            "Samaro": "سامارو",
+            "Umer Kot": "عمرکوٹ"
+          },
+          "towns": {
+            "Umerkot": "عمرکوٹ",
+            "Kunri": "کنری",
+            "Samaro": "سامارو",
+            "Pithoro": "پتھورو"
+          },
+          "blocks": [
+            {
+              "h": "مغل بادشاہ اکبر کی جائے پیدائش",
+              "p": [
+                "مغل بادشاہ اکبر اکتوبر 1542 میں (غالباً 15 اکتوبر کو) عمرکوٹ میں پیدا ہوئے، جو اب صوبہ سندھ میں ہے (<a href=\"https://www.britannica.com/biography/Akbar\" rel=\"noopener\">بریٹانیکا، اکبر</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://www.britannica.com/biography/Akbar",
+              "publisher": "Encyclopaedia Britannica",
+              "title": "Akbar"
+            }
+          ]
+        }
       }
     ],
     "district_count": {
@@ -14887,7 +15636,54 @@
           }
         ],
         "profile_checked": "2026-09-29",
-        "sources": []
+        "sources": [],
+        "urdu": {
+          "name": "آواران",
+          "hq": "آواران",
+          "units": {
+            "Awaran": "آواران",
+            "Gishkore": "گشکور",
+            "Jhal Jao": "جھل جاؤ",
+            "Korak Jhao": "کورک جھاؤ",
+            "Mashkai": "مشکے"
+          },
+          "towns": {
+            "Awaran": "آواران",
+            "Gujar Mashkai": "گجر مشکے"
+          },
+          "blocks": [
+            {
+              "h": "ضلع کا قیام",
+              "p": [
+                "آواران پہلے ضلع خضدار کی ایک سب ڈویژن تھا اور نومبر 1992 میں اسے الگ ضلع بنایا گیا۔ آواران کا پرانا نام کولواہ تھا (<a href=\"https://bhc.gov.pk/district-judiciary/awaran/introduction/history\" rel=\"noopener\">بلوچستان ہائی کورٹ</a>)۔"
+              ]
+            },
+            {
+              "h": "2013 کا زلزلہ",
+              "p": [
+                "24 ستمبر 2013 کو شام 4 بج کر 29 منٹ پر 7.7 شدت کا زلزلہ آیا اور 28 ستمبر کو 7.2 شدت کا دوسرا زلزلہ آیا۔ پی ڈی ایم اے بلوچستان کے مطابق 399 افراد جاں بحق اور تقریباً 599 زخمی ہوئے۔ آواران، کیچ، خاران، پنجگور، واشک اور گوادر کے اضلاع متاثر ہوئے، اور ضلع آواران میں مشکے، آواران اور جھل جاؤ کی تحصیلیں سب سے زیادہ متاثر ہوئیں (<a href=\"https://www.pdma.gob.pk/disaster-and-climities/earthquake-awaran-2013\" rel=\"noopener\">پی ڈی ایم اے بلوچستان</a>)۔ اس وقت کی خبروں میں اموات کی تعداد مختلف بتائی گئی؛ مثال کے طور پر 28 ستمبر تک صوبائی چیف سیکرٹری نے 515 اموات بتائیں (<a href=\"https://www.dnaindia.com/world/report-death-toll-from-pakistan-earthquake-reaches-515-1895100\" rel=\"noopener\">رائٹرز بذریعہ ڈی این اے</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://bhc.gov.pk/district-judiciary/awaran/introduction/history",
+              "publisher": "High Court of Balochistan",
+              "title": "History of District (Awaran)"
+            },
+            {
+              "url": "https://www.pdma.gob.pk/disaster-and-climities/earthquake-awaran-2013",
+              "publisher": "www.pdma.gob.pk",
+              "title": ""
+            },
+            {
+              "url": "https://www.dnaindia.com/world/report-death-toll-from-pakistan-earthquake-reaches-515-1895100",
+              "publisher": "www.dnaindia.com",
+              "title": ""
+            }
+          ]
+        }
       },
       {
         "slug": "barkhan",
@@ -14960,7 +15756,31 @@
           }
         ],
         "profile_checked": "2026-09-29",
-        "sources": []
+        "sources": [],
+        "urdu": {
+          "name": "بارکھان",
+          "hq": "بارکھان",
+          "division": "کوہِ سلیمان ڈویژن",
+          "units": {
+            "Barkhan": "بارکھان"
+          },
+          "blocks": [
+            {
+              "h": "محلِ وقوع اور قیام",
+              "p": [
+                "بارکھان کے مشرق میں صوبہ پنجاب، جنوب میں ڈیرہ بگٹی، مغرب میں کوہلو، شمال مغرب میں لورالائی اور شمال میں موسیٰ خیل کے اضلاع ہیں۔ بارکھان پہلے ضلع لورالائی کی ایک تحصیل تھا اور 31 دسمبر 1991 کو اسے الگ ضلع کا درجہ دیا گیا (<a href=\"https://bhc.gov.pk/district-judiciary/barkhan/introduction/history\" rel=\"noopener\">بلوچستان ہائی کورٹ</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://bhc.gov.pk/district-judiciary/barkhan/introduction/history",
+              "publisher": "High Court of Balochistan",
+              "title": "History of District (Barkhan)"
+            }
+          ]
+        }
       },
       {
         "slug": "chagai",
@@ -15185,7 +16005,46 @@
               "publisher": "Dawn"
             }
           }
-        ]
+        ],
+        "urdu": {
+          "name": "چمن",
+          "hq": "چمن",
+          "division": "پشین ڈویژن",
+          "units": {
+            "Chaman City": "چمن شہر",
+            "Chaman Saddar": "چمن صدر"
+          },
+          "towns": {
+            "Chaman": "چمن"
+          },
+          "blocks": [
+            {
+              "h": "ضلع کا قیام",
+              "p": [
+                "جون 2021 میں بلوچستان بورڈ آف ریونیو نے ضلع قلعہ عبداللہ کو دو حصوں میں تقسیم کیا۔ نئے ضلع چمن میں چمن شہر اور صدر چمن تحصیل شامل کی گئیں، جبکہ قلعہ عبداللہ، گلستان اور دوبندی تحصیلیں ضلع <a href=\"qilla-abdullah.html\">قلعہ عبداللہ</a> میں رہیں (<a href=\"https://www.dawn.com/news/1632216\" rel=\"noopener\">ڈان</a>)۔"
+              ]
+            },
+            {
+              "h": "سرحدی شہر",
+              "p": [
+                "چمن پاکستان افغانستان سرحد کے قریب، افغانستان کے صوبہ قندھار کے ساتھ ویش–چمن سرحدی گزرگاہ کے جنوب میں واقع ہے۔ عام خیال ہے کہ یہ نام \"چمن\" یعنی باغ سے نکلا ہے (<a href=\"https://bhc.gov.pk/district-judiciary/chaman/introduction/history\" rel=\"noopener\">بلوچستان ہائی کورٹ</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://www.dawn.com/news/1632216",
+              "publisher": "Dawn",
+              "title": ""
+            },
+            {
+              "url": "https://bhc.gov.pk/district-judiciary/chaman/introduction/history",
+              "publisher": "High Court of Balochistan",
+              "title": "History of District (Chaman)"
+            }
+          ]
+        }
       },
       {
         "slug": "dera-bugti",
@@ -15506,7 +16365,64 @@
               "publisher": "Daily Azadi, Quetta"
             }
           }
-        ]
+        ],
+        "urdu": {
+          "name": "دکی",
+          "hq": "دکی",
+          "division": "لورالائی ڈویژن",
+          "units": {
+            "Duki": "دکی",
+            "Luni": "لونی",
+            "Talao": "تلاؤ",
+            "Thal Chutyali": "تھل چوٹیالی"
+          },
+          "towns": {
+            "Duki": "دکی"
+          },
+          "blocks": [
+            {
+              "h": "ضلع کا قیام",
+              "p": [
+                "دکی پہلے ضلع لورالائی کی سب ڈویژن تھا۔ وزیر اعلیٰ بلوچستان نے 2016 میں اسے ضلع بنانے کا اعلان کیا، اور جولائی 2017 میں محکمہ مال بلوچستان کے نوٹیفکیشن کے تحت دکی کو ضلع کا درجہ ملا جو یکم اگست 2017 سے نافذ ہوا (<a href=\"https://dailyazadiquetta.com/2017/07/18/httpwp-mep3wa3i-gdg/\" rel=\"noopener\">روزنامہ آزادی، کوئٹہ</a>)۔ جون 2021 میں یہ نئے لورالائی ڈویژن کا حصہ بنا (<a href=\"https://www.dawn.com/news/1632216\" rel=\"noopener\">ڈان</a>)۔"
+              ]
+            },
+            {
+              "h": "تاریخ",
+              "p": [
+                "1545 میں مغل بادشاہ ہمایوں نے قندھار صوبے کا تابع علاقہ دکی میر سید علی کو عطا کیا۔ 1879 میں دکی اور تھل چوٹیالی برطانوی عمل داری میں آئے، اور 1881 میں تھل چوٹیالی (جس میں دکی شامل تھا) کو ہرنائی پولیٹیکل ایجنسی کا سب ڈسٹرکٹ بنایا گیا (<a href=\"https://bhc.gov.pk/district-judiciary/loralai/introduction/history\" rel=\"noopener\">بلوچستان ہائی کورٹ، لورالائی کی تاریخ</a>)۔"
+              ]
+            },
+            {
+              "h": "کوئلے کی کانیں اور اکتوبر 2024 کا حملہ",
+              "p": [
+                "دکی کوئلے کی کانوں کا علاقہ ہے۔ 10 اور 11 اکتوبر 2024 کی درمیانی رات مسلح افراد نے ضلعی صدر مقام سے تقریباً 10 کلومیٹر دور ایک نجی کمپنی کی کانوں پر حملہ کیا جس میں کم از کم 21 کان کن جاں بحق اور چھ زخمی ہوئے، اور کم از کم 10 کانیں اور مشینری جلا دی گئیں (<a href=\"https://www.dawn.com/news/1864679\" rel=\"noopener\">ڈان</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://dailyazadiquetta.com/2017/07/18/httpwp-mep3wa3i-gdg/",
+              "publisher": "dailyazadiquetta.com",
+              "title": ""
+            },
+            {
+              "url": "https://www.dawn.com/news/1632216",
+              "publisher": "Dawn",
+              "title": ""
+            },
+            {
+              "url": "https://bhc.gov.pk/district-judiciary/loralai/introduction/history",
+              "publisher": "High Court of Balochistan",
+              "title": "History of District (Loralai)"
+            },
+            {
+              "url": "https://www.dawn.com/news/1864679",
+              "publisher": "Dawn",
+              "title": ""
+            }
+          ]
+        }
       },
       {
         "slug": "gwadar",
@@ -15660,7 +16576,52 @@
               "publisher": "Encyclopaedia Britannica"
             }
           }
-        ]
+        ],
+        "urdu": {
+          "name": "گوادر",
+          "hq": "گوادر",
+          "division": "مکران ڈویژن",
+          "units": {
+            "Gwadar": "گوادر",
+            "Jiwani": "جیونی",
+            "Ormara": "اورماڑہ",
+            "Pasni": "پسنی",
+            "Suntser": "سنٹسر"
+          },
+          "towns": {
+            "Gwadar": "گوادر",
+            "Pasni": "پسنی",
+            "Jiwani": "جیونی",
+            "Ormara": "اورماڑہ"
+          },
+          "blocks": [
+            {
+              "h": "گوادر شہر اور بندرگاہ",
+              "p": [
+                "گوادر ریتلی نوح ہیڈلینڈ پر واقع ہے جو جنوب کی طرف بحیرۂ عرب میں نکلی ہوئی ہے۔ یہ ماہی گیری (سارڈین اور شارک) اور تجارت کا اہم مرکز ہے؛ یہاں مچھلی کی پروسیسنگ کا کارخانہ ہے اور سمندری پانی سے نمک حاصل کیا جاتا ہے۔ سڑکیں گوادر کو مشرق میں پسنی اور شمال مشرق میں تربت سے ملاتی ہیں (<a href=\"https://www.britannica.com/place/Gwadar\" rel=\"noopener\">بریٹانیکا</a>)۔"
+              ]
+            },
+            {
+              "h": "عمان سے پاکستان تک",
+              "p": [
+                "گوادر 1797 میں سلطنتِ مسقط و عمان کا حصہ بنا، اور 1958 میں عمان نے یہ شہر اور اس کا ملحقہ علاقہ پاکستان کے حوالے کیا (<a href=\"https://www.britannica.com/place/Gwadar\" rel=\"noopener\">بریٹانیکا</a>)۔ بلوچستان ہائی کورٹ کے مطابق یکم جولائی 1977 کو نیا ضلع گوادر بنا اور گوادر شہر اس کا صدر مقام قرار پایا؛ ضلع کی ساحلی پٹی تقریباً 600 کلومیٹر لمبی ہے (<a href=\"https://bhc.gov.pk/district-judiciary/gawadar/introduction/history\" rel=\"noopener\">بلوچستان ہائی کورٹ</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://www.britannica.com/place/Gwadar",
+              "publisher": "Encyclopaedia Britannica",
+              "title": "Gwadar"
+            },
+            {
+              "url": "https://bhc.gov.pk/district-judiciary/gawadar/introduction/history",
+              "publisher": "High Court of Balochistan",
+              "title": "History of District (Gawadar)"
+            }
+          ]
+        }
       },
       {
         "slug": "harnai",
@@ -15764,7 +16725,37 @@
           }
         ],
         "profile_checked": "2026-09-29",
-        "sources": []
+        "sources": [],
+        "urdu": {
+          "name": "ہرنائی",
+          "hq": "ہرنائی",
+          "division": "لورالائی ڈویژن",
+          "units": {
+            "Harnai": "ہرنائی",
+            "Khoast": "خوست",
+            "Shahrig": "شاہرگ"
+          },
+          "towns": {
+            "Shahrig": "شاہرگ",
+            "Harnai": "ہرنائی"
+          },
+          "blocks": [
+            {
+              "h": "ہرنائی",
+              "p": [
+                "ہرنائی شہر ضلع کا صدر مقام ہے اور پہلے ضلع سبی میں شامل تھا۔ یہاں کی آبادی زیادہ تر پشتون اور اس کے بعد بلوچ ہے، اور شہر میں پشتو کا ایک منفرد اور قدیم لہجہ ونیتسی بولا جاتا ہے (<a href=\"https://bhc.gov.pk/district-judiciary/harnai/introduction/history\" rel=\"noopener\">بلوچستان ہائی کورٹ</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://bhc.gov.pk/district-judiciary/harnai/introduction/history",
+              "publisher": "High Court of Balochistan",
+              "title": "History of District (Harnai)"
+            }
+          ]
+        }
       },
       {
         "slug": "hub",
@@ -15905,7 +16896,38 @@
         ],
         "census_boundary_note": "These figures are for Jafarabad District as enumerated in the 2023 census, before Usta Muhammad District was created from part of it, so the current district total is lower.",
         "profile_checked": "2026-09-29",
-        "sources": []
+        "sources": [],
+        "urdu": {
+          "name": "جعفرآباد",
+          "hq": "ڈیرہ اللہ یار",
+          "division": "نصیرآباد ڈویژن",
+          "units": {
+            "Gandakha": "گنداخہ",
+            "Jhat Pat": "جھٹ پٹ",
+            "Usta Muhammad": "استا محمد"
+          },
+          "towns": {
+            "Dera Allah Yar": "ڈیرہ اللہ یار",
+            "Usta Muhammad": "استا محمد"
+          },
+          "census_note": "یہ اعداد 2023 کی مردم شماری کے وقت کے ضلع جعفرآباد کے ہیں۔ بعد میں اس کے ایک حصے سے ضلع استا محمد بنایا گیا، اس لیے موجودہ ضلع کی آبادی کم ہے۔",
+          "blocks": [
+            {
+              "h": "ضلع استا محمد کی علیحدگی",
+              "p": [
+                "جون 2022 میں بلوچستان کابینہ نے حب، کاریزات اور استا محمد کو نئے اضلاع بنانے کی منظوری دی (<a href=\"https://quettavoice.com/2022/06/06/balochistan-districts-hub-karezat-and-usta-muhammad-made-new-districts/\" rel=\"noopener\">کوئٹہ وائس</a>)۔ دیکھیے: <a href=\"usta-muhammad.html\">ضلع استا محمد</a>۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://quettavoice.com/2022/06/06/balochistan-districts-hub-karezat-and-usta-muhammad-made-new-districts/",
+              "publisher": "quettavoice.com",
+              "title": ""
+            }
+          ]
+        }
       },
       {
         "slug": "jhal-magsi",
@@ -16013,7 +17035,23 @@
           }
         ],
         "profile_checked": "2026-09-29",
-        "sources": []
+        "sources": [],
+        "urdu": {
+          "name": "جھل مگسی",
+          "hq": "گنداواہ",
+          "division": "نصیرآباد ڈویژن",
+          "units": {
+            "Gandawa": "گنداواہ",
+            "Jhal Magsi": "جھل مگسی",
+            "Mirpur": "میرپور"
+          },
+          "towns": {
+            "Gandawa": "گنداواہ"
+          },
+          "blocks": [],
+          "checked": "2026-09-30",
+          "sources": []
+        }
       },
       {
         "slug": "kalat",
@@ -16138,7 +17176,42 @@
               "publisher": "Encyclopaedia Britannica"
             }
           }
-        ]
+        ],
+        "urdu": {
+          "name": "قلات",
+          "hq": "قلات",
+          "division": "خضدار ڈویژن",
+          "units": {
+            "Gazg": "گزگ",
+            "Johan": "جوہان",
+            "Kalat": "قلات",
+            "Mangochar": "منگچر"
+          },
+          "towns": {
+            "Kalat": "قلات"
+          },
+          "blocks": [
+            {
+              "h": "قلات شہر اور خانیت",
+              "p": [
+                "قلات وادیٔ قلات کے مغربی سرے پر شاہِ مرداں پہاڑی کی ایک ڈھلوان پر واقع ہے۔ پندرہویں صدی میں میروانیوں نے اس پر قبضہ کیا، اور 1839 کے برطانوی قبضے تک یہ احمدزئی خانوں کا دارالحکومت رہا؛ 1842 میں شہر خان کو واپس کر دیا گیا۔ قلعے کے اندر پرانا شہر اور خانوں کا محل 1935 کے زلزلے میں جزوی طور پر تباہ ہو گیا۔ یہ علاقہ 1948 میں پاکستان کا حصہ بنا (<a href=\"https://www.britannica.com/place/Kalat-Pakistan\" rel=\"noopener\">بریٹانیکا</a>)۔ مقامی طور پر قلات کو قلاتِ براہوی اور قلاتِ سیوا بھی کہا جاتا ہے (<a href=\"https://bhc.gov.pk/district-judiciary/kalat/introduction/history\" rel=\"noopener\">بلوچستان ہائی کورٹ</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://www.britannica.com/place/Kalat-Pakistan",
+              "publisher": "Encyclopaedia Britannica",
+              "title": "Kalat Pakistan"
+            },
+            {
+              "url": "https://bhc.gov.pk/district-judiciary/kalat/introduction/history",
+              "publisher": "High Court of Balochistan",
+              "title": "History of District (Kalat)"
+            }
+          ]
+        }
       },
       {
         "slug": "kech",
@@ -16265,7 +17338,70 @@
             "title": "Tump enters new era of development after becoming district",
             "date": "12 May 2026"
           }
-        ]
+        ],
+        "urdu": {
+          "name": "کیچ",
+          "hq": "تربت",
+          "division": "مکران ڈویژن",
+          "units": {
+            "Turbat": "تربت",
+            "Bulaida": "بلیدہ",
+            "Dasht": "دشت",
+            "Zamoran": "زامران",
+            "Balnigore": "بالنگور",
+            "Hoshab": "ہوشاب"
+          },
+          "census_note": "یہ اعداد ان اکائیوں کے ہیں جو فروری 2026 میں ضلع تمپ کی علیحدگی کے بعد کیچ میں رہ گئیں۔",
+          "blocks": [
+            {
+              "h": "تربت اور وادیٔ کیچ",
+              "p": [
+                "ضلعی صدر مقام تربت دریائے کیچ کے بائیں کنارے پر واقع ہے، جو دریائے دشت کا معاون دریا ہے۔ تربت اردگرد کی وادی میں اگنے والی کھجوروں کی منڈی ہے، اور یہاں جوار، جو، گندم اور چاول بھی کاشت ہوتے ہیں۔ سڑکیں تربت کو شمال مغرب میں پنجگور اور قلات اور جنوب مشرق میں پسنی سے ملاتی ہیں (<a href=\"https://www.britannica.com/place/Turbat-Pakistan\" rel=\"noopener\">بریٹانیکا</a>)۔"
+              ]
+            },
+            {
+              "h": "کوہِ مراد",
+              "p": [
+                "تربت میں کوہِ مراد ذکری برادری کا مقدس مقام ہے۔ ذکری محمد جونپوری کو مہدی مانتے ہیں اور ان کا عقیدہ ہے کہ انہوں نے یہاں طویل عرصہ عبادت اور مراقبہ کیا۔ ہر سال 27 رمضان کی رات ذکری یہاں زیارت کے لیے جمع ہوتے ہیں (<a href=\"https://bhc.gov.pk/district-judiciary/turbat/introduction/history\" rel=\"noopener\">بلوچستان ہائی کورٹ</a>)۔"
+              ]
+            },
+            {
+              "h": "سسی پنوں",
+              "p": [
+                "بلوچ لوک ادب میں تربت کو خاص مقام حاصل ہے، کیونکہ اسے سسی پنوں کی داستان کے ہیرو پنوں کا وطن مانا جاتا ہے۔ تربت میں پنوں کے قلعے کے آثار آج بھی موجود ہیں (<a href=\"https://bhc.gov.pk/district-judiciary/turbat/introduction/history\" rel=\"noopener\">بلوچستان ہائی کورٹ</a>)۔"
+              ]
+            },
+            {
+              "h": "ضلع تمپ کی علیحدگی",
+              "p": [
+                "24 فروری 2026 کے محکمہ مال کے نوٹیفکیشن کے تحت تمپ اور مند کی اکائیاں کیچ سے الگ کر کے نیا ضلع <a href=\"tump.html\">تمپ</a> بنایا گیا (<a href=\"https://baldiyattimes.com/?p=61791\" rel=\"noopener\">بلدیات ٹائمز</a>؛ <a href=\"https://www.radio.gov.pk/12-05-2026/tump-enters-new-era-of-development-after-becoming-district\" rel=\"noopener\">ریڈیو پاکستان</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://www.britannica.com/place/Turbat-Pakistan",
+              "publisher": "Encyclopaedia Britannica",
+              "title": "Turbat Pakistan"
+            },
+            {
+              "url": "https://bhc.gov.pk/district-judiciary/turbat/introduction/history",
+              "publisher": "High Court of Balochistan",
+              "title": "History of District (Turbat)"
+            },
+            {
+              "url": "https://baldiyattimes.com/?p=61791",
+              "publisher": "Baldiyat Times",
+              "title": ""
+            },
+            {
+              "url": "https://www.radio.gov.pk/12-05-2026/tump-enters-new-era-of-development-after-becoming-district",
+              "publisher": "Radio Pakistan",
+              "title": ""
+            }
+          ]
+        }
       },
       {
         "slug": "kharan",
@@ -16380,7 +17516,48 @@
             "title": "Kharan",
             "date": ""
           }
-        ]
+        ],
+        "urdu": {
+          "name": "خاران",
+          "hq": "خاران",
+          "division": "رخشان ڈویژن",
+          "units": {
+            "Kharan": "خاران",
+            "Patkain": "پٹکین",
+            "Sar Kharan": "سر خاران",
+            "Tohmulk": "توہ ملک"
+          },
+          "towns": {
+            "Kharan": "خاران"
+          },
+          "blocks": [
+            {
+              "h": "خاران شہر اور صحرا",
+              "p": [
+                "خاران شہر دریائے بڈو سے تقریباً 10 کلومیٹر دور ہے۔ یہ طویل عرصے تک قافلوں کا پڑاؤ رہا اور آج بھی نمک، باجرہ، گندم، کھجور، خربوزہ، قالین اور ٹوکریوں کی تجارت ہوتی ہے۔ اردگرد کا علاقہ زیادہ تر صحرا ہے؛ پہاڑوں کے دامن اور بڈو اور ماشکیل دریاؤں کے ساتھ سیلابی آبپاشی سے کاشت ہوتی ہے۔ اونٹ، بکریاں اور بھیڑیں پالنا اہم ہے (<a href=\"https://www.britannica.com/place/Kharan\" rel=\"noopener\">بریٹانیکا</a>)۔"
+              ]
+            },
+            {
+              "h": "ریاست خاران سے ضلع تک",
+              "p": [
+                "ریاست خاران تقریباً 1697 میں ریاست قلات کی باج گزار ریاست کے طور پر قائم ہوئی۔ 17 مارچ 1948 کو خاران نے پاکستان سے الحاق کیا، 3 اکتوبر 1952 کو یہ بلوچستان اسٹیٹس یونین میں شامل ہوئی اور 14 اکتوبر 1955 کو مغربی پاکستان کے قیام پر ریاست ختم ہو گئی۔ 1970 میں مغربی پاکستان کے خاتمے کے بعد سابق ریاست کے علاقے کو ضلع خاران بنا دیا گیا۔ پاکستان کا دوسرا ایٹمی تجربہ 30 مئی 1998 کو خاران کے صحرا میں کیا گیا (<a href=\"https://bhc.gov.pk/district-judiciary/kharan/introduction/history\" rel=\"noopener\">بلوچستان ہائی کورٹ</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://www.britannica.com/place/Kharan",
+              "publisher": "Encyclopaedia Britannica",
+              "title": "Kharan"
+            },
+            {
+              "url": "https://bhc.gov.pk/district-judiciary/kharan/introduction/history",
+              "publisher": "High Court of Balochistan",
+              "title": "History of District (Kharan)"
+            }
+          ]
+        }
       },
       {
         "slug": "khuzdar",
@@ -16580,7 +17757,58 @@
             "title": "Khuzdar",
             "date": ""
           }
-        ]
+        ],
+        "urdu": {
+          "name": "خضدار",
+          "hq": "خضدار",
+          "division": "خضدار ڈویژن",
+          "units": {
+            "Aranji": "آرنجی",
+            "Gresha": "گریشہ",
+            "Karakh": "کرخ",
+            "Khuzdar": "خضدار",
+            "Moola": "مولہ",
+            "Nal": "نال",
+            "Ornach": "اورناچ",
+            "Saroona": "سارونہ",
+            "Wadh": "وڈھ",
+            "Zehri": "زہری"
+          },
+          "census_note": "یہ اعداد 2023 کی مردم شماری کے وقت کے ضلع خضدار کے ہیں۔ 8 جولائی 2026 کے نوٹیفکیشن کے تحت وڈھ، اورناچ اور نال سب ڈویژنوں پر مشتمل ضلع <a href=\"wadh.html\">وڈھ</a> الگ ہوا اور زہری سب ڈویژن سوراب میں شامل کی گئی، اس لیے موجودہ ضلع کے اعداد مختلف ہیں۔",
+          "blocks": [
+            {
+              "h": "خضدار شہر",
+              "p": [
+                "خضدار شہر پب کے پہاڑی سلسلے کی ایک تنگ وادی کے سرے پر دریائے کولاچی کے کنارے، سطح سمندر سے 1,237 میٹر کی بلندی پر واقع ہے۔ یہ بحیرۂ عرب کی طرف جانے والے ایک قدیم قافلہ راستے پر ہے اور باغات میں گھرا ہوا ہے۔ شہر اون کی منڈی ہے، قریب ہی بیرائٹ کے ذخائر سے کان کنی ہوتی ہے، اور یہاں کا پکی اینٹوں کا قلعہ 1870 میں تعمیر ہوا۔ خضدار قلات اور کراچی کے درمیان مرکزی شاہراہ پر واقع ہے (<a href=\"https://www.britannica.com/place/Khuzdar\" rel=\"noopener\">بریٹانیکا</a>)۔"
+              ]
+            },
+            {
+              "h": "تاریخ",
+              "p": [
+                "عرب دور میں یہ علاقہ توران کا صوبہ تھا اور خضدار اس کا دارالحکومت اور ایک اہم چھاؤنی تھا۔ شہر کے قریب عربوں کے بنائے ہوئے ایک پرانے قلعے کے کھنڈرات ہیں۔ بعد میں خضدار ریاست قلات کا حصہ بنا، اور 1869 میں یہاں جھالاوان کے لوگوں اور خانِ قلات کے درمیان جنگ ہوئی جس میں خان کو فتح ملی (<a href=\"https://bhc.gov.pk/district-judiciary/khuzdar/introduction/history\" rel=\"noopener\">بلوچستان ہائی کورٹ</a>)۔",
+                "خضدار پہلے ضلع قلات کا حصہ تھا اور یکم مارچ 1974 کو اسے الگ ضلع بنایا گیا (<a href=\"https://bhc.gov.pk/district-judiciary/khuzdar/introduction/history\" rel=\"noopener\">بلوچستان ہائی کورٹ</a>)۔ نومبر 1992 میں خضدار کی آواران سب ڈویژن کو الگ ضلع <a href=\"awaran.html\">آواران</a> بنایا گیا (<a href=\"https://bhc.gov.pk/district-judiciary/awaran/introduction/history\" rel=\"noopener\">بلوچستان ہائی کورٹ، آواران</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://www.britannica.com/place/Khuzdar",
+              "publisher": "Encyclopaedia Britannica",
+              "title": "Khuzdar"
+            },
+            {
+              "url": "https://bhc.gov.pk/district-judiciary/khuzdar/introduction/history",
+              "publisher": "High Court of Balochistan",
+              "title": "History of District (Khuzdar)"
+            },
+            {
+              "url": "https://bhc.gov.pk/district-judiciary/awaran/introduction/history",
+              "publisher": "High Court of Balochistan",
+              "title": "History of District (Awaran)"
+            }
+          ]
+        }
       },
       {
         "slug": "kohlu",
@@ -16698,7 +17926,38 @@
           }
         ],
         "profile_checked": "2026-09-29",
-        "sources": []
+        "sources": [],
+        "urdu": {
+          "name": "کوہلو",
+          "hq": "کوہلو",
+          "division": "کوہِ سلیمان ڈویژن",
+          "units": {
+            "Grisani": "گریسانی",
+            "Kahan": "کاہان",
+            "Kohlu": "کوہلو",
+            "Mawand": "ماوند",
+            "Tamboo": "ٹمبو"
+          },
+          "towns": {
+            "Kohlu": "کوہلو"
+          },
+          "blocks": [
+            {
+              "h": "محلِ وقوع اور لوگ",
+              "p": [
+                "ضلع کوہلو کے شمال میں لورالائی، جنوب میں ڈیرہ بگٹی، مشرق میں روجھان مزاری اور مغرب میں سبی ہے۔ علاقہ عمومی طور پر پہاڑی ہے، اور آبادی کا بڑا حصہ خانہ بدوش یا نیم خانہ بدوش ہے جو اپنے بھیڑ بکریوں کے ریوڑوں کے ساتھ موسم کے مطابق چراگاہوں کی تلاش میں نقل مکانی کرتا ہے (<a href=\"https://bhc.gov.pk/district-judiciary/kohlu/introduction/history\" rel=\"noopener\">بلوچستان ہائی کورٹ</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://bhc.gov.pk/district-judiciary/kohlu/introduction/history",
+              "publisher": "High Court of Balochistan",
+              "title": "History of District (Kohlu)"
+            }
+          ]
+        }
       },
       {
         "slug": "lasbela",
@@ -16898,7 +18157,59 @@
         ],
         "census_boundary_note": "These figures are for Lasbela District as enumerated in the 2023 census, before Hub District was created from part of it, so the current district total is lower. The Shahnoorani and Kalghalo union councils of Khuzdar were added to Lasbela's Kanraj sub-division on 8 July 2026.",
         "profile_checked": "2026-09-29",
-        "sources": []
+        "sources": [],
+        "urdu": {
+          "name": "لسبیلہ",
+          "hq": "اوتھل",
+          "division": "لسبیلہ ڈویژن",
+          "units": {
+            "Bela": "بیلہ",
+            "Dureji": "دریجی",
+            "Gaddani": "گڈانی",
+            "Hub": "حب",
+            "Kanraj": "کنراج",
+            "Lakhra": "لاکھڑا",
+            "Liari": "لیاری",
+            "Sonmiani/Winder": "سونمیانی/وندر",
+            "Uthal": "اوتھل"
+          },
+          "towns": {
+            "Hub": "حب",
+            "Uthal": "اوتھل",
+            "Winder": "وندر",
+            "Bela": "بیلہ",
+            "Gaddani": "گڈانی",
+            "Dureji": "دریجی"
+          },
+          "census_note": "یہ اعداد 2023 کی مردم شماری کے وقت کے ضلع لسبیلہ کے ہیں، جب حب بھی اسی ضلع میں شامل تھا۔",
+          "blocks": [
+            {
+              "h": "محلِ وقوع",
+              "p": [
+                "لسبیلہ گوادر اور کراچی کے درمیان واقع ہے؛ اس کے جنوب میں ساحلِ سمندر اور شمال میں ضلع خضدار ہے (<a href=\"https://bhc.gov.pk/district-judiciary/lasbella/introduction/history\" rel=\"noopener\">بلوچستان ہائی کورٹ</a>)۔"
+              ]
+            },
+            {
+              "h": "ضلع حب کی علیحدگی",
+              "p": [
+                "ستمبر 2022 میں بلوچستان حکومت نے لسبیلہ کو تقسیم کر کے نیا ضلع <a href=\"hub.html\">حب</a> بنایا۔ حب ضلع میں حب، دریجی اور سونمیانی (وندر) سب ڈویژنیں گئیں، جبکہ لسبیلہ میں بیلہ، اوتھل اور کنراج سب ڈویژنیں رہیں اور اس کا صدر مقام اوتھل ہے (<a href=\"https://www.dawn.com/news/1708293\" rel=\"noopener\">ڈان</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://bhc.gov.pk/district-judiciary/lasbella/introduction/history",
+              "publisher": "High Court of Balochistan",
+              "title": "History of District (Lasbella)"
+            },
+            {
+              "url": "https://www.dawn.com/news/1708293",
+              "publisher": "Dawn",
+              "title": ""
+            }
+          ]
+        }
       },
       {
         "slug": "loralai",
@@ -17005,7 +18316,66 @@
             "title": "New division, two districts created in Balochistan",
             "date": "30 June 2021"
           }
-        ]
+        ],
+        "urdu": {
+          "name": "لورالائی",
+          "hq": "لورالائی",
+          "division": "لورالائی ڈویژن",
+          "units": {
+            "Bori": "بوری",
+            "Mekhtar": "مکھتر"
+          },
+          "blocks": [
+            {
+              "h": "لورالائی شہر اور وادیاں",
+              "p": [
+                "لورالائی شہر دریائے لورالائی کے شمال میں سطح سمندر سے تقریباً 1,430 میٹر کی بلندی پر واقع ہے اور 1886 میں آباد ہوا۔ سڑکیں اسے ہرنائی، ژوب، پشین اور ڈیرہ غازی خان سے ملاتی ہیں۔ اردگرد کا علاقہ ناہموار پہاڑوں کے درمیان لمبی اور تنگ وادیوں پر مشتمل ہے۔ مویشی، بھیڑ اور بکریاں پالنا یہاں کا بنیادی پیشہ ہے، جبکہ وادیوں میں گندم، باجرہ، چاول، مکئی اور پھل (انگور، خوبانی، انار اور خربوزہ) کاشت ہوتے ہیں (<a href=\"https://www.britannica.com/place/Loralai\" rel=\"noopener\">بریٹانیکا</a>)۔"
+              ]
+            },
+            {
+              "h": "قندھار، مغل اور درانی دور",
+              "p": [
+                "1545 میں مغل بادشاہ ہمایوں نے قندھار صوبے کا تابع علاقہ دوکی میر سید علی کو عطا کیا۔ قندھار 1559 میں صفوی ایران کے قبضے میں چلا گیا اور 1595 میں اکبر نے اسے دوبارہ حاصل کیا۔ تقریباً 1709 میں میر ویس غلزئی نے قندھار میں غلزئی اقتدار قائم کیا جسے 1737 میں نادر شاہ نے ختم کیا۔ 1747 میں نادر شاہ کے قتل کے بعد احمد شاہ درانی برسرِ اقتدار آئے، اور تقریباً 1826 سے دوست محمد خان کے بارکزئی خاندان کا دور شروع ہوا جو 1879 تک رہا (<a href=\"https://bhc.gov.pk/district-judiciary/loralai/introduction/history\" rel=\"noopener\">بلوچستان ہائی کورٹ</a>)۔"
+              ]
+            },
+            {
+              "h": "برطانوی دور اور ضلع کا قیام",
+              "p": [
+                "1879 میں دوکی اور تھل چوٹیالی کا علاقہ برطانوی عمل داری میں آیا۔ 1886 میں چھاؤنی دوکی سے لورالائی منتقل کی گئی اور سنجاوی، مکھتر اور کنگری میں فوجی چوکیاں قائم ہوئیں۔ اکتوبر 1903 میں تھل چوٹیالی اور ژوب ایجنسیوں کی تنظیم نو ہوئی اور نیا ضلع لورالائی بنایا گیا (<a href=\"https://bhc.gov.pk/district-judiciary/loralai/introduction/history\" rel=\"noopener\">بلوچستان ہائی کورٹ</a>)۔",
+                "بعد میں موسیٰ خیل اور بارکھان الگ اضلاع بنے۔ بلوچستان ہائی کورٹ کی لورالائی کی تاریخ میں دونوں کی علیحدگی کا سال 1992 لکھا ہے، جبکہ ہائی کورٹ ہی کی بارکھان کی تاریخ کے مطابق بارکھان کو 31 دسمبر 1991 کو الگ ضلع کا درجہ ملا (<a href=\"https://bhc.gov.pk/district-judiciary/barkhan/introduction/history\" rel=\"noopener\">بارکھان کی تاریخ</a>)۔ جون 2021 میں ژوب ڈویژن کی تقسیم سے نیا لورالائی ڈویژن بنا جس میں لورالائی، موسیٰ خیل اور دکی کے اضلاع شامل کیے گئے (<a href=\"https://www.dawn.com/news/1632216\" rel=\"noopener\">ڈان</a>)۔"
+              ]
+            },
+            {
+              "h": "بادام، سیب اور ماربل",
+              "p": [
+                "بلوچستان ہائی کورٹ کی ضلعی تاریخ کے مطابق لورالائی خاص طور پر بادام اور سیب کی پیداوار کے لیے مشہور ہے۔ ضلع میں ماربل بھی پایا جاتا ہے؛ یہاں ماربل ٹرمنگ کے کئی کارخانے قائم ہیں اور ماربل ٹائلز ملک کے مختلف حصوں کو بھیجی جاتی ہیں۔ عام لوگوں کی آمدنی کا بڑا ذریعہ زراعت اور ماربل کی صنعت ہے (<a href=\"https://bhc.gov.pk/district-judiciary/loralai/introduction/history\" rel=\"noopener\">بلوچستان ہائی کورٹ</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://www.britannica.com/place/Loralai",
+              "publisher": "Encyclopaedia Britannica",
+              "title": "Loralai"
+            },
+            {
+              "url": "https://bhc.gov.pk/district-judiciary/loralai/introduction/history",
+              "publisher": "High Court of Balochistan",
+              "title": "History of District (Loralai)"
+            },
+            {
+              "url": "https://bhc.gov.pk/district-judiciary/barkhan/introduction/history",
+              "publisher": "High Court of Balochistan",
+              "title": "History of District (Barkhan)"
+            },
+            {
+              "url": "https://www.dawn.com/news/1632216",
+              "publisher": "Dawn",
+              "title": ""
+            }
+          ]
+        }
       },
       {
         "slug": "mastung",
@@ -17118,7 +18488,37 @@
           }
         ],
         "profile_checked": "2026-09-29",
-        "sources": []
+        "sources": [],
+        "urdu": {
+          "name": "مستونگ",
+          "hq": "مستونگ",
+          "division": "کوئٹہ ڈویژن",
+          "units": {
+            "Dasht": "دشت",
+            "Khad Kocha": "کھڈ کوچہ",
+            "Kirdgap": "کردگاپ",
+            "Mastung": "مستونگ"
+          },
+          "towns": {
+            "Mastung": "مستونگ"
+          },
+          "blocks": [
+            {
+              "h": "ضلع کا قیام",
+              "p": [
+                "مستونگ 1991 سے پہلے ضلع قلات کا حصہ تھا، اور اسی سال انتظامی وجوہات کی بنا پر اسے قلات سے الگ کر کے نیا ضلع بنایا گیا (<a href=\"https://bhc.gov.pk/district-judiciary/mastung/introduction/history\" rel=\"noopener\">بلوچستان ہائی کورٹ</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://bhc.gov.pk/district-judiciary/mastung/introduction/history",
+              "publisher": "High Court of Balochistan",
+              "title": "History of District (Mastung)"
+            }
+          ]
+        }
       },
       {
         "slug": "musakhel",
@@ -17246,7 +18646,31 @@
           }
         ],
         "profile_checked": "2026-09-29",
-        "sources": []
+        "sources": [],
+        "urdu": {
+          "name": "موسیٰ خیل",
+          "hq": "موسیٰ خیل",
+          "division": "لورالائی ڈویژن",
+          "towns": {
+            "Musakhel": "موسیٰ خیل"
+          },
+          "blocks": [
+            {
+              "h": "محلِ وقوع اور جنگلی حیات",
+              "p": [
+                "ضلع موسیٰ خیل بلوچستان کے شمال مشرق میں خیبر پختونخوا اور پنجاب کی سرحد پر واقع ہے۔ بلوچستان ہائی کورٹ کی ضلعی تاریخ کے مطابق یہ صوبے کے حیاتیاتی تنوع کے اعتبار سے نمایاں اضلاع میں سے ہے، اور یہاں کے جنگلی جانوروں میں سلیمان مارخور اور اڑیال کو خاص اہمیت حاصل ہے (<a href=\"https://bhc.gov.pk/district-judiciary/musakhail/introduction/history\" rel=\"noopener\">بلوچستان ہائی کورٹ</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://bhc.gov.pk/district-judiciary/musakhail/introduction/history",
+              "publisher": "High Court of Balochistan",
+              "title": "History of District (Musakhail)"
+            }
+          ]
+        }
       },
       {
         "slug": "nasirabad",
@@ -17384,7 +18808,39 @@
           }
         ],
         "profile_checked": "2026-09-29",
-        "sources": []
+        "sources": [],
+        "urdu": {
+          "name": "نصیرآباد",
+          "hq": "ڈیرہ مراد جمالی",
+          "division": "نصیرآباد ڈویژن",
+          "units": {
+            "Baba Kot": "بابا کوٹ",
+            "Chattar": "چھتر",
+            "Dera Murad Jamali": "ڈیرہ مراد جمالی",
+            "Landhi": "لانڈھی",
+            "Mir Hassan Khosa": "میر حسن کھوسہ",
+            "Tamboo": "تمبو"
+          },
+          "towns": {
+            "Dera Murad Jamali": "ڈیرہ مراد جمالی"
+          },
+          "blocks": [
+            {
+              "h": "نام اور قیام",
+              "p": [
+                "نصیرآباد کا اصل نام ٹیمپل ڈیرہ تھا، جو کیپٹن ایچ ایم ٹیمپل کے نام پر رکھا گیا تھا جو 1891 سے 1892 تک سبی کے پولیٹیکل ایجنٹ رہے؛ مقامی لوگ آج بھی اسے \"ٹپل\" کہتے ہیں۔ ضلع 1974 میں نوٹیفائی ہوا، اور جولائی 1987 سے دسمبر 1990 تک اسے ضلع تمبو کہا جاتا تھا۔ تمبو ڈیرہ مراد جمالی سے تقریباً 40 کلومیٹر مغرب میں ایک چھوٹا گاؤں ہے (<a href=\"https://bhc.gov.pk/district-judiciary/dera-murad-jamali/introduction/history\" rel=\"noopener\">بلوچستان ہائی کورٹ</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://bhc.gov.pk/district-judiciary/dera-murad-jamali/introduction/history",
+              "publisher": "High Court of Balochistan",
+              "title": "History of District (Dera Murad Jamali)"
+            }
+          ]
+        }
       },
       {
         "slug": "nushki",
@@ -17477,7 +18933,22 @@
           }
         ],
         "profile_checked": "2026-09-29",
-        "sources": []
+        "sources": [],
+        "urdu": {
+          "name": "نوشکی",
+          "hq": "نوشکی",
+          "division": "رخشان ڈویژن",
+          "units": {
+            "Dak": "ڈاک",
+            "Nushki": "نوشکی"
+          },
+          "towns": {
+            "Nushki": "نوشکی"
+          },
+          "blocks": [],
+          "checked": "2026-09-30",
+          "sources": []
+        }
       },
       {
         "slug": "panjgur",
@@ -17609,7 +19080,52 @@
             "title": "Panjgur",
             "date": ""
           }
-        ]
+        ],
+        "urdu": {
+          "name": "پنجگور",
+          "hq": "پنجگور",
+          "division": "مکران ڈویژن",
+          "units": {
+            "Gichk": "گچک",
+            "Gowargo": "گوارگو",
+            "Jaheen Parome": "جہین پروم",
+            "Kallag": "کلگ",
+            "Panjgur": "پنجگور"
+          },
+          "blocks": [
+            {
+              "h": "پنجگور شہر اور علاقہ",
+              "p": [
+                "پنجگور شہر سیاہان کے پہاڑی سلسلے میں دریائے رخشان کے جنوبی کنارے پر واقع ہے۔ یہ ایک تجارتی مرکز ہے اور سڑک کے ذریعے جنوب مغرب میں تربت اور پسنی سے ملا ہوا ہے۔ اردگرد کا نیم خشک علاقہ زیادہ تر پہاڑی ہے (<a href=\"https://www.britannica.com/place/Panjgur\" rel=\"noopener\">بریٹانیکا</a>)۔ ضلع کے بڑے دریا رخشان، نیوان اور گوارگو ہیں (<a href=\"https://bhc.gov.pk/district-judiciary/panjgoor/introduction/history\" rel=\"noopener\">بلوچستان ہائی کورٹ</a>)۔"
+              ]
+            },
+            {
+              "h": "ضلع کا قیام",
+              "p": [
+                "پنجگور یکم جولائی 1977 تک ضلع مکران کی تین تحصیلوں میں سے ایک تھا۔ اس دن مکران کو ڈویژن کا درجہ دیا گیا اور پنجگور الگ ضلع بن گیا (<a href=\"https://bhc.gov.pk/district-judiciary/panjgoor/introduction/history\" rel=\"noopener\">بلوچستان ہائی کورٹ</a>)۔"
+              ]
+            },
+            {
+              "h": "تاریخی مقامات",
+              "p": [
+                "بلوچستان ہائی کورٹ کی ضلعی تاریخ کے مطابق ضلع میں صدیوں پرانے مقبرے، بندِ گلار نامی قدیم بند اور خدابادان میں ایک قلعے کے آثار دیکھنے کے لائق ہیں۔ برطانوی دور میں \"تار آفس\" مکران کا صدر دفتر تھا (<a href=\"https://bhc.gov.pk/district-judiciary/panjgoor/introduction/history\" rel=\"noopener\">بلوچستان ہائی کورٹ</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://www.britannica.com/place/Panjgur",
+              "publisher": "Encyclopaedia Britannica",
+              "title": "Panjgur"
+            },
+            {
+              "url": "https://bhc.gov.pk/district-judiciary/panjgoor/introduction/history",
+              "publisher": "High Court of Balochistan",
+              "title": "History of District (Panjgoor)"
+            }
+          ]
+        }
       },
       {
         "slug": "pishin",
@@ -17769,7 +19285,55 @@
             "title": "Pishin",
             "date": ""
           }
-        ]
+        ],
+        "urdu": {
+          "name": "پشین",
+          "hq": "پشین",
+          "division": "پشین ڈویژن",
+          "units": {
+            "Barshore": "برشور",
+            "Bostan": "بوستان",
+            "Hurram Zai": "حرم زئی",
+            "Karezat": "کاریزات",
+            "Nana Sahib": "نانا صاحب",
+            "Pishin": "پشین",
+            "Saranan": "سرانان"
+          },
+          "towns": {
+            "Pishin": "پشین",
+            "Khanozai": "خانوزئی",
+            "Saranan": "سرانان",
+            "Hurram Zai": "حرم زئی"
+          },
+          "census_note": "یہ اعداد 2023 کی مردم شماری کے وقت کے ضلع پشین کے ہیں۔ بعد میں اس کے ایک حصے سے ضلع <a href=\"barshore.html\">برشور</a> بنایا گیا، اس لیے موجودہ ضلع کی آبادی کم ہے۔",
+          "blocks": [
+            {
+              "h": "پشین شہر اور وادی",
+              "p": [
+                "موجودہ پشین شہر انگریزوں نے 1883 میں فوجی اور سول اسٹیشن کے طور پر آباد کیا اور یہ سڑک کے ذریعے کوئٹہ سے ملا ہوا ہے۔ ضلع کوئٹہ کے شمال میں 1,370 سے 1,680 میٹر کی بلندی پر لمبی وادیوں پر مشتمل ہے جنہیں پشین لورا اور اس کے معاون دریا سیراب کرتے ہیں۔ انگور، سیب، خوبانی اور آڑو اہم فصلیں ہیں (<a href=\"https://www.britannica.com/place/Pishin\" rel=\"noopener\">بریٹانیکا</a>)۔"
+              ]
+            },
+            {
+              "h": "انتظامی تاریخ",
+              "p": [
+                "مئی 1879 کے معاہدے کے تحت پشین انگریزوں کے حوالے ہوا، اور اپریل 1883 میں کوئٹہ اور پشین کو ایک پولیٹیکل ایجنٹ کے ماتحت یکجا کر دیا گیا۔ 1975 تک کوئٹہ اور پشین ایک ہی انتظامی اکائی تھے؛ اسی سال پشین کو الگ ضلع بنایا گیا، اور 1993 میں اسے پشین اور قلعہ عبداللہ کے دو اضلاع میں تقسیم کیا گیا (<a href=\"https://bhc.gov.pk/district-judiciary/pishin/introduction/history\" rel=\"noopener\">بلوچستان ہائی کورٹ</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://www.britannica.com/place/Pishin",
+              "publisher": "Encyclopaedia Britannica",
+              "title": "Pishin"
+            },
+            {
+              "url": "https://bhc.gov.pk/district-judiciary/pishin/introduction/history",
+              "publisher": "High Court of Balochistan",
+              "title": "History of District (Pishin)"
+            }
+          ]
+        }
       },
       {
         "slug": "qilla-abdullah",
@@ -17879,7 +19443,43 @@
               "publisher": "Dawn"
             }
           }
-        ]
+        ],
+        "urdu": {
+          "name": "قلعہ عبداللہ",
+          "division": "پشین ڈویژن",
+          "units": {
+            "Dobandi": "دوبندی",
+            "Gulistan": "گلستان",
+            "Killa Abdullah": "قلعہ عبداللہ"
+          },
+          "blocks": [
+            {
+              "h": "ضلع کا قیام",
+              "p": [
+                "قلعہ عبداللہ کو جون 1993 میں ضلع پشین سے الگ کر کے نیا ضلع بنایا گیا (<a href=\"https://bhc.gov.pk/district-judiciary/killa-abdullah/introduction/history\" rel=\"noopener\">بلوچستان ہائی کورٹ</a>)۔ جون 2021 میں بلوچستان بورڈ آف ریونیو نے اسے دو اضلاع میں تقسیم کیا: چمن شہر اور صدر چمن تحصیل نئے ضلع <a href=\"chaman.html\">چمن</a> میں گئیں، جبکہ قلعہ عبداللہ، گلستان اور دوبندی تحصیلیں ضلع قلعہ عبداللہ میں رہیں (<a href=\"https://www.dawn.com/news/1632216\" rel=\"noopener\">ڈان</a>)۔"
+              ]
+            },
+            {
+              "h": "جغرافیہ",
+              "p": [
+                "بلوچستان ہائی کورٹ کی ضلعی تاریخ (جو 2021 کی تقسیم سے پہلے کے ضلع کی ہے) کے مطابق یہ علاقہ شیلا باغ کے پہاڑی سلسلے کے دامن میں ہے، اس کا عمومی خدوخال پہاڑی ہے اور شمالی حصہ توبہ کی سطح مرتفع پر مشتمل ہے (<a href=\"https://bhc.gov.pk/district-judiciary/killa-abdullah/introduction/history\" rel=\"noopener\">بلوچستان ہائی کورٹ</a>)۔"
+              ]
+            }
+          ],
+          "checked": "2026-09-30",
+          "sources": [
+            {
+              "url": "https://bhc.gov.pk/district-judiciary/killa-abdullah/introduction/history",
+              "publisher": "High Court of Balochistan",
+              "title": "History of District (Killa Abdullah)"
+            },
+            {
+              "url": "https://www.dawn.com/news/1632216",
+              "publisher": "Dawn",
+              "title": ""
+            }
+          ]
+        }
       },
       {
         "slug": "qilla-saifullah",

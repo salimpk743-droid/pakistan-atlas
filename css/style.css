@@ -562,3 +562,8 @@ footer a:hover { color: var(--gold); }
   html { scroll-behavior: auto; }
   .card, .district-result, .btn { transition: none; }
 }
+/* Urdu section on district pages (lang="ur" dir="rtl"). */
+.district-urdu .prose { font-family: "Noto Nastaliq Urdu", serif; text-align: right; }
+.district-urdu .prose h2, .district-urdu .prose h3 { font-family: "Noto Nastaliq Urdu", serif; line-height: 1.9; }
+.district-urdu .prose p, .district-urdu .prose li { line-height: 2.3; }
+.district-urdu .prose ul { padding-left: 0; padding-right: 1.2rem; }
