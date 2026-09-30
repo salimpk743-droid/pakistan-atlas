@@ -2,7 +2,7 @@
    Loaded only on pages that have the row. Colours mirror css/style.css. */
 #site-footer .mb-share { --mb-green: #01411c; --mb-green-mid: #0b6b32; --mb-gold: #c9a227; --mb-ink: #1a1a1a; }
 #site-footer .mb-share { margin: 2.4rem 0 0; }
-#site-footer .mb-share-inner { display: flex; align-items: center; flex-wrap: wrap; gap: 0.75rem 1.1rem; padding: 0.95rem 1.15rem; background: #f7f4ee; border: 1px solid #ebe5d8; border-left: 4px solid var(--mb-gold); border-radius: 14px; }
+#site-footer .mb-share-inner { display: flex; align-items: center; flex-wrap: wrap; gap: 0.75rem 1.1rem; padding: 0.95rem 1.15rem; background: #fff; border: 1px solid #ebe5d8; border-left: 4px solid var(--mb-gold); border-radius: 14px; box-shadow: 0 6px 24px rgba(1, 65, 28, 0.06); }
 #site-footer .mb-share-title { margin: 0; color: var(--mb-green); font-family: "Playfair Display", Georgia, serif; font-weight: 700; font-size: 1.05rem; line-height: 1.2; }
 #site-footer .mb-share-list { display: flex; flex-wrap: wrap; gap: 0.5rem; }
 #site-footer .mb-share-btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.45rem; min-height: 38px; margin: 0; padding: 0.4rem 0.9rem; border: 1px solid rgba(1, 65, 28, 0.22); border-radius: 999px; background: #fff; color: var(--mb-green); font: 600 0.9rem/1 "Source Sans 3", system-ui, -apple-system, "Segoe UI", sans-serif; text-decoration: none; cursor: pointer; box-shadow: 0 1px 2px rgba(1, 65, 28, 0.06); transition: background-color .15s, color .15s, border-color .15s, transform .15s; }
