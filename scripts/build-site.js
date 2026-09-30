@@ -361,10 +361,53 @@ function headerHtml(active, crumbs, current) {
       </header>${bc}
       ${HDR_END}`;
 }
-function footerHtml() {
+
+// ---------- "Share this page" row ----------
+// Plain share links (no third-party scripts) plus a Copy link button, rendered at the top of the footer block on
+// every content page. Links use the page's canonical URL and title, URL-encoded. Icons: Bootstrap Icons (MIT).
+const NO_SHARE = new Set(["about.html", "contact.html", "privacy.html", "terms.html", "disclaimer.html", "sources-methodology.html"]);
+const SHARE_ICONS = {
+  whatsapp: '<path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>',
+  facebook: '<path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>',
+  x: '<path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>',
+  linkedin: '<path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>',
+  telegram: '<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09"/>',
+  link: '<path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"/>'
+};
+const shareIcon = (name) => `<svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor" aria-hidden="true" focusable="false">${SHARE_ICONS[name]}</svg>`;
+const SHARE_SCRIPT = "(function(){var b=document.querySelector('#site-footer .mb-share-copy');if(!b)return;var l=b.querySelector('.mb-share-text'),s=document.querySelector('#site-footer .mb-share-status'),t=l.textContent,u=b.getAttribute('data-url'),n=b.getAttribute('data-title');function ok(){l.textContent='Copied';b.classList.add('is-copied');s.textContent='Link copied to clipboard';setTimeout(function(){l.textContent=t;b.classList.remove('is-copied');s.textContent='';},2000);}function alt(){if(navigator.share){navigator.share({title:n,url:u}).catch(function(){});}else{window.prompt('Copy this link:',u);}}b.addEventListener('click',function(){if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(u).then(ok,alt);}else{alt();}});})();";
+function canonicalOf(html, file) {
+  const m = html.match(/<link\s+rel=["']canonical["']\s+href=["'](https:\/\/mybook\.pk\/[^"']*)["']/i);
+  return m ? m[1] : url(file);
+}
+function shareHtml(file, cls, title, html) {
+  if (["home", "utility"].includes(cls.type) || NO_SHARE.has(file)) return "";
+  const u = encodeURIComponent(canonicalOf(html, file));
+  const t = encodeURIComponent(title);
+  const links = [
+    ["whatsapp", "WhatsApp", `https://wa.me/?text=${t}%20${u}`],
+    ["facebook", "Facebook", `https://www.facebook.com/sharer/sharer.php?u=${u}`],
+    ["x", "X", `https://x.com/intent/tweet?url=${u}&text=${t}`],
+    ["linkedin", "LinkedIn", `https://www.linkedin.com/sharing/share-offsite/?url=${u}`],
+    ["telegram", "Telegram", `https://t.me/share/url?url=${u}&text=${t}`]
+  ].map(([k, name, href]) => `<a class="mb-share-btn mb-share-${k}" href="${esc(href)}" target="_blank" rel="noopener noreferrer" aria-label="Share on ${name} (opens in a new tab)">${shareIcon(k)}<span class="mb-share-text">${name}</span></a>`);
+  links.push(`<button type="button" class="mb-share-btn mb-share-copy" data-url="${esc(canonicalOf(html, file))}" data-title="${esc(title)}" aria-label="Copy link to this page">${shareIcon("link")}<span class="mb-share-text">Copy link</span></button>`);
+  return `<div class="mb-share">
+        <div class="container mb-share-inner">
+          <p class="mb-share-title">Share this page</p>
+          <div class="mb-share-list" role="group" aria-label="Share this page">
+            ${links.join("\n            ")}
+          </div>
+          <span class="mb-share-status visually-hidden" role="status" aria-live="polite"></span>
+        </div>
+      </div>
+      <script>${SHARE_SCRIPT}</script>
+      `;
+}
+function footerHtml(share = "") {
   const provLinks = L.provinceOrder.map((pid) => `<a href="${provinceRoutes[pid]}">${esc(L.provinceById[pid].name)}</a>`).join("<br>");
   return `${FTR_START}
-      <footer>
+      ${share}<footer>
         <div class="container foot-grid">
           <div>
             <strong>MyBook.Pk</strong>
@@ -556,7 +599,7 @@ function headBlock(file, meta, graph, ogImage, ogType) {
     `<meta name="twitter:title" content="${esc(meta.title)}" />`,
     meta.description ? `<meta name="twitter:description" content="${esc(meta.description)}" />` : "",
     `<meta name="twitter:image" content="${esc(ogImage)}" />`,
-    `<link rel="stylesheet" href="css/chrome.css?v=1" />`,
+    `<link rel="stylesheet" href="css/chrome.css?v=2" />`,
     `<script type="application/ld+json">${JSON.stringify(graph).replace(/</g, "\\u003c")}</script>`
   ].filter(Boolean);
   return `  ${HEAD_START}\n  ${tags.join("\n  ")}\n  ${HEAD_END}\n`;
@@ -611,7 +654,7 @@ function build(file, html) {
   const ogType = existingType === "article" ? "article" : "website";
   const graph = graphFor(file, cls, meta, crumbs, out);
   out = out.replace(/[ \t]*<\/head>/i, (m) => headBlock(file, meta, graph, ogImage, ogType) + m.trimStart());
-  out = injectChrome(out, headerHtml(activeNav(cls, file), crumbs, file === "index.html" ? "/" : file), footerHtml(), true);
+  out = injectChrome(out, headerHtml(activeNav(cls, file), crumbs, file === "index.html" ? "/" : file), footerHtml(shareHtml(file, cls, meta.title, out)), true);
   return { out, meta, cls };
 }
 
