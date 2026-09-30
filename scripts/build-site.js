@@ -626,9 +626,29 @@ function setAdsense(html) {
   return out.replace(/<head\b[^>]*>/i, (m) => `${m}\n  ${L.ADSENSE_SCRIPT}\n  ${L.ADSENSE_META}`);
 }
 
+// Exactly one Google Analytics 4 tag (gtag.js) per page, placed right after the AdSense tags in <head>. Any
+// existing gtag.js loader or inline gtag config (old or wrong IDs, duplicates) is removed first.
+const GA4_ID = "G-3QCG16GN6M";
+const GA4_TAG = `<script async src="https://www.googletagmanager.com/gtag/js?id=${GA4_ID}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '${GA4_ID}');
+  </script>`;
+function setGa4(html) {
+  let out = html
+    .replace(/\n?[ \t]*<script\b[^>]*googletagmanager\.com\/gtag\/js[^>]*>\s*<\/script>/gi, "")
+    .replace(/\n?[ \t]*<script>(?:(?!<\/script>)[\s\S])*?\bgtag\s*\(\s*['"]config['"](?:(?!<\/script>)[\s\S])*?<\/script>/gi, "");
+  let placed = false;
+  out = out.replace(L.ADSENSE_META, (m) => { if (placed) return m; placed = true; return `${m}\n  ${GA4_TAG}`; });
+  if (!placed) out = out.replace(/<head\b[^>]*>/i, (m) => `${m}\n  ${GA4_TAG}`);
+  return out;
+}
+
 function build(file, html) {
   const cls = classify(file);
-  let out = setAdsense(stripFences(html));
+  let out = setGa4(setAdsense(stripFences(html)));
   out = relink(out);
   const existingImage = getMeta(out, "og:image");
   const existingType = getMeta(out, "og:type");
