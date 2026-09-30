@@ -584,7 +584,7 @@ function setTitleAndDescription(html, meta) {
   }
   return out;
 }
-function headBlock(file, meta, graph, ogImage, ogType) {
+function headBlock(file, meta, graph, ogImage, ogType, hasShare = false) {
   const pageUrl = url(file);
   const tags = [
     `<meta property="og:title" content="${esc(meta.title)}" />`,
@@ -599,7 +599,8 @@ function headBlock(file, meta, graph, ogImage, ogType) {
     `<meta name="twitter:title" content="${esc(meta.title)}" />`,
     meta.description ? `<meta name="twitter:description" content="${esc(meta.description)}" />` : "",
     `<meta name="twitter:image" content="${esc(ogImage)}" />`,
-    `<link rel="stylesheet" href="css/chrome.css?v=2" />`,
+    `<link rel="stylesheet" href="css/chrome.css?v=1" />`,
+    hasShare ? `<link rel="stylesheet" href="css/share.css?v=1" />` : "",
     `<script type="application/ld+json">${JSON.stringify(graph).replace(/</g, "\\u003c")}</script>`
   ].filter(Boolean);
   return `  ${HEAD_START}\n  ${tags.join("\n  ")}\n  ${HEAD_END}\n`;
@@ -653,8 +654,9 @@ function build(file, html) {
   const ogImage = existingImage && /\.(png|jpe?g|webp)(\?|$)/i.test(existingImage) ? (existingImage.startsWith("http") ? existingImage : `${SITE}/${existingImage.replace(/^\//, "")}`) : L.OG_IMAGE;
   const ogType = existingType === "article" ? "article" : "website";
   const graph = graphFor(file, cls, meta, crumbs, out);
-  out = out.replace(/[ \t]*<\/head>/i, (m) => headBlock(file, meta, graph, ogImage, ogType) + m.trimStart());
-  out = injectChrome(out, headerHtml(activeNav(cls, file), crumbs, file === "index.html" ? "/" : file), footerHtml(shareHtml(file, cls, meta.title, out)), true);
+  const share = shareHtml(file, cls, meta.title, out);
+  out = out.replace(/[ \t]*<\/head>/i, (m) => headBlock(file, meta, graph, ogImage, ogType, Boolean(share)) + m.trimStart());
+  out = injectChrome(out, headerHtml(activeNav(cls, file), crumbs, file === "index.html" ? "/" : file), footerHtml(share), true);
   return { out, meta, cls };
 }
 
