@@ -472,7 +472,7 @@ function faqEntities(html) {
   const next = html.slice(start).search(/<h2[\s>]/i);
   const seg = html.slice(start, next < 0 ? undefined : start + next);
   const out = [];
-  for (const q of seg.matchAll(/<h3[^>]*>([\s\S]*?)<\/h3>\s*(?:<\/?div[^>]*>\s*)*<p[^>]*>([\s\S]*?)<\/p>/gi)) {
+  for (const q of seg.matchAll(/<h3[^>]*>([\s\S]*?)<\/h3>\s*(?:<\/?(?:div|summary|details)[^>]*>\s*)*<p[^>]*>([\s\S]*?)<\/p>/gi)) {
     const question = textOf(q[1]);
     const answer = textOf(q[2]);
     if (question.endsWith("?") && answer) out.push({ "@type": "Question", name: question, acceptedAnswer: { "@type": "Answer", text: answer } });
