@@ -429,5 +429,215 @@
   "copyrightNotice": "© ranaiftikhartoor (Panoramio). Licensed under CC BY 3.0.",
   "license": "https://creativecommons.org/licenses/by/3.0/",
   "acquireLicensePage": "https://commons.wikimedia.org/wiki/File:Railway_Station_at_Kotla_Jam_Bhakkar,_Punjab,_Pakistan_-_panoramio_(366).jpg"
+ },
+ "images/home/ruins.webp": {
+  "name": "Ancient ruins",
+  "caption": "Ancient ruins, part of the homepage heritage artwork",
+  "width": 1400,
+  "height": 933,
+  "creator": {
+   "@type": "Organization",
+   "name": "mybook.pk",
+   "url": "https://mybook.pk/"
+  },
+  "creditText": "mybook.pk",
+  "copyrightNotice": "© mybook.pk",
+  "license": "https://mybook.pk/about.html",
+  "acquireLicensePage": "https://mybook.pk/contact.html"
+ },
+ "images/home/ruins.jpg": {
+  "name": "Ancient ruins",
+  "caption": "Ancient ruins, part of the homepage heritage artwork",
+  "width": 1400,
+  "height": 933,
+  "creator": {
+   "@type": "Organization",
+   "name": "mybook.pk",
+   "url": "https://mybook.pk/"
+  },
+  "creditText": "mybook.pk",
+  "copyrightNotice": "© mybook.pk",
+  "license": "https://mybook.pk/about.html",
+  "acquireLicensePage": "https://mybook.pk/contact.html"
+ },
+ "images/home/mountains.jpg": {
+  "name": "Northern mountains",
+  "caption": "Mountain landscape, part of the homepage heritage artwork",
+  "width": 1500,
+  "height": 1000,
+  "creator": {
+   "@type": "Organization",
+   "name": "mybook.pk",
+   "url": "https://mybook.pk/"
+  },
+  "creditText": "mybook.pk",
+  "copyrightNotice": "© mybook.pk",
+  "license": "https://mybook.pk/about.html",
+  "acquireLicensePage": "https://mybook.pk/contact.html"
+ },
+ "images/home/flag-wave.webp": {
+  "name": "Flag of Pakistan",
+  "caption": "The flag of Pakistan, part of the homepage heritage artwork",
+  "width": 1400,
+  "height": 933,
+  "creator": {
+   "@type": "Organization",
+   "name": "mybook.pk",
+   "url": "https://mybook.pk/"
+  },
+  "creditText": "mybook.pk",
+  "copyrightNotice": "© mybook.pk",
+  "license": "https://mybook.pk/about.html",
+  "acquireLicensePage": "https://mybook.pk/contact.html"
+ },
+ "images/home/flag-wave.jpg": {
+  "name": "Flag of Pakistan",
+  "caption": "The flag of Pakistan, part of the homepage heritage artwork",
+  "width": 1400,
+  "height": 933,
+  "creator": {
+   "@type": "Organization",
+   "name": "mybook.pk",
+   "url": "https://mybook.pk/"
+  },
+  "creditText": "mybook.pk",
+  "copyrightNotice": "© mybook.pk",
+  "license": "https://mybook.pk/about.html",
+  "acquireLicensePage": "https://mybook.pk/contact.html"
+ },
+ "images/home/mosque-day.webp": {
+  "name": "Mosque by day",
+  "caption": "A mosque by day, part of the homepage heritage artwork",
+  "width": 1400,
+  "height": 933,
+  "creator": {
+   "@type": "Organization",
+   "name": "mybook.pk",
+   "url": "https://mybook.pk/"
+  },
+  "creditText": "mybook.pk",
+  "copyrightNotice": "© mybook.pk",
+  "license": "https://mybook.pk/about.html",
+  "acquireLicensePage": "https://mybook.pk/contact.html"
+ },
+ "images/home/mosque-day.jpg": {
+  "name": "Mosque by day",
+  "caption": "A mosque by day, part of the homepage heritage artwork",
+  "width": 1400,
+  "height": 933,
+  "creator": {
+   "@type": "Organization",
+   "name": "mybook.pk",
+   "url": "https://mybook.pk/"
+  },
+  "creditText": "mybook.pk",
+  "copyrightNotice": "© mybook.pk",
+  "license": "https://mybook.pk/about.html",
+  "acquireLicensePage": "https://mybook.pk/contact.html"
+ },
+ "images/home/iqbal.webp": {
+  "name": "Allama Muhammad Iqbal",
+  "caption": "Allama Muhammad Iqbal, the Poet of the East",
+  "width": 720,
+  "height": 900,
+  "creator": {
+   "@type": "Organization",
+   "name": "mybook.pk",
+   "url": "https://mybook.pk/"
+  },
+  "creditText": "mybook.pk",
+  "copyrightNotice": "© mybook.pk",
+  "license": "https://mybook.pk/about.html",
+  "acquireLicensePage": "https://mybook.pk/contact.html"
+ },
+ "images/home/iqbal.jpg": {
+  "name": "Allama Muhammad Iqbal",
+  "caption": "Allama Muhammad Iqbal, the Poet of the East",
+  "width": 720,
+  "height": 900,
+  "creator": {
+   "@type": "Organization",
+   "name": "mybook.pk",
+   "url": "https://mybook.pk/"
+  },
+  "creditText": "mybook.pk",
+  "copyrightNotice": "© mybook.pk",
+  "license": "https://mybook.pk/about.html",
+  "acquireLicensePage": "https://mybook.pk/contact.html"
+ },
+ "images/allama-iqbal.jpg": {
+  "name": "Allama Muhammad Iqbal",
+  "caption": "Allama Muhammad Iqbal, the Poet of the East",
+  "width": 1122,
+  "height": 1402,
+  "creator": {
+   "@type": "Organization",
+   "name": "mybook.pk",
+   "url": "https://mybook.pk/"
+  },
+  "creditText": "mybook.pk",
+  "copyrightNotice": "© mybook.pk",
+  "license": "https://mybook.pk/about.html",
+  "acquireLicensePage": "https://mybook.pk/contact.html"
+ },
+ "images/home/jinnah.webp": {
+  "name": "Quaid-e-Azam Muhammad Ali Jinnah",
+  "caption": "Quaid-e-Azam Muhammad Ali Jinnah, founder of Pakistan",
+  "width": 720,
+  "height": 864,
+  "creator": {
+   "@type": "Organization",
+   "name": "mybook.pk",
+   "url": "https://mybook.pk/"
+  },
+  "creditText": "mybook.pk",
+  "copyrightNotice": "© mybook.pk",
+  "license": "https://mybook.pk/about.html",
+  "acquireLicensePage": "https://mybook.pk/contact.html"
+ },
+ "images/home/jinnah.jpg": {
+  "name": "Quaid-e-Azam Muhammad Ali Jinnah",
+  "caption": "Quaid-e-Azam Muhammad Ali Jinnah, founder of Pakistan",
+  "width": 720,
+  "height": 864,
+  "creator": {
+   "@type": "Organization",
+   "name": "mybook.pk",
+   "url": "https://mybook.pk/"
+  },
+  "creditText": "mybook.pk",
+  "copyrightNotice": "© mybook.pk",
+  "license": "https://mybook.pk/about.html",
+  "acquireLicensePage": "https://mybook.pk/contact.html"
+ },
+ "images/quaid-e-azam.jpg": {
+  "name": "Quaid-e-Azam Muhammad Ali Jinnah",
+  "caption": "Quaid-e-Azam Muhammad Ali Jinnah, founder of Pakistan",
+  "width": 1145,
+  "height": 1374,
+  "creator": {
+   "@type": "Organization",
+   "name": "mybook.pk",
+   "url": "https://mybook.pk/"
+  },
+  "creditText": "mybook.pk",
+  "copyrightNotice": "© mybook.pk",
+  "license": "https://mybook.pk/about.html",
+  "acquireLicensePage": "https://mybook.pk/contact.html"
+ },
+ "images/home/statue.jpg": {
+  "name": "Statue",
+  "caption": "Statue artwork, mybook.pk",
+  "width": 733,
+  "height": 1100,
+  "creator": {
+   "@type": "Organization",
+   "name": "mybook.pk",
+   "url": "https://mybook.pk/"
+  },
+  "creditText": "mybook.pk",
+  "copyrightNotice": "© mybook.pk",
+  "license": "https://mybook.pk/about.html",
+  "acquireLicensePage": "https://mybook.pk/contact.html"
  }
 }
