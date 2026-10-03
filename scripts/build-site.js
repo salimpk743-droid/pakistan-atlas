@@ -13,6 +13,17 @@ const L = require("./lib/site");
 const { SITE, esc, fmtInt, provinceRoutes, hubRoutes } = L;
 const HEAD_START = "<!-- mb:head:start -->";
 const HEAD_END = "<!-- mb:head:end -->";
+// Site name and icons (Google favicon + site-name guidelines). Icon files are built by scripts/make-favicons.py.
+const SITE_NAME = "MyBook.pk";
+const ICON_TAGS = [
+  `<link rel="icon" href="/favicon.ico" sizes="48x48" />`,
+  `<link rel="icon" href="/favicon.svg" type="image/svg+xml" />`,
+  `<link rel="icon" href="/favicon-96x96.png" sizes="96x96" type="image/png" />`,
+  `<link rel="icon" href="/favicon-192x192.png" sizes="192x192" type="image/png" />`,
+  `<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />`,
+  `<link rel="manifest" href="/site.webmanifest" />`
+];
+const LOGO_URL = `${SITE}/images/mybook-pk-logo-512.png`;
 const HDR_START = "<!-- mb:header:start -->";
 const HDR_END = "<!-- mb:header:end -->";
 const FTR_START = "<!-- mb:footer:start -->";
@@ -512,10 +523,11 @@ function imageObjectsFor(file, html, ogImage) {
 }
 function graphFor(file, cls, meta, crumbs, html, ogImage) {
   const pageUrl = url(file);
-  const website = { "@type": "WebSite", "@id": `${SITE}/#website`, name: "MyBook.Pk", url: `${SITE}/`, inLanguage: ["en", "ur"] };
+  const website = { "@type": "WebSite", "@id": `${SITE}/#website`, name: SITE_NAME, alternateName: ["MyBook.Pk", "MyBook"], url: `${SITE}/`, inLanguage: ["en", "ur"] };
   // districts.html reads ?q= and filters the district list, so the SearchAction target works as a URL.
   if (cls.type === "home") website.potentialAction = { "@type": "SearchAction", target: `${SITE}/districts.html?q={search_term_string}`, "query-input": "required name=search_term_string" };
-  const organization = { "@type": "Organization", "@id": `${SITE}/#organization`, name: "MyBook.Pk", url: `${SITE}/`, email: "zainkhanpk742@gmail.com",
+  const organization = { "@type": "Organization", "@id": `${SITE}/#organization`, name: SITE_NAME, alternateName: "MyBook.Pk", url: `${SITE}/`,
+    logo: { "@type": "ImageObject", "@id": `${SITE}/#logo`, url: LOGO_URL, contentUrl: LOGO_URL, width: 512, height: 512, caption: SITE_NAME }, image: { "@id": `${SITE}/#logo` }, email: "zainkhanpk742@gmail.com",
     description: "Independent educational website about Pakistan's provinces, districts, history and culture.",
     publishingPrinciples: `${SITE}/sources-methodology.html`, correctionsPolicy: `${SITE}/sources-methodology.html#corrections`,
     contactPoint: { "@type": "ContactPoint", contactType: "editorial corrections", email: "zainkhanpk742@gmail.com", url: `${SITE}/contact.html` } };
@@ -592,6 +604,8 @@ function removeLegacyCrumbs(html) {
 }
 function removeManagedHead(html) {
   let out = html.replace(new RegExp(`[ \\t]*${HEAD_START}[\\s\\S]*?${HEAD_END}\\n`, "g"), "");
+  // Icon and manifest links now live in the managed head block (ICON_TAGS); drop older per-page copies.
+  out = out.replace(/[ \t]*<link\s+rel=["'](?:icon|shortcut icon|apple-touch-icon|manifest)["'][^>]*>[ \t]*\r?\n?/gi, "");
   out = out.replace(/[ \t]*<meta\s+(?:property|name)=["'](?:og:[a-z_:]+|twitter:[a-z_:]+)["'][^>]*>[ \t]*\r?\n?/gi, "");
   out = out.replace(/[ \t]*<script[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>[ \t]*\r?\n?/gi, (m, body) => {
     try {
@@ -624,13 +638,14 @@ function setTitleAndDescription(html, meta) {
 function headBlock(file, meta, graph, ogImage, ogType, hasShare = false) {
   const pageUrl = url(file);
   const tags = [
+    ...ICON_TAGS,
     `<meta property="og:title" content="${esc(meta.title)}" />`,
     meta.description ? `<meta property="og:description" content="${esc(meta.description)}" />` : "",
     `<meta property="og:type" content="${esc(ogType)}" />`,
     `<meta property="og:url" content="${pageUrl}" />`,
     `<meta property="og:image" content="${esc(ogImage)}" />`,
     ogImage === L.OG_IMAGE ? `<meta property="og:image:width" content="1200" />\n  <meta property="og:image:height" content="630" />\n  <meta property="og:image:alt" content="MyBook.Pk – provinces, districts and tehsils of Pakistan" />` : "",
-    `<meta property="og:site_name" content="MyBook.Pk" />`,
+    `<meta property="og:site_name" content="${SITE_NAME}" />`,
     `<meta property="og:locale" content="en_PK" />`,
     `<meta name="twitter:card" content="summary_large_image" />`,
     `<meta name="twitter:title" content="${esc(meta.title)}" />`,

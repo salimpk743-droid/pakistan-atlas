@@ -25,7 +25,7 @@ function head(title, description, route, extra = "") {
   <meta name="description" content="${esc(description)}" />
   <meta name="robots" content="index,follow,max-image-preview:large" />
   <link rel="canonical" href="${SITE}/${route}" />
-  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/favicon.ico" sizes="48x48" />
   ${FONTS}
   <link rel="stylesheet" href="css/style.css?v=7" />${extra}
 </head>`;
