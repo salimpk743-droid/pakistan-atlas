@@ -1,2 +1,2 @@
 window.ISB_PHOTOS=window.ISB_PHOTOS||[];
-ISB_PHOTOS.push({src:"images/islamabad/01-kashmir-highway.jpg",alt:"Islamabad highway",cap:"Kashmir Highway / capital avenue, Parliament on the ridge."});
+ISB_PHOTOS.push({"src": "images/islamabad/01-kashmir-highway.jpg?v=2", "alt": "Kashmir Highway, Islamabad, with the Margalla Hills beyond", "cap": "Kashmir Highway, the capital’s main avenue, running toward the Margalla Hills.", "author": "King Eliot", "authorUrl": "https://commons.wikimedia.org/wiki/User:King_Eliot", "file": "https://commons.wikimedia.org/wiki/File:Kashmir_Highway_Islamabad.jpg", "lic": "CC BY-SA 4.0", "licUrl": "https://creativecommons.org/licenses/by-sa/4.0/"});

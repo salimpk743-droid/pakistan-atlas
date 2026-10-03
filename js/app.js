@@ -126,10 +126,14 @@ function lazyImages() {
 }
 
 function setupShowbizImages() {
-  const image = "/images/humsafar-header.jpg?v=2";
+  // Free-licensed photos of Mahira Khan and Fawad Khan (Bollywood Hungama,
+  // CC BY 3.0, via Wikimedia Commons; combined and cropped). Credits are
+  // shown on the pages and listed in scripts/lib/image-credits.json.
+  const image = "/images/showbiz/mahira-fawad.jpg?v=1";
+  const wideImage = "/images/showbiz/mahira-fawad-wide.jpg?v=1";
 
   // Homepage Showbiz archive card: replace the decorative emblem
-  // with the real Humsafar image already stored in /images.
+  // with the free-licensed Showbiz image stored in /images/showbiz.
   document.querySelectorAll(".atlas-archive-visual.showbiz").forEach((card) => {
     card.style.backgroundImage = `url("${image}")`;
     card.style.backgroundSize = "cover";
@@ -143,7 +147,7 @@ function setupShowbizImages() {
   // Showbiz page hero: use an absolute root path so the image works
   // consistently regardless of the page URL.
   document.querySelectorAll(".sb-hero-bg").forEach((img) => {
-    img.src = image;
+    img.src = wideImage;
   });
 }
 

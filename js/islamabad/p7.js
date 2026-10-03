@@ -1,2 +1,2 @@
 window.ISB_PHOTOS=window.ISB_PHOTOS||[];
-ISB_PHOTOS.push({src:"images/islamabad/07-autumn-street.jpg",alt:"Autumn street",cap:"Autumn verge in the sectors."});
+ISB_PHOTOS.push({"src": "images/islamabad/07-autumn-street.jpg?v=2", "alt": "Autumn leaves on a tree in Islamabad", "cap": "Autumn colours on the trees of Islamabad’s green sectors.", "author": "Mubashirkhan111", "authorUrl": "https://commons.wikimedia.org/wiki/User:Mubashirkhan111", "file": "https://commons.wikimedia.org/wiki/File:Autumn_in_Islamabad.jpg", "lic": "CC BY-SA 4.0", "licUrl": "https://creativecommons.org/licenses/by-sa/4.0/"});

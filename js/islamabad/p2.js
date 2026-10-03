@@ -1,2 +1,2 @@
 window.ISB_PHOTOS=window.ISB_PHOTOS||[];
-ISB_PHOTOS.push({src:"images/islamabad/02-faisal-mosque.jpg",alt:"Faisal Mosque",cap:"Faisal Mosque against the Margallas."});
+ISB_PHOTOS.push({"src": "images/islamabad/02-faisal-mosque.jpg?v=2", "alt": "Faisal Mosque at the end of an Islamabad avenue below the Margalla Hills", "cap": "Faisal Mosque against the cloud-topped Margallas, at the end of the avenue.", "author": "Ahmed Iftikhar Sarmad", "authorUrl": "https://commons.wikimedia.org/wiki/User:Ahmed_Iftikhar_Sarmad", "file": "https://commons.wikimedia.org/wiki/File:Faisal_Mosque_and_Margalla_Hills.jpg", "lic": "CC BY-SA 4.0", "licUrl": "https://creativecommons.org/licenses/by-sa/4.0/"});

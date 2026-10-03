@@ -1,2 +1,2 @@
 window.ISB_PHOTOS=window.ISB_PHOTOS||[];
-ISB_PHOTOS.push({src:"images/islamabad/06-margalla-view.jpg",alt:"Margalla night view",cap:"City lights from the ridge."});
+ISB_PHOTOS.push({"src": "images/islamabad/06-margalla-view.jpg?v=2", "alt": "Islamabad city lights at night seen from the Margalla Hills", "cap": "City lights from the Margalla ridge at night.", "author": "Affan ashfaq", "authorUrl": "https://commons.wikimedia.org/wiki/User:Affan_ashfaq", "file": "https://commons.wikimedia.org/wiki/File:Islamabad_Night_View_From_Margla_Hills.jpg", "lic": "CC BY-SA 4.0", "licUrl": "https://creativecommons.org/licenses/by-sa/4.0/"});

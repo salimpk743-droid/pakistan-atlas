@@ -1,0 +1,433 @@
+{
+ "images/og/mybook-pk-1200x630.png": {
+  "name": "MyBook.Pk share image",
+  "caption": "MyBook.Pk – provinces, districts and tehsils of Pakistan",
+  "width": 1200,
+  "height": 630,
+  "creator": {
+   "@type": "Organization",
+   "name": "mybook.pk",
+   "url": "https://mybook.pk/"
+  },
+  "creditText": "mybook.pk",
+  "copyrightNotice": "© mybook.pk",
+  "license": "https://mybook.pk/terms.html",
+  "acquireLicensePage": "https://mybook.pk/contact.html"
+ },
+ "images/home/og-home.jpg": {
+  "name": "Pakistan Atlas share image",
+  "caption": "Faisal Mosque and Islamabad seen from the Margalla Hills, with the Pakistan Atlas title",
+  "width": 1200,
+  "height": 630,
+  "creator": {
+   "@type": "Person",
+   "name": "Ijlalahmed",
+   "url": "https://commons.wikimedia.org/wiki/User:Ijlalahmed"
+  },
+  "creditText": "Photo: Ijlalahmed, CC BY-SA 4.0, via Wikimedia Commons (cropped, darkened and titled by mybook.pk)",
+  "copyrightNotice": "© Ijlalahmed. Licensed under CC BY-SA 4.0. Adaptation by mybook.pk under the same licence.",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "acquireLicensePage": "https://commons.wikimedia.org/wiki/File:Islamabad_-_Faisal_Mosque.jpg"
+ },
+ "images/home/edhi.webp": {
+  "name": "Abdul Sattar Edhi",
+  "caption": "Abdul Sattar Edhi",
+  "width": 900,
+  "height": 1320,
+  "creator": {
+   "@type": "Person",
+   "name": "Hussain"
+  },
+  "creditText": "Photo: Hussain, CC BY-SA 3.0, via Wikimedia Commons (cropped and resized)",
+  "copyrightNotice": "© Hussain. Licensed under CC BY-SA 3.0.",
+  "license": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "acquireLicensePage": "https://commons.wikimedia.org/wiki/File:Abdul_Sattar_Edhi_close-up_(cropped).jpg"
+ },
+ "images/home/t20-2009.webp": {
+  "name": "2009 ICC World Twenty20 final at Lord’s",
+  "caption": "Shahid Afridi batting for Pakistan in the 2009 T20 World Cup final at Lord’s",
+  "width": 1200,
+  "height": 675,
+  "creator": {
+   "@type": "Person",
+   "name": "Djr xi",
+   "url": "https://commons.wikimedia.org/wiki/User:Djr_xi"
+  },
+  "creditText": "Photo: Djr xi, CC BY-SA 3.0, via Wikimedia Commons (cropped and resized)",
+  "copyrightNotice": "© Djr xi. Licensed under CC BY-SA 3.0.",
+  "license": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "acquireLicensePage": "https://commons.wikimedia.org/wiki/File:T20_final_2009.jpg"
+ },
+ "images/home/hills.webp": {
+  "name": "Margalla Hills",
+  "caption": "A peak of the Margalla Hills behind bare trees, Islamabad",
+  "width": 975,
+  "height": 1300,
+  "creator": {
+   "@type": "Person",
+   "name": "Uzmahabib",
+   "url": "https://commons.wikimedia.org/wiki/User:Uzmahabib"
+  },
+  "creditText": "Photo: Uzmahabib, CC BY-SA 4.0, via Wikimedia Commons (cropped and resized)",
+  "copyrightNotice": "© Uzmahabib. Licensed under CC BY-SA 4.0.",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "acquireLicensePage": "https://commons.wikimedia.org/wiki/File:Cloud_in_Margala_Hills.jpg"
+ },
+ "images/home/highway.webp": {
+  "name": "Kashmir Highway, Islamabad",
+  "caption": "Kashmir Highway, Islamabad, at sunset",
+  "width": 1400,
+  "height": 875,
+  "creator": {
+   "@type": "Person",
+   "name": "GhulamAli Chishti",
+   "url": "https://commons.wikimedia.org/wiki/User:GhulamAli_Chishti"
+  },
+  "creditText": "Photo: GhulamAli Chishti, CC BY-SA 4.0, via Wikimedia Commons (cropped and resized)",
+  "copyrightNotice": "© GhulamAli Chishti. Licensed under CC BY-SA 4.0.",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "acquireLicensePage": "https://commons.wikimedia.org/wiki/File:Kashmir_Highway.jpg"
+ },
+ "images/home/mosque.webp": {
+  "name": "Faisal Mosque, Islamabad",
+  "caption": "Faisal Mosque and Islamabad seen from the Margalla Hills",
+  "width": 1400,
+  "height": 875,
+  "creator": {
+   "@type": "Person",
+   "name": "Ijlalahmed",
+   "url": "https://commons.wikimedia.org/wiki/User:Ijlalahmed"
+  },
+  "creditText": "Photo: Ijlalahmed, CC BY-SA 4.0, via Wikimedia Commons (cropped and resized)",
+  "copyrightNotice": "© Ijlalahmed. Licensed under CC BY-SA 4.0.",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "acquireLicensePage": "https://commons.wikimedia.org/wiki/File:Islamabad_-_Faisal_Mosque.jpg"
+ },
+ "images/showbiz/mahira-fawad.webp": {
+  "name": "Mahira Khan and Fawad Khan",
+  "caption": "Mahira Khan and Fawad Khan, the stars of Humsafar",
+  "width": 800,
+  "height": 602,
+  "creator": {
+   "@type": "Organization",
+   "name": "Bollywood Hungama",
+   "url": "https://en.wikipedia.org/wiki/Bollywood_Hungama"
+  },
+  "creditText": "Photos: Bollywood Hungama, CC BY 3.0, via Wikimedia Commons (two photographs combined and cropped)",
+  "copyrightNotice": "© Bollywood Hungama. Licensed under CC BY 3.0.",
+  "license": "https://creativecommons.org/licenses/by/3.0/",
+  "acquireLicensePage": "https://commons.wikimedia.org/wiki/File:Mahira_Khan.jpg"
+ },
+ "images/home/edhi.jpg": {
+  "name": "Abdul Sattar Edhi",
+  "caption": "Abdul Sattar Edhi",
+  "width": 900,
+  "height": 1320,
+  "creator": {
+   "@type": "Person",
+   "name": "Hussain"
+  },
+  "creditText": "Photo: Hussain, CC BY-SA 3.0, via Wikimedia Commons (cropped and resized)",
+  "copyrightNotice": "© Hussain. Licensed under CC BY-SA 3.0.",
+  "license": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "acquireLicensePage": "https://commons.wikimedia.org/wiki/File:Abdul_Sattar_Edhi_close-up_(cropped).jpg"
+ },
+ "images/home/t20-2009.jpg": {
+  "name": "2009 ICC World Twenty20 final at Lord’s",
+  "caption": "Shahid Afridi batting for Pakistan in the 2009 T20 World Cup final at Lord’s",
+  "width": 1200,
+  "height": 675,
+  "creator": {
+   "@type": "Person",
+   "name": "Djr xi",
+   "url": "https://commons.wikimedia.org/wiki/User:Djr_xi"
+  },
+  "creditText": "Photo: Djr xi, CC BY-SA 3.0, via Wikimedia Commons (cropped and resized)",
+  "copyrightNotice": "© Djr xi. Licensed under CC BY-SA 3.0.",
+  "license": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "acquireLicensePage": "https://commons.wikimedia.org/wiki/File:T20_final_2009.jpg"
+ },
+ "images/home/hills.jpg": {
+  "name": "Margalla Hills",
+  "caption": "A peak of the Margalla Hills behind bare trees, Islamabad",
+  "width": 975,
+  "height": 1300,
+  "creator": {
+   "@type": "Person",
+   "name": "Uzmahabib",
+   "url": "https://commons.wikimedia.org/wiki/User:Uzmahabib"
+  },
+  "creditText": "Photo: Uzmahabib, CC BY-SA 4.0, via Wikimedia Commons (cropped and resized)",
+  "copyrightNotice": "© Uzmahabib. Licensed under CC BY-SA 4.0.",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "acquireLicensePage": "https://commons.wikimedia.org/wiki/File:Cloud_in_Margala_Hills.jpg"
+ },
+ "images/home/highway.jpg": {
+  "name": "Kashmir Highway, Islamabad",
+  "caption": "Kashmir Highway, Islamabad, at sunset",
+  "width": 1400,
+  "height": 875,
+  "creator": {
+   "@type": "Person",
+   "name": "GhulamAli Chishti",
+   "url": "https://commons.wikimedia.org/wiki/User:GhulamAli_Chishti"
+  },
+  "creditText": "Photo: GhulamAli Chishti, CC BY-SA 4.0, via Wikimedia Commons (cropped and resized)",
+  "copyrightNotice": "© GhulamAli Chishti. Licensed under CC BY-SA 4.0.",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "acquireLicensePage": "https://commons.wikimedia.org/wiki/File:Kashmir_Highway.jpg"
+ },
+ "images/home/mosque.jpg": {
+  "name": "Faisal Mosque, Islamabad",
+  "caption": "Faisal Mosque and Islamabad seen from the Margalla Hills",
+  "width": 1400,
+  "height": 875,
+  "creator": {
+   "@type": "Person",
+   "name": "Ijlalahmed",
+   "url": "https://commons.wikimedia.org/wiki/User:Ijlalahmed"
+  },
+  "creditText": "Photo: Ijlalahmed, CC BY-SA 4.0, via Wikimedia Commons (cropped and resized)",
+  "copyrightNotice": "© Ijlalahmed. Licensed under CC BY-SA 4.0.",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "acquireLicensePage": "https://commons.wikimedia.org/wiki/File:Islamabad_-_Faisal_Mosque.jpg"
+ },
+ "images/showbiz/mahira-fawad.jpg": {
+  "name": "Mahira Khan and Fawad Khan",
+  "caption": "Mahira Khan and Fawad Khan, the stars of Humsafar",
+  "width": 800,
+  "height": 602,
+  "creator": {
+   "@type": "Organization",
+   "name": "Bollywood Hungama",
+   "url": "https://en.wikipedia.org/wiki/Bollywood_Hungama"
+  },
+  "creditText": "Photos: Bollywood Hungama, CC BY 3.0, via Wikimedia Commons (two photographs combined and cropped)",
+  "copyrightNotice": "© Bollywood Hungama. Licensed under CC BY 3.0.",
+  "license": "https://creativecommons.org/licenses/by/3.0/",
+  "acquireLicensePage": "https://commons.wikimedia.org/wiki/File:Mahira_Khan.jpg"
+ },
+ "images/showbiz/mahira-fawad-wide.jpg": {
+  "name": "Mahira Khan and Fawad Khan",
+  "caption": "Mahira Khan and Fawad Khan, the stars of Humsafar",
+  "width": 1600,
+  "height": 900,
+  "creator": {
+   "@type": "Organization",
+   "name": "Bollywood Hungama",
+   "url": "https://en.wikipedia.org/wiki/Bollywood_Hungama"
+  },
+  "creditText": "Photos: Bollywood Hungama, CC BY 3.0, via Wikimedia Commons (two photographs combined and cropped)",
+  "copyrightNotice": "© Bollywood Hungama. Licensed under CC BY 3.0.",
+  "license": "https://creativecommons.org/licenses/by/3.0/",
+  "acquireLicensePage": "https://commons.wikimedia.org/wiki/File:Mahira_Khan.jpg"
+ },
+ "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Truck_Art_of_Pakistan.jpg/1280px-Truck_Art_of_Pakistan.jpg": {
+  "name": "Truck Art of Pakistan",
+  "caption": "Pakistani truck art, a vibrant tradition of Pakistani visual culture",
+  "width": 1280,
+  "height": 853,
+  "creator": {
+   "@type": "Person",
+   "name": "Baharwassan",
+   "url": "https://commons.wikimedia.org/wiki/User:Baharwassan"
+  },
+  "creditText": "Photo: Baharwassan, CC BY-SA 4.0, via Wikimedia Commons (scaled by Wikimedia)",
+  "copyrightNotice": "© Baharwassan. Licensed under CC BY-SA 4.0.",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "acquireLicensePage": "https://commons.wikimedia.org/wiki/File:Truck_Art_of_Pakistan.jpg"
+ },
+ "images/islamabad/01-kashmir-highway.jpg": {
+  "name": "Kashmir Highway, Islamabad",
+  "caption": "Kashmir Highway, the capital’s main avenue, running toward the Margalla Hills.",
+  "width": 1400,
+  "height": 1050,
+  "creator": {
+   "@type": "Person",
+   "name": "King Eliot",
+   "url": "https://commons.wikimedia.org/wiki/User:King_Eliot"
+  },
+  "creditText": "Photo: King Eliot, CC BY-SA 4.0, via Wikimedia Commons (resized)",
+  "copyrightNotice": "© King Eliot. Licensed under CC BY-SA 4.0.",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "acquireLicensePage": "https://commons.wikimedia.org/wiki/File:Kashmir_Highway_Islamabad.jpg",
+  "pages": [
+   "islamabad-gallery.html",
+   "province.html"
+  ]
+ },
+ "images/islamabad/02-faisal-mosque.jpg": {
+  "name": "Faisal Mosque and the Margalla Hills",
+  "caption": "Faisal Mosque against the cloud-topped Margallas, at the end of the avenue.",
+  "width": 1400,
+  "height": 914,
+  "creator": {
+   "@type": "Person",
+   "name": "Ahmed Iftikhar Sarmad",
+   "url": "https://commons.wikimedia.org/wiki/User:Ahmed_Iftikhar_Sarmad"
+  },
+  "creditText": "Photo: Ahmed Iftikhar Sarmad, CC BY-SA 4.0, via Wikimedia Commons (resized)",
+  "copyrightNotice": "© Ahmed Iftikhar Sarmad. Licensed under CC BY-SA 4.0.",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "acquireLicensePage": "https://commons.wikimedia.org/wiki/File:Faisal_Mosque_and_Margalla_Hills.jpg",
+  "pages": [
+   "islamabad-gallery.html",
+   "province.html"
+  ]
+ },
+ "images/islamabad/03-night-road.jpg": {
+  "name": "Kashmir Highway at night",
+  "caption": "Kashmir Highway after dark, street lights along the dual carriageway.",
+  "width": 1400,
+  "height": 783,
+  "creator": {
+   "@type": "Person",
+   "name": "Ahabb",
+   "url": "https://commons.wikimedia.org/wiki/User:Pakieditor"
+  },
+  "creditText": "Photo: Ahabb, CC BY-SA 4.0, via Wikimedia Commons (resized)",
+  "copyrightNotice": "© Ahabb. Licensed under CC BY-SA 4.0.",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "acquireLicensePage": "https://commons.wikimedia.org/wiki/File:Kashmir_Highway,_Islamabad.jpg",
+  "pages": [
+   "islamabad-gallery.html",
+   "province.html"
+  ]
+ },
+ "images/islamabad/04-sector-street.jpg": {
+  "name": "Islamabad road after rain",
+  "caption": "Road after rain in Islamabad, hills at the end of the street.",
+  "width": 990,
+  "height": 675,
+  "creator": {
+   "@type": "Person",
+   "name": "Waseem1280",
+   "url": "https://commons.wikimedia.org/wiki/User:Waseem1280"
+  },
+  "creditText": "Photo: Waseem1280, CC BY-SA 4.0, via Wikimedia Commons (resized)",
+  "copyrightNotice": "© Waseem1280. Licensed under CC BY-SA 4.0.",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "acquireLicensePage": "https://commons.wikimedia.org/wiki/File:10_After_Rain_on_road_in_Islamabad.jpg",
+  "pages": [
+   "islamabad-gallery.html",
+   "province.html"
+  ]
+ },
+ "images/islamabad/05-blue-area-mosque.jpg": {
+  "name": "Blue Area skyline",
+  "caption": "Blue Area towers along the capital’s main commercial avenue.",
+  "width": 1400,
+  "height": 827,
+  "creator": {
+   "@type": "Person",
+   "name": "Ahabb",
+   "url": "https://commons.wikimedia.org/wiki/User:Pakieditor"
+  },
+  "creditText": "Photo: Ahabb, CC BY-SA 4.0, via Wikimedia Commons (resized)",
+  "copyrightNotice": "© Ahabb. Licensed under CC BY-SA 4.0.",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "acquireLicensePage": "https://commons.wikimedia.org/wiki/File:Blue_Area_Skyline.jpg",
+  "pages": [
+   "islamabad-gallery.html",
+   "province.html"
+  ]
+ },
+ "images/islamabad/06-margalla-view.jpg": {
+  "name": "Islamabad at night from the Margalla Hills",
+  "caption": "City lights from the Margalla ridge at night.",
+  "width": 1400,
+  "height": 1050,
+  "creator": {
+   "@type": "Person",
+   "name": "Affan ashfaq",
+   "url": "https://commons.wikimedia.org/wiki/User:Affan_ashfaq"
+  },
+  "creditText": "Photo: Affan ashfaq, CC BY-SA 4.0, via Wikimedia Commons (resized)",
+  "copyrightNotice": "© Affan ashfaq. Licensed under CC BY-SA 4.0.",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "acquireLicensePage": "https://commons.wikimedia.org/wiki/File:Islamabad_Night_View_From_Margla_Hills.jpg",
+  "pages": [
+   "islamabad-gallery.html",
+   "province.html"
+  ]
+ },
+ "images/islamabad/07-autumn-street.jpg": {
+  "name": "Autumn in Islamabad",
+  "caption": "Autumn colours on the trees of Islamabad’s green sectors.",
+  "width": 1400,
+  "height": 933,
+  "creator": {
+   "@type": "Person",
+   "name": "Mubashirkhan111",
+   "url": "https://commons.wikimedia.org/wiki/User:Mubashirkhan111"
+  },
+  "creditText": "Photo: Mubashirkhan111, CC BY-SA 4.0, via Wikimedia Commons (resized)",
+  "copyrightNotice": "© Mubashirkhan111. Licensed under CC BY-SA 4.0.",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "acquireLicensePage": "https://commons.wikimedia.org/wiki/File:Autumn_in_Islamabad.jpg",
+  "pages": [
+   "islamabad-gallery.html",
+   "province.html"
+  ]
+ },
+ "assets/attock/attock-fort.jpg": {
+  "name": "Attock Fort",
+  "caption": "Attock Fort above the Indus River, seen from the Khyber Pakhtunkhwa bank",
+  "width": 960,
+  "height": 720,
+  "creator": {
+   "@type": "Person",
+   "name": "franek2",
+   "url": "https://web.archive.org/web/20161027113247/http://www.panoramio.com/user/1353998?with_photo_id=88118526"
+  },
+  "creditText": "Photo: franek2, CC BY-SA 3.0, via Wikimedia Commons (cropped and resized)",
+  "copyrightNotice": "© franek2. Licensed under CC BY-SA 3.0.",
+  "license": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "acquireLicensePage": "https://commons.wikimedia.org/wiki/File:Attock_Fort_seen_from_NWFP_side_-_panoramio.jpg"
+ },
+ "assets/bahawalpur/bahawalpur-derawar-fort.jpg": {
+  "name": "Derawar Fort, Bahawalpur",
+  "caption": "Derawar Fort and village in Cholistan, Bahawalpur District",
+  "width": 900,
+  "height": 900,
+  "creator": {
+   "@type": "Person",
+   "name": "Rao Ahmad",
+   "url": "https://commons.wikimedia.org/wiki/User:Rao_Ahmad"
+  },
+  "creditText": "Photo: Rao Ahmad, CC BY-SA 4.0, via Wikimedia Commons (cropped and resized)",
+  "copyrightNotice": "© Rao Ahmad. Licensed under CC BY-SA 4.0.",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "acquireLicensePage": "https://commons.wikimedia.org/wiki/File:Derawar_Fort_and_Village.jpg"
+ },
+ "assets/bahawalnagar/bahawalnagar-sutlej-bridge.jpg": {
+  "name": "Sutlej River bridge at Bahawalnagar",
+  "caption": "The Sutlej River bridge at Bahawalnagar",
+  "width": 900,
+  "height": 900,
+  "creator": {
+   "@type": "Person",
+   "name": "M Nouman Zafar",
+   "url": "https://commons.wikimedia.org/wiki/User:M_Nouman_Zafar"
+  },
+  "creditText": "Photo: M Nouman Zafar, CC BY-SA 4.0, via Wikimedia Commons (cropped and resized)",
+  "copyrightNotice": "© M Nouman Zafar. Licensed under CC BY-SA 4.0.",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "acquireLicensePage": "https://commons.wikimedia.org/wiki/File:Satluj_river_bridge_at_bahawalnagar.jpg"
+ },
+ "assets/bhakkar/bhakkar-kotla-jam-station.jpg": {
+  "name": "Kotla Jam railway station, Bhakkar",
+  "caption": "Railway station at Kotla Jam, Bhakkar District",
+  "width": 900,
+  "height": 900,
+  "creator": {
+   "@type": "Person",
+   "name": "ranaiftikhartoor (Panoramio)",
+   "url": "https://web.archive.org/web/20161113151036/http://www.panoramio.com/user/5093949?with_photo_id=48628358"
+  },
+  "creditText": "Photo: ranaiftikhartoor (Panoramio), CC BY 3.0, via Wikimedia Commons (cropped and resized)",
+  "copyrightNotice": "© ranaiftikhartoor (Panoramio). Licensed under CC BY 3.0.",
+  "license": "https://creativecommons.org/licenses/by/3.0/",
+  "acquireLicensePage": "https://commons.wikimedia.org/wiki/File:Railway_Station_at_Kotla_Jam_Bhakkar,_Punjab,_Pakistan_-_panoramio_(366).jpg"
+ }
+}
