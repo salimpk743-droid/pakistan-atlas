@@ -204,9 +204,9 @@ nav a:focus-visible, .logo:focus-visible, .menu-btn:focus-visible {
 
 .hero {
   position: relative;
+  /* images/hero-flag.jpg never existed (it returned 404), so only the gradient ever rendered; the dead image layer is removed. */
   background:
-    linear-gradient(180deg, rgba(1,65,28,.55), rgba(1,65,28,.78)),
-    url("../images/hero-flag.jpg") center/cover no-repeat;
+    linear-gradient(180deg, rgba(1,65,28,.55), rgba(1,65,28,.78));
   min-height: 72vh;
   color: #fff;
   overflow: hidden;
