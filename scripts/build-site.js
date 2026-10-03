@@ -479,7 +479,38 @@ function faqEntities(html) {
   }
   return out.length >= 2 ? out : [];
 }
-function graphFor(file, cls, meta, crumbs, html) {
+// ---------- image licence metadata ----------
+// scripts/lib/image-credits.json lists every photo the site uses with its author, licence and source page
+// (Wikimedia Commons for third-party photos; mybook.pk for the site's own share image). Each page gets a full
+// ImageObject (contentUrl, creator, creditText, copyrightNotice, license, acquireLicensePage) for the listed
+// images it shows (<img>, og:image, or images loaded by its own scripts via "pages"), unless the page already
+// carries its own ImageObject for that URL.
+const IMAGE_CREDITS = JSON.parse(fs.readFileSync(path.join(__dirname, "lib", "image-credits.json"), "utf8"));
+function imageKey(src) {
+  return String(src || "").trim().replace(/[?#].*$/, "").replace(/^https?:\/\/(?:www\.)?mybook\.pk\//i, "").replace(/^(?:\.\/|\/)+/, "");
+}
+function imageObjectsFor(file, html, ogImage) {
+  const keys = [];
+  const add = (k) => { if (IMAGE_CREDITS[k] && !keys.includes(k)) keys.push(k); };
+  if (ogImage) add(imageKey(ogImage));
+  for (const m of html.matchAll(/<img\b[^>]*?\ssrc=["']([^"']+)["']/gi)) add(imageKey(m[1]));
+  for (const [k, v] of Object.entries(IMAGE_CREDITS)) if ((v.pages || []).includes(file)) add(k);
+  const ownLd = [...html.matchAll(/<script[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)].map((m) => m[1]).join("\n");
+  const out = [];
+  for (const k of keys) {
+    const v = IMAGE_CREDITS[k];
+    const abs = /^https?:/i.test(k) ? k : `${SITE}/${k}`;
+    if (ownLd.includes(`"${abs}"`)) continue;
+    const node = { "@type": "ImageObject", "@id": `${abs}#image`, contentUrl: abs, url: abs, name: v.name };
+    if (v.caption) node.caption = v.caption;
+    if (v.width) node.width = v.width;
+    if (v.height) node.height = v.height;
+    Object.assign(node, { creator: v.creator, creditText: v.creditText, copyrightNotice: v.copyrightNotice, license: v.license, acquireLicensePage: v.acquireLicensePage });
+    out.push(node);
+  }
+  return out;
+}
+function graphFor(file, cls, meta, crumbs, html, ogImage) {
   const pageUrl = url(file);
   const website = { "@type": "WebSite", "@id": `${SITE}/#website`, name: "MyBook.Pk", url: `${SITE}/`, inLanguage: ["en", "ur"] };
   // districts.html reads ?q= and filters the district list, so the SearchAction target works as a URL.
@@ -530,6 +561,12 @@ function graphFor(file, cls, meta, crumbs, html) {
   }
   const faq = faqEntities(html);
   if (faq.length) graph.push({ "@type": "FAQPage", "@id": `${pageUrl}#faq`, mainEntity: faq });
+  const images = imageObjectsFor(file, html, ogImage);
+  if (images.length) {
+    const og = images.find((n) => imageKey(n.contentUrl) === imageKey(ogImage));
+    if (og) page.primaryImageOfPage = { "@id": og["@id"] };
+    graph.push(...images);
+  }
   return { "@context": "https://schema.org", "@graph": graph };
 }
 
@@ -673,7 +710,7 @@ function build(file, html) {
   out = setTitleAndDescription(out, meta);
   const ogImage = existingImage && /\.(png|jpe?g|webp)(\?|$)/i.test(existingImage) ? (existingImage.startsWith("http") ? existingImage : `${SITE}/${existingImage.replace(/^\//, "")}`) : L.OG_IMAGE;
   const ogType = existingType === "article" ? "article" : "website";
-  const graph = graphFor(file, cls, meta, crumbs, out);
+  const graph = graphFor(file, cls, meta, crumbs, out, ogImage);
   const share = shareHtml(file, cls, meta.title, out);
   out = out.replace(/[ \t]*<\/head>/i, (m) => headBlock(file, meta, graph, ogImage, ogType, Boolean(share)) + m.trimStart());
   out = injectChrome(out, headerHtml(activeNav(cls, file), crumbs, file === "index.html" ? "/" : file), footerHtml(share), true);

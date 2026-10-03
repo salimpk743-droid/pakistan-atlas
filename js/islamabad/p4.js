@@ -1,2 +1,2 @@
 window.ISB_PHOTOS=window.ISB_PHOTOS||[];
-ISB_PHOTOS.push({src:"images/islamabad/04-sector-street.jpg",alt:"Sector street",cap:"Sector road after rain, hills at the end of the street."});
+ISB_PHOTOS.push({"src": "images/islamabad/04-sector-street.jpg?v=2", "alt": "Wet road in Islamabad after rain, with hills at the end", "cap": "Road after rain in Islamabad, hills at the end of the street.", "author": "Waseem1280", "authorUrl": "https://commons.wikimedia.org/wiki/User:Waseem1280", "file": "https://commons.wikimedia.org/wiki/File:10_After_Rain_on_road_in_Islamabad.jpg", "lic": "CC BY-SA 4.0", "licUrl": "https://creativecommons.org/licenses/by-sa/4.0/"});

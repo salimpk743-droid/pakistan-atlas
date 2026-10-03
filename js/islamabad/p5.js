@@ -1,2 +1,2 @@
 window.ISB_PHOTOS=window.ISB_PHOTOS||[];
-ISB_PHOTOS.push({src:"images/islamabad/05-blue-area-mosque.jpg",alt:"Blue Area and mosque",cap:"Blue Area towers and the mosque on the same axis."});
+ISB_PHOTOS.push({"src": "images/islamabad/05-blue-area-mosque.jpg?v=2", "alt": "Blue Area skyline in Islamabad", "cap": "Blue Area towers along the capital’s main commercial avenue.", "author": "Ahabb", "authorUrl": "https://commons.wikimedia.org/wiki/User:Pakieditor", "file": "https://commons.wikimedia.org/wiki/File:Blue_Area_Skyline.jpg", "lic": "CC BY-SA 4.0", "licUrl": "https://creativecommons.org/licenses/by-sa/4.0/"});

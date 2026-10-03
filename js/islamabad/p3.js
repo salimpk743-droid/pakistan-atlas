@@ -1,2 +1,2 @@
 window.ISB_PHOTOS=window.ISB_PHOTOS||[];
-ISB_PHOTOS.push({src:"images/islamabad/03-night-road.jpg",alt:"Night road",cap:"Empty dual carriageway after dark."});
+ISB_PHOTOS.push({"src": "images/islamabad/03-night-road.jpg?v=2", "alt": "Kashmir Highway in Islamabad at night", "cap": "Kashmir Highway after dark, street lights along the dual carriageway.", "author": "Ahabb", "authorUrl": "https://commons.wikimedia.org/wiki/User:Pakieditor", "file": "https://commons.wikimedia.org/wiki/File:Kashmir_Highway,_Islamabad.jpg", "lic": "CC BY-SA 4.0", "licUrl": "https://creativecommons.org/licenses/by-sa/4.0/"});
