@@ -37,6 +37,9 @@ const LEGACY_LINKS = {
 
 const NEWS_HUB = "pakistan-current-affairs.html";
 const NEWS_WEEK_RE = /^current-affairs-(\d{4})-(\d{2})-(\d{2})-to-(\d{2})-(\d{2})\.html$/;
+// Weekly Sunday news (see NEWS.md / scripts/build-news.js): archive page + one article page per week.
+const NEWS_ARCHIVE = "pakistan-weekly-news.html";
+const NEWS_ARTICLE_RE = /^news-\d{4}-\d{2}-\d{2}-[a-z0-9-]+\.html$/;
 // "current-affairs-2026-09-24-to-09-30.html" -> "24–30 September 2026" (month and year shown where they change).
 function newsWeekLabel(file) {
   const m = file.match(NEWS_WEEK_RE);
@@ -53,6 +56,12 @@ function newsArchiveItems(html) {
   const m = html.match(/<ol class="ca-archive"[^>]*>([\s\S]*?)<\/ol>/);
   if (!m) return [];
   return [...m[1].matchAll(/<a href="(current-affairs-[^"]+\.html)"/g)].map((x) => [x[1], `Pakistan current affairs: ${newsWeekLabel(x[1])}`]);
+}
+// Weekly news articles listed on the archive page (<ol class="news-archive">), newest first, as [href, headline].
+function weeklyNewsItems(html) {
+  const m = html.match(/<ol class="news-archive"[^>]*>([\s\S]*?)<\/ol>/);
+  if (!m) return [];
+  return [...m[1].matchAll(/<a href="(news-[^"]+\.html)">([^<]+)<\/a>/g)].map((x) => [x[1], x[2].replace(/&amp;/g, "&").replace(/&quot;/g, '"')]);
 }
 const NAV = [["/", "Home"], ["provinces.html", "Provinces"], ["districts.html", "Districts"], ["culture.html", "Culture"],
   ["literature.html", "Literature"], ["geography.html", "Geography"], ["sports.html", "Sports"], ["history.html", "History"],
@@ -114,6 +123,8 @@ function classify(file) {
   // Weekly current affairs: the hub lists the weekly pages; each week is current-affairs-YYYY-MM-DD-to-MM-DD.html.
   if (file === NEWS_HUB) return { type: "news-hub" };
   if (NEWS_WEEK_RE.test(file)) return { type: "news-week" };
+  if (file === NEWS_ARCHIVE) return { type: "news-archive" };
+  if (NEWS_ARTICLE_RE.test(file)) return { type: "news-article" };
   return { type: "other" };
 }
 
@@ -330,6 +341,11 @@ function crumbsFor(file, cls, title, html) {
     case "place-extra": return [home, [provinceRoutes[cls.pid], L.provinceById[cls.pid].name], [file, "South Waziristan"]];
     case "news-hub": return [home, [file, "Current Affairs"]];
     case "news-week": return [home, [NEWS_HUB, "Current Affairs"], [file, newsWeekLabel(file)]];
+    case "news-archive": return [home, [file, "Weekly News"]];
+    case "news-article": {
+      const h = h1Text(html);
+      return [home, [NEWS_ARCHIVE, "Weekly News"], [file, (h && h.length <= 60 ? h : title).slice(0, 80)]];
+    }
     default: {
       let name = h1Text(html);
       if (!name || name.length > 60) name = title.split(/\s+[|—–:]\s+/)[0];
@@ -532,7 +548,7 @@ function graphFor(file, cls, meta, crumbs, html, ogImage) {
     publishingPrinciples: `${SITE}/sources-methodology.html`, correctionsPolicy: `${SITE}/sources-methodology.html#corrections`,
     contactPoint: { "@type": "ContactPoint", contactType: "editorial corrections", email: "zainkhanpk742@gmail.com", url: `${SITE}/contact.html` } };
   if (cls.type === "home") website.publisher = { "@id": `${SITE}/#organization` };
-  const isCollection = ["hub", "districts", "provinces", "news-hub"].includes(cls.type);
+  const isCollection = ["hub", "districts", "provinces", "news-hub", "news-archive"].includes(cls.type);
   const page = { "@type": isCollection ? "CollectionPage" : "WebPage", "@id": `${pageUrl}#webpage`, url: pageUrl, name: meta.title, isPartOf: { "@id": `${SITE}/#website` }, inLanguage: "en" };
   if (meta.description) page.description = meta.description;
   page.dateModified = DATE_TOKEN;
@@ -567,6 +583,7 @@ function graphFor(file, cls, meta, crumbs, html, ogImage) {
   if (cls.type === "districts") items = L.provinceOrder.flatMap((pid) => L.sortedDistrictsOf(pid).map((d) => [`${d.slug}.html`, L.districtLabel(d)]));
   if (cls.type === "provinces") items = L.provinceOrder.map((pid) => [provinceRoutes[pid], L.provinceById[pid].name]);
   if (cls.type === "news-hub") { items = newsArchiveItems(html); if (!items.length) items = null; }
+  if (cls.type === "news-archive") { items = weeklyNewsItems(html); if (!items.length) items = null; }
   if (items) {
     page.mainEntity = { "@id": `${pageUrl}#list` };
     graph.push({ "@type": "ItemList", "@id": `${pageUrl}#list`, numberOfItems: items.length, itemListElement: items.map(([href, name], i) => ({ "@type": "ListItem", position: i + 1, name, url: url(href) })) });

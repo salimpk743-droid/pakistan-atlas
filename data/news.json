@@ -1,0 +1,9 @@
+{
+  "_readme": "Weekly Sunday news index. Newest first. Never delete or edit old entries; add a new object at the TOP of 'articles' and a matching data/news/<date>-<slug>.json, then run node scripts/build-news.js. See NEWS.md.",
+  "articles": [
+    {
+      "date": "2026-10-04",
+      "slug": "pti-march-talks-deadlock"
+    }
+  ]
+}
