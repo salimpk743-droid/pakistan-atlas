@@ -3,6 +3,7 @@
 // which is what keeps the generate-sitemap workflow idempotent.
 const fs = require("fs");
 const path = require("path");
+const crypto = require("crypto");
 
 const ROOT = path.resolve(__dirname, "..", "..");
 const SITE = "https://mybook.pk";
@@ -134,7 +135,19 @@ function listText(items, max = items.length) {
 }
 function districtLabel(d) { return /district/i.test(d.name) ? d.name : `${d.name} District`; }
 
+// Pinned "Last updated" dates (data/pinned-dates.json): a listed page keeps its pinned date only while its
+// built content hashes to the recorded sha256, e.g. after a revert. Any real edit falls back to git dating.
+const PINNED_DATES = (() => {
+  try { return JSON.parse(fs.readFileSync(path.join(ROOT, "data", "pinned-dates.json"), "utf8")).pages || {}; } catch (_) { return {}; }
+})();
+function pinnedDate(file, content) {
+  const pin = PINNED_DATES[file];
+  if (!pin || !pin.date || !pin.sha256) return null;
+  return crypto.createHash("sha256").update(content).digest("hex") === pin.sha256 ? pin.date : null;
+}
+
 module.exports = {
+  PINNED_DATES, pinnedDate,
   ADSENSE_CLIENT,
   ADSENSE_SCRIPT,
   ADSENSE_META,

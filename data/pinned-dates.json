@@ -1,0 +1,10 @@
+{
+  "_readme": "Pinned 'Last updated' dates. build-site.js and generate-sitemap.js normally date a page by its last git commit. A page listed here keeps the pinned date for as long as its built content is byte-identical to the sha256 below (used when a change is reverted, so the page shows the date of the content it actually carries). Any real edit changes the hash and the page goes back to normal dating, so stale pins are harmless and can be removed.",
+  "pages": {
+    "index.html": {
+      "date": "2026-10-03",
+      "sha256": "d59d6462502bcecedd56508a6d9002c5685f51d5b3e50c4c559f1a1ea935dcae",
+      "reason": "Homepage restored to its 3 October 2026 content (PR #48 link removed at the owner's request)."
+    }
+  }
+}
