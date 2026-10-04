@@ -5,8 +5,9 @@
 //          data/news/<yyyy-mm-dd>-<slug>.json    (one file per article: headline, sections, sources, Urdu summary)
 // Outputs: news-<yyyy-mm-dd>-<slug>.html         (one raw article page per entry, at the site root)
 //          pakistan-weekly-news.html             (archive page listing every article, newest first)
-//          index.html + pakistan-current-affairs.html: only the text between
-//          <!-- mb:latest-news:start --> and <!-- mb:latest-news:end --> is replaced (one headline + link).
+//          pakistan-current-affairs.html: only the text between <!-- mb:latest-news:start --> and
+//          <!-- mb:latest-news:end --> is replaced (one "Latest news" line linking the article and the archive).
+// The homepage (index.html) is NEVER read or written by this script (owner's instruction, 4 Oct 2026).
 // build-site.js then adds the shared head tags, header, footer and breadcrumbs, exactly as for every other page.
 // Deterministic and idempotent: the same data always produces byte-identical files.
 "use strict";
@@ -23,7 +24,9 @@ const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replac
 const longDate = (iso) => { const [y, m, d] = iso.slice(0, 10).split("-").map(Number); return `${d} ${MONTHS[m - 1]} ${y}`; };
 const fileFor = (a) => `news-${a.date}-${a.slug}.html`;
 const read = (f) => fs.readFileSync(path.join(ROOT, f), "utf8");
-function write(f, s) { const p = path.join(ROOT, f); if (!fs.existsSync(p) || fs.readFileSync(p, "utf8") !== s) { fs.writeFileSync(p, s); console.log(`build-news: wrote ${f}`); } }
+const NEVER_TOUCH = new Set(["index.html"]); // the homepage must not be changed by the news routine
+function write(f, s) {
+  if (NEVER_TOUCH.has(f)) throw new Error(`build-news: refusing to write ${f}`); const p = path.join(ROOT, f); if (!fs.existsSync(p) || fs.readFileSync(p, "utf8") !== s) { fs.writeFileSync(p, s); console.log(`build-news: wrote ${f}`); } }
 
 const HEAD_TOP = `  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3672700167787763" crossorigin="anonymous"></script>
   <meta name="google-adsense-account" content="ca-pub-3672700167787763">
@@ -189,8 +192,6 @@ const list = loadArticles();
 for (const a of list) write(fileFor(a), articlePage(a, list));
 write(ARCHIVE, archivePage(list));
 const latest = list[0];
-// Homepage: a single chip in the existing "History and people" quick links. Text and link only.
-write("index.html", replaceBlock("index.html", read("index.html"), `<a href="${fileFor(latest)}">Latest news: ${esc(latest.short_headline)}</a>`));
 // Current-affairs hub: one headline + link to the archive.
 write("pakistan-current-affairs.html", replaceBlock("pakistan-current-affairs.html", read("pakistan-current-affairs.html"),
   `\n      <p class="lead-answer"><strong>Latest news (${longDate(latest.date)}):</strong> <a href="${fileFor(latest)}">${esc(latest.headline)}</a>. Every Sunday we publish one detailed news article; see the <a href="${ARCHIVE}">weekly news archive</a>.</p>\n      `));

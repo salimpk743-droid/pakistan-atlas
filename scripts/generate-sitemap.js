@@ -1,6 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const { execFileSync } = require("child_process");
+const { pinnedDate } = require("./lib/site");
 
 const ROOT = path.resolve(__dirname, "..");
 const SITE = "https://mybook.pk";
@@ -51,6 +52,8 @@ try {
 } catch (_) {}
 const todayUtc = new Date().toISOString().slice(0, 10);
 function getLastModified(name) {
+  const pinned = pinnedDate(name, fs.readFileSync(path.join(ROOT, name)));
+  if (pinned) return pinned;
   if (dirty.has(name)) return todayUtc;
   try {
     const value = execFileSync("git", ["log", "-1", "--format=%ct", "--", name], { cwd: ROOT, encoding: "utf8" }).trim();

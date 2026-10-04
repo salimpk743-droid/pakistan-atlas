@@ -487,6 +487,11 @@ function pageDate(file, tokenised) {
 }
 function applyDate(file, out) {
   const tokenised = normaliseDates(out);
+  const pin = L.PINNED_DATES[file];
+  if (pin && pin.date) {
+    const pinned = tokenised.split(DATE_TOKEN).join(pin.date).split(DATE_HUMAN_TOKEN).join(humanDate(pin.date));
+    if (L.pinnedDate(file, pinned)) return pinned;
+  }
   const iso = pageDate(file, tokenised);
   return tokenised.split(DATE_TOKEN).join(iso).split(DATE_HUMAN_TOKEN).join(humanDate(iso));
 }
