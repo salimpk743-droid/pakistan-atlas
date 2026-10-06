@@ -72,7 +72,7 @@ Cheap reputable registrars for `.com` work worldwide. For `.pk` use PKNIC accred
 
 AdSense rarely approves an empty pretty template. Do the content work first.
 
-1. Replace `editor@example.com` on Contact and Privacy with your real email.
+1. The contact email on Contact, Privacy and all other pages is `buildskillspk@gmail.com`.
 2. Replace portraits and province photos.
 3. Add **at least 15–25 original articles** (district stories, festival explainers, university guides). Aim for 800+ words, your own sentences, named sources (PBS, HEC, provincial sites).
 4. Keep Privacy, About, Contact, Disclaimer linked in the footer (already done).

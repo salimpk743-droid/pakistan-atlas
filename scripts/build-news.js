@@ -120,7 +120,7 @@ ${facts}
       </ul>
 ` : ""}${sections}${urdu}
       <h2 id="sources">Sources</h2>
-      <p>Every fact, date and quotation above is taken from the dated reports listed here. Quotations are reproduced as published by these outlets. Spotted an error? Write to <a href="mailto:zainkhanpk742@gmail.com">zainkhanpk742@gmail.com</a> or use the <a href="contact.html">contact page</a>; see also <a href="sources-methodology.html">how we check facts</a>.</p>
+      <p>Every fact, date and quotation above is taken from the dated reports listed here. Quotations are reproduced as published by these outlets. Spotted an error? Write to <a href="mailto:buildskillspk@gmail.com">buildskillspk@gmail.com</a> or use the <a href="contact.html">contact page</a>; see also <a href="sources-methodology.html">how we check facts</a>.</p>
       <ol>
 ${sources}
       </ol>
@@ -171,7 +171,7 @@ ${items}
         <li>Only verified facts: every date, number and quotation comes from a dated report by a reliable outlet or an official source, and all sources are listed at the end of each article.</li>
         <li>Older articles are never deleted. Each one keeps its original date and shows the date it was last updated.</li>
         <li>For a wider weekly round-up with MCQs for exam preparation, see <a href="pakistan-current-affairs.html">Pakistan current affairs (weekly)</a>.</li>
-        <li>Corrections: email <a href="mailto:zainkhanpk742@gmail.com">zainkhanpk742@gmail.com</a> or use the <a href="contact.html">contact page</a>.</li>
+        <li>Corrections: email <a href="mailto:buildskillspk@gmail.com">buildskillspk@gmail.com</a> or use the <a href="contact.html">contact page</a>.</li>
       </ul>
     </div>
   </section>

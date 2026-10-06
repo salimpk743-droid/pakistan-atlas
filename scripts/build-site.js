@@ -506,7 +506,9 @@ function chromeNeutral(html) {
   return html
     .replace(/\n?[ \t]*<!-- mb:follow:start -->[\s\S]*?<!-- mb:follow:end -->/g, "")
     .split(FOLLOW_HTML + "\n      ").join("")
-    .replace(/css\/chrome\.css\?v=\d+/g, "css/chrome.css");
+    .replace(/css\/chrome\.css\?v=\d+/g, "css/chrome.css")
+    // contact-email swaps (Oct 2026: owner moved to buildskillspk@gmail.com) are not content changes either
+    .replace(/[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}/g, "@@EMAIL@@");
 }
 function committedDate(committed) {
   const m = committed.match(/<time datetime="(\d{4}-\d{2}-\d{2})" data-mb-updated>/);
@@ -585,10 +587,10 @@ function graphFor(file, cls, meta, crumbs, html, ogImage) {
   // districts.html reads ?q= and filters the district list, so the SearchAction target works as a URL.
   if (cls.type === "home") website.potentialAction = { "@type": "SearchAction", target: `${SITE}/districts.html?q={search_term_string}`, "query-input": "required name=search_term_string" };
   const organization = { "@type": "Organization", "@id": `${SITE}/#organization`, name: SITE_NAME, alternateName: "MyBook.Pk", url: `${SITE}/`,
-    logo: { "@type": "ImageObject", "@id": `${SITE}/#logo`, url: LOGO_URL, contentUrl: LOGO_URL, width: 512, height: 512, caption: SITE_NAME }, image: { "@id": `${SITE}/#logo` }, email: "zainkhanpk742@gmail.com",
+    logo: { "@type": "ImageObject", "@id": `${SITE}/#logo`, url: LOGO_URL, contentUrl: LOGO_URL, width: 512, height: 512, caption: SITE_NAME }, image: { "@id": `${SITE}/#logo` }, email: "buildskillspk@gmail.com",
     description: "Independent educational website about Pakistan's provinces, districts, history and culture.",
     publishingPrinciples: `${SITE}/sources-methodology.html`, correctionsPolicy: `${SITE}/sources-methodology.html#corrections`,
-    contactPoint: { "@type": "ContactPoint", contactType: "editorial corrections", email: "zainkhanpk742@gmail.com", url: `${SITE}/contact.html` } };
+    contactPoint: { "@type": "ContactPoint", contactType: "editorial corrections", email: "buildskillspk@gmail.com", url: `${SITE}/contact.html` } };
   if (cls.type === "home") website.publisher = { "@id": `${SITE}/#organization` };
   const isCollection = ["hub", "districts", "provinces", "news-hub", "news-archive"].includes(cls.type);
   const page = { "@type": isCollection ? "CollectionPage" : "WebPage", "@id": `${pageUrl}#webpage`, url: pageUrl, name: meta.title, isPartOf: { "@id": `${SITE}/#website` }, inLanguage: "en" };
