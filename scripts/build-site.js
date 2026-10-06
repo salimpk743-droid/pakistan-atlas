@@ -431,10 +431,31 @@ function shareHtml(file, cls, title, html) {
       <script>${SHARE_SCRIPT}</script>
       `;
 }
-function footerHtml(share = "") {
+// "Follow" block (owner-approved): homepage gets it directly under the Services section; every other page
+// gets it at the top of the managed footer, so every visitor sees it.
+const FOLLOW_START = "<!-- mb:follow:start -->";
+const FOLLOW_END = "<!-- mb:follow:end -->";
+const FOLLOW_HTML = `<aside class="mb-follow" id="follow-mybook" aria-label="Follow MyBook.pk">
+        <div class="container mb-follow-inner">
+          <p class="mb-follow-text">Learn digital skills: subscribe on YouTube and follow us on Facebook</p>
+          <div class="mb-follow-buttons">
+            <a class="mb-follow-btn mb-follow-yt" href="https://www.youtube.com/@buildskillpk" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg><span>Subscribe on YouTube</span></a>
+            <a class="mb-follow-btn mb-follow-fb" href="https://www.facebook.com/profile.php?id=61595362311531" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M24 12a12 12 0 1 0-13.9 11.9v-8.4H7.1V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v3h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0 0 24 12z"/></svg><span>Follow us on Facebook</span></a>
+          </div>
+        </div>
+      </aside>`;
+function placeHomeFollow(html) {
+  const block = `${FOLLOW_START}\n  ${FOLLOW_HTML}\n  ${FOLLOW_END}`;
+  const re = new RegExp(`${FOLLOW_START}[\\s\\S]*?${FOLLOW_END}`);
+  if (re.test(html)) return html.replace(re, block);
+  const m = html.match(/<section class="atlas-section" id="services-offer">[\s\S]*?<\/section>/);
+  if (!m) return html;
+  return html.replace(m[0], `${m[0]}\n  ${block}`);
+}
+function footerHtml(share = "", follow = true) {
   const provLinks = L.provinceOrder.map((pid) => `<a href="${provinceRoutes[pid]}">${esc(L.provinceById[pid].name)}</a>`).join("<br>");
   return `${FTR_START}
-      ${share}<footer>
+      ${follow ? FOLLOW_HTML + "\n      " : ""}${share}<footer>
         <div class="container foot-grid">
           <div>
             <strong>MyBook.Pk</strong>
@@ -479,9 +500,25 @@ function normaliseDates(html) {
 function git(args) {
   try { return execFileSync("git", args, { cwd: L.ROOT, encoding: "utf8", stdio: ["ignore", "pipe", "ignore"], maxBuffer: 64 * 1024 * 1024 }); } catch (_) { return null; }
 }
+// Site-wide chrome that must not count as a content change (so it never moves a page's "Last updated" date):
+// the follow block and the chrome.css cache-busting version.
+function chromeNeutral(html) {
+  return html
+    .replace(/\n?[ \t]*<!-- mb:follow:start -->[\s\S]*?<!-- mb:follow:end -->/g, "")
+    .split(FOLLOW_HTML + "\n      ").join("")
+    .replace(/css\/chrome\.css\?v=\d+/g, "css/chrome.css");
+}
+function committedDate(committed) {
+  const m = committed.match(/<time datetime="(\d{4}-\d{2}-\d{2})" data-mb-updated>/);
+  return m ? m[1] : null;
+}
 function pageDate(file, tokenised) {
   const committed = git(["show", `HEAD:${file}`]);
-  if (committed == null || normaliseDates(committed) !== tokenised) return todayUtc;
+  if (committed == null) return todayUtc;
+  const norm = normaliseDates(committed);
+  if (norm !== tokenised && chromeNeutral(norm) !== chromeNeutral(tokenised)) return todayUtc;
+  const kept = committedDate(committed);
+  if (kept) return kept;
   const ct = (git(["log", "-1", "--format=%ct", "--", file]) || "").trim();
   return /^\d+$/.test(ct) ? new Date(Number(ct) * 1000).toISOString().slice(0, 10) : todayUtc;
 }
@@ -673,7 +710,7 @@ function headBlock(file, meta, graph, ogImage, ogType, hasShare = false) {
     `<meta name="twitter:title" content="${esc(meta.title)}" />`,
     meta.description ? `<meta name="twitter:description" content="${esc(meta.description)}" />` : "",
     `<meta name="twitter:image" content="${esc(ogImage)}" />`,
-    `<link rel="stylesheet" href="css/chrome.css?v=1" />`,
+    `<link rel="stylesheet" href="css/chrome.css?v=2" />`,
     hasShare ? `<link rel="stylesheet" href="css/share.css?v=1" />` : "",
     `<script type="application/ld+json">${JSON.stringify(graph).replace(/</g, "\\u003c")}</script>`
   ].filter(Boolean);
@@ -750,7 +787,8 @@ function build(file, html) {
   const graph = graphFor(file, cls, meta, crumbs, out, ogImage);
   const share = shareHtml(file, cls, meta.title, out);
   out = out.replace(/[ \t]*<\/head>/i, (m) => headBlock(file, meta, graph, ogImage, ogType, Boolean(share)) + m.trimStart());
-  out = injectChrome(out, headerHtml(activeNav(cls, file), crumbs, file === "index.html" ? "/" : file), footerHtml(share), true);
+  out = injectChrome(out, headerHtml(activeNav(cls, file), crumbs, file === "index.html" ? "/" : file), footerHtml(share, file !== "index.html"), true);
+  if (file === "index.html") out = placeHomeFollow(out);
   return { out, meta, cls };
 }
 

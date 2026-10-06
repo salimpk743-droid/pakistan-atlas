@@ -54,6 +54,10 @@ const todayUtc = new Date().toISOString().slice(0, 10);
 function getLastModified(name) {
   const pinned = pinnedDate(name, fs.readFileSync(path.join(ROOT, name)));
   if (pinned) return pinned;
+  // Use the page's own visible "Last updated" date (written by build-site.js), so site-wide chrome changes
+  // that do not move that date do not move lastmod either.
+  const shown = fs.readFileSync(path.join(ROOT, name), "utf8").match(/<time datetime="(\d{4}-\d{2}-\d{2})" data-mb-updated>/);
+  if (shown) return shown[1];
   if (dirty.has(name)) return todayUtc;
   try {
     const value = execFileSync("git", ["log", "-1", "--format=%ct", "--", name], { cwd: ROOT, encoding: "utf8" }).trim();
