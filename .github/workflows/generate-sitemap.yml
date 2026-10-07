@@ -27,6 +27,9 @@ jobs:
       - name: Enhance district SEO and internal links
         run: node scripts/enhance-district-seo.js
 
+      - name: Census 2023 detail blocks for selected district pages
+        run: node scripts/census-detail.js
+
       - name: Build weekly Sunday news pages, archive and latest-news headline (see NEWS.md)
         run: node scripts/build-news.js
 
@@ -64,6 +67,7 @@ jobs:
           node scripts/fix-known-seo.js
           node scripts/generate-seo.js
           node scripts/enhance-district-seo.js
+          node scripts/census-detail.js
           node scripts/build-news.js
           node scripts/build-site.js
           node scripts/generate-sitemap.js

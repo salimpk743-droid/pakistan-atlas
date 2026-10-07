@@ -4,6 +4,11 @@
     "lower-chitral.html": "chitral-lower.html",
     "upper-chitral.html": "chitral-upper.html",
     "bajur.html": "bajaur.html",
-    "dgkhan.html": "dera-ghazi-khan.html"
+    "dgkhan.html": "dera-ghazi-khan.html",
+    "dikhan.html": "dera-ismail-khan.html",
+    "lakki.html": "lakki-marwat.html",
+    "nankana.html": "nankana-sahib.html",
+    "rykhan.html": "rahim-yar-khan.html",
+    "tts.html": "toba-tek-singh.html"
   }
 }
