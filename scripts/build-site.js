@@ -507,6 +507,10 @@ function chromeNeutral(html) {
     .replace(/\n?[ \t]*<!-- mb:follow:start -->[\s\S]*?<!-- mb:follow:end -->/g, "")
     .split(FOLLOW_HTML + "\n      ").join("")
     .replace(/css\/chrome\.css\?v=\d+/g, "css/chrome.css")
+    // Oct 2026 indexing fixes: alias canonicals (data/canonical.json) and the gallery cross-link are not content changes
+    .replace(/(rel="canonical" href=|property="og:url" content=)"[^"]*"/g, "$1\"@@URL@@\"")
+    .replace(/mybook\.pk(\/|%2F)[\w-]+\.html/g, "mybook.pk/@@PAGE@@")
+    .replace(/[^\n]*islamabad-gallery\.html[^\n]*\n/g, "")
     // contact-email swaps (Oct 2026: owner moved to buildskillspk@gmail.com) are not content changes either
     .replace(/[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}/g, "@@EMAIL@@");
 }

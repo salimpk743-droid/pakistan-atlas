@@ -96,7 +96,7 @@ const relatedPairs = [
   ["dera-bugti", "south-dera-bugti"], ["north-dera-bugti", "south-dera-bugti"], ["khuzdar", "wadh"], ["khuzdar", "surab"],
   ["kech", "tump"], ["pishin", "barshore"]
 ];
-const extraRelated = { "swa-upper": ["south-waziristan.html"], "swa-lower": ["south-waziristan.html"] };
+const extraRelated = { "swa-upper": ["south-waziristan.html"], "swa-lower": ["south-waziristan.html"], islamabad: ["islamabad-gallery.html"] };
 
 function esc(value) {
   return String(value ?? "")

@@ -313,7 +313,7 @@ function relatedLinks(info) {
     const o = other && L.districtIndex.get(other);
     if (o) push(`${other}.html`, L.districtLabel(o.district));
   }
-  for (const href of L.extraRelated[d.slug] || []) push(href, href === "south-waziristan.html" ? "South Waziristan (before the 2022 split)" : href);
+  for (const href of L.extraRelated[d.slug] || []) push(href, href === "south-waziristan.html" ? "South Waziristan (before the 2022 split)" : href === "islamabad-gallery.html" ? "Islamabad photo gallery" : href);
   const list = L.sortedDistrictsOf(provinceId).filter((x) => L.exists(`${x.slug}.html`));
   const i = list.findIndex((x) => x.slug === d.slug);
   const capital = { punjab: "lahore", sindh: "karachi-south", kpk: "peshawar", balochistan: "quetta-east", gb: "gilgit", ajk: "muzaffarabad" }[provinceId];
