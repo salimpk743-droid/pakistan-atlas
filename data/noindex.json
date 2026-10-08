@@ -1,4 +1,18 @@
 {
-  "_comment": "Pages kept out of search results (meta robots noindex,follow). Empty: every page is indexable. scripts/generate-seo.js applies this list.",
-  "pages": {}
+  "_comment": "Pages kept out of search results (meta robots noindex,follow). Remove an entry to re-index the page; scripts/generate-seo.js applies this list.",
+  "pages": {
+    "islamabad-gallery.html": "Thin page (under about 250 words of main content) kept out of search results in the October 2026 quality cleanup; remove this entry to re-index once it has fuller, sourced content.",
+    "classic-pakistani-dramas.html": "Thin page (under about 250 words of main content) kept out of search results in the October 2026 quality cleanup; remove this entry to re-index once it has fuller, sourced content.",
+    "health.html": "Thin page (under about 250 words of main content) kept out of search results in the October 2026 quality cleanup; remove this entry to re-index once it has fuller, sourced content.",
+    "education.html": "Thin page (under about 250 words of main content) kept out of search results in the October 2026 quality cleanup; remove this entry to re-index once it has fuller, sourced content.",
+    "aina-asif.html": "Thin page (under about 250 words of main content) kept out of search results in the October 2026 quality cleanup; remove this entry to re-index once it has fuller, sourced content.",
+    "danish-taimoor.html": "Thin page (under about 250 words of main content) kept out of search results in the October 2026 quality cleanup; remove this entry to re-index once it has fuller, sourced content.",
+    "sarah-khan.html": "Thin page (under about 250 words of main content) kept out of search results in the October 2026 quality cleanup; remove this entry to re-index once it has fuller, sourced content.",
+    "judwaa.html": "Thin page (under about 250 words of main content) kept out of search results in the October 2026 quality cleanup; remove this entry to re-index once it has fuller, sourced content.",
+    "sher.html": "Thin page (under about 250 words of main content) kept out of search results in the October 2026 quality cleanup; remove this entry to re-index once it has fuller, sourced content.",
+    "iqtidar.html": "Thin page (under about 250 words of main content) kept out of search results in the October 2026 quality cleanup; remove this entry to re-index once it has fuller, sourced content.",
+    "meri-zindagi-hai-tu.html": "Thin page (under about 250 words of main content) kept out of search results in the October 2026 quality cleanup; remove this entry to re-index once it has fuller, sourced content.",
+    "districts-of-islamabad-capital-territory.html": "Thin page (under about 250 words of main content) kept out of search results in the October 2026 quality cleanup; remove this entry to re-index once it has fuller, sourced content.",
+    "districts-islamabad-capital-territory.html": "Thin page (under about 250 words of main content) kept out of search results in the October 2026 quality cleanup; remove this entry to re-index once it has fuller, sourced content."
+  }
 }
