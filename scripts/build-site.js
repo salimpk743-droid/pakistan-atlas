@@ -507,6 +507,8 @@ function chromeNeutral(html) {
     .replace(/\n?[ \t]*<!-- mb:follow:start -->[\s\S]*?<!-- mb:follow:end -->/g, "")
     .split(FOLLOW_HTML + "\n      ").join("")
     .replace(/css\/chrome\.css\?v=\d+/g, "css/chrome.css")
+    // VideoObject uploadDate/duration fixes (Oct 2026 Search Console) are structured-data only, not page content
+    .replace(/"uploadDate": "[^"]*"(, "duration": "[^"]*")?/g, '"uploadDate": "@@DATE@@"')
     // Oct 2026 indexing fixes: alias canonicals (data/canonical.json) and the gallery cross-link are not content changes
     .replace(/(rel="canonical" href=|property="og:url" content=)"[^"]*"/g, "$1\"@@URL@@\"")
     .replace(/mybook\.pk(\/|%2F)[\w-]+\.html/g, "mybook.pk/@@PAGE@@")

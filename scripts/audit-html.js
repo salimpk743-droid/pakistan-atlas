@@ -152,8 +152,34 @@ function structuralChecks(file, html) {
   }
   for (const [body, n] of seen) if (n > 1) report(file, "identical section repeated", `${n}× "${body.slice(0, 70)}…"`);
   for (const m of html.matchAll(/<script[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)) {
-    try { JSON.parse(m[1]); } catch (e) { report(file, "invalid JSON-LD", e.message); }
+    let data;
+    try { data = JSON.parse(m[1]); } catch (e) { report(file, "invalid JSON-LD", e.message); continue; }
+    checkVideoObjects(file, data);
   }
+  // Microdata variant (itemprop="uploadDate") must follow the same rule.
+  for (const m of html.matchAll(/itemprop=["']uploadDate["'][^>]*content=["']([^"']*)["']/gi)) {
+    if (!ISO_DATETIME_TZ.test(m[1])) report(file, "VideoObject uploadDate must be full ISO 8601 with timezone", m[1]);
+  }
+}
+
+// Google requires VideoObject datetimes with a timezone, e.g. 2026-10-07T21:00:00+05:00 (Search Console, Oct 2026).
+const ISO_DATETIME_TZ = /^\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])T([01]\d|2[0-3]):[0-5]\d(:[0-5]\d(\.\d+)?)?(Z|[+-]([01]\d|2[0-3]):[0-5]\d)$/;
+const ISO_DURATION = /^P(?!$)(\d+D)?(T(?=\d)(\d+H)?(\d+M)?(\d+(\.\d+)?S)?)?$/;
+const VIDEO_DATETIME_KEYS = ["uploadDate", "expires", "datePublished", "dateModified", "dateCreated", "startDate", "endDate"];
+function checkVideoObjects(file, node) {
+  if (Array.isArray(node)) { for (const n of node) checkVideoObjects(file, n); return; }
+  if (!node || typeof node !== "object") return;
+  const types = [].concat(node["@type"] || []);
+  if (types.includes("VideoObject")) {
+    if (!node.uploadDate) report(file, "VideoObject missing uploadDate", node.name || "");
+    for (const k of VIDEO_DATETIME_KEYS) {
+      if (node[k] == null) continue;
+      const v = String(node[k]);
+      if (!ISO_DATETIME_TZ.test(v) || Number.isNaN(Date.parse(v))) report(file, `VideoObject ${k} must be full ISO 8601 with timezone`, v);
+    }
+    if (node.duration != null && !ISO_DURATION.test(String(node.duration))) report(file, "VideoObject duration must be ISO 8601 (e.g. PT1M58S)", String(node.duration));
+  }
+  for (const v of Object.values(node)) if (v && typeof v === "object") checkVideoObjects(file, v);
 }
 
 for (const file of htmlFiles) {
