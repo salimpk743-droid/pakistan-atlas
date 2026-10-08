@@ -513,6 +513,8 @@ function chromeNeutral(html) {
     .replace(/(rel="canonical" href=|property="og:url" content=)"[^"]*"/g, "$1\"@@URL@@\"")
     .replace(/mybook\.pk(\/|%2F)[\w-]+\.html/g, "mybook.pk/@@PAGE@@")
     .replace(/[^\n]*islamabad-gallery\.html[^\n]*\n/g, "")
+    // robots directives (data/noindex.json, Oct 2026 quality cleanup) control indexing, not page content
+    .replace(/(<meta name="robots" content=)"[^"]*"/g, '$1"@@ROBOTS@@"')
     // contact-email swaps (Oct 2026: owner moved to buildskillspk@gmail.com) are not content changes either
     .replace(/[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}/g, "@@EMAIL@@");
 }
